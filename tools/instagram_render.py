@@ -259,7 +259,15 @@ def norm(s):
     return re.sub(r"[^a-z0-9]+", " ", s).strip()
 
 
+HEX = re.compile(r"^#[0-9A-Fa-f]{6}$")
+FALLBACK = [VOLT, "#000000"]  # brand volt when a property's colours are unknown
+
+
 def club_colours(item):
+    """Story colours: the queue's own "colours" first, then instagram/colours.json, then brand volt."""
+    own = item.get("colours")
+    if isinstance(own, list) and own and all(HEX.match(str(c)) for c in own):
+        return [own[0], own[1] if len(own) > 1 else own[0]]
     table = json.loads((ROOT / "instagram" / "colours.json").read_text())["teams"]
     prop = item.get("property") or re.split(r"\s+[x×]\s+", item.get("deal", ""), maxsplit=1)[-1]
     p = norm(prop)
@@ -270,7 +278,7 @@ def club_colours(item):
             if p == n or (len(n) > 3 and re.search(rf"\b{re.escape(n)}\b", p)):
                 if not best or len(n) > best[0]:
                     best = (len(n), t["colours"])
-    return best[1] if best else ["#000000", "#000000"]
+    return best[1] if best else FALLBACK
 
 
 def luminance(hex_colour):

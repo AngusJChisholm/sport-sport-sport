@@ -1,5 +1,5 @@
 {
- "_note": "Club and team colours for Instagram story frames. 'names' are matched against the property side of the deal (after the x). Primary is the background, secondary is the thin edge bar. Anything not listed falls back to black. Add or fix entries any time.",
+ "_note": "Club, league and event colours for Instagram story backgrounds. 'names' are matched against the property side of the deal (after the x). Primary is the background, secondary is the thin edge bar. A story can override with its own \"colours\": [\"#primary\", \"#secondary\"] in the queue file. Anything not listed falls back to brand volt. Add or fix entries any time.",
  "teams": [
   {
    "names": [
@@ -474,6 +474,529 @@
    "colours": [
     "#000000",
     "#FFFFFF"
+   ]
+  },
+  {
+   "names": [
+    "australian open",
+    "tennis australia"
+   ],
+   "colours": [
+    "#0091D2",
+    "#FFFFFF"
+   ]
+  },
+  {
+   "names": [
+    "afl",
+    "australian football league",
+    "aflw"
+   ],
+   "colours": [
+    "#01285E",
+    "#E1251B"
+   ]
+  },
+  {
+   "names": [
+    "cricket australia",
+    "australian cricket team",
+    "australia cricket"
+   ],
+   "colours": [
+    "#006A4E",
+    "#FFCD00"
+   ]
+  },
+  {
+   "names": [
+    "netball australia",
+    "australian diamonds",
+    "diamonds"
+   ],
+   "colours": [
+    "#00843D",
+    "#FFCD00"
+   ]
+  },
+  {
+   "names": [
+    "australian olympic committee",
+    "australian olympic team",
+    "paralympics australia"
+   ],
+   "colours": [
+    "#00843D",
+    "#FFCD00"
+   ]
+  },
+  {
+   "names": [
+    "nbl",
+    "national basketball league",
+    "wnbl"
+   ],
+   "colours": [
+    "#E31837",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "nba"
+   ],
+   "colours": [
+    "#1D428A",
+    "#C8102E"
+   ]
+  },
+  {
+   "names": [
+    "wnba"
+   ],
+   "colours": [
+    "#FA4616",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "nfl"
+   ],
+   "colours": [
+    "#013369",
+    "#D50A0A"
+   ]
+  },
+  {
+   "names": [
+    "mlb",
+    "major league baseball"
+   ],
+   "colours": [
+    "#041E42",
+    "#BF0D3E"
+   ]
+  },
+  {
+   "names": [
+    "nhl",
+    "national hockey league"
+   ],
+   "colours": [
+    "#000000",
+    "#A2AAAD"
+   ]
+  },
+  {
+   "names": [
+    "premier league"
+   ],
+   "colours": [
+    "#3D195B",
+    "#00FF85"
+   ]
+  },
+  {
+   "names": [
+    "formula 1"
+   ],
+   "colours": [
+    "#E10600",
+    "#15151E"
+   ]
+  },
+  {
+   "names": [
+    "motogp",
+    "australian motorcycle grand prix",
+    "motogp australian grand prix",
+    "motogp australian gp",
+    "red bull grand prix of australia"
+   ],
+   "colours": [
+    "#C8102E",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "new zealand cricket",
+    "blackcaps",
+    "black caps"
+   ],
+   "colours": [
+    "#000000",
+    "#FFFFFF"
+   ]
+  },
+  {
+   "names": [
+    "melbourne victory"
+   ],
+   "colours": [
+    "#00205B",
+    "#FFFFFF"
+   ]
+  },
+  {
+   "names": [
+    "melbourne city",
+    "melbourne city fc"
+   ],
+   "colours": [
+    "#6CABDD",
+    "#1C2C5B"
+   ]
+  },
+  {
+   "names": [
+    "western sydney wanderers"
+   ],
+   "colours": [
+    "#D11241",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "adelaide united"
+   ],
+   "colours": [
+    "#D71920",
+    "#0A1F44"
+   ]
+  },
+  {
+   "names": [
+    "brisbane roar"
+   ],
+   "colours": [
+    "#F47920",
+    "#002D62"
+   ]
+  },
+  {
+   "names": [
+    "central coast mariners"
+   ],
+   "colours": [
+    "#FFD100",
+    "#002B5C"
+   ]
+  },
+  {
+   "names": [
+    "perth glory"
+   ],
+   "colours": [
+    "#5B2C83",
+    "#F47920"
+   ]
+  },
+  {
+   "names": [
+    "wellington phoenix"
+   ],
+   "colours": [
+    "#FFD100",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "macarthur fc"
+   ],
+   "colours": [
+    "#000000",
+    "#D4AF37"
+   ]
+  },
+  {
+   "names": [
+    "melbourne stars"
+   ],
+   "colours": [
+    "#009B48",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "melbourne renegades"
+   ],
+   "colours": [
+    "#E4002B",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "sydney sixers"
+   ],
+   "colours": [
+    "#E6007E",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "sydney thunder"
+   ],
+   "colours": [
+    "#A6CE39",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "perth scorchers"
+   ],
+   "colours": [
+    "#F58220",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "brisbane heat"
+   ],
+   "colours": [
+    "#00A8B5",
+    "#FFFFFF"
+   ]
+  },
+  {
+   "names": [
+    "adelaide strikers"
+   ],
+   "colours": [
+    "#0072CE",
+    "#FFFFFF"
+   ]
+  },
+  {
+   "names": [
+    "hobart hurricanes"
+   ],
+   "colours": [
+    "#6A2C91",
+    "#FFFFFF"
+   ]
+  },
+  {
+   "names": [
+    "los angeles lakers",
+    "la lakers",
+    "lakers"
+   ],
+   "colours": [
+    "#552583",
+    "#FDB927"
+   ]
+  },
+  {
+   "names": [
+    "golden state warriors"
+   ],
+   "colours": [
+    "#1D428A",
+    "#FFC72C"
+   ]
+  },
+  {
+   "names": [
+    "phoenix suns"
+   ],
+   "colours": [
+    "#1D1160",
+    "#E56020"
+   ]
+  },
+  {
+   "names": [
+    "philadelphia 76ers",
+    "76ers"
+   ],
+   "colours": [
+    "#006BB6",
+    "#ED174C"
+   ]
+  },
+  {
+   "names": [
+    "milwaukee bucks"
+   ],
+   "colours": [
+    "#00471B",
+    "#EEE1C6"
+   ]
+  },
+  {
+   "names": [
+    "new york knicks",
+    "knicks"
+   ],
+   "colours": [
+    "#006BB6",
+    "#F58426"
+   ]
+  },
+  {
+   "names": [
+    "inter milan",
+    "internazionale"
+   ],
+   "colours": [
+    "#0068A8",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "ac milan"
+   ],
+   "colours": [
+    "#FB090B",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "ajax"
+   ],
+   "colours": [
+    "#D2122E",
+    "#FFFFFF"
+   ]
+  },
+  {
+   "names": [
+    "as monaco",
+    "monaco"
+   ],
+   "colours": [
+    "#E51B22",
+    "#FFFFFF"
+   ]
+  },
+  {
+   "names": [
+    "borussia dortmund",
+    "dortmund",
+    "bvb"
+   ],
+   "colours": [
+    "#FDE100",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "atletico madrid",
+    "atletico de madrid"
+   ],
+   "colours": [
+    "#CB3524",
+    "#272E61"
+   ]
+  },
+  {
+   "names": [
+    "aston villa"
+   ],
+   "colours": [
+    "#670E36",
+    "#95BFE5"
+   ]
+  },
+  {
+   "names": [
+    "west ham united",
+    "west ham"
+   ],
+   "colours": [
+    "#7A263A",
+    "#1BB1E7"
+   ]
+  },
+  {
+   "names": [
+    "newcastle united"
+   ],
+   "colours": [
+    "#241F20",
+    "#FFFFFF"
+   ]
+  },
+  {
+   "names": [
+    "shakhtar donetsk",
+    "shakhtar"
+   ],
+   "colours": [
+    "#F26522",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "la galaxy"
+   ],
+   "colours": [
+    "#00245D",
+    "#FFD200"
+   ]
+  },
+  {
+   "names": [
+    "red bull racing",
+    "oracle red bull racing"
+   ],
+   "colours": [
+    "#121F45",
+    "#DB0A40"
+   ]
+  },
+  {
+   "names": [
+    "mercedes-amg petronas",
+    "mercedes f1",
+    "mercedes-amg f1"
+   ],
+   "colours": [
+    "#00A19C",
+    "#000000"
+   ]
+  },
+  {
+   "names": [
+    "atlassian williams",
+    "williams racing"
+   ],
+   "colours": [
+    "#005AFF",
+    "#041E42"
+   ]
+  },
+  {
+   "names": [
+    "aston martin",
+    "aston martin aramco"
+   ],
+   "colours": [
+    "#00594F",
+    "#CEDC00"
+   ]
+  },
+  {
+   "names": [
+    "alpine f1 team",
+    "bwt alpine"
+   ],
+   "colours": [
+    "#0090FF",
+    "#FF87BC"
    ]
   }
  ]
