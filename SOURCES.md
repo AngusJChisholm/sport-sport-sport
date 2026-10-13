@@ -100,6 +100,7 @@ sponsorship", "naming rights", "jersey patch", "front-of-shirt" and "extends par
 
 ### Australia
 - B&T - bandt.com.au (weekly "Spotlight On Sponsors" column)
+- Scout - scoutsponsor.com (weekly "This Week in Sponsorship" newsletter; lists club and league announcements, many from social posts. Use it as a lead list: confirm each deal on the club, league or brand's own release before logging)
 - mi-3 - mi-3.com.au
 - Mumbrella - mumbrella.com.au
 - AdNews - adnews.com.au
@@ -137,5 +138,7 @@ sponsorship", "naming rights", "jersey patch", "front-of-shirt" and "extends par
 ## Using this list
 - Run at least one search per Tier 1 and Tier 2 group each morning.
 - ANZ deals: always check the AFL, NRL, Cricket Australia, Football Australia and Tennis Australia newsrooms,
-  plus B&T, mi-3 and Mumbrella.
+  plus B&T, mi-3, Mumbrella and the latest Scout newsletter (scoutsponsor.com).
+- Many ANZ club deals are announced only on club websites or social posts. Check club newsrooms directly, not just
+  search results, and accept an official club social post as Tier 1.
 - If a deal appears only in Tier 3 or 4, look for a Tier 1 or Tier 2 confirmation before using it.
