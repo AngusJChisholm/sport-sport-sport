@@ -53,7 +53,7 @@ def main():
         if not (e.get("lead") and e.get("article") and e.get("date")):
             continue
         if not e.get("slug"):
-            e["slug"] = make_slug(e["date"], e["deal"])
+            e["slug"] = make_slug(e.get("added") or e["date"], e["deal"])
             changed_slugs = True
         a = e["article"]
         tags = f'<span class="tag">{esc(e.get("sport"))}</span>'
@@ -62,7 +62,8 @@ def main():
         tags += f'<span class="tag r">{esc(e.get("region"))}</span>'
         body = "\n".join(f'<p class="b">{esc(p)}</p>' for p in a.get("body", []))
         source = ""
-        others = [o for o in deals if o.get("date") == e["date"] and o is not e]
+        posted = e.get("added") or e["date"]  # edition date; "date" is when the deal was announced
+        others = [o for o in deals if (o.get("added") or o.get("date")) == posted and o is not e]
         sameday = ""
         if others:
             rows = []
@@ -74,7 +75,7 @@ def main():
                     rows.append(f'<div class="row">{inner[:-len("<span>→</span>")]}</div>')
             sameday = (
                 '<section class="same"><div class="wrap"><span class="lbl mute-l" style="display:block;margin-bottom:16px">'
-                f'Also on {esc(short_date(e["date"]))}</span><h2 class="disp">The other deals.</h2>'
+                f'Also on {esc(short_date(posted))}</span><h2 class="disp">The other deals.</h2>'
                 + "".join(rows)
                 + "</div></section>"
             )
@@ -85,8 +86,8 @@ def main():
             tpl.replace("{{TITLE}}", esc(f'{e["deal"]}: {title}'))
             .replace("{{DESC}}", esc(a.get("standfirst")))
             .replace("{{CANONICAL}}", f'{SITE_URL}/articles/{e["slug"]}.html')
-            .replace("{{ISODATE}}", e["date"])
-            .replace("{{LONGDATE}}", esc(long_date(e["date"])))
+            .replace("{{ISODATE}}", posted)
+            .replace("{{LONGDATE}}", esc(long_date(posted)))
             .replace("{{HEADLINE}}", esc(title))
             .replace("{{DEAL}}", esc(e["deal"]))
             .replace("{{TAGS}}", tags)

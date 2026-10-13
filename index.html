@@ -192,9 +192,12 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const PAGE=15;
-let DEALS=[],SITE={},shown=PAGE;
+let DEALS=[],ORIG=[],SITE={},shown=PAGE;
 const st={sport:"All",type:"",reg:"",days:""};
 const sortKey=d=>d.date||((d.month||"0000-00")+"-00");
+// "date" = when the deal was announced; "added" = when it was posted here (the edition date).
+const pKey=d=>d.added||d.date;
+const asPosted=d=>({date:pKey(d)});
 const dObj=d=>d.date?new Date(d.date+"T00:00:00"):null;
 const fmtShort=d=>d.date?dObj(d).toLocaleDateString("en-AU",{day:"2-digit",month:"short"}):new Date(d.month+"-01T00:00:00").toLocaleDateString("en-AU",{month:"short",year:"numeric"});
 const fmtArch=d=>d.date?dObj(d).toLocaleDateString("en-AU",{day:"2-digit",month:"short",year:"numeric"}):new Date(d.month+"-01T00:00:00").toLocaleDateString("en-AU",{month:"short",year:"numeric"});
@@ -207,21 +210,22 @@ const link=(d,label)=>href(d)?`<a${attrs(d)} class="more">${label}</a>`:"";
 
 function hero(){
   const dated=DEALS.filter(d=>d.date);
-  const lead=dated.find(d=>d.lead)||dated[0];
+  const leads=dated.filter(d=>d.lead).sort((a,b)=>pKey(b).localeCompare(pKey(a)));
+  const lead=leads[0]||dated[0];
   if(!lead)return null;
-  $("heroDay").textContent=fmtLong(lead);
+  $("heroDay").textContent=fmtLong(asPosted(lead));
   $("heroHead").textContent=lead.headline||lead.deal;
   $("heroSup").textContent=lead.deal+(lead.type?" · "+lead.type:"");
   $("heroTags").innerHTML=tags(lead);
   $("heroDek").textContent=lead.summary||"";
   $("heroDek").hidden=!lead.summary;
-  $("heroShort").textContent=fmtDots(lead);
+  $("heroShort").textContent=fmtDots(asPosted(lead));
   $("heroLink").innerHTML=link(lead,"Read the full story →");
   return lead;
 }
 function roundup(lead){
-  const same=DEALS.filter(d=>d.date===lead.date&&d!==lead).slice(0,5);
-  $("rCount").textContent=`${same.length} deal${same.length===1?"":"s"} · ${fmtDots(lead)}`;
+  const same=ORIG.filter(d=>d.date&&pKey(d)===pKey(lead)&&d!==lead).slice(0,5);
+  $("rCount").textContent=`${same.length} deal${same.length===1?"":"s"} · ${fmtDots(asPosted(lead))}`;
   const card=d=>{const tag=href(d)?"a":"div";
     return `<${tag} class="card"${attrs(d)}><div class="tags"><span class="tag">${esc(d.sport)}</span><span class="tag r">${esc(d.region)}</span></div><h3>${esc(d.deal)}</h3><p>${esc(d.summary||d.type||"")}</p>${href(d)?`<span class="more">${d.article?"Read the story →":"Read →"}</span>`:""}</${tag}>`};
   $("roundup").innerHTML=same.map(card).join("")+`<a href="#archive" class="card all" style="--span:${3-(same.length%3)}"><span class="lbl">The archive</span><h3>Every deal. Since day one.</h3><span class="more">Browse the archive →</span></a>`;
@@ -264,7 +268,8 @@ function wire(){
 }
 fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>{
   SITE=data.site||{};
-  DEALS=(data.deals||[]).slice().sort((a,b)=>sortKey(b).localeCompare(sortKey(a))||(b.lead?1:0)-(a.lead?1:0));
+  ORIG=data.deals||[];
+  DEALS=ORIG.slice().sort((a,b)=>sortKey(b).localeCompare(sortKey(a))||(b.lead?1:0)-(a.lead?1:0));
   const lead=hero();if(lead)roundup(lead);
   columns();follow();filters();wire();render();
 }).catch(()=>{$("heroHead").textContent="Deals unavailable";$("heroDek").textContent="The deals file didn't load. Refresh to try again.";wire();});
