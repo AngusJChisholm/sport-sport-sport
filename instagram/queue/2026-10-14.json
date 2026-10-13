@@ -43,20 +43,24 @@
   },
   "others": [
    {
+    "deal": "Red Bull x MotoGP Australian GP",
+    "sub": "Motorsport - Title sponsor, Adelaide 2027"
+   },
+   {
+    "deal": "DoorDash x Australian Open",
+    "sub": "Tennis - Official delivery partner"
+   },
+   {
+    "deal": "GAC x Chelsea",
+    "sub": "Football - Official automotive partner"
+   },
+   {
     "deal": "Expedia x NHL",
     "sub": "Ice hockey - Official travel partner"
    },
    {
     "deal": "IM8 x NBA",
     "sub": "Basketball - Nutrition partner, Australia and SE Asia"
-   },
-   {
-    "deal": "American Express x SailGP Hong Kong",
-    "sub": "Sailing - Title sponsorship"
-   },
-   {
-    "deal": "Adyen x FC Bayern",
-    "sub": "Football - Payments partner extension"
    }
   ]
  },
@@ -69,6 +73,32 @@
     "Adobe's first tennis deal",
     "Official AI marketing partner",
     "Multi-year, phased rollout"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Red Bull x MotoGP Australian GP",
+   "property": "Australian Motorcycle Grand Prix",
+   "points": [
+    "Title sponsor, two years",
+    "Adelaide street race from 2027"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "DoorDash x Australian Open",
+   "property": "Australian Open",
+   "points": [
+    "Official delivery partner",
+    "Multi-year deal"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "GAC x Chelsea",
+   "property": "Chelsea FC",
+   "points": [
+    "Official automotive partner"
    ]
   },
   {
@@ -105,10 +135,27 @@
    "points": [
     "Payments partner renewed"
    ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Hasbro x The FA",
+   "property": "The Football Association",
+   "points": [
+    "Peppa Pig licensing deal",
+    "Launches summer 2027"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Hardee's x 23XI Racing",
+   "property": "23XI Racing",
+   "points": [
+    "Multi-year renewal"
+   ]
   }
  ],
- "caption": "Adobe just signed its first tennis sponsorship anywhere in the world, and picked the Australian Open.\n\nThe software giant is now the AO's Official AI Marketing and Creativity Partner in a multi-year, phased deal. Tennis Australia will use Adobe's tools to personalise everything from which match you watch to where you eat at Melbourne Park, with year-round play across Australia and Asia-Pacific in the brief too.\n\nAlso today: Expedia x NHL, IM8 x NBA, American Express x SailGP Hong Kong, Adyen x FC Bayern.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
- "reel_caption": "Adobe's first ever tennis deal, and it's the Australian Open.\n\nAdobe is now the AO's official AI marketing and creativity partner. Plus four more deals from today across the NHL, NBA, SailGP and the Bundesliga.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "caption": "Adobe just signed its first tennis sponsorship anywhere in the world, and picked the Australian Open.\n\nThe software giant is now the AO's Official AI Marketing and Creativity Partner in a multi-year, phased deal. Tennis Australia will use Adobe's tools to personalise everything from which match you watch to where you eat at Melbourne Park, with year-round play across Australia and Asia-Pacific in the brief too.\n\nAlso today: Red Bull x MotoGP Australian GP, DoorDash x Australian Open, GAC x Chelsea, Expedia x NHL, IM8 x NBA, American Express x SailGP Hong Kong, Adyen x FC Bayern, Hasbro x The FA, Hardee's x 23XI Racing.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "reel_caption": "Adobe's first ever tennis deal, and it's the Australian Open.\n\nAdobe is now the AO's official AI marketing and creativity partner. Plus five more deals, including Red Bull's title deal for MotoGP in Adelaide.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
  "tags": [
   {
    "username": "australianopen",

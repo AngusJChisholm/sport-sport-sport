@@ -29,6 +29,51 @@
   },
   {
    "date": "2026-10-14",
+   "deal": "Red Bull × MotoGP Australian Grand Prix",
+   "sport": "Motorsport",
+   "type": "Title sponsorship",
+   "region": "ANZ",
+   "summary": "Two-year title deal for MotoGP's first Adelaide street race in November 2027, run as the Red Bull Grand Prix of Australia.",
+   "url": "https://www.indailysa.com.au/news/just-in/2026/10/12/premier-announces-high-energy-global-motogp-partner"
+  },
+  {
+   "date": "2026-10-14",
+   "deal": "DoorDash × Australian Open",
+   "sport": "Tennis",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Multi-year deal as official on-demand delivery partner, including a DoorDash-run bar and the AO on the GO platform.",
+   "url": "https://newshub.medianet.com.au/2026/10/doordash-serves-up-a-new-way-for-fans-to-order-food-at-the-australian-open/175513/"
+  },
+  {
+   "date": "2026-10-14",
+   "deal": "GAC × Chelsea",
+   "sport": "Football",
+   "type": "Global partner",
+   "region": "Global",
+   "summary": "Chinese carmaker becomes Chelsea's official automotive partner for the men's team after joining the pre-season tour.",
+   "url": "https://www.chelseafc.com/en/news/article/chelsea-fc-announces-new-global-partnership-with-gac"
+  },
+  {
+   "date": "2026-10-14",
+   "deal": "Hasbro (Peppa Pig) × The FA",
+   "sport": "Football",
+   "type": "Licensing",
+   "region": "Global",
+   "summary": "Multi-year deal bringing Peppa Pig into English football through content, toys and apparel from summer 2027.",
+   "url": "https://www.insideworldfootball.com/2026/10/09/hasbros-peppa-pig-to-make-her-england-debut/"
+  },
+  {
+   "date": "2026-10-14",
+   "deal": "Hardee's × 23XI Racing",
+   "sport": "Motorsport",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Multi-year renewal with Bubba Wallace's No. 23 team, with branding on the car at select races and on the firesuit.",
+   "url": "https://www.jayski.com/2026/10/08/hardees-renews-multi-year-partnership-with-23xi-and-bubba-wallace/"
+  },
+  {
+   "date": "2026-10-14",
    "deal": "Expedia × NHL",
    "sport": "Ice hockey",
    "type": "Official partner",
