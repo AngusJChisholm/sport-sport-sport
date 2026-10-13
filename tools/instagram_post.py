@@ -90,6 +90,14 @@ def story_window(q):
     return STORY_TIME, STORY_CUTOFF
 
 
+def feed_start(q, t):
+    """Carousel time for today, unless the queue sets "feed_time" (e.g. "16:15")."""
+    if q.get("feed_time"):
+        h, m = map(int, q["feed_time"].split(":"))
+        return dtime(h, m)
+    return FEED_TIMES[t.weekday()]
+
+
 def plan():
     t = now()
     date = t.date().isoformat()
@@ -111,7 +119,7 @@ def plan():
             return out
         s0, s1 = story_window(q)
         stories_due = q.get("stories") and not state.get("stories_done") and s0 <= t.time() < s1
-        feed_due = not state.get("feed_done") and FEED_TIMES[t.weekday()] <= t.time() < FEED_CUTOFF
+        feed_due = not state.get("feed_done") and feed_start(q, t) <= t.time() < FEED_CUTOFF
         out["post"] = bool(stories_due or feed_due)
         out["reason"] = f"render={out['render']} stories_due={bool(stories_due)} feed_due={bool(feed_due)}"
     return out
@@ -234,7 +242,7 @@ def do_post():
         save(p["state"], state)
         commit_push(f"Instagram stories posted {date}", p["state"])
 
-    if not state.get("feed_done") and FEED_TIMES[t.weekday()] <= t.time() < FEED_CUTOFF:
+    if not state.get("feed_done") and feed_start(q, t) <= t.time() < FEED_CUTOFF:
         children = []
         for name in m["feed"][:10]:
             cid = api("POST", f"{uid}/media", image_url=f"{base}/{name}", is_carousel_item="true")["id"]
