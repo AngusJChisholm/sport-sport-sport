@@ -81,6 +81,15 @@ def commit_push(message, *files):
     raise SystemExit("Could not push to main")
 
 
+def story_window(q):
+    """Stories go at 8am unless the queue sets "story_time" (e.g. "19:00" for a late first post)."""
+    if q.get("story_time"):
+        h, m = map(int, q["story_time"].split(":"))
+        start = dtime(h, m)
+        return start, dtime(min(h + 4, 23), 59)
+    return STORY_TIME, STORY_CUTOFF
+
+
 def plan():
     t = now()
     date = t.date().isoformat()
@@ -100,7 +109,8 @@ def plan():
         if q.get("hold"):
             out["reason"] = f"render={out['render']}, posting on hold today"
             return out
-        stories_due = q.get("stories") and not state.get("stories_done") and STORY_TIME <= t.time() < STORY_CUTOFF
+        s0, s1 = story_window(q)
+        stories_due = q.get("stories") and not state.get("stories_done") and s0 <= t.time() < s1
         feed_due = not state.get("feed_done") and FEED_TIMES[t.weekday()] <= t.time() < FEED_CUTOFF
         out["post"] = bool(stories_due or feed_due)
         out["reason"] = f"render={out['render']} stories_due={bool(stories_due)} feed_due={bool(feed_due)}"
@@ -209,7 +219,8 @@ def do_post():
     state = load(p["state"], {"stories": {}})
     state.setdefault("stories", {})
 
-    if q.get("stories") and not state.get("stories_done") and STORY_TIME <= t.time() < STORY_CUTOFF:
+    s0, s1 = story_window(q)
+    if q.get("stories") and not state.get("stories_done") and s0 <= t.time() < s1:
         for name in m["stories"]:
             if name in state["stories"]:
                 continue

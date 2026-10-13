@@ -1,7 +1,6 @@
 {
  "date": "2026-10-13",
- "hold": true,
- "_note": "Test render only. hold:true means this day renders but never posts.",
+ "hold": false,
  "feed": {
   "kind": "daily",
   "cover": {
@@ -15,27 +14,113 @@
   "deal": {
    "title": "Beauty moves into the dressing room.",
    "rows": [
-    {"main": "Vichy Laboratoires", "sub": "Official skincare & haircare partner, men's first team"},
-    {"main": "Through 2028", "sub": "L'Oréal Groupe's first football club partnership"},
-    {"main": "Science on site", "sub": "Skin and scalp studies at PSG Campus, Poissy"}
+    {
+     "main": "Vichy Laboratoires",
+     "sub": "Official skincare & haircare partner, men's first team"
+    },
+    {
+     "main": "Through 2028",
+     "sub": "L'Oréal Groupe's first football club partnership"
+    },
+    {
+     "main": "Science on site",
+     "sub": "Skin and scalp studies at PSG Campus, Poissy"
+    }
    ]
   },
   "why": {
    "title": "Football's audience is too big to ignore.",
    "points": [
-    {"main": "Beauty usually backs tennis and F1", "sub": "A cosmetics major picking football is a category shift"},
-    {"main": "Non-endemic brands keep coming", "sub": "Fashion, lifestyle and now beauty want the men's game"}
+    {
+     "main": "Beauty usually backs tennis and F1",
+     "sub": "A cosmetics major picking football is a category shift"
+    },
+    {
+     "main": "Non-endemic brands keep coming",
+     "sub": "Fashion, lifestyle and now beauty want the men's game"
+    }
    ]
   },
   "others": [
-   {"deal": "LendUX x Adelaide United", "sub": "Football - Front-of-jersey (A-League Women)"}
+   {
+    "deal": "Uber Eats x Real Madrid",
+    "sub": "Football - Official delivery partner, 3-year deal to 2029"
+   },
+   {
+    "deal": "LendUX x Adelaide United",
+    "sub": "A-League Women - Front-of-jersey, 2-year deal"
+   },
+   {
+    "deal": "Sports Direct Australia x Sydney FC",
+    "sub": "A-League Men - Partnership extension"
+   },
+   {
+    "deal": "Bravus x North Queensland Cowboys",
+    "sub": "NRLW - Sleeve sponsorship upgrade"
+   },
+   {
+    "deal": "Europcar x New Zealand Breakers",
+    "sub": "NBL - Sponsorship expansion"
+   }
   ]
  },
  "stories": [
-  {"tag": "Deal of the day", "deal": "L'Oréal x PSG", "property": "Paris Saint-Germain",
-   "points": ["L'Oréal's first football club", "Vichy: skincare & haircare", "Runs to 2028"]},
-  {"tag": "Also today", "deal": "LendUX x Adelaide United", "property": "Adelaide United",
-   "points": ["Front-of-jersey, A-League Women", "Two-year deal"]}
+  {
+   "tag": "Deal of the day",
+   "deal": "L'Oréal x PSG",
+   "property": "Paris Saint-Germain",
+   "points": [
+    "L'Oréal's first football club",
+    "Vichy: skincare & haircare",
+    "Runs to 2028"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Uber Eats x Real Madrid",
+   "property": "Real Madrid",
+   "points": [
+    "Official delivery partner",
+    "Three years, to 2029"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "LendUX x Adelaide United",
+   "property": "Adelaide United",
+   "points": [
+    "A-League Women front-of-jersey",
+    "Two-year deal"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Sports Direct Australia x Sydney FC",
+   "property": "Sydney FC",
+   "points": [
+    "A-League Men",
+    "Partnership extension"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Bravus x North Queensland Cowboys",
+   "property": "North Queensland Cowboys",
+   "points": [
+    "NRLW sleeve sponsor",
+    "Upgraded deal"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Europcar x New Zealand Breakers",
+   "property": "New Zealand Breakers",
+   "points": [
+    "NBL",
+    "Sponsorship expansion"
+   ]
+  }
  ],
- "caption": "L'Oréal just signed its first ever football club, and it picked PSG.\n\nVichy becomes the official skincare and haircare partner of the men's first team through 2028, with scientists running skin and scalp studies at PSG Campus.\n\nAlso today: LendUX x Adelaide United (A-League Women, front-of-jersey).\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+ "caption": "L'Oréal just signed its first ever football sponsorship, and chose PSG to do it.\n\nThe French cosmetics giant is now the club's official beauty partner through 2028, landing with one of the most heavily backed clubs in Europe. Beauty brands usually sit in tennis and F1. Picking football says the audience around the men's game has gotten too big to ignore.\n\nAlso today: Uber Eats x Real Madrid, LendUX x Adelaide United, Sports Direct Australia x Sydney FC, Bravus x North Queensland Cowboys NRLW, Europcar x New Zealand Breakers.\n\nExpect more unlikely categories to follow L'Oréal into football before this cycle is out.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "story_time": "19:00"
 }
