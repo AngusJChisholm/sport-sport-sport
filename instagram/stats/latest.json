@@ -1,19 +1,19 @@
 {
- "date": "2026-10-13",
+ "date": "2026-10-14",
  "username": "sportsportsport.hq",
- "followers": 1,
- "followers_change_7d": 0,
+ "followers": 2,
+ "followers_change_7d": 1,
  "since": "2026-10-13",
- "posts_last_7d": 1,
+ "posts_last_7d": 2,
  "best_post_7d": {
-  "when": "Tue 13 Oct 16:18",
-  "hour": 16,
+  "when": "Tue 13 Oct 20:51",
+  "hour": 20,
   "weekday": "Tue",
-  "type": "FEED",
+  "type": "REELS",
   "likes": 0,
   "comments": 0,
-  "caption": "L'Oréal just signed its first ever football sponsorship, and chose PSG to do it.",
-  "link": "https://www.instagram.com/p/DebCm6VoAap/",
+  "caption": "L'Oréal's first ever football deal, in 15 seconds.",
+  "link": "https://www.instagram.com/reel/Debhx9ekooX/",
   "recent": true,
   "score": 0
  },
@@ -26,6 +26,11 @@
  },
  "best_time_slots": [
   {
+   "slot": "Tue 20:00",
+   "avg_score": 0.0,
+   "posts": 1
+  },
+  {
    "slot": "Tue 16:00",
    "avg_score": 0.0,
    "posts": 1
@@ -33,6 +38,18 @@
  ],
  "insights_available": false,
  "recent_posts": [
+  {
+   "when": "Tue 13 Oct 20:51",
+   "hour": 20,
+   "weekday": "Tue",
+   "type": "REELS",
+   "likes": 0,
+   "comments": 0,
+   "caption": "L'Oréal's first ever football deal, in 15 seconds.",
+   "link": "https://www.instagram.com/reel/Debhx9ekooX/",
+   "recent": true,
+   "score": 0
+  },
   {
    "when": "Tue 13 Oct 16:18",
    "hour": 16,
