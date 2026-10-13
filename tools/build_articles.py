@@ -42,6 +42,7 @@ def main():
     data = json.loads((ROOT / "deals.json").read_text(encoding="utf-8"))
     deals = data["deals"]
     linkedin = (data.get("site") or {}).get("linkedin", "")
+    instagram = (data.get("site") or {}).get("instagram", "")
     tpl = (ROOT / "tools" / "article_template.html").read_text(encoding="utf-8")
     out_dir = ROOT / "articles"
     out_dir.mkdir(exist_ok=True)
@@ -77,7 +78,8 @@ def main():
                 + "".join(rows)
                 + "</div></section>"
             )
-        follow = f'<a class="btn" href="{esc(linkedin)}" target="_blank" rel="noopener">Follow on LinkedIn</a>' if linkedin else ""
+        follow = (f'<a class="btn" href="{esc(linkedin)}" target="_blank" rel="noopener">Follow on LinkedIn</a>' if linkedin else "") + \
+                 (f'<a class="btn btn-o" href="{esc(instagram)}" target="_blank" rel="noopener">Follow on Instagram</a>' if instagram else "")
         title = e.get("headline") or e["deal"]
         page = (
             tpl.replace("{{TITLE}}", esc(f'{e["deal"]}: {title}'))

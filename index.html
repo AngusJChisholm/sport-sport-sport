@@ -39,6 +39,7 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(
 .wm{display:flex;flex-direction:column;align-items:center;font-weight:800;text-transform:uppercase;line-height:.8;letter-spacing:-.02em;transform:scaleX(.9);font-size:17px}
 .btn{font:inherit;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;background:var(--volt);color:var(--black);border:0;border-radius:0;padding:14px 22px;cursor:pointer;white-space:nowrap;display:inline-block}
 .btn:hover{background:var(--white);color:var(--black)}
+.btn-o{background:transparent;color:var(--white);border:1px solid var(--white);padding:13px 21px}.btn-o:hover{background:var(--white);color:var(--black)}
 .btn-ink{background:var(--black);color:var(--white)}.btn-ink:hover{background:#333;color:var(--white)}
 .tags{display:flex;flex-wrap:wrap;gap:6px}
 .tag{font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:6px 9px 5px;border:1px solid currentColor;line-height:1}
@@ -160,7 +161,7 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 
 <section class="dk fo" id="follow"><div class="wrap">
 <span class="lbl mute" style="display:block;margin-bottom:28px">Daily, Monday to Friday</span>
-<h2 class="disp">Every deal, every weekday. <span class="g">Follow along on LinkedIn.</span></h2>
+<h2 class="disp">Every deal, every weekday. <span class="g">Follow along on LinkedIn and Instagram.</span></h2>
 <div class="fo-a" id="foA"></div>
 </div></section>
 
@@ -231,9 +232,10 @@ function columns(){
   $("aList").innerHTML=DEALS.filter(d=>d.region==="ANZ").slice(0,4).map(row).join("");
 }
 function follow(){
-  const li=SITE.linkedin;
-  $("foA").innerHTML=li?`<a class="btn" href="${esc(li)}" target="_blank" rel="noopener">Follow on LinkedIn</a><p>Monday to Friday. The day's deals, in one post.</p>`:`<p>LinkedIn link coming soon.</p>`;
-  $("ftLi").innerHTML=li?`<a href="${esc(li)}" target="_blank" rel="noopener">LinkedIn</a>`:"";
+  const li=SITE.linkedin, ig=SITE.instagram;
+  const fb=(li?`<a class="btn" href="${esc(li)}" target="_blank" rel="noopener">Follow on LinkedIn</a>`:"")+(ig?`<a class="btn btn-o" href="${esc(ig)}" target="_blank" rel="noopener">Follow on Instagram</a>`:"");
+  $("foA").innerHTML=fb?`${fb}<p>Monday to Friday. The day's deals, every morning.</p>`:`<p>Socials coming soon.</p>`;
+  $("ftLi").innerHTML=(li?`<a href="${esc(li)}" target="_blank" rel="noopener">LinkedIn</a>`:"")+(ig?`<a href="${esc(ig)}" target="_blank" rel="noopener">Instagram</a>`:"");
 }
 function filters(){
   const sports=["All",...[...new Set(DEALS.map(d=>d.sport))].sort()];
