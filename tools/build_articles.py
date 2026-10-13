@@ -15,7 +15,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE_URL = "https://sportsportsport.netlify.app"
+SITE_URL = "https://angusjchisholm.github.io/sport-sport-sport"
 
 
 def make_slug(d, deal):

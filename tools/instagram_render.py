@@ -18,7 +18,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent.parent
 MEL = ZoneInfo("Australia/Melbourne")
 VOLT = "#D2FF3C"
-SITE_LABEL = "sportsportsport.netlify.app"
+SITE_LABEL = "Full archive - link in bio"
 
 FEED_W, FEED_H = 1080, 1350
 STORY_W, STORY_H = 1080, 1920

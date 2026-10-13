@@ -36,7 +36,7 @@ Then run `python3 tools/build_articles.py` to generate the pages. The homepage l
 
 Paste your LinkedIn page URL into `"linkedin": ""` at the top of `deals.json`. The Follow button and footer link switch on automatically.
 
-## Going live (Netlify, free)
+## Hosting (GitHub Pages, free)
 
 1. Create a GitHub repository and upload `index.html` and `deals.json`
 2. In Netlify: Add new site > Import from GitHub > pick the repository. No build settings needed
