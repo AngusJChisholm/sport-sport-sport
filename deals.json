@@ -1,0 +1,681 @@
+{
+ "site": {
+  "linkedin": "https://www.linkedin.com/company/sportsportsport/"
+ },
+ "deals": [
+  {
+   "date": "2026-10-13",
+   "deal": "L'Oréal × Paris Saint-Germain",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "lead": true,
+   "headline": "Beauty buys into football.",
+   "summary": "Official beauty partner through 2028. L'Oréal's first football sponsorship."
+  },
+  {
+   "date": "2026-10-13",
+   "deal": "Adelaide United (A-League Women) × LendUX",
+   "sport": "Football",
+   "type": "Front-of-jersey",
+   "region": "ANZ",
+   "summary": "Two-year front-of-jersey deal with a new South Australian finance company."
+  },
+  {
+   "date": "2026-10-12",
+   "deal": "MILO (Nestlé) × NBA",
+   "sport": "Basketball",
+   "type": "Official partner",
+   "region": "Global",
+   "lead": true,
+   "headline": "MILO goes to the NBA.",
+   "summary": "Multi-year deal across 21 markets including Australia and New Zealand, from January 2027."
+  },
+  {
+   "date": "2026-10-09",
+   "deal": "JD Sports × NZ Rugby League",
+   "sport": "Rugby league",
+   "type": "Major partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Sneakers hit rugby league.",
+   "summary": "Major Partner and Official Sneaker Supplier to the Kiwis, Kiwi Ferns and Wheelchair Kiwis."
+  },
+  {
+   "date": "2026-10-09",
+   "deal": "NBL × Optus / Virgin Australia",
+   "sport": "Basketball",
+   "type": "League partners",
+   "region": "ANZ",
+   "summary": "Part of 22 commercial partners locked in for NBL27."
+  },
+  {
+   "date": "2026-10-08",
+   "deal": "Arsenal × Topps",
+   "sport": "Football",
+   "type": "Licensing",
+   "region": "Global",
+   "summary": "Exclusive global trading card licence."
+  },
+  {
+   "date": "2026-10-08",
+   "deal": "NHL × Sofascore",
+   "sport": "Ice hockey",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Match analytics partner."
+  },
+  {
+   "date": "2026-10-08",
+   "deal": "adidas × French Rugby Federation",
+   "sport": "Rugby union",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Kit deal extended to 2036."
+  },
+  {
+   "date": "2026-10-07",
+   "deal": "Visa × 13 NFL teams",
+   "sport": "NFL",
+   "type": "Team partnerships",
+   "region": "Global",
+   "lead": true,
+   "headline": "Thirty years. Thirteen deals.",
+   "summary": "League-wide deal running since 1995 replaced by 13 club deals: seven new, four renewals, two existing."
+  },
+  {
+   "date": "2026-10-07",
+   "deal": "Asian Football Confederation × Visa",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Extended through 2029."
+  },
+  {
+   "date": "2026-10-07",
+   "deal": "Li-Ning × Global gymnastics",
+   "sport": "Gymnastics",
+   "type": "Global partner",
+   "region": "Global",
+   "summary": "Eight-year global gymnastics partnership."
+  },
+  {
+   "date": "2026-10-07",
+   "deal": "Sydney Airport × Rugby World Cup 2027",
+   "sport": "Rugby union",
+   "type": "Official partner",
+   "region": "ANZ"
+  },
+  {
+   "date": "2026-10-06",
+   "deal": "Bridgestone × Formula E",
+   "sport": "Motorsport",
+   "type": "Tyre supplier + title rounds",
+   "region": "Global",
+   "lead": true,
+   "headline": "Bridgestone goes electric.",
+   "summary": "Sole tyre supplier from 2026/27 with title billing on four rounds."
+  },
+  {
+   "date": "2026-10-06",
+   "deal": "Westfield × Western Sydney Wanderers",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Partnership stretched to 16 years."
+  },
+  {
+   "date": "2026-10-06",
+   "deal": "Nine × Australian Athletics",
+   "sport": "Athletics",
+   "type": "Broadcast rights",
+   "region": "ANZ",
+   "summary": "Rights locked in through to Brisbane 2032."
+  },
+  {
+   "date": "2026-10-05",
+   "deal": "First Community Credit Union × Rice Stadium",
+   "sport": "College sport",
+   "type": "Naming rights",
+   "region": "Global",
+   "lead": true,
+   "headline": "76 years. First name on it.",
+   "summary": "20-year deal, the stadium's first naming rights partner in 76 years."
+  },
+  {
+   "date": "2026-10-02",
+   "deal": "Coca-Cola Europacific Partners PNG × PNG Chiefs",
+   "sport": "NRL",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Coke backs the Chiefs early.",
+   "summary": "Sleeve branding and non-alcoholic beverage rights, two years before the club's debut."
+  },
+  {
+   "date": "2026-10-02",
+   "deal": "ASICS × Netball Australia",
+   "sport": "Netball",
+   "type": "Kit supplier",
+   "region": "ANZ",
+   "summary": "Upgraded to full head-to-toe kit ahead of Netball World Cup Sydney 2027."
+  },
+  {
+   "date": "2026-10-02",
+   "deal": "McLaren Racing × Edward Jones",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Wealth partner across F1 and INDYCAR."
+  },
+  {
+   "date": "2026-10-01",
+   "deal": "Philadelphia 76ers × Bloom Energy",
+   "sport": "Basketball",
+   "type": "Jersey patch",
+   "region": "Global",
+   "lead": true,
+   "headline": "Energy money hits the NBA.",
+   "summary": "Second-biggest jersey patch deal in NBA history, replacing Crypto.com."
+  },
+  {
+   "date": "2026-10-01",
+   "deal": "Phoenix Suns × Paze",
+   "sport": "Basketball",
+   "type": "Jersey patch",
+   "region": "Global",
+   "summary": "Replaces PayPal on the jersey."
+  },
+  {
+   "date": "2026-09-30",
+   "deal": "Friskies × six college mascots",
+   "sport": "College sport",
+   "type": "NIL",
+   "region": "Global",
+   "lead": true,
+   "headline": "Mascots get NIL deals.",
+   "summary": "First-of-its-kind mascot NIL deal via Learfield. Touchdowns trigger shelter cat meals."
+  },
+  {
+   "date": "2026-09-30",
+   "deal": "NBL × Nine",
+   "sport": "Basketball",
+   "type": "Broadcast rights",
+   "region": "ANZ",
+   "summary": "New free-to-air deal."
+  },
+  {
+   "date": "2026-09-29",
+   "deal": "Rugby Bricks × Sophie de Goede",
+   "sport": "Rugby union",
+   "type": "Signature product",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Equity in her own tee.",
+   "summary": "First signature kicking tee in women's rugby, with 20% of every sale to de Goede."
+  },
+  {
+   "date": "2026-09-29",
+   "deal": "NHL × Adobe",
+   "sport": "Ice hockey",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Official AI and Creative Partner."
+  },
+  {
+   "date": "2026-09-29",
+   "deal": "Cricket Australia × Decimal Data Group",
+   "sport": "Cricket",
+   "type": "Data partner",
+   "region": "ANZ",
+   "summary": "Exclusive betting data partner through 2031."
+  },
+  {
+   "date": "2026-09-28",
+   "deal": "Cal (Memorial Stadium) × Databricks",
+   "sport": "College sport",
+   "type": "Naming rights",
+   "region": "Global",
+   "lead": true,
+   "headline": "AI buys a stadium.",
+   "summary": "Field naming rights worth up to US$22.8M, now Databricks Field."
+  },
+  {
+   "date": "2026-09-28",
+   "deal": "NBL × Red Bull",
+   "sport": "Basketball",
+   "type": "League partner",
+   "region": "ANZ",
+   "summary": "League-wide energy drink partner."
+  },
+  {
+   "date": "2026-09-28",
+   "deal": "BCCI × Muthoot Fincorp",
+   "sport": "Cricket",
+   "type": "Title sponsorship",
+   "region": "Global",
+   "summary": "Title sponsor for home cricket through 2028."
+  },
+  {
+   "date": "2026-09-25",
+   "deal": "La Liga × LIGAS Gaming",
+   "sport": "Football",
+   "type": "Licensing",
+   "region": "Global",
+   "lead": true,
+   "headline": "La Liga deals itself in.",
+   "summary": "Exclusive global licence for real-money La Liga games outside Spain."
+  },
+  {
+   "date": "2026-09-25",
+   "deal": "Milwaukee Bucks × Uline",
+   "sport": "Basketball",
+   "type": "Jersey patch",
+   "region": "Global",
+   "summary": "Replaces Motorola Solutions."
+  },
+  {
+   "date": "2026-09-25",
+   "deal": "New Zealand Cricket × Genesis",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "First-ever major energy partner."
+  },
+  {
+   "date": "2026-09-24",
+   "deal": "Jersey Mike's × EFL Trophy",
+   "sport": "Football",
+   "type": "Title sponsorship",
+   "region": "Global",
+   "lead": true,
+   "headline": "A sub shop buys a trophy.",
+   "summary": "Five-year deal worth around £5M, the competition's biggest."
+  },
+  {
+   "date": "2026-09-21",
+   "deal": "Kylian Mbappé × On",
+   "sport": "Football",
+   "type": "Athlete endorsement",
+   "region": "Global",
+   "lead": true,
+   "headline": "Mbappé takes equity.",
+   "summary": "Leaves Nike after 20 years, taking equity instead of a standard fee."
+  },
+  {
+   "date": "2026-09-21",
+   "deal": "FedEx Freight × NASCAR Truck Series",
+   "sport": "Motorsport",
+   "type": "Title sponsorship",
+   "region": "Global",
+   "summary": "Title sponsor from 2027."
+  },
+  {
+   "date": "2026-09-21",
+   "deal": "Rakuten × Scuderia Ferrari HP",
+   "sport": "Motorsport",
+   "type": "Global partner",
+   "region": "Global",
+   "summary": "Global F1 partner from 2027."
+  },
+  {
+   "date": "2026-09-18",
+   "deal": "McLaren Racing × SharkNinja",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "lead": true,
+   "headline": "Kitchen gear meets the pit lane.",
+   "summary": "Multi-year deal across F1, IndyCar, Hypercar and F1 Academy, including R&D access."
+  },
+  {
+   "date": "2026-09-18",
+   "deal": "AAMI × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Two-year front-of-shirt deal across BBL and WBBL."
+  },
+  {
+   "date": "2026-09-17",
+   "deal": "Firmus Technologies × Cricket Tasmania",
+   "sport": "Cricket",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "AI on the cricket shirt.",
+   "summary": "Five years with the Hobart Hurricanes and Tasmanian Tigers, $1M+ to grassroots."
+  },
+  {
+   "date": "2026-09-17",
+   "deal": "Visa × Rugby World Cups (Australia)",
+   "sport": "Rugby union",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Backs both the men's and women's Rugby World Cups in Australia."
+  },
+  {
+   "date": "2026-09-17",
+   "deal": "Generali × Davis Cup",
+   "sport": "Tennis",
+   "type": "Presenting partner",
+   "region": "Global"
+  },
+  {
+   "date": "2026-09-16",
+   "deal": "adidas × Benfica",
+   "sport": "Football",
+   "type": "Kit extension + naming rights",
+   "region": "Global",
+   "lead": true,
+   "headline": "adidas names the academy.",
+   "summary": "Kit deal to 2033, reported at €120M, plus naming rights to the Seixal academy."
+  },
+  {
+   "date": "2026-09-16",
+   "deal": "FIBA × Tissot",
+   "sport": "Basketball",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Partnership extended into a third decade."
+  },
+  {
+   "date": "2026-09-16",
+   "deal": "Tasmania JackJumpers × Mega Rewards",
+   "sport": "Basketball",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "Game-day activation partner."
+  },
+  {
+   "month": "2026-09",
+   "deal": "Capital Power × Alpine Canada",
+   "sport": "Skiing",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Up to $25M over five years to eliminate athlete team fees."
+  },
+  {
+   "month": "2026-09",
+   "deal": "Lloyds Banking Group × England Rugby",
+   "sport": "Rugby union",
+   "type": "Back-of-shirt",
+   "region": "Global",
+   "summary": "First-ever back-of-shirt sponsor for the Red Roses and men's team."
+  },
+  {
+   "date": "2026-09-14",
+   "deal": "Sunderland × Shuffle",
+   "sport": "Football",
+   "type": "Sleeve sponsorship",
+   "region": "Global",
+   "lead": true,
+   "headline": "Crypto casino on the sleeve.",
+   "summary": "Unlicensed crypto casino lands Sunderland's sleeve sponsorship."
+  },
+  {
+   "date": "2026-09-14",
+   "deal": "Newcastle United × LeoVegas / BetMGM",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global"
+  },
+  {
+   "date": "2026-09-14",
+   "deal": "Fenway Sports Group × WTGL / Boston Common Golf",
+   "sport": "Golf",
+   "type": "Franchise ownership",
+   "region": "Global"
+  },
+  {
+   "date": "2026-09-14",
+   "deal": "MGI Golf × UNLV Athletics",
+   "sport": "College sport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Electric caddy partnership."
+  },
+  {
+   "date": "2026-09-14",
+   "deal": "BLAST × Mongolian Esports Association",
+   "sport": "Esports",
+   "type": "Tournament hosting",
+   "region": "Global"
+  },
+  {
+   "month": "2026-09",
+   "deal": "PNG Chiefs × BSP Financial Group",
+   "sport": "NRL",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Biggest club sponsorship in NRL history, as Principal Foundation Partner."
+  },
+  {
+   "month": "2026-09",
+   "deal": "Firmus Technologies × Tasmania Devils",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Six-year deal, branding on shorts and coach polos before the club's 2028 debut."
+  },
+  {
+   "month": "2026-09",
+   "deal": "Salomon × IRONMAN",
+   "sport": "Endurance",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Five-year global partnership."
+  },
+  {
+   "month": "2026-09",
+   "deal": "Mortgage Choice × NBL / WNBL",
+   "sport": "Basketball",
+   "type": "Expansion",
+   "region": "ANZ"
+  },
+  {
+   "month": "2026-09",
+   "deal": "Hydro Flask × NZ Rugby League",
+   "sport": "Rugby league",
+   "type": "Official supplier",
+   "region": "ANZ"
+  },
+  {
+   "month": "2026-09",
+   "deal": "1xBet × PGL",
+   "sport": "Esports",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Bookmaker extension."
+  },
+  {
+   "date": "2026-09-09",
+   "deal": "Liverpool FC × Turkish Airlines",
+   "sport": "Football",
+   "type": "Shirt sponsorship",
+   "region": "Global",
+   "lead": true,
+   "headline": "Record shirt. Record deal.",
+   "summary": "Record shirt sponsorship for Liverpool."
+  },
+  {
+   "date": "2026-09-09",
+   "deal": "Toyota Australia × NFL Melbourne Game",
+   "sport": "NFL",
+   "type": "Partnership",
+   "region": "ANZ"
+  },
+  {
+   "date": "2026-09-09",
+   "deal": "Manchester United × SumUp",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global"
+  },
+  {
+   "date": "2026-09-09",
+   "deal": "BCCI × Campa / SBI Life / ChatGPT",
+   "sport": "Cricket",
+   "type": "Partnership",
+   "region": "Global"
+  },
+  {
+   "date": "2026-09-09",
+   "deal": "Rogers × Edmonton Oilers / Rogers Place",
+   "sport": "Ice hockey",
+   "type": "Partnership",
+   "region": "Global"
+  },
+  {
+   "date": "2026-09-09",
+   "deal": "Melbourne Mavericks × Cobram Estate",
+   "sport": "Netball",
+   "type": "Partnership",
+   "region": "ANZ"
+  },
+  {
+   "date": "2026-09-08",
+   "deal": "Starbucks × Toulouse FC",
+   "sport": "Football",
+   "type": "Shirt sponsorship",
+   "region": "Global",
+   "lead": true,
+   "headline": "Starbucks goes front of shirt.",
+   "summary": "Starbucks' first-ever football shirt sponsorship."
+  },
+  {
+   "date": "2026-09-08",
+   "deal": "Hyundai × UEFA Champions League",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global"
+  },
+  {
+   "date": "2026-09-08",
+   "deal": "Commonwealth Bank × LeadStory",
+   "sport": "Sport business",
+   "type": "Partnership",
+   "region": "ANZ"
+  },
+  {
+   "date": "2026-09-08",
+   "deal": "UEFA × STRAUSS",
+   "sport": "Football",
+   "type": "Official supplier",
+   "region": "Global",
+   "summary": "Referee kit."
+  },
+  {
+   "date": "2026-09-08",
+   "deal": "Brisbane Bullets × LSKD",
+   "sport": "Basketball",
+   "type": "Partnership",
+   "region": "ANZ"
+  },
+  {
+   "date": "2026-09-08",
+   "deal": "Australian Turf Club × Toyota Material Handling",
+   "sport": "Racing",
+   "type": "Partnership",
+   "region": "ANZ"
+  },
+  {
+   "date": "2026-09-07",
+   "deal": "FSU Athletics × Kin Insurance",
+   "sport": "College sport",
+   "type": "Jersey patch",
+   "region": "Global",
+   "lead": true,
+   "headline": "One patch. Eighteen sports.",
+   "summary": "Jersey patch across 18 FSU sports."
+  },
+  {
+   "date": "2026-09-07",
+   "deal": "Haier × UEFA Champions League",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global"
+  },
+  {
+   "date": "2026-09-07",
+   "deal": "Live Nation ANZ × DoorDash",
+   "sport": "Entertainment",
+   "type": "Partnership",
+   "region": "ANZ"
+  },
+  {
+   "date": "2026-09-07",
+   "deal": "Puma × A$AP Rocky",
+   "sport": "Football",
+   "type": "Kit collaboration",
+   "region": "Global",
+   "summary": "Man City and AC Milan kits."
+  },
+  {
+   "date": "2026-09-07",
+   "deal": "Tennessee Athletics × First Horizon Bank",
+   "sport": "College sport",
+   "type": "Partnership",
+   "region": "Global"
+  },
+  {
+   "date": "2026-09-07",
+   "deal": "Melbourne Victory × Elite Eleven",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "ANZ"
+  },
+  {
+   "date": "2026-09-06",
+   "deal": "Kayo Sports / Binge × Surfing Super League",
+   "sport": "Surfing",
+   "type": "Broadcast rights",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Surfing gets its streamer.",
+   "summary": "Broadcast rights deal for the Surfing Super League."
+  },
+  {
+   "date": "2026-09-06",
+   "deal": "GWM × NZ Warriors",
+   "sport": "NRL",
+   "type": "Partnership",
+   "region": "ANZ"
+  },
+  {
+   "date": "2026-09-06",
+   "deal": "Old El Paso × Melbourne Stars",
+   "sport": "Cricket",
+   "type": "Partnership",
+   "region": "ANZ"
+  },
+  {
+   "date": "2026-09-06",
+   "deal": "NFL × TikTok",
+   "sport": "NFL",
+   "type": "Partnership",
+   "region": "Global"
+  },
+  {
+   "date": "2026-09-06",
+   "deal": "UEFA × Hisense",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global"
+  },
+  {
+   "date": "2026-09-06",
+   "deal": "Melbourne Vixens × AXS",
+   "sport": "Netball",
+   "type": "Partnership",
+   "region": "ANZ"
+  },
+  {
+   "date": "2026-09-06",
+   "deal": "Canberra Raiders × Club Lime",
+   "sport": "NRL",
+   "type": "Partnership",
+   "region": "ANZ"
+  }
+ ]
+}
