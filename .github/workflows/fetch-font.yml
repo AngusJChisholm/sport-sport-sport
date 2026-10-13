@@ -1,0 +1,26 @@
+name: Fetch Archivo font (one-off)
+
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/fetch-font.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download Archivo (SIL OFL) and remove this one-off workflow
+        run: |
+          mkdir -p assets/fonts
+          curl -fsSL -o "assets/fonts/Archivo[wdth,wght].ttf" "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf"
+          curl -fsSL -o assets/fonts/OFL.txt "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt"
+          git rm -q .github/workflows/fetch-font.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add assets/fonts
+          git commit -m "Add Archivo brand font for offline graphic renders [skip netlify]"
+          git push
