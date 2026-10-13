@@ -1,0 +1,22 @@
+{
+ "at": "2026-10-13T15:55+11:00",
+ "login": "facebook",
+ "account": {
+  "id": "17841421029030442",
+  "followers_count": 0,
+  "username": "sportsportsport.hq"
+ },
+ "publishing_limit": {
+  "data": [
+   {
+    "quota_usage": 0,
+    "config": {
+     "quota_total": 100,
+     "quota_duration": 86400
+    }
+   }
+  ]
+ },
+ "dry_run_container": "FINISHED (not published)",
+ "ok": true
+}
