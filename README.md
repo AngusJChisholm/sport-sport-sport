@@ -50,6 +50,10 @@ Every weekday the 6am update writes `instagram/queue/<date>.json` (the day's sli
 
 - Stories: 8am every weekday
 - Carousel: Mon 7pm, Tue 7pm, Wed 12pm, Thu 9am, Fri 6pm (Fridays are "The week in deals")
+- Reel (animated version of the carousel, shown in the Reels tab): Mon/Tue 8:30pm, Wed/Thu 7pm, Fri 8pm
+- Evergreen carousel ("The breakdown"): Tuesdays 12pm
+- Stats: a daily snapshot lands in `instagram/stats/latest.json`; the Friday 6am message summarises it
+- Tags and collab invites only use handles verified on official websites; if Instagram rejects one, the post goes out without it
 
 **Stop a post:** set `"hold": true` in that day's queue file (editable in the GitHub app). **Pause everything:** add an empty file called `instagram/PAUSE`; delete it to resume.
 
