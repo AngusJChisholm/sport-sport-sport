@@ -1,7 +1,7 @@
 {
  "date": "2026-10-13",
  "hold": true,
- "_note": "Test render only. hold:true means this day never posts.",
+ "_note": "Test render only. hold:true means this day renders but never posts.",
  "feed": {
   "kind": "daily",
   "cover": {

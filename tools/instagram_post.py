@@ -86,13 +86,14 @@ def plan():
         out["reason"] = "paused (instagram/PAUSE exists)"
     elif not p["queue"].exists():
         out["reason"] = "no queue file for today yet"
-    elif load(p["queue"]).get("hold"):
-        out["reason"] = "today is on hold"
     else:
         state = load(p["state"], {})
         q = load(p["queue"])
         rendered = p["manifest"].exists() and load(p["manifest"]).get("queue_mtime") == q_stamp(p["queue"])
         out["render"] = t.time() >= RENDER_FROM and not rendered
+        if q.get("hold"):
+            out["reason"] = f"render={out['render']}, posting on hold today"
+            return out
         stories_due = q.get("stories") and not state.get("stories_done") and STORY_TIME <= t.time() < STORY_CUTOFF
         feed_due = not state.get("feed_done") and FEED_TIMES[t.weekday()] <= t.time() < FEED_CUTOFF
         out["post"] = bool(stories_due or feed_due)
@@ -190,6 +191,9 @@ def do_post():
     p = paths(date)
     q = load(p["queue"])
     m = load(p["manifest"])
+    if q.get("hold") or (ROOT / "instagram" / "PAUSE").exists():
+        print("On hold, not posting")
+        return
     if not m:
         print("Not rendered yet")
         return
