@@ -22,6 +22,16 @@ Add new entries to the top of the `deals` list in `deals.json`:
 
 The newest dated lead story always becomes the hero, and the other deals from that same day fill the round-up.
 
+## Lead deal articles
+
+Every lead deal gets its own article page in `articles/`. Add an `article` to the lead entry in `deals.json`:
+
+```json
+"article": {"standfirst": "One-sentence hook.", "body": ["Paragraph one.", "Paragraph two."], "close": "Closing line."}
+```
+
+Then run `python3 tools/build_articles.py` to generate the pages. The homepage links each lead to its article automatically.
+
 ## Your LinkedIn link
 
 Paste your LinkedIn page URL into `"linkedin": ""` at the top of `deals.json`. The Follow button and footer link switch on automatically.

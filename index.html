@@ -71,6 +71,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;border-bottom:
 .row{display:grid;grid-template-columns:74px minmax(0,1fr);gap:18px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line)}
 .row .d{font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);font-variant-numeric:tabular-nums}
 .row b{display:block;font-weight:800;text-transform:uppercase;letter-spacing:-.03em;font-size:20px;line-height:1.05;overflow-wrap:anywhere}
+a.row:hover b,a.ar-r:hover b{text-decoration:underline;text-underline-offset:4px}
 .row span.x{display:block;font-size:14px;color:var(--ink-3);margin-top:6px}
 .fo{padding-block:clamp(72px,10vw,160px)}
 .fo h2{font-size:clamp(48px,8.4vw,140px)}
@@ -188,7 +189,9 @@ const fmtArch=d=>d.date?dObj(d).toLocaleDateString("en-AU",{day:"2-digit",month:
 const fmtLong=d=>dObj(d).toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
 const fmtDots=d=>{const x=dObj(d);return String(x.getDate()).padStart(2,"0")+"."+String(x.getMonth()+1).padStart(2,"0")+"."+String(x.getFullYear()).slice(2)};
 const tags=d=>`<span class="tag">${esc(d.sport)}</span>${d.type?`<span class="tag">${esc(d.type)}</span>`:""}<span class="tag r">${esc(d.region)}</span>`;
-const link=(d,label)=>d.url?`<a href="${esc(d.url)}" class="more" target="_blank" rel="noopener">${label}</a>`:"";
+const href=d=>d.slug&&d.article?{h:`articles/${encodeURIComponent(d.slug)}.html`,ext:false}:(d.url?{h:d.url,ext:true}:null);
+const attrs=d=>{const x=href(d);return x?` href="${esc(x.h)}"${x.ext?' target="_blank" rel="noopener"':""}`:""};
+const link=(d,label)=>href(d)?`<a${attrs(d)} class="more">${label}</a>`:"";
 
 function hero(){
   const dated=DEALS.filter(d=>d.date);
@@ -201,18 +204,18 @@ function hero(){
   $("heroDek").textContent=lead.summary||"";
   $("heroDek").hidden=!lead.summary;
   $("heroShort").textContent=fmtDots(lead);
-  $("heroLink").innerHTML=link(lead,"Read the source →");
+  $("heroLink").innerHTML=link(lead,lead.article?"Read the full story →":"Read the source →");
   return lead;
 }
 function roundup(lead){
   const same=DEALS.filter(d=>d.date===lead.date&&d!==lead).slice(0,5);
   $("rCount").textContent=`${same.length} deal${same.length===1?"":"s"} · ${fmtDots(lead)}`;
-  const card=d=>{const tag=d.url?"a":"div";const attrs=d.url?` href="${esc(d.url)}" target="_blank" rel="noopener"`:"";
-    return `<${tag} class="card"${attrs}><div class="tags"><span class="tag">${esc(d.sport)}</span><span class="tag r">${esc(d.region)}</span></div><h3>${esc(d.deal)}</h3><p>${esc(d.summary||d.type||"")}</p>${d.url?'<span class="more">Read →</span>':""}</${tag}>`};
+  const card=d=>{const tag=href(d)?"a":"div";
+    return `<${tag} class="card"${attrs(d)}><div class="tags"><span class="tag">${esc(d.sport)}</span><span class="tag r">${esc(d.region)}</span></div><h3>${esc(d.deal)}</h3><p>${esc(d.summary||d.type||"")}</p>${href(d)?`<span class="more">${d.article?"Read the story →":"Read →"}</span>`:""}</${tag}>`};
   $("roundup").innerHTML=same.map(card).join("")+`<a href="#archive" class="card all" style="--span:${3-(same.length%3)}"><span class="lbl">The archive</span><h3>Every deal. Since day one.</h3><span class="more">Browse the archive →</span></a>`;
 }
 function columns(){
-  const row=d=>`<div class="row"><span class="d">${esc(fmtShort(d))}</span><span><b>${esc(d.deal)}</b><span class="x">${esc(d.sport)}${d.summary||d.type?" · "+esc(d.summary||d.type):""}</span></span></div>`;
+  const row=d=>`<${href(d)?"a":"div"} class="row"${attrs(d)}><span class="d">${esc(fmtShort(d))}</span><span><b>${esc(d.deal)}</b><span class="x">${esc(d.sport)}${d.summary||d.type?" · "+esc(d.summary||d.type):""}</span></span></${href(d)?"a":"div"}>`;
   $("gList").innerHTML=DEALS.filter(d=>d.region==="Global").slice(0,4).map(row).join("");
   $("aList").innerHTML=DEALS.filter(d=>d.region==="ANZ").slice(0,4).map(row).join("");
 }
@@ -229,8 +232,8 @@ function filters(){
 function render(){
   const latest=DEALS.find(d=>d.date);const now=latest?dObj(latest):new Date();
   const r=DEALS.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(!st.type||d.type===st.type)&&(!st.reg||d.region===st.reg)&&(!st.days||(d.date&&(now-dObj(d))/864e5<=+st.days)));
-  $("list").innerHTML=r.slice(0,shown).map(d=>{const tag=d.url?"a":"div";const attrs=d.url?` href="${esc(d.url)}" target="_blank" rel="noopener"`:"";
-    return `<${tag} class="ar-r"${attrs}><span class="d">${esc(fmtArch(d))}</span><b>${esc(d.deal)}</b><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.type||"")}</span><span><span class="tag r">${esc(d.region)}</span></span></${tag}>`}).join("");
+  $("list").innerHTML=r.slice(0,shown).map(d=>{const tag=href(d)?"a":"div";
+    return `<${tag} class="ar-r"${attrs(d)}><span class="d">${esc(fmtArch(d))}</span><b>${esc(d.deal)}</b><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.type||"")}</span><span><span class="tag r">${esc(d.region)}</span></span></${tag}>`}).join("");
   $("empty").hidden=r.length>0;
   $("count").textContent=`${r.length} of ${DEALS.length} deals`;
   $("moreBtn").parentElement.hidden=r.length<=shown;
