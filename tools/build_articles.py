@@ -61,8 +61,6 @@ def main():
         tags += f'<span class="tag r">{esc(e.get("region"))}</span>'
         body = "\n".join(f'<p class="b">{esc(p)}</p>' for p in a.get("body", []))
         source = ""
-        if e.get("url"):
-            source = f'<p class="src">Source: <a href="{esc(e["url"])}" target="_blank" rel="noopener">original announcement</a></p>'
         others = [o for o in deals if o.get("date") == e["date"] and o is not e]
         sameday = ""
         if others:
@@ -71,8 +69,6 @@ def main():
                 inner = f'<span><b>{esc(o["deal"])}</b><span class="x">{esc(o.get("sport"))} · {esc(o.get("summary") or o.get("type"))}</span></span><span>→</span>'
                 if o.get("slug") and o.get("article"):
                     rows.append(f'<a class="row" href="{esc(o["slug"])}.html">{inner}</a>')
-                elif o.get("url"):
-                    rows.append(f'<a class="row" href="{esc(o["url"])}" target="_blank" rel="noopener">{inner}</a>')
                 else:
                     rows.append(f'<div class="row">{inner[:-len("<span>→</span>")]}</div>')
             sameday = (

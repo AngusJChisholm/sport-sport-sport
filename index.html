@@ -189,7 +189,7 @@ const fmtArch=d=>d.date?dObj(d).toLocaleDateString("en-AU",{day:"2-digit",month:
 const fmtLong=d=>dObj(d).toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
 const fmtDots=d=>{const x=dObj(d);return String(x.getDate()).padStart(2,"0")+"."+String(x.getMonth()+1).padStart(2,"0")+"."+String(x.getFullYear()).slice(2)};
 const tags=d=>`<span class="tag">${esc(d.sport)}</span>${d.type?`<span class="tag">${esc(d.type)}</span>`:""}<span class="tag r">${esc(d.region)}</span>`;
-const href=d=>d.slug&&d.article?{h:`articles/${encodeURIComponent(d.slug)}.html`,ext:false}:(d.url?{h:d.url,ext:true}:null);
+const href=d=>d.slug&&d.article?{h:`articles/${encodeURIComponent(d.slug)}.html`,ext:false}:null;
 const attrs=d=>{const x=href(d);return x?` href="${esc(x.h)}"${x.ext?' target="_blank" rel="noopener"':""}`:""};
 const link=(d,label)=>href(d)?`<a${attrs(d)} class="more">${label}</a>`:"";
 
@@ -204,7 +204,7 @@ function hero(){
   $("heroDek").textContent=lead.summary||"";
   $("heroDek").hidden=!lead.summary;
   $("heroShort").textContent=fmtDots(lead);
-  $("heroLink").innerHTML=link(lead,lead.article?"Read the full story →":"Read the source →");
+  $("heroLink").innerHTML=link(lead,"Read the full story →");
   return lead;
 }
 function roundup(lead){
