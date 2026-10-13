@@ -5,7 +5,7 @@ on:
     - cron: "*/15 * * * *"
   push:
     branches: [main]
-    paths: ["instagram/queue/**"]
+    paths: ["instagram/queue/**", "instagram/CHECK"]
   workflow_dispatch:
     inputs:
       action:
@@ -56,3 +56,11 @@ jobs:
             echo "Instagram secrets not set yet - skipping posting"; exit 0
           fi
           python3 tools/instagram_post.py post
+
+      - name: Connection check
+        if: github.event_name == 'push' && contains(github.event.head_commit.message, '[ig-check]')
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_LOGIN: ${{ vars.IG_LOGIN }}
+        run: python3 tools/instagram_post.py check

@@ -29,7 +29,7 @@ IMG_BASE = f"https://raw.githubusercontent.com/{REPO}/main/ig"
 # "instagram" = Instagram API with Instagram login (60-day token, refreshed weekly).
 IG_LOGIN = os.environ.get("IG_LOGIN") or "facebook"
 API_HOST = "https://graph.facebook.com/" if IG_LOGIN == "facebook" else "https://graph.instagram.com/"
-API = API_HOST + os.environ.get("IG_API_VERSION", "v24.0")
+API = API_HOST + os.environ.get("IG_API_VERSION", "v26.0")
 
 STORY_TIME = dtime(8, 0)
 STORY_CUTOFF = dtime(15, 0)   # don't post the morning stories later than this
@@ -267,6 +267,27 @@ def maybe_refresh_token():
     print("Token refreshed")
 
 
+def check():
+    """Connection test: reads the account and makes (but never publishes) one image container."""
+    out = {"at": now().isoformat(timespec="minutes"), "login": IG_LOGIN}
+    try:
+        uid = os.environ["IG_USER_ID"]
+        out["account"] = api("GET", uid, fields="username,name,followers_count")
+        out["publishing_limit"] = api("GET", f"{uid}/content_publishing_limit", fields="quota_usage,config")
+        sample = f"{IMG_BASE}/2026-10-13/feed-1.jpg"
+        cid = api("POST", f"{uid}/media", image_url=sample)["id"]
+        wait_container(cid, timeout=120)
+        out["dry_run_container"] = "FINISHED (not published)"
+        out["ok"] = True
+    except Exception as e:
+        out["ok"] = False
+        out["error"] = str(e)[:800]
+    print(json.dumps(out, indent=1))
+    p = ROOT / "instagram" / "state" / "check.json"
+    save(p, out)
+    commit_push("Instagram connection check", p)
+
+
 def status():
     date = now().date().isoformat()
     p = paths(date)
@@ -285,5 +306,7 @@ if __name__ == "__main__":
         do_render()
     elif cmd == "post":
         do_post()
+    elif cmd == "check":
+        check()
     else:
         status()
