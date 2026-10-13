@@ -1,0 +1,49 @@
+{
+ "date": "2026-10-13",
+ "username": "sportsportsport.hq",
+ "followers": 1,
+ "followers_change_7d": 0,
+ "since": "2026-10-13",
+ "posts_last_7d": 1,
+ "best_post_7d": {
+  "when": "Tue 13 Oct 16:18",
+  "hour": 16,
+  "weekday": "Tue",
+  "type": "FEED",
+  "likes": 0,
+  "comments": 0,
+  "caption": "L'Oréal just signed its first ever football sponsorship, and chose PSG to do it.",
+  "link": "https://www.instagram.com/p/DebCm6VoAap/",
+  "recent": true,
+  "score": 0
+ },
+ "totals_7d": {
+  "likes": 0,
+  "comments": 0,
+  "saved": 0,
+  "shares": 0,
+  "reach": 0
+ },
+ "best_time_slots": [
+  {
+   "slot": "Tue 16:00",
+   "avg_score": 0.0,
+   "posts": 1
+  }
+ ],
+ "insights_available": false,
+ "recent_posts": [
+  {
+   "when": "Tue 13 Oct 16:18",
+   "hour": 16,
+   "weekday": "Tue",
+   "type": "FEED",
+   "likes": 0,
+   "comments": 0,
+   "caption": "L'Oréal just signed its first ever football sponsorship, and chose PSG to do it.",
+   "link": "https://www.instagram.com/p/DebCm6VoAap/",
+   "recent": true,
+   "score": 0
+  }
+ ]
+}
