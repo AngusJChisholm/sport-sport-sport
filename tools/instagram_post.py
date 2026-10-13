@@ -22,7 +22,9 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 MEL = ZoneInfo("Australia/Melbourne")
-SITE = os.environ.get("SITE_URL", "https://sportsportsport.netlify.app").rstrip("/")
+# Images are served straight from GitHub so Instagram work never triggers a Netlify deploy (credits).
+REPO = os.environ.get("GITHUB_REPOSITORY", "AngusJChisholm/sport-sport-sport")
+IMG_BASE = f"https://raw.githubusercontent.com/{REPO}/main/ig"
 API = "https://graph.instagram.com/" + os.environ.get("IG_API_VERSION", "v24.0")
 
 STORY_TIME = dtime(8, 0)
@@ -63,7 +65,7 @@ def commit_push(message, *files):
     if not git("status", "--porcelain"):
         return
     git("-c", "user.name=SSS Instagram bot", "-c", "user.email=actions@users.noreply.github.com",
-        "commit", "-m", message)
+        "commit", "-m", message + " [skip netlify]")
     for attempt in range(4):
         try:
             git("pull", "--rebase", "origin", "main")
@@ -115,12 +117,11 @@ def do_render():
     manifest["queue_mtime"] = q_stamp(p["queue"])
     save(p["manifest"], manifest)
     commit_push(f"Instagram images for {date}", ROOT / "ig" / date)
-    wait_live([f"{SITE}/ig/{date}/{f}" for f in manifest["feed"] + manifest["stories"]][:1] +
-              [f"{SITE}/ig/{date}/manifest.json"], manifest)
+    wait_live([f"{IMG_BASE}/{date}/manifest.json"], manifest)
 
 
 def wait_live(urls, manifest=None, timeout=420):
-    """Wait until Netlify serves the new images (Instagram fetches them from there)."""
+    """Wait until GitHub serves the new images (Instagram fetches them from there)."""
     deadline = time.time() + timeout
     while time.time() < deadline:
         try:
@@ -133,7 +134,7 @@ def wait_live(urls, manifest=None, timeout=420):
                         live = json.loads(r.read())
                         ok = ok and live.get("rendered_at") == manifest.get("rendered_at")
             if ok:
-                print("Images are live on the site")
+                print("Images are live")
                 return True
         except Exception as e:
             print("waiting for deploy:", str(e)[:120])
@@ -197,8 +198,8 @@ def do_post():
     if not m:
         print("Not rendered yet")
         return
-    base = f"{SITE}/ig/{date}"
-    if not wait_live([f"{base}/manifest.json"], m, timeout=120):
+    base = f"{IMG_BASE}/{date}"
+    if not wait_live([f"{base}/manifest.json"], m, timeout=300):
         return
     uid = os.environ["IG_USER_ID"]
     state = load(p["state"], {"stories": {}})

@@ -1,0 +1,5 @@
+# Only deploy when the actual website changes. Each production deploy costs
+# 15 Netlify credits (free plan = 300/month), so Instagram images, bot state,
+# tools and docs never trigger one. Exit 0 = skip the build.
+[build]
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)ig' ':(exclude)instagram' ':(exclude)tools' ':(exclude).github' ':(exclude)README.md' ':(exclude)SOURCES.md' ':(exclude)netlify.toml'"

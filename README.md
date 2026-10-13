@@ -46,7 +46,7 @@ Every change pushed to GitHub (including the daily update) goes live in about a 
 
 ## Instagram autopilot
 
-Every weekday the 6am update writes `instagram/queue/<date>.json` (the day's slides, stories and caption). A GitHub Action (`.github/workflows/instagram.yml`) checks every 15 minutes, renders the images into `ig/<date>/` (published by Netlify so Instagram can fetch them) and posts on this schedule, Melbourne time:
+Every weekday the 6am update writes `instagram/queue/<date>.json` (the day's slides, stories and caption). A GitHub Action (`.github/workflows/instagram.yml`) checks every 15 minutes, renders the images into `ig/<date>/` (served from GitHub, so none of this uses Netlify credits) and posts on this schedule, Melbourne time:
 
 - Stories: 8am every weekday
 - Carousel: Mon 7pm, Tue 7pm, Wed 12pm, Thu 9am, Fri 6pm (Fridays are "The week in deals")
