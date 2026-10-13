@@ -550,22 +550,6 @@
    "summary": "Game-day activation partner."
   },
   {
-   "month": "2026-09",
-   "deal": "Capital Power × Alpine Canada",
-   "sport": "Skiing",
-   "type": "Partnership",
-   "region": "Global",
-   "summary": "Up to $25M over five years to eliminate athlete team fees."
-  },
-  {
-   "month": "2026-09",
-   "deal": "Lloyds Banking Group × England Rugby",
-   "sport": "Rugby union",
-   "type": "Back-of-shirt",
-   "region": "Global",
-   "summary": "First-ever back-of-shirt sponsor for the Red Roses and men's team."
-  },
-  {
    "date": "2026-09-14",
    "deal": "Shuffle × Sunderland",
    "sport": "Football",
@@ -612,52 +596,6 @@
    "sport": "Esports",
    "type": "Tournament hosting",
    "region": "Global"
-  },
-  {
-   "month": "2026-09",
-   "deal": "BSP Financial Group × PNG Chiefs",
-   "sport": "NRL",
-   "type": "Principal partner",
-   "region": "ANZ",
-   "summary": "Biggest club sponsorship in NRL history, as Principal Foundation Partner."
-  },
-  {
-   "month": "2026-09",
-   "deal": "Firmus Technologies × Tasmania Devils",
-   "sport": "AFL",
-   "type": "Official partner",
-   "region": "ANZ",
-   "summary": "Six-year deal, branding on shorts and coach polos before the club's 2028 debut."
-  },
-  {
-   "month": "2026-09",
-   "deal": "Salomon × IRONMAN",
-   "sport": "Endurance",
-   "type": "Official partner",
-   "region": "Global",
-   "summary": "Five-year global partnership."
-  },
-  {
-   "month": "2026-09",
-   "deal": "Mortgage Choice × NBL / WNBL",
-   "sport": "Basketball",
-   "type": "Expansion",
-   "region": "ANZ"
-  },
-  {
-   "month": "2026-09",
-   "deal": "Hydro Flask × NZ Rugby League",
-   "sport": "Rugby league",
-   "type": "Official supplier",
-   "region": "ANZ"
-  },
-  {
-   "month": "2026-09",
-   "deal": "1xBet × PGL",
-   "sport": "Esports",
-   "type": "Extension",
-   "region": "Global",
-   "summary": "Bookmaker extension."
   },
   {
    "date": "2026-09-09",
@@ -883,6 +821,1310 @@
    "sport": "NRL",
    "type": "Partnership",
    "region": "ANZ"
+  },
+  {
+   "date": "2026-09-04",
+   "deal": "Nike × London City Lionesses",
+   "sport": "Football",
+   "type": "Kit supplier",
+   "region": "Global",
+   "summary": "Owner Michele Kang says the shirt deal is worth more than some in the Premier League.",
+   "url": "https://www.sportspro.com/news/sponsorship-marketing/london-city-lionesses-nike-shirt-sponsorship-michele-kang-september-2026/"
+  },
+  {
+   "date": "2026-09-03",
+   "deal": "MyPlace × Penrith Panthers",
+   "sport": "NRL",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Principal partnership renewed for three more seasons.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-afl-scores-record-audience-as-370m-fans-tune-in/"
+  },
+  {
+   "month": "2026-09",
+   "deal": "Capital Power × Alpine Canada",
+   "sport": "Skiing",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Up to $25M over five years to eliminate athlete team fees."
+  },
+  {
+   "month": "2026-09",
+   "deal": "Lloyds Banking Group × England Rugby",
+   "sport": "Rugby union",
+   "type": "Back-of-shirt",
+   "region": "Global",
+   "summary": "First-ever back-of-shirt sponsor for the Red Roses and men's team."
+  },
+  {
+   "month": "2026-09",
+   "deal": "BSP Financial Group × PNG Chiefs",
+   "sport": "NRL",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Biggest club sponsorship in NRL history, as Principal Foundation Partner."
+  },
+  {
+   "month": "2026-09",
+   "deal": "Firmus Technologies × Tasmania Devils",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Six-year deal, branding on shorts and coach polos before the club's 2028 debut."
+  },
+  {
+   "month": "2026-09",
+   "deal": "Salomon × IRONMAN",
+   "sport": "Endurance",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Five-year global partnership."
+  },
+  {
+   "month": "2026-09",
+   "deal": "Mortgage Choice × NBL / WNBL",
+   "sport": "Basketball",
+   "type": "Expansion",
+   "region": "ANZ"
+  },
+  {
+   "month": "2026-09",
+   "deal": "Hydro Flask × NZ Rugby League",
+   "sport": "Rugby league",
+   "type": "Official supplier",
+   "region": "ANZ"
+  },
+  {
+   "month": "2026-09",
+   "deal": "1xBet × PGL",
+   "sport": "Esports",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Bookmaker extension."
+  },
+  {
+   "date": "2026-08-27",
+   "deal": "FPT × Chelsea",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Partnership extended as Chelsea grows its commercial and digital program.",
+   "url": "https://sportsmintmedia.com/chelsea-extend-fpt-partnership-as-commercial-and-digital-strategy-expands/"
+  },
+  {
+   "date": "2026-08-27",
+   "deal": "EGYPTAIR × FC Barcelona",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Exclusive airline rights across Barça's teams.",
+   "url": "https://sportsmintmedia.com/egyptair-secures-exclusive-airline-rights-across-fc-barcelona-teams/"
+  },
+  {
+   "date": "2026-08-27",
+   "deal": "Sportradar × EuroLeague",
+   "sport": "Basketball",
+   "type": "Data rights",
+   "region": "Global",
+   "summary": "Data and audiovisual betting rights for EuroLeague and EuroCup through 2031.",
+   "url": "https://sportsmintmedia.com/sportradar-secures-euroleague-and-eurocup-data-av-betting-rights-through-2031/"
+  },
+  {
+   "date": "2026-08-27",
+   "deal": "Under Armour × Kaylee McKeown",
+   "sport": "Swimming",
+   "type": "Athlete endorsement",
+   "region": "ANZ",
+   "summary": "Three-year deal through to the LA 2028 Olympics.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-under-armour-kaylee-mckeown-commit-to-the-2028-olympics/"
+  },
+  {
+   "date": "2026-08-27",
+   "deal": "Devil's Corner × Tasmania Devils",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official wine partner on a long-term deal.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-under-armour-kaylee-mckeown-commit-to-the-2028-olympics/"
+  },
+  {
+   "date": "2026-08-27",
+   "deal": "Dan Murphy's × NFL",
+   "sport": "NFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official retail liquor partner in Australia.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-under-armour-kaylee-mckeown-commit-to-the-2028-olympics/"
+  },
+  {
+   "date": "2026-08-27",
+   "deal": "The Sporting Globe × NFL",
+   "sport": "NFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official sports bar partner in Australia.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-under-armour-kaylee-mckeown-commit-to-the-2028-olympics/"
+  },
+  {
+   "date": "2026-08-26",
+   "deal": "Uber × PGA TOUR",
+   "sport": "Golf",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Dual roles covering rides and food delivery.",
+   "url": "https://sportsmintmedia.com/uber-lands-dual-pga-tour-sponsorship-roles-across-mobility-and-food-delivery/"
+  },
+  {
+   "date": "2026-08-25",
+   "deal": "Cromwell × Leicester City",
+   "sport": "Football",
+   "type": "Back-of-shirt",
+   "region": "Global",
+   "summary": "Back-of-shirt partner for 2026/27.",
+   "url": "https://sportsmintmedia.com/leicester-city-secure-cromwell-as-back-of-shirt-partner-for-2026-27-season/"
+  },
+  {
+   "date": "2026-08-25",
+   "deal": "Campbell's × NFL",
+   "sport": "NFL",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Partnership moves to Chunky Frozen Meals.",
+   "url": "https://sportsmintmedia.com/campbells-nfl-partnership-enters-new-era-with-chunky-frozen-meals/"
+  },
+  {
+   "date": "2026-08-21",
+   "deal": "PTP × Football Australia",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Partnership extended after hitting ten years.",
+   "url": "https://www.mi-3.com.au/21-08-2026/football-australia-and-ptp-extend-partnership-10-year"
+  },
+  {
+   "date": "2026-08-19",
+   "deal": "Harvey Norman × Hoops Capital",
+   "sport": "Basketball",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Extended deal to grow basketball in NSW.",
+   "url": "https://www.mi-3.com.au/19-08-2026/harvey-norman-extends-partnership-hoops-capital-boost-basketball-nsw"
+  },
+  {
+   "date": "2026-08-18",
+   "deal": "Kookaburra × Cricket Australia",
+   "sport": "Cricket",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Official ball and equipment supplier through 2030, a relationship over 80 years old.",
+   "url": "https://ministryofsport.com/cricket-australia-and-kookaburra-extend-long-standing-partnership-through-to-2030/"
+  },
+  {
+   "date": "2026-08-14",
+   "deal": "Anytime Fitness × Adelaide Crows",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official fitness partner.",
+   "url": "https://www.mi-3.com.au/14-08-2026/anytime-fitness-joins-adelaide-crows-official-fitness-partner"
+  },
+  {
+   "date": "2026-08-13",
+   "deal": "Chemist Warehouse × AFLW umpires",
+   "sport": "AFL",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "New deal backing AFLW umpires.",
+   "url": "https://www.mi-3.com.au/13-08-2026/chemist-warehouse-backs-aflw-umpires-new-sponsorship-deal"
+  },
+  {
+   "date": "2026-08-10",
+   "deal": "XTB × FC Porto",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Three-year deal focused on global fan engagement.",
+   "url": "https://sportsmintmedia.com/fc-porto-and-xtb-strike-three-year-deal-to-drive-global-fan-engagement/"
+  },
+  {
+   "date": "2026-08-10",
+   "deal": "adidas × Croatian Football Federation",
+   "sport": "Football",
+   "type": "Kit supplier",
+   "region": "Global",
+   "summary": "New federation partnership.",
+   "url": "https://sportsmintmedia.com/adidas-secures-croatia-partnership-as-federation-begins-new-commercial-era/"
+  },
+  {
+   "date": "2026-08-08",
+   "deal": "LONGi × FC Bayern",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "International commercial partner.",
+   "url": "https://sportsmintmedia.com/fc-bayern-land-longi-as-latest-international-commercial-partner/"
+  },
+  {
+   "date": "2026-08-08",
+   "deal": "mycar Tyre & Auto × Melbourne Stars",
+   "sport": "Cricket",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Joins the Stars as a major partner.",
+   "url": "https://sportsmintmedia.com/mycar-tyre-auto-joins-melbourne-stars-as-major-partner/"
+  },
+  {
+   "date": "2026-08-07",
+   "deal": "giffgaff × Formula E",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Formula E's first B Corp partner.",
+   "url": "https://sportsmintmedia.com/formula-e-secures-first-b-corp-partner-as-giffgaff-joins-championship/"
+  },
+  {
+   "date": "2026-08-07",
+   "deal": "Polymarket × New York Yankees",
+   "sport": "Baseball",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Prediction market expands its MLB footprint.",
+   "url": "https://sportsmintmedia.com/polymarket-expands-mlb-footprint-with-new-york-yankees-partnership/"
+  },
+  {
+   "date": "2026-08-06",
+   "deal": "Emirates × Arsenal",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Stadium naming rights renewed in a UK£70m deal, partnership runs through 2033.",
+   "url": "https://www.sportspro.com/sponsorship-marketing/arsenal-emirates-stadium-renewal-70-million-shirt-august-2026/"
+  },
+  {
+   "date": "2026-08-04",
+   "deal": "Betway × Manchester United",
+   "sport": "Football",
+   "type": "Training kit",
+   "region": "Global",
+   "summary": "UK£20m training kit deal.",
+   "url": "https://www.sportspro.com/news/sponsorship-marketing/sponsorship/manchester-united-strike-uk20m-betway-training-kit-deal/"
+  },
+  {
+   "date": "2026-08-03",
+   "deal": "Corporate Traveller × Perth Bears",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Coaches partner ahead of the 2027 debut.",
+   "url": "https://www.mi-3.com.au/03-08-2026/corporate-traveller-partners-perth-bears-coaches-partner-ahead-2027-nrl-debut"
+  },
+  {
+   "date": "2026-07-24",
+   "deal": "oOh!media × Cricket Australia",
+   "sport": "Cricket",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "Partner for the 2026-27 NRMA Insurance men's Test series.",
+   "url": "https://www.mi-3.com.au/24-07-2026/oohmedia-and-cricket-australia-partner-2026-27-nrma-insurance-mens-test-series"
+  },
+  {
+   "date": "2026-07-24",
+   "deal": "Harvey Norman / Westpac / KFC × NRLW",
+   "sport": "NRL",
+   "type": "Broadcast sponsorship",
+   "region": "ANZ",
+   "summary": "Renewed as sponsors of NRLW coverage on Foxtel and Kayo.",
+   "url": "https://www.mi-3.com.au/24-07-2026/harvey-norman-westpac-and-kfc-renew-sponsorship-2026-nrlw-season-foxtel-and-kayo-sports"
+  },
+  {
+   "date": "2026-07-23",
+   "deal": "ClickHouse × Fulham",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Flagship Premier League sponsorship through Fulham.",
+   "url": "https://sportsmintmedia.com/clickhouse-lands-flagship-premier-league-sponsorship-through-fulham-fc/"
+  },
+  {
+   "date": "2026-07-23",
+   "deal": "Albert × Los Angeles Lakers",
+   "sport": "Basketball",
+   "type": "Jersey patch",
+   "region": "Global",
+   "summary": "New Lakers jersey patch partner.",
+   "url": "https://sportsmintmedia.com/albert-secures-premium-lakers-jersey-patch-sponsorship/"
+  },
+  {
+   "date": "2026-07-23",
+   "deal": "Midnite × Middlesbrough",
+   "sport": "Football",
+   "type": "Shirt sponsorship",
+   "region": "Global",
+   "summary": "Front-of-shirt partner.",
+   "url": "https://sportsmintmedia.com/midnite-and-mr-vegas-secure-major-front-of-shirt-partnerships-with-middlesbrough-and-reading/"
+  },
+  {
+   "date": "2026-07-22",
+   "deal": "Hola Health × Cricket Australia",
+   "sport": "Cricket",
+   "type": "Back-of-shirt",
+   "region": "ANZ",
+   "summary": "Cricket Australia's first all-format back-of-shirt sponsor.",
+   "url": "https://sportsmintmedia.com/cricket-australia-unveils-first-ever-all-format-back-of-shirt-sponsorship-with-hola-health/"
+  },
+  {
+   "date": "2026-07-21",
+   "deal": "Spire Healthcare × Team GB",
+   "sport": "Olympics",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Exclusive healthcare services partner.",
+   "url": "https://sportsmintmedia.com/spire-healthcare-becomes-exclusive-healthcare-services-partner-of-team-gb/"
+  },
+  {
+   "date": "2026-07-15",
+   "deal": "Visit Rwanda × Aston Villa",
+   "sport": "Football",
+   "type": "Shirt sponsorship",
+   "region": "Global",
+   "summary": "Principal shirt deal reported at UK£20m a year.",
+   "url": "https://www.sportspro.com/news/sponsorship-marketing/aston-villa-visit-rwanda-shirt-principal-sponsorship-july-2026/"
+  },
+  {
+   "date": "2026-07-14",
+   "deal": "Monster Energy × Big 12",
+   "sport": "College sport",
+   "type": "Title sponsorship",
+   "region": "Global",
+   "summary": "Entitlement deal across football and basketball.",
+   "url": "https://sportsmintmedia.com/big-12-lands-monster-energy-entitlement-deal-for-football-and-basketball/"
+  },
+  {
+   "date": "2026-07-13",
+   "deal": "JPMorganChase × Dallas Mavericks",
+   "sport": "Basketball",
+   "type": "Jersey patch",
+   "region": "Global",
+   "summary": "The bank's first-ever NBA jersey patch.",
+   "url": "https://sportsmintmedia.com/dallas-mavericks-land-jpmorganchase-in-first-ever-nba-jersey-patch-partnership/"
+  },
+  {
+   "date": "2026-07-13",
+   "deal": "Chery UK × AFC Bournemouth",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Official automotive partner.",
+   "url": "https://sportsmintmedia.com/afc-bournemouth-bring-in-chery-uk-as-official-automotive-partner/"
+  },
+  {
+   "date": "2026-07-10",
+   "deal": "Firefox × Wrexham AFC",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "New commercial partner for Wrexham.",
+   "url": "https://sportsmintmedia.com/wrexham-afc-expand-commercial-portfolio-with-firefox-pact/"
+  },
+  {
+   "date": "2026-07-09",
+   "deal": "Youi × Rugby League World Cup 2026",
+   "sport": "Rugby league",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Major partner of the 2026 World Cup.",
+   "url": "https://www.mi-3.com.au/09-07-2026/youi-secures-major-partnership-2026-rugby-league-world-cup"
+  },
+  {
+   "month": "2026-07",
+   "deal": "BKT × Big Bash League",
+   "sport": "Cricket",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "BBL partnership extended and Cricket Australia deal renewed.",
+   "url": "https://www.tyrepress.com/2026/07/bkt-extends-big-bash-league-partnership-renews-cricket-australia-deal/"
+  },
+  {
+   "date": "2026-06-30",
+   "deal": "Coca-Cola × FC Bayern",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Partnership extended past 50 years.",
+   "url": "https://sportsmintmedia.com/fc-bayern-and-coca-cola-extend-landmark-partnership-beyond-50-years/"
+  },
+  {
+   "date": "2026-06-30",
+   "deal": "Fanatics × Sheffield United",
+   "sport": "Football",
+   "type": "Retail partner",
+   "region": "Global",
+   "summary": "Retail and merchandise partnership.",
+   "url": "https://sportsmintmedia.com/sheffield-united-strengthen-retail-strategy-with-fanatics-partnership/"
+  },
+  {
+   "date": "2026-06-27",
+   "deal": "IREN × Golden State Warriors",
+   "sport": "Basketball",
+   "type": "Jersey patch",
+   "region": "Global",
+   "summary": "Record-breaking jersey patch deal.",
+   "url": "https://sportsmintmedia.com/golden-state-lands-record-breaking-jersey-sponsorship-deal-with-iren/"
+  },
+  {
+   "date": "2026-06-26",
+   "deal": "Zscaler × Aston Martin F1",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Cybersecurity partner for the F1 team.",
+   "url": "https://sportsmintmedia.com/aston-martin-aramco-taps-zscaler-to-secure-next-generation-formula-1-operations/"
+  },
+  {
+   "date": "2026-06-26",
+   "deal": "Legora × Chelsea",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Official partner on a long-term deal.",
+   "url": "https://sportsmintmedia.com/chelsea-fc-onboard-legora-as-official-partner-in-long-term-agreement/"
+  },
+  {
+   "date": "2026-06-26",
+   "deal": "ALBAIK × AFC Asian Cup 2027",
+   "sport": "Football",
+   "type": "Global sponsor",
+   "region": "Global",
+   "summary": "Global sponsor of the 2027 Asian Cup in Saudi Arabia.",
+   "url": "https://sportsmintmedia.com/albaik-lands-global-sponsorship-deal-for-afc-asian-cup-saudi-arabia-2027/"
+  },
+  {
+   "date": "2026-06-11",
+   "deal": "ExpressVPN × FIFA World Cup 2026",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Major sponsorship of the 2026 World Cup.",
+   "url": "https://www.mi-3.com.au/11-06-2026/expressvpn-secures-major-sponsorship-2026-fifa-world-cup"
+  },
+  {
+   "date": "2026-06-10",
+   "deal": "Emirates × Real Madrid",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Extension reported at €100m, a European record.",
+   "url": "https://www.sportspro.com/news/sponsorship-marketing/real-madrid-emirates-record-sponsorship-june-2026/"
+  },
+  {
+   "date": "2026-06-10",
+   "deal": "Kraken × FIFA World Cup 2026",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Crypto partner of the World Cup.",
+   "url": "https://www.sportspro.com/news/sponsorship-marketing/fifa-world-cup-2026-kraken-ab-inbev-sponsorships-june-2026/"
+  },
+  {
+   "date": "2026-06-09",
+   "deal": "Range Rover × Wimbledon",
+   "sport": "Tennis",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Multi-year renewal.",
+   "url": "https://sportsmintmedia.com/range-rover-drives-forward-wimbledon-alliance-with-multi-year-renewal/"
+  },
+  {
+   "date": "2026-06-08",
+   "deal": "Salesforce × FIFA World Cup",
+   "sport": "Football",
+   "type": "Technology partner",
+   "region": "Global",
+   "summary": "Tech partner for the 2026 and 2027 World Cups.",
+   "url": "https://sportsmintmedia.com/fifa-taps-salesforce-to-power-operations-and-fan-engagement-for-2026-and-2027-world-cups/"
+  },
+  {
+   "date": "2026-06-06",
+   "deal": "Audi × FIS",
+   "sport": "Skiing",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Key commercial partner through 2030.",
+   "url": "https://sportsmintmedia.com/fis-retains-key-commercial-partner-as-audi-commits-through-2030/"
+  },
+  {
+   "date": "2026-06-04",
+   "deal": "Alibaba × UEFA",
+   "sport": "Football",
+   "type": "Technology partner",
+   "region": "Global",
+   "summary": "AI and cloud partnership.",
+   "url": "https://sportsmintmedia.com/alibaba-powers-uefas-digital-future-in-landmark-ai-and-cloud-partnership/"
+  },
+  {
+   "date": "2026-06-04",
+   "deal": "Westfield × SBS World Cup Fan Zones",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "Fan Zones for the 2026 World Cup across Australia.",
+   "url": "https://www.mi-3.com.au/04-06-2026/westfield-and-sbs-partner-fifa-world-cup-2026-fan-zones-across-australia"
+  },
+  {
+   "date": "2026-06-04",
+   "deal": "M.J. Bale × Socceroos",
+   "sport": "Football",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Official tailor deal renewed.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-tap-into-manlys-foz-ball-movement/"
+  },
+  {
+   "date": "2026-06-04",
+   "deal": "Kleenheat × Fremantle",
+   "sport": "AFL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Expanded to the AFLW program through the end of 2027.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-tap-into-manlys-foz-ball-movement/"
+  },
+  {
+   "date": "2026-05-28",
+   "deal": "Harvey Norman × Commonwealth Games Australia",
+   "sport": "Multi-sport",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official partner of the team for Glasgow 2026.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-harvey-norman-backs-aussie-athletes-in-commonwealth-games-gold-hunt/"
+  },
+  {
+   "date": "2026-05-28",
+   "deal": "HITIQ × Ebony Marinoff / Jamal Fogarty",
+   "sport": "Multi-sport",
+   "type": "Athlete endorsement",
+   "region": "ANZ",
+   "summary": "Ambassadors for the PROTEQT smart mouthguard.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-harvey-norman-backs-aussie-athletes-in-commonwealth-games-gold-hunt/"
+  },
+  {
+   "date": "2026-05-27",
+   "deal": "Gucci × Alpine F1",
+   "sport": "Motorsport",
+   "type": "Title sponsorship",
+   "region": "Global",
+   "summary": "Title partner from 2027, reported at US$150m.",
+   "url": "https://www.sportspro.com/news/alpine-gucci-f1-title-partner-sponsorship-2027-renault-kering-may-2026/"
+  },
+  {
+   "date": "2026-05-27",
+   "deal": "Paula's Choice × FIFA World Cup",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Official skincare sponsor for the 2026 and 2027 World Cups.",
+   "url": "https://www.mi-3.com.au/27-05-2026/paulas-choice-partners-fifa-world-cup-skincare-campaign"
+  },
+  {
+   "date": "2026-05-27",
+   "deal": "Coca-Cola × Football Australia",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "Major campaigns ahead of the World Cups.",
+   "url": "https://www.mi-3.com.au/27-05-2026/coca-cola-partners-football-australia-major-campaigns-ahead-world-cups"
+  },
+  {
+   "date": "2026-05-22",
+   "deal": "Paramount ANZ × APL",
+   "sport": "Football",
+   "type": "Broadcast rights",
+   "region": "ANZ",
+   "summary": "A-Leagues media rights extended three years.",
+   "url": "https://www.mi-3.com.au/22-05-2026/paramount-anz-and-apl-extend-media-rights-partnership-three-years"
+  },
+  {
+   "date": "2026-05-21",
+   "deal": "Afterpay × Qudos Bank Arena",
+   "sport": "Venues",
+   "type": "Naming rights",
+   "region": "ANZ",
+   "summary": "Sydney venue becomes Afterpay Arena for an initial five years.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-hawthorn-hawks-look-to-swoop-in-on-new-front-of-guernsey-sponsor/"
+  },
+  {
+   "date": "2026-05-21",
+   "deal": "Revo Fitness × Adelaide 36ers",
+   "sport": "Basketball",
+   "type": "Front-of-jersey",
+   "region": "ANZ",
+   "summary": "Upgraded from shorts to front-of-jersey, to 2029.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-hawthorn-hawks-look-to-swoop-in-on-new-front-of-guernsey-sponsor/"
+  },
+  {
+   "date": "2026-05-18",
+   "deal": "Polymarket × Serie A",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Official partner in the United States.",
+   "url": "https://sportsmintmedia.com/serie-a-brings-in-polymarket-as-official-partner-in-the-united-states/"
+  },
+  {
+   "date": "2026-05-15",
+   "deal": "Intel × McLaren Racing",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Official compute partner.",
+   "url": "https://sportsmintmedia.com/mclaren-racing-names-intel-as-official-compute-partner/"
+  },
+  {
+   "date": "2026-05-15",
+   "deal": "Public Investment Fund × FIFA World Cup 2026",
+   "sport": "Football",
+   "type": "Official supporter",
+   "region": "Global",
+   "summary": "Saudi fund signs as an official supporter.",
+   "url": "https://sportsmintmedia.com/public-investment-fund-signs-on-as-official-supporter-for-fifa-world-cup-2026/"
+  },
+  {
+   "date": "2026-05-14",
+   "deal": "Deel × Arsenal",
+   "sport": "Football",
+   "type": "Sleeve sponsorship",
+   "region": "Global",
+   "summary": "Sleeve partner from 2026/27, replacing Visit Rwanda.",
+   "url": "https://www.sportspro.com/news/sponsorship-marketing/arsenal-deel-shirt-sleeve-sponsorship-visit-rwanda-may-2026/"
+  },
+  {
+   "date": "2026-05-13",
+   "deal": "Turkish Airlines × England Golf",
+   "sport": "Golf",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Airline deepens its golf investment.",
+   "url": "https://sportsmintmedia.com/turkish-airlines-deepens-global-golf-investment-through-england-golf-deal/"
+  },
+  {
+   "date": "2026-05-13",
+   "deal": "Cisco × USGA",
+   "sport": "Golf",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Deal extended with an AI and digital focus.",
+   "url": "https://sportsmintmedia.com/cisco-extends-usga-deal-as-golf-embraces-ai-and-digital-transformation/"
+  },
+  {
+   "date": "2026-04-30",
+   "deal": "VoltX Energy × Manly Sea Eagles",
+   "sport": "NRL",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Upgraded to premier partner through at least 2028.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-hours-out-from-state-of-origin-gio-goes-blue-for-the-blues/"
+  },
+  {
+   "date": "2026-04-30",
+   "deal": "Dare Iced Coffee × Melbourne Storm",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Multi-year official partner.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-hours-out-from-state-of-origin-gio-goes-blue-for-the-blues/"
+  },
+  {
+   "date": "2026-04-29",
+   "deal": "Coca-Cola × NRL",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Three-year deal as official beverage partner of the NRL and NRLW.",
+   "url": "https://www.mi-3.com.au/29-04-2026/coca-cola-partners-nrl-three-year-sponsorship-deal"
+  },
+  {
+   "date": "2026-04-29",
+   "deal": "adidas × Bundesliga",
+   "sport": "Football",
+   "type": "Investment",
+   "region": "Global",
+   "summary": "€100m investment and strategic partnership with the DFL.",
+   "url": "https://www.sportspro.com/news/finance-investment/bundesliga-dfl-adidas-investment-strategic-partnership-april-2026/"
+  },
+  {
+   "date": "2026-04-29",
+   "deal": "CricViz × Cricket Australia",
+   "sport": "Cricket",
+   "type": "Data partner",
+   "region": "ANZ",
+   "summary": "Official data collection and high-performance partner.",
+   "url": "https://www.sportcal.com/news/cricket-australia-partners-with-cricviz-ecb-lands-cawston-press-as-sponsor/"
+  },
+  {
+   "date": "2026-04-29",
+   "deal": "Cawston Press × England Cricket",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Official soft drinks and drinks break partner.",
+   "url": "https://www.sportcal.com/news/cricket-australia-partners-with-cricviz-ecb-lands-cawston-press-as-sponsor/"
+  },
+  {
+   "date": "2026-04-23",
+   "deal": "Liquid I.V. × McLaren",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Performance and fan engagement partnership.",
+   "url": "https://sportsmintmedia.com/mclaren-taps-liquid-i-v-to-strengthen-performance-and-fan-engagement-strategy/"
+  },
+  {
+   "date": "2026-04-22",
+   "deal": "Samsung × Canada Soccer",
+   "sport": "Football",
+   "type": "Technology partner",
+   "region": "Global",
+   "summary": "Tech partner ahead of the home World Cup.",
+   "url": "https://sportsmintmedia.com/canada-soccer-adds-samsung-as-key-technology-partner-ahead-of-2026-world-cup/"
+  },
+  {
+   "date": "2026-04-20",
+   "deal": "BingX × Chelsea",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Stays as principal partner in an extended deal.",
+   "url": "https://sportsmintmedia.com/bingx-retains-principal-partner-status-at-chelsea-in-extended-agreement/"
+  },
+  {
+   "date": "2026-04-20",
+   "deal": "Y Series × NFL",
+   "sport": "NFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official wine sponsor of the NFL in ANZ.",
+   "url": "https://www.mi-3.com.au/20-04-2026/y-series-becomes-official-wine-sponsor-nfl-anz"
+  },
+  {
+   "date": "2026-04-17",
+   "deal": "XTB × FIBA",
+   "sport": "Basketball",
+   "type": "Global partner",
+   "region": "Global",
+   "summary": "Global partner until 2027.",
+   "url": "https://sportsmintmedia.com/fiba-secures-xtb-as-global-partner-until-2027/"
+  },
+  {
+   "date": "2026-04-16",
+   "deal": "BOSS × Australian Open",
+   "sport": "Tennis",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Official lifestyle outfitter from 2027.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-titans-ditch-lottery-office-logo-to-raise-awareness-for-youth-cancer/"
+  },
+  {
+   "date": "2026-04-16",
+   "deal": "Chemist Warehouse × AFL",
+   "sport": "AFL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Multi-year renewal including at least $1M over five years for umpiring.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-titans-ditch-lottery-office-logo-to-raise-awareness-for-youth-cancer/"
+  },
+  {
+   "date": "2026-04-16",
+   "deal": "Capgemini × RFU",
+   "sport": "Rugby union",
+   "type": "Technology partner",
+   "region": "Global",
+   "summary": "Technology partner for English rugby.",
+   "url": "https://sportsmintmedia.com/capgemini-to-drive-rfus-technology-evolution-under-new-partnership/"
+  },
+  {
+   "date": "2026-04-10",
+   "deal": "Meta × Arsenal",
+   "sport": "Football",
+   "type": "Global partner",
+   "region": "Global",
+   "summary": "Global partnership across WhatsApp and Facebook.",
+   "url": "https://www.sportspro.com/news/sponsorship-marketing/arsenal-meta-facebook-whatsapp-global-partnership-april-2026/"
+  },
+  {
+   "date": "2026-04-07",
+   "deal": "Virgin Australia × Carlton",
+   "sport": "AFL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Partnership extended three more years.",
+   "url": "https://www.mi-3.com.au/07-04-2026/virgin-australia-extends-partnership-carlton-football-club-three-more-years"
+  },
+  {
+   "date": "2026-04-07",
+   "deal": "ADI Predictstreet × FIFA World Cup",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Prediction market partner.",
+   "url": "https://www.sportspro.com/news/sponsorship-marketing/fifa-world-cup-adi-predictstreet-prediction-market-sponsorship-april-2026/"
+  },
+  {
+   "date": "2026-04-02",
+   "deal": "XFM × Perth Bears",
+   "sport": "NRL",
+   "type": "Jersey sponsor",
+   "region": "ANZ",
+   "summary": "Sternum sponsor for the club's first three seasons.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-xfm-to-drive-the-perth-bears-for-its-first-3-seasons/"
+  },
+  {
+   "date": "2026-04-02",
+   "deal": "Carpark King × Cronulla Sharks NRLW",
+   "sport": "NRL",
+   "type": "Shorts sponsor",
+   "region": "ANZ",
+   "summary": "Back-of-shorts sponsor for 2026 and 2027.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-xfm-to-drive-the-perth-bears-for-its-first-3-seasons/"
+  },
+  {
+   "month": "2026-04",
+   "deal": "Polymarket × Lazio",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Prediction market deal reported at US$22m.",
+   "url": "https://www.sportspro.com/sponsorship-marketing/lazio-polymarket-prediction-markets-sponsorship-serie-a-april-2026/"
+  },
+  {
+   "month": "2026-04",
+   "deal": "U.S. Bank × NFL",
+   "sport": "NFL",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Official bank and wealth management sponsor.",
+   "url": "https://www.sportspro.com/analysis/finance-investment/nfl-2026-season-tv-rights-sponsors-valuations-finances-commercial-preview/"
+  },
+  {
+   "month": "2026-04",
+   "deal": "PayPal × NFL",
+   "sport": "NFL",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Official peer-to-peer payments partner.",
+   "url": "https://www.sportspro.com/analysis/finance-investment/nfl-2026-season-tv-rights-sponsors-valuations-finances-commercial-preview/"
+  },
+  {
+   "date": "2026-03-30",
+   "deal": "Google Gemini × IPL",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "AI search partnership reported at US$28.5m.",
+   "url": "https://www.sportspro.com/sponsorship-marketing/google-gemini-ai-ip-cricket-march-2026/"
+  },
+  {
+   "date": "2026-03-27",
+   "deal": "Wolf Lubricants × WRC",
+   "sport": "Motorsport",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Extended to 2029.",
+   "url": "https://www.sportspro.com/sponsorship-marketing/wrc-world-rally-championship-wolf-lubricants-march-2029/"
+  },
+  {
+   "date": "2026-03-26",
+   "deal": "Dreame × Sydney Swans",
+   "sport": "AFL",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "Tech brand partners with the Swans to grow in Australia.",
+   "url": "https://www.mi-3.com.au/26-03-2026/dreame-technology-partners-sydney-swans-expand-australian-market-presence"
+  },
+  {
+   "date": "2026-03-24",
+   "deal": "THE ICONIC × Newcastle Knights NRLW",
+   "sport": "NRL",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "The retailer's first sports partnership.",
+   "url": "https://www.mi-3.com.au/24-03-2026/iconic-partners-newcastle-knights-2026-nrlw-season"
+  },
+  {
+   "date": "2026-03-20",
+   "deal": "Polymarket × MLB",
+   "sport": "Baseball",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Prediction market partnership.",
+   "url": "https://www.sportspro.com/news/betting/mlb-polymarket-predictions-market-deal-ctfc-march-2026/"
+  },
+  {
+   "date": "2026-03-19",
+   "deal": "Sprite × NBA",
+   "sport": "Basketball",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Returns as the NBA's global soft drink partner.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-tradies-limited-edition-sports-drink-takes-the-nrl-by-storm/"
+  },
+  {
+   "date": "2026-03-19",
+   "deal": "Sports Direct × Sydney FC",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official sports retailer.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-tradies-limited-edition-sports-drink-takes-the-nrl-by-storm/"
+  },
+  {
+   "date": "2026-03-17",
+   "deal": "Kettle Chips × ICC Women's T20 World Cup",
+   "sport": "Cricket",
+   "type": "Official supporter",
+   "region": "Global",
+   "summary": "Official supporter of the 2026 tournament.",
+   "url": "https://sportsmintmedia.com/kettle-chips-joins-icc-womens-t20-world-cup-2026-as-official-supporter/"
+  },
+  {
+   "date": "2026-03-14",
+   "deal": "AAMI × AFL",
+   "sport": "AFL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Major general insurance partner for at least three more years.",
+   "url": "https://www.ausleisure.com.au/news/afl-secures-major-partners-as-2026-premiership-season-gets-underway"
+  },
+  {
+   "date": "2026-03-14",
+   "deal": "Coles × AFL",
+   "sport": "AFL",
+   "type": "Naming rights",
+   "region": "ANZ",
+   "summary": "Naming rights to the Goal of the Year.",
+   "url": "https://www.ausleisure.com.au/news/afl-secures-major-partners-as-2026-premiership-season-gets-underway"
+  },
+  {
+   "date": "2026-03-14",
+   "deal": "CyberCX × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official cyber security partner and AFL Review Centre naming partner.",
+   "url": "https://www.ausleisure.com.au/news/afl-secures-major-partners-as-2026-premiership-season-gets-underway"
+  },
+  {
+   "date": "2026-03-14",
+   "deal": "TCL × AFL",
+   "sport": "AFL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Official TV and whitegoods partner through 2028.",
+   "url": "https://www.ausleisure.com.au/news/afl-secures-major-partners-as-2026-premiership-season-gets-underway"
+  },
+  {
+   "date": "2026-03-11",
+   "deal": "Gello Beans and Snakes × AFL",
+   "sport": "AFL",
+   "type": "Licensing",
+   "region": "ANZ",
+   "summary": "Five-year licensing deal.",
+   "url": "https://www.mi-3.com.au/11-03-2026/gello-beans-and-snakes-secure-afl-partnership-five-year-licensing-deal"
+  },
+  {
+   "date": "2026-03-05",
+   "deal": "Oracle × Red Bull Racing",
+   "sport": "Motorsport",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Title partnership extended and expanded.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-shift-into-gear-for-the-aussie-gp/"
+  },
+  {
+   "date": "2026-03-05",
+   "deal": "Boost Mobile × Supercars",
+   "sport": "Motorsport",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Telco partner through 2028 with an expanded role.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-shift-into-gear-for-the-aussie-gp/"
+  },
+  {
+   "date": "2026-03-05",
+   "deal": "City Fertility × South Sydney Rabbitohs",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official fertility partner.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-shift-into-gear-for-the-aussie-gp/"
+  },
+  {
+   "date": "2026-03-05",
+   "deal": "Brick Lane Brewing × Melbourne Storm",
+   "sport": "NRL",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "Co-branded Storm Lager.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-shift-into-gear-for-the-aussie-gp/"
+  },
+  {
+   "date": "2026-03-05",
+   "deal": "Carnival Cruise Line × Nine's NRL coverage",
+   "sport": "NRL",
+   "type": "Broadcast sponsorship",
+   "region": "ANZ",
+   "summary": "New Sunday afternoon NRL sponsor.",
+   "url": "https://www.mediaweek.com.au/brands-pile-into-nines-nrl-as-2026-season-kicks-off"
+  },
+  {
+   "date": "2026-03-05",
+   "deal": "Jim Beam × Nine's NRL coverage",
+   "sport": "NRL",
+   "type": "Broadcast sponsorship",
+   "region": "ANZ",
+   "summary": "New Sunday afternoon NRL sponsor.",
+   "url": "https://www.mediaweek.com.au/brands-pile-into-nines-nrl-as-2026-season-kicks-off"
+  },
+  {
+   "month": "2026-03",
+   "deal": "Carabao × EFL",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "League Cup title sponsorship extended to 2029.",
+   "url": "https://www.sportspro.com/news/sponsorship-marketing/efl-carabao-cup-sponsorship-history-march-2026/"
+  },
+  {
+   "date": "2026-02-26",
+   "deal": "Atlas Building × Perth Bears",
+   "sport": "NRL",
+   "type": "Back-of-jersey",
+   "region": "ANZ",
+   "summary": "Back-of-jersey sponsor.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-lace-up-for-upcoming-nrl-afl-seasons/"
+  },
+  {
+   "date": "2026-02-26",
+   "deal": "Ingenia Holiday Parks × North Queensland Cowboys",
+   "sport": "NRL",
+   "type": "Presenting partner",
+   "region": "ANZ",
+   "summary": "Multi-year presenting partner until October 2027.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-lace-up-for-upcoming-nrl-afl-seasons/"
+  },
+  {
+   "date": "2026-02-26",
+   "deal": "Revolut × Hawthorn",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Gold partner for 2026.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-lace-up-for-upcoming-nrl-afl-seasons/"
+  },
+  {
+   "date": "2026-02-26",
+   "deal": "MUFG Pension & Market Services × Sydney Swans",
+   "sport": "AFL",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Premier partner for three seasons.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-lace-up-for-upcoming-nrl-afl-seasons/"
+  },
+  {
+   "date": "2026-02-26",
+   "deal": "Reebok × Jack Ginnivan",
+   "sport": "AFL",
+   "type": "Athlete endorsement",
+   "region": "ANZ",
+   "summary": "Multi-year deal with the Hawthorn forward.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-lace-up-for-upcoming-nrl-afl-seasons/"
+  },
+  {
+   "date": "2026-02-12",
+   "deal": "Blundstone × Tasmania Devils",
+   "sport": "AFL",
+   "type": "Foundation partner",
+   "region": "ANZ",
+   "summary": "Seven-year guernsey deal, the club's first foundation partner.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-afl-flies-into-its-15th-season-with-virgin-australia/"
+  },
+  {
+   "date": "2026-02-12",
+   "deal": "Sephora × WNBL",
+   "sport": "Basketball",
+   "type": "Foundation partner",
+   "region": "ANZ",
+   "summary": "Foundation and official beauty partner.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-afl-flies-into-its-15th-season-with-virgin-australia/"
+  },
+  {
+   "date": "2026-02-06",
+   "deal": "Vinarchy × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Grant Burge becomes official wine partner of the AFL, AFLW and Marvel Stadium for four years.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-pounce-on-the-afl-ahead-of-2026-season/"
+  },
+  {
+   "date": "2026-02-06",
+   "deal": "KFC × Collingwood",
+   "sport": "AFL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Premier partner renewed for five years.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-pounce-on-the-afl-ahead-of-2026-season/"
+  },
+  {
+   "date": "2026-02-06",
+   "deal": "Anthropic × Williams F1",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Claude becomes the team's official thinking partner.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-pounce-on-the-afl-ahead-of-2026-season/"
+  },
+  {
+   "date": "2026-02-06",
+   "deal": "Hahn × Ripper GC",
+   "sport": "Golf",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official sponsor of the LIV Golf team.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-pounce-on-the-afl-ahead-of-2026-season/"
+  },
+  {
+   "date": "2026-02-06",
+   "deal": "Kelme × Brisbane Roar",
+   "sport": "Football",
+   "type": "Kit supplier",
+   "region": "ANZ",
+   "summary": "Three-year apparel partnership.",
+   "url": "https://www.mi-3.com.au/06-02-2026/brisbane-roar-secures-three-year-apparel-partnership-kelme"
+  },
+  {
+   "date": "2026-02-05",
+   "deal": "Virgin Australia × AFL",
+   "sport": "AFL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Five more years as official airline, through 2030.",
+   "url": "https://www.virginaustralia.com/au/en/newsroom/2026/2/virgin-australia-and-afl-kick-off-major-new-partnership/"
+  },
+  {
+   "month": "2026-02",
+   "deal": "Visa × Racing Bulls",
+   "sport": "Motorsport",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Title sponsorship extended in a wider Red Bull deal.",
+   "url": "https://www.sportspro.com/news/red-bull-racing-bulls-visa-f1-sponsorship-february-2026/"
+  },
+  {
+   "month": "2026-02",
+   "deal": "TWG AI × Cadillac F1",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Cadillac's F1 team promotes TWG's AI technology.",
+   "url": "https://www.sportspro.com/news/cadillac-f1-twg-ai-sponsorship-february-2026/"
+  },
+  {
+   "month": "2026-02",
+   "deal": "IFS × Chelsea",
+   "sport": "Football",
+   "type": "Shirt sponsorship",
+   "region": "Global",
+   "summary": "Short-term shirt deal to the end of 2025/26.",
+   "url": "https://www.sportspro.com/news/sponsorship-marketing/chelsea-ifs-jersey-shirt-sponsorship-deal-february-2026/"
+  },
+  {
+   "date": "2026-01-28",
+   "deal": "McDonald's × Perth Bears",
+   "sport": "NRL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Three-year major partner, 2026 to 2028.",
+   "url": "https://www.nrl.com/news/2026/01/28/perth-bears-and-mcdonalds-team-up-for-family-first-major-partnership/"
+  },
+  {
+   "date": "2026-01-15",
+   "deal": "ANZ × Australian Open",
+   "sport": "Tennis",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Official bank and ANZ Arena naming, a 16-year relationship.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-set-to-face-off-inside-rod-laver-arena/"
+  },
+  {
+   "date": "2026-01-15",
+   "deal": "a2 Milk × Australian Open",
+   "sport": "Tennis",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official dairy milk partner.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-set-to-face-off-inside-rod-laver-arena/"
+  },
+  {
+   "date": "2026-01-15",
+   "deal": "Lipton Ice Tea × Australian Open",
+   "sport": "Tennis",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official ice tea.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-set-to-face-off-inside-rod-laver-arena/"
+  },
+  {
+   "date": "2026-01-15",
+   "deal": "Jacob's Creek × Australian Open",
+   "sport": "Tennis",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Back as official wine partner.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-set-to-face-off-inside-rod-laver-arena/"
+  },
+  {
+   "date": "2026-01-15",
+   "deal": "Altos × Australian Open",
+   "sport": "Tennis",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Official tequila.",
+   "url": "https://www.bandt.com.au/spotlight-on-sponsors-brands-set-to-face-off-inside-rod-laver-arena/"
+  },
+  {
+   "date": "2026-01-13",
+   "deal": "Nexo × Dallas Open",
+   "sport": "Tennis",
+   "type": "Title sponsorship",
+   "region": "Global",
+   "summary": "First-ever title partner of the ATP 500 event.",
+   "url": "https://sportsmintmedia.com/nexo-becomes-first-ever-title-partner-of-u-s-atp-500-dallas-open/"
+  },
+  {
+   "date": "2026-01-12",
+   "deal": "Tommy Hilfiger × Liverpool FC",
+   "sport": "Football",
+   "type": "Global partner",
+   "region": "Global",
+   "summary": "Global partnership with the club.",
+   "url": "https://sportsmintmedia.com/liverpool-fc-forge-global-partnership-with-tommy-hilfiger/"
+  },
+  {
+   "date": "2026-01-09",
+   "deal": "Marriott Bonvoy × ICC",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Travel experiences for cricket fans.",
+   "url": "https://sportsmintmedia.com/icc-and-marriott-bonvoy-join-hands-to-redefine-travel-experiences-for-global-fans/"
+  },
+  {
+   "month": "2026-01",
+   "deal": "Meta × UFC",
+   "sport": "MMA",
+   "type": "Naming rights",
+   "region": "Global",
+   "summary": "Naming rights to the UFC Apex venue.",
+   "url": "https://www.sportspro.com/news/sponsorship-marketing/ufc-meta-apex-venue-naming-rights-sponsorship-january-2026/"
   }
  ]
 }
