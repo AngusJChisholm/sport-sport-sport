@@ -15,7 +15,7 @@
   },
   {
    "date": "2026-10-13",
-   "deal": "Adelaide United (A-League Women) × LendUX",
+   "deal": "LendUX × Adelaide United (A-League Women)",
    "sport": "Football",
    "type": "Front-of-jersey",
    "region": "ANZ",
@@ -43,7 +43,7 @@
   },
   {
    "date": "2026-10-09",
-   "deal": "NBL × Optus / Virgin Australia",
+   "deal": "Optus / Virgin Australia × NBL",
    "sport": "Basketball",
    "type": "League partners",
    "region": "ANZ",
@@ -51,7 +51,7 @@
   },
   {
    "date": "2026-10-08",
-   "deal": "Arsenal × Topps",
+   "deal": "Topps × Arsenal",
    "sport": "Football",
    "type": "Licensing",
    "region": "Global",
@@ -59,7 +59,7 @@
   },
   {
    "date": "2026-10-08",
-   "deal": "NHL × Sofascore",
+   "deal": "Sofascore × NHL",
    "sport": "Ice hockey",
    "type": "Official partner",
    "region": "Global",
@@ -85,7 +85,7 @@
   },
   {
    "date": "2026-10-07",
-   "deal": "Asian Football Confederation × Visa",
+   "deal": "Visa × Asian Football Confederation",
    "sport": "Football",
    "type": "Extension",
    "region": "Global",
@@ -162,7 +162,7 @@
   },
   {
    "date": "2026-10-02",
-   "deal": "McLaren Racing × Edward Jones",
+   "deal": "Edward Jones × McLaren Racing",
    "sport": "Motorsport",
    "type": "Official partner",
    "region": "Global",
@@ -170,7 +170,7 @@
   },
   {
    "date": "2026-10-01",
-   "deal": "Philadelphia 76ers × Bloom Energy",
+   "deal": "Bloom Energy × Philadelphia 76ers",
    "sport": "Basketball",
    "type": "Jersey patch",
    "region": "Global",
@@ -180,7 +180,7 @@
   },
   {
    "date": "2026-10-01",
-   "deal": "Phoenix Suns × Paze",
+   "deal": "Paze × Phoenix Suns",
    "sport": "Basketball",
    "type": "Jersey patch",
    "region": "Global",
@@ -198,7 +198,7 @@
   },
   {
    "date": "2026-09-30",
-   "deal": "NBL × Nine",
+   "deal": "Nine × NBL",
    "sport": "Basketball",
    "type": "Broadcast rights",
    "region": "ANZ",
@@ -216,7 +216,7 @@
   },
   {
    "date": "2026-09-29",
-   "deal": "NHL × Adobe",
+   "deal": "Adobe × NHL",
    "sport": "Ice hockey",
    "type": "Official partner",
    "region": "Global",
@@ -224,7 +224,7 @@
   },
   {
    "date": "2026-09-29",
-   "deal": "Cricket Australia × Decimal Data Group",
+   "deal": "Decimal Data Group × Cricket Australia",
    "sport": "Cricket",
    "type": "Data partner",
    "region": "ANZ",
@@ -232,7 +232,7 @@
   },
   {
    "date": "2026-09-28",
-   "deal": "Cal (Memorial Stadium) × Databricks",
+   "deal": "Databricks × Cal (Memorial Stadium)",
    "sport": "College sport",
    "type": "Naming rights",
    "region": "Global",
@@ -242,7 +242,7 @@
   },
   {
    "date": "2026-09-28",
-   "deal": "NBL × Red Bull",
+   "deal": "Red Bull × NBL",
    "sport": "Basketball",
    "type": "League partner",
    "region": "ANZ",
@@ -250,7 +250,7 @@
   },
   {
    "date": "2026-09-28",
-   "deal": "BCCI × Muthoot Fincorp",
+   "deal": "Muthoot Fincorp × BCCI",
    "sport": "Cricket",
    "type": "Title sponsorship",
    "region": "Global",
@@ -258,7 +258,7 @@
   },
   {
    "date": "2026-09-25",
-   "deal": "La Liga × LIGAS Gaming",
+   "deal": "LIGAS Gaming × La Liga",
    "sport": "Football",
    "type": "Licensing",
    "region": "Global",
@@ -268,7 +268,7 @@
   },
   {
    "date": "2026-09-25",
-   "deal": "Milwaukee Bucks × Uline",
+   "deal": "Uline × Milwaukee Bucks",
    "sport": "Basketball",
    "type": "Jersey patch",
    "region": "Global",
@@ -276,7 +276,7 @@
   },
   {
    "date": "2026-09-25",
-   "deal": "New Zealand Cricket × Genesis",
+   "deal": "Genesis × New Zealand Cricket",
    "sport": "Cricket",
    "type": "Official partner",
    "region": "ANZ",
@@ -294,7 +294,7 @@
   },
   {
    "date": "2026-09-21",
-   "deal": "Kylian Mbappé × On",
+   "deal": "On × Kylian Mbappé",
    "sport": "Football",
    "type": "Athlete endorsement",
    "region": "Global",
@@ -320,7 +320,7 @@
   },
   {
    "date": "2026-09-18",
-   "deal": "McLaren Racing × SharkNinja",
+   "deal": "SharkNinja × McLaren Racing",
    "sport": "Motorsport",
    "type": "Official partner",
    "region": "Global",
@@ -373,7 +373,7 @@
   },
   {
    "date": "2026-09-16",
-   "deal": "FIBA × Tissot",
+   "deal": "Tissot × FIBA",
    "sport": "Basketball",
    "type": "Extension",
    "region": "Global",
@@ -381,7 +381,7 @@
   },
   {
    "date": "2026-09-16",
-   "deal": "Tasmania JackJumpers × Mega Rewards",
+   "deal": "Mega Rewards × Tasmania JackJumpers",
    "sport": "Basketball",
    "type": "Partnership",
    "region": "ANZ",
@@ -405,7 +405,7 @@
   },
   {
    "date": "2026-09-14",
-   "deal": "Sunderland × Shuffle",
+   "deal": "Shuffle × Sunderland",
    "sport": "Football",
    "type": "Sleeve sponsorship",
    "region": "Global",
@@ -415,7 +415,7 @@
   },
   {
    "date": "2026-09-14",
-   "deal": "Newcastle United × LeoVegas / BetMGM",
+   "deal": "LeoVegas / BetMGM × Newcastle United",
    "sport": "Football",
    "type": "Extension",
    "region": "Global"
@@ -444,7 +444,7 @@
   },
   {
    "month": "2026-09",
-   "deal": "PNG Chiefs × BSP Financial Group",
+   "deal": "BSP Financial Group × PNG Chiefs",
    "sport": "NRL",
    "type": "Principal partner",
    "region": "ANZ",
@@ -490,7 +490,7 @@
   },
   {
    "date": "2026-09-09",
-   "deal": "Liverpool FC × Turkish Airlines",
+   "deal": "Turkish Airlines × Liverpool FC",
    "sport": "Football",
    "type": "Shirt sponsorship",
    "region": "Global",
@@ -507,14 +507,14 @@
   },
   {
    "date": "2026-09-09",
-   "deal": "Manchester United × SumUp",
+   "deal": "SumUp × Manchester United",
    "sport": "Football",
    "type": "Partnership",
    "region": "Global"
   },
   {
    "date": "2026-09-09",
-   "deal": "BCCI × Campa / SBI Life / ChatGPT",
+   "deal": "Campa / SBI Life / ChatGPT × BCCI",
    "sport": "Cricket",
    "type": "Partnership",
    "region": "Global"
@@ -528,7 +528,7 @@
   },
   {
    "date": "2026-09-09",
-   "deal": "Melbourne Mavericks × Cobram Estate",
+   "deal": "Cobram Estate × Melbourne Mavericks",
    "sport": "Netball",
    "type": "Partnership",
    "region": "ANZ"
@@ -559,7 +559,7 @@
   },
   {
    "date": "2026-09-08",
-   "deal": "UEFA × STRAUSS",
+   "deal": "STRAUSS × UEFA",
    "sport": "Football",
    "type": "Official supplier",
    "region": "Global",
@@ -567,21 +567,21 @@
   },
   {
    "date": "2026-09-08",
-   "deal": "Brisbane Bullets × LSKD",
+   "deal": "LSKD × Brisbane Bullets",
    "sport": "Basketball",
    "type": "Partnership",
    "region": "ANZ"
   },
   {
    "date": "2026-09-08",
-   "deal": "Australian Turf Club × Toyota Material Handling",
+   "deal": "Toyota Material Handling × Australian Turf Club",
    "sport": "Racing",
    "type": "Partnership",
    "region": "ANZ"
   },
   {
    "date": "2026-09-07",
-   "deal": "FSU Athletics × Kin Insurance",
+   "deal": "Kin Insurance × FSU Athletics",
    "sport": "College sport",
    "type": "Jersey patch",
    "region": "Global",
@@ -598,7 +598,7 @@
   },
   {
    "date": "2026-09-07",
-   "deal": "Live Nation ANZ × DoorDash",
+   "deal": "DoorDash × Live Nation ANZ",
    "sport": "Entertainment",
    "type": "Partnership",
    "region": "ANZ"
@@ -613,14 +613,14 @@
   },
   {
    "date": "2026-09-07",
-   "deal": "Tennessee Athletics × First Horizon Bank",
+   "deal": "First Horizon Bank × Tennessee Athletics",
    "sport": "College sport",
    "type": "Partnership",
    "region": "Global"
   },
   {
    "date": "2026-09-07",
-   "deal": "Melbourne Victory × Elite Eleven",
+   "deal": "Elite Eleven × Melbourne Victory",
    "sport": "Football",
    "type": "Partnership",
    "region": "ANZ"
@@ -651,28 +651,28 @@
   },
   {
    "date": "2026-09-06",
-   "deal": "NFL × TikTok",
+   "deal": "TikTok × NFL",
    "sport": "NFL",
    "type": "Partnership",
    "region": "Global"
   },
   {
    "date": "2026-09-06",
-   "deal": "UEFA × Hisense",
+   "deal": "Hisense × UEFA",
    "sport": "Football",
    "type": "Partnership",
    "region": "Global"
   },
   {
    "date": "2026-09-06",
-   "deal": "Melbourne Vixens × AXS",
+   "deal": "AXS × Melbourne Vixens",
    "sport": "Netball",
    "type": "Partnership",
    "region": "ANZ"
   },
   {
    "date": "2026-09-06",
-   "deal": "Canberra Raiders × Club Lime",
+   "deal": "Club Lime × Canberra Raiders",
    "sport": "NRL",
    "type": "Partnership",
    "region": "ANZ"
