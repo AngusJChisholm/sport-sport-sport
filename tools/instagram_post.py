@@ -387,6 +387,12 @@ def check():
         cid = api("POST", f"{uid}/media", image_url=sample)["id"]
         wait_container(cid, timeout=120)
         out["dry_run_container"] = "FINISHED (not published)"
+        m = load(paths(now().date().isoformat())["manifest"]) or {}
+        if m.get("reel"):
+            url = f"{PAGES_BASE}/{m['date']}/{m['reel']}"
+            rid = api("POST", f"{uid}/media", media_type="REELS", video_url=url, share_to_feed="false")["id"]
+            wait_container(rid, timeout=600)
+            out["dry_run_reel"] = "FINISHED (not published)"
         out["ok"] = True
     except Exception as e:
         out["ok"] = False
