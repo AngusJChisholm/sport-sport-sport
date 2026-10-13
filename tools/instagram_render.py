@@ -142,9 +142,9 @@ def feed_close(n, total):
 </div>"""
 
 
-def week_item(item, idx, n, total):
+def week_item(item, idx, n, total, label="The week in deals"):
     return f"""<div class="frame">
-<div class="top"><div class="lbl">The week in deals</div>{counter(n, total)}</div>
+<div class="top"><div class="lbl">{esc(label)}</div>{counter(n, total)}</div>
 <div style="display:flex;flex-direction:column;gap:36px">
 <div class="disp v" style="font-size:220px">{idx:02d}</div>
 <h2 class="disp" data-fit="420" style="font-size:132px">{esc(item['deal'])}</h2>
@@ -191,6 +191,64 @@ def build_feed(feed):
         else:
             slides.append(feed_close(n, total))
     return slides
+
+
+def build_evergreen(ev):
+    """Weekly evergreen carousel: cover, one numbered slide per item, close."""
+    items = ev["items"][:8]
+    total = len(items) + 2
+    label = ev.get("label", "The breakdown")
+    slides = [feed_cover({"tag": label, "region": ev.get("region", ""),
+                          "headline": ev["headline"], "highlight": ev.get("highlight"),
+                          "deal": ev.get("descriptor", "")})]
+    for i, it in enumerate(items, 1):
+        slides.append(week_item({"deal": it["title"], "sub": it.get("sub", ""), "sport": it.get("tag", "")},
+                                i, i + 1, total, label))
+    slides.append(feed_close(total, total))
+    return slides
+
+
+# ---------- reel (motion video from the carousel) ----------
+
+def make_reel(images, out_path, per=3.2, fade=0.4):
+    """Slides centred on a 9:16 black frame, slow push-in, crossfades, silent audio track."""
+    import subprocess
+    fps = 30
+    n = len(images)
+    total = n * per - (n - 1) * fade
+    cmd = ["ffmpeg", "-y", "-loglevel", "error"]
+    for img in images:
+        cmd += ["-loop", "1", "-framerate", str(fps), "-t", f"{per}", "-i", str(img)]
+    cmd += ["-f", "lavfi", "-t", f"{total:.2f}", "-i", "anullsrc=r=44100:cl=stereo"]
+    frames = int(per * fps)
+    parts = []
+    for i in range(n):
+        parts.append(
+            f"[{i}:v]scale=1080:1350,pad=1080:1920:0:285:black,scale=2160:3840,"
+            f"zoompan=z='1+0.035*on/{frames}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1080x1920:fps={fps},"
+            f"setsar=1,format=yuv420p[v{i}]")
+    last = "v0"
+    for i in range(1, n):
+        off = i * (per - fade)
+        parts.append(f"[{last}][v{i}]xfade=transition=fade:duration={fade}:offset={off:.2f}[x{i}]")
+        last = f"x{i}"
+    cmd += ["-filter_complex", ";".join(parts), "-map", f"[{last}]", "-map", f"{n}:a",
+            "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-pix_fmt", "yuv420p", "-r", str(fps),
+            "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart", str(out_path)]
+    subprocess.run(cmd, check=True)
+
+
+def prune(keep_days=21):
+    """Drop image folders older than keep_days so the repo and site stay small."""
+    import shutil
+    from datetime import date as _d, timedelta
+    cutoff = _d.today() - timedelta(days=keep_days)
+    for d in (ROOT / "ig").glob("20*-*-*"):
+        try:
+            if _d.fromisoformat(d.name) < cutoff:
+                shutil.rmtree(d)
+        except ValueError:
+            pass
 
 
 # ---------- story frames (club colours) ----------
@@ -251,12 +309,15 @@ def render(date):
     q = json.loads((ROOT / "instagram" / "queue" / f"{date}.json").read_text())
     out = ROOT / "ig" / date
     out.mkdir(parents=True, exist_ok=True)
-    for old in out.glob("*.jpg"):
+    for old in list(out.glob("*.jpg")) + list(out.glob("*.mp4")):
         old.unlink()
 
     jobs = [(f"feed-{i}.jpg", page(s, FEED_W, FEED_H, "#000000", "#FFFFFF", FEED_CSS), FEED_W, FEED_H)
             for i, s in enumerate(build_feed(q["feed"]), 1)]
     jobs += [(f"story-{i}.jpg", story(s), STORY_W, STORY_H) for i, s in enumerate(q.get("stories", []), 1)]
+    if q.get("evergreen"):
+        jobs += [(f"evergreen-{i}.jpg", page(s, FEED_W, FEED_H, "#000000", "#FFFFFF", FEED_CSS), FEED_W, FEED_H)
+                 for i, s in enumerate(build_evergreen(q["evergreen"]), 1)]
 
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -268,10 +329,21 @@ def render(date):
             pg.close()
         browser.close()
 
+    feed_files = [j[0] for j in jobs if j[0].startswith("feed-")]
+    reel = None
+    if q.get("reel", True) and feed_files:
+        try:
+            make_reel([out / f for f in feed_files], out / "reel.mp4")
+            reel = "reel.mp4"
+        except Exception as e:
+            print("Reel render failed (carousel and stories unaffected):", e)
+    prune()
     manifest = {
         "date": date,
-        "feed": [j[0] for j in jobs if j[0].startswith("feed-")],
+        "feed": feed_files,
         "stories": [j[0] for j in jobs if j[0].startswith("story-")],
+        "evergreen": [j[0] for j in jobs if j[0].startswith("evergreen-")],
+        "reel": reel,
         "rendered_at": datetime.now(MEL).isoformat(timespec="seconds"),
     }
     (out / "manifest.json").write_text(json.dumps(manifest, indent=1))

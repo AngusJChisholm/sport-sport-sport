@@ -36,6 +36,12 @@ STORY_CUTOFF = dtime(15, 0)   # don't post the morning stories later than this
 FEED_TIMES = {0: dtime(19, 0), 1: dtime(19, 0), 2: dtime(12, 0), 3: dtime(9, 0), 4: dtime(18, 0)}
 FEED_CUTOFF = dtime(23, 0)
 RENDER_FROM = dtime(5, 30)
+REEL_TIMES = {0: dtime(20, 30), 1: dtime(20, 30), 2: dtime(19, 0), 3: dtime(19, 0), 4: dtime(20, 0)}
+EVERGREEN_TIME = dtime(12, 0)   # the 6am task only adds an evergreen carousel on Tuesdays
+LATE_CUTOFF = dtime(23, 30)
+STATS_FROM = dtime(4, 45)       # before the 6am task, which reads the stats on Fridays
+# Videos load from GitHub Pages (served as video/mp4, which Instagram needs for Reels).
+PAGES_BASE = os.environ.get("PAGES_URL", "https://angusjchisholm.github.io/sport-sport-sport").rstrip("/") + "/ig"
 
 
 def now():
@@ -98,11 +104,34 @@ def feed_start(q, t):
     return FEED_TIMES[t.weekday()]
 
 
+def hm(value, default):
+    if not value:
+        return default
+    h, m = map(int, value.split(":"))
+    return dtime(h, m)
+
+
+def due(q, state, m, t):
+    """What can post right now: stories, feed, reel, evergreen."""
+    s0, s1 = story_window(q)
+    out = {
+        "stories": bool(q.get("stories")) and not state.get("stories_done") and s0 <= t.time() < s1,
+        "feed": not state.get("feed_done") and feed_start(q, t) <= t.time() < FEED_CUTOFF,
+        "reel": bool(m and m.get("reel")) and q.get("reel", True) and not state.get("reel_done")
+                and hm(q.get("reel_time"), REEL_TIMES[t.weekday()]) <= t.time() < LATE_CUTOFF,
+        "evergreen": bool(q.get("evergreen")) and not state.get("evergreen_done")
+                     and hm(q["evergreen"].get("time") if q.get("evergreen") else None, EVERGREEN_TIME) <= t.time() < LATE_CUTOFF,
+    }
+    return out
+
+
 def plan():
     t = now()
     date = t.date().isoformat()
     p = paths(date)
-    out = {"date": date, "render": False, "post": False, "reason": ""}
+    out = {"date": date, "render": False, "post": False, "stats": False, "reason": ""}
+    stats_state = load(ROOT / "instagram" / "stats" / "latest.json", {})
+    out["stats"] = t.time() >= STATS_FROM and stats_state.get("date") != date
     if t.weekday() > 4:
         out["reason"] = "weekend"
     elif (ROOT / "instagram" / "PAUSE").exists():
@@ -112,16 +141,17 @@ def plan():
     else:
         state = load(p["state"], {})
         q = load(p["queue"])
-        rendered = p["manifest"].exists() and load(p["manifest"]).get("queue_mtime") == q_stamp(p["queue"])
+        m = load(p["manifest"])
+        rendered = bool(m) and m.get("queue_mtime") == q_stamp(p["queue"])
         out["render"] = t.time() >= RENDER_FROM and not rendered
         if q.get("hold"):
             out["reason"] = f"render={out['render']}, posting on hold today"
             return out
-        s0, s1 = story_window(q)
-        stories_due = q.get("stories") and not state.get("stories_done") and s0 <= t.time() < s1
-        feed_due = not state.get("feed_done") and feed_start(q, t) <= t.time() < FEED_CUTOFF
-        out["post"] = bool(stories_due or feed_due)
-        out["reason"] = f"render={out['render']} stories_due={bool(stories_due)} feed_due={bool(feed_due)}"
+        d = due(q, state, m, t)
+        if out["render"] and q.get("reel", True):
+            d["reel"] = not state.get("reel_done") and hm(q.get("reel_time"), REEL_TIMES[t.weekday()]) <= t.time() < LATE_CUTOFF
+        out["post"] = any(d.values())
+        out["reason"] = f"render={out['render']} stats={out['stats']} " + " ".join(f"{k}_due={v}" for k, v in d.items())
     return out
 
 
@@ -138,7 +168,7 @@ def do_render():
     manifest = render(date)
     manifest["queue_mtime"] = q_stamp(p["queue"])
     save(p["manifest"], manifest)
-    commit_push(f"Instagram images for {date}", ROOT / "ig" / date)
+    commit_push(f"Instagram images for {date}", ROOT / "ig")
     wait_live([f"{IMG_BASE}/{date}/manifest.json"], manifest)
 
 
@@ -208,6 +238,53 @@ def clean_caption(text):
     return text[:2200]
 
 
+def with_fallback(make, extras):
+    """Try with tags/collaborators; if Instagram rejects them (bad handle etc.), post without."""
+    if any(extras.values()):
+        try:
+            return make(extras)
+        except Exception as e:
+            print("Tags/collaborators rejected, posting without them:", str(e)[:300])
+    return make({})
+
+
+def post_carousel(uid, base, names, caption, tags=None, collaborators=None):
+    tags = tags or []
+
+    def make(extras):
+        children = []
+        for i, name in enumerate(names[:10], 1):
+            params = {"image_url": f"{base}/{name}", "is_carousel_item": "true"}
+            slide_tags = [{"username": t["username"].lstrip("@"), "x": t.get("x", 0.5), "y": t.get("y", 0.88)}
+                          for t in extras.get("tags", []) if int(t.get("slide", 1)) == i]
+            if slide_tags:
+                params["user_tags"] = json.dumps(slide_tags)
+            children.append(api("POST", f"{uid}/media", **params)["id"])
+        for cid in children:
+            wait_container(cid)
+        params = {"media_type": "CAROUSEL", "children": ",".join(children), "caption": clean_caption(caption)}
+        if extras.get("collaborators"):
+            params["collaborators"] = json.dumps([c.lstrip("@") for c in extras["collaborators"][:3]])
+        parent = api("POST", f"{uid}/media", **params)["id"]
+        wait_container(parent)
+        return publish(parent)
+
+    return with_fallback(make, {"tags": tags, "collaborators": collaborators or []})
+
+
+def post_reel(uid, video_url, caption, collaborators=None):
+    def make(extras):
+        params = {"media_type": "REELS", "video_url": video_url, "caption": clean_caption(caption),
+                  "share_to_feed": "false"}
+        if extras.get("collaborators"):
+            params["collaborators"] = json.dumps([c.lstrip("@") for c in extras["collaborators"][:3]])
+        cid = api("POST", f"{uid}/media", **params)["id"]
+        wait_container(cid, timeout=900)
+        return publish(cid)
+
+    return with_fallback(make, {"collaborators": collaborators or []})
+
+
 def do_post():
     t = now()
     date = t.date().isoformat()
@@ -242,21 +319,34 @@ def do_post():
         save(p["state"], state)
         commit_push(f"Instagram stories posted {date}", p["state"])
 
-    if not state.get("feed_done") and feed_start(q, t) <= t.time() < FEED_CUTOFF:
-        children = []
-        for name in m["feed"][:10]:
-            cid = api("POST", f"{uid}/media", image_url=f"{base}/{name}", is_carousel_item="true")["id"]
-            children.append(cid)
-        for cid in children:
-            wait_container(cid)
-        parent = api("POST", f"{uid}/media", media_type="CAROUSEL", children=",".join(children),
-                     caption=clean_caption(q.get("caption")))["id"]
-        wait_container(parent)
-        state["feed_id"] = publish(parent)
+    d = due(q, state, m, t)
+
+    if d["feed"]:
+        state["feed_id"] = post_carousel(uid, base, m["feed"], q.get("caption"), q.get("tags"), q.get("collaborators"))
         state["feed_done"] = t.isoformat(timespec="minutes")
         save(p["state"], state)
         print("Posted carousel", state["feed_id"])
         commit_push(f"Instagram carousel posted {date}", p["state"])
+
+    if d["evergreen"] and m.get("evergreen"):
+        ev = q["evergreen"]
+        state["evergreen_id"] = post_carousel(uid, base, m["evergreen"], ev.get("caption"), ev.get("tags"), ev.get("collaborators"))
+        state["evergreen_done"] = t.isoformat(timespec="minutes")
+        save(p["state"], state)
+        print("Posted evergreen carousel", state["evergreen_id"])
+        commit_push(f"Instagram evergreen posted {date}", p["state"])
+
+    if d["reel"]:
+        try:
+            if wait_live([f"{PAGES_BASE}/{date}/manifest.json"], m, timeout=300):
+                state["reel_id"] = post_reel(uid, f"{PAGES_BASE}/{date}/{m['reel']}",
+                                             q.get("reel_caption") or q.get("caption"), q.get("collaborators"))
+                state["reel_done"] = t.isoformat(timespec="minutes")
+                save(p["state"], state)
+                print("Posted reel", state["reel_id"])
+                commit_push(f"Instagram reel posted {date}", p["state"])
+        except Exception as e:
+            print("Reel failed (will retry next run):", str(e)[:400])
 
     try:
         maybe_refresh_token()
@@ -307,6 +397,66 @@ def check():
     commit_push("Instagram connection check", p)
 
 
+def do_stats():
+    """Daily snapshot of the account; the 6am task reads instagram/stats/latest.json on Fridays."""
+    t = now()
+    uid = os.environ["IG_USER_ID"]
+    sdir = ROOT / "instagram" / "stats"
+    acct = api("GET", uid, fields="username,followers_count,media_count")
+    hist = load(sdir / "history.json", [])
+    today = t.date().isoformat()
+    hist = [h for h in hist if h["date"] != today] + [{"date": today, "followers": acct.get("followers_count", 0),
+                                                       "posts": acct.get("media_count", 0)}]
+    hist = hist[-400:]
+    week_ago = (t.date() - timedelta(days=7)).isoformat()
+    base = next((h for h in reversed(hist) if h["date"] <= week_ago), hist[0])
+
+    media = api("GET", f"{uid}/media", fields="id,caption,media_type,media_product_type,timestamp,like_count,comments_count,permalink",
+                limit=30).get("data", [])
+    insights_ok = True
+    posts = []
+    for md in media:
+        ts = datetime.fromisoformat(md["timestamp"].replace("+0000", "+00:00")).astimezone(MEL)
+        row = {"when": ts.strftime("%a %d %b %H:%M"), "hour": ts.hour, "weekday": ts.strftime("%a"),
+               "type": md.get("media_product_type") or md.get("media_type"),
+               "likes": md.get("like_count", 0), "comments": md.get("comments_count", 0),
+               "caption": (md.get("caption") or "").split("\n")[0][:90], "link": md.get("permalink"),
+               "recent": ts >= t - timedelta(days=7)}
+        if insights_ok:
+            try:
+                ins = api("GET", f"{md['id']}/insights", metric="reach,saved,shares")
+                for x in ins.get("data", []):
+                    row[x["name"]] = x["values"][0]["value"] if x.get("values") else x.get("total_value", {}).get("value")
+            except Exception as e:
+                insights_ok = False
+                print("Insights unavailable (token needs instagram_manage_insights):", str(e)[:200])
+        row["score"] = (row.get("saved", 0) + row.get("shares", 0)) * 3 + row["likes"] + row["comments"] * 2
+        posts.append(row)
+
+    recent = [x for x in posts if x["recent"]]
+    by_hour = {}
+    for x in posts:
+        by_hour.setdefault(f"{x['weekday']} {x['hour']:02d}:00", []).append(x["score"])
+    best_slots = sorted(((sum(v) / len(v), k, len(v)) for k, v in by_hour.items()), reverse=True)[:3]
+    out = {
+        "date": today,
+        "username": acct.get("username"),
+        "followers": acct.get("followers_count", 0),
+        "followers_change_7d": acct.get("followers_count", 0) - base["followers"],
+        "since": base["date"],
+        "posts_last_7d": len(recent),
+        "best_post_7d": max(recent, key=lambda x: x["score"]) if recent else None,
+        "totals_7d": {k: sum(x.get(k, 0) or 0 for x in recent) for k in ("likes", "comments", "saved", "shares", "reach")},
+        "best_time_slots": [{"slot": k, "avg_score": round(a, 1), "posts": n} for a, k, n in best_slots],
+        "insights_available": insights_ok,
+        "recent_posts": recent,
+    }
+    save(sdir / "history.json", hist)
+    save(sdir / "latest.json", out)
+    commit_push(f"Instagram stats {today}", sdir)
+    print(json.dumps({k: out[k] for k in ("followers", "followers_change_7d", "posts_last_7d", "insights_available")}))
+
+
 def status():
     date = now().date().isoformat()
     p = paths(date)
@@ -320,12 +470,15 @@ if __name__ == "__main__":
         print(result["reason"])
         if os.environ.get("GITHUB_OUTPUT"):
             with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-                f.write(f"render={str(result['render']).lower()}\npost={str(result['post']).lower()}\n")
+                f.write(f"render={str(result['render']).lower()}\npost={str(result['post']).lower()}\n"
+                        f"stats={str(result['stats']).lower()}\n")
     elif cmd == "render":
         do_render()
     elif cmd == "post":
         do_post()
     elif cmd == "check":
         check()
+    elif cmd == "stats":
+        do_stats()
     else:
         status()
