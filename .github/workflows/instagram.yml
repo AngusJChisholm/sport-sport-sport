@@ -50,6 +50,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           GH_PAT: ${{ secrets.GH_PAT }}
+          IG_LOGIN: ${{ vars.IG_LOGIN }}
         run: |
           if [ -z "$IG_USER_ID" ] || [ -z "$IG_ACCESS_TOKEN" ]; then
             echo "Instagram secrets not set yet - skipping posting"; exit 0

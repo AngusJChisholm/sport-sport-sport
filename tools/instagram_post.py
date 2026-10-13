@@ -25,7 +25,11 @@ MEL = ZoneInfo("Australia/Melbourne")
 # Images are served straight from GitHub so Instagram work never triggers a Netlify deploy (credits).
 REPO = os.environ.get("GITHUB_REPOSITORY", "AngusJChisholm/sport-sport-sport")
 IMG_BASE = f"https://raw.githubusercontent.com/{REPO}/main/ig"
-API = "https://graph.instagram.com/" + os.environ.get("IG_API_VERSION", "v24.0")
+# "facebook" = Instagram account linked to a Facebook Page (Page token, never expires).
+# "instagram" = Instagram API with Instagram login (60-day token, refreshed weekly).
+IG_LOGIN = os.environ.get("IG_LOGIN") or "facebook"
+API_HOST = "https://graph.facebook.com/" if IG_LOGIN == "facebook" else "https://graph.instagram.com/"
+API = API_HOST + os.environ.get("IG_API_VERSION", "v24.0")
 
 STORY_TIME = dtime(8, 0)
 STORY_CUTOFF = dtime(15, 0)   # don't post the morning stories later than this
@@ -243,6 +247,8 @@ def do_post():
 
 def maybe_refresh_token():
     """Long-lived Instagram tokens last 60 days. Refresh weekly and store the new one as a repo secret."""
+    if IG_LOGIN == "facebook":
+        return  # Page tokens from a long-lived user token don't expire
     marker = ROOT / "instagram" / "state" / "token.json"
     info = load(marker, {})
     last = info.get("refreshed")
