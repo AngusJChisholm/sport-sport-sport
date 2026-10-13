@@ -5,6 +5,65 @@
  },
  "deals": [
   {
+   "date": "2026-10-14",
+   "deal": "Adobe × Australian Open",
+   "sport": "Tennis",
+   "type": "Technology partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Adobe serves up AI.",
+   "summary": "Multi-year deal as Official AI Marketing and Creativity Partner. Adobe's first tennis sponsorship worldwide.",
+   "url": "https://ausopen.com/articles/news/australian-open-and-adobe-join-forces-shape-future-fan-experiences",
+   "article": {
+    "standfirst": "Adobe just signed its first tennis sponsorship anywhere in the world, and it picked the Australian Open.",
+    "body": [
+     "Tennis Australia has named Adobe the Official AI Marketing and Creativity Partner of the Australian Open in a multi-year deal that will roll out in phases. Neither side has put a number or an end date on it. What they have spelled out is the job: Tennis Australia will run Adobe CX Enterprise across its digital setup to get a sharper read on what fans actually want, then use that to steer them to the right match, somewhere to eat or a bit of entertainment at Melbourne Park, and to tailor its comms market by market.",
+     "It's a big first for Adobe. The software giant has never backed tennis before, so the AO becomes its entry point into the sport globally. That's a handy feather in Tennis Australia's cap, which keeps pitching the AO as the Grand Slam of Asia-Pacific and wants partners who can help it reach that regional audience.",
+     "The interesting bit is how the value flows. Plenty of tech partnerships in sport stop at a logo on the court and a line in the release. This one only works if the product is actually used, and used well. Tennis Australia gets enterprise tools to personalise at a scale it couldn't build itself, and Adobe gets a two-week global shop window every January to show its AI doing something useful for real people. Fans also get AI creative tools to make their own content, which ticks the engagement box and feeds more first-party data back into the system.",
+     "The brief runs well past the tournament too. Both sides say the aim is year-round participation across Australia and the wider Asia-Pacific, which puts the deal squarely in the business of growing the game for the other fifty weeks of the year.",
+     "What to watch: how much of this fans actually notice at AO 2027. If the personalisation lands and the creative tools get used, expect other rights holders to start writing data and martech into their partner briefs rather than just selling space."
+    ],
+    "close": "The AO has long called itself the Grand Slam of Asia-Pacific. Now it's got the martech to back that up."
+   },
+   "slug": "2026-10-14-adobe-australian-open"
+  },
+  {
+   "date": "2026-10-14",
+   "deal": "Expedia × NHL",
+   "sport": "Ice hockey",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Multi-year deal as the NHL's official travel partner in North America, with dasherboard presence and tentpole events.",
+   "url": "https://www.nhl.com/news/nhl-expedia-announce-partnership-in-us-canada"
+  },
+  {
+   "date": "2026-10-14",
+   "deal": "IM8 × NBA",
+   "sport": "Basketball",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Multi-year regional deal making IM8 the NBA's official nutrition partner in Australia and eight Southeast Asian markets.",
+   "url": "https://www.sportcal.com/news/nba-brings-in-im8-as-regional-partner-magic-and-disney-renew/"
+  },
+  {
+   "date": "2026-10-14",
+   "deal": "American Express × SailGP Hong Kong Sail Grand Prix",
+   "sport": "Sailing",
+   "type": "Title sponsorship",
+   "region": "Global",
+   "summary": "Amex takes title rights to SailGP's first Hong Kong event, opening the 2027 season in January.",
+   "url": "https://sportcal.com/news/amex-puts-name-to-sailgps-inaugural-hong-kong-race-in-2027"
+  },
+  {
+   "date": "2026-10-14",
+   "deal": "Adyen × FC Bayern",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Bayern renew Adyen as exclusive payments partner across the Allianz Arena, retail, ticketing and e-commerce.",
+   "url": "https://sportcal.com/sponsorship/bayern-munich-and-fintech-partner-adyen-renew-partnership"
+  },
+  {
    "date": "2026-10-13",
    "deal": "L'Oréal × Paris Saint-Germain",
    "sport": "Football",
