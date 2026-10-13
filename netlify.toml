@@ -1,5 +1,5 @@
-# Only deploy when the actual website changes. Each production deploy costs
-# 15 Netlify credits (free plan = 300/month), so Instagram images, bot state,
-# tools and docs never trigger one. Exit 0 = skip the build.
+# Netlify is retired: the site now lives on GitHub Pages and the old Netlify
+# address redirects there (see _redirects, deployed once). Never build again,
+# so no more Netlify credits are used. Exit 0 = skip the build.
 [build]
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)ig' ':(exclude)instagram' ':(exclude)tools' ':(exclude).github' ':(exclude)README.md' ':(exclude)SOURCES.md' ':(exclude)netlify.toml'"
+  ignore = "exit 0"
