@@ -39,6 +39,7 @@ jobs:
         run: |
           pip install playwright==1.48.0
           python3 -m playwright install --with-deps chromium
+          sudo apt-get install -y -qq ffmpeg > /dev/null
           ffmpeg -version | head -1
 
       - name: Render today's images
