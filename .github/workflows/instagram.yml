@@ -1,0 +1,57 @@
+name: Instagram autopilot
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  push:
+    branches: [main]
+    paths: ["instagram/queue/**"]
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "plan = normal run, render = force re-render today's images"
+        default: plan
+        type: choice
+        options: [plan, render]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: What's due
+        id: plan
+        run: python3 tools/instagram_post.py plan
+
+      - name: Install renderer
+        if: steps.plan.outputs.render == 'true' || inputs.action == 'render'
+        run: |
+          pip install playwright==1.48.0
+          python3 -m playwright install --with-deps chromium
+
+      - name: Render today's images
+        if: steps.plan.outputs.render == 'true' || inputs.action == 'render'
+        run: python3 tools/instagram_post.py render
+
+      - name: Post to Instagram
+        if: steps.plan.outputs.post == 'true'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$IG_USER_ID" ] || [ -z "$IG_ACCESS_TOKEN" ]; then
+            echo "Instagram secrets not set yet - skipping posting"; exit 0
+          fi
+          python3 tools/instagram_post.py post

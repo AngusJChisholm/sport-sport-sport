@@ -1,0 +1,41 @@
+{
+ "date": "2026-10-13",
+ "hold": true,
+ "_note": "Test render only. hold:true means this day never posts.",
+ "feed": {
+  "kind": "daily",
+  "cover": {
+   "tag": "Deal of the day",
+   "region": "Global",
+   "headline": "L'Oréal's first football club.",
+   "highlight": "first",
+   "deal": "L'Oréal x PSG",
+   "descriptor": "Official beauty partner"
+  },
+  "deal": {
+   "title": "Beauty moves into the dressing room.",
+   "rows": [
+    {"main": "Vichy Laboratoires", "sub": "Official skincare & haircare partner, men's first team"},
+    {"main": "Through 2028", "sub": "L'Oréal Groupe's first football club partnership"},
+    {"main": "Science on site", "sub": "Skin and scalp studies at PSG Campus, Poissy"}
+   ]
+  },
+  "why": {
+   "title": "Football's audience is too big to ignore.",
+   "points": [
+    {"main": "Beauty usually backs tennis and F1", "sub": "A cosmetics major picking football is a category shift"},
+    {"main": "Non-endemic brands keep coming", "sub": "Fashion, lifestyle and now beauty want the men's game"}
+   ]
+  },
+  "others": [
+   {"deal": "LendUX x Adelaide United", "sub": "Football - Front-of-jersey (A-League Women)"}
+  ]
+ },
+ "stories": [
+  {"tag": "Deal of the day", "deal": "L'Oréal x PSG", "property": "Paris Saint-Germain",
+   "points": ["L'Oréal's first football club", "Vichy: skincare & haircare", "Runs to 2028"]},
+  {"tag": "Also today", "deal": "LendUX x Adelaide United", "property": "Adelaide United",
+   "points": ["Front-of-jersey, A-League Women", "Two-year deal"]}
+ ],
+ "caption": "L'Oréal just signed its first ever football club, and it picked PSG.\n\nVichy becomes the official skincare and haircare partner of the men's first team through 2028, with scientists running skin and scalp studies at PSG Campus.\n\nAlso today: LendUX x Adelaide United (A-League Women, front-of-jersey).\n\nFull archive at sportsportsport.netlify.app\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+}

@@ -43,3 +43,16 @@ Paste your LinkedIn page URL into `"linkedin": ""` at the top of `deals.json`. T
 3. Domain management > Add your domain, then follow Netlify's DNS steps at your registrar
 
 Every change pushed to GitHub (including the daily update) goes live in about a minute.
+
+## Instagram autopilot
+
+Every weekday the 6am update writes `instagram/queue/<date>.json` (the day's slides, stories and caption). A GitHub Action (`.github/workflows/instagram.yml`) checks every 15 minutes, renders the images into `ig/<date>/` (published by Netlify so Instagram can fetch them) and posts on this schedule, Melbourne time:
+
+- Stories: 8am every weekday
+- Carousel: Mon 7pm, Tue 7pm, Wed 12pm, Thu 9am, Fri 6pm (Fridays are "The week in deals")
+
+**Stop a post:** set `"hold": true` in that day's queue file (editable in the GitHub app). **Pause everything:** add an empty file called `instagram/PAUSE`; delete it to resume.
+
+**Club colours** for stories live in `instagram/colours.json`. Anything not listed uses black.
+
+**Secrets** (GitHub > Settings > Secrets and variables > Actions): `IG_USER_ID`, `IG_ACCESS_TOKEN`, and optionally `GH_PAT` (a fine-grained token with Secrets read/write on this repo) so the Instagram token renews itself every week. Without `GH_PAT` the token must be renewed by hand every 60 days.
