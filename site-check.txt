@@ -1,0 +1,18 @@
+== http new domain
+200 
+== https new domain
+200
+== title
+<title>Sport Sport Sport
+== old github.io
+301 http://sportsportsport.com.au/
+== article
+200
+== deals.json
+200
+== ig reel via old url
+HTTP/2 301 
+content-type: text/html
+location: http://sportsportsport.com.au/ig/2026-10-14/reel.mp4
+HTTP/1.1 200 OK
+Content-Type: video/mp4
