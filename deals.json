@@ -5,6 +5,160 @@
  },
  "deals": [
   {
+   "date": "2026-10-13",
+   "added": "2026-10-15",
+   "deal": "Suisscourtage Assurances × AS Monaco",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "Global",
+   "lead": true,
+   "headline": "Monaco's shirt for Europe.",
+   "summary": "Monaco insurance broker takes the front of the shirt for AS Monaco's Conference League games this season, plus LED boards at Stade Louis-II.",
+   "url": "https://www.asmonaco.com/en/news/suisscourtage-assurances-becomes-as-monacos-new-major-partner-in-the-conference-league",
+   "article": {
+    "standfirst": "Monaco has signed a shirt sponsor just for its European nights.",
+    "body": [
+     "AS Monaco has named Suisscourtage Assurances its new major partner for the UEFA Conference League. The insurance broker's name goes on the front of the first-team shirt for European matches this season, and it picks up LED advertising at home games at Stade Louis-II. No fee or length beyond the coming season has been put out. The campaign starts away to CSKA Sofia on Thursday 15 October.",
+     "It's a local deal through and through. Suisscourtage was founded in Monaco in 1988, sits inside the JV Pastor Group and employs 220 people, working with private clients and businesses that need cover for complex risks and high-value assets. Monaco CEO Thiago Scuro pitched it as two Monegasque organisations joining forces, and that's the point: a club from a tiny principality putting a home-grown business on the shirt when it travels.",
+     "The timing tells the story. Only last week Monaco signed Mammouth AI as a premium partner through 2029, with the AI company appearing on the shirt in Ligue 1. This is Monaco's first go at the Conference League, so rather than bundle Europe into an existing deal, the club treated it as fresh inventory and sold it separately.",
+     "That's the bit worth watching across the game. Competition-specific shirt deals let clubs squeeze more out of the same piece of fabric, and they open the door to brands that can't stretch to a full-season domestic deal but can afford a European run. For a broker chasing wealthy clients, a handful of televised European nights with a club tied to Monaco is a tidy fit.",
+     "What to watch next: how far Monaco go in the competition, because a deeper run means more matches and more value for Suisscourtage, and whether the deal rolls over if Monaco land back in the Champions League."
+    ],
+    "close": "Expect more clubs to sell the shirt one competition at a time."
+   },
+   "slug": "2026-10-15-suisscourtage-assurances-as-monaco"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-15",
+   "deal": "H&R Block × Kansas City Chiefs",
+   "sport": "NFL",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Kansas City-founded H&R Block becomes the Chiefs' exclusive tax preparation partner in a new multiyear deal through the 2030 season.",
+   "url": "https://www.globenewswire.com/news-release/2026/10/14/3380663/0/en/h-r-block-and-the-kansas-city-chiefs-announce-multiyear-partnership.html"
+  },
+  {
+   "date": "2026-10-13",
+   "added": "2026-10-15",
+   "deal": "e.l.f. Beauty × Tottenham Hotspur Women",
+   "sport": "Football",
+   "type": "Back-of-shirt",
+   "region": "Global",
+   "summary": "e.l.f. returns as Tottenham Hotspur Women's official back-of-shirt sponsor for a second season, 2026-27.",
+   "url": "https://stocktitan.net/news/ELF/e-l-f-brands-hits-the-pitch-for-year-two-with-tottenham-hotspur-8a8xz2fd9jcf.html"
+  },
+  {
+   "date": "2026-10-13",
+   "added": "2026-10-15",
+   "deal": "Cavendish Farms × Canadian Hockey League",
+   "sport": "Ice hockey",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Cavendish Farms renews with the CHL for another three years as its 'Official Fry of Watching Hockey'.",
+   "url": "https://www.globenewswire.com/news-release/2026/10/13/3379999/0/en/cavendish-farms-is-ready-to-hit-the-ice-for-another-season-with-the-chl.html"
+  },
+  {
+   "date": "2026-10-11",
+   "added": "2026-10-15",
+   "deal": "Shopee × Corinthians",
+   "sport": "Football",
+   "type": "Shirt sponsorship",
+   "region": "Global",
+   "summary": "Shopee takes Corinthians' front-of-shirt spot for the last nine Brasileirão games, plus LED boards at Neo Química Arena, after betting sponsor Esportes da Sorte was sidelined.",
+   "url": "https://www.insideworldfootball.com/2026/10/13/corinthians-sign-up-with-shopee-as-principal-shirt-sponsor/"
+  },
+  {
+   "date": "2026-10-12",
+   "added": "2026-10-15",
+   "deal": "DTEK × Shakhtar Donetsk",
+   "sport": "Football",
+   "type": "Sleeve sponsorship",
+   "region": "Global",
+   "summary": "Energy company DTEK goes on Shakhtar's shirts for this season's Champions League games as part of an 'invest in Ukraine' push.",
+   "url": "https://www.sportspro.com/announcements/spotlight-agency/dtek-and-shakhtar-launch-champions-league-campaign-to-drive-investment-in-ukraine/"
+  },
+  {
+   "date": "2026-10-12",
+   "added": "2026-10-15",
+   "deal": "Five Guys × NFL",
+   "sport": "NFL",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Five Guys signs a three-year deal as the NFL's official burger partner in the UK, covering 2026-2028.",
+   "url": "https://www.sportcal.com/news/nfl-takes-bite-out-of-five-guys-uk-partnership/"
+  },
+  {
+   "date": "2026-10-12",
+   "added": "2026-10-15",
+   "deal": "Fever × X Games",
+   "sport": "Action sports",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Fever becomes X Games' official ticketing platform in a three-year deal from 2026, starting with Aspen and Calgary in 2027.",
+   "url": "https://newsroom.feverup.com/en-US/273218-x-games-names-fever-as-official-ticketing-platform-in-multi-year-partnership/"
+  },
+  {
+   "date": "2026-10-12",
+   "added": "2026-10-15",
+   "deal": "Hang Seng Bank × WTT Finals Hong Kong",
+   "sport": "Table tennis",
+   "type": "Presenting partner",
+   "region": "Global",
+   "summary": "Hang Seng Bank is presenting partner of the 2026 WTT Finals Hong Kong at Kai Tak Arena, 9-13 December.",
+   "url": "https://www.sportcal.com/news/hang-seng-bank-becomes-presenting-partner-of-hong-kong-wtt-finals/"
+  },
+  {
+   "date": "2026-10-09",
+   "added": "2026-10-15",
+   "deal": "Milka (Mondelez) × LaLiga",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Milka extends its LaLiga deal in Spain and Poland and adds Czechia, Slovakia and Hungary, through 2027-28.",
+   "url": "https://www.sportcal.com/news/mondelez-laliga-expand-tie-up-for-another-season-adding-three-new-markets/"
+  },
+  {
+   "date": "2026-10-09",
+   "added": "2026-10-15",
+   "deal": "Şekerbank × Sivasspor",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Şekerbank and Sivasspor launch 'Fan POS', letting participating businesses direct a share of card turnover to the club.",
+   "url": "https://www.insideworldfootball.com/2026/10/14/turkeys-sivasspor-launches-fan-pos-revenue-generator-with-sekerbank/"
+  },
+  {
+   "date": "2026-10-08",
+   "added": "2026-10-15",
+   "deal": "Ramp × San Francisco 49ers",
+   "sport": "NFL",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Finance software company Ramp signs a new multi-year partnership with the 49ers.",
+   "url": "https://www.49ers.com/news/ramp-and-san-francisco-49ers-announce-new-multi-year-partnership"
+  },
+  {
+   "date": "2026-10-08",
+   "added": "2026-10-15",
+   "deal": "Next League × NASCAR",
+   "sport": "Motorsport",
+   "type": "Technology partner",
+   "region": "Global",
+   "summary": "NASCAR expands its long-running tie-up with Next League to cover team and IMSA digital work, with an AI focus.",
+   "url": "https://jayski.com/2026/10/08/nascar-expands-relationship-with-next-league"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-15",
+   "deal": "SP Lager × PNG Chiefs",
+   "sport": "NRL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "SP Lager extends its PNG Chiefs sponsorship, adding alcoholic beverage rights at home games.",
+   "url": "https://www.sponsorshipnews.com.au/index.php/unauthorise?id=54799&type=article"
+  },
+  {
    "date": "2026-10-12",
    "added": "2026-10-14",
    "deal": "Adobe × Australian Open",
