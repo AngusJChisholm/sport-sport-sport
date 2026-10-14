@@ -54,7 +54,18 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;border-bottom:
 .hero{padding-block:clamp(48px,7vw,104px) clamp(56px,7vw,112px)}
 .hero-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--grey-800)}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:end;padding-top:clamp(40px,6vw,88px)}
-.hero h1{font-size:clamp(56px,11vw,184px)}
+.hero .hh{font-size:clamp(56px,11vw,184px);margin:0}
+.hero-ctl{display:flex;align-items:center;gap:10px}
+.hn{font:inherit;font-size:18px;line-height:1;background:none;color:var(--white);border:1px solid var(--grey-800);width:44px;height:44px;cursor:pointer;border-radius:0}
+.hn:hover{border-color:var(--volt);color:var(--volt)}
+.hero-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.hero-track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;min-width:0;scroll-snap-align:start;scroll-snap-stop:always}
+.slide .sday{display:block;margin-top:clamp(28px,4vw,48px)}
+.slide .hero-grid{padding-top:clamp(20px,3vw,40px)}
+.dots{display:flex;gap:8px;margin-top:clamp(28px,4vw,44px)}
+.dots button{width:32px;height:4px;padding:0;border:0;border-radius:0;background:var(--grey-800);cursor:pointer}
+.dots button.on{background:var(--volt)}
 .hero .sup{font-weight:500;font-size:clamp(14px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase;margin:32px 0 0;line-height:1.4}
 .hero p.dek{font-size:clamp(17px,1.4vw,20px);line-height:1.5;color:var(--grey-100);margin:24px 0 32px;text-wrap:pretty}
 .meta{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;border-top:1px solid var(--grey-800)}
@@ -148,14 +159,12 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 
 <main>
 <section class="dk hero" id="latest"><div class="wrap">
-<div class="hero-top"><span class="lbl">Latest lead deal</span><span class="lbl mute" id="heroDay"></span></div>
-<div class="hero-grid">
-<div><h1 class="disp" id="heroHead">Loading deals</h1><p class="sup" id="heroSup"></p></div>
-<div>
-<div class="tags" id="heroTags"></div>
-<p class="dek" id="heroDek"></p>
-<div class="meta"><span class="lbl mute" id="heroShort"></span><span id="heroLink"></span></div>
-</div></div></div></section>
+<div class="hero-top"><span class="lbl">Key stories</span><div class="hero-ctl"><span class="lbl mute" id="heroCount"></span><button class="hn" id="hPrev" type="button" aria-label="Previous story">&larr;</button><button class="hn" id="hNext" type="button" aria-label="Next story">&rarr;</button></div></div>
+<div class="hero-track" id="heroTrack" aria-roledescription="carousel" aria-label="Key stories">
+<article class="slide"><div class="hero-grid"><div><h1 class="disp hh" id="heroHead">Loading deals</h1></div><div><p class="dek" id="heroDek"></p></div></div></article>
+</div>
+<div class="dots" id="heroDots"></div>
+</div></section>
 
 <section class="sec"><div class="wrap">
 <div class="sh"><div><span class="lbl mute-l">Latest round-up</span><h2 class="disp">The other deals.</h2></div><span class="lbl mute-l" id="rCount"></span></div>
@@ -222,14 +231,40 @@ function hero(){
   const leads=dated.filter(d=>d.lead).sort((a,b)=>pKey(b).localeCompare(pKey(a)));
   const lead=leads[0]||dated[0];
   if(!lead)return null;
-  $("heroDay").textContent=fmtLong(asPosted(lead));
-  $("heroHead").textContent=lead.headline||lead.deal;
-  $("heroSup").textContent=lead.deal+(lead.type?" · "+lead.type:"");
-  $("heroTags").innerHTML=tags(lead);
-  $("heroDek").textContent=lead.summary||"";
-  $("heroDek").hidden=!lead.summary;
-  $("heroShort").textContent=fmtDots(asPosted(lead));
-  $("heroLink").innerHTML=link(lead,"Read the full story →");
+  // Key stories: recent lead deals, shuffled each visit so the page isn't the same every time.
+  let pool=leads.slice(0,8);
+  if(pool.length<2)pool=[lead];
+  for(let k=pool.length-1;k>0;k--){const r=Math.floor(Math.random()*(k+1));[pool[k],pool[r]]=[pool[r],pool[k]]}
+  try{const last=localStorage.getItem("sss-first");if(pool.length>1&&pool[0].deal===last)pool.push(pool.shift());localStorage.setItem("sss-first",pool[0].deal)}catch(e){}
+  const slide=(d,i)=>`<article class="slide" aria-roledescription="slide" aria-label="${i+1} of ${pool.length}">
+<span class="lbl mute sday">${d===lead?"Latest lead · ":""}${esc(fmtLong(asPosted(d)))}</span>
+<div class="hero-grid"><div><${i===0?"h1":"h2"} class="disp hh">${esc(d.headline||d.deal)}</${i===0?"h1":"h2"}><p class="sup">${esc(d.deal+(d.type?" · "+d.type:""))}</p></div>
+<div><div class="tags">${tags(d)}</div>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}
+<div class="meta"><span class="lbl mute">${esc(fmtDots(asPosted(d)))}</span><span>${link(d,"Read the full story →")}</span></div></div></div></article>`;
+  const track=$("heroTrack");
+  track.innerHTML=pool.map(slide).join("");
+  const n=pool.length, dots=$("heroDots");
+  dots.innerHTML=n>1?pool.map((d,i)=>`<button type="button" aria-label="Story ${i+1}"></button>`).join(""):"";
+  const ctl=document.querySelector(".hero-ctl");
+  if(n<2){ctl.querySelectorAll(".hn").forEach(b=>b.hidden=true);return lead}
+  let cur=0,timer=null,paused=false;
+  const set=i=>{cur=i;$("heroCount").textContent=`${i+1} / ${n}`;[...dots.children].forEach((b,k)=>b.classList.toggle("on",k===i))};
+  const go=i=>{const t=(i+n)%n;track.scrollTo({left:t*track.clientWidth,behavior:"smooth"});set(t)};
+  let st;track.addEventListener("scroll",()=>{clearTimeout(st);st=setTimeout(()=>set(Math.round(track.scrollLeft/Math.max(1,track.clientWidth))),80)},{passive:true});
+  $("hPrev").onclick=()=>{go(cur-1);restart()};
+  $("hNext").onclick=()=>{go(cur+1);restart()};
+  [...dots.children].forEach((b,k)=>b.onclick=()=>{go(k);restart()});
+  const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const restart=()=>{clearInterval(timer);if(!reduce&&!paused)timer=setInterval(()=>{if(!document.hidden)go(cur+1)},7000)};
+  const hold=v=>{paused=v;restart()};
+  const hs=$("latest");
+  hs.addEventListener("mouseenter",()=>hold(true));hs.addEventListener("mouseleave",()=>hold(false));
+  hs.addEventListener("focusin",()=>hold(true));hs.addEventListener("focusout",()=>hold(false));
+  track.addEventListener("touchstart",()=>hold(true),{passive:true});
+  track.addEventListener("keydown",e=>{if(e.key==="ArrowRight"){go(cur+1);e.preventDefault()}if(e.key==="ArrowLeft"){go(cur-1);e.preventDefault()}});
+  track.tabIndex=0;
+  window.addEventListener("resize",()=>track.scrollTo({left:cur*track.clientWidth}));
+  set(0);restart();
   return lead;
 }
 function roundup(lead){
@@ -288,7 +323,7 @@ fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.statu
   DEALS=ORIG.slice().sort((a,b)=>sortKey(b).localeCompare(sortKey(a))||(b.lead?1:0)-(a.lead?1:0));
   const lead=hero();if(lead)roundup(lead);
   columns();follow();newsletter();filters();wire();render();
-}).catch(()=>{$("heroHead").textContent="Deals unavailable";$("heroDek").textContent="The deals file didn't load. Refresh to try again.";wire();});
+}).catch(()=>{const h=$("heroHead"),k=$("heroDek");if(h)h.textContent="Deals unavailable";if(k)k.textContent="The deals file didn't load. Refresh to try again.";wire();});
 })();
 </script>
 </body>
