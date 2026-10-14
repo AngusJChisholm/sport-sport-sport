@@ -1,8 +1,0 @@
-== reel
-HTTP/2 200 
-content-type: video/mp4
-== image
-HTTP/2 200 
-content-type: image/jpeg
-== http to https
-301 https://sportsportsport.com.au/
