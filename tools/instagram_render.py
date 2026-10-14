@@ -315,6 +315,9 @@ def render(date):
     from playwright.sync_api import sync_playwright
 
     q = json.loads((ROOT / "instagram" / "queue" / f"{date}.json").read_text())
+    extra = ROOT / "instagram" / "extra" / f"{date}.json"
+    if not q.get("evergreen") and extra.exists():
+        q["evergreen"] = json.loads(extra.read_text())
     out = ROOT / "ig" / date
     out.mkdir(parents=True, exist_ok=True)
     for old in list(out.glob("*.jpg")) + list(out.glob("*.mp4")):

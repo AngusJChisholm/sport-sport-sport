@@ -54,7 +54,16 @@ def paths(date):
         "queue": ROOT / "instagram" / "queue" / f"{date}.json",
         "state": ROOT / "instagram" / "state" / f"{date}.json",
         "manifest": ROOT / "ig" / date / "manifest.json",
+        "extra": ROOT / "instagram" / "extra" / f"{date}.json",
     }
+
+
+def with_extra(q, p):
+    """A one-off carousel (e.g. an announcement) can sit in instagram/extra/<date>.json.
+    It posts like the evergreen block, so the 6am task never overwrites it."""
+    if q and not q.get("evergreen") and p["extra"].exists():
+        q["evergreen"] = load(p["extra"])
+    return q
 
 
 def load(p, default=None):
@@ -140,7 +149,7 @@ def plan():
         out["reason"] = "no queue file for today yet"
     else:
         state = load(p["state"], {})
-        q = load(p["queue"])
+        q = with_extra(load(p["queue"]), p)
         m = load(p["manifest"])
         rendered = bool(m) and m.get("queue_mtime") == q_stamp(p["queue"])
         out["render"] = t.time() >= RENDER_FROM and not rendered
@@ -157,7 +166,11 @@ def plan():
 
 def q_stamp(qpath):
     import hashlib
-    return hashlib.sha1(qpath.read_bytes()).hexdigest()[:12]
+    data = qpath.read_bytes()
+    extra = qpath.parent.parent / "extra" / qpath.name
+    if extra.exists():
+        data += extra.read_bytes()
+    return hashlib.sha1(data).hexdigest()[:12]
 
 
 def do_render():
@@ -289,7 +302,7 @@ def do_post():
     t = now()
     date = t.date().isoformat()
     p = paths(date)
-    q = load(p["queue"])
+    q = with_extra(load(p["queue"]), p)
     m = load(p["manifest"])
     if q.get("hold") or (ROOT / "instagram" / "PAUSE").exists():
         print("On hold, not posting")
