@@ -1,24 +1,24 @@
 {
- "date": "2026-10-14",
+ "date": "2026-10-15",
  "username": "sportsportsport.hq",
- "followers": 2,
- "followers_change_7d": 1,
+ "followers": 4,
+ "followers_change_7d": 3,
  "since": "2026-10-13",
- "posts_last_7d": 2,
+ "posts_last_7d": 4,
  "best_post_7d": {
-  "when": "Tue 13 Oct 20:51",
-  "hour": 20,
-  "weekday": "Tue",
+  "when": "Wed 14 Oct 19:07",
+  "hour": 19,
+  "weekday": "Wed",
   "type": "REELS",
-  "likes": 0,
+  "likes": 1,
   "comments": 0,
-  "caption": "L'Oréal's first ever football deal, in 15 seconds.",
-  "link": "https://www.instagram.com/reel/Debhx9ekooX/",
+  "caption": "Adobe's first ever tennis deal, and it's the Australian Open.",
+  "link": "https://www.instagram.com/reel/Ded6qw5jvnb/",
   "recent": true,
-  "score": 0
+  "score": 1
  },
  "totals_7d": {
-  "likes": 0,
+  "likes": 1,
   "comments": 0,
   "saved": 0,
   "shares": 0,
@@ -26,18 +26,47 @@
  },
  "best_time_slots": [
   {
-   "slot": "Tue 20:00",
+   "slot": "Wed 19:00",
+   "avg_score": 1.0,
+   "posts": 1
+  },
+  {
+   "slot": "Wed 12:00",
    "avg_score": 0.0,
    "posts": 1
   },
   {
-   "slot": "Tue 16:00",
+   "slot": "Tue 20:00",
    "avg_score": 0.0,
    "posts": 1
   }
  ],
  "insights_available": false,
  "recent_posts": [
+  {
+   "when": "Wed 14 Oct 19:07",
+   "hour": 19,
+   "weekday": "Wed",
+   "type": "REELS",
+   "likes": 1,
+   "comments": 0,
+   "caption": "Adobe's first ever tennis deal, and it's the Australian Open.",
+   "link": "https://www.instagram.com/reel/Ded6qw5jvnb/",
+   "recent": true,
+   "score": 1
+  },
+  {
+   "when": "Wed 14 Oct 12:19",
+   "hour": 12,
+   "weekday": "Wed",
+   "type": "FEED",
+   "likes": 0,
+   "comments": 0,
+   "caption": "Adobe just signed its first tennis sponsorship anywhere in the world, and picked the Austr",
+   "link": "https://www.instagram.com/p/DedMDbMjwW7/",
+   "recent": true,
+   "score": 0
+  },
   {
    "when": "Tue 13 Oct 20:51",
    "hour": 20,
