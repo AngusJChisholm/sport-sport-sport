@@ -1,0 +1,29 @@
+name: IG URL check (one-off)
+
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/ig-url-check.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Reel and image URLs on the new domain, then remove this workflow
+        run: |
+          {
+            echo "== reel"; curl -sI https://sportsportsport.com.au/ig/2026-10-14/reel.mp4 | grep -iE "^HTTP|content-type"
+            echo "== image"; curl -sI https://sportsportsport.com.au/ig/2026-10-14/feed-1.jpg | grep -iE "^HTTP|content-type"
+            echo "== http to https"; curl -s -o /dev/null -w "%{http_code} %{redirect_url}\n" http://sportsportsport.com.au/
+          } > ig-url-check.txt 2>&1
+          cat ig-url-check.txt
+          git rm -q .github/workflows/ig-url-check.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add ig-url-check.txt
+          git commit -m "IG URL check result [skip netlify]"
+          git push

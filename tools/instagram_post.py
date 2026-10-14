@@ -41,7 +41,7 @@ EVERGREEN_TIME = dtime(12, 0)   # the 6am task only adds an evergreen carousel o
 LATE_CUTOFF = dtime(23, 30)
 STATS_FROM = dtime(4, 45)       # before the 6am task, which reads the stats on Fridays
 # Videos load from GitHub Pages (served as video/mp4, which Instagram needs for Reels).
-PAGES_BASE = os.environ.get("PAGES_URL", "https://angusjchisholm.github.io/sport-sport-sport").rstrip("/") + "/ig"
+PAGES_BASE = os.environ.get("PAGES_URL", "https://sportsportsport.com.au").rstrip("/") + "/ig"
 
 
 def now():
