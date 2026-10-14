@@ -93,6 +93,7 @@ a.row:hover b,a.ar-r:hover b{text-decoration:underline;text-underline-offset:4px
 .nl h3 .v{color:var(--volt)}
 .nl p{margin:0;font-size:16px;color:var(--grey-500);max-width:46ch}
 .nl-f iframe{display:block;width:100%;height:56px;border:0;background:transparent}
+.nl-soon{cursor:default;opacity:.95}
 .nl-f small{display:block;margin-top:10px;font-size:12px;color:var(--grey-500)}
 @media (max-width:760px){.nl{grid-template-columns:1fr}}
 .fil{display:flex;flex-direction:column;gap:20px;margin-bottom:32px}
@@ -170,7 +171,7 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 <span class="lbl mute" style="display:block;margin-bottom:28px">Daily, Monday to Friday</span>
 <h2 class="disp">Every deal, every weekday. <span class="g">Follow along on LinkedIn and Instagram.</span></h2>
 <div class="fo-a" id="foA"></div>
-<div class="nl" id="nl" hidden><div><h3>The weekly <span class="v">wrap.</span></h3><p>Every deal from the week, the ones that matter and why, in your inbox each Friday. Free.</p></div><div class="nl-f" id="nlF"></div></div>
+<div class="nl" id="nl"><div><h3>The weekly <span class="v">wrap.</span></h3><p>Every deal from the week, the ones that matter and why, in your inbox each Friday. Free.</p></div><div class="nl-f" id="nlF"><span class="btn nl-soon" aria-disabled="true">Coming soon</span><small>The weekly wrap launches shortly. Follow on LinkedIn or Instagram in the meantime.</small></div></div>
 </div></section>
 
 <section class="sec" id="archive"><div class="wrap">
@@ -246,10 +247,9 @@ function columns(){
 function newsletter(){
   // Set "newsletter": {"embed": "https://embeds.beehiiv.com/<id>"} in deals.json "site" to switch this on.
   const n=SITE.newsletter||{}, u=String(n.embed||"");
-  if(!/^https:\/\/embeds\.beehiiv\.com\/[A-Za-z0-9-]+/.test(u))return;
+  if(!/^https:\/\/embeds\.beehiiv\.com\/[A-Za-z0-9-]+/.test(u))return; // keeps the "Coming soon" button
   const src=u+(u.includes("?")?"&":"?")+"slim=true";
   $("nlF").innerHTML=`<iframe src="${esc(src)}" title="Subscribe to the Sport Sport Sport weekly wrap" loading="lazy" scrolling="no"></iframe><small>No spam. Unsubscribe any time.</small>`;
-  $("nl").hidden=false;
 }
 function follow(){
   const li=SITE.linkedin, ig=SITE.instagram;
