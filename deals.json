@@ -5,6 +5,230 @@
  },
  "deals": [
   {
+   "date": "2026-10-14",
+   "added": "2026-10-16",
+   "deal": "adidas × Parramatta Eels",
+   "sport": "NRL",
+   "type": "Apparel partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Three stripes for Parra.",
+   "summary": "Multi-year deal makes adidas the Eels' official apparel partner across the NRL and NRLW teams, academy and junior rep sides, with the new kit debuting in Round 1 2027.",
+   "url": "https://www.parraeels.com.au/news/2026/10/14/the-parramatta-eels-announce-partnership-with-adidas/",
+   "article": {
+    "standfirst": "adidas is putting the Parramatta Eels in three stripes.",
+    "body": [
+     "The Parramatta Eels have signed a multi-year deal that makes adidas the club's official apparel partner. It covers a lot of ground: the NRL and NRLW teams, the club's elite academy programs and its junior representative sides. Both top teams will run out in adidas for the first time in Round 1 of the 2027 season. Neither side has put out a length or a dollar figure.",
+     "The club launched it with a campaign called \"Made for Parra\", and the kit and retail range are due to be unveiled at a launch later this year. That reveal is where the fans get their first proper look at what three stripes in blue and gold actually means.",
+     "Why it matters: apparel is one of the few deals that touches every part of a club. Sponsors get a logo on a jersey. A kit supplier gets the jersey itself, the training gear, the merch store and every junior player pulling on a Parra top on a Saturday morning. Signing the pathways as well as first grade means adidas is in front of the next generation of Eels fans years before they buy a membership.",
+     "It's also a nice get for adidas, a brand most Aussie fans link with football and rugby union rather than the NRL. Landing the Eels in Western Sydney, with a deal that runs right down to the juniors, gives it a real foothold in rugby league heartland.",
+     "What to watch next: the kit reveal and how hard adidas pushes the retail side, and whether the brand follows up with more rugby league clubs once the Eels range is on the shelves."
+    ],
+    "close": "When a global brand dresses the juniors too, it's buying the next generation of fans."
+   },
+   "slug": "2026-10-16-adidas-parramatta-eels"
+  },
+  {
+   "date": "2026-10-15",
+   "added": "2026-10-16",
+   "deal": "Ford Australia × WNBL",
+   "sport": "Basketball",
+   "type": "Presenting partner",
+   "region": "ANZ",
+   "summary": "Ford extends and steps up its WNBL deal to become the league's presenting partner for the 2026-27 season.",
+   "url": "https://www.wnbl.com.au/news/ford-australia-puts-full-power-behind-the-wnbl-as-presenting-partner"
+  },
+  {
+   "date": "2026-10-15",
+   "added": "2026-10-16",
+   "deal": "Sky New Zealand × Australian Open",
+   "sport": "Tennis",
+   "type": "Media rights",
+   "region": "ANZ",
+   "summary": "Sky renews its long-term NZ media rights deal for the AO and adds the Laver Cup and United Cup, with evening sessions free-to-air on Three and ThreeNow for the first time from 2027.",
+   "url": "https://ausopen.com/articles/news/australian-open-renews-longstanding-broadcast-partnership-sky-new-zealand"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-16",
+   "deal": "Flyte Aviation × Philadelphia 76ers",
+   "sport": "Basketball",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "AI-driven private aviation company signs an exclusive multi-year deal as the Sixers' official private aviation partner.",
+   "url": "https://www.globenewswire.com/news-release/2026/10/14/3380681/0/en/flyte-aviation-partners-with-the-philadelphia-76ers.html"
+  },
+  {
+   "date": "2026-10-15",
+   "added": "2026-10-16",
+   "deal": "BetMGM × Connor McDavid",
+   "sport": "Ice hockey",
+   "type": "Athlete endorsement",
+   "region": "Global",
+   "summary": "Multi-year extension of McDavid's BetMGM ambassador deal, which started in March 2022, centred on responsible gambling content in Canada.",
+   "url": "https://www.globenewswire.com/news-release/2026/10/15/3381767/0/en/betmgm-renews-partnership-with-national-hockey-league-star-connor-mcdavid.html"
+  },
+  {
+   "date": "2026-10-15",
+   "added": "2026-10-16",
+   "deal": "InterContinental Wellington × Wellington Phoenix",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "The hotel returns as the Phoenix's official hotel partner, turning its Two Grey venue into a matchday hub for the club's 20th season.",
+   "url": "https://wellingtonphoenix.com/news/intercontinental-wellington-returns-as-phoenix-partner/"
+  },
+  {
+   "date": "2026-10-13",
+   "added": "2026-10-16",
+   "deal": "Walt Disney World × Orlando Magic",
+   "sport": "Basketball",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Disney renews its Magic jersey patch on a long-term deal and adds a Walt Disney World Atrium at Kia Center.",
+   "url": "https://www.wftv.com/news/local/disney-orlando-magic-announce-new-walt-disney-world-atrium-kia-center/7ZXVSA3FHJHHZC4NCA5XSIO2QI/"
+  },
+  {
+   "date": "2026-10-13",
+   "added": "2026-10-16",
+   "deal": "Priceline Pharmacy × Australian Diamonds",
+   "sport": "Netball",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Priceline becomes principal partner of the Diamonds through 2029, plus major partner of the First Nations Black Swans, with its logo on the Diamonds uniform for the first time.",
+   "url": "https://netball.com.au/news/diamonds-enter-partnership-priceline"
+  },
+  {
+   "date": "2026-10-15",
+   "added": "2026-10-16",
+   "deal": "Aldar × The O2",
+   "sport": "Venues",
+   "type": "Naming rights",
+   "region": "Global",
+   "summary": "Abu Dhabi developer signs a five-year deal naming The O2's new premium hospitality space, The Level by Aldar, and becomes official real estate partner.",
+   "url": "https://www.thestadiumbusiness.com/2026/10/15/aldar-backs-new-hospitality-offering-at-the-o2/"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-16",
+   "deal": "Foot Locker × New York Knicks",
+   "sport": "Basketball",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Multi-year deal as the Knicks' official athletic footwear retailer, with retail activations at Madison Square Garden.",
+   "url": "https://www.prnewswire.com/news-releases/foot-locker-named-official-athletic-footwear-retailer-of-the-new-york-knicks-302907447.html"
+  },
+  {
+   "date": "2026-10-12",
+   "added": "2026-10-16",
+   "deal": "Lyca Mobile × West Ham United",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "West Ham renews its longest-standing commercial partner, covering LED, digital and eSIM promotion.",
+   "url": "https://www.insideworldfootball.com/2026/10/12/west-ham-renew-long-term-partner-lyca-as-club-chases-bounceback-to-premier-league/"
+  },
+  {
+   "date": "2026-10-13",
+   "added": "2026-10-16",
+   "deal": "Shriners Children's × Concacaf",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Expanded deal adds the Concacaf W Championship to Shriners' 2027 Gold Cup and Nations League Finals partnership.",
+   "url": "https://www.concacaf.com/competitions/concacaf/news/concacaf-and-shriners-children-s-announce-expanded-partnership-across-major-2027-competitions"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-16",
+   "deal": "Panini America × LaLiga North America",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Multi-year extension of the regional partnership, with Panini back as title sponsor of the U.S. Gaming Challenge.",
+   "url": "https://www.prnewswire.com/news-releases/laliga-north-america-panini-america-extend-partnership-to-further-engage-soccers-growing-fanbase-in-us-through-gaming-grassroots-302907817.html"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-16",
+   "deal": "YIDA ONEPATH × WNBL",
+   "sport": "Basketball",
+   "type": "Media rights",
+   "region": "ANZ",
+   "summary": "New broadcast deal streams every WNBL game of the 2026-27 season in China across Douyin, RedNote, Kuaishou and WeChat Channels.",
+   "url": "https://www.wnbl.com.au/news/wnbl-announces-chinese-broadcast-partnership-with-yida"
+  },
+  {
+   "date": "2026-10-12",
+   "added": "2026-10-16",
+   "deal": "Sports Direct Australia × Sydney FC",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Official sports retailer deal extended for the 2026-27 season.",
+   "url": "https://ministryofsport.com/sydney-fc-and-sports-direct-australia-extend-commercial-partnership-for-2026-27-season/"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-16",
+   "deal": "ASB × Round the Bays",
+   "sport": "Running",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "ASB joins the Round the Bays fun-run series in Auckland, Wellington and Christchurch, adding an ASB Joggers category.",
+   "url": "https://stoppress.co.nz/news/asb-joins-round-the-bays-as-2027-season-kicks-off/"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-16",
+   "deal": "Arun Ice Cream × Mohun Bagan Super Giant",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Co-partner of the Kolkata club for the 2026-27 ISL season.",
+   "url": "https://sportsmintmedia.com/isl-2026-27-mohun-bagan-super-giant-strike-four-new-commercial-pacts/"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-16",
+   "deal": "SRMB TMT × Mohun Bagan Super Giant",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Associate sponsor for the 2026-27 ISL season.",
+   "url": "https://sportsmintmedia.com/isl-2026-27-mohun-bagan-super-giant-strike-four-new-commercial-pacts/"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-16",
+   "deal": "Alliance Broadband × Mohun Bagan Super Giant",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Associate sponsor for the 2026-27 ISL season.",
+   "url": "https://sportsmintmedia.com/isl-2026-27-mohun-bagan-super-giant-strike-four-new-commercial-pacts/"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-16",
+   "deal": "FREEMANS × Mohun Bagan Super Giant",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Official tools partner for the 2026-27 ISL season.",
+   "url": "https://sportsmintmedia.com/isl-2026-27-mohun-bagan-super-giant-strike-four-new-commercial-pacts/"
+  },
+  {
+   "date": "2026-10-14",
+   "added": "2026-10-16",
+   "deal": "Turtlebox × Perfect Game",
+   "sport": "Baseball",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Speaker brand extends as Perfect Game's official Bluetooth speaker and audio provider, adding a YouTube series.",
+   "url": "https://www.prnewswire.com/news-releases/perfect-game-extends-partnership-with-turtlebox-as-official-bluetooth-speaker-and-audio-provider-302908572.html"
+  },
+  {
    "date": "2026-10-13",
    "added": "2026-10-15",
    "deal": "Suisscourtage Assurances × AS Monaco",
