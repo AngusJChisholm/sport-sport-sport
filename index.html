@@ -51,23 +51,25 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;border-bottom:
 .nav a{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey-500)}
 .nav a:hover,.nav a.on{color:var(--white)}
 .menu{display:none;margin-left:auto;background:none;border:1px solid var(--white);color:var(--white);font:inherit;font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:11px 14px;cursor:pointer}
-.hero{padding-block:clamp(48px,7vw,104px) clamp(56px,7vw,112px)}
+.hero{padding-block:clamp(40px,5vw,72px)}
 .hero-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--grey-800)}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:end;padding-top:clamp(40px,6vw,88px)}
-.hero .hh{font-size:clamp(56px,11vw,184px);margin:0}
-.hero-ctl{display:flex;align-items:center;gap:10px}
-.hn{font:inherit;font-size:18px;line-height:1;background:none;color:var(--white);border:1px solid var(--grey-800);width:44px;height:44px;cursor:pointer;border-radius:0}
-.hn:hover{border-color:var(--volt);color:var(--volt)}
-.hero-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
-.hero-track::-webkit-scrollbar{display:none}
-.slide{flex:0 0 100%;min-width:0;scroll-snap-align:start;scroll-snap-stop:always}
-.slide .sday{display:block;margin-top:clamp(28px,4vw,48px)}
-.slide .hero-grid{padding-top:clamp(20px,3vw,40px)}
-.dots{display:flex;gap:8px;margin-top:clamp(28px,4vw,44px)}
-.dots button{width:32px;height:4px;padding:0;border:0;border-radius:0;background:var(--grey-800);cursor:pointer}
-.dots button.on{background:var(--volt)}
-.hero .sup{font-weight:500;font-size:clamp(14px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase;margin:32px 0 0;line-height:1.4}
-.hero p.dek{font-size:clamp(17px,1.4vw,20px);line-height:1.5;color:var(--grey-100);margin:24px 0 32px;text-wrap:pretty}
+/* Key stories: latest article big top-left, the next seven wrap around it clockwise (right column top-down, then bottom row right-to-left). */
+.ks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(150px,13vw,190px);gap:14px;margin-top:clamp(24px,3vw,36px)}
+.kt{position:relative;display:flex;flex-direction:column;min-width:0;overflow:hidden;background:#111;border:1px solid var(--grey-800);padding:18px 18px 16px;color:var(--white);transition:border-color .15s,background .15s}
+a.kt:hover{border-color:var(--volt);background:#161616;color:var(--white)}
+.kt .kd{font-weight:800;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--grey-500)}
+.kt h2,.kt h1{font-weight:800;text-transform:uppercase;letter-spacing:-.03em;line-height:.92;margin:auto 0 0;font-size:clamp(17px,1.45vw,22px);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;text-wrap:balance}
+.kt .kx{font-size:13px;color:var(--grey-100);margin:8px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kt.k1{grid-column:1/4;grid-row:1/4;padding:clamp(24px,3vw,44px)}
+.kt.k1::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--volt)}
+.kt.k1 h1{font-size:clamp(36px,4.6vw,72px);-webkit-line-clamp:4;margin-top:auto}
+.kt.k1 .kx{font-size:clamp(14px,1.2vw,17px);letter-spacing:.1em;text-transform:uppercase;margin-top:16px}
+.kt.k1 .dek{font-size:clamp(15px,1.2vw,18px);line-height:1.5;color:var(--grey-100);margin:18px 0 0;max-width:62ch;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+.kt.k1 .kf{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:22px;padding-top:18px;border-top:1px solid var(--grey-800)}
+.k2{grid-column:4;grid-row:1}.k3{grid-column:4;grid-row:2}.k4{grid-column:4;grid-row:3}.k5{grid-column:4;grid-row:4}
+.k6{grid-column:3;grid-row:4}.k7{grid-column:2;grid-row:4}.k8{grid-column:1;grid-row:4}
+@media (max-width:1100px){.ks{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto}.ks .kt{grid-column:auto;grid-row:auto;min-height:160px}.kt.k1{grid-column:1/-1;min-height:clamp(340px,55vw,460px)}.k8{display:none}}
+@media (max-width:640px){.ks{grid-template-columns:minmax(0,1fr);gap:10px}.ks .kt{min-height:0}.kt.k1{min-height:360px}.kt.k1 h1{margin-top:28px}.kt.k1 .kx{white-space:normal}.kt.k1 .kf{flex-direction:column;align-items:flex-start}.kt h2{margin-top:14px}.k8{display:flex}}
 .meta{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;border-top:1px solid var(--grey-800)}
 .more{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid var(--volt);padding-bottom:4px}
 .sec{padding-block:clamp(56px,7vw,112px)}
@@ -159,11 +161,8 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 
 <main>
 <section class="dk hero" id="latest"><div class="wrap">
-<div class="hero-top"><span class="lbl">Key stories</span><div class="hero-ctl"><span class="lbl mute" id="heroCount"></span><button class="hn" id="hPrev" type="button" aria-label="Previous story">&larr;</button><button class="hn" id="hNext" type="button" aria-label="Next story">&rarr;</button></div></div>
-<div class="hero-track" id="heroTrack" aria-roledescription="carousel" aria-label="Key stories">
-<article class="slide"><div class="hero-grid"><div><h1 class="disp hh" id="heroHead">Loading deals</h1></div><div><p class="dek" id="heroDek"></p></div></div></article>
-</div>
-<div class="dots" id="heroDots"></div>
+<div class="hero-top"><span class="lbl">Key stories</span><span class="lbl mute" id="heroCount"></span></div>
+<div class="ks" id="ks"><div class="kt k1"><h1 id="heroHead">Loading deals</h1><p class="dek" id="heroDek"></p></div></div>
 </div></section>
 
 <section class="sec"><div class="wrap">
@@ -231,40 +230,15 @@ function hero(){
   const leads=dated.filter(d=>d.lead).sort((a,b)=>pKey(b).localeCompare(pKey(a)));
   const lead=leads[0]||dated[0];
   if(!lead)return null;
-  // Key stories: recent lead deals, shuffled each visit so the page isn't the same every time.
-  let pool=leads.slice(0,8);
-  if(pool.length<2)pool=[lead];
-  for(let k=pool.length-1;k>0;k--){const r=Math.floor(Math.random()*(k+1));[pool[k],pool[r]]=[pool[r],pool[k]]}
-  try{const last=localStorage.getItem("sss-first");if(pool.length>1&&pool[0].deal===last)pool.push(pool.shift());localStorage.setItem("sss-first",pool[0].deal)}catch(e){}
-  const slide=(d,i)=>`<article class="slide" aria-roledescription="slide" aria-label="${i+1} of ${pool.length}">
-<span class="lbl mute sday">${d===lead?"Latest lead · ":""}${esc(fmtLong(asPosted(d)))}</span>
-<div class="hero-grid"><div><${i===0?"h1":"h2"} class="disp hh">${esc(d.headline||d.deal)}</${i===0?"h1":"h2"}><p class="sup">${esc(d.deal+(d.type?" · "+d.type:""))}</p></div>
-<div><div class="tags">${tags(d)}</div>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}
-<div class="meta"><span class="lbl mute">${esc(fmtDots(asPosted(d)))}</span><span>${link(d,"Read the full story →")}</span></div></div></div></article>`;
-  const track=$("heroTrack");
-  track.innerHTML=pool.map(slide).join("");
-  const n=pool.length, dots=$("heroDots");
-  dots.innerHTML=n>1?pool.map((d,i)=>`<button type="button" aria-label="Story ${i+1}"></button>`).join(""):"";
-  const ctl=document.querySelector(".hero-ctl");
-  if(n<2){ctl.querySelectorAll(".hn").forEach(b=>b.hidden=true);return lead}
-  let cur=0,timer=null,paused=false;
-  const set=i=>{cur=i;$("heroCount").textContent=`${i+1} / ${n}`;[...dots.children].forEach((b,k)=>b.classList.toggle("on",k===i))};
-  const go=i=>{const t=(i+n)%n;track.scrollTo({left:t*track.clientWidth,behavior:"smooth"});set(t)};
-  let st;track.addEventListener("scroll",()=>{clearTimeout(st);st=setTimeout(()=>set(Math.round(track.scrollLeft/Math.max(1,track.clientWidth))),80)},{passive:true});
-  $("hPrev").onclick=()=>{go(cur-1);restart()};
-  $("hNext").onclick=()=>{go(cur+1);restart()};
-  [...dots.children].forEach((b,k)=>b.onclick=()=>{go(k);restart()});
-  const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const restart=()=>{clearInterval(timer);if(!reduce&&!paused)timer=setInterval(()=>{if(!document.hidden)go(cur+1)},7000)};
-  const hold=v=>{paused=v;restart()};
-  const hs=$("latest");
-  hs.addEventListener("mouseenter",()=>hold(true));hs.addEventListener("mouseleave",()=>hold(false));
-  hs.addEventListener("focusin",()=>hold(true));hs.addEventListener("focusout",()=>hold(false));
-  track.addEventListener("touchstart",()=>hold(true),{passive:true});
-  track.addEventListener("keydown",e=>{if(e.key==="ArrowRight"){go(cur+1);e.preventDefault()}if(e.key==="ArrowLeft"){go(cur-1);e.preventDefault()}});
-  track.tabIndex=0;
-  window.addEventListener("resize",()=>track.scrollTo({left:cur*track.clientWidth}));
-  set(0);restart();
+  // Newest article first (by the day it went up here), then back through the archive.
+  let pool=dated.filter(d=>d.article).sort((a,b)=>pKey(b).localeCompare(pKey(a))||(b.lead?1:0)-(a.lead?1:0)).slice(0,8);
+  if(!pool.length)pool=[lead];
+  const big=d=>{const x=href(d),tag=x?"a":"div";
+    return `<${tag} class="kt k1"${attrs(d)}><span class="kd">Latest · ${esc(fmtLong(asPosted(d)))}</span><h1>${esc(d.headline||d.deal)}</h1><p class="kx">${esc(d.deal+(d.type?" · "+d.type:""))}</p>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}<div class="kf"><div class="tags">${tags(d)}</div>${x?`<span class="more">Read the full story →</span>`:""}</div></${tag}>`};
+  const small=(d,i)=>{const tag=href(d)?"a":"div";
+    return `<${tag} class="kt k${i+1}"${attrs(d)}><span class="kd">${esc(fmtShort(asPosted(d)))} · ${esc(d.sport)}</span><h2>${esc(d.headline||d.deal)}</h2><p class="kx">${esc(d.deal)}</p></${tag}>`};
+  $("ks").innerHTML=pool.map((d,i)=>i?small(d,i):big(d)).join("");
+  $("heroCount").textContent=`${pool.length} latest stories`;
   return lead;
 }
 function roundup(lead){
