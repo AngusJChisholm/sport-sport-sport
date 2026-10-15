@@ -149,6 +149,20 @@ footer{padding-block:clamp(56px,7vw,96px) 32px}
 .ft{grid-template-columns:minmax(0,1fr)}.ft-b{margin-top:48px}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 html{scroll-behavior:smooth;scroll-padding-top:96px}
+/* Key stories on white: black lead tile carries the brand, white tiles keep the rest easy to scan. */
+.hero.lt{background:var(--white);color:var(--ink)}
+.hero.lt .hero-top{border-bottom-color:var(--line)}
+.hero.lt .mute{color:var(--ink-3)}
+.hero.lt .kt{background:var(--white);border-color:var(--line);color:var(--ink)}
+.hero.lt a.kt:hover{background:var(--canvas);border-color:var(--black);color:var(--ink)}
+.hero.lt .kt .kd{color:var(--ink-3)}
+.hero.lt .kt .kx{color:var(--ink-2)}
+.hero.lt .kt.k1{background:var(--black);border-color:var(--black);color:var(--white)}
+.hero.lt a.kt.k1:hover{background:#151515;border-color:var(--black);color:var(--white)}
+.hero.lt .kt.k1 .kd{color:var(--grey-500)}
+.hero.lt .kt.k1 .kx,.hero.lt .kt.k1 .dek{color:var(--grey-100)}
+.hero.lt .kt.k1 .kf{border-top-color:var(--grey-800)}
+.hero.lt .kt.k1 .tag{color:var(--white)}.hero.lt .kt.k1 .tag.r{color:var(--black)}
 </style>
 </head>
 <body>
@@ -160,7 +174,7 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 </div></header>
 
 <main>
-<section class="dk hero" id="latest"><div class="wrap">
+<section class="hero lt" id="latest"><div class="wrap">
 <div class="hero-top"><span class="lbl">Key stories</span><span class="lbl mute" id="heroCount"></span></div>
 <div class="ks" id="ks"><div class="kt k1"><h1 id="heroHead">Loading deals</h1><p class="dek" id="heroDek"></p></div></div>
 </div></section>
