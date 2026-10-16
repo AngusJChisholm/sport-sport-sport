@@ -28,6 +28,18 @@ def esc(s):
     return html.escape(str(s or ""), quote=True)
 
 
+def photo_urls(img):
+    """(page image URL, link-preview image URL) for a deal's "image", or ("", default preview)."""
+    img = str(img or "")
+    if re.fullmatch(r"assets/[\w/.-]+\.(jpe?g|png|webp)", img) and (ROOT / img).exists():
+        return f"../{img}", f"{SITE_URL}/{img}"
+    m = re.match(r"^https://images\.unsplash\.com/(photo-[\w-]+)", img)
+    if m:
+        base = f"https://images.unsplash.com/{m.group(1)}"
+        return f"{base}?w=1600&q=80&auto=format&fit=crop", f"{base}?w=1200&h=630&q=80&auto=format&fit=crop"
+    return "", f"{SITE_URL}/assets/og-image.png"
+
+
 def long_date(iso):
     d = date.fromisoformat(iso)
     return f"{d.strftime('%A')} {d.day} {d.strftime('%B %Y')}"
@@ -82,6 +94,13 @@ def main():
         follow = (f'<a class="btn" href="{esc(linkedin)}" target="_blank" rel="noopener">Follow on LinkedIn</a>' if linkedin else "") + \
                  (f'<a class="btn btn-o" href="{esc(instagram)}" target="_blank" rel="noopener">Follow on Instagram</a>' if instagram else "")
         title = e.get("headline") or e["deal"]
+        ph_src, og_img = photo_urls(e.get("image"))
+        topclass = topstyle = credit_html = ""
+        if ph_src:
+            src_name = e.get("imageCredit") or ("Unsplash" if "unsplash.com" in ph_src else "")
+            topclass, topstyle = " hasph", f' style="--img:url(\'{esc(ph_src)}\')"'
+            if src_name:
+                credit_html = f'<span class="credit">Photo: {esc(src_name)}</span>'
         page = (
             tpl.replace("{{TITLE}}", esc(f'{e["deal"]}: {title}'))
             .replace("{{DESC}}", esc(a.get("standfirst")))
@@ -95,6 +114,10 @@ def main():
             .replace("{{BODY}}", body)
             .replace("{{CLOSE}}", esc(a.get("close")))
             .replace("{{SOURCE}}", source)
+            .replace("{{TOPCLASS}}", topclass)
+            .replace("{{TOPSTYLE}}", topstyle)
+            .replace("{{CREDIT}}", credit_html)
+            .replace("{{OGIMAGE}}", esc(og_img))
             .replace("{{SAMEDAY}}", sameday)
             .replace("{{FOLLOW}}", follow)
             .replace("{{YEAR}}", e["date"][:4])

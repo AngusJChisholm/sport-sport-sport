@@ -12,7 +12,7 @@
 <meta property="og:description" content="Firmus Technologies just put its name on Cricket Tasmania&#x27;s playing shirts.">
 <meta property="og:url" content="https://sportsportsport.com.au/articles/2026-09-17-firmus-technologies-cricket-tasmania.html">
 <meta property="article:published_time" content="2026-09-17">
-<meta property="og:image" content="https://sportsportsport.com.au/assets/og-image.png">
+<meta property="og:image" content="https://images.unsplash.com/photo-1675693303492-9a5bc898bf94?w=1200&amp;h=630&amp;q=80&amp;auto=format&amp;fit=crop">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
@@ -48,6 +48,18 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;border-bottom:
 .top .sup{font-weight:500;font-size:clamp(14px,1.3vw,18px);letter-spacing:.12em;text-transform:uppercase;margin:28px 0 24px;line-height:1.4}
 .read{padding-block:clamp(48px,6vw,96px)}
 .col{max-width:680px}
+/* Photo header: the lead's photo behind the headline block, dark fade so the type reads. */
+.top.hasph{position:relative;background:#000 var(--img) center/cover no-repeat;padding-block:clamp(48px,7vw,112px) clamp(56px,7vw,112px)}
+.top.hasph::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.35) 35%,rgba(0,0,0,.55) 60%,rgba(0,0,0,.9) 100%)}
+.top.hasph>.wrap{position:relative}
+.top.hasph .top-row{border-bottom-color:rgba(255,255,255,.25)}
+.top.hasph .mute{color:rgba(255,255,255,.8)}
+.top.hasph h1,.top.hasph .sup{text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.top .credit{position:absolute;right:var(--pad);bottom:14px;font-size:11px;letter-spacing:.08em;color:rgba(255,255,255,.7)}
+.ph{margin:8px 0 44px;max-width:1040px}
+.ph div{aspect-ratio:16/9;background:var(--canvas) center/cover no-repeat}
+.ph figcaption{margin-top:10px;font-size:13px;color:var(--ink-3)}
+.ph figcaption a{border-bottom:1px solid currentColor}
 .stand{font-weight:800;font-size:clamp(24px,2.4vw,32px);line-height:1.2;letter-spacing:-.02em;margin:0 0 32px;text-wrap:balance}
 .col p.b{font-size:clamp(17px,1.3vw,19px);line-height:1.65;color:var(--ink-2);margin:0 0 22px;text-wrap:pretty}
 .close{font-weight:800;font-size:clamp(20px,1.8vw,24px);line-height:1.3;margin:36px 0 0;padding-top:24px;border-top:2px solid var(--ink)}
@@ -79,12 +91,12 @@ footer{padding-block:clamp(48px,6vw,88px) 32px}
 
 <main>
 <article>
-<section class="dk top"><div class="wrap">
+<section class="dk top hasph" style="--img:url('https://images.unsplash.com/photo-1675693303492-9a5bc898bf94?w=1600&amp;q=80&amp;auto=format&amp;fit=crop')"><div class="wrap">
 <div class="top-row"><span class="lbl">Lead deal</span><span class="lbl mute">Thursday 17 September 2026</span></div>
 <h1 class="disp">AI on the cricket shirt.</h1>
 <p class="sup">Firmus Technologies × Cricket Tasmania</p>
 <div class="tags"><span class="tag">Cricket</span><span class="tag">Principal partner</span><span class="tag r">ANZ</span></div>
-</div></section>
+</div><span class="credit">Photo: Unsplash</span></section>
 
 <section class="read"><div class="wrap"><div class="col">
 <p class="stand">Firmus Technologies just put its name on Cricket Tasmania&#x27;s playing shirts.</p>
