@@ -77,7 +77,10 @@ def main():
         if e.get("type"):
             tags += f'<span class="tag">{esc(e["type"])}</span>'
         tags += f'<span class="tag r">{esc(e.get("region"))}</span>'
-        body = "\n".join(f'<p class="b">{esc(p)}</p>' for p in a.get("body", []))
+        paras = [f'<p class="b">{esc(p)}</p>' for p in a.get("body", [])]
+        # Partner feature slot after the first paragraph (filled by assets/partner.js from partners.json).
+        paras.insert(1 if paras else 0, '<div data-partner-slot="feature" hidden></div>')
+        body = "\n".join(paras)
         source = ""
         posted = e.get("added") or e["date"]  # edition date; "date" is when the deal was announced
         others = [o for o in deals if (o.get("added") or o.get("date")) == posted and o is not e]

@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&display=swap">
+<link rel="stylesheet" href="assets/partner.css">
 <style>
 /* Layout: black masthead + hero, white round-up, canvas Global/ANZ split, black follow block, white archive, black footer. Single committed look, no radii, no shadows. */
 :root{
@@ -195,6 +196,8 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 <div class="ks" id="ks"><div class="kt k1"><h1 id="heroHead">Loading deals</h1><p class="dek" id="heroDek"></p></div></div>
 </div></section>
 
+<section class="pt-sec" data-partner-wrap hidden><div class="wrap"><div data-partner-slot="home" hidden></div></div></section>
+
 <section class="sec"><div class="wrap">
 <div class="sh"><div><span class="lbl mute-l">Latest round-up</span><h2 class="disp">The other deals.</h2></div><span class="lbl mute-l" id="rCount"></span></div>
 <div class="grid" id="roundup"></div>
@@ -361,5 +364,6 @@ fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.statu
 }).catch(()=>{const h=$("heroHead"),k=$("heroDek");if(h)h.textContent="Deals unavailable";if(k)k.textContent="The deals file didn't load. Refresh to try again.";wire();});
 })();
 </script>
+<script src="assets/partner.js" defer></script>
 </body>
 </html>

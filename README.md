@@ -60,3 +60,13 @@ Every weekday the 6am update writes `instagram/queue/<date>.json` (the day's sli
 **Club colours** for stories live in `instagram/colours.json`. Anything not listed uses black.
 
 **Secrets** (GitHub > Settings > Secrets and variables > Actions): `IG_USER_ID`, `IG_ACCESS_TOKEN`, and optionally `GH_PAT` (a fine-grained token with Secrets read/write on this repo) so the Instagram token renews itself every week. Without `GH_PAT` the token must be renewed by hand every 60 days.
+
+## Partner slots (advertising)
+
+One partner can own every slot on the site. Everything is controlled by `partners.json`:
+
+- `active` - set to `false` to hide every slot straight away (nothing else changes)
+- `name`, `url` - the partner and where clicks go. Every image, headline and link in a slot opens this site (or the slot's own `url`)
+- Slots: `credit` (byline line), `feature` (split image + copy after the first paragraph), `wide` (full-width image at the end of the article), `signoff` (closing line), `presented` (in the black follow block) and `home` (between key stories and the round-up on the homepage). Delete a slot from the file to switch just that one off
+
+Images live in `assets/partners/<partner>/`: `split.jpg` 1200×900, `wide.jpg` 1600×900, `home.jpg` 2400×800 and `home-mobile.jpg` 1600×900. Changing the partner needs no rebuild; the articles fill the slots from `partners.json` when they load. Links carry `rel="sponsored"` and UTM tags so the partner can see the traffic.
