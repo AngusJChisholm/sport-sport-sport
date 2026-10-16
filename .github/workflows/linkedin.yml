@@ -1,0 +1,44 @@
+name: LinkedIn graphics
+
+on:
+  push:
+    branches: [main]
+    paths: ["instagram/linkedin/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Install renderer
+        run: |
+          pip install playwright==1.48.0
+          python3 -m playwright install --with-deps chromium
+
+      - name: Render LinkedIn graphics
+        run: python3 tools/linkedin_build.py
+
+      - name: Commit graphics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ig
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          git commit -m "LinkedIn graphics [skip netlify]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1

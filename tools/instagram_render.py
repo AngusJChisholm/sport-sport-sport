@@ -73,7 +73,7 @@ async () => {
 def page(body, w, h, bg, fg, extra_css=""):
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&display=swap" rel="stylesheet">
-<style>{BASE_CSS}
+<style>{BASE_CSS}{PHOTO_CSS}
 body{{width:{w}px;height:{h}px;background:{bg};color:{fg}}}
 .frame{{width:{w}px;height:{h}px}}
 {extra_css}</style></head><body>{body}</body></html>"""
@@ -105,7 +105,8 @@ FEED_CSS = ".frame{padding:88px;--line:#292929;--muted:#9E9E9E}"
 # ---------- feed slides (black) ----------
 
 def feed_cover(c):
-    body = f"""<div class="frame">
+    ph = photo_layer(deal_image(c), FEED_W, SHADE_FEED) if (c.get("image") or c.get("deal")) else ""
+    body = f"""<div class="frame{' photo' if ph else ''}">{ph}
 <div class="top"><div class="tag">{esc(c.get('tag') or 'Deal of the day')}</div><div class="lbl" style="color:#9E9E9E">{esc(c.get('region',''))}</div></div>
 <div style="display:flex;flex-direction:column;gap:40px">
 <h1 class="disp" data-fit="640" style="font-size:196px">{highlight(c['headline'], c.get('highlight'))}</h1>
@@ -143,7 +144,8 @@ def feed_close(n, total):
 
 
 def week_item(item, idx, n, total, label="The week in deals"):
-    return f"""<div class="frame">
+    ph = photo_layer(deal_image(item), FEED_W, SHADE_FEED)
+    return f"""<div class="frame{' photo' if ph else ''}">{ph}
 <div class="top"><div class="lbl">{esc(label)}</div>{counter(n, total)}</div>
 <div style="display:flex;flex-direction:column;gap:36px">
 <div class="disp v" style="font-size:220px">{idx:02d}</div>
@@ -152,6 +154,56 @@ def week_item(item, idx, n, total, label="The week in deals"):
 </div>
 <div class="foot">{wordmark('white')}<div class="lbl" style="color:#9E9E9E">{esc(item.get('sport',''))}</div></div>
 </div>"""
+
+
+# ---------- photos ----------
+# A deal's photo comes from the queue item's own "image", else the matching deal in deals.json.
+# Local files (assets/...) are embedded; Unsplash links are sized for the slide.
+PHOTO_CSS = """
+.ph{position:absolute;inset:0;background-position:center;background-size:cover;z-index:0}
+.ph::after{content:"";position:absolute;inset:0;background:var(--shade)}
+.frame>*:not(.ph):not(.bar){position:relative;z-index:1}
+.photo .lbl[style*="9E9E9E"],.photo [style*="9E9E9E"]{color:rgba(255,255,255,.88)!important}
+.photo .disp,.photo .sup,.photo .row b{text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.photo .foot{border-top-color:rgba(255,255,255,.3)!important}
+"""
+SHADE_FEED = "linear-gradient(180deg,rgba(0,0,0,.62) 0%,rgba(0,0,0,.22) 30%,rgba(0,0,0,.5) 55%,rgba(0,0,0,.9) 100%)"
+SHADE_STORY = "linear-gradient(180deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.25) 25%,rgba(0,0,0,.55) 50%,rgba(0,0,0,.92) 100%)"
+_DEALS = None
+
+
+def deal_key(name):
+    parts = re.split(r"\s+[x\u00d7]\s+", name or "", maxsplit=1)
+    return tuple(norm(x) for x in parts)
+
+
+def deal_image(item):
+    if item.get("image"):
+        return item["image"]
+    global _DEALS
+    if _DEALS is None:
+        try:
+            _DEALS = {deal_key(d.get("deal")): d.get("image") for d in json.loads((ROOT / "deals.json").read_text())["deals"] if d.get("image")}
+        except Exception:
+            _DEALS = {}
+    return _DEALS.get(deal_key(item.get("deal")))
+
+
+def photo_src(img, w):
+    import base64
+    img = str(img or "")
+    if re.fullmatch(r"assets/[\w/.-]+\.(jpe?g|png|webp)", img) and (ROOT / img).exists():
+        mime = "image/png" if img.endswith(".png") else "image/webp" if img.endswith(".webp") else "image/jpeg"
+        return f"data:{mime};base64," + base64.b64encode((ROOT / img).read_bytes()).decode()
+    m = re.match(r"^https://images\.unsplash\.com/(photo-[\w-]+)", img)
+    if m:
+        return f"https://images.unsplash.com/{m.group(1)}?w={w}&q=80&auto=format&fit=crop"
+    return ""
+
+
+def photo_layer(img, w, shade):
+    src = photo_src(img, w)
+    return f'<div class="ph" style="background-image:url(\'{src}\');--shade:{shade}"></div>' if src else ""
 
 
 def build_feed(feed):
@@ -296,8 +348,13 @@ def story(item):
     btn_bg, btn_fg = ("#000000", "#FFFFFF") if light else ("#FFFFFF", "#000000")
     points = item.get("points", [])[:3]
     rows = "".join(f'<div class="row"><b>{esc(p)}</b></div>' for p in points)
-    body = f"""<div class="frame" style="padding:220px 88px 260px">
-<div style="position:absolute;top:0;bottom:0;left:0;width:40px;background:{secondary}"></div>
+    ph = photo_layer(deal_image(item), STORY_W, SHADE_STORY)
+    if ph:  # photo story: white type over the photo, club colour kept as the edge bar
+        light, fg, line = False, "#FFFFFF", "rgba(255,255,255,.35)"
+        btn_bg, btn_fg = "#FFFFFF", "#000000"
+        secondary = primary if luminance(primary) > 0.03 else secondary
+    body = f"""<div class="frame{' photo' if ph else ''}" style="padding:220px 88px 260px">{ph}
+<div class="bar" style="position:absolute;top:0;bottom:0;left:0;width:40px;background:{secondary};z-index:2"></div>
 <div class="tag">{esc(item.get('tag') or 'Deal of the day')}</div>
 <div style="display:flex;flex-direction:column;gap:56px">
 <h1 class="disp" data-fit="520" style="font-size:190px">{esc(item['deal'])}</h1>
