@@ -272,6 +272,13 @@ function stripVars(d,dark){
   if(!use.length)return "";
   return ` style="--c1:${use[0]}"`;
 }
+// Tile photos: a local file in assets/, or an Unsplash photo (loaded straight from Unsplash, sized for the tile).
+function imgUrl(d,w){
+  const x=String(d.image||"");
+  if(/^assets\/[\w\/.-]+$/.test(x))return x;
+  const m=x.match(/^https:\/\/images\.unsplash\.com\/(photo-[\w-]+)/);
+  return m?`https://images.unsplash.com/${m[1]}?w=${w}&q=75&auto=format&fit=crop`:"";
+}
 function hero(){
   const dated=DEALS.filter(d=>d.date);
   const leads=dated.filter(d=>d.lead).sort((a,b)=>pKey(b).localeCompare(pKey(a)));
@@ -281,12 +288,12 @@ function hero(){
   let pool=dated.filter(d=>d.article).sort((a,b)=>pKey(b).localeCompare(pKey(a))||(b.lead?1:0)-(a.lead?1:0)).slice(0,8);
   if(!pool.length)pool=[lead];
   const big=d=>{const x=href(d),tag=x?"a":"div";
-    const im=d.image&&/^[\w\/.-]+$/.test(d.image)?d.image:"";const sv=stripVars(d,true);
-    return `<${tag} class="kt k1${im?" img":""}"${attrs(d)}${im?` style="--img:url('${im}')${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">Latest · ${esc(fmtLong(asPosted(d)))}</span><h1>${esc(d.headline||d.deal)}</h1><p class="kx">${esc(d.deal+(d.type?" · "+d.type:""))}</p>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}<div class="kf"><div class="tags">${tags(d)}</div>${x?`<span class="more">Read the full story →</span>`:""}</div></${tag}>`};
+    const im=imgUrl(d,1600);const sv=stripVars(d,true);
+    return `<${tag} class="kt k1${im?" img":""}"${attrs(d)}${im?` style="--img:url('${esc(im)}')${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">Latest · ${esc(fmtLong(asPosted(d)))}</span><h1>${esc(d.headline||d.deal)}</h1><p class="kx">${esc(d.deal+(d.type?" · "+d.type:""))}</p>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}<div class="kf"><div class="tags">${tags(d)}</div>${x?`<span class="more">Read the full story →</span>`:""}</div></${tag}>`};
   const small=(d,i)=>{const tag=href(d)?"a":"div";
-    const im=d.image&&/^[\w\/.-]+$/.test(d.image)?d.image:"";
+    const im=imgUrl(d,800);
     const sv=stripVars(d,false);
-    return `<${tag} class="kt k${i+1}${im?" img":""}"${attrs(d)}${im?` style="--img:url('${im}')${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${esc(fmtShort(asPosted(d)))} · ${esc(d.sport)}</span><h2>${esc(d.headline||d.deal)}</h2><p class="kx">${esc(d.deal)}</p></${tag}>`};
+    return `<${tag} class="kt k${i+1}${im?" img":""}"${attrs(d)}${im?` style="--img:url('${esc(im)}')${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${esc(fmtShort(asPosted(d)))} · ${esc(d.sport)}</span><h2>${esc(d.headline||d.deal)}</h2><p class="kx">${esc(d.deal)}</p></${tag}>`};
   $("ks").innerHTML=pool.map((d,i)=>i?small(d,i):big(d)).join("");
   $("heroCount").textContent=`${pool.length} latest stories`;
   return lead;
