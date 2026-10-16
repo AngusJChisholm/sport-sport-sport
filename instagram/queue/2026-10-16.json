@@ -8,29 +8,101 @@
   "descriptor": "The biggest deals, w/e 16 October",
   "region": "Global & ANZ",
   "items": [
-   {"deal": "adidas x Parramatta Eels", "sub": "Official apparel partner, kit debuts Round 1 2027", "sport": "NRL"},
-   {"deal": "L'Oréal x Paris Saint-Germain", "sub": "L'Oréal's first football deal, through 2028", "sport": "Football"},
-   {"deal": "Adobe x Australian Open", "sub": "Adobe's first tennis sponsorship anywhere", "sport": "Tennis"},
-   {"deal": "Uber Eats x Real Madrid", "sub": "Delivery partner in Spain through June 2029", "sport": "Football"},
-   {"deal": "Red Bull x MotoGP Australian Grand Prix", "sub": "Title of MotoGP's first Adelaide street race", "sport": "Motorsport"}
+   {
+    "deal": "adidas x Parramatta Eels",
+    "sub": "Official apparel partner, kit debuts Round 1 2027",
+    "sport": "NRL"
+   },
+   {
+    "deal": "L'Oréal x Paris Saint-Germain",
+    "sub": "L'Oréal's first football deal, through 2028",
+    "sport": "Football"
+   },
+   {
+    "deal": "Adobe x Australian Open",
+    "sub": "Adobe's first tennis sponsorship anywhere",
+    "sport": "Tennis"
+   },
+   {
+    "deal": "Uber Eats x Real Madrid",
+    "sub": "Delivery partner in Spain through June 2029",
+    "sport": "Football",
+    "image": "https://images.unsplash.com/photo-1559941727-6fb446e7e8ae"
+   },
+   {
+    "deal": "Red Bull x MotoGP Australian Grand Prix",
+    "sub": "Title of MotoGP's first Adelaide street race",
+    "sport": "Motorsport",
+    "image": "https://images.unsplash.com/photo-1570526427001-9d80d114054d"
+   }
   ]
  },
  "stories": [
-  {"tag": "Deal of the day", "deal": "adidas x Parramatta Eels", "property": "Parramatta Eels",
-   "points": ["Official apparel partner", "NRL, NRLW and juniors", "Kit debuts Round 1 2027"]},
-  {"tag": "Also today", "deal": "Ford Australia x WNBL", "property": "WNBL",
-   "points": ["Steps up to presenting partner", "For the 2026-27 season"]},
-  {"tag": "Also today", "deal": "Sky NZ x Australian Open", "property": "Australian Open",
-   "points": ["NZ media rights renewed", "Adds Laver Cup and United Cup"]},
-  {"tag": "Also today", "deal": "Flyte Aviation x Philadelphia 76ers", "property": "Philadelphia 76ers",
-   "points": ["Official private aviation partner", "Exclusive multi-year deal"]},
-  {"tag": "Also today", "deal": "BetMGM x Connor McDavid", "property": "Connor McDavid",
-   "points": ["Multi-year extension", "Ambassador since 2022"]},
-  {"tag": "Also today", "deal": "InterContinental x Wellington Phoenix", "property": "Wellington Phoenix",
-   "points": ["Back as official hotel partner", "Matchday hub for season 20"]}
+  {
+   "tag": "Deal of the day",
+   "deal": "adidas x Parramatta Eels",
+   "property": "Parramatta Eels",
+   "points": [
+    "Official apparel partner",
+    "NRL, NRLW and juniors",
+    "Kit debuts Round 1 2027"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Ford Australia x WNBL",
+   "property": "WNBL",
+   "points": [
+    "Steps up to presenting partner",
+    "For the 2026-27 season"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Sky NZ x Australian Open",
+   "property": "Australian Open",
+   "points": [
+    "NZ media rights renewed",
+    "Adds Laver Cup and United Cup"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Flyte Aviation x Philadelphia 76ers",
+   "property": "Philadelphia 76ers",
+   "points": [
+    "Official private aviation partner",
+    "Exclusive multi-year deal"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "BetMGM x Connor McDavid",
+   "property": "Connor McDavid",
+   "points": [
+    "Multi-year extension",
+    "Ambassador since 2022"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "InterContinental x Wellington Phoenix",
+   "property": "Wellington Phoenix",
+   "points": [
+    "Back as official hotel partner",
+    "Matchday hub for season 20"
+   ]
+  }
  ],
  "caption": "Five deals that defined the week.\n\nadidas put the Parramatta Eels in three stripes, L'Oréal signed its first football deal with PSG, and Adobe made the Australian Open its first tennis sponsorship anywhere. Uber Eats is now Real Madrid's delivery partner in Spain through June 2029, and Red Bull takes the title of MotoGP's first Adelaide street race.\n\nToday's lead: adidas becomes @theparraeels official apparel partner on a multi-year deal covering the NRL and NRLW teams and the juniors. The new kit debuts in Round 1 2027.\n\nAlso today: Ford Australia x WNBL, Sky NZ x Australian Open, Flyte Aviation x Philadelphia 76ers, BetMGM x Connor McDavid, InterContinental x Wellington Phoenix.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
  "reel_caption": "The five biggest sponsorship deals of the week, in 15 seconds.\n\nadidas x Parramatta Eels leads the way, plus four more.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
- "tags": [{"username": "theparraeels", "slide": 1}],
- "collaborators": ["theparraeels"]
+ "tags": [
+  {
+   "username": "theparraeels",
+   "slide": 1
+  }
+ ],
+ "collaborators": [
+  "theparraeels"
+ ]
 }
