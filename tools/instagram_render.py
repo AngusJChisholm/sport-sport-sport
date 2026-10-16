@@ -197,6 +197,9 @@ def photo_src(img, w):
         return f"data:{mime};base64," + base64.b64encode((ROOT / img).read_bytes()).decode()
     m = re.match(r"^https://images\.unsplash\.com/(photo-[\w-]+)", img)
     if m:
+        local = ROOT / "assets" / "img" / "u" / f"{m.group(1)}.jpg"
+        if local.exists():
+            return "data:image/jpeg;base64," + base64.b64encode(local.read_bytes()).decode()
         return f"https://images.unsplash.com/{m.group(1)}?w={w}&q=80&auto=format&fit=crop"
     return ""
 

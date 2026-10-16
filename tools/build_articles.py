@@ -29,14 +29,19 @@ def esc(s):
 
 
 def photo_urls(img):
-    """(page image URL, link-preview image URL) for a deal's "image", or ("", default preview)."""
+    """(CSS background-image layers, link-preview image URL) for a deal's "image".
+
+    Unsplash photos use the site's own copy (assets/img/u/, made by tools/fetch_photos.py on GitHub)
+    with Unsplash itself underneath as a fallback, so they load even where Unsplash is blocked.
+    """
     img = str(img or "")
     if re.fullmatch(r"assets/[\w/.-]+\.(jpe?g|png|webp)", img) and (ROOT / img).exists():
-        return f"../{img}", f"{SITE_URL}/{img}"
+        return f"url('../{img}')", f"{SITE_URL}/{img}"
     m = re.match(r"^https://images\.unsplash\.com/(photo-[\w-]+)", img)
     if m:
-        base = f"https://images.unsplash.com/{m.group(1)}"
-        return f"{base}?w=1600&q=80&auto=format&fit=crop", f"{base}?w=1200&h=630&q=80&auto=format&fit=crop"
+        pid = m.group(1)
+        return (f"url('../assets/img/u/{pid}.jpg'), url('https://images.unsplash.com/{pid}?w=1600&q=80&auto=format&fit=crop')",
+                f"{SITE_URL}/assets/img/u/{pid}.jpg")
     return "", f"{SITE_URL}/assets/og-image.png"
 
 
@@ -97,8 +102,8 @@ def main():
         ph_src, og_img = photo_urls(e.get("image"))
         topclass = topstyle = credit_html = ""
         if ph_src:
-            src_name = e.get("imageCredit") or ("Unsplash" if "unsplash.com" in ph_src else "")
-            topclass, topstyle = " hasph", f' style="--img:url(\'{esc(ph_src)}\')"'
+            src_name = e.get("imageCredit") or ("Unsplash" if ("unsplash.com" in ph_src) else "")
+            topclass, topstyle = " hasph", f' style="--img:{esc(ph_src)}"'
             if src_name:
                 credit_html = f'<span class="credit">Photo: {esc(src_name)}</span>'
         page = (

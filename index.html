@@ -65,12 +65,14 @@ a.kt:hover{border-color:var(--volt);background:#161616;color:var(--white)}
 .kt.k1::before{height:6px}
 .hero.lt a.kt:not(.k1):hover{border-color:var(--c1,var(--black))}
 /* Photo tiles: image fills the tile, dark fade at the bottom keeps the type readable. */
-.hero.lt .kt.img{background:#000 var(--img) center 62%/cover no-repeat;border-color:transparent;color:var(--white)}
+.hero.lt .kt.img{background-color:#000;background-image:var(--img);background-position:center 62%;background-size:cover;background-repeat:no-repeat;border-color:transparent;color:var(--white)}
 .hero.lt .kt.img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.2) 32%,rgba(0,0,0,.25) 50%,rgba(0,0,0,.85) 100%);z-index:0}
 .hero.lt .kt.img>*{position:relative;z-index:1}
 .hero.lt .kt.img::before{display:none}
 .hero.lt .kt.img .kd{color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.6)}.hero.lt .kt.img .kx{color:rgba(255,255,255,.85)}
-.hero.lt .kt.k1.img{background:#000 var(--img) 60% 40%/cover no-repeat}
+.hero.lt .kt.k1.img{background-color:#000;background-image:var(--img);background-position:60% 40%;background-size:cover;background-repeat:no-repeat}
+.hero.lt a.kt.img:hover{background-image:var(--img);background-position:center 62%;background-size:cover;background-repeat:no-repeat}
+.hero.lt a.kt.k1.img:hover{background-color:#000;background-image:var(--img);background-position:60% 40%;background-size:cover;background-repeat:no-repeat}
 .hero.lt .kt.k1.img::after{background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.1) 25%,rgba(0,0,0,.6) 50%,rgba(0,0,0,.92) 100%)}
 @media (max-width:640px){.hero.lt .kt.k1.img::after{background:linear-gradient(180deg,rgba(0,0,0,.6),rgba(0,0,0,.75) 40%,rgba(0,0,0,.92))}}
 .hero.lt .kt.k1.img .kd{color:#fff}
@@ -275,9 +277,10 @@ function stripVars(d,dark){
 // Tile photos: a local file in assets/, or an Unsplash photo (loaded straight from Unsplash, sized for the tile).
 function imgUrl(d,w){
   const x=String(d.image||"");
-  if(/^assets\/[\w\/.-]+$/.test(x))return x;
+  if(/^assets\/[\w\/.-]+$/.test(x))return `url('${x}')`;
   const m=x.match(/^https:\/\/images\.unsplash\.com\/(photo-[\w-]+)/);
-  return m?`https://images.unsplash.com/${m[1]}?w=${w}&q=75&auto=format&fit=crop`:"";
+  // Site copy first (works where Unsplash is blocked), Unsplash underneath in case the copy isn't there yet.
+  return m?`url('assets/img/u/${m[1]}.jpg'), url('https://images.unsplash.com/${m[1]}?w=${w}&q=75&auto=format&fit=crop')`:"";
 }
 function hero(){
   const dated=DEALS.filter(d=>d.date);
@@ -289,11 +292,11 @@ function hero(){
   if(!pool.length)pool=[lead];
   const big=d=>{const x=href(d),tag=x?"a":"div";
     const im=imgUrl(d,1600);const sv=stripVars(d,true);
-    return `<${tag} class="kt k1${im?" img":""}"${attrs(d)}${im?` style="--img:url('${esc(im)}')${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">Latest · ${esc(fmtLong(asPosted(d)))}</span><h1>${esc(d.headline||d.deal)}</h1><p class="kx">${esc(d.deal+(d.type?" · "+d.type:""))}</p>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}<div class="kf"><div class="tags">${tags(d)}</div>${x?`<span class="more">Read the full story →</span>`:""}</div></${tag}>`};
+    return `<${tag} class="kt k1${im?" img":""}"${attrs(d)}${im?` style="--img:${esc(im)}${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">Latest · ${esc(fmtLong(asPosted(d)))}</span><h1>${esc(d.headline||d.deal)}</h1><p class="kx">${esc(d.deal+(d.type?" · "+d.type:""))}</p>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}<div class="kf"><div class="tags">${tags(d)}</div>${x?`<span class="more">Read the full story →</span>`:""}</div></${tag}>`};
   const small=(d,i)=>{const tag=href(d)?"a":"div";
     const im=imgUrl(d,800);
     const sv=stripVars(d,false);
-    return `<${tag} class="kt k${i+1}${im?" img":""}"${attrs(d)}${im?` style="--img:url('${esc(im)}')${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${esc(fmtShort(asPosted(d)))} · ${esc(d.sport)}</span><h2>${esc(d.headline||d.deal)}</h2><p class="kx">${esc(d.deal)}</p></${tag}>`};
+    return `<${tag} class="kt k${i+1}${im?" img":""}"${attrs(d)}${im?` style="--img:${esc(im)}${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${esc(fmtShort(asPosted(d)))} · ${esc(d.sport)}</span><h2>${esc(d.headline||d.deal)}</h2><p class="kx">${esc(d.deal)}</p></${tag}>`};
   $("ks").innerHTML=pool.map((d,i)=>i?small(d,i):big(d)).join("");
   $("heroCount").textContent=`${pool.length} latest stories`;
   return lead;

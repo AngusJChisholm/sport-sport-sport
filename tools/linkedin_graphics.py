@@ -33,6 +33,8 @@ def photo(img):
     if re.fullmatch(r"assets/[\w/.-]+\.(jpe?g|png|webp)", img) and (ROOT / img).exists():
         return "data:image/jpeg;base64," + base64.b64encode((ROOT / img).read_bytes()).decode()
     m = re.match(r"^https://images\.unsplash\.com/(photo-[\w-]+)", img)
+    if m and (ROOT / "assets/img/u" / f"{m.group(1)}.jpg").exists():  # site copy works offline too
+        return "data:image/jpeg;base64," + base64.b64encode((ROOT / "assets/img/u" / f"{m.group(1)}.jpg").read_bytes()).decode()
     return f"https://images.unsplash.com/{m.group(1)}?w=1080&h=1080&q=80&auto=format&fit=crop" if m else ""
 
 def slide1(s):
