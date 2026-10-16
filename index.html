@@ -61,7 +61,21 @@ a.kt:hover{border-color:var(--volt);background:#161616;color:var(--white)}
 .kt h2,.kt h1{font-weight:800;text-transform:uppercase;letter-spacing:-.03em;line-height:.92;margin:auto 0 0;font-size:clamp(17px,1.45vw,22px);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;text-wrap:balance}
 .kt .kx{font-size:13px;color:var(--grey-100);margin:8px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .kt.k1{grid-column:1/4;grid-row:1/4;padding:clamp(24px,3vw,44px)}
-.kt.k1::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--volt)}
+.kt::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--c1,var(--volt))}
+.kt.k1::before{height:6px}
+.hero.lt a.kt:not(.k1):hover{border-color:var(--c1,var(--black))}
+/* Photo tiles: image fills the tile, dark fade at the bottom keeps the type readable. */
+.hero.lt .kt.img{background:#000 var(--img) center 62%/cover no-repeat;border-color:transparent;color:var(--white)}
+.hero.lt .kt.img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.2) 32%,rgba(0,0,0,.25) 50%,rgba(0,0,0,.85) 100%);z-index:0}
+.hero.lt .kt.img>*{position:relative;z-index:1}
+.hero.lt .kt.img::before{display:none}
+.hero.lt .kt.img .kd{color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.6)}.hero.lt .kt.img .kx{color:rgba(255,255,255,.85)}
+.hero.lt .kt.k1.img{background:#000 var(--img) 60% 40%/cover no-repeat}
+.hero.lt .kt.k1.img::after{background:linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.1) 25%,rgba(0,0,0,.6) 50%,rgba(0,0,0,.92) 100%)}
+@media (max-width:640px){.hero.lt .kt.k1.img::after{background:linear-gradient(180deg,rgba(0,0,0,.6),rgba(0,0,0,.75) 40%,rgba(0,0,0,.92))}}
+.hero.lt .kt.k1.img .kd{color:#fff}
+.hero.lt .kt.k1.img .kf{border-top-color:rgba(255,255,255,.25)}
+.hero.lt a.kt.img:hover{background-color:#000;border-color:var(--c1,var(--black));color:var(--white)}
 .kt.k1 h1{font-size:clamp(36px,4.6vw,72px);-webkit-line-clamp:4;margin-top:auto}
 .kt.k1 .kx{font-size:clamp(14px,1.2vw,17px);letter-spacing:.1em;text-transform:uppercase;margin-top:16px}
 .kt.k1 .dek{font-size:clamp(15px,1.2vw,18px);line-height:1.5;color:var(--grey-100);margin:18px 0 0;max-width:62ch;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
@@ -239,6 +253,25 @@ const href=d=>d.slug&&d.article?{h:`articles/${encodeURIComponent(d.slug)}.html`
 const attrs=d=>{const x=href(d);return x?` href="${esc(x.h)}"${x.ext?' target="_blank" rel="noopener"':""}`:""};
 const link=(d,label)=>href(d)?`<a${attrs(d)} class="more">${label}</a>`:"";
 
+// Club colours: same list the Instagram stories use (instagram/colours.json). Matched on the property side of the deal.
+let CLUBS=[];
+const cnorm=x=>String(x||"").normalize("NFKD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/\(.*?\)/g," ").replace(/[^a-z0-9]+/g," ").trim();
+const lum=h=>{const v=h.replace("#","").match(/../g).map(x=>{x=parseInt(x,16)/255;return x<=.03928?x/12.92:Math.pow((x+.055)/1.055,2.4)});return .2126*v[0]+.7152*v[1]+.0722*v[2]};
+function clubCols(d){
+  const p=cnorm(String(d.deal||"").split(/\s+[x×]\s+/).slice(1).join(" ")||d.deal);let best=null;
+  for(const t of CLUBS)for(const n0 of t.names||[]){const n=cnorm(n0);if(!n)continue;
+    const hit=p===n||(n.length>3&&new RegExp("\\b"+n.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"\\b").test(p));
+    if(hit&&(!best||n.length>best[0]))best=[n.length,t.colours]}
+  return best?best[1]:null;
+}
+// Pick strip colours that actually show up on the tile (white tiles skip near-white, the black lead tile skips near-black).
+function stripVars(d,dark){
+  const c=(clubCols(d)||[]).filter(h=>/^#[0-9a-f]{6}$/i.test(h));
+  const ok=h=>dark?lum(h)>.03:lum(h)<.75;
+  const use=c.filter(ok);
+  if(!use.length)return "";
+  return ` style="--c1:${use[0]}"`;
+}
 function hero(){
   const dated=DEALS.filter(d=>d.date);
   const leads=dated.filter(d=>d.lead).sort((a,b)=>pKey(b).localeCompare(pKey(a)));
@@ -248,9 +281,12 @@ function hero(){
   let pool=dated.filter(d=>d.article).sort((a,b)=>pKey(b).localeCompare(pKey(a))||(b.lead?1:0)-(a.lead?1:0)).slice(0,8);
   if(!pool.length)pool=[lead];
   const big=d=>{const x=href(d),tag=x?"a":"div";
-    return `<${tag} class="kt k1"${attrs(d)}><span class="kd">Latest · ${esc(fmtLong(asPosted(d)))}</span><h1>${esc(d.headline||d.deal)}</h1><p class="kx">${esc(d.deal+(d.type?" · "+d.type:""))}</p>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}<div class="kf"><div class="tags">${tags(d)}</div>${x?`<span class="more">Read the full story →</span>`:""}</div></${tag}>`};
+    const im=d.image&&/^[\w\/.-]+$/.test(d.image)?d.image:"";const sv=stripVars(d,true);
+    return `<${tag} class="kt k1${im?" img":""}"${attrs(d)}${im?` style="--img:url('${im}')${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">Latest · ${esc(fmtLong(asPosted(d)))}</span><h1>${esc(d.headline||d.deal)}</h1><p class="kx">${esc(d.deal+(d.type?" · "+d.type:""))}</p>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}<div class="kf"><div class="tags">${tags(d)}</div>${x?`<span class="more">Read the full story →</span>`:""}</div></${tag}>`};
   const small=(d,i)=>{const tag=href(d)?"a":"div";
-    return `<${tag} class="kt k${i+1}"${attrs(d)}><span class="kd">${esc(fmtShort(asPosted(d)))} · ${esc(d.sport)}</span><h2>${esc(d.headline||d.deal)}</h2><p class="kx">${esc(d.deal)}</p></${tag}>`};
+    const im=d.image&&/^[\w\/.-]+$/.test(d.image)?d.image:"";
+    const sv=stripVars(d,false);
+    return `<${tag} class="kt k${i+1}${im?" img":""}"${attrs(d)}${im?` style="--img:url('${im}')${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${esc(fmtShort(asPosted(d)))} · ${esc(d.sport)}</span><h2>${esc(d.headline||d.deal)}</h2><p class="kx">${esc(d.deal)}</p></${tag}>`};
   $("ks").innerHTML=pool.map((d,i)=>i?small(d,i):big(d)).join("");
   $("heroCount").textContent=`${pool.length} latest stories`;
   return lead;
@@ -305,7 +341,8 @@ function wire(){
   $("nav").onclick=e=>{if(e.target.tagName==="A"){$("nav").classList.remove("open");$("menu").setAttribute("aria-expanded","false");$("menu").textContent="Menu"}};
   $("yr").textContent=new Date().getFullYear();
 }
-fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>{
+const clubsP=fetch("instagram/colours.json").then(r=>r.ok?r.json():{}).then(j=>{CLUBS=j.teams||[]}).catch(()=>{});
+fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>clubsP.then(()=>data)).then(data=>{
   SITE=data.site||{};
   ORIG=data.deals||[];
   DEALS=ORIG.slice().sort((a,b)=>sortKey(b).localeCompare(sortKey(a))||(b.lead?1:0)-(a.lead?1:0));
