@@ -99,7 +99,24 @@ SWIPE = ('<div class="lbl" style="display:flex;align-items:center;gap:16px">Swip
          '<svg width="44" height="24" viewBox="0 0 44 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true">'
          '<path d="M0 12h40M30 2l10 10-10 10"/></svg></div>')
 
-FEED_CSS = ".frame{padding:88px;--line:#292929;--muted:#9E9E9E}"
+FEED_CSS = ".frame{padding:88px;--line:#292929;--muted:#9E9E9E}" + """
+/* Inner slides: a club-colour edge and big numbered rows. Only slide 1 has the photo. */
+.edge{position:absolute;left:0;top:0;bottom:0;width:16px;z-index:3}
+.frame>.top,.frame>.mid,.frame>.foot{position:relative;z-index:1}
+.mid{display:flex;flex-direction:column;gap:44px}
+.nrows{border-top:3px solid #FFFFFF;display:flex;flex-direction:column;font-size:21px}
+.nrow{display:grid;grid-template-columns:5.6em 1fr;padding:2em 0;border-bottom:1px solid #333}
+.nrow .n{font-weight:800;font-size:2.75em;color:#D2FF3C;letter-spacing:-.02em;line-height:1;padding-top:.08em}
+.nrow b{display:block;font-weight:800;font-size:3.5em;text-transform:uppercase;letter-spacing:-.03em;line-height:1}
+.nrow span{display:block;font-size:2em;color:#C8C8C8;margin-top:.45em;line-height:1.3}
+.orow{display:grid;grid-template-columns:1fr auto;gap:1.6em;align-items:center;padding:1.5em 0;border-bottom:1px solid #333}
+.orow .s{display:block;font-weight:800;font-size:1.4em;letter-spacing:.16em;text-transform:uppercase;color:#D2FF3C;margin-bottom:.45em}
+.orow b{display:block;font-weight:800;font-size:3em;text-transform:uppercase;letter-spacing:-.03em;line-height:1}
+.orow span.x{display:block;font-size:1.75em;color:#C8C8C8;margin-top:.35em;line-height:1.3}
+.title-xl{font-size:150px}
+.frame>.edge{position:absolute!important;z-index:3!important}
+
+"""
 
 
 # ---------- feed slides (black) ----------
@@ -115,6 +132,61 @@ def feed_cover(c):
 <div class="foot" style="border-top:1px solid #292929;padding-top:36px">{wordmark('white')}{SWIPE}</div>
 </div>"""
     return body
+
+
+def edge_bar(colour):
+    return f'<div class="edge" style="background:{colour}"></div>' if colour else ""
+
+
+def rows_slide(label, title, rows, n, total, footer_right="", edge=None):
+    """Inner slide: club-colour edge, title, big numbered rows. (Only slide 1 carries the photo.)"""
+    rows_html = "".join(
+        f'<div class="nrow"><div class="n">{i:02d}</div><div><b>{esc(r.get("main"))}</b>'
+        + (f'<span>{esc(r.get("sub"))}</span>' if r.get("sub") else "") + "</div></div>"
+        for i, r in enumerate(rows, 1))
+    title_html = f'<h2 class="disp title-xl" data-fit="270">{esc(title)}</h2>' if title else ""
+    pad = "padding-top:56px"
+    fit = 620
+    if not title:
+        fit += 260
+    return f"""<div class="frame">{edge_bar(edge)}
+<div class="top"><div class="lbl">{esc(label)}</div>{counter(n, total)}</div>
+<div class="mid" style="{pad};flex:1;justify-content:flex-start">
+{title_html}
+<div class="nrows" data-fit="{fit}" data-min="9">{rows_html}</div>
+</div>
+<div class="foot">{wordmark('white')}<div class="lbl" style="color:#9E9E9E;letter-spacing:.14em">{esc(footer_right)}</div></div>
+</div>"""
+
+
+def others_slide(others, n, total, edge=None):
+    """Round-up slide: each deal with its sport, a short line and its own photo when it has one."""
+    rows = []
+    for o in others[:5]:
+        sub = str(o.get("sub") or "")
+        sport, _, rest = sub.partition(" - ")
+        if not rest:
+            sport, rest = "", sub
+        th = ""
+        rows.append(f'<div class="orow"><div>' + (f'<span class="s">{esc(sport)}</span>' if sport else "")
+                    + f'<b>{esc(o["deal"])}</b>' + (f'<span class="x">{esc(rest)}</span>' if rest else "")
+                    + f"</div>{th}</div>")
+    return f"""<div class="frame">{edge_bar(edge)}
+<div class="top"><div class="lbl">Today's other deals</div>{counter(n, total)}</div>
+<div class="mid" style="padding-top:36px;flex:1">
+<div class="nrows" data-fit="1000" data-min="8" style="font-size:19px">{"".join(rows)}</div>
+</div>
+<div class="foot">{wordmark('white')}<div class="lbl" style="color:#9E9E9E;letter-spacing:.14em">{esc(SITE_LABEL)}</div></div>
+</div>"""
+
+
+def lead_edge(cover):
+    """Club colour for the edge bar: the property's primary, or its secondary if the primary is near black."""
+    cols = club_colours({"deal": cover.get("deal", ""), "colours": cover.get("colours")})
+    for c in cols:
+        if HEX.match(str(c)) and luminance(c) > 0.03:
+            return c
+    return VOLT
 
 
 def feed_rows_slide(label, title, rows, n, total, footer_right=""):
@@ -243,7 +315,8 @@ def build_feed(feed):
         slides.append(feed_cover(cover))
         for n, sl in enumerate(body, 2):
             rows = [{"main": x} if isinstance(x, str) else x for x in sl.get("rows", [])][:3]
-            slides.append(feed_rows_slide(sl.get("label", "The feature"), sl.get("title"), rows, n, total, SITE_LABEL))
+            slides.append(rows_slide(sl.get("label", "The feature"), sl.get("title"), rows, n, total,
+                                     "Full feature - link in bio", VOLT))
         slides.append(feed_close(total, total))
         return slides
 
@@ -254,19 +327,19 @@ def build_feed(feed):
         parts.append("others")
     parts.append("close")
     total = len(parts)
+    edge = lead_edge(feed["cover"])
     for n, p in enumerate(parts, 1):
         if p == "cover":
             slides.append(feed_cover(feed["cover"]))
         elif p == "deal":
             d = feed["deal"]
-            slides.append(feed_rows_slide("The deal", d.get("title"), d["rows"][:3], n, total, SITE_LABEL))
+            slides.append(rows_slide("The deal", d.get("title"), d["rows"][:3], n, total, SITE_LABEL, edge))
         elif p == "why":
             w = feed["why"]
             rows = [{"main": x} if isinstance(x, str) else x for x in w.get("points", [])][:3]
-            slides.append(feed_rows_slide("Why it matters", w.get("title"), rows, n, total, SITE_LABEL))
+            slides.append(rows_slide("Why it matters", w.get("title"), rows, n, total, SITE_LABEL, edge))
         elif p == "others":
-            rows = [{"main": o["deal"], "sub": o.get("sub")} for o in feed["others"][:5]]
-            slides.append(feed_rows_slide("Today's other deals", None, rows, n, total, SITE_LABEL))
+            slides.append(others_slide(feed["others"], n, total, edge))
         else:
             slides.append(feed_close(n, total))
     return slides

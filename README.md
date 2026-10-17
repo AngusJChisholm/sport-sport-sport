@@ -67,6 +67,8 @@ Every weekday the 6am update writes `instagram/queue/<date>.json` (the day's sli
 
 **Stop a post:** set `"hold": true` in that day's queue file (editable in the GitHub app). **Pause everything:** add an empty file called `instagram/PAUSE`; delete it to resume.
 
+**Carousel look:** slide 1 carries the lead's photo (the same one as its article). The inner slides are black with big numbered rows and a thin edge bar in the property's club colour (volt for weekend features and unknown clubs); the round-up slide labels each deal with its sport.
+
 **Club colours** for stories live in `instagram/colours.json`. Anything not listed uses black.
 
 **Secrets** (GitHub > Settings > Secrets and variables > Actions): `IG_USER_ID`, `IG_ACCESS_TOKEN`, and optionally `GH_PAT` (a fine-grained token with Secrets read/write on this repo) so the Instagram token renews itself every week. Without `GH_PAT` the token must be renewed by hand every 60 days.
