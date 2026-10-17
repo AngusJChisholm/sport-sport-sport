@@ -209,6 +209,17 @@ def photo_layer(img, w, shade):
     return f'<div class="ph" style="background-image:url(\'{src}\');--shade:{shade}"></div>' if src else ""
 
 
+def feature_image(date):
+    """The weekend feature's article photo (features.json), so slide 1 always matches the article."""
+    try:
+        for f in json.loads((ROOT / "features.json").read_text()).get("features", []):
+            if f.get("date") == date and f.get("image"):
+                return f["image"]
+    except Exception:
+        pass
+    return None
+
+
 def build_feed(feed):
     slides = []
     if feed.get("kind") == "week":
@@ -396,6 +407,14 @@ def render(date):
     for old in list(out.glob("*.jpg")) + list(out.glob("*.mp4")):
         old.unlink()
 
+    if q.get("feed", {}).get("kind") == "feature":
+        img = feature_image(date)
+        if img:
+            q["feed"]["cover"]["image"] = img
+            for s in q.get("stories", []):
+                s.setdefault("image", img)
+        else:
+            print("Warning: today's feature has no photo in features.json - slide 1 will be plain black")
     jobs = [(f"feed-{i}.jpg", page(s, FEED_W, FEED_H, "#000000", "#FFFFFF", FEED_CSS), FEED_W, FEED_H)
             for i, s in enumerate(build_feed(q["feed"]), 1)]
     jobs += [(f"story-{i}.jpg", story(s), STORY_W, STORY_H) for i, s in enumerate(q.get("stories", []), 1)]

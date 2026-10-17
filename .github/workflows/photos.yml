@@ -3,7 +3,7 @@ name: Copy photos to the site
 on:
   push:
     branches: [main]
-    paths: ["deals.json"]
+    paths: ["deals.json", "features.json"]
   workflow_dispatch:
 
 permissions:
