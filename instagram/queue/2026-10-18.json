@@ -1,0 +1,86 @@
+{
+ "date": "2026-10-18",
+ "hold": false,
+ "story_time": "09:00",
+ "feed": {
+  "kind": "feature",
+  "cover": {
+   "tag": "Weekend feature",
+   "region": "Global",
+   "headline": "The NBA's most expensive square.",
+   "highlight": "expensive",
+   "deal": "How NBA jersey patches work",
+   "descriptor": "Explainer"
+  },
+  "slides": [
+   {
+    "label": "The story",
+    "title": "One badge, one brand",
+    "rows": [
+     {
+      "main": "Approved 2016",
+      "sub": "Three-year trial from 2017-18"
+     },
+     {
+      "main": "About 6cm square",
+      "sub": "Front left, opposite the Nike swoosh"
+     },
+     {
+      "main": "Clubs sell their own",
+      "sub": "76ers went first, with StubHub"
+     }
+    ]
+   },
+   {
+    "label": "The numbers",
+    "title": "The price keeps climbing",
+    "rows": [
+     {
+      "main": "US$60m",
+      "sub": "Rakuten x Warriors, three years, 2017"
+     },
+     {
+      "main": "US$30m+ a year",
+      "sub": "Albert x Lakers, reported by ESPN"
+     },
+     {
+      "main": "US$50m+ a year",
+      "sub": "IREN x Warriors, reported by Sportico"
+     }
+    ]
+   },
+   {
+    "label": "Why it matters",
+    "title": "A big off-season reshuffle",
+    "rows": [
+     {
+      "main": "New money",
+      "sub": "Chase, Uline, Paze, Bloom Energy"
+     },
+     {
+      "main": "Aussie-founded",
+      "sub": "IREN began in Sydney as Iris Energy"
+     },
+     {
+      "main": "What's next",
+      "sub": "Does IREN's fee set the new benchmark?"
+     }
+    ]
+   }
+  ]
+ },
+ "stories": [
+  {
+   "tag": "Weekend feature",
+   "deal": "The NBA's priciest square",
+   "points": [
+    "About 6cm wide",
+    "US$50m+ a year reported",
+    "Aussie-founded IREN"
+   ],
+   "cta": "New post on our feed"
+  }
+ ],
+ "caption": "The most expensive bit of fabric in American sport is about 6cm wide.\n\nNBA clubs have sold one small jersey patch each since 2017-18. This off-season the money moved: Chase, Uline, Paze and Bloom Energy all landed patches, and Sportico reported Australian-founded IREN's new Warriors deal at more than US$50m a year. That's up from the US$60m over three years Rakuten paid in 2017. The NBA sold scarcity, and it's paying off.\n\nRead the full feature: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "reel_caption": "One logo, about 6cm wide, reportedly worth over US$50m a year. How NBA jersey patches became the priciest real estate in American sport. Full feature: link in bio #sportsbusiness #sponsorship #sportsmarketing #partnerships"
+}

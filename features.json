@@ -1,6 +1,59 @@
 {
  "features": [
   {
+   "date": "2026-10-18",
+   "headline": "The NBA's most expensive square.",
+   "descriptor": "How NBA jersey patches work and what they're worth",
+   "topic": "Explainer",
+   "sport": "Basketball",
+   "region": "Global",
+   "image": "https://images.unsplash.com/photo-1640862101983-9f7ef7fd7cc9",
+   "related": [
+    "IREN × Golden State Warriors",
+    "Albert × Los Angeles Lakers",
+    "JPMorganChase × Dallas Mavericks",
+    "Bloom Energy × Philadelphia 76ers",
+    "Uline × Milwaukee Bucks",
+    "Paze × Phoenix Suns"
+   ],
+   "article": {
+    "standfirst": "An Australian-founded AI company now owns the priciest bit of fabric in American sport, and it's about six centimetres wide.",
+    "body": [
+     "From this NBA season, IREN's logo sits on the front of every Golden State Warriors jersey. Sportico reported the multi-year deal at more than US$50 million a year, which would make it the biggest sponsorship in North American team sport. IREN began in 2018 as Iris Energy, a Sydney-based bitcoin miner set up by brothers Will and Daniel Roberts, and now trades on Nasdaq as an AI cloud business. It replaces Rakuten, the Warriors' only patch partner until now, and also lands on the Santa Cruz Warriors' jerseys in the G League and the warmup tops of the WNBA's Golden State Valkyries.",
+     "So what are they actually buying? The NBA's board of governors signed off on jersey sponsorship in April 2016 as a three-year trial, starting with the 2017-18 season. The rules are tight: one logo, roughly 2.5 inches square, on the front left of the jersey opposite the Nike swoosh. Each club sells its own. The Philadelphia 76ers were first out of the blocks, announcing StubHub in May 2016. Compare that with an AFL or NRL jumper, where sponsors share the front, back and sleeves. The NBA went the other way and sold scarcity. One badge, one brand, on every game, every highlight clip and every replica jersey in the club shop.",
+     "Scarcity has done wonders for the price. When the Warriors signed Rakuten in 2017, the three-year, US$60 million deal was the richest in the league. In 2021 the Lakers topped it, signing Korean food brand Bibigo on a five-year deal reported by the LA Times at more than US$100 million. This June IREN's number blew both out of the water, and a month later ESPN reported the Lakers' new patch with finance app Albert at north of US$30 million a year. The trial has long since become a permanent fixture.",
+     "The 2026 off-season turned into a full reshuffle. In July the Dallas Mavericks signed JPMorganChase, the bank's first NBA patch, bundled with banking partner rights, a dedicated arena entrance for Chase cardholders and new community courts across North Texas. In September the Milwaukee Bucks swapped Motorola for Uline, a Wisconsin packaging supplier that has backed the club since 2013. The Phoenix Suns replaced PayPal with Paze, the digital wallet run by Early Warning Services, the company behind Zelle. The 76ers replaced Crypto.com with Bloom Energy, adding the Delaware Blue Coats' jerseys and a seven-figure charity investment. And in October Disney extended with the Orlando Magic, where it has been on the jersey since 2017, and added a Walt Disney World Atrium at Kia Center.",
+     "Look at who's buying. Blinkfire counted 29 of 30 teams with a patch in 2025-26, and financial brands were the biggest group with seven. This off-season the money moved again: crypto out in Philadelphia, energy in, and an AI infrastructure company paying the top price in the league. IREN sells GPU computing power to companies building AI, so it's buying credibility with a global business audience as much as fan awareness. The Warriors' own pitch is that the patch is their most visible global platform. A team in a big market with a global fan base can charge for that reach.",
+     "The patch also matters because of what hangs off it. The big ones are rarely just a logo. They come with named arena spaces, hospitality, cardholder perks, G League and WNBA rights, content and community programs. SponsorUnited put NBA team sponsorship revenue at US$1.62 billion in 2024-25, up 8% on the year before, with jersey patch deals more than doubling. Once the NBA proved the model, the rest of American sport followed. The NHL allowed jersey patches from 2022-23, and MLB from 2023, with the San Diego Padres first to sign, with Motorola.",
+     "For Australian rights holders, the lesson is in the pricing. The NBA didn't make more inventory, it made less, then let 30 clubs compete to sell the one spot that turns up in every photo. Fewer, bigger, better-defined assets with rights bundled around them is the same playbook any club can run, whether it's a sleeve, a training top or a naming right.",
+     "What to watch next: whether IREN's reported fee becomes the new benchmark when the next big-market patch comes up, and whether AI and energy brands keep replacing the finance and crypto money that defined the first decade of patches. Watch the activation too. A patch deal that only ever shows up on the shirt is the easiest one to lose at renewal."
+    ],
+    "close": "It's the smallest logo in the building, and the most expensive one."
+   },
+   "sources": [
+    "https://www.sportcal.com/news/iren-replaces-rakuten-as-warriors-patch-partner-in-record-deal/",
+    "https://www.foxbusiness.com/sports/warriors-ai-cloud-provider-iren-reach-sponsorship-deal-reportedly-largest-north-american-sports",
+    "https://bleacherreport.com/articles/25445663-warriors-reportedly-land-record-jersey-patch-sponsorship-agreement-ahead-2026-27-nba-season",
+    "https://www.forbes.com.au/news/entrepreneurs/iren-co-founders-score-1-2-billion-pay-packet/",
+    "https://www.wunc.org/npr-blogs/2016-04-15/nba-jerseys-can-bear-advertising-logos-league-says",
+    "https://www.cbsnews.com/amp/news/philadelphia-76ers-first-nba-team-uniform-sponsorship-stubhub",
+    "https://www.ktvu.com/news/warriors-sign-60m-sponsorship-deal-with-japanese-tech-company",
+    "https://frontofficesports.com/article/lakers-ink-5-year-100m-jersey-patch-deal/",
+    "https://albert.com/newsroom/article/albert-and-los-angeles-lakers-announce-uniform-patch-partnership",
+    "https://bleacherreport.com/articles/25455750-lakers-announce-new-jersey-patch-sponsor-photo-latest-nba-rumors-contract-value",
+    "https://www.jpmorganchase.com/newsroom/press-releases/2026/chasedallasmavs",
+    "https://biztimes.com/milwaukee-bucks-unveil-new-uniform-patch-sponsorship-deal-with-uline/",
+    "https://www.azfamily.com/2026/09/28/phoenix-suns-announce-paze-new-jersey-patch-sponsor/",
+    "https://www.inquirer.com/sixers/sixers-jersey-patch-bloom-energy-nba-uniforms-20260928.html",
+    "https://blogmickey.com/2026/10/walt-disney-world-extends-orlando-magic-sponsorship-deal-new-arena-atrium/",
+    "https://analyticsblog.blinkfire.com/blog/2025/11/18/2025-26-nba-jersey-patches-the-brands-behind-basketball/",
+    "https://www.nbcnews.com/sports/nba/nba-team-sponsorship-revenue-8-16-billion-boosted-jersey-patches-rcna211145",
+    "https://www.theglobeandmail.com/sports/article-nhl-teams-okd-to-add-sponsor-patches-on-jerseys-ap-source-says",
+    "https://abc30.com/post/san-diego-padres-first-mlb-team-to-reach-uniform-ad-deal-for-2023-/11769535/"
+   ],
+   "slug": "2026-10-18-the-nba-s-most-expensive-square"
+  },
+  {
    "date": "2026-10-17",
    "headline": "The AO's partner machine.",
    "descriptor": "Why the Australian Open keeps signing new brands",
