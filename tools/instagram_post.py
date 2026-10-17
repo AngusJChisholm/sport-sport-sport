@@ -6,7 +6,8 @@
     python3 tools/instagram_post.py status   # shows today's queue and what has posted
 
 Schedule (Melbourne time): stories 8am weekdays; carousel Mon 7pm, Tue 7pm,
-Wed 12pm, Thu 9am, Fri 6pm. Pause everything by creating instagram/PAUSE,
+Wed 12pm, Thu 9am, Fri 6pm. Weekends (only when the weekend feature task writes a
+queue file): story 9am (set by the queue's "story_time"), carousel 10am, Reel 6pm. Pause everything by creating instagram/PAUSE,
 or one day by setting "hold": true in that day's queue file.
 """
 import json
@@ -33,10 +34,12 @@ API = API_HOST + os.environ.get("IG_API_VERSION", "v26.0")
 
 STORY_TIME = dtime(8, 0)
 STORY_CUTOFF = dtime(15, 0)   # don't post the morning stories later than this
-FEED_TIMES = {0: dtime(19, 0), 1: dtime(19, 0), 2: dtime(12, 0), 3: dtime(9, 0), 4: dtime(18, 0)}
+FEED_TIMES = {0: dtime(19, 0), 1: dtime(19, 0), 2: dtime(12, 0), 3: dtime(9, 0), 4: dtime(18, 0),
+              5: dtime(10, 0), 6: dtime(10, 0)}
 FEED_CUTOFF = dtime(23, 0)
 RENDER_FROM = dtime(5, 30)
-REEL_TIMES = {0: dtime(20, 30), 1: dtime(20, 30), 2: dtime(19, 0), 3: dtime(19, 0), 4: dtime(20, 0)}
+REEL_TIMES = {0: dtime(20, 30), 1: dtime(20, 30), 2: dtime(19, 0), 3: dtime(19, 0), 4: dtime(20, 0),
+              5: dtime(18, 0), 6: dtime(18, 0)}
 EVERGREEN_TIME = dtime(12, 0)   # the 6am task only adds an evergreen carousel on Tuesdays
 LATE_CUTOFF = dtime(23, 30)
 STATS_FROM = dtime(4, 45)       # before the 6am task, which reads the stats on Fridays
@@ -141,8 +144,9 @@ def plan():
     out = {"date": date, "render": False, "post": False, "stats": False, "reason": ""}
     stats_state = load(ROOT / "instagram" / "stats" / "latest.json", {})
     out["stats"] = t.time() >= STATS_FROM and stats_state.get("date") != date
-    if t.weekday() > 4:
-        out["reason"] = "weekend"
+    # Weekends only post when the weekend feature task has written a queue file.
+    if t.weekday() > 4 and not p["queue"].exists():
+        out["reason"] = "weekend, no feature queued"
     elif (ROOT / "instagram" / "PAUSE").exists():
         out["reason"] = "paused (instagram/PAUSE exists)"
     elif not p["queue"].exists():

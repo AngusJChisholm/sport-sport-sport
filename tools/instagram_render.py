@@ -223,6 +223,19 @@ def build_feed(feed):
         slides.append(feed_close(total, total))
         return slides
 
+    if feed.get("kind") == "feature":
+        # Weekend feature: cover, 2-4 point slides, close. The Reel is made from these slides as usual.
+        body = feed.get("slides", [])[:4]
+        total = len(body) + 2
+        cover = dict(feed["cover"])
+        cover.setdefault("tag", "Weekend feature")
+        slides.append(feed_cover(cover))
+        for n, sl in enumerate(body, 2):
+            rows = [{"main": x} if isinstance(x, str) else x for x in sl.get("rows", [])][:3]
+            slides.append(feed_rows_slide(sl.get("label", "The feature"), sl.get("title"), rows, n, total, SITE_LABEL))
+        slides.append(feed_close(total, total))
+        return slides
+
     parts = ["cover", "deal"]
     if feed.get("why"):
         parts.append("why")

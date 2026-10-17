@@ -203,6 +203,11 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 <div class="grid" id="roundup"></div>
 </div></section>
 
+<section class="sec" id="features" hidden><div class="wrap">
+<div class="sh"><div><span class="lbl mute-l">Weekend features</span><h2 class="disp">Weekend reads.</h2></div><span class="lbl mute-l" id="fCount"></span></div>
+<div class="grid" id="fList"></div>
+</div></section>
+
 <section class="sec split"><div class="wrap cols">
 <div id="global"><div class="col-h"><h2 class="disp">Global</h2><a href="#archive" class="lbl" data-reg="Global">All →</a></div><div id="gList"></div></div>
 <div id="anz"><div class="col-h"><h2 class="disp">ANZ</h2><a href="#archive" class="lbl" data-reg="ANZ">All →</a></div><div id="aList"></div></div>
@@ -242,7 +247,7 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const PAGE=15;
-let DEALS=[],ORIG=[],SITE={},shown=PAGE;
+let DEALS=[],ORIG=[],SITE={},FEATS=[],shown=PAGE;
 const st={sport:"All",type:"",reg:"",days:""};
 const sortKey=d=>d.date||((d.month||"0000-00")+"-00");
 // "date" = when the deal was announced; "added" = when it was posted here (the edition date).
@@ -271,6 +276,7 @@ function clubCols(d){
 }
 // Pick strip colours that actually show up on the tile (white tiles skip near-white, the black lead tile skips near-black).
 function stripVars(d,dark){
+  if(d.feature)return "";
   const c=(clubCols(d)||[]).filter(h=>/^#[0-9a-f]{6}$/i.test(h));
   const ok=h=>dark?lum(h)>.03:lum(h)<.75;
   const use=c.filter(ok);
@@ -291,15 +297,16 @@ function hero(){
   const lead=leads[0]||dated[0];
   if(!lead)return null;
   // Newest article first (by the day it went up here), then back through the archive.
-  let pool=dated.filter(d=>d.article).sort((a,b)=>pKey(b).localeCompare(pKey(a))||(b.lead?1:0)-(a.lead?1:0)).slice(0,8);
+  // Weekend features (features.json) sit in the same pool as the deal articles.
+  let pool=[...dated.filter(d=>d.article),...FEATS].sort((a,b)=>pKey(b).localeCompare(pKey(a))||(b.lead?1:0)-(a.lead?1:0)).slice(0,8);
   if(!pool.length)pool=[lead];
   const big=d=>{const x=href(d),tag=x?"a":"div";
     const im=imgUrl(d,1600);const sv=stripVars(d,true);
-    return `<${tag} class="kt k1${im?" img":""}"${attrs(d)}${im?` style="--img:${esc(im)}${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">Latest · ${esc(fmtLong(asPosted(d)))}</span><h1>${esc(d.headline||d.deal)}</h1><p class="kx">${esc(d.deal+(d.type?" · "+d.type:""))}</p>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}<div class="kf"><div class="tags">${tags(d)}</div>${x?`<span class="more">Read the full story →</span>`:""}</div></${tag}>`};
+    return `<${tag} class="kt k1${im?" img":""}"${attrs(d)}${im?` style="--img:${esc(im)}${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${d.feature?"Weekend feature":"Latest"} · ${esc(fmtLong(asPosted(d)))}</span><h1>${esc(d.headline||d.deal)}</h1><p class="kx">${esc(d.deal+(d.type?" · "+d.type:""))}</p>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}<div class="kf"><div class="tags">${tags(d)}</div>${x?`<span class="more">Read the full story →</span>`:""}</div></${tag}>`};
   const small=(d,i)=>{const tag=href(d)?"a":"div";
     const im=imgUrl(d,800);
     const sv=stripVars(d,false);
-    return `<${tag} class="kt k${i+1}${im?" img":""}"${attrs(d)}${im?` style="--img:${esc(im)}${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${esc(fmtShort(asPosted(d)))} · ${esc(d.sport)}</span><h2>${esc(d.headline||d.deal)}</h2><p class="kx">${esc(d.deal)}</p></${tag}>`};
+    return `<${tag} class="kt k${i+1}${im?" img":""}"${attrs(d)}${im?` style="--img:${esc(im)}${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${d.feature?"Feature · ":""}${esc(fmtShort(asPosted(d)))} · ${esc(d.sport)}</span><h2>${esc(d.headline||d.deal)}</h2><p class="kx">${esc(d.deal)}</p></${tag}>`};
   $("ks").innerHTML=pool.map((d,i)=>i?small(d,i):big(d)).join("");
   $("heroCount").textContent=`${pool.length} latest stories`;
   return lead;
@@ -310,6 +317,14 @@ function roundup(lead){
   const card=d=>{const tag=href(d)?"a":"div";
     return `<${tag} class="card"${attrs(d)}><div class="tags"><span class="tag">${esc(d.sport)}</span><span class="tag r">${esc(d.region)}</span></div><h3>${esc(d.deal)}</h3><p>${esc(d.summary||d.type||"")}</p>${href(d)?`<span class="more">${d.article?"Read the story →":"Read →"}</span>`:""}</${tag}>`};
   $("roundup").innerHTML=same.map(card).join("")+`<a href="#archive" class="card all" style="--span:${3-(same.length%3)}"><span class="lbl">The archive</span><h3>Every deal. Since day one.</h3><span class="more">Browse the archive →</span></a>`;
+}
+function features(){
+  if(!FEATS.length)return;
+  const list=FEATS.slice().sort((a,b)=>b.date.localeCompare(a.date)).slice(0,6);
+  $("fCount").textContent=`${FEATS.length} feature${FEATS.length===1?"":"s"}`;
+  $("fList").innerHTML=list.map(d=>`<a class="card"${attrs(d)}><div class="tags"><span class="tag">${esc(d.sport)}</span>${d.region?`<span class="tag r">${esc(d.region)}</span>`:""}</div><h3>${esc(d.headline)}</h3><p>${esc(d.summary||d.deal||"")}</p><span class="more">Read the feature →</span></a>`).join("")
+    +(list.length%3?`<div class="card all" style="--span:${3-(list.length%3)}"><span class="lbl">Every weekend</span><h3>New features Saturday and Sunday.</h3></div>`:"");
+  $("features").hidden=false;
 }
 function columns(){
   const row=d=>`<${href(d)?"a":"div"} class="row"${attrs(d)}><span class="d">${esc(fmtShort(d))}</span><span><b>${esc(d.deal)}</b><span class="x">${esc(d.sport)}${d.summary||d.type?" · "+esc(d.summary||d.type):""}</span></span></${href(d)?"a":"div"}>`;
@@ -326,7 +341,7 @@ function newsletter(){
 function follow(){
   const li=SITE.linkedin, ig=SITE.instagram;
   const fb=(li?`<a class="btn" href="${esc(li)}" target="_blank" rel="noopener">Follow on LinkedIn</a>`:"")+(ig?`<a class="btn btn-o" href="${esc(ig)}" target="_blank" rel="noopener">Follow on Instagram</a>`:"");
-  $("foA").innerHTML=fb?`${fb}<p>Monday to Friday. The day's deals, every morning.</p>`:`<p>Socials coming soon.</p>`;
+  $("foA").innerHTML=fb?`${fb}<p>The day's deals every weekday morning. Features every weekend.</p>`:`<p>Socials coming soon.</p>`;
   $("ftLi").innerHTML=(li?`<a href="${esc(li)}" target="_blank" rel="noopener">LinkedIn</a>`:"")+(ig?`<a href="${esc(ig)}" target="_blank" rel="noopener">Instagram</a>`:"");
 }
 function filters(){
@@ -354,13 +369,18 @@ function wire(){
   $("nav").onclick=e=>{if(e.target.tagName==="A"){$("nav").classList.remove("open");$("menu").setAttribute("aria-expanded","false");$("menu").textContent="Menu"}};
   $("yr").textContent=new Date().getFullYear();
 }
+// Weekend features are optional: if features.json is missing the page carries on with deals only.
+const featsP=fetch("features.json",{cache:"no-store"}).then(r=>r.ok?r.json():{}).then(j=>{
+  FEATS=(j.features||[]).filter(f=>f.slug&&f.article&&f.date&&f.headline).map(f=>({date:f.date,added:f.date,headline:f.headline,
+    deal:f.descriptor||"",sport:f.topic||f.sport||"Feature",region:f.region||"",slug:f.slug,article:true,image:f.image,
+    summary:f.article.standfirst,feature:true}))}).catch(()=>{});
 const clubsP=fetch("instagram/colours.json").then(r=>r.ok?r.json():{}).then(j=>{CLUBS=j.teams||[]}).catch(()=>{});
-fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>clubsP.then(()=>data)).then(data=>{
+fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>Promise.all([clubsP,featsP]).then(()=>data)).then(data=>{
   SITE=data.site||{};
   ORIG=data.deals||[];
   DEALS=ORIG.slice().sort((a,b)=>sortKey(b).localeCompare(sortKey(a))||(b.lead?1:0)-(a.lead?1:0));
   const lead=hero();if(lead)roundup(lead);
-  columns();follow();newsletter();filters();wire();render();
+  features();columns();follow();newsletter();filters();wire();render();
 }).catch(()=>{const h=$("heroHead"),k=$("heroDek");if(h)h.textContent="Deals unavailable";if(k)k.textContent="The deals file didn't load. Refresh to try again.";wire();});
 })();
 </script>

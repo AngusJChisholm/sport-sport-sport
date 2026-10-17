@@ -1,11 +1,13 @@
-"""Build one static article page per lead deal.
+"""Build one static article page per lead deal, plus one per weekend feature.
 
 Reads deals.json, and for every deal with "lead": true and an "article" object,
-writes articles/<slug>.html from tools/article_template.html. Run from the repo root:
+writes articles/<slug>.html from tools/article_template.html. Then reads features.json
+(the Saturday and Sunday feature pieces) and writes a page for each the same way.
+Run from the repo root:
 
     python3 tools/build_articles.py
 
-A lead deal without a "slug" gets one generated from its date and deal name.
+A lead deal or feature without a "slug" gets one generated from its date and name.
 """
 import html
 import json
@@ -64,6 +66,8 @@ def main():
     out_dir = ROOT / "articles"
     out_dir.mkdir(exist_ok=True)
 
+    follow = (f'<a class="btn" href="{esc(linkedin)}" target="_blank" rel="noopener">Follow on LinkedIn</a>' if linkedin else "") + \
+             (f'<a class="btn btn-o" href="{esc(instagram)}" target="_blank" rel="noopener">Follow on Instagram</a>' if instagram else "")
     changed_slugs = False
     built = []
     for e in deals:
@@ -99,8 +103,6 @@ def main():
                 + "".join(rows)
                 + "</div></section>"
             )
-        follow = (f'<a class="btn" href="{esc(linkedin)}" target="_blank" rel="noopener">Follow on LinkedIn</a>' if linkedin else "") + \
-                 (f'<a class="btn btn-o" href="{esc(instagram)}" target="_blank" rel="noopener">Follow on Instagram</a>' if instagram else "")
         title = e.get("headline") or e["deal"]
         ph_src, og_img = photo_urls(e.get("image"))
         topclass = topstyle = credit_html = ""
@@ -129,6 +131,9 @@ def main():
             .replace("{{SAMEDAY}}", sameday)
             .replace("{{FOLLOW}}", follow)
             .replace("{{YEAR}}", e["date"][:4])
+            .replace("{{LABEL}}", "Lead deal")
+            .replace("{{FOLLOWLBL}}", "Daily, Monday to Friday")
+            .replace("{{FOLLOWHEAD}}", 'One lead deal a day. <span class="g">Every deal, filed.</span>')
         )
         (out_dir / f'{e["slug"]}.html').write_text(page, encoding="utf-8")
         built.append(e["slug"])
@@ -136,6 +141,86 @@ def main():
     if changed_slugs:
         (ROOT / "deals.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Built {len(built)} article pages")
+    build_features(deals, tpl, out_dir, follow)
+
+
+def deal_key(name):
+    parts = re.split(r"\s+[x\u00d7]\s+", str(name or ""), maxsplit=1)
+    return tuple(re.sub(r"[^a-z0-9]+", " ", unicodedata.normalize("NFKD", x).encode("ascii", "ignore").decode().lower()).strip() for x in parts)
+
+
+def build_features(deals, tpl, out_dir, follow):
+    """Weekend features: features.json -> articles/<slug>.html, labelled "Weekend feature"."""
+    fpath = ROOT / "features.json"
+    if not fpath.exists():
+        return
+    fdata = json.loads(fpath.read_text(encoding="utf-8"))
+    by_key = {deal_key(d.get("deal")): d for d in deals if d.get("deal")}
+    changed = False
+    built = 0
+    for f in fdata.get("features", []):
+        if not (f.get("article") and f.get("date") and f.get("headline")):
+            continue
+        if not f.get("slug"):
+            f["slug"] = make_slug(f["date"], f["headline"].rstrip("."))
+            changed = True
+        a = f["article"]
+        tags = "".join(f'<span class="tag">{esc(t)}</span>' for t in (f.get("topic"), f.get("sport")) if t)
+        if f.get("region"):
+            tags += f'<span class="tag r">{esc(f["region"])}</span>'
+        paras = [f'<p class="b">{esc(x)}</p>' for x in a.get("body", [])]
+        paras.insert(1 if paras else 0, '<div data-partner-slot="feature" hidden></div>')
+        # Deals the feature mentions, linked to their articles where they have one.
+        rows = []
+        for name in f.get("related", [])[:6]:
+            o = by_key.get(deal_key(name))
+            if not o:
+                continue
+            inner = f'<span><b>{esc(o["deal"])}</b><span class="x">{esc(o.get("sport"))} · {esc(o.get("summary") or o.get("type"))}</span></span>'
+            if o.get("slug") and o.get("article"):
+                rows.append(f'<a class="row" href="{esc(o["slug"])}.html">{inner}<span>→</span></a>')
+            else:
+                rows.append(f'<div class="row">{inner}</div>')
+        related = ""
+        if rows:
+            related = ('<section class="same"><div class="wrap"><span class="lbl mute-l" style="display:block;margin-bottom:16px">'
+                       'In this story</span><h2 class="disp">The deals.</h2>' + "".join(rows) + "</div></section>")
+        ph_src, og_img = photo_urls(f.get("image"))
+        topclass = topstyle = credit_html = ""
+        if ph_src:
+            src_name = f.get("imageCredit") or ("Unsplash" if "unsplash.com" in ph_src else "")
+            topclass, topstyle = " hasph", f' style="--img:{esc(ph_src)}"'
+            if src_name:
+                credit_html = f'<span class="credit">Photo: {esc(src_name)}</span>'
+        page = (
+            tpl.replace("{{TITLE}}", esc(f["headline"]))
+            .replace("{{DESC}}", esc(a.get("standfirst")))
+            .replace("{{CANONICAL}}", f'{SITE_URL}/articles/{f["slug"]}.html')
+            .replace("{{ISODATE}}", f["date"])
+            .replace("{{LONGDATE}}", esc(long_date(f["date"])))
+            .replace("{{HEADLINE}}", esc(f["headline"]))
+            .replace("{{DEAL}}", esc(f.get("descriptor")))
+            .replace("{{TAGS}}", tags)
+            .replace("{{STANDFIRST}}", esc(a.get("standfirst")))
+            .replace("{{BODY}}", "\n".join(paras))
+            .replace("{{CLOSE}}", esc(a.get("close")))
+            .replace("{{SOURCE}}", "")
+            .replace("{{TOPCLASS}}", topclass)
+            .replace("{{TOPSTYLE}}", topstyle)
+            .replace("{{CREDIT}}", credit_html)
+            .replace("{{OGIMAGE}}", esc(og_img))
+            .replace("{{SAMEDAY}}", related)
+            .replace("{{FOLLOW}}", follow)
+            .replace("{{YEAR}}", f["date"][:4])
+            .replace("{{LABEL}}", "Weekend feature")
+            .replace("{{FOLLOWLBL}}", "Deals weekdays, features weekends")
+            .replace("{{FOLLOWHEAD}}", 'Every deal, every weekday. <span class="g">The bigger picture every weekend.</span>')
+        )
+        (out_dir / f'{f["slug"]}.html').write_text(page, encoding="utf-8")
+        built += 1
+    if changed:
+        fpath.write_text(json.dumps(fdata, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"Built {built} feature pages")
 
 
 if __name__ == "__main__":

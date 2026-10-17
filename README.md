@@ -32,6 +32,16 @@ Every lead deal gets its own article page in `articles/`. Add an `article` to th
 
 Then run `python3 tools/build_articles.py` to generate the pages. The homepage links each lead to its article automatically.
 
+## Weekend features
+
+Every Saturday and Sunday a scheduled task writes one sport business feature (an explainer, deep dive or trend piece) into `features.json`:
+
+```json
+{"date":"2026-10-18","headline":"Short punchy headline.","descriptor":"One line under the headline","topic":"Explainer","sport":"AFL","region":"ANZ","image":"https://images.unsplash.com/photo-...","related":["Brand × Property"],"article":{"standfirst":"Hook.","body":["Paragraph."],"close":"Closing line."},"sources":["https://..."]}
+```
+
+`python3 tools/build_articles.py` builds its page in `articles/` (labelled "Weekend feature"). Features show in Key stories and the "Weekend reads" row on the homepage, but never in the deal archive. `related` lists deals already in `deals.json`; they appear under the article. The same task queues a weekend Instagram carousel (`"kind": "feature"`), story and Reel: story 9am, carousel 10am, Reel 6pm.
+
 ## Your LinkedIn link
 
 Paste your LinkedIn page URL into `"linkedin": ""` at the top of `deals.json`. The Follow button and footer link switch on automatically.
