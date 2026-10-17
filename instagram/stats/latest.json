@@ -1,24 +1,24 @@
 {
- "date": "2026-10-17",
+ "date": "2026-10-18",
  "username": "sportsportsport.hq",
  "followers": 4,
  "followers_change_7d": 3,
  "since": "2026-10-13",
- "posts_last_7d": 8,
+ "posts_last_7d": 10,
  "best_post_7d": {
-  "when": "Wed 14 Oct 19:07",
-  "hour": 19,
-  "weekday": "Wed",
-  "type": "REELS",
+  "when": "Sat 17 Oct 15:47",
+  "hour": 15,
+  "weekday": "Sat",
+  "type": "FEED",
   "likes": 1,
   "comments": 0,
-  "caption": "Adobe's first ever tennis deal, and it's the Australian Open.",
-  "link": "https://www.instagram.com/reel/Ded6qw5jvnb/",
+  "caption": "Three deals in eight days. The Australian Open's sponsor machine is running hot.",
+  "link": "https://www.instagram.com/p/DelSK1VmKDN/",
   "recent": true,
   "score": 1
  },
  "totals_7d": {
-  "likes": 1,
+  "likes": 2,
   "comments": 0,
   "saved": 0,
   "shares": 0,
@@ -31,18 +31,42 @@
    "posts": 1
   },
   {
-   "slot": "Wed 12:00",
-   "avg_score": 0.0,
+   "slot": "Sat 15:00",
+   "avg_score": 1.0,
    "posts": 1
   },
   {
-   "slot": "Tue 20:00",
+   "slot": "Wed 12:00",
    "avg_score": 0.0,
    "posts": 1
   }
  ],
  "insights_available": false,
  "recent_posts": [
+  {
+   "when": "Sat 17 Oct 18:20",
+   "hour": 18,
+   "weekday": "Sat",
+   "type": "REELS",
+   "likes": 0,
+   "comments": 0,
+   "caption": "How the Australian Open turned sponsorship into a production line. Three new deals in eigh",
+   "link": "https://www.instagram.com/reel/Deljo2HFTem/",
+   "recent": true,
+   "score": 0
+  },
+  {
+   "when": "Sat 17 Oct 15:47",
+   "hour": 15,
+   "weekday": "Sat",
+   "type": "FEED",
+   "likes": 1,
+   "comments": 0,
+   "caption": "Three deals in eight days. The Australian Open's sponsor machine is running hot.",
+   "link": "https://www.instagram.com/p/DelSK1VmKDN/",
+   "recent": true,
+   "score": 1
+  },
   {
    "when": "Fri 16 Oct 20:16",
    "hour": 20,
