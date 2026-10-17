@@ -1,0 +1,21 @@
+{"date":"2026-10-17","hold":false,"story_time":"15:00","feed_time":"15:30",
+ "feed":{"kind":"feature",
+  "cover":{"tag":"Weekend feature","region":"ANZ","headline":"The AO's partner machine.","highlight":"machine","deal":"Why the AO keeps signing new brands","descriptor":"ANZ spotlight"},
+  "slides":[
+   {"label":"The story","title":"Three deals in eight days","rows":[
+     {"main":"DoorDash","sub":"Official on-demand delivery partner"},
+     {"main":"Adobe","sub":"Its first tennis sponsorship anywhere"},
+     {"main":"Sky NZ","sub":"AO rights extended through 2032"}]},
+   {"label":"The numbers","title":"More event to sell","rows":[
+     {"main":"1,368,043","sub":"Record AO 2026 crowd, up from 1,218,831"},
+     {"main":"217,999","sub":"Opening Week, nearly double 2025"},
+     {"main":"$425m","sub":"Cash in Nine's 2025-29 rights deal"}]},
+   {"label":"Why it matters","title":"Sell categories, build inventory","rows":[
+     {"main":"Tight categories","sub":"Official tequila, ride share, AI marketing"},
+     {"main":"New formats","sub":"$1m 1 Point Slam, now backed by Haier"},
+     {"main":"What's next","sub":"AO 2027 runs 11 to 31 January"}]}]},
+ "stories":[{"tag":"Weekend feature","deal":"The AO's partner machine","points":["Three deals in eight days","Record 1.37m crowd in 2026","New formats, new sponsors"],"cta":"New post on our feed"}],
+ "caption":"Three deals in eight days. The Australian Open's sponsor machine is running hot.\n\nThis month Tennis Australia signed DoorDash for delivery, named Adobe its official AI marketing and creativity partner (Adobe's first tennis deal anywhere) and extended Sky's NZ rights through 2032. The trick is selling tight categories and building more event to sell: AO 2026 drew a record 1,368,043, with Opening Week nearly doubling to 217,999. Formats like the $1m 1 Point Slam give sponsors something new to back, and Nine's 2025-29 rights deal carries a $425m cash component.\n\nRead the full feature: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "reel_caption":"How the Australian Open turned sponsorship into a production line. Three new deals in eight days, record crowds and new formats to sell. Full feature: link in bio #sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "tags":[{"username":"australianopen","slide":1}],
+ "collaborators":["australianopen"]}

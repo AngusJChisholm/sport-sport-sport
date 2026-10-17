@@ -1,1 +1,53 @@
-{"features": []}
+{
+ "features": [
+  {
+   "date": "2026-10-17",
+   "headline": "The AO's partner machine.",
+   "descriptor": "Why the Australian Open keeps signing new brands",
+   "topic": "ANZ spotlight",
+   "sport": "Tennis",
+   "region": "ANZ",
+   "image": "https://images.unsplash.com/photo-1767437900523-ef9bfc60a541",
+   "related": [
+    "DoorDash × Australian Open",
+    "Adobe × Australian Open",
+    "Sky New Zealand × Australian Open",
+    "ANZ × Australian Open",
+    "Altos × Australian Open"
+   ],
+   "article": {
+    "standfirst": "Three deals in eight days, with AO 2027 less than three months away. Tennis Australia has turned sponsorship into a production line.",
+    "body": [
+     "In the space of eight days this month, Tennis Australia signed DoorDash as the Australian Open's official on-demand delivery partner, named Adobe its official AI marketing and creativity partner, and locked Sky in as the tournament's New Zealand broadcaster through to 2032. Nobody put a number on any of the three. Together they show how the AO makes its money now: keep building new things to sell, then carve them into very specific categories.",
+     "Start with the categories. A footy club has a shirt front, a sleeve and some signage to flog. The AO's partner list reads more like a shopping centre directory. Kia has been the major partner since 2002. Emirates, Rolex and Luzhou Laojiao sit at associate level, with the Chinese baijiu maker on board since 2019. Below them runs a long tail of tightly defined deals: ANZ as official bank, Altos as official tequila in its Grand Slam debut, DiDi as ride share partner for AO 2026, and now DoorDash for delivery and Adobe for AI marketing. Because the deals are sold by category, every new category is extra money rather than a discount on an old one.",
+     "The bigger trick is making more event to sell. The AO now runs over three weeks, with an Opening Week in front of the main draw. In 2026 total attendance hit a record 1,368,043, up from 1,218,831 the year before. Opening Week alone pulled 217,999, nearly double 2025, on the back of open practice sessions, the first Opening Ceremony and the AO 1 Point Slam. Crowds also cracked 100,000 on four separate days for the first time. More days with people through the gates means more days a partner can activate, and the AO LIVE concerts, which ran five nights at John Cain Arena in 2026, stretch the precinct into the evening too.",
+     "The 1 Point Slam is the best example of inventory built from scratch. Amateurs and pros play single-point matches for a winner-takes-all $1 million. In January it ran on Rod Laver Arena as the AO 1 Point Slam Driven by Kia, and Jordan Smith, a 29-year-old NSW state champion, knocked out Jannik Sinner on his way to the cheque. For 2027 Haier has taken the sponsorship and the format has been pushed into clubs and schools around the country. Community winners feed into state championships in December, state winners play during Opening Week, and the champion's club gets a $50,000 grant. One property now gives a sponsor a grassroots program and a primetime moment.",
+     "The media money underwrites the lot. Nine holds the AO and the summer of tennis from 2025 to 2029 in a deal Nine said carried a $425 million cash component, the biggest in Tennis Australia's history. Australians watched 149 million hours of the 2025 tournament across platforms, up 8 per cent, and the 2026 prize pool climbed 16 per cent to a record $111.5 million. Those audiences are what partners are really buying.",
+     "This month's deals show where the next dollar comes from. The Sky renewal adds New Zealand rights to the Laver Cup and United Cup, keeps every main draw match live on Sky's platforms and puts evening sessions on free-to-air Three and ThreeNow from 2027, extending a 25-year relationship. Adobe is a different beast. It's the software giant's first tennis sponsorship anywhere, and Tennis Australia will use Adobe CX Enterprise to show each fan the matches, food and activities most relevant to them. DoorDash plays the same game at the bar: from AO 2027, patrons at the Golden Hour Bar on Grand Slam Oval can order from selected vendors through DoorDash, an AO first. The partner becomes part of the plumbing, and the event runs better for it.",
+     "For rights holders the lesson travels well beyond Melbourne Park. The AO didn't sit around waiting for brands to want a bigger logo. It built new inventory, from Opening Week to a concert series to a $1 million novelty event, and gave partners a job inside it. For brands, the open door is the category list. If there's room for an official tequila and an official AI marketing partner, there's room for plenty more."
+    ],
+    "close": "AO 2027 runs 11 to 31 January. Watch whether Opening Week grows again, and how many more 'official' partners land before the first ball."
+   },
+   "sources": [
+    "https://www.bandt.com.au/doordash-teams-up-with-the-australian-open-in-multi-year-partnership/",
+    "https://ausopen.com/articles/news/australian-open-and-adobe-join-forces-shape-future-fan-experiences",
+    "https://www.bandt.com.au/adobe-becomes-ai-marketing-creative-partner-of-the-australian-open/",
+    "https://www.nzx.com/announcements/481757",
+    "https://ausopen.com/articles/news/australian-open-renews-longstanding-broadcast-partnership-sky-new-zealand",
+    "https://www.tennis.com.au/content/dam/tennisaustralia/documents/reports/annual-reports/tennis-australia-annual-report-2024-25.pdf",
+    "https://mi-3.com.au/08-01-2024/luzhou-laojiao-and-australian-open-extend-partnership-5-year-deal",
+    "https://ausopen.com/articles/news/tennis-australia-and-anz-extend-long-standing-partnership-unveiling-anz-arena",
+    "https://ausopen.com/articles/news/altos-tequila-makes-grand-slam-debut-australian-open",
+    "https://ausopen.com/articles/news/didi-joins-australian-open-official-ride-share-partner",
+    "https://www.austadiums.com/news/1655/australian-open-crowds-surge-past-136-million-as-melbourne-park-enters-new-era-of-growth",
+    "https://ministryofsport.com/australian-open-2026-smashes-all-time-attendance-and-broadcast-records/",
+    "https://ministryofsport.com/australian-open-2027-dates-confirmed-following-record-breaking-2026/",
+    "https://tennistourtalk.com/129658/jordan-smith-wins-ao-1-point-slam-driven-by-kia",
+    "https://www.ausleisure.com.au/news/australian-open-and-haier-bring-ao-1-point-slam-to-tennis-clubs-across-australia",
+    "https://www.nineforbrands.com.au/media-release/tennis-australia-signs-historic-nine-network-rights-extension/",
+    "https://www.sportresolutions.com/news/australian-open-prize-pool-hits-record"
+   ],
+   "slug": "2026-10-17-the-ao-s-partner-machine"
+  }
+ ]
+}
