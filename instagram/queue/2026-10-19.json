@@ -1,0 +1,50 @@
+{
+ "date": "2026-10-19",
+ "hold": false,
+ "feed": {
+  "kind": "daily",
+  "cover": {
+   "tag": "Deal of the day",
+   "region": "ANZ",
+   "headline": "GWM rolls into Parra.",
+   "highlight": "Parra",
+   "deal": "GWM x Parramatta Eels",
+   "descriptor": "NRL and NRLW sleeve"
+  },
+  "deal": {
+   "title": "A car brand on both sleeves.",
+   "rows": [
+    {"main": "Automotive partner", "sub": "Official automotive partner of the Eels"},
+    {"main": "Two sleeves", "sub": "On the NRL and NRLW playing jerseys"},
+    {"main": "From 2027", "sub": "Multi-year, terms not disclosed"}
+   ]
+  },
+  "why": {
+   "title": "GWM is building a footy portfolio.",
+   "points": [
+    {"main": "Chasing number five", "sub": "GWM wants to be Australia's No.5 car brand"},
+    {"main": "Club number three", "sub": "Already with the Warriors and Richmond"}
+   ]
+  },
+  "others": [
+   {"deal": "Champion Data x A-Leagues", "sub": "Football - Broadcast graphics, three seasons"},
+   {"deal": "Carole Nash x British Superbike Championship", "sub": "Motorsport - Insurance partner renewal"},
+   {"deal": "Tangerine x Bendigo Spirit", "sub": "Basketball - WNBL renewal"},
+   {"deal": "Crystalbrook Sam x Adelaide 36ers", "sub": "Basketball - Accommodation partner"}
+  ]
+ },
+ "stories": [
+  {"tag": "Deal of the day", "deal": "GWM x Parramatta Eels", "property": "Parramatta Eels",
+   "points": ["Official automotive partner", "Sleeve on NRL and NRLW kits", "Starts in 2027"]},
+  {"tag": "Also today", "deal": "Champion Data x A-Leagues", "property": "A-Leagues",
+   "points": ["Broadcast graphics provider", "Three seasons from 2026-27"]},
+  {"tag": "Also today", "deal": "Carole Nash x British Superbike Championship", "property": "British Superbike Championship",
+   "points": ["Insurance partner renews", "Donington round sponsor too"]},
+  {"tag": "Also today", "deal": "Tangerine x Bendigo Spirit", "property": "Bendigo Spirit",
+   "points": ["Back for a second season", "WNBL 2026/27"]},
+  {"tag": "Also today", "deal": "Crystalbrook Sam x Adelaide 36ers", "property": "Adelaide 36ers",
+   "points": ["Official accommodation partner", "Hosts visiting NBL teams"]}
+ ],
+ "caption": "GWM wants to be Australia's number five car brand, and it's driving through Parramatta to get there.\n\nThe Eels have signed GWM as official automotive partner on a multi-year deal from 2027, with its logo on the sleeve of both the NRL and NRLW jerseys. It lands two days after adidas signed on as the club's apparel partner. GWM already backs the Warriors and Richmond, so this one looks like a portfolio play.\n\nAlso today: Champion Data x A-Leagues, Carole Nash x British Superbike Championship, Tangerine x Bendigo Spirit, Crystalbrook Sam x Adelaide 36ers.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "reel_caption": "GWM just put its badge on both Parra sleeves.\n\nThe car maker is the Eels' official automotive partner from 2027, across the NRL and NRLW kits. Plus four more deals inside.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+}
