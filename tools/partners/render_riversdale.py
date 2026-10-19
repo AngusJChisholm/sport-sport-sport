@@ -1,6 +1,6 @@
-"""Render the Riversdale Fresh partner creatives for Sport Sport Sport.
+"""Render the Riversdale Kitchen partner creatives for Sport Sport Sport.
 
-Usage: python3 render.py <docket food photo dir> <output dir>
+Usage: python3 render.py <Riversdale Kitchen food photo dir> <output dir>
 """
 import sys
 from pathlib import Path
@@ -27,7 +27,7 @@ body{width:%(w)dpx;height:%(h)dpx;overflow:hidden;font-family:"Inter Display","I
 def brand(size, icon):
     return (f'<div style="display:flex;align-items:center;gap:{int(size*.45)}px">'
             f'<img src="{ICON}" alt="" style="width:{icon}px;height:{icon}px;display:block">'
-            f'<span class="wm" style="font-size:{size}px">Riversdale Fresh</span></div>')
+            f'<span class="wm" style="font-size:{size}px">Riversdale Kitchen</span></div>')
 
 CREATIVES = {
     # Article split feature: photo-led, 4:3.

@@ -1,34 +1,34 @@
 {
  "_help": "Partner slots. Set active to false to hide every slot. Swap the partner by changing name, url and the slot images/copy. Image paths are from the site root.",
  "active": true,
- "name": "Riversdale Fresh",
- "url": "https://angusjchisholm.github.io/docket/?utm_source=sportsportsport&utm_medium=partner&utm_campaign=launch",
+ "name": "Riversdale Kitchen",
+ "url": "https://riversdalekitchen.com.au/?utm_source=sportsportsport&utm_medium=partner&utm_campaign=launch",
  "slots": {
   "credit": true,
   "presented": true,
   "signoff": true,
   "feature": {
-   "image": "assets/partners/riversdale-fresh/split.jpg",
+   "image": "assets/partners/riversdale-kitchen/split.jpg",
    "alt": "Garlic prawn noodles with a price tag reading Coles, Woolies, Aldi",
    "headline": "Meal kit dinners. Supermarket prices.",
    "line": "Pick your dinners and get a priced shopping list for Coles, Woolies or Aldi.",
    "cta": "Plan this week's dinners",
-   "url": "https://angusjchisholm.github.io/docket/plan.html?utm_source=sportsportsport&utm_medium=partner&utm_campaign=launch&utm_content=article-feature"
+   "url": "https://riversdalekitchen.com.au/plan.html?utm_source=sportsportsport&utm_medium=partner&utm_campaign=launch&utm_content=article-feature"
   },
   "wide": {
-   "image": "assets/partners/riversdale-fresh/wide.jpg",
-   "alt": "Riversdale Fresh. Proper dinners, minus the meal kit markup. This week's five picks are free.",
+   "image": "assets/partners/riversdale-kitchen/wide.jpg",
+   "alt": "Riversdale Kitchen. Proper dinners, minus the meal kit markup. This week's five picks are free.",
    "line": "This week's five picks come with the full recipes, free.",
    "cta": "See this week's picks",
-   "url": "https://angusjchisholm.github.io/docket/?utm_source=sportsportsport&utm_medium=partner&utm_campaign=launch&utm_content=article-wide"
+   "url": "https://riversdalekitchen.com.au/?utm_source=sportsportsport&utm_medium=partner&utm_campaign=launch&utm_content=article-wide"
   },
   "home": {
-   "image": "assets/partners/riversdale-fresh/home.jpg",
-   "imageMobile": "assets/partners/riversdale-fresh/home-mobile.jpg",
-   "alt": "Riversdale Fresh. Meal kit dinners. Supermarket prices. Pick your dinners, get a priced shopping list.",
+   "image": "assets/partners/riversdale-kitchen/home.jpg",
+   "imageMobile": "assets/partners/riversdale-kitchen/home-mobile.jpg",
+   "alt": "Riversdale Kitchen. Meal kit dinners. Supermarket prices. Pick your dinners, get a priced shopping list.",
    "line": "Proper dinners, minus the meal kit markup.",
    "cta": "Try the free planner",
-   "url": "https://angusjchisholm.github.io/docket/plan.html?utm_source=sportsportsport&utm_medium=partner&utm_campaign=launch&utm_content=home"
+   "url": "https://riversdalekitchen.com.au/plan.html?utm_source=sportsportsport&utm_medium=partner&utm_campaign=launch&utm_content=home"
   }
  }
 }
