@@ -5,6 +5,101 @@
  },
  "deals": [
   {
+   "date": "2026-10-18",
+   "added": "2026-10-20",
+   "deal": "IREN × Real Madrid",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "IREN lands at the Bernabéu.",
+   "summary": "Sydney-founded AI cloud provider IREN is Real Madrid's new official sponsor, reported as the club's official AI cloud partner.",
+   "url": "https://www.realmadrid.com/en-US/news/club/sponsors/iren-nuevo-patrocinador-del-real-madrid-16-10-2026",
+   "image": "https://images.unsplash.com/photo-1529552611588-24fa4934b7b4",
+   "article": {
+    "standfirst": "A Sydney-founded AI cloud company has just put its name next to the biggest badge in club football.",
+    "body": [
+     "Real Madrid named IREN as a new official sponsor on Sunday 18 October. Trade coverage from Sportcal and Footy Headlines has IREN billed as the club's official AI cloud partner. Neither side has said how long the deal runs or what it's worth, so we won't guess.",
+     "If the name rings a bell, it should. IREN started out in Sydney, is listed on the Nasdaq and now runs as an AI cloud and data centre business. In June it signed a multi-year deal to put its badge on Golden State Warriors jerseys from the 2026-27 season, a patch reportedly worth more than US$50 million a year and reportedly the richest sponsorship in North American team sport.",
+     "The Madrid deal makes more sense once you look at where IREN is building. In June it completed the purchase of Spanish data centre developer Nostrum Group, picking up around 490 megawatts of secured power in Spain. So this isn't just a logo on a stadium screen. IREN is buying awareness in a country where it's putting real infrastructure in the ground, and doing it with the one club everyone in Spain, and most of the planet, knows.",
+     "For the category, this is the AI infrastructure money finally reaching European football's top table. Crypto and fintech brands bought their way into sport on hype. The compute crowd has hard assets, big customers and a reason to be known by governments, landlords and talent as much as by fans. Expect them to keep paying for the biggest badges they can find.",
+     "What to watch: whether IREN's role grows into matchday branding or technology work at the Bernabéu, and whether the Warriors and Real Madrid become a template for more AI cloud firms chasing global clubs."
+    ],
+    "close": "AI cloud money has found the biggest stage in club football, and it won't be the last."
+   },
+   "slug": "2026-10-20-iren-real-madrid"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-20",
+   "deal": "University of Tasmania × Tasmania Devils",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "UTAS becomes the Devils' official higher education partner on a multi-year deal covering study pathways and placements.",
+   "url": "https://ministryofsport.com/university-of-tasmania-and-tasmania-devils-announce-partnership/"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-20",
+   "deal": "Frontieras × Cadillac F1",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Houston energy tech firm Frontieras North America signs a multi-year deal as Cadillac's official energy transformation partner.",
+   "url": "https://www.globenewswire.com/news-release/2026/10/19/3383524/0/en/frontieras-north-america-joins-cadillac-formula-1-r-team-as-official-energy-transformation-partner.html"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-20",
+   "deal": "AIMS × MPL Indonesia",
+   "sport": "Esports",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Forex and CFD broker AIMS named official trading partner of the Mobile Legends league's Season 18.",
+   "url": "https://www.globenewswire.com/news-release/2026/10/19/3383788/0/en/mpl-indonesia-welcomes-aims-as-official-trading-partner-for-season-18.html"
+  },
+  {
+   "date": "2026-10-16",
+   "added": "2026-10-20",
+   "deal": "Cisco × Atlanta Hawks",
+   "sport": "Basketball",
+   "type": "Technology partner",
+   "region": "Global",
+   "summary": "Cisco expands its NBA work, rolling out Wi-Fi 7 at State Farm Arena and widening ties with the Cavaliers and Brooklyn Sports & Entertainment.",
+   "url": "https://www.sportsvideo.org/2026/10/16/cisco-expands-work-with-hawks-cavaliers-brooklyn-sports-entertainment/"
+  },
+  {
+   "date": "2026-10-15",
+   "added": "2026-10-20",
+   "deal": "MinebeaMitsumi × Shizuoka Stadium Ecopa",
+   "sport": "Venues",
+   "type": "Naming rights",
+   "region": "Global",
+   "summary": "Five-year naming rights from April 2027: MinebeaMitsumi Stadium Ecopa and MinebeaMitsumi Arena Ecopa (announced on or before 15 Oct).",
+   "url": "https://www.thestadiumbusiness.com/2026/10/19/naming-rights-partner-signed-for-shizuoka-stadium-arena/"
+  },
+  {
+   "date": "2026-10-16",
+   "added": "2026-10-20",
+   "deal": "iHeartMedia × National Squash League",
+   "sport": "Squash",
+   "type": "Title sponsorship",
+   "region": "Global",
+   "summary": "iHeartMedia is title sponsor of the 2026-27 NSL season and the league's official audio media partner.",
+   "url": "https://www.iheartmedia.com/press/national-squash-league-and-iheartmedia-launch-strategic-partnership"
+  },
+  {
+   "date": "2026-10-13",
+   "added": "2026-10-20",
+   "deal": "Return and Earn × Sydney Thunder",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "NSW's container refund scheme is the Thunder's official recycling partner for WBBL|12 and BBL|16.",
+   "url": "https://www.sydneythunder.com.au/news/4591955/thunder-go-greener-with-return-and-earn-partnership"
+  },
+  {
    "date": "2026-10-16",
    "added": "2026-10-19",
    "deal": "GWM × Parramatta Eels",

@@ -1,0 +1,135 @@
+{
+ "date": "2026-10-20",
+ "hold": false,
+ "feed": {
+  "kind": "daily",
+  "cover": {
+   "tag": "Deal of the day",
+   "region": "ANZ",
+   "headline": "IREN lands at the Bernabéu.",
+   "highlight": "Bernabéu",
+   "deal": "IREN x Real Madrid",
+   "descriptor": "Official sponsor"
+  },
+  "deal": {
+   "title": "AI cloud money hits Madrid.",
+   "rows": [
+    {
+     "main": "Official sponsor",
+     "sub": "Reported as official AI cloud partner"
+    },
+    {
+     "main": "Sydney-founded",
+     "sub": "Nasdaq-listed AI cloud provider"
+    },
+    {
+     "main": "Terms undisclosed",
+     "sub": "No length or fee announced"
+    }
+   ]
+  },
+  "why": {
+   "title": "IREN is buying the biggest badges.",
+   "points": [
+    {
+     "main": "Warriors patch in June",
+     "sub": "Reportedly worth US$50m+ a year"
+    },
+    {
+     "main": "Building in Spain",
+     "sub": "Bought data centre developer Nostrum Group"
+    }
+   ]
+  },
+  "others": [
+   {
+    "deal": "University of Tasmania x Tasmania Devils",
+    "sub": "AFL - Higher education partner"
+   },
+   {
+    "deal": "Frontieras x Cadillac F1",
+    "sub": "Motorsport - Energy transformation partner"
+   },
+   {
+    "deal": "AIMS x MPL Indonesia",
+    "sub": "Esports - Official trading partner"
+   }
+  ]
+ },
+ "stories": [
+  {
+   "tag": "Deal of the day",
+   "deal": "IREN x Real Madrid",
+   "property": "Real Madrid",
+   "points": [
+    "New official sponsor",
+    "AI cloud partner",
+    "Sydney-founded brand"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "University of Tasmania x Tasmania Devils",
+   "property": "Tasmania Devils",
+   "points": [
+    "Official higher education partner",
+    "Multi-year deal"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Frontieras x Cadillac F1",
+   "property": "Cadillac F1",
+   "points": [
+    "Energy transformation partner",
+    "Multi-year deal"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "AIMS x MPL Indonesia",
+   "property": "MPL Indonesia",
+   "points": [
+    "Official trading partner",
+    "Mobile Legends Season 18"
+   ]
+  }
+ ],
+ "caption": "A Sydney-founded AI cloud company is now on Real Madrid's sponsor list.\n\nReal Madrid named IREN a new official sponsor on Sunday, reported as the club's official AI cloud partner. No length or fee was announced. It follows IREN's Golden State Warriors jersey patch in June, reportedly worth more than US$50m a year, and its purchase of Spanish data centre developer Nostrum Group.\n\nAlso today: University of Tasmania x Tasmania Devils, Frontieras x Cadillac F1, AIMS x MPL Indonesia.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "reel_caption": "IREN went from the Warriors' jersey to the Bernabéu in four months.\n\nReal Madrid named the Sydney-founded AI cloud firm a new official sponsor. Plus three more deals inside.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "evergreen": {
+  "label": "The breakdown",
+  "headline": "Who backs the Tasmania Devils.",
+  "highlight": "Devils",
+  "descriptor": "The partners lined up before the 2028 AFL debut",
+  "region": "ANZ",
+  "items": [
+   {
+    "title": "Blundstone x Tasmania Devils",
+    "sub": "Principal foundation partner, seven years, front of guernsey",
+    "tag": "Footwear"
+   },
+   {
+    "title": "Cadbury x Tasmania Devils",
+    "sub": "Foundation major partner, five years, back of guernsey",
+    "tag": "Confectionery"
+   },
+   {
+    "title": "Firmus Technologies x Tasmania Devils",
+    "sub": "Six-year deal, on player shorts and coach polos",
+    "tag": "AI infrastructure"
+   },
+   {
+    "title": "New Balance x Tasmania Devils",
+    "sub": "The club's inaugural apparel partner",
+    "tag": "Apparel"
+   },
+   {
+    "title": "University of Tasmania x Tasmania Devils",
+    "sub": "Official higher education partner, signed this week",
+    "tag": "Education"
+   }
+  ],
+  "caption": "The Tasmania Devils don't play an AFL game until 2028, and the partner list is already stacked.\n\nBlundstone owns the front of the guernsey on a seven-year deal, Cadbury has the back for five years and Firmus Technologies is on the shorts for six. New Balance makes the kit, and this week the University of Tasmania signed on as higher education partner.\n\nSave this for later.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+ }
+}
