@@ -5,6 +5,7 @@
     python3 tools/instagram_post.py post     # posts anything that is due
     python3 tools/instagram_post.py status   # shows today's queue and what has posted
 
+Stories and Reels are switched off (POST_STORIES / POST_REELS below).
 Schedule (Melbourne time): stories 8am weekdays; carousel Mon 7pm, Tue 7pm,
 Wed 12pm, Thu 9am, Fri 6pm. Weekends (only when the weekend feature task writes a
 queue file): story 9am (set by the queue's "story_time"), carousel 10am, Reel 6pm. Pause everything by creating instagram/PAUSE,
@@ -42,6 +43,10 @@ REEL_TIMES = {0: dtime(20, 30), 1: dtime(20, 30), 2: dtime(19, 0), 3: dtime(19, 
               5: dtime(18, 0), 6: dtime(18, 0)}
 EVERGREEN_TIME = dtime(12, 0)   # the 6am task only adds an evergreen carousel on Tuesdays
 LATE_CUTOFF = dtime(23, 30)
+# Angus switched off Instagram stories and Reels (21 Oct 2026). Only carousels post now.
+# Set either back to True to turn them on again.
+POST_STORIES = False
+POST_REELS = False
 STATS_FROM = dtime(4, 45)       # before the 6am task, which reads the stats on Fridays
 # Videos load from GitHub Pages (served as video/mp4, which Instagram needs for Reels).
 PAGES_BASE = os.environ.get("PAGES_URL", "https://sportsportsport.com.au").rstrip("/") + "/ig"
@@ -127,9 +132,9 @@ def due(q, state, m, t):
     """What can post right now: stories, feed, reel, evergreen."""
     s0, s1 = story_window(q)
     out = {
-        "stories": bool(q.get("stories")) and not state.get("stories_done") and s0 <= t.time() < s1,
+        "stories": POST_STORIES and bool(q.get("stories")) and not state.get("stories_done") and s0 <= t.time() < s1,
         "feed": not state.get("feed_done") and feed_start(q, t) <= t.time() < FEED_CUTOFF,
-        "reel": bool(m and m.get("reel")) and q.get("reel", True) and not state.get("reel_done")
+        "reel": POST_REELS and bool(m and m.get("reel")) and q.get("reel", True) and not state.get("reel_done")
                 and hm(q.get("reel_time"), REEL_TIMES[t.weekday()]) <= t.time() < LATE_CUTOFF,
         "evergreen": bool(q.get("evergreen")) and not state.get("evergreen_done")
                      and hm(q["evergreen"].get("time") if q.get("evergreen") else None, EVERGREEN_TIME) <= t.time() < LATE_CUTOFF,
@@ -161,7 +166,7 @@ def plan():
             out["reason"] = f"render={out['render']}, posting on hold today"
             return out
         d = due(q, state, m, t)
-        if out["render"] and q.get("reel", True):
+        if out["render"] and POST_REELS and q.get("reel", True):
             d["reel"] = not state.get("reel_done") and hm(q.get("reel_time"), REEL_TIMES[t.weekday()]) <= t.time() < LATE_CUTOFF
         out["post"] = any(d.values())
         out["reason"] = f"render={out['render']} stats={out['stats']} " + " ".join(f"{k}_due={v}" for k, v in d.items())
@@ -322,7 +327,7 @@ def do_post():
     state.setdefault("stories", {})
 
     s0, s1 = story_window(q)
-    if q.get("stories") and not state.get("stories_done") and s0 <= t.time() < s1:
+    if POST_STORIES and q.get("stories") and not state.get("stories_done") and s0 <= t.time() < s1:
         for name in m["stories"]:
             if name in state["stories"]:
                 continue
