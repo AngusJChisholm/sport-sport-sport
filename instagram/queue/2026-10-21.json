@@ -1,0 +1,113 @@
+{
+ "date": "2026-10-21",
+ "hold": false,
+ "feed": {
+  "kind": "daily",
+  "cover": {
+   "tag": "Deal of the day",
+   "region": "ANZ",
+   "headline": "Woolworths stocks up on rugby.",
+   "highlight": "rugby",
+   "deal": "Woolworths x Rugby World Cup 2027",
+   "descriptor": "Official supermarket supporter"
+  },
+  "deal": {
+   "title": "Two home World Cups covered.",
+   "rows": [
+    {
+     "main": "Official supporter",
+     "sub": "Official Supermarket Supporter"
+    },
+    {
+     "main": "Men's RWC 2027",
+     "sub": "1 Oct to 13 Nov 2027, in Australia"
+    },
+    {
+     "main": "Women's RWC 2029",
+     "sub": "Also being played in Australia"
+    }
+   ]
+  },
+  "why": {
+   "title": "The checkout becomes a channel.",
+   "points": [
+    {
+     "main": "Cartology in play",
+     "sub": "Retail media opportunities for other brands"
+    },
+    {
+     "main": "Fans across the Tasman",
+     "sub": "Pitched at fans in Australia and NZ"
+    }
+   ]
+  },
+  "others": [
+   {
+    "deal": "Stripe x Mercedes-AMG Petronas F1 Team",
+    "sub": "Motorsport - Global payments partner"
+   },
+   {
+    "deal": "AT&T x NBA",
+    "sub": "Basketball - Multiyear extension"
+   },
+   {
+    "deal": "AbbVie x McLaren",
+    "sub": "Motorsport - Pharmaceutical partner"
+   },
+   {
+    "deal": "Topgolf x John Daly",
+    "sub": "Golf - Multi-year partnership"
+   }
+  ]
+ },
+ "stories": [
+  {
+   "tag": "Deal of the day",
+   "deal": "Woolworths x Rugby World Cup 2027",
+   "property": "Rugby World Cup 2027",
+   "points": [
+    "Official supermarket supporter",
+    "Men's 2027 and women's 2029",
+    "Cartology retail media in play"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Stripe x Mercedes-AMG Petronas F1 Team",
+   "property": "Mercedes-AMG Petronas F1 Team",
+   "points": [
+    "Global payments partner",
+    "On the cars from 2027"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "AT&T x NBA",
+   "property": "NBA",
+   "points": [
+    "Multiyear extension",
+    "Official connectivity partner"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "AbbVie x McLaren",
+   "property": "McLaren",
+   "points": [
+    "Official pharmaceutical partner",
+    "Starts at the US Grand Prix"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Topgolf x John Daly",
+   "property": "John Daly",
+   "points": [
+    "Multi-year partnership",
+    "Daly drinks at 55 venues"
+   ]
+  }
+ ],
+ "caption": "Woolworths has put its hand up for both home Rugby World Cups.\n\nIt's the Official Supermarket Supporter of the men's Rugby World Cup 2027 and the women's Rugby World Cup 2029, both played here. No fee or length was disclosed. The bigger play is Cartology, Woolworths' retail media network, which will open up brand opportunities around the tournaments.\n\nAlso today: Stripe x Mercedes-AMG Petronas F1 Team, AT&T x NBA, AbbVie x McLaren, Topgolf x John Daly.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "reel_caption": "Woolworths is in for both home Rugby World Cups.\n\nPlus four more deals from the last 48 hours.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+}

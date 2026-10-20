@@ -5,6 +5,150 @@
  },
  "deals": [
   {
+   "date": "2026-10-20",
+   "added": "2026-10-21",
+   "deal": "Woolworths × Rugby World Cup 2027",
+   "sport": "Rugby union",
+   "type": "Official supporter",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Woolworths stocks up on rugby.",
+   "summary": "Woolworths is the Official Supermarket Supporter of the men's Rugby World Cup 2027 and women's Rugby World Cup 2029, both in Australia.",
+   "url": "https://www.woolworthsgroup.com.au/au/en/our-newsroom/media-releases/latest-news/2026/woolworths-tackles-rugby-world-cup-with-major-new-sponsorship-ac.html",
+   "article": {
+    "standfirst": "Woolworths has put its hand up for both home Rugby World Cups.",
+    "body": [
+     "Woolworths has been named the Official Supermarket Supporter of the men's Rugby World Cup 2027 and the women's Rugby World Cup 2029, both being played in Australia. The deal was announced on Tuesday 20 October. Neither side has put a number or an end date on it beyond the two tournaments, so we won't either.",
+     "It slots Woolworths into World Rugby's Official Suppliers and Supporters tier, alongside names like Dove Men+Care, Gilbert, Macron and Mitsubishi Estate. Above that sit the official partners (Liqui Moly, Coca-Cola, IHG) and the principal partners, Emirates, Asahi Super Dry and Visa.",
+     "The interesting bit is the retail media angle. Woolworths says its Cartology network will open up brand opportunities around the tournaments. That turns a supermarket sponsorship into something bigger: a channel other brands can buy into, with the World Cup as the hook and the checkout as the payoff. Woolworths reckons it serves around 24 million customers a week, which is a lot of eyeballs for a pack of snags or a slab of something cold.",
+     "The men's tournament runs from 1 October to 13 November 2027, with 24 teams across seven host cities. Woolworths is pitching itself as a one-stop shop for fans on both sides of the Tasman, with fans in New Zealand part of the pitch as much as fans here.",
+     "What to watch: how hard Woolworths pushes Cartology deals off the back of this, and whether the other big grocers or liquor chains try to muscle in around the edges with their own rugby plays."
+    ],
+    "close": "In a home World Cup, the supermarket aisle might be the best seat in the house."
+   },
+   "slug": "2026-10-21-woolworths-rugby-world-cup-2027"
+  },
+  {
+   "date": "2026-10-20",
+   "added": "2026-10-21",
+   "deal": "Stripe × Mercedes-AMG Petronas F1 Team",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Multi-year deal makes Stripe the team's official global payments partner and an official team partner, with branding on the cars from the first race of 2027.",
+   "url": "https://fxnewsgroup.com/forex-news/payments/stripe-announces-multiyear-global-partnership-with-mercedes-amg-petronas-f1-team/"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-21",
+   "deal": "AT&T × NBA",
+   "sport": "Basketball",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Multiyear extension keeps AT&T as Official Connectivity Partner of the NBA and WNBA, a relationship that began in 2018.",
+   "url": "https://prnewswire.com/news-releases/att-nba-and-wnba-launch-next-generation-network-built-for-the-future-of-basketball-302912017.html"
+  },
+  {
+   "date": "2026-10-20",
+   "added": "2026-10-21",
+   "deal": "AbbVie × McLaren",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "AbbVie joins the McLaren F1 team as Official Pharmaceutical Partner from the US Grand Prix, donating $10,000 for every 10 Constructors' points.",
+   "url": "https://www.mclaren.com/racing/formula-1/2026/partner/mclaren-racing-announces-partnership-with-abbvie/"
+  },
+  {
+   "date": "2026-10-20",
+   "added": "2026-10-21",
+   "deal": "Topgolf × John Daly",
+   "sport": "Golf",
+   "type": "Athlete endorsement",
+   "region": "Global",
+   "summary": "Multi-year deal brings Daly appearances, content and two Daly-branded drinks to 55 Topgolf venues.",
+   "url": "https://www.prnewswire.com/news-releases/topgolf-signs-golf-legend-john-daly-in-multi-year-partnership-302914152.html"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-21",
+   "deal": "Insight × Las Vegas Grand Prix",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Tech solutions firm Insight becomes an official event partner of the Formula 1 Las Vegas Grand Prix.",
+   "url": "https://www.businesswire.com/news/home/20261019888040/en/Insight-Becomes-Official-Event-Partner-of-the-FORMULA-1-HEINEKEN-LAS-VEGAS-GRAND-PRIX-Bringing-Together-Two-Tech-Forward-Brands"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-21",
+   "deal": "BOSS Parfums × HYROX",
+   "sport": "Endurance",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Multi-year international partnership puts BOSS Parfums across HYROX events in Europe.",
+   "url": "https://www.businesswire.com/news/home/20261019879097/en/BOSS-PARFUMS-and-HYROX-Announce-Multi-Year-International-Partnership-Across-Europe-to-Celebrate-Performance-Ambition-and-Personal-Success"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-21",
+   "deal": "Vueling × Athletic Club",
+   "sport": "Football",
+   "type": "Sleeve sponsorship",
+   "region": "Global",
+   "summary": "Vueling extends to 2030 and moves from the shorts to the left sleeve of the men's first-team shirt.",
+   "url": "https://www.footyheadlines.com/3455876302/athletic-club-announce-vueling-sleeve-sponsor-deal-until-2030.html"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-21",
+   "deal": "Yelophant × New York Knicks",
+   "sport": "Basketball",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Yelophant is named an official partner of the New York Knicks.",
+   "url": "https://www.businesswire.com/news/home/20261019168321/en/Yelophant-Named-Official-Partner-of-the-New-York-Knicks"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-21",
+   "deal": "Club Car × PGA of Australia",
+   "sport": "Golf",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Club Car renews with the PGA of Australia for a further three years, through 2029.",
+   "url": "https://www.ausleisure.com.au/news/club-car-and-pga-of-australia-renew-partnership"
+  },
+  {
+   "date": "2026-10-20",
+   "added": "2026-10-21",
+   "deal": "Nambawan Super × PNG Chiefs",
+   "sport": "NRL",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "Three-year superannuation partnership with the NRL's PNG Chiefs, with the logo on the lower back of the jersey.",
+   "url": "https://islandsbusiness.com/pacnews/pacnews-sports-20-october-2026"
+  },
+  {
+   "date": "2026-10-15",
+   "added": "2026-10-21",
+   "deal": "Ecosa × CommBank Matildas",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Multi-year deal makes Australian sleep brand Ecosa the Official Sleep Partner of the Matildas ahead of the 2027 Women's World Cup.",
+   "url": "https://footballaustralia.com.au/news/ecosa-named-official-sleep-partner-commbank-matildas"
+  },
+  {
+   "date": "2026-10-20",
+   "added": "2026-10-21",
+   "deal": "Johnsons Coaches × Birmingham Moseley Rugby Club",
+   "sport": "Rugby union",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Johnsons Coaches signs on as an official club sponsor of Birmingham Moseley.",
+   "url": "https://www.uksponsorship.co.uk/index.htm"
+  },
+  {
    "date": "2026-10-18",
    "added": "2026-10-20",
    "deal": "IREN × Real Madrid",
