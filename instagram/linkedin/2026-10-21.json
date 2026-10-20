@@ -1,0 +1,31 @@
+{
+ "date": "2026-10-21",
+ "headline_lines": [
+  "WOOLIES",
+  "STOCKS",
+  "UP ON",
+  "RUGBY."
+ ],
+ "highlight": "RUGBY.",
+ "deal": "Woolworths x RWC 2027",
+ "descriptor": "Official supermarket supporter",
+ "others": [
+  {
+   "deal": "Stripe x Mercedes F1",
+   "sub": "Motorsport - Global payments partner"
+  },
+  {
+   "deal": "AT&T x NBA",
+   "sub": "Basketball - Multiyear extension"
+  },
+  {
+   "deal": "AbbVie x McLaren",
+   "sub": "Motorsport - Pharmaceutical partner"
+  },
+  {
+   "deal": "Topgolf x John Daly",
+   "sub": "Golf - Multi-year partnership"
+  }
+ ],
+ "image": "https://images.unsplash.com/photo-1574602904329-56e2f95fb15e"
+}
