@@ -10,7 +10,7 @@ jobs:
           for i in 0 1 2 3 4 5 6; do
             from=$((i*96))
             timeout 120 google-chrome --headless=new --no-sandbox --hide-scrollbars --window-size=1400,880 --virtual-time-budget=30000 \
-              --screenshot=shots/sheet-$i.png "https://sportsportsport.com.au/logo-sheet.html?from=$from&n=96&v=$GITHUB_RUN_ID"
+              --screenshot=shots/sheet-$i.png "https://sportsportsport.com.au/logo-sheet.html?from=$from&n=96&v=$GITHUB_RUN_ID" || true
           done; true
           ls -la shots
       - run: |
