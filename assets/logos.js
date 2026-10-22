@@ -78,8 +78,8 @@ window.SSSLogos=(function(){
   }
   function fail(img){
     // Retry once after a short pause first: a busy page can be briefly rate-limited.
-    if(!img.dataset.retried){img.dataset.retried="1";const u=img.src;setTimeout(()=>{img.src="";img.src=u},1200+Math.random()*1800);return}
-    img.dataset.retried="";
+    if(img.dataset.retried!=="1"&&/brandfetch\.io/.test(img.src)){img.dataset.retried="1";const u=img.src+"&r=1";setTimeout(()=>{img.src=u},1200+Math.random()*1800);return}
+    img.dataset.retried="0";
     const next=(img.dataset.next||"").split(" ").filter(Boolean);
     if(next.length){img.dataset.next=next.slice(1).join(" ");img.src=next[0];return}
     const box=img.parentElement;img.remove();if(box)box.classList.remove("has-img");
