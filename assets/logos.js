@@ -31,6 +31,11 @@ window.SSSLogos=(function(){
     const x=ENT[slug]||{name};
     return {slug,name:x.name||name,domain:okDomain(String(x.domain||""))?x.domain:"",logo:okFile(String(x.logo||""))?x.logo:"",aliases:x.aliases||[]};
   }
+  // One side of a deal can name several organisations: "Harvey Norman / Westpac / KFC".
+  const many=name=>String(name||"").split(/\s+\/\s+/).map(s=>s.trim()).filter(Boolean).map(resolve);
+  // Tags a deal with every organisation on each side (_bs/_ps), keeping _b/_p as the first of each.
+  function tag(d){const [b,p]=split(d.deal);const bs=many(b),ps=p?many(p):[];return Object.assign(d,{_bs:bs,_ps:ps,_b:bs[0]||null,_p:ps[0]||null})}
+  const has=(d,slug)=>[...(d._bs||[]),...(d._ps||[])].some(e=>e&&e.slug===slug);
   const byId=slug=>ENT[slug]?resolve(ENT[slug].name):null;
   // Club colours from instagram/colours.json, used for monograms.
   function colours(e){
@@ -72,10 +77,15 @@ window.SSSLogos=(function(){
     const box=img.parentElement;img.remove();if(box)box.classList.remove("has-img");
   }
   const page=slug=>`profile.html?id=${encodeURIComponent(slug)}`;
+  // Logo pair for a deal: every brand, ×, every property.
+  function pair(d,opts){
+    const side=a=>(a||[]).map(e=>link(e,opts)).join("");
+    return `<span class="pair">${side(d._bs)}<span class="xx" aria-hidden="true">×</span>${side(d._ps)}</span>`;
+  }
   // Linked logo for a deal side.
   function link(e,opts){
     if(!e)return "";
     return `<a class="lga" href="${esc(page(e.slug))}" aria-label="${esc(e.name)}" title="${esc(e.name)}">${mark(e,opts)}</a>`;
   }
-  return {load,split,resolve,byId,mark,link,fail,page,esc,leagues:()=>LEAGUES,all:()=>ENT};
+  return {load,split,resolve,many,tag,has,pair,byId,mark,link,fail,page,esc,leagues:()=>LEAGUES,all:()=>ENT};
 })();

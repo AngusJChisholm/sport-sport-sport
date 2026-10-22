@@ -382,10 +382,10 @@ function filters(){
 }
 function render(){
   const latest=DEALS.find(d=>d.date);const now=latest?dObj(latest):new Date();
-  const r=DEALS.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(!st.type||d.type===st.type)&&(!st.reg||d.region===st.reg)&&(!st.days||(d.date&&(now-dObj(d))/864e5<=+st.days))&&(!st.ent||(d._b&&d._b.slug===st.ent)||(d._p&&d._p.slug===st.ent)));
+  const r=DEALS.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(!st.type||d.type===st.type)&&(!st.reg||d.region===st.reg)&&(!st.days||(d.date&&(now-dObj(d))/864e5<=+st.days))&&(!st.ent||L.has(d,st.ent)));
   $("list").innerHTML=r.slice(0,shown).map(d=>{
     const name=href(d)?`<a${attrs(d)}><b>${esc(d.deal)}</b></a>`:`<b>${esc(d.deal)}</b>`;
-    const pair=d._b?`<span class="pair">${L.link(d._b,{px:40})}<span class="xx" aria-hidden="true">×</span>${L.link(d._p,{px:40})}</span>`:"";
+    const pair=d._b?L.pair(d,{px:40}):"";
     return `<div class="ar-r"><span class="d">${esc(fmtArch(d))}</span><span class="dl">${pair}${name}</span><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.type||"")}</span><span><span class="tag r">${esc(d.region)}</span></span></div>`}).join("");
   $("empty").hidden=r.length>0;
   $("count").textContent=`${r.length} of ${DEALS.length} deals`;
@@ -394,8 +394,8 @@ function render(){
 // Club and brand strip: league tabs, a row of crests; tapping one filters the archive to that club or brand.
 function strip(){
   const count={};
-  DEALS.forEach(d=>[d._b,d._p].forEach(e=>{if(e)count[e.slug]=(count[e.slug]||0)+1}));
-  const top=(side,reg)=>{const c={};DEALS.forEach(d=>{const e=d[side];if(e&&(!reg||d.region===reg))c[e.slug]=(c[e.slug]||0)+1});
+  DEALS.forEach(d=>[...d._bs,...d._ps].forEach(e=>{if(e)count[e.slug]=(count[e.slug]||0)+1}));
+  const top=(side,reg)=>{const c={};DEALS.forEach(d=>{if(reg&&d.region!==reg)return;(d[side+"s"]||[]).forEach(e=>{if(e)c[e.slug]=(c[e.slug]||0)+1})});
     return Object.entries(c).filter(([s,n])=>n>1).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,16).map(([s])=>s)};
   const tabs=[...L.leagues().map(l=>({name:l.name,ids:l.clubs})),{name:"Global clubs",ids:top("_p","Global")},{name:"Top brands",ids:top("_b")}].filter(t=>t.ids.length);
   if(!tabs.length)return;
@@ -436,7 +436,7 @@ fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.statu
   SITE=data.site||{};
   ORIG=data.deals||[];
   DEALS=ORIG.slice().sort((a,b)=>sortKey(b).localeCompare(sortKey(a))||(b.lead?1:0)-(a.lead?1:0));
-  if(L)DEALS.forEach(d=>{const [b,p]=L.split(d.deal);d._b=L.resolve(b);d._p=p?L.resolve(p):null});
+  if(L)DEALS.forEach(d=>L.tag(d));
   const q=new URLSearchParams(location.search).get("club");if(q&&L&&L.byId(q))st.ent=q;
   const lead=hero();if(lead)roundup(lead);
   features();columns();follow();newsletter();filters();wire();if(L)strip();render();if(st.ent)$("archive").scrollIntoView();

@@ -1,0 +1,14 @@
+name: Logo check
+on:
+  workflow_dispatch:
+    inputs:
+      slugs: {description: "Optional entity slugs to search (space separated)", required: false, default: ""}
+permissions: {contents: read}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/logo_check.py ${{ inputs.slugs }}
+      - uses: actions/upload-artifact@v4
+        with: {name: logo-report, path: logo-report.json, retention-days: 3}

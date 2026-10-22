@@ -127,6 +127,9 @@
   "alliance-broadband": {
    "name": "Alliance Broadband"
   },
+  "allwyn": {
+   "name": "Allwyn"
+  },
   "alpine-canada": {
    "name": "Alpine Canada",
    "domain": "alpinecanada.org"
@@ -289,6 +292,9 @@
   "big-bash-league": {
    "name": "Big Bash League"
   },
+  "binge": {
+   "name": "Binge"
+  },
   "bingx": {
    "name": "BingX",
    "domain": "bingx.com"
@@ -322,6 +328,9 @@
   "boss-parfums": {
    "name": "BOSS Parfums",
    "domain": "hugoboss.com"
+  },
+  "boston-common-golf": {
+   "name": "Boston Common Golf"
   },
   "bravus": {
    "name": "Bravus"
@@ -391,8 +400,8 @@
    "name": "Cal (Memorial Stadium)",
    "domain": "calbears.com"
   },
-  "campa-sbi-life-chatgpt": {
-   "name": "Campa / SBI Life / ChatGPT"
+  "campa": {
+   "name": "Campa"
   },
   "campbell-s": {
    "name": "Campbell's",
@@ -466,6 +475,9 @@
    "name": "Champion Data",
    "domain": "championdata.com"
   },
+  "chatgpt": {
+   "name": "ChatGPT"
+  },
   "chelsea": {
    "name": "Chelsea",
    "domain": "chelseafc.com"
@@ -480,6 +492,10 @@
   "chevrolet": {
    "name": "Chevrolet",
    "domain": "chevrolet.com"
+  },
+  "churchill-downs": {
+   "name": "Churchill Downs",
+   "domain": "churchilldowns.com"
   },
   "cisco": {
    "name": "Cisco",
@@ -599,6 +615,9 @@
    "name": "CyberCX",
    "domain": "cybercx.com.au"
   },
+  "cyprus-olympic-committee": {
+   "name": "Cyprus Olympic Committee"
+  },
   "dallas-mavericks": {
    "name": "Dallas Mavericks",
    "domain": "mavs.com"
@@ -661,19 +680,22 @@
    "name": "DTEK",
    "domain": "dtek.com"
   },
+  "dynamo-capital": {
+   "name": "Dynamo Capital"
+  },
   "e-l-f-beauty": {
    "name": "e.l.f. Beauty",
    "domain": "elfcosmetics.com"
   },
-  "ebony-marinoff-jamal-fogarty": {
-   "name": "Ebony Marinoff / Jamal Fogarty"
+  "ebony-marinoff": {
+   "name": "Ebony Marinoff"
   },
   "ecosa": {
    "name": "Ecosa",
    "domain": "ecosa.com.au"
   },
-  "edmonton-oilers-rogers-place": {
-   "name": "Edmonton Oilers / Rogers Place"
+  "edmonton-oilers": {
+   "name": "Edmonton Oilers"
   },
   "edward-jones": {
    "name": "Edward Jones",
@@ -812,6 +834,9 @@
   "five-guys": {
    "name": "Five Guys",
    "domain": "fiveguys.com"
+  },
+  "florian-wirtz": {
+   "name": "Florian Wirtz"
   },
   "flyte-aviation": {
    "name": "Flyte Aviation"
@@ -981,9 +1006,6 @@
    "name": "Harvey Norman",
    "domain": "harveynorman.com.au"
   },
-  "harvey-norman-westpac-kfc": {
-   "name": "Harvey Norman / Westpac / KFC"
-  },
   "hasbro": {
    "name": "Hasbro (Peppa Pig)",
    "domain": "hasbro.com"
@@ -1119,6 +1141,9 @@
    "name": "Jacob's Creek",
    "domain": "jacobscreek.com"
   },
+  "jamal-fogarty": {
+   "name": "Jamal Fogarty"
+  },
   "jd-sports": {
    "name": "JD Sports",
    "domain": "jdsports.com"
@@ -1148,9 +1173,8 @@
   "kaylee-mckeown": {
    "name": "Kaylee McKeown"
   },
-  "kayo-sports-binge": {
-   "name": "Kayo Sports / Binge",
-   "domain": "kayosports.com.au"
+  "kayo-sports": {
+   "name": "Kayo Sports"
   },
   "kelme": {
    "name": "Kelme",
@@ -1238,8 +1262,8 @@
   "lendux": {
    "name": "LendUX"
   },
-  "leovegas-betmgm": {
-   "name": "LeoVegas / BetMGM"
+  "leovegas": {
+   "name": "LeoVegas"
   },
   "li-ning": {
    "name": "Li-Ning"
@@ -1470,10 +1494,6 @@
    "name": "NBL",
    "domain": "nbl.com.au"
   },
-  "nbl-wnbl": {
-   "name": "NBL / WNBL",
-   "domain": "nbl.com.au"
-  },
   "netball-australia": {
    "name": "Netball Australia",
    "domain": "netball.com.au"
@@ -1603,8 +1623,8 @@
    "name": "oOh!media",
    "domain": "oohmedia.com.au"
   },
-  "optus-virgin-australia": {
-   "name": "Optus / Virgin Australia"
+  "optus": {
+   "name": "Optus"
   },
   "oracle": {
    "name": "Oracle",
@@ -1801,6 +1821,9 @@
    "name": "Rogers",
    "domain": "rogers.com"
   },
+  "rogers-place": {
+   "name": "Rogers Place"
+  },
   "rory-mcilroy": {
    "name": "Rory McIlroy"
   },
@@ -1844,6 +1867,9 @@
   "sanrio": {
    "name": "Sanrio",
    "domain": "sanrio.com"
+  },
+  "sbi-life": {
+   "name": "SBI Life"
   },
   "sbs-world-cup-fan-zones": {
    "name": "SBS World Cup Fan Zones",
@@ -2257,6 +2283,9 @@
    "name": "Westfield",
    "domain": "westfield.com.au"
   },
+  "westpac": {
+   "name": "Westpac"
+  },
   "wests-tigers": {
    "name": "Wests Tigers",
    "domain": "weststigers.com.au"
@@ -2294,8 +2323,8 @@
    "name": "WTA Finals",
    "domain": "wtatennis.com"
   },
-  "wtgl-boston-common-golf": {
-   "name": "WTGL / Boston Common Golf"
+  "wtgl": {
+   "name": "WTGL"
   },
   "wtt-finals-hong-kong": {
    "name": "WTT Finals Hong Kong"
@@ -2335,22 +2364,6 @@
   "zscaler": {
    "name": "Zscaler",
    "domain": "zscaler.com"
-  },
-  "churchill-downs": {
-   "name": "Churchill Downs",
-   "domain": "churchilldowns.com"
-  },
-  "dynamo-capital": {
-   "name": "Dynamo Capital"
-  },
-  "florian-wirtz": {
-   "name": "Florian Wirtz"
-  },
-  "allwyn": {
-   "name": "Allwyn"
-  },
-  "cyprus-olympic-committee": {
-   "name": "Cyprus Olympic Committee"
   }
  },
  "leagues": [

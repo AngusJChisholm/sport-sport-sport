@@ -152,13 +152,14 @@ $("yr").textContent=new Date().getFullYear();
 function none(){$("name").textContent="Not found";$("crName").textContent="Not found";$("none").hidden=false;$("top").hidden=true}
 
 Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()]).then(([data])=>{
-  const all=(data.deals||[]).map(d=>{const [b,p]=L.split(d.deal);return Object.assign({},d,{_b:L.resolve(b),_p:p?L.resolve(p):null})})
+  const all=(data.deals||[]).map(d=>L.tag(Object.assign({},d)))
     .sort((a,b)=>sortKey(b).localeCompare(sortKey(a)));
-  const mine=all.filter(d=>(d._b&&d._b.slug===id)||(d._p&&d._p.slug===id));
-  const e=L.byId(id)||(mine[0]&&((mine[0]._b.slug===id)?mine[0]._b:mine[0]._p));
+  const mine=all.filter(d=>L.has(d,id));
+  const onB=d=>d._bs.some(e=>e.slug===id);
+  const e=L.byId(id)||(mine[0]&&[...mine[0]._bs,...mine[0]._ps].find(x=>x.slug===id));
   if(!id||!e){none();return}
 
-  const asBrand=mine.filter(d=>d._b.slug===id).length, asProp=mine.length-asBrand;
+  const asBrand=mine.filter(onB).length, asProp=mine.length-asBrand;
   const kind=!mine.length?"Partner":asBrand>=asProp?"Brand":"Rights holder";
   const regions=[...new Set(mine.map(d=>d.region).filter(Boolean))].sort();
   const sports=[...new Set(mine.map(d=>d.sport).filter(Boolean))].sort();
@@ -177,7 +178,7 @@ Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()])
   $("acts").innerHTML=`<a class="more" href="index.html?club=${encodeURIComponent(id)}#archive">See them in the archive →</a>`+(e.domain?`<a class="more" href="https://${esc(e.domain)}" target="_blank" rel="noopener">${esc(e.domain)} ↗</a>`:"");
 
   // Who they've signed with: the other side of each deal, most deals first.
-  const other=d=>d._b.slug===id?d._p:d._b;
+  const other=d=>onB(d)?d._p:d._b;
   const map=new Map();
   mine.forEach(d=>{const o=other(d);if(!o)return;const m=map.get(o.slug)||{e:o,n:0,sports:new Set()};m.n++;if(d.sport)m.sports.add(d.sport);map.set(o.slug,m)});
   const ps=[...map.values()].sort((a,b)=>b.n-a.n||a.e.name.localeCompare(b.e.name));
@@ -194,7 +195,7 @@ Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()])
     $("dCount").textContent=`${r.length} deal${r.length===1?"":"s"}`;
     $("list").innerHTML=r.map(d=>{const a=art(d);
       const name=a?`<a href="${esc(a)}"><b>${esc(d.deal)}</b></a>`:(d.url&&/^https:\/\//.test(d.url)?`<a href="${esc(d.url)}" target="_blank" rel="noopener"><b>${esc(d.deal)}</b></a>`:`<b>${esc(d.deal)}</b>`);
-      return `<div class="ar-r"><span class="d">${esc(fmt(d))}</span><span class="dl"><span class="pair">${L.link(d._b,{px:40})}<span class="xx" aria-hidden="true">×</span>${L.link(d._p,{px:40})}</span>${name}</span><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.type||"")}</span><span><span class="tag r">${esc(d.region)}</span></span></div>`}).join("");
+      return `<div class="ar-r"><span class="d">${esc(fmt(d))}</span><span class="dl">${L.pair(d,{px:40})}${name}</span><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.type||"")}</span><span><span class="tag r">${esc(d.region)}</span></span></div>`}).join("");
     $("pills").innerHTML=sports.length>1?["All",...sports].map(s=>`<button type="button" class="pill${s===sport?" on":""}" data-s="${esc(s)}" aria-pressed="${s===sport}">${esc(s)}</button>`).join(""):"";
   };
   $("pills").onclick=ev=>{const b=ev.target.closest("[data-s]");if(!b)return;sport=b.dataset.s;draw()};
