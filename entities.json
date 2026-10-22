@@ -2335,6 +2335,16 @@
   "zscaler": {
    "name": "Zscaler",
    "domain": "zscaler.com"
+  },
+  "churchill-downs": {
+   "name": "Churchill Downs",
+   "domain": "churchilldowns.com"
+  },
+  "dynamo-capital": {
+   "name": "Dynamo Capital"
+  },
+  "florian-wirtz": {
+   "name": "Florian Wirtz"
   }
  },
  "leagues": [

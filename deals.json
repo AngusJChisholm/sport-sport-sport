@@ -5,6 +5,51 @@
  },
  "deals": [
   {
+   "date": "2026-10-20",
+   "added": "2026-10-23",
+   "deal": "Visa × Churchill Downs",
+   "sport": "Horse racing",
+   "type": "Preferred payment partner",
+   "region": "Global",
+   "lead": true,
+   "headline": "Visa heads to the Derby.",
+   "summary": "Visa is the Preferred Payment Partner of Churchill Downs and the 153rd Kentucky Derby in a multi-year deal the track calls first-of-its-kind.",
+   "url": "https://www.churchilldowns.com/horses/news/churchill-downs-news-release-visa-named-preferred-payment-partner-of-churchill-downs-and-153rd-kentucky-derby/",
+   "image": "https://images.unsplash.com/photo-1565657739331-ca2241b47e95",
+   "article": {
+    "standfirst": "Visa has bought its way into the Kentucky Derby.",
+    "body": [
+     "Churchill Downs has named Visa the Preferred Payment Partner of the racetrack and the 153rd Kentucky Derby, announced on Tuesday 20 October US time. The track's own release calls it a first-of-its-kind, multi-year partnership. It doesn't say how many years, and it doesn't put a dollar figure on it, so neither will we.",
+     "The pitch is about the punter at the gate. Visa clients and cardholders get exclusive Derby Weekend offers, experiences and better ways to buy. Churchill Downs says the deal should make ticket purchases more efficient and accessible. That is a payments company talking about the checkout, not just a logo on a rail.",
+     "Visa joins the track's existing Signature Partners, which the release lists as Woodford Reserve, Longines, Ford and SAP. That is a tight club: a bourbon, a watch brand, a carmaker and a software giant. Slotting a payments brand in alongside them says the Derby now sees the transaction itself as something worth selling.",
+     "The timing is clear too. The 153rd Derby runs on Saturday 1 May 2027, and the race carries a $5 million purse. Visa gets about six months to build activation before the roses are even on the shelf. Australians will know the company from its Rugby World Cup tie-up, so racing is another big, crowd-heavy property for it.",
+     "What to watch: whether the Derby Weekend offers reach cardholders outside the US, whether Churchill Downs adds more payments or ticketing partners around the tracks it runs, and what Visa builds for ticket buyers before May."
+    ],
+    "close": "The Derby just got a new way to take your money."
+   },
+   "slug": "2026-10-23-visa-churchill-downs"
+  },
+  {
+   "date": "2026-10-20",
+   "added": "2026-10-23",
+   "deal": "Dynamo Capital × TGR Haas F1 Team",
+   "sport": "Motorsport",
+   "type": "Team partnerships",
+   "region": "Global",
+   "summary": "Dynamo Capital, a US private lender to real estate investors, signed a multi-year partnership with TGR Haas ahead of the United States Grand Prix.",
+   "url": "https://www.haasf1team.com/news/tgr-haas-f1-team-and-dynamo-capital-announce-multi-year-partnership-ahead-united-states-grand"
+  },
+  {
+   "date": "2026-10-20",
+   "added": "2026-10-23",
+   "deal": "Panini America × Florian Wirtz",
+   "sport": "Football",
+   "type": "Licensing",
+   "region": "Global",
+   "summary": "Panini America signed Liverpool's Florian Wirtz to an exclusive, multi-year deal for trading cards and memorabilia.",
+   "url": "https://blog.paniniamerica.net/panini-america-and-florian-wirtz-team-up-for-exclusive-partnership/"
+  },
+  {
    "date": "2026-10-22",
    "added": "2026-10-22",
    "deal": "Hahn × Australian Open",
