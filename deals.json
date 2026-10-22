@@ -15,7 +15,7 @@
    "headline": "Visa heads to the Derby.",
    "summary": "Visa is the Preferred Payment Partner of Churchill Downs and the 153rd Kentucky Derby in a multi-year deal the track calls first-of-its-kind.",
    "url": "https://www.churchilldowns.com/horses/news/churchill-downs-news-release-visa-named-preferred-payment-partner-of-churchill-downs-and-153rd-kentucky-derby/",
-   "image": "https://images.unsplash.com/photo-1565657739331-ca2241b47e95",
+   "image": "assets/img/2026-10-23-visa-churchill-downs.jpg",
    "article": {
     "standfirst": "Visa has bought its way into the Kentucky Derby.",
     "body": [
@@ -27,7 +27,8 @@
     ],
     "close": "The Derby just got a new way to take your money."
    },
-   "slug": "2026-10-23-visa-churchill-downs"
+   "slug": "2026-10-23-visa-churchill-downs",
+   "imageCredit": "Churchill Downs"
   },
   {
    "date": "2026-10-20",
