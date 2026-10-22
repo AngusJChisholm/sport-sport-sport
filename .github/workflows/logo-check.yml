@@ -2,14 +2,14 @@ name: Logo check
 on:
   workflow_dispatch:
     inputs:
-      slugs: {description: "Optional entity slugs to search (space separated)", required: false, default: ""}
+      mode: {description: "candidates or all", required: false, default: "candidates"}
 permissions: {contents: write}
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 tools/logo_check.py ${{ inputs.slugs }}
+      - run: python3 tools/logo_check.py ${{ inputs.mode }}
       # The report goes to its own branch so it never touches the live site.
       - run: |
           mv logo-report.json /tmp/ && git checkout --orphan logo-report && git rm -rqf . && mv /tmp/logo-report.json .
