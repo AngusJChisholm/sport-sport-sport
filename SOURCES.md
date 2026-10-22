@@ -142,3 +142,33 @@ sponsorship", "naming rights", "jersey patch", "front-of-shirt" and "extends par
 - Many ANZ club deals are announced only on club websites or social posts. Check club newsrooms directly, not just
   search results, and accept an official club social post as Tier 1.
 - If a deal appears only in Tier 3 or 4, look for a Tier 1 or Tier 2 confirmation before using it.
+
+---
+
+## Standing run rules (added 22 Oct 2026, override the skill where they differ)
+
+### 1. Open these pages first, every run
+Web search barely indexes the last few days, so it's a backstop only. Before any open search, open each of
+these pages directly and work through every deal dated inside the window:
+- B&T sports marketing: https://www.bandt.com.au/category/sports-marketing/ (plus the Spotlight on Sponsors column)
+- Sponsorship News: https://www.sponsorshipnews.com.au/index.php?stream=1-3-7
+- Ministry of Sport sponsorship feed: https://ministryofsport.com/topic/sponsorship/
+- SportsPro The Wire: https://www.sportspro.com/the-wire/ (last 24 hours and last week sections)
+- Sportcal latest: https://www.sportcal.com/region/europe/spain/ (its latest-news list is site-wide)
+- Tennis Australia media releases, AFL, NRL, Cricket Australia and Football Australia newsrooms
+Then check the ANZ club newsrooms and run the open-web sweeps.
+
+### 2. Never say who a brand replaces unless the official release says so
+Trade press gets predecessors wrong (B&T said Hahn replaced Coopers at the AO; Coopers left in 2019).
+A "replaces X" or "takes over from X" line needs the rights holder's or brand's own release, or it stays out.
+
+### 3. LinkedIn deliverable format
+Send Angus the post, then a "Today's deals" block with one short snippet for every deal on the graphics
+(lead included), in the style of Notice Sport's weekly round-up:
+- One sentence each, starting with the property or brand: "[Property] named [Brand] as ..." or
+  "[Brand] signed on as ...", then " - " and one line of the most interesting verified detail.
+- Put @ in front of every brand and property name so Angus can tag them as he pastes
+  (e.g. "@Tennis Australia named @Lion's Hahn the Official Beer of ...").
+- Verified facts only, same voice rules as the post. No figures or lengths that failed the accuracy gate.
+- End with: "Every deal, filed: sportsportsport.com.au"
+- Angus tags the pages himself, so don't look up or list LinkedIn page URLs.
