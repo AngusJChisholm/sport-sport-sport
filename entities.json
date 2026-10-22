@@ -1,6 +1,6 @@
 {
  "_help": "Brands and rights holders shown with logos on the site. Key = the slug used in profile.html?id=. name = how it's written in deal names (brand or property side of 'Brand × Property'). domain = official website, used to fetch the logo from Brandfetch (needs site.brandfetch in deals.json). logo = optional path to a logo file in assets/logos/ that overrides Brandfetch. aliases = other names the same organisation appears under. Anything not listed still gets a page and a monogram. leagues = the club strips on the archive, in order.",
- "brandfetch": "",
+ "brandfetch": "1id3YP6BfnOFNiIAppf",
  "entities": {
   "13-nfl-teams": {
    "name": "13 NFL teams"
