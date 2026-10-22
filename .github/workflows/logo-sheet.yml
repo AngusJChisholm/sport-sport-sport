@@ -5,14 +5,9 @@ jobs:
   shots:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          mkdir shots
-          for i in 0 1 2 3 4 5 6; do
-            from=$((i*96))
-            timeout 60 google-chrome --headless=new --no-sandbox --hide-scrollbars --window-size=1400,880 --timeout=25000 \
-              --screenshot=shots/sheet-$i.png "https://sportsportsport.com.au/logo-sheet.html?from=$from&n=96&v=$GITHUB_RUN_ID" || true
-          done; true
-          ls -la shots
+      - uses: actions/checkout@v4
+      - run: pip install -q playwright && python -m playwright install --with-deps chromium >/dev/null
+      - run: python tools/logo_sheet_shots.py
       - run: |
           cd shots && git init -q && git checkout -q -b logo-shots && git add . && git -c user.name="SSS bot" -c user.email="bot@sportsportsport.com.au" commit -qm shots
           git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" logo-shots
