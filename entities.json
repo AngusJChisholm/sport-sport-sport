@@ -1,0 +1,2359 @@
+{
+ "_help": "Brands and rights holders shown with logos on the site. Key = the slug used in profile.html?id=. name = how it's written in deal names (brand or property side of 'Brand × Property'). domain = official website, used to fetch the logo from Brandfetch (needs site.brandfetch in deals.json). logo = optional path to a logo file in assets/logos/ that overrides Brandfetch. aliases = other names the same organisation appears under. Anything not listed still gets a page and a monogram. leagues = the club strips on the archive, in order.",
+ "brandfetch": "",
+ "entities": {
+  "13-nfl-teams": {
+   "name": "13 NFL teams"
+  },
+  "1xbet": {
+   "name": "1xBet",
+   "domain": "1xbet.com"
+  },
+  "21x-sports": {
+   "name": "21X Sports"
+  },
+  "23xi-racing": {
+   "name": "23XI Racing",
+   "domain": "23xiracing.com"
+  },
+  "a-ap-rocky": {
+   "name": "A$AP Rocky"
+  },
+  "a-leagues": {
+   "name": "A-Leagues"
+  },
+  "a-s-o": {
+   "name": "A.S.O.",
+   "domain": "aso.fr"
+  },
+  "a2-milk": {
+   "name": "a2 Milk",
+   "domain": "a2milk.com"
+  },
+  "aami": {
+   "name": "AAMI",
+   "domain": "aami.com.au"
+  },
+  "abbvie": {
+   "name": "AbbVie",
+   "domain": "abbvie.com"
+  },
+  "adelaide-36ers": {
+   "name": "Adelaide 36ers",
+   "domain": "adelaide36ers.com"
+  },
+  "adelaide-crows": {
+   "name": "Adelaide Crows",
+   "domain": "afc.com.au"
+  },
+  "adelaide-strikers": {
+   "name": "Adelaide Strikers",
+   "domain": "adelaidestrikers.com.au"
+  },
+  "adelaide-thunderbirds": {
+   "name": "Adelaide Thunderbirds"
+  },
+  "adelaide-united": {
+   "name": "Adelaide United",
+   "domain": "adelaideunited.com.au",
+   "aliases": [
+    "Adelaide United (A-League Women)"
+   ]
+  },
+  "adi-predictstreet": {
+   "name": "ADI Predictstreet"
+  },
+  "adidas": {
+   "name": "adidas",
+   "domain": "adidas.com"
+  },
+  "adobe": {
+   "name": "Adobe",
+   "domain": "adobe.com"
+  },
+  "adyen": {
+   "name": "Adyen",
+   "domain": "adyen.com"
+  },
+  "afc-asian-cup-2027": {
+   "name": "AFC Asian Cup 2027",
+   "domain": "the-afc.com"
+  },
+  "afc-bournemouth": {
+   "name": "AFC Bournemouth",
+   "domain": "afcb.co.uk"
+  },
+  "afl": {
+   "name": "AFL",
+   "domain": "afl.com.au"
+  },
+  "aflw-umpires": {
+   "name": "AFLW umpires",
+   "domain": "afl.com.au"
+  },
+  "afterpay": {
+   "name": "Afterpay",
+   "domain": "afterpay.com"
+  },
+  "aims": {
+   "name": "AIMS"
+  },
+  "airwallex": {
+   "name": "Airwallex",
+   "domain": "airwallex.com"
+  },
+  "albaik": {
+   "name": "ALBAIK",
+   "domain": "albaik.com"
+  },
+  "albert": {
+   "name": "Albert"
+  },
+  "aldar": {
+   "name": "Aldar",
+   "domain": "aldar.com"
+  },
+  "alibaba": {
+   "name": "Alibaba",
+   "domain": "alibaba.com"
+  },
+  "alliance-broadband": {
+   "name": "Alliance Broadband"
+  },
+  "alpine-canada": {
+   "name": "Alpine Canada",
+   "domain": "alpinecanada.org"
+  },
+  "alpine-f1": {
+   "name": "Alpine F1"
+  },
+  "altos": {
+   "name": "Altos"
+  },
+  "american-express": {
+   "name": "American Express",
+   "domain": "americanexpress.com"
+  },
+  "anthropic": {
+   "name": "Anthropic",
+   "domain": "anthropic.com"
+  },
+  "anytime-fitness": {
+   "name": "Anytime Fitness",
+   "domain": "anytimefitness.com"
+  },
+  "anz": {
+   "name": "ANZ",
+   "domain": "anz.com.au"
+  },
+  "apl": {
+   "name": "APL"
+  },
+  "arrow-mclaren": {
+   "name": "Arrow McLaren"
+  },
+  "arsenal": {
+   "name": "Arsenal",
+   "domain": "arsenal.com"
+  },
+  "arun-ice-cream": {
+   "name": "Arun Ice Cream"
+  },
+  "as-monaco": {
+   "name": "AS Monaco",
+   "domain": "asmonaco.com"
+  },
+  "asb": {
+   "name": "ASB",
+   "domain": "asb.co.nz"
+  },
+  "asian-football-confederation": {
+   "name": "Asian Football Confederation",
+   "domain": "the-afc.com"
+  },
+  "asics": {
+   "name": "ASICS",
+   "domain": "asics.com"
+  },
+  "aston-martin-f1": {
+   "name": "Aston Martin F1",
+   "domain": "astonmartinf1.com"
+  },
+  "aston-villa": {
+   "name": "Aston Villa",
+   "domain": "avfc.co.uk"
+  },
+  "at-and-t": {
+   "name": "AT&T",
+   "domain": "att.com"
+  },
+  "athletic-club": {
+   "name": "Athletic Club",
+   "domain": "athletic-club.eus"
+  },
+  "atlanta-hawks": {
+   "name": "Atlanta Hawks"
+  },
+  "atlas-building": {
+   "name": "Atlas Building"
+  },
+  "auckland-fc": {
+   "name": "Auckland FC"
+  },
+  "audi": {
+   "name": "Audi",
+   "domain": "audi.com"
+  },
+  "ausenco": {
+   "name": "Ausenco",
+   "domain": "ausenco.com"
+  },
+  "australian-athletics": {
+   "name": "Australian Athletics",
+   "domain": "athletics.com.au"
+  },
+  "australian-diamonds": {
+   "name": "Australian Diamonds",
+   "domain": "netball.com.au"
+  },
+  "australian-open": {
+   "name": "Australian Open",
+   "domain": "ausopen.com"
+  },
+  "australian-turf-club": {
+   "name": "Australian Turf Club",
+   "domain": "australianturfclub.com.au"
+  },
+  "axa": {
+   "name": "AXA",
+   "domain": "axa.com"
+  },
+  "axs": {
+   "name": "AXS",
+   "domain": "axs.com"
+  },
+  "baller-league": {
+   "name": "Baller League"
+  },
+  "ballon-d-or": {
+   "name": "Ballon d'Or"
+  },
+  "basketball-australia": {
+   "name": "Basketball Australia",
+   "domain": "australia.basketball"
+  },
+  "basketball-queensland": {
+   "name": "Basketball Queensland"
+  },
+  "bcci": {
+   "name": "BCCI",
+   "domain": "bcci.tv"
+  },
+  "bendigo-spirit": {
+   "name": "Bendigo Spirit"
+  },
+  "benfica": {
+   "name": "Benfica",
+   "domain": "slbenfica.pt"
+  },
+  "betmgm": {
+   "name": "BetMGM",
+   "domain": "betmgm.com"
+  },
+  "betway": {
+   "name": "Betway",
+   "domain": "betway.com"
+  },
+  "big-12": {
+   "name": "Big 12",
+   "domain": "big12sports.com"
+  },
+  "big-bash-league": {
+   "name": "Big Bash League"
+  },
+  "bingx": {
+   "name": "BingX",
+   "domain": "bingx.com"
+  },
+  "birmingham-moseley-rugby-club": {
+   "name": "Birmingham Moseley Rugby Club"
+  },
+  "bkt": {
+   "name": "BKT",
+   "domain": "bkt-tires.com"
+  },
+  "blast": {
+   "name": "BLAST",
+   "domain": "blast.tv"
+  },
+  "bloom-energy": {
+   "name": "Bloom Energy",
+   "domain": "bloomenergy.com"
+  },
+  "blundstone": {
+   "name": "Blundstone",
+   "domain": "blundstone.com"
+  },
+  "boost-mobile": {
+   "name": "Boost Mobile"
+  },
+  "boss": {
+   "name": "BOSS",
+   "domain": "hugoboss.com"
+  },
+  "boss-parfums": {
+   "name": "BOSS Parfums",
+   "domain": "hugoboss.com"
+  },
+  "bravus": {
+   "name": "Bravus"
+  },
+  "brick-lane-brewing": {
+   "name": "Brick Lane Brewing"
+  },
+  "bridgestone": {
+   "name": "Bridgestone",
+   "domain": "bridgestone.com"
+  },
+  "brisbane-broncos": {
+   "name": "Brisbane Broncos",
+   "domain": "broncos.com.au"
+  },
+  "brisbane-bullets": {
+   "name": "Brisbane Bullets",
+   "domain": "brisbanebullets.com.au"
+  },
+  "brisbane-heat": {
+   "name": "Brisbane Heat",
+   "domain": "brisbaneheat.com.au"
+  },
+  "brisbane-lions": {
+   "name": "Brisbane Lions",
+   "domain": "lions.com.au"
+  },
+  "brisbane-racing-club": {
+   "name": "Brisbane Racing Club",
+   "domain": "brc.com.au"
+  },
+  "brisbane-roar": {
+   "name": "Brisbane Roar",
+   "domain": "brisbaneroar.com.au",
+   "aliases": [
+    "Brisbane Roar (A-League Women)"
+   ]
+  },
+  "british-superbike-championship": {
+   "name": "British Superbike Championship",
+   "domain": "britishsuperbike.com"
+  },
+  "bsp-financial-group": {
+   "name": "BSP Financial Group",
+   "domain": "bsp.com.pg"
+  },
+  "bundesliga": {
+   "name": "Bundesliga",
+   "domain": "bundesliga.com"
+  },
+  "bupa": {
+   "name": "Bupa",
+   "domain": "bupa.com.au"
+  },
+  "cadillac-f1": {
+   "name": "Cadillac F1"
+  },
+  "cairns-taipans": {
+   "name": "Cairns Taipans",
+   "domain": "taipans.com"
+  },
+  "cal": {
+   "name": "Cal (Memorial Stadium)",
+   "domain": "calbears.com"
+  },
+  "campa-sbi-life-chatgpt": {
+   "name": "Campa / SBI Life / ChatGPT"
+  },
+  "campbell-s": {
+   "name": "Campbell's",
+   "domain": "campbells.com"
+  },
+  "canada-soccer": {
+   "name": "Canada Soccer",
+   "domain": "canadasoccer.com"
+  },
+  "canadian-hockey-league": {
+   "name": "Canadian Hockey League",
+   "domain": "chl.ca"
+  },
+  "canberra-raiders": {
+   "name": "Canberra Raiders",
+   "domain": "raiders.com.au",
+   "aliases": [
+    "Raiders"
+   ]
+  },
+  "canterbury-bankstown-bulldogs": {
+   "name": "Canterbury-Bankstown Bulldogs",
+   "domain": "bulldogs.com.au"
+  },
+  "capgemini": {
+   "name": "Capgemini",
+   "domain": "capgemini.com"
+  },
+  "capital-power": {
+   "name": "Capital Power",
+   "domain": "capitalpower.com"
+  },
+  "carabao": {
+   "name": "Carabao"
+  },
+  "carlton": {
+   "name": "Carlton",
+   "domain": "carltonfc.com.au",
+   "aliases": [
+    "Carlton Blues"
+   ]
+  },
+  "carnival-cruise-line": {
+   "name": "Carnival Cruise Line",
+   "domain": "carnival.com"
+  },
+  "carole-nash": {
+   "name": "Carole Nash",
+   "domain": "carolenash.com"
+  },
+  "carpark-king": {
+   "name": "Carpark King"
+  },
+  "castelli": {
+   "name": "Castelli",
+   "domain": "castelli-cycling.com"
+  },
+  "cavendish-farms": {
+   "name": "Cavendish Farms",
+   "domain": "cavendishfarms.com"
+  },
+  "cawston-press": {
+   "name": "Cawston Press",
+   "domain": "cawstonpress.com"
+  },
+  "central-coast-mariners": {
+   "name": "Central Coast Mariners",
+   "domain": "ccmariners.com.au"
+  },
+  "champion-data": {
+   "name": "Champion Data",
+   "domain": "championdata.com"
+  },
+  "chelsea": {
+   "name": "Chelsea",
+   "domain": "chelseafc.com"
+  },
+  "chemist-warehouse": {
+   "name": "Chemist Warehouse",
+   "domain": "chemistwarehouse.com.au"
+  },
+  "chery-uk": {
+   "name": "Chery UK"
+  },
+  "chevrolet": {
+   "name": "Chevrolet",
+   "domain": "chevrolet.com"
+  },
+  "cisco": {
+   "name": "Cisco",
+   "domain": "cisco.com"
+  },
+  "city-fertility": {
+   "name": "City Fertility",
+   "domain": "cityfertility.com.au"
+  },
+  "clickhouse": {
+   "name": "ClickHouse",
+   "domain": "clickhouse.com"
+  },
+  "club-car": {
+   "name": "Club Car",
+   "domain": "clubcar.com"
+  },
+  "club-lime": {
+   "name": "Club Lime",
+   "domain": "clublime.com.au"
+  },
+  "cobram-estate": {
+   "name": "Cobram Estate",
+   "domain": "cobramestate.com.au"
+  },
+  "coca-cola": {
+   "name": "Coca-Cola",
+   "domain": "coca-cola.com"
+  },
+  "coca-cola-europacific-partners-png": {
+   "name": "Coca-Cola Europacific Partners PNG",
+   "domain": "cocacolaep.com"
+  },
+  "colcap-financial-group": {
+   "name": "ColCap Financial Group"
+  },
+  "coles": {
+   "name": "Coles",
+   "domain": "coles.com.au"
+  },
+  "collingwood": {
+   "name": "Collingwood",
+   "domain": "collingwoodfc.com.au",
+   "aliases": [
+    "Collingwood Magpies"
+   ]
+  },
+  "colorado-avalanche": {
+   "name": "Colorado Avalanche"
+  },
+  "columbus-crew": {
+   "name": "Columbus Crew",
+   "domain": "columbuscrew.com"
+  },
+  "commbank-matildas": {
+   "name": "CommBank Matildas"
+  },
+  "commonwealth-bank": {
+   "name": "Commonwealth Bank",
+   "domain": "commbank.com.au"
+  },
+  "commonwealth-games-australia": {
+   "name": "Commonwealth Games Australia",
+   "domain": "commonwealthgames.com.au"
+  },
+  "comsol": {
+   "name": "COMSOL",
+   "domain": "comsol.com"
+  },
+  "concacaf": {
+   "name": "Concacaf",
+   "domain": "concacaf.com"
+  },
+  "connor-mcdavid": {
+   "name": "Connor McDavid"
+  },
+  "corinthians": {
+   "name": "Corinthians",
+   "domain": "corinthians.com.br"
+  },
+  "corporate-traveller": {
+   "name": "Corporate Traveller",
+   "domain": "corporatetraveller.com.au"
+  },
+  "cricket-australia": {
+   "name": "Cricket Australia",
+   "domain": "cricket.com.au"
+  },
+  "cricket-tasmania": {
+   "name": "Cricket Tasmania"
+  },
+  "cricks-highway": {
+   "name": "Cricks Highway"
+  },
+  "cricviz": {
+   "name": "CricViz"
+  },
+  "croatian-football-federation": {
+   "name": "Croatian Football Federation"
+  },
+  "cromwell": {
+   "name": "Cromwell"
+  },
+  "cronulla-sharks": {
+   "name": "Cronulla Sharks",
+   "domain": "sharks.com.au",
+   "aliases": [
+    "Cronulla Sharks NRLW",
+    "Cronulla-Sutherland Sharks",
+    "Sharks"
+   ]
+  },
+  "crystalbrook-sam": {
+   "name": "Crystalbrook Sam"
+  },
+  "cybercx": {
+   "name": "CyberCX",
+   "domain": "cybercx.com.au"
+  },
+  "dallas-mavericks": {
+   "name": "Dallas Mavericks",
+   "domain": "mavs.com"
+  },
+  "dallas-open": {
+   "name": "Dallas Open"
+  },
+  "dan-murphy-s": {
+   "name": "Dan Murphy's",
+   "domain": "danmurphys.com.au"
+  },
+  "dare-iced-coffee": {
+   "name": "Dare Iced Coffee"
+  },
+  "databricks": {
+   "name": "Databricks",
+   "domain": "databricks.com"
+  },
+  "davis-cup": {
+   "name": "Davis Cup",
+   "domain": "daviscup.com"
+  },
+  "dazn": {
+   "name": "DAZN",
+   "domain": "dazn.com"
+  },
+  "decimal-data-group": {
+   "name": "Decimal Data Group"
+  },
+  "deel": {
+   "name": "Deel",
+   "domain": "deel.com"
+  },
+  "detroit-pistons": {
+   "name": "Detroit Pistons"
+  },
+  "devil-s-corner": {
+   "name": "Devil's Corner",
+   "domain": "devilscorner.com.au"
+  },
+  "dolphins": {
+   "name": "Dolphins"
+  },
+  "doordash": {
+   "name": "DoorDash",
+   "domain": "doordash.com"
+  },
+  "dp-world": {
+   "name": "DP World",
+   "domain": "dpworld.com"
+  },
+  "dp-world-india-championship": {
+   "name": "DP World India Championship"
+  },
+  "dreame": {
+   "name": "Dreame",
+   "domain": "dreametech.com"
+  },
+  "dtek": {
+   "name": "DTEK",
+   "domain": "dtek.com"
+  },
+  "e-l-f-beauty": {
+   "name": "e.l.f. Beauty",
+   "domain": "elfcosmetics.com"
+  },
+  "ebony-marinoff-jamal-fogarty": {
+   "name": "Ebony Marinoff / Jamal Fogarty"
+  },
+  "ecosa": {
+   "name": "Ecosa",
+   "domain": "ecosa.com.au"
+  },
+  "edmonton-oilers-rogers-place": {
+   "name": "Edmonton Oilers / Rogers Place"
+  },
+  "edward-jones": {
+   "name": "Edward Jones",
+   "domain": "edwardjones.com"
+  },
+  "efl": {
+   "name": "EFL",
+   "domain": "efl.com"
+  },
+  "efl-trophy": {
+   "name": "EFL Trophy",
+   "domain": "efl.com"
+  },
+  "egyptair": {
+   "name": "EGYPTAIR",
+   "domain": "egyptair.com"
+  },
+  "ela-motors": {
+   "name": "Ela Motors (Toyota Tsusho PNG)"
+  },
+  "elite-eleven": {
+   "name": "Elite Eleven"
+  },
+  "emirates": {
+   "name": "Emirates",
+   "domain": "emirates.com"
+  },
+  "england-cricket": {
+   "name": "England Cricket",
+   "domain": "ecb.co.uk"
+  },
+  "england-golf": {
+   "name": "England Golf",
+   "domain": "englandgolf.org"
+  },
+  "england-rugby": {
+   "name": "England Rugby",
+   "domain": "englandrugby.com"
+  },
+  "essendon": {
+   "name": "Essendon",
+   "domain": "essendonfc.com.au"
+  },
+  "euroleague": {
+   "name": "EuroLeague",
+   "domain": "euroleaguebasketball.net"
+  },
+  "europcar": {
+   "name": "Europcar",
+   "domain": "europcar.com"
+  },
+  "expedia": {
+   "name": "Expedia",
+   "domain": "expedia.com"
+  },
+  "expressvpn": {
+   "name": "ExpressVPN",
+   "domain": "expressvpn.com"
+  },
+  "fage": {
+   "name": "FAGE",
+   "domain": "fage.gr"
+  },
+  "fanatics": {
+   "name": "Fanatics",
+   "domain": "fanatics.com"
+  },
+  "fast-and-up": {
+   "name": "Fast&Up"
+  },
+  "fc-barcelona": {
+   "name": "FC Barcelona",
+   "domain": "fcbarcelona.com"
+  },
+  "fc-bayern": {
+   "name": "FC Bayern",
+   "domain": "fcbayern.com",
+   "aliases": [
+    "Bayern Munich"
+   ]
+  },
+  "fc-porto": {
+   "name": "FC Porto",
+   "domain": "fcporto.pt"
+  },
+  "fedex-freight": {
+   "name": "FedEx Freight",
+   "domain": "fedex.com"
+  },
+  "fenway-sports-group": {
+   "name": "Fenway Sports Group",
+   "domain": "fenwaysportsgroup.com"
+  },
+  "fever": {
+   "name": "Fever",
+   "domain": "feverup.com"
+  },
+  "fiba": {
+   "name": "FIBA",
+   "domain": "fiba.basketball"
+  },
+  "fifa-world-cup": {
+   "name": "FIFA World Cup",
+   "domain": "fifa.com"
+  },
+  "fifa-world-cup-2026": {
+   "name": "FIFA World Cup 2026",
+   "domain": "fifa.com"
+  },
+  "firefox": {
+   "name": "Firefox",
+   "domain": "firefox.com"
+  },
+  "firmus-technologies": {
+   "name": "Firmus Technologies"
+  },
+  "first-community-credit-union": {
+   "name": "First Community Credit Union"
+  },
+  "first-horizon-bank": {
+   "name": "First Horizon Bank",
+   "domain": "firsthorizon.com"
+  },
+  "fis": {
+   "name": "FIS",
+   "domain": "fis-ski.com"
+  },
+  "five-guys": {
+   "name": "Five Guys",
+   "domain": "fiveguys.com"
+  },
+  "flyte-aviation": {
+   "name": "Flyte Aviation"
+  },
+  "foot-locker": {
+   "name": "Foot Locker",
+   "domain": "footlocker.com"
+  },
+  "football-australia": {
+   "name": "Football Australia",
+   "domain": "footballaustralia.com.au"
+  },
+  "ford-australia": {
+   "name": "Ford Australia",
+   "domain": "ford.com.au"
+  },
+  "formula-1": {
+   "name": "Formula 1",
+   "domain": "formula1.com"
+  },
+  "formula-e": {
+   "name": "Formula E",
+   "domain": "fiaformulae.com"
+  },
+  "fpt": {
+   "name": "FPT",
+   "domain": "fpt.com"
+  },
+  "freemans": {
+   "name": "FREEMANS"
+  },
+  "fremantle": {
+   "name": "Fremantle",
+   "domain": "fremantlefc.com.au",
+   "aliases": [
+    "Fremantle Dockers"
+   ]
+  },
+  "french-rugby-federation": {
+   "name": "French Rugby Federation",
+   "domain": "ffr.fr"
+  },
+  "friskies": {
+   "name": "Friskies",
+   "domain": "friskies.com"
+  },
+  "frontieras": {
+   "name": "Frontieras"
+  },
+  "fsu-athletics": {
+   "name": "FSU Athletics",
+   "domain": "seminoles.com"
+  },
+  "fulham": {
+   "name": "Fulham",
+   "domain": "fulhamfc.com"
+  },
+  "fundamental": {
+   "name": "Fundamental"
+  },
+  "gac": {
+   "name": "GAC"
+  },
+  "garrett-smithley": {
+   "name": "Garrett Smithley"
+  },
+  "gatorade": {
+   "name": "Gatorade",
+   "domain": "gatorade.com"
+  },
+  "geelong-cats": {
+   "name": "Geelong Cats",
+   "domain": "geelongcats.com.au"
+  },
+  "gello-beans-and-snakes": {
+   "name": "Gello Beans and Snakes"
+  },
+  "generali": {
+   "name": "Generali",
+   "domain": "generali.com"
+  },
+  "genesis": {
+   "name": "Genesis"
+  },
+  "gentlemen-s-outfitters-charlestown": {
+   "name": "Gentlemen's Outfitters Charlestown"
+  },
+  "giants-netball": {
+   "name": "Giants Netball"
+  },
+  "giffgaff": {
+   "name": "giffgaff",
+   "domain": "giffgaff.com"
+  },
+  "global-gymnastics": {
+   "name": "Global gymnastics"
+  },
+  "gold-coast-suns": {
+   "name": "Gold Coast SUNS",
+   "domain": "goldcoastfc.com.au",
+   "aliases": [
+    "Gold Coast Suns"
+   ]
+  },
+  "gold-coast-titans": {
+   "name": "Gold Coast Titans",
+   "domain": "titans.com.au"
+  },
+  "golden-state-warriors": {
+   "name": "Golden State Warriors"
+  },
+  "google-gemini": {
+   "name": "Google Gemini",
+   "domain": "gemini.google.com"
+  },
+  "guardians-league": {
+   "name": "Guardians League"
+  },
+  "gucci": {
+   "name": "Gucci",
+   "domain": "gucci.com"
+  },
+  "gwm": {
+   "name": "GWM",
+   "domain": "gwm-global.com"
+  },
+  "gws-giants": {
+   "name": "GWS Giants",
+   "domain": "gwsgiants.com.au"
+  },
+  "h-and-r-block": {
+   "name": "H&R Block",
+   "domain": "hrblock.com"
+  },
+  "hahn": {
+   "name": "Hahn"
+  },
+  "haier": {
+   "name": "Haier",
+   "domain": "haier.com"
+  },
+  "hang-seng-bank": {
+   "name": "Hang Seng Bank",
+   "domain": "hangseng.com"
+  },
+  "hankook": {
+   "name": "Hankook",
+   "domain": "hankooktire.com"
+  },
+  "hardee-s": {
+   "name": "Hardee's",
+   "domain": "hardees.com"
+  },
+  "harvey-norman": {
+   "name": "Harvey Norman",
+   "domain": "harveynorman.com.au"
+  },
+  "harvey-norman-westpac-kfc": {
+   "name": "Harvey Norman / Westpac / KFC"
+  },
+  "hasbro": {
+   "name": "Hasbro (Peppa Pig)",
+   "domain": "hasbro.com"
+  },
+  "hawthorn": {
+   "name": "Hawthorn",
+   "domain": "hawthornfc.com.au",
+   "aliases": [
+    "Hawthorn Hawks"
+   ]
+  },
+  "heineken": {
+   "name": "Heineken",
+   "domain": "heineken.com"
+  },
+  "hero-vida": {
+   "name": "Hero VIDA"
+  },
+  "hisense": {
+   "name": "Hisense",
+   "domain": "hisense.com"
+  },
+  "hitiq": {
+   "name": "HITIQ"
+  },
+  "hobart-hurricanes": {
+   "name": "Hobart Hurricanes",
+   "domain": "hobarthurricanes.com.au"
+  },
+  "hola-health": {
+   "name": "Hola Health"
+  },
+  "hoops-capital": {
+   "name": "Hoops Capital"
+  },
+  "hsbc": {
+   "name": "HSBC",
+   "domain": "hsbc.com"
+  },
+  "hydro-flask": {
+   "name": "Hydro Flask",
+   "domain": "hydroflask.com"
+  },
+  "hyrox": {
+   "name": "HYROX",
+   "domain": "hyrox.com"
+  },
+  "hyundai": {
+   "name": "Hyundai",
+   "domain": "hyundai.com"
+  },
+  "icc": {
+   "name": "ICC",
+   "domain": "icc-cricket.com"
+  },
+  "icc-women-s-t20-world-cup": {
+   "name": "ICC Women's T20 World Cup",
+   "domain": "icc-cricket.com"
+  },
+  "ifs": {
+   "name": "IFS",
+   "domain": "ifs.com"
+  },
+  "iheartmedia": {
+   "name": "iHeartMedia",
+   "domain": "iheartmedia.com"
+  },
+  "illawarra-hawks": {
+   "name": "Illawarra Hawks",
+   "domain": "hawks.com.au"
+  },
+  "im8": {
+   "name": "IM8"
+  },
+  "ingenia-holiday-parks": {
+   "name": "Ingenia Holiday Parks",
+   "domain": "ingeniaholidays.com.au"
+  },
+  "insight": {
+   "name": "Insight"
+  },
+  "intel": {
+   "name": "Intel",
+   "domain": "intel.com"
+  },
+  "intercontinental-wellington": {
+   "name": "InterContinental Wellington"
+  },
+  "international-luge-federation": {
+   "name": "International Luge Federation",
+   "domain": "fil-luge.org"
+  },
+  "intix": {
+   "name": "INTIX"
+  },
+  "invictus-australia-sports-festival": {
+   "name": "Invictus Australia Sports Festival"
+  },
+  "ipl": {
+   "name": "IPL",
+   "domain": "iplt20.com"
+  },
+  "iren": {
+   "name": "IREN",
+   "domain": "iren.com"
+  },
+  "ironman": {
+   "name": "IRONMAN",
+   "domain": "ironman.com"
+  },
+  "isuzu": {
+   "name": "Isuzu"
+  },
+  "jack-ginnivan": {
+   "name": "Jack Ginnivan"
+  },
+  "jacob-s-creek": {
+   "name": "Jacob's Creek",
+   "domain": "jacobscreek.com"
+  },
+  "jd-sports": {
+   "name": "JD Sports",
+   "domain": "jdsports.com"
+  },
+  "jersey-mike-s": {
+   "name": "Jersey Mike's",
+   "domain": "jerseymikes.com"
+  },
+  "jim-beam": {
+   "name": "Jim Beam",
+   "domain": "jimbeam.com"
+  },
+  "john-daly": {
+   "name": "John Daly"
+  },
+  "johnsons-coaches": {
+   "name": "Johnsons Coaches"
+  },
+  "jpmorganchase": {
+   "name": "JPMorganChase",
+   "domain": "jpmorganchase.com"
+  },
+  "kansas-city-chiefs": {
+   "name": "Kansas City Chiefs",
+   "domain": "chiefs.com"
+  },
+  "kaylee-mckeown": {
+   "name": "Kaylee McKeown"
+  },
+  "kayo-sports-binge": {
+   "name": "Kayo Sports / Binge",
+   "domain": "kayosports.com.au"
+  },
+  "kelme": {
+   "name": "Kelme",
+   "domain": "kelme.com"
+  },
+  "kettle-chips": {
+   "name": "Kettle Chips"
+  },
+  "keybank": {
+   "name": "KeyBank",
+   "domain": "key.com"
+  },
+  "kfc": {
+   "name": "KFC",
+   "domain": "kfc.com"
+  },
+  "kin-insurance": {
+   "name": "Kin Insurance",
+   "domain": "kin.com"
+  },
+  "klaviyo": {
+   "name": "Klaviyo",
+   "domain": "klaviyo.com"
+  },
+  "kleenheat": {
+   "name": "Kleenheat",
+   "domain": "kleenheat.com.au"
+  },
+  "kohler": {
+   "name": "Kohler",
+   "domain": "kohler.com"
+  },
+  "kookaburra": {
+   "name": "Kookaburra"
+  },
+  "kraken": {
+   "name": "Kraken",
+   "domain": "kraken.com"
+  },
+  "kylian-mbappe": {
+   "name": "Kylian Mbappé"
+  },
+  "l-oreal": {
+   "name": "L'Oréal",
+   "domain": "loreal.com"
+  },
+  "la-galaxy": {
+   "name": "LA Galaxy",
+   "domain": "lagalaxy.com"
+  },
+  "laliga": {
+   "name": "LaLiga",
+   "domain": "laliga.com",
+   "aliases": [
+    "La Liga"
+   ]
+  },
+  "laliga-north-america": {
+   "name": "LaLiga North America",
+   "domain": "laliga.com"
+  },
+  "las-vegas-grand-prix": {
+   "name": "Las Vegas Grand Prix",
+   "domain": "f1lasvegasgp.com"
+  },
+  "lazio": {
+   "name": "Lazio",
+   "domain": "sslazio.it"
+  },
+  "leadstory": {
+   "name": "LeadStory"
+  },
+  "legora": {
+   "name": "Legora",
+   "domain": "legora.com"
+  },
+  "leica": {
+   "name": "Leica",
+   "domain": "leica-camera.com"
+  },
+  "leicester-city": {
+   "name": "Leicester City",
+   "domain": "lcfc.com"
+  },
+  "lendux": {
+   "name": "LendUX"
+  },
+  "leovegas-betmgm": {
+   "name": "LeoVegas / BetMGM"
+  },
+  "li-ning": {
+   "name": "Li-Ning"
+  },
+  "liberty-financial": {
+   "name": "Liberty Financial"
+  },
+  "ligas-gaming": {
+   "name": "LIGAS Gaming"
+  },
+  "lipton-ice-tea": {
+   "name": "Lipton Ice Tea"
+  },
+  "liquid-i-v": {
+   "name": "Liquid I.V.",
+   "domain": "liquid-iv.com"
+  },
+  "live-nation-anz": {
+   "name": "Live Nation ANZ",
+   "domain": "livenation.com.au"
+  },
+  "liverpool-fc": {
+   "name": "Liverpool FC",
+   "domain": "liverpoolfc.com",
+   "aliases": [
+    "Liverpool"
+   ]
+  },
+  "lloyds-banking-group": {
+   "name": "Lloyds Banking Group",
+   "domain": "lloydsbankinggroup.com"
+  },
+  "london-city-lionesses": {
+   "name": "London City Lionesses"
+  },
+  "longi": {
+   "name": "LONGi",
+   "domain": "longi.com"
+  },
+  "los-angeles-lakers": {
+   "name": "Los Angeles Lakers"
+  },
+  "lskd": {
+   "name": "LSKD",
+   "domain": "lskd.co"
+  },
+  "lumo": {
+   "name": "Lumo"
+  },
+  "lyca-mobile": {
+   "name": "Lyca Mobile",
+   "domain": "lycamobile.com"
+  },
+  "m-j-bale": {
+   "name": "M.J. Bale",
+   "domain": "mjbale.com"
+  },
+  "macarthur-fc": {
+   "name": "Macarthur FC",
+   "domain": "macarthurfc.com.au"
+  },
+  "mammouth-ai": {
+   "name": "Mammouth AI"
+  },
+  "manchester-united": {
+   "name": "Manchester United",
+   "domain": "manutd.com"
+  },
+  "manly-sea-eagles": {
+   "name": "Manly Sea Eagles",
+   "domain": "seaeagles.com.au",
+   "aliases": [
+    "Manly Warringah Sea Eagles",
+    "Sea Eagles"
+   ]
+  },
+  "marriott-bonvoy": {
+   "name": "Marriott Bonvoy",
+   "domain": "marriott.com"
+  },
+  "mcdonald-s": {
+   "name": "McDonald's",
+   "domain": "mcdonalds.com"
+  },
+  "mclaren": {
+   "name": "McLaren",
+   "domain": "mclaren.com",
+   "aliases": [
+    "McLaren Racing"
+   ]
+  },
+  "mega-rewards": {
+   "name": "Mega Rewards"
+  },
+  "melbourne": {
+   "name": "Melbourne",
+   "domain": "melbournefc.com.au"
+  },
+  "melbourne-city-fc": {
+   "name": "Melbourne City FC",
+   "domain": "melbournecityfc.com.au",
+   "aliases": [
+    "Melbourne City"
+   ]
+  },
+  "melbourne-mavericks": {
+   "name": "Melbourne Mavericks"
+  },
+  "melbourne-renegades": {
+   "name": "Melbourne Renegades",
+   "domain": "melbournerenegades.com.au"
+  },
+  "melbourne-stars": {
+   "name": "Melbourne Stars",
+   "domain": "melbournestars.com.au"
+  },
+  "melbourne-storm": {
+   "name": "Melbourne Storm"
+  },
+  "melbourne-united": {
+   "name": "Melbourne United",
+   "domain": "melbourneutd.com.au"
+  },
+  "melbourne-victory": {
+   "name": "Melbourne Victory",
+   "domain": "melbournevictory.com.au"
+  },
+  "melbourne-vixens": {
+   "name": "Melbourne Vixens"
+  },
+  "memento-exclusives": {
+   "name": "Memento Exclusives"
+  },
+  "mercedes-amg-petronas-f1-team": {
+   "name": "Mercedes-AMG Petronas F1 Team",
+   "domain": "mercedesamgf1.com"
+  },
+  "meta": {
+   "name": "Meta",
+   "domain": "meta.com"
+  },
+  "mgi-golf": {
+   "name": "MGI Golf",
+   "domain": "mgigolf.com"
+  },
+  "middlesbrough": {
+   "name": "Middlesbrough",
+   "domain": "mfc.co.uk"
+  },
+  "midnite": {
+   "name": "Midnite",
+   "domain": "midnite.com"
+  },
+  "milka": {
+   "name": "Milka (Mondelez)",
+   "domain": "milka.com"
+  },
+  "milo": {
+   "name": "MILO (Nestlé)"
+  },
+  "milwaukee-bucks": {
+   "name": "Milwaukee Bucks"
+  },
+  "minebeamitsumi": {
+   "name": "MinebeaMitsumi",
+   "domain": "minebeamitsumi.com"
+  },
+  "mlb": {
+   "name": "MLB",
+   "domain": "mlb.com"
+  },
+  "mohun-bagan-super-giant": {
+   "name": "Mohun Bagan Super Giant"
+  },
+  "mongolian-esports-association": {
+   "name": "Mongolian Esports Association"
+  },
+  "monster-energy": {
+   "name": "Monster Energy",
+   "domain": "monsterenergy.com"
+  },
+  "mortgage-choice": {
+   "name": "Mortgage Choice",
+   "domain": "mortgagechoice.com.au"
+  },
+  "motogp-australian-grand-prix": {
+   "name": "MotoGP Australian Grand Prix",
+   "domain": "motogp.com.au"
+  },
+  "mpl-indonesia": {
+   "name": "MPL Indonesia"
+  },
+  "mufg-pension-and-market-services": {
+   "name": "MUFG Pension & Market Services"
+  },
+  "muthoot-fincorp": {
+   "name": "Muthoot Fincorp"
+  },
+  "mycar-tyre-and-auto": {
+   "name": "mycar Tyre & Auto",
+   "domain": "mycar.com.au"
+  },
+  "myplace": {
+   "name": "MyPlace"
+  },
+  "nambawan-super": {
+   "name": "Nambawan Super"
+  },
+  "nascar": {
+   "name": "NASCAR",
+   "domain": "nascar.com"
+  },
+  "nascar-truck-series": {
+   "name": "NASCAR Truck Series",
+   "domain": "nascar.com"
+  },
+  "national-squash-league": {
+   "name": "National Squash League"
+  },
+  "nba": {
+   "name": "NBA",
+   "domain": "nba.com"
+  },
+  "nbl": {
+   "name": "NBL",
+   "domain": "nbl.com.au"
+  },
+  "nbl-wnbl": {
+   "name": "NBL / WNBL",
+   "domain": "nbl.com.au"
+  },
+  "netball-australia": {
+   "name": "Netball Australia",
+   "domain": "netball.com.au"
+  },
+  "new-york-knicks": {
+   "name": "New York Knicks"
+  },
+  "new-york-yankees": {
+   "name": "New York Yankees"
+  },
+  "new-zealand-cricket": {
+   "name": "New Zealand Cricket",
+   "domain": "nzc.nz"
+  },
+  "newcastle-eagles": {
+   "name": "Newcastle Eagles"
+  },
+  "newcastle-jets": {
+   "name": "Newcastle Jets",
+   "domain": "newcastlejets.com.au"
+  },
+  "newcastle-knights": {
+   "name": "Newcastle Knights",
+   "domain": "newcastleknights.com.au",
+   "aliases": [
+    "Knights",
+    "Newcastle Knights NRLW"
+   ]
+  },
+  "newcastle-united": {
+   "name": "Newcastle United",
+   "domain": "newcastleunited.com"
+  },
+  "nexo": {
+   "name": "Nexo",
+   "domain": "nexo.com"
+  },
+  "next-league": {
+   "name": "Next League"
+  },
+  "nfl": {
+   "name": "NFL",
+   "domain": "nfl.com"
+  },
+  "nfl-melbourne-game": {
+   "name": "NFL Melbourne Game",
+   "domain": "nfl.com"
+  },
+  "nhl": {
+   "name": "NHL",
+   "domain": "nhl.com"
+  },
+  "nike": {
+   "name": "Nike",
+   "domain": "nike.com"
+  },
+  "nine": {
+   "name": "Nine",
+   "domain": "nine.com.au"
+  },
+  "nine-s-nrl-coverage": {
+   "name": "Nine's NRL coverage",
+   "domain": "nine.com.au"
+  },
+  "north-melbourne": {
+   "name": "North Melbourne",
+   "domain": "nmfc.com.au"
+  },
+  "north-queensland-cowboys": {
+   "name": "North Queensland Cowboys",
+   "domain": "cowboys.com.au",
+   "aliases": [
+    "Cowboys",
+    "North Queensland Cowboys (NRLW)",
+    "North Queensland Cowboys NRLW"
+   ]
+  },
+  "northwest-bank": {
+   "name": "Northwest Bank"
+  },
+  "nrl": {
+   "name": "NRL",
+   "domain": "nrl.com"
+  },
+  "nrlw": {
+   "name": "NRLW",
+   "domain": "nrl.com"
+  },
+  "nsw-swifts": {
+   "name": "NSW Swifts"
+  },
+  "nz-breakers": {
+   "name": "NZ Breakers"
+  },
+  "nz-rugby-league": {
+   "name": "NZ Rugby League",
+   "domain": "nzrl.co.nz"
+  },
+  "nz-warriors": {
+   "name": "NZ Warriors",
+   "domain": "warriors.kiwi",
+   "aliases": [
+    "New Zealand Warriors",
+    "One NZ Warriors",
+    "Warriors"
+   ]
+  },
+  "odisha-fc": {
+   "name": "Odisha FC"
+  },
+  "old-el-paso": {
+   "name": "Old El Paso",
+   "domain": "oldelpaso.com"
+  },
+  "on": {
+   "name": "On",
+   "domain": "on.com"
+  },
+  "ooh-media": {
+   "name": "oOh!media",
+   "domain": "oohmedia.com.au"
+  },
+  "optus-virgin-australia": {
+   "name": "Optus / Virgin Australia"
+  },
+  "oracle": {
+   "name": "Oracle",
+   "domain": "oracle.com"
+  },
+  "orlando-magic": {
+   "name": "Orlando Magic"
+  },
+  "ospreys": {
+   "name": "Ospreys",
+   "domain": "ospreysrugby.com"
+  },
+  "panini-america": {
+   "name": "Panini America",
+   "domain": "paniniamerica.net"
+  },
+  "paramount-anz": {
+   "name": "Paramount ANZ",
+   "domain": "paramount.com"
+  },
+  "paris-saint-germain": {
+   "name": "Paris Saint-Germain",
+   "domain": "psg.fr",
+   "aliases": [
+    "PSG"
+   ]
+  },
+  "parramatta-eels": {
+   "name": "Parramatta Eels",
+   "domain": "parraeels.com.au",
+   "aliases": [
+    "Eels"
+   ]
+  },
+  "paula-s-choice": {
+   "name": "Paula's Choice",
+   "domain": "paulaschoice.com"
+  },
+  "paypal": {
+   "name": "PayPal",
+   "domain": "paypal.com"
+  },
+  "paze": {
+   "name": "Paze",
+   "domain": "paze.com"
+  },
+  "penrith-panthers": {
+   "name": "Penrith Panthers",
+   "domain": "penrithpanthers.com.au",
+   "aliases": [
+    "Panthers"
+   ]
+  },
+  "perfect-game": {
+   "name": "Perfect Game"
+  },
+  "perth-bears": {
+   "name": "Perth Bears"
+  },
+  "perth-glory": {
+   "name": "Perth Glory",
+   "domain": "perthglory.com.au"
+  },
+  "perth-scorchers": {
+   "name": "Perth Scorchers",
+   "domain": "perthscorchers.com.au"
+  },
+  "perth-wildcats": {
+   "name": "Perth Wildcats",
+   "domain": "wildcats.com.au"
+  },
+  "pga-of-australia": {
+   "name": "PGA of Australia",
+   "domain": "pga.org.au"
+  },
+  "pga-tour": {
+   "name": "PGA TOUR",
+   "domain": "pgatour.com"
+  },
+  "pgl": {
+   "name": "PGL",
+   "domain": "pglesports.com"
+  },
+  "philadelphia-76ers": {
+   "name": "Philadelphia 76ers"
+  },
+  "phoenix-suns": {
+   "name": "Phoenix Suns"
+  },
+  "pixellot": {
+   "name": "Pixellot",
+   "domain": "pixellot.tv"
+  },
+  "png-chiefs": {
+   "name": "PNG Chiefs"
+  },
+  "polymarket": {
+   "name": "Polymarket",
+   "domain": "polymarket.com"
+  },
+  "port-adelaide": {
+   "name": "Port Adelaide",
+   "domain": "portadelaidefc.com.au"
+  },
+  "priceline-pharmacy": {
+   "name": "Priceline Pharmacy",
+   "domain": "priceline.com.au"
+  },
+  "ptp": {
+   "name": "PTP"
+  },
+  "public-investment-fund": {
+   "name": "Public Investment Fund",
+   "domain": "pif.gov.sa"
+  },
+  "puma": {
+   "name": "Puma",
+   "domain": "puma.com"
+  },
+  "qms-nz": {
+   "name": "QMS NZ"
+  },
+  "qudos-bank-arena": {
+   "name": "Qudos Bank Arena",
+   "domain": "qudosbankarena.com.au"
+  },
+  "queensland-firebirds": {
+   "name": "Queensland Firebirds"
+  },
+  "racing-bulls": {
+   "name": "Racing Bulls"
+  },
+  "rakuten": {
+   "name": "Rakuten",
+   "domain": "rakuten.com"
+  },
+  "ramp": {
+   "name": "Ramp",
+   "domain": "ramp.com"
+  },
+  "range-rover": {
+   "name": "Range Rover",
+   "domain": "rangerover.com"
+  },
+  "real-madrid": {
+   "name": "Real Madrid",
+   "domain": "realmadrid.com"
+  },
+  "red-bull": {
+   "name": "Red Bull",
+   "domain": "redbull.com"
+  },
+  "red-bull-racing": {
+   "name": "Red Bull Racing",
+   "domain": "redbullracing.com",
+   "aliases": [
+    "Oracle Red Bull Racing"
+   ]
+  },
+  "reebok": {
+   "name": "Reebok",
+   "domain": "reebok.com"
+  },
+  "return-and-earn": {
+   "name": "Return and Earn",
+   "domain": "returnandearn.org.au"
+  },
+  "revo-fitness": {
+   "name": "Revo Fitness",
+   "domain": "revofitness.com.au"
+  },
+  "revolut": {
+   "name": "Revolut",
+   "domain": "revolut.com"
+  },
+  "rfu": {
+   "name": "RFU",
+   "domain": "englandrugby.com"
+  },
+  "rice-stadium": {
+   "name": "Rice Stadium"
+  },
+  "richmond": {
+   "name": "Richmond",
+   "domain": "richmondfc.com.au"
+  },
+  "ripper-gc": {
+   "name": "Ripper GC"
+  },
+  "rogers": {
+   "name": "Rogers",
+   "domain": "rogers.com"
+  },
+  "rory-mcilroy": {
+   "name": "Rory McIlroy"
+  },
+  "round-the-bays": {
+   "name": "Round the Bays"
+  },
+  "rugby-bricks": {
+   "name": "Rugby Bricks"
+  },
+  "rugby-league-world-cup-2026": {
+   "name": "Rugby League World Cup 2026"
+  },
+  "rugby-world-cup-2027": {
+   "name": "Rugby World Cup 2027",
+   "domain": "rugbyworldcup.com"
+  },
+  "rugby-world-cups": {
+   "name": "Rugby World Cups (Australia)",
+   "domain": "rugbyworldcup.com"
+  },
+  "sailgp-hong-kong-sail-grand-prix": {
+   "name": "SailGP Hong Kong Sail Grand Prix",
+   "domain": "sailgp.com"
+  },
+  "salesforce": {
+   "name": "Salesforce",
+   "domain": "salesforce.com"
+  },
+  "salomon": {
+   "name": "Salomon",
+   "domain": "salomon.com"
+  },
+  "samsung": {
+   "name": "Samsung",
+   "domain": "samsung.com"
+  },
+  "san-francisco-49ers": {
+   "name": "San Francisco 49ers",
+   "domain": "49ers.com"
+  },
+  "sbs-world-cup-fan-zones": {
+   "name": "SBS World Cup Fan Zones",
+   "domain": "sbs.com.au"
+  },
+  "scuderia-ferrari-hp": {
+   "name": "Scuderia Ferrari HP",
+   "domain": "ferrari.com",
+   "aliases": [
+    "Ferrari",
+    "Scuderia Ferrari"
+   ]
+  },
+  "sekerbank": {
+   "name": "Şekerbank",
+   "domain": "sekerbank.com.tr"
+  },
+  "sephora": {
+   "name": "Sephora",
+   "domain": "sephora.com"
+  },
+  "serie-a": {
+   "name": "Serie A",
+   "domain": "legaseriea.it"
+  },
+  "servicenow": {
+   "name": "ServiceNow",
+   "domain": "servicenow.com"
+  },
+  "shakhtar-donetsk": {
+   "name": "Shakhtar Donetsk",
+   "domain": "shakhtar.com"
+  },
+  "sharkninja": {
+   "name": "SharkNinja",
+   "domain": "sharkninja.com"
+  },
+  "sheffield-united": {
+   "name": "Sheffield United",
+   "domain": "sufc.co.uk"
+  },
+  "shizuoka-stadium-ecopa": {
+   "name": "Shizuoka Stadium Ecopa"
+  },
+  "shopee": {
+   "name": "Shopee",
+   "domain": "shopee.com"
+  },
+  "shriners-children-s": {
+   "name": "Shriners Children's",
+   "domain": "shrinerschildrens.org"
+  },
+  "shuffle": {
+   "name": "Shuffle",
+   "domain": "shuffle.com"
+  },
+  "sigenergy": {
+   "name": "Sigenergy",
+   "domain": "sigenergy.com"
+  },
+  "sivasspor": {
+   "name": "Sivasspor"
+  },
+  "six-college-mascots": {
+   "name": "six college mascots"
+  },
+  "sky-new-zealand": {
+   "name": "Sky New Zealand",
+   "domain": "sky.co.nz"
+  },
+  "socceroos": {
+   "name": "Socceroos"
+  },
+  "sofascore": {
+   "name": "Sofascore",
+   "domain": "sofascore.com"
+  },
+  "sophie-de-goede": {
+   "name": "Sophie de Goede"
+  },
+  "south-east-melbourne-phoenix": {
+   "name": "South East Melbourne Phoenix",
+   "domain": "semphoenix.com.au",
+   "aliases": [
+    "SE Melbourne Phoenix"
+   ]
+  },
+  "south-sydney-rabbitohs": {
+   "name": "South Sydney Rabbitohs",
+   "domain": "rabbitohs.com.au",
+   "aliases": [
+    "Rabbitohs"
+   ]
+  },
+  "sp-lager": {
+   "name": "SP Lager"
+  },
+  "spire-healthcare": {
+   "name": "Spire Healthcare",
+   "domain": "spirehealthcare.com"
+  },
+  "sportradar": {
+   "name": "Sportradar",
+   "domain": "sportradar.com"
+  },
+  "sports-direct": {
+   "name": "Sports Direct",
+   "domain": "sportsdirect.com"
+  },
+  "sports-direct-australia": {
+   "name": "Sports Direct Australia"
+  },
+  "sprite": {
+   "name": "Sprite",
+   "domain": "sprite.com"
+  },
+  "srmb-tmt": {
+   "name": "SRMB TMT"
+  },
+  "st-george-illawarra-dragons": {
+   "name": "St George Illawarra Dragons",
+   "domain": "dragons.com.au"
+  },
+  "st-kilda": {
+   "name": "St Kilda",
+   "domain": "saints.com.au"
+  },
+  "starbucks": {
+   "name": "Starbucks",
+   "domain": "starbucks.com"
+  },
+  "strauss": {
+   "name": "STRAUSS"
+  },
+  "stripe": {
+   "name": "Stripe",
+   "domain": "stripe.com"
+  },
+  "stubhub": {
+   "name": "StubHub",
+   "domain": "stubhub.com"
+  },
+  "suisscourtage-assurances": {
+   "name": "Suisscourtage Assurances"
+  },
+  "sumup": {
+   "name": "SumUp",
+   "domain": "sumup.com"
+  },
+  "sunderland": {
+   "name": "Sunderland",
+   "domain": "safc.com"
+  },
+  "sunshine-coast-lightning": {
+   "name": "Sunshine Coast Lightning"
+  },
+  "supercars": {
+   "name": "Supercars",
+   "domain": "supercars.com"
+  },
+  "surf-life-saving-queensland": {
+   "name": "Surf Life Saving Queensland",
+   "domain": "lifesaving.com.au"
+  },
+  "surfing-super-league": {
+   "name": "Surfing Super League"
+  },
+  "sydney-airport": {
+   "name": "Sydney Airport",
+   "domain": "sydneyairport.com.au"
+  },
+  "sydney-fc": {
+   "name": "Sydney FC",
+   "domain": "sydneyfc.com"
+  },
+  "sydney-kings": {
+   "name": "Sydney Kings",
+   "domain": "sydneykings.com"
+  },
+  "sydney-roosters": {
+   "name": "Sydney Roosters",
+   "domain": "roosters.com.au"
+  },
+  "sydney-sixers": {
+   "name": "Sydney Sixers",
+   "domain": "sydneysixers.com.au"
+  },
+  "sydney-swans": {
+   "name": "Sydney Swans",
+   "domain": "sydneyswans.com.au"
+  },
+  "sydney-thunder": {
+   "name": "Sydney Thunder",
+   "domain": "sydneythunder.com.au"
+  },
+  "tangerine": {
+   "name": "Tangerine"
+  },
+  "tasmania-devils": {
+   "name": "Tasmania Devils"
+  },
+  "tasmania-jackjumpers": {
+   "name": "Tasmania JackJumpers",
+   "domain": "jackjumpers.com.au",
+   "aliases": [
+    "JackJumpers"
+   ]
+  },
+  "tcl": {
+   "name": "TCL",
+   "domain": "tcl.com"
+  },
+  "team-gb": {
+   "name": "Team GB",
+   "domain": "teamgb.com"
+  },
+  "tennessee-athletics": {
+   "name": "Tennessee Athletics",
+   "domain": "utsports.com"
+  },
+  "tgr-haas-f1-team": {
+   "name": "TGR Haas F1 Team",
+   "domain": "haasf1team.com"
+  },
+  "the-fa": {
+   "name": "The FA",
+   "domain": "thefa.com"
+  },
+  "the-iconic": {
+   "name": "THE ICONIC",
+   "domain": "theiconic.com.au"
+  },
+  "the-o2": {
+   "name": "The O2",
+   "domain": "theo2.co.uk"
+  },
+  "the-sporting-globe": {
+   "name": "The Sporting Globe",
+   "domain": "sportingglobe.com.au"
+  },
+  "threatlocker": {
+   "name": "ThreatLocker",
+   "domain": "threatlocker.com"
+  },
+  "tiktok": {
+   "name": "TikTok",
+   "domain": "tiktok.com"
+  },
+  "tissot": {
+   "name": "Tissot",
+   "domain": "tissotwatches.com"
+  },
+  "tommy-hilfiger": {
+   "name": "Tommy Hilfiger",
+   "domain": "tommy.com"
+  },
+  "topgolf": {
+   "name": "Topgolf",
+   "domain": "topgolf.com"
+  },
+  "topps": {
+   "name": "Topps",
+   "domain": "topps.com"
+  },
+  "tottenham-hotspur-women": {
+   "name": "Tottenham Hotspur Women",
+   "domain": "tottenhamhotspur.com"
+  },
+  "toulouse-fc": {
+   "name": "Toulouse FC",
+   "domain": "toulousefc.com"
+  },
+  "toyota-australia": {
+   "name": "Toyota Australia",
+   "domain": "toyota.com.au"
+  },
+  "toyota-material-handling": {
+   "name": "Toyota Material Handling"
+  },
+  "turkish-airlines": {
+   "name": "Turkish Airlines",
+   "domain": "turkishairlines.com"
+  },
+  "turtlebox": {
+   "name": "Turtlebox"
+  },
+  "twg-ai": {
+   "name": "TWG AI"
+  },
+  "u-s-bank": {
+   "name": "U.S. Bank",
+   "domain": "usbank.com"
+  },
+  "uber": {
+   "name": "Uber",
+   "domain": "uber.com"
+  },
+  "uber-eats": {
+   "name": "Uber Eats",
+   "domain": "ubereats.com"
+  },
+  "uefa": {
+   "name": "UEFA",
+   "domain": "uefa.com"
+  },
+  "uefa-champions-league": {
+   "name": "UEFA Champions League",
+   "domain": "uefa.com"
+  },
+  "ufc": {
+   "name": "UFC",
+   "domain": "ufc.com"
+  },
+  "uline": {
+   "name": "Uline",
+   "domain": "uline.com"
+  },
+  "under-armour": {
+   "name": "Under Armour",
+   "domain": "underarmour.com"
+  },
+  "university-of-tasmania": {
+   "name": "University of Tasmania",
+   "domain": "utas.edu.au"
+  },
+  "unlv-athletics": {
+   "name": "UNLV Athletics",
+   "domain": "unlvrebels.com"
+  },
+  "usga": {
+   "name": "USGA",
+   "domain": "usga.org"
+  },
+  "vinarchy": {
+   "name": "Vinarchy"
+  },
+  "virgin-australia": {
+   "name": "Virgin Australia",
+   "domain": "virginaustralia.com"
+  },
+  "virgin-media-o2": {
+   "name": "Virgin Media O2",
+   "domain": "virginmediao2.co.uk"
+  },
+  "visa": {
+   "name": "Visa",
+   "domain": "visa.com"
+  },
+  "visit-rwanda": {
+   "name": "Visit Rwanda",
+   "domain": "visitrwanda.com"
+  },
+  "visit-swansea-bay": {
+   "name": "Visit Swansea Bay",
+   "domain": "visitswanseabay.com"
+  },
+  "voltx-energy": {
+   "name": "VoltX Energy"
+  },
+  "vueling": {
+   "name": "Vueling",
+   "domain": "vueling.com"
+  },
+  "walt-disney-world": {
+   "name": "Walt Disney World",
+   "domain": "disney.com"
+  },
+  "wellington-phoenix": {
+   "name": "Wellington Phoenix",
+   "domain": "wellingtonphoenix.com"
+  },
+  "west-coast-eagles": {
+   "name": "West Coast Eagles",
+   "domain": "westcoasteagles.com.au"
+  },
+  "west-coast-fever": {
+   "name": "West Coast Fever"
+  },
+  "west-ham-united": {
+   "name": "West Ham United",
+   "domain": "whufc.com"
+  },
+  "western-bulldogs": {
+   "name": "Western Bulldogs",
+   "domain": "westernbulldogs.com.au"
+  },
+  "western-sydney-wanderers": {
+   "name": "Western Sydney Wanderers",
+   "domain": "wswanderersfc.com.au",
+   "aliases": [
+    "WS Wanderers"
+   ]
+  },
+  "western-united": {
+   "name": "Western United",
+   "domain": "westernunitedfc.com.au"
+  },
+  "westfield": {
+   "name": "Westfield",
+   "domain": "westfield.com.au"
+  },
+  "wests-tigers": {
+   "name": "Wests Tigers",
+   "domain": "weststigers.com.au"
+  },
+  "williams": {
+   "name": "Williams",
+   "domain": "williamsf1.com",
+   "aliases": [
+    "Williams F1"
+   ]
+  },
+  "wimbledon": {
+   "name": "Wimbledon",
+   "domain": "wimbledon.com"
+  },
+  "wnbl": {
+   "name": "WNBL"
+  },
+  "wolf-lubricants": {
+   "name": "Wolf Lubricants"
+  },
+  "woolworths": {
+   "name": "Woolworths",
+   "domain": "woolworths.com.au"
+  },
+  "wrc": {
+   "name": "WRC",
+   "domain": "wrc.com"
+  },
+  "wrexham-afc": {
+   "name": "Wrexham AFC",
+   "domain": "wrexhamafc.co.uk"
+  },
+  "wta-finals": {
+   "name": "WTA Finals",
+   "domain": "wtatennis.com"
+  },
+  "wtgl-boston-common-golf": {
+   "name": "WTGL / Boston Common Golf"
+  },
+  "wtt-finals-hong-kong": {
+   "name": "WTT Finals Hong Kong"
+  },
+  "x-games": {
+   "name": "X Games",
+   "domain": "xgames.com"
+  },
+  "xfm": {
+   "name": "XFM"
+  },
+  "xtb": {
+   "name": "XTB",
+   "domain": "xtb.com"
+  },
+  "y-series": {
+   "name": "Y Series"
+  },
+  "yelophant": {
+   "name": "Yelophant"
+  },
+  "yida-onepath": {
+   "name": "YIDA ONEPATH"
+  },
+  "youi": {
+   "name": "Youi",
+   "domain": "youi.com.au"
+  },
+  "zeller": {
+   "name": "Zeller",
+   "domain": "myzeller.com"
+  },
+  "zscaler": {
+   "name": "Zscaler",
+   "domain": "zscaler.com"
+  }
+ },
+ "leagues": [
+  {
+   "name": "AFL",
+   "clubs": [
+    "adelaide-crows",
+    "brisbane-lions",
+    "carlton",
+    "collingwood",
+    "essendon",
+    "fremantle",
+    "geelong-cats",
+    "gold-coast-suns",
+    "gws-giants",
+    "hawthorn",
+    "melbourne",
+    "north-melbourne",
+    "port-adelaide",
+    "richmond",
+    "st-kilda",
+    "sydney-swans",
+    "tasmania-devils",
+    "west-coast-eagles",
+    "western-bulldogs"
+   ]
+  },
+  {
+   "name": "NRL",
+   "clubs": [
+    "brisbane-broncos",
+    "canterbury-bankstown-bulldogs",
+    "canberra-raiders",
+    "cronulla-sharks",
+    "dolphins",
+    "gold-coast-titans",
+    "manly-sea-eagles",
+    "melbourne-storm",
+    "newcastle-knights",
+    "north-queensland-cowboys",
+    "nz-warriors",
+    "parramatta-eels",
+    "penrith-panthers",
+    "perth-bears",
+    "png-chiefs",
+    "south-sydney-rabbitohs",
+    "st-george-illawarra-dragons",
+    "sydney-roosters",
+    "wests-tigers"
+   ]
+  },
+  {
+   "name": "A-Leagues",
+   "clubs": [
+    "adelaide-united",
+    "auckland-fc",
+    "brisbane-roar",
+    "central-coast-mariners",
+    "macarthur-fc",
+    "melbourne-city-fc",
+    "melbourne-victory",
+    "newcastle-jets",
+    "perth-glory",
+    "sydney-fc",
+    "wellington-phoenix",
+    "western-sydney-wanderers",
+    "western-united"
+   ]
+  },
+  {
+   "name": "NBL",
+   "clubs": [
+    "adelaide-36ers",
+    "brisbane-bullets",
+    "cairns-taipans",
+    "illawarra-hawks",
+    "melbourne-united",
+    "nz-breakers",
+    "perth-wildcats",
+    "south-east-melbourne-phoenix",
+    "sydney-kings",
+    "tasmania-jackjumpers"
+   ]
+  },
+  {
+   "name": "BBL",
+   "clubs": [
+    "adelaide-strikers",
+    "brisbane-heat",
+    "hobart-hurricanes",
+    "melbourne-renegades",
+    "melbourne-stars",
+    "perth-scorchers",
+    "sydney-sixers",
+    "sydney-thunder"
+   ]
+  },
+  {
+   "name": "Super Netball",
+   "clubs": [
+    "adelaide-thunderbirds",
+    "giants-netball",
+    "melbourne-mavericks",
+    "melbourne-vixens",
+    "nsw-swifts",
+    "queensland-firebirds",
+    "sunshine-coast-lightning",
+    "west-coast-fever"
+   ]
+  }
+ ]
+}

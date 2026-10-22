@@ -136,13 +136,37 @@ a.row:hover b,a.ar-r:hover b{text-decoration:underline;text-underline-offset:4px
 .sel:after{content:"";position:absolute;right:14px;top:50%;width:6px;height:6px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:translateY(-70%) rotate(45deg);pointer-events:none}
 .count{margin-left:auto;font-size:14px;color:var(--ink-3)}
 .al{border-top:2px solid var(--ink)}
-.ar-h,.ar-r{display:grid;grid-template-columns:120px minmax(0,2.4fr) minmax(0,1fr) minmax(0,1.3fr) 96px;gap:20px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.ar-h,.ar-r{display:grid;grid-template-columns:120px minmax(0,2.4fr) minmax(0,1fr) minmax(0,1.3fr) 96px;gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
 .ar-h{padding:14px 0}.ar-h span{font-weight:800;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
 .ar-r .d{font-size:14px;color:var(--ink-3);font-variant-numeric:tabular-nums}
 .ar-r b{font-weight:800;text-transform:uppercase;letter-spacing:-.03em;font-size:19px;line-height:1.1;overflow-wrap:anywhere}
 .ar-r .s{font-size:15px}.ar-r .t{font-size:15px;color:var(--ink-2)}
 .empty{padding:40px 0;color:var(--ink-3);font-size:16px}
 .ar-more{margin-top:32px}
+/* Logos: brand and club marks. Monogram underneath until a real logo loads (assets/logos.js). */
+.lg{--s:40px;position:relative;display:inline-flex;width:var(--s);height:var(--s);flex:none;align-items:center;justify-content:center}
+.lg .mono{display:flex;align-items:center;justify-content:center;width:100%;height:100%;border:1px solid var(--line);background:var(--canvas);color:var(--ink-2);font-weight:800;font-size:calc(var(--s)*.34);letter-spacing:-.02em;line-height:1}
+.lg.has-img .mono{display:none}
+.lg img{width:100%;height:100%;object-fit:contain;display:block}
+.lga{display:inline-flex}.lga:hover .mono{border-color:var(--ink)}.lga:hover img{opacity:.8}
+.pair{display:inline-flex;align-items:center;gap:6px;flex:none}
+.pair .xx{font-weight:800;font-size:12px;color:var(--ink-3)}
+.ar-r .dl{display:flex;align-items:center;gap:16px;min-width:0}
+.ar-r .dl a:not(.lga):hover b{text-decoration:underline;text-underline-offset:4px}
+/* Club and brand strip above the archive. */
+.cs{border:1px solid var(--line);padding:clamp(16px,2vw,24px)}
+.cs-h{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.cs-t{display:flex;flex-wrap:wrap;gap:6px}.cs-t .pill{padding:8px 13px;font-size:11px}
+.cs-r{display:flex;gap:4px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.cr{font:inherit;flex:none;width:100px;min-height:44px;background:none;border:1px solid transparent;border-radius:0;padding:12px 6px 10px;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer;color:var(--ink)}
+.cr .lg{--s:52px}
+.cr .n{font-size:11px;font-weight:800;letter-spacing:.04em;line-height:1.15;text-align:center;text-transform:uppercase}
+.cr .k{font-size:11px;color:var(--ink-3)}
+.cr:hover{border-color:var(--line)}.cr.on{border-color:var(--ink);background:var(--canvas)}
+.cr[disabled]{opacity:.4;cursor:default}.cr[disabled]:hover{border-color:transparent}
+.cs-on{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center;margin-top:14px;padding-top:14px;border-top:1px solid var(--line);font-size:15px}
+.cs-on .x{font:inherit;font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;background:none;border:0;padding:8px 0;cursor:pointer;color:var(--ink-3)}
+.cs-on .x:hover{color:var(--ink)}
 footer{padding-block:clamp(56px,7vw,96px) 32px}
 .ft{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:start}
 .logo{display:block;line-height:0}.logo img{height:42px;width:auto;display:block}.logo-ft img{height:clamp(64px,7vw,96px)}
@@ -160,7 +184,7 @@ footer{padding-block:clamp(56px,7vw,96px) 32px}
 @media (max-width:640px){.hd{height:72px}.nav.open{top:72px}.wm{font-size:14px}
 .grid{grid-template-columns:minmax(0,1fr)}.card{min-height:0}
 .row{grid-template-columns:minmax(0,1fr)}.row .d{margin-bottom:-10px}
-.ar-h{display:none}.ar-r{grid-template-columns:minmax(0,1fr) auto;gap:6px 16px}.ar-r b{grid-column:1/-1;order:-1}.ar-r .d{order:-2;grid-column:1/-1}.ar-r .s{font-size:14px;color:var(--ink-3)}
+.ar-h{display:none}.ar-r{grid-template-columns:minmax(0,1fr) auto;gap:6px 16px}.ar-r .dl{grid-column:1/-1;order:-1}.ar-r .lg{--s:34px}.cr{width:88px}.ar-r .d{order:-2;grid-column:1/-1}.ar-r .s{font-size:14px;color:var(--ink-3)}
 .pills{flex-wrap:nowrap;overflow-x:auto;margin:0 calc(-1*var(--pad));padding:0 var(--pad);scrollbar-width:none}.pill{flex:none}
 .count{margin-left:0;width:100%}
 .ft{grid-template-columns:minmax(0,1fr)}.ft-b{margin-top:48px}}
@@ -223,6 +247,11 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 <section class="sec" id="archive"><div class="wrap">
 <div class="sh"><div><span class="lbl mute-l">Deal archive</span><h2 class="disp">Every deal. Filed.</h2></div></div>
 <div class="fil">
+<div class="cs" id="cs" hidden>
+<div class="cs-h"><span class="lbl">Filter by club or brand</span><div class="cs-t" id="csTabs" role="group" aria-label="League"></div></div>
+<div class="cs-r" id="csRow" role="group" aria-label="Clubs"></div>
+<div class="cs-on" id="csOn" hidden></div>
+</div>
 <div class="pills" id="pills" role="group" aria-label="Filter by sport"></div>
 <div class="sels">
 <label class="sel"><select id="fType" aria-label="Deal type"><option value="">All deal types</option></select></label>
@@ -242,13 +271,15 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 <div class="ft-b"><span>That's the day. Same time tomorrow.</span><span>© <span id="yr">2026</span> Sport Sport Sport</span></div>
 </div></footer>
 
+<script src="assets/logos.js"></script>
 <script>
 (function(){
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const PAGE=15;
 let DEALS=[],ORIG=[],SITE={},FEATS=[],shown=PAGE;
-const st={sport:"All",type:"",reg:"",days:""};
+const st={sport:"All",type:"",reg:"",days:"",ent:""};
+const L=window.SSSLogos;let csTab="";
 const sortKey=d=>d.date||((d.month||"0000-00")+"-00");
 // "date" = when the deal was announced; "added" = when it was posted here (the edition date).
 const pKey=d=>d.added||d.date;
@@ -351,12 +382,37 @@ function filters(){
 }
 function render(){
   const latest=DEALS.find(d=>d.date);const now=latest?dObj(latest):new Date();
-  const r=DEALS.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(!st.type||d.type===st.type)&&(!st.reg||d.region===st.reg)&&(!st.days||(d.date&&(now-dObj(d))/864e5<=+st.days)));
-  $("list").innerHTML=r.slice(0,shown).map(d=>{const tag=href(d)?"a":"div";
-    return `<${tag} class="ar-r"${attrs(d)}><span class="d">${esc(fmtArch(d))}</span><b>${esc(d.deal)}</b><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.type||"")}</span><span><span class="tag r">${esc(d.region)}</span></span></${tag}>`}).join("");
+  const r=DEALS.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(!st.type||d.type===st.type)&&(!st.reg||d.region===st.reg)&&(!st.days||(d.date&&(now-dObj(d))/864e5<=+st.days))&&(!st.ent||(d._b&&d._b.slug===st.ent)||(d._p&&d._p.slug===st.ent)));
+  $("list").innerHTML=r.slice(0,shown).map(d=>{
+    const name=href(d)?`<a${attrs(d)}><b>${esc(d.deal)}</b></a>`:`<b>${esc(d.deal)}</b>`;
+    const pair=d._b?`<span class="pair">${L.link(d._b,{px:40})}<span class="xx" aria-hidden="true">×</span>${L.link(d._p,{px:40})}</span>`:"";
+    return `<div class="ar-r"><span class="d">${esc(fmtArch(d))}</span><span class="dl">${pair}${name}</span><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.type||"")}</span><span><span class="tag r">${esc(d.region)}</span></span></div>`}).join("");
   $("empty").hidden=r.length>0;
   $("count").textContent=`${r.length} of ${DEALS.length} deals`;
   $("moreBtn").parentElement.hidden=r.length<=shown;
+}
+// Club and brand strip: league tabs, a row of crests; tapping one filters the archive to that club or brand.
+function strip(){
+  const count={};
+  DEALS.forEach(d=>[d._b,d._p].forEach(e=>{if(e)count[e.slug]=(count[e.slug]||0)+1}));
+  const top=(side,reg)=>{const c={};DEALS.forEach(d=>{const e=d[side];if(e&&(!reg||d.region===reg))c[e.slug]=(c[e.slug]||0)+1});
+    return Object.entries(c).filter(([s,n])=>n>1).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,16).map(([s])=>s)};
+  const tabs=[...L.leagues().map(l=>({name:l.name,ids:l.clubs})),{name:"Global clubs",ids:top("_p","Global")},{name:"Top brands",ids:top("_b")}].filter(t=>t.ids.length);
+  if(!tabs.length)return;
+  csTab=tabs[0].name;
+  const draw=()=>{
+    const t=tabs.find(x=>x.name===csTab)||tabs[0];
+    $("csTabs").innerHTML=tabs.map(x=>`<button type="button" class="pill${x.name===t.name?" on":""}" data-t="${esc(x.name)}" aria-pressed="${x.name===t.name}">${esc(x.name)}</button>`).join("");
+    $("csRow").innerHTML=t.ids.map(id=>{const e=L.byId(id)||L.resolve(id);const n=count[id]||0;
+      return `<button type="button" class="cr${st.ent===id?" on":""}" data-id="${esc(id)}" aria-pressed="${st.ent===id}"${n?"":" disabled"}>${L.mark(e,{px:52})}<span class="n">${esc(e.name)}</span><span class="k">${n?n+" deal"+(n===1?"":"s"):"No deals yet"}</span></button>`}).join("");
+    const on=st.ent&&(L.byId(st.ent));
+    $("csOn").hidden=!on;
+    $("csOn").innerHTML=on?`<span>Showing <b>${esc(on.name)}</b> deals</span><a class="more" href="${esc(L.page(st.ent))}">See the ${esc(on.name)} page →</a><button type="button" class="x" id="csX">Clear</button>`:"";
+  };
+  $("csTabs").onclick=e=>{const b=e.target.closest("[data-t]");if(!b)return;csTab=b.dataset.t;draw()};
+  $("csRow").onclick=e=>{const b=e.target.closest("[data-id]");if(!b||b.disabled)return;st.ent=st.ent===b.dataset.id?"":b.dataset.id;shown=PAGE;draw();render()};
+  $("csOn").onclick=e=>{if(e.target.id==="csX"){st.ent="";shown=PAGE;draw();render()}};
+  draw();$("cs").hidden=false;
 }
 function wire(){
   $("pills").onclick=e=>{const b=e.target.closest(".pill");if(!b)return;st.sport=b.dataset.s;shown=PAGE;document.querySelectorAll(".pill").forEach(p=>{p.classList.toggle("on",p===b);p.setAttribute("aria-pressed",p===b)});render()};
@@ -375,12 +431,15 @@ const featsP=fetch("features.json",{cache:"no-store"}).then(r=>r.ok?r.json():{})
     deal:f.descriptor||"",sport:f.topic||f.sport||"Feature",region:f.region||"",slug:f.slug,article:true,image:f.image,
     summary:f.article.standfirst,feature:true}))}).catch(()=>{});
 const clubsP=fetch("instagram/colours.json").then(r=>r.ok?r.json():{}).then(j=>{CLUBS=j.teams||[]}).catch(()=>{});
-fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>Promise.all([clubsP,featsP]).then(()=>data)).then(data=>{
+const logosP=L?L.load().catch(()=>{}):Promise.resolve();
+fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>Promise.all([clubsP,featsP,logosP]).then(()=>data)).then(data=>{
   SITE=data.site||{};
   ORIG=data.deals||[];
   DEALS=ORIG.slice().sort((a,b)=>sortKey(b).localeCompare(sortKey(a))||(b.lead?1:0)-(a.lead?1:0));
+  if(L)DEALS.forEach(d=>{const [b,p]=L.split(d.deal);d._b=L.resolve(b);d._p=p?L.resolve(p):null});
+  const q=new URLSearchParams(location.search).get("club");if(q&&L&&L.byId(q))st.ent=q;
   const lead=hero();if(lead)roundup(lead);
-  features();columns();follow();newsletter();filters();wire();render();
+  features();columns();follow();newsletter();filters();wire();if(L)strip();render();if(st.ent)$("archive").scrollIntoView();
 }).catch(()=>{const h=$("heroHead"),k=$("heroDek");if(h)h.textContent="Deals unavailable";if(k)k.textContent="The deals file didn't load. Refresh to try again.";wire();});
 })();
 </script>

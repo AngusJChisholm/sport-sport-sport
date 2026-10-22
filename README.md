@@ -42,6 +42,16 @@ Every Saturday and Sunday a scheduled task writes one sport business feature (an
 
 `python3 tools/build_articles.py` builds its page in `articles/` (labelled "Weekend feature"). Features show in Key stories and the "Weekend reads" row on the homepage, but never in the deal archive. `related` lists deals already in `deals.json`; they appear under the article. Every feature has a photo, and slide 1 of its Instagram carousel (and the story) always uses the same photo as the article, pulled from `features.json`. The same task queues a weekend Instagram carousel (`"kind": "feature"`), story and Reel: story 9am, carousel 10am, Reel 6pm.
 
+## Logos, brand pages and club pages
+
+Every deal shows the brand and club logos side by side in the archive. Click a logo for that brand or club's page (`profile.html?id=<slug>`): every deal they've done, who they've signed with, and a link back to the archive filtered to them. The strip above the archive (AFL, NRL, A-Leagues, NBL, BBL, Super Netball, Global clubs, Top brands) filters the archive by club or brand.
+
+- `entities.json` holds every brand and rights holder: `name`, `domain` (official website) and optional `aliases`. New names from new deals work straight away with a monogram; add a `domain` to give them a logo.
+- **Turn real logos on:** sign up free at brandfetch.com, copy the client ID from the developer dashboard and paste it into `"brandfetch": ""` at the top of `entities.json`. Brandfetch logos are loaded live on the page, as their terms require.
+- **Your own logo file:** drop it in `assets/logos/` and set `"logo": "assets/logos/<file>.png"` on that entity. A local file always wins over Brandfetch.
+- No logo found? A monogram shows instead, in club colours where `instagram/colours.json` has them.
+- Club strips are the `leagues` list at the bottom of `entities.json`.
+
 ## Your LinkedIn link
 
 Paste your LinkedIn page URL into `"linkedin": ""` at the top of `deals.json`. The Follow button and footer link switch on automatically.

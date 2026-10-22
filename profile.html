@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Deals | Sport Sport Sport</title>
+<meta name="description" content="Every sponsorship and partnership deal for this brand or club, filed by Sport Sport Sport.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:site_name" content="Sport Sport Sport">
+<meta property="og:image" content="https://sportsportsport.com.au/assets/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&display=swap">
+<style>
+/* Brand and club pages. Same look as the homepage: black masthead, white body, no radii, volt accent. */
+:root{
+  --black:#000;--white:#fff;--grey-500:#9E9E9E;--grey-800:#292929;--grey-100:#E6E6E6;
+  --volt:#D2FF3C;--ink:#111;--ink-2:#33332F;--ink-3:#5C5C57;--line:#DEDED8;--canvas:#F4F4F1;
+  --font:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --pad:clamp(16px,5vw,72px);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{background:var(--black)}
+body{margin:0;font-family:var(--font);font-weight:500;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}a:hover{color:var(--ink-3)}.dk a:hover{color:var(--white)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--volt);outline-offset:3px}
+.dk{background:var(--black);color:var(--white)}
+.wrap{max-width:1440px;margin:0 auto;padding-inline:var(--pad)}
+.disp{font-weight:800;text-transform:uppercase;letter-spacing:-.045em;line-height:.86;margin:0;transform:scaleX(.92);transform-origin:left top;width:108.7%;text-wrap:balance}
+.lbl{font-weight:800;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.mute{color:var(--grey-500)}.mute-l{color:var(--ink-3)}
+.btn{font:inherit;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;background:var(--volt);color:var(--black);border:0;border-radius:0;padding:14px 22px;cursor:pointer;white-space:nowrap;display:inline-block}
+.btn:hover{background:var(--white);color:var(--black)}
+.btn-ink{background:var(--black);color:var(--white)}.btn-ink:hover{background:#333;color:var(--white)}
+.tag{font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:6px 9px 5px;border:1px solid currentColor;line-height:1;display:inline-block}
+.tag.r{background:var(--volt);color:var(--black);border-color:var(--volt)}
+.more{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid var(--volt);padding-bottom:4px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;border-bottom:1px solid var(--grey-800)}
+.hd{display:flex;align-items:center;gap:40px;height:84px}
+.nav{display:flex;gap:28px;margin-left:auto}
+.nav a{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey-500)}
+.nav a:hover,.nav a.on{color:var(--white)}
+.logo{display:block;line-height:0}.logo img{height:42px;width:auto;display:block}.logo-ft img{height:clamp(64px,7vw,96px)}
+.sec{padding-block:clamp(48px,6vw,96px)}
+.crumbs{display:flex;flex-wrap:wrap;gap:8px;font-size:14px;color:var(--ink-3);padding-top:clamp(24px,3vw,40px)}
+.crumbs a{border-bottom:1px solid var(--line)}.crumbs a:hover{color:var(--ink);border-color:var(--ink)}
+.top{display:flex;flex-wrap:wrap;gap:clamp(28px,4vw,56px);align-items:center;padding-block:clamp(28px,4vw,48px) clamp(40px,5vw,64px);border-bottom:2px solid var(--ink)}
+.top-t{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:16px}
+.top h1{font-size:clamp(48px,7.6vw,120px)}
+.stats{display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,56px);margin-top:12px}
+.stat b{display:block;font-weight:800;font-size:clamp(30px,3.4vw,48px);letter-spacing:-.03em;line-height:1}
+.stat span{display:block;margin-top:6px;font-size:13px;color:var(--ink-3)}
+.acts{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;margin-top:8px}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:clamp(24px,3vw,36px)}
+.sh h2{font-size:clamp(36px,4.6vw,68px)}
+/* Logos (assets/logos.js). */
+.lg{--s:40px;position:relative;display:inline-flex;width:var(--s);height:var(--s);flex:none;align-items:center;justify-content:center}
+.lg .mono{display:flex;align-items:center;justify-content:center;width:100%;height:100%;border:1px solid var(--line);background:var(--canvas);color:var(--ink-2);font-weight:800;font-size:calc(var(--s)*.34);letter-spacing:-.02em;line-height:1}
+.lg.has-img .mono{display:none}
+.lg img{width:100%;height:100%;object-fit:contain;display:block}
+.lg.lg-big{width:clamp(180px,22vw,280px);height:clamp(140px,15vw,190px)}
+.lg.lg-big .mono{font-size:clamp(48px,6vw,80px)}
+.lga{display:inline-flex}.lga:hover .mono{border-color:var(--ink)}.lga:hover img{opacity:.8}
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));padding:1px 0 0 1px}
+.pt{background:var(--white);border:1px solid var(--line);margin:-1px 0 0 -1px;padding:22px 14px 18px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;min-width:0}
+.pt .lg{--s:64px}
+.pt b{font-weight:800;text-transform:uppercase;letter-spacing:-.02em;font-size:15px;line-height:1.1;overflow-wrap:anywhere}
+.pt span.k{font-size:13px;color:var(--ink-3)}
+a.pt:hover{background:var(--canvas);color:var(--ink)}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{font:inherit;font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;background:var(--white);color:var(--ink);border:1px solid var(--ink);border-radius:999px;padding:10px 16px;cursor:pointer}
+.pill:hover{background:var(--canvas)}.pill.on{background:var(--ink);color:var(--white)}
+.al{border-top:2px solid var(--ink)}
+.ar-h,.ar-r{display:grid;grid-template-columns:120px minmax(0,2.4fr) minmax(0,1fr) minmax(0,1.3fr) 96px;gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.ar-h{padding:14px 0}.ar-h span{font-weight:800;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
+.ar-r .d{font-size:14px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.ar-r b{font-weight:800;text-transform:uppercase;letter-spacing:-.03em;font-size:19px;line-height:1.1;overflow-wrap:anywhere}
+.ar-r .s{font-size:15px}.ar-r .t{font-size:15px;color:var(--ink-2)}
+.ar-r .dl{display:flex;align-items:center;gap:16px;min-width:0}
+.ar-r .dl a:not(.lga):hover b{text-decoration:underline;text-underline-offset:4px}
+.pair{display:inline-flex;align-items:center;gap:6px;flex:none}
+.pair .xx{font-weight:800;font-size:12px;color:var(--ink-3)}
+.note{padding:56px 0;font-size:18px;color:var(--ink-3)}
+footer{padding-block:clamp(56px,7vw,96px) 32px}
+.ft{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:start}
+.ft-l{display:grid;grid-template-columns:repeat(2,auto);gap:14px 64px}
+.ft-l a{font-weight:800;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+.ft-l a:hover{color:var(--volt)}
+.ft-b{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:72px;padding-top:20px;border-top:1px solid var(--grey-800);font-size:13px;color:var(--grey-500)}
+@media (max-width:1100px){.ar-h,.ar-r{grid-template-columns:100px minmax(0,2fr) minmax(0,1fr) 80px}.ar-h .c-t,.ar-r .t{display:none}}
+@media (max-width:900px){.nav{gap:18px}.hd>.btn{display:none}}
+@media (max-width:640px){.hd{height:72px;gap:16px}.nav{gap:14px}.nav a{font-size:11px;letter-spacing:.1em}.logo img{height:36px}
+.ar-h{display:none}.ar-r{grid-template-columns:minmax(0,1fr) auto;gap:6px 16px}.ar-r .dl{grid-column:1/-1;order:-1}.ar-r .d{order:-2;grid-column:1/-1}.ar-r .s{font-size:14px;color:var(--ink-3)}.ar-r .lg{--s:34px}
+.pills{flex-wrap:nowrap;overflow-x:auto;margin:0 calc(-1*var(--pad));padding:0 var(--pad);scrollbar-width:none}.pill{flex:none}
+.pg{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ft{grid-template-columns:minmax(0,1fr)}.ft-b{margin-top:48px}}
+</style>
+</head>
+<body>
+<header class="dk"><div class="wrap hd">
+<a href="index.html" class="logo" aria-label="Sport Sport Sport home"><img src="assets/wordmark-white.svg" alt="Sport Sport Sport" width="56" height="42"></a>
+<nav class="nav" aria-label="Main"><a href="index.html#latest">Latest</a><a href="index.html#global">Global</a><a href="index.html#anz">ANZ</a><a href="index.html#archive" class="on">Archive</a></nav>
+<a href="index.html#follow" class="btn">Follow</a>
+</div></header>
+
+<main class="wrap" id="main">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html#archive">Archive</a><span aria-hidden="true">/</span><span id="crKind">Partners</span><span aria-hidden="true">/</span><span id="crName" style="color:var(--ink)">Loading</span></nav>
+<section class="top" id="top">
+<div id="bigLogo"></div>
+<div class="top-t">
+<span class="lbl mute-l" id="kind"></span>
+<h1 class="disp" id="name">Loading</h1>
+<div class="stats" id="stats"></div>
+<div class="acts" id="acts"></div>
+</div>
+</section>
+
+<section class="sec" id="partners" hidden>
+<div class="sh"><div><span class="lbl mute-l" id="pLbl">Partners</span><h2 class="disp" id="pHead">Who they've signed with.</h2></div><span class="lbl mute-l" id="pCount"></span></div>
+<div class="pg" id="pGrid"></div>
+</section>
+
+<section class="sec" id="deals" hidden style="padding-top:0">
+<div class="sh"><div><span class="lbl mute-l">The record</span><h2 class="disp">Every deal.</h2></div><span class="lbl mute-l" id="dCount"></span></div>
+<div class="pills" id="pills" role="group" aria-label="Filter by sport" style="margin-bottom:28px"></div>
+<div class="al"><div class="ar-h"><span>Date</span><span>Deal</span><span>Sport</span><span class="c-t">Deal type</span><span>Region</span></div><div id="list"></div></div>
+</section>
+<p class="note" id="none" hidden>We haven't filed any deals for this one yet. <a class="more" href="index.html#archive">Back to the archive</a></p>
+</main>
+
+<footer class="dk"><div class="wrap">
+<div class="ft"><div><a href="index.html" class="logo logo-ft" aria-label="Sport Sport Sport home"><img src="assets/wordmark-white.svg" alt="Sport Sport Sport" width="120" height="90"></a>
+<p class="mute" style="margin:28px 0 0;font-size:16px;max-width:420px;line-height:1.5">All things sport business. Global &amp; ANZ. A daily round-up of the sponsorship, partnership and commercial deals moving sport.</p></div>
+<nav class="ft-l" aria-label="Footer"><a href="index.html#archive">Archive</a><a href="index.html#global">Global</a><a href="index.html#anz">ANZ</a></nav></div>
+<div class="ft-b"><span>That's the day. Same time tomorrow.</span><span>© <span id="yr">2026</span> Sport Sport Sport</span></div>
+</div></footer>
+
+<script src="assets/logos.js"></script>
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+const L=window.SSSLogos, esc=L.esc;
+const id=String(new URLSearchParams(location.search).get("id")||"").toLowerCase().replace(/[^a-z0-9-]/g,"");
+const sortKey=d=>d.date||((d.month||"0000-00")+"-00");
+const dObj=d=>d.date?new Date(d.date+"T00:00:00"):new Date((d.month||"2026-01")+"-01T00:00:00");
+const fmt=d=>d.date?dObj(d).toLocaleDateString("en-AU",{day:"2-digit",month:"short",year:"numeric"}):dObj(d).toLocaleDateString("en-AU",{month:"short",year:"numeric"});
+const art=d=>d.slug&&d.article?`articles/${encodeURIComponent(d.slug)}.html`:"";
+$("yr").textContent=new Date().getFullYear();
+
+function none(){$("name").textContent="Not found";$("crName").textContent="Not found";$("none").hidden=false;$("top").hidden=true}
+
+Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()]).then(([data])=>{
+  const all=(data.deals||[]).map(d=>{const [b,p]=L.split(d.deal);return Object.assign({},d,{_b:L.resolve(b),_p:p?L.resolve(p):null})})
+    .sort((a,b)=>sortKey(b).localeCompare(sortKey(a)));
+  const mine=all.filter(d=>(d._b&&d._b.slug===id)||(d._p&&d._p.slug===id));
+  const e=L.byId(id)||(mine[0]&&((mine[0]._b.slug===id)?mine[0]._b:mine[0]._p));
+  if(!id||!e){none();return}
+
+  const asBrand=mine.filter(d=>d._b.slug===id).length, asProp=mine.length-asBrand;
+  const kind=!mine.length?"Partner":asBrand>=asProp?"Brand":"Rights holder";
+  const regions=[...new Set(mine.map(d=>d.region).filter(Boolean))].sort();
+  const sports=[...new Set(mine.map(d=>d.sport).filter(Boolean))].sort();
+
+  document.title=`${e.name} deals | Sport Sport Sport`;
+  $("crKind").textContent=kind==="Brand"?"Brands":kind==="Rights holder"?"Clubs and properties":"Partners";
+  $("crName").textContent=e.name;
+  $("kind").textContent=[kind,...regions].join(" · ");
+  $("name").textContent=e.name;
+  $("bigLogo").innerHTML=L.mark(e,{px:280,big:true});
+  if(!mine.length){$("none").hidden=false;return}
+
+  const first=mine[mine.length-1], latest=mine[0];
+  $("stats").innerHTML=[[mine.length,mine.length===1?"deal filed":"deals filed"],[sports.length,sports.length===1?"sport":"sports"],[fmt(latest),"latest deal"],[fmt(first),"first filed"]]
+    .map(([v,l])=>`<div class="stat"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("");
+  $("acts").innerHTML=`<a class="more" href="index.html?club=${encodeURIComponent(id)}#archive">See them in the archive →</a>`+(e.domain?`<a class="more" href="https://${esc(e.domain)}" target="_blank" rel="noopener">${esc(e.domain)} ↗</a>`:"");
+
+  // Who they've signed with: the other side of each deal, most deals first.
+  const other=d=>d._b.slug===id?d._p:d._b;
+  const map=new Map();
+  mine.forEach(d=>{const o=other(d);if(!o)return;const m=map.get(o.slug)||{e:o,n:0,sports:new Set()};m.n++;if(d.sport)m.sports.add(d.sport);map.set(o.slug,m)});
+  const ps=[...map.values()].sort((a,b)=>b.n-a.n||a.e.name.localeCompare(b.e.name));
+  $("pLbl").textContent=kind==="Brand"?"Their sport partners":"Their brand partners";
+  $("pHead").textContent=kind==="Brand"?"Who they've signed with.":"Who's signed with them.";
+  $("pCount").textContent=`${ps.length} partner${ps.length===1?"":"s"}`;
+  $("pGrid").innerHTML=ps.map(m=>`<a class="pt" href="${esc(L.page(m.e.slug))}">${L.mark(m.e,{px:64})}<b>${esc(m.e.name)}</b><span class="k">${m.n>1?m.n+" deals · ":""}${esc([...m.sports].join(", "))}</span></a>`).join("");
+  $("partners").hidden=!ps.length;
+
+  // Every deal, with sport tabs when there's more than one sport.
+  let sport="All";
+  const draw=()=>{
+    const r=mine.filter(d=>sport==="All"||d.sport===sport);
+    $("dCount").textContent=`${r.length} deal${r.length===1?"":"s"}`;
+    $("list").innerHTML=r.map(d=>{const a=art(d);
+      const name=a?`<a href="${esc(a)}"><b>${esc(d.deal)}</b></a>`:(d.url&&/^https:\/\//.test(d.url)?`<a href="${esc(d.url)}" target="_blank" rel="noopener"><b>${esc(d.deal)}</b></a>`:`<b>${esc(d.deal)}</b>`);
+      return `<div class="ar-r"><span class="d">${esc(fmt(d))}</span><span class="dl"><span class="pair">${L.link(d._b,{px:40})}<span class="xx" aria-hidden="true">×</span>${L.link(d._p,{px:40})}</span>${name}</span><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.type||"")}</span><span><span class="tag r">${esc(d.region)}</span></span></div>`}).join("");
+    $("pills").innerHTML=sports.length>1?["All",...sports].map(s=>`<button type="button" class="pill${s===sport?" on":""}" data-s="${esc(s)}" aria-pressed="${s===sport}">${esc(s)}</button>`).join(""):"";
+  };
+  $("pills").onclick=ev=>{const b=ev.target.closest("[data-s]");if(!b)return;sport=b.dataset.s;draw()};
+  draw();$("deals").hidden=false;
+}).catch(none);
+})();
+</script>
+</body>
+</html>
