@@ -25,8 +25,8 @@ body{{width:1080px;height:1080px;background:#000;color:#fff;font-family:Archivo;
 .wm{{position:absolute;right:97px;bottom:84px;width:124px}}
 .v{{color:#D2FF3C}}"""
 
-def wordmark():
-    return base64.b64encode((ROOT / "assets/wordmark-white.svg").read_bytes()).decode()
+def wordmark(colour="white"):
+    return base64.b64encode((ROOT / f"assets/wordmark-{colour}.svg").read_bytes()).decode()
 
 def photo(img):
     img = str(img or "")
@@ -52,15 +52,17 @@ def slide1(s):
 <img class="wm" src="data:image/svg+xml;base64,{wordmark()}">"""
 
 def slide2(s):
+    """White slide (matches the website round-up). Volt is a fill behind black type, never text on white."""
     rows = "".join(f'<div class="r"><b>{e(o["deal"])}</b><span>{e(o["sub"])}</span></div>' for o in s["others"][:5])
     return f"""<style>{css()}
-.lab{{color:#D2FF3C}}
-.rows{{position:absolute;left:97px;right:96px;top:180px;border-top:2px solid #fff}}
-.r{{padding:27px 0 30px;border-bottom:2px solid #fff}}.r:last-child{{border-bottom:0}}
+body{{background:#fff;color:#000}}
+.lab{{background:#D2FF3C;color:#000;padding:10px 14px 8px;top:86px;left:97px}}
+.rows{{position:absolute;left:97px;right:96px;top:180px;border-top:2px solid #000}}
+.r{{padding:27px 0 30px;border-bottom:1px solid #DEDED8}}.r:last-child{{border-bottom:0}}
 .r b{{display:block;font-weight:800;font-size:47px;font-stretch:96%;line-height:52px;text-transform:uppercase}}
-.r span{{display:block;font-weight:400;font-size:27.5px;color:#C8C8C8;margin-top:14px}}</style>
+.r span{{display:block;font-weight:400;font-size:27.5px;color:#5C5C57;margin-top:14px}}</style>
 <div class="lab">Today's other deals</div><div class="rows">{rows}</div>
-<img class="wm" src="data:image/svg+xml;base64,{wordmark()}">"""
+<img class="wm" src="data:image/svg+xml;base64,{wordmark('black')}">"""
 
 def render(spec, out):
     out = Path(out); out.mkdir(parents=True, exist_ok=True)

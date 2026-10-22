@@ -92,7 +92,7 @@ def highlight(text, word):
 
 
 def counter(n, total):
-    return f'<div class="lbl" style="color:#9E9E9E">{n} / {total}</div>'
+    return f'<div class="lbl mute">{n} / {total}</div>'
 
 
 SWIPE = ('<div class="lbl" style="display:flex;align-items:center;gap:16px">Swipe'
@@ -115,11 +115,22 @@ FEED_CSS = ".frame{padding:88px;--line:#292929;--muted:#9E9E9E}" + """
 .orow span.x{display:block;font-size:1.75em;color:#C8C8C8;margin-top:.35em;line-height:1.3}
 .title-xl{font-size:150px}
 .frame>.edge{position:absolute!important;z-index:3!important}
+.mute{color:#9E9E9E}
+/* White inner slides (match the website). Volt is only ever a fill behind black type on white. */
+.frame.light{background:#FFFFFF;color:#000000;--line:#DEDED8;--muted:#5C5C57}
+.light .mute{color:#5C5C57}
+.light .nrows{border-top-color:#000000}
+.light .nrow,.light .orow{border-bottom-color:#DEDED8}
+.light .nrow .n{color:#000000}
+.light .nrow span,.light .orow span.x{color:#5C5C57}
+.light .orow .s{display:inline-block;background:#D2FF3C;color:#000000;padding:.35em .55em .25em}
+.light .v{color:#000000;background:#D2FF3C;padding:0 .06em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.light .edge.pale{border-right:3px solid #000000}
 
 """
 
 
-# ---------- feed slides (black) ----------
+# ---------- feed slides (slide 1 black/photo, inner slides white) ----------
 
 def feed_cover(c):
     ph = photo_layer(deal_image(c), FEED_W, SHADE_FEED) if (c.get("image") or c.get("deal")) else ""
@@ -135,7 +146,11 @@ def feed_cover(c):
 
 
 def edge_bar(colour):
-    return f'<div class="edge" style="background:{colour}"></div>' if colour else ""
+    """Club-colour edge. Pale colours (volt, yellows, white) get a black keyline so they hold up on white."""
+    if not colour:
+        return ""
+    pale = " pale" if HEX.match(str(colour)) and luminance(colour) > 0.6 else ""
+    return f'<div class="edge{pale}" style="background:{colour}"></div>'
 
 
 def rows_slide(label, title, rows, n, total, footer_right="", edge=None):
@@ -149,13 +164,13 @@ def rows_slide(label, title, rows, n, total, footer_right="", edge=None):
     fit = 620
     if not title:
         fit += 260
-    return f"""<div class="frame">{edge_bar(edge)}
+    return f"""<div class="frame light">{edge_bar(edge)}
 <div class="top"><div class="lbl">{esc(label)}</div>{counter(n, total)}</div>
 <div class="mid" style="{pad};flex:1;justify-content:flex-start">
 {title_html}
 <div class="nrows" data-fit="{fit}" data-min="9">{rows_html}</div>
 </div>
-<div class="foot">{wordmark('white')}<div class="lbl" style="color:#9E9E9E;letter-spacing:.14em">{esc(footer_right)}</div></div>
+<div class="foot">{wordmark('black')}<div class="lbl mute" style="letter-spacing:.14em">{esc(footer_right)}</div></div>
 </div>"""
 
 
@@ -171,12 +186,12 @@ def others_slide(others, n, total, edge=None):
         rows.append(f'<div class="orow"><div>' + (f'<span class="s">{esc(sport)}</span>' if sport else "")
                     + f'<b>{esc(o["deal"])}</b>' + (f'<span class="x">{esc(rest)}</span>' if rest else "")
                     + f"</div>{th}</div>")
-    return f"""<div class="frame">{edge_bar(edge)}
+    return f"""<div class="frame light">{edge_bar(edge)}
 <div class="top"><div class="lbl">Today's other deals</div>{counter(n, total)}</div>
 <div class="mid" style="padding-top:36px;flex:1">
 <div class="nrows" data-fit="1000" data-min="8" style="font-size:19px">{"".join(rows)}</div>
 </div>
-<div class="foot">{wordmark('white')}<div class="lbl" style="color:#9E9E9E;letter-spacing:.14em">{esc(SITE_LABEL)}</div></div>
+<div class="foot">{wordmark('black')}<div class="lbl mute" style="letter-spacing:.14em">{esc(SITE_LABEL)}</div></div>
 </div>"""
 
 
@@ -194,37 +209,38 @@ def feed_rows_slide(label, title, rows, n, total, footer_right=""):
         f'<div class="row"><b>{esc(r.get("main"))}</b>' + (f'<span>{esc(r.get("sub"))}</span>' if r.get("sub") else "") + "</div>"
         for r in rows)
     title_html = f'<h2 class="disp" data-fit="330" style="font-size:120px">{esc(title)}</h2>' if title else ""
-    return f"""<div class="frame">
+    return f"""<div class="frame light">
 <div style="display:flex;flex-direction:column;gap:48px">
 <div class="top"><div class="lbl">{esc(label)}</div>{counter(n, total)}</div>
 {title_html}
 <div class="rows" data-fit="{760 if title else 1000}" data-min="9">{rows_html}</div>
 </div>
-<div class="foot">{wordmark('white')}<div class="lbl" style="color:#9E9E9E;letter-spacing:.14em">{esc(footer_right)}</div></div>
+<div class="foot">{wordmark('black')}<div class="lbl mute" style="letter-spacing:.14em">{esc(footer_right)}</div></div>
 </div>"""
 
 
 def feed_close(n, total):
-    return f"""<div class="frame">
+    return f"""<div class="frame light">
 <div class="top"><div class="lbl">Sport Sport Sport</div>{counter(n, total)}</div>
 <div style="display:flex;flex-direction:column;gap:40px">
 <h2 class="disp" style="font-size:168px">All things <span class="v">sport</span> business.</h2>
 <div class="sup">Global &amp; ANZ deals, every weekday</div>
 </div>
-<div class="foot">{wordmark('white')}<div style="background:{VOLT};color:#000;font-weight:800;font-size:26px;letter-spacing:.14em;text-transform:uppercase;padding:20px 28px">Follow for daily deals</div></div>
+<div class="foot">{wordmark('black')}<div style="background:{VOLT};color:#000;font-weight:800;font-size:26px;letter-spacing:.14em;text-transform:uppercase;padding:20px 28px">Follow for daily deals</div></div>
 </div>"""
 
 
 def week_item(item, idx, n, total, label="The week in deals"):
     ph = photo_layer(deal_image(item), FEED_W, SHADE_FEED)
-    return f"""<div class="frame{' photo' if ph else ''}">{ph}
+    sub_col = "#E6E6E6" if ph else "#33332F"
+    return f"""<div class="frame{' photo' if ph else ' light'}">{ph}
 <div class="top"><div class="lbl">{esc(label)}</div>{counter(n, total)}</div>
 <div style="display:flex;flex-direction:column;gap:36px">
 <div class="disp v" style="font-size:220px">{idx:02d}</div>
 <h2 class="disp" data-fit="420" style="font-size:132px">{esc(item['deal'])}</h2>
-<div style="font-size:32px;line-height:1.4;color:#E6E6E6">{esc(item.get('sub',''))}</div>
+<div style="font-size:32px;line-height:1.4;color:{sub_col}">{esc(item.get('sub',''))}</div>
 </div>
-<div class="foot">{wordmark('white')}<div class="lbl" style="color:#9E9E9E">{esc(item.get('sport',''))}</div></div>
+<div class="foot">{wordmark('white' if ph else 'black')}<div class="lbl mute">{esc(item.get('sport',''))}</div></div>
 </div>"""
 
 
