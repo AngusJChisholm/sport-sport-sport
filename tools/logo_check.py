@@ -29,6 +29,16 @@ with cf.ThreadPoolExecutor(8) as ex:
     rep["checked"] = dict(ex.map(check, [s for s, v in ents.items() if v.get("domain") and not v.get("logo")]))
     targets = only or [s for s, v in ents.items() if not v.get("domain") and not v.get("logo")]
     rep["search"] = dict(ex.map(search, targets))
+# Candidate websites to try for each entity (tools/logo_candidates.json): records what each returns.
+import os
+if os.path.exists("tools/logo_candidates.json"):
+    cand = json.load(open("tools/logo_candidates.json"))
+    def trycand(item):
+        slug, doms = item; res = {}
+        for d in doms:
+            res[d] = {t: status(f"https://cdn.brandfetch.io/domain/{urllib.parse.quote(d)}/w/128/h/128/fallback/404/type/{t}?c={cid}")[0] for t in ("symbol", "icon", "logo")}
+        return slug, res
+    with cf.ThreadPoolExecutor(8) as ex: rep["candidates"] = dict(ex.map(trycand, cand.items()))
 json.dump(rep, open("logo-report.json", "w"), indent=1, ensure_ascii=False)
 bad = [s for s, v in rep["checked"].items() if all(c != 200 for c in v.values())]
 print("checked", len(rep["checked"]), "no logo at all:", len(bad)); print("searched", len(rep["search"]))
