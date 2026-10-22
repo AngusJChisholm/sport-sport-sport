@@ -29,7 +29,7 @@ window.SSSLogos=(function(){
     if(!name)return null;
     const slug=LOOK[norm(name)]||slugify(name);
     const x=ENT[slug]||{name};
-    return {slug,name:x.name||name,domain:okDomain(String(x.domain||""))?x.domain:"",logo:okFile(String(x.logo||""))?x.logo:"",aliases:x.aliases||[]};
+    return {slug,name:x.name||name,domain:okDomain(String(x.domain||""))?x.domain:"",logo:okFile(String(x.logo||""))?x.logo:"",bf:Array.isArray(x.bf)?x.bf:null,aliases:x.aliases||[]};
   }
   // One side of a deal can name several organisations: "Harvey Norman / Westpac / KFC".
   const many=name=>String(name||"").split(/\s+\/\s+/).map(s=>s.trim()).filter(Boolean).map(resolve);
@@ -67,14 +67,19 @@ window.SSSLogos=(function(){
     let src="",steps="";
     if(e.logo){src=e.logo}
     else if(BF&&e.domain){
-      const order=big?["logo","symbol","icon"]:["symbol","icon","logo"];
-      src=bfUrl(e.domain,order[0],px*2);steps=order.slice(1).map(t=>bfUrl(e.domain,t,px*2)).concat(favUrl(e.domain)).join(" ");
+      // e.bf lists the logo types Brandfetch is known to have (from the logo check), so most logos are one request.
+      const order=(big?["logo","symbol","icon"]:["symbol","icon","logo"]).filter(t=>!e.bf||e.bf.includes(t));
+      const urls=order.map(t=>bfUrl(e.domain,t,px*2)).concat(favUrl(e.domain));
+      src=urls[0];steps=urls.slice(1).join(" ");
     }
     else if(e.domain){src=favUrl(e.domain)}
     const img=src?`<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="strict-origin-when-cross-origin"${steps?` data-next="${esc(steps)}"`:""} onload="SSSLogos.ok(this)" onerror="SSSLogos.fail(this)">`:"";
     return `<span class="lg${img?" has-img":""}${big?" lg-big":""}">${mono}${img}</span>`;
   }
   function fail(img){
+    // Retry once after a short pause first: a busy page can be briefly rate-limited.
+    if(!img.dataset.retried){img.dataset.retried="1";const u=img.src;setTimeout(()=>{img.src="";img.src=u},1200+Math.random()*1800);return}
+    img.dataset.retried="";
     const next=(img.dataset.next||"").split(" ").filter(Boolean);
     if(next.length){img.dataset.next=next.slice(1).join(" ");img.src=next[0];return}
     const box=img.parentElement;img.remove();if(box)box.classList.remove("has-img");
