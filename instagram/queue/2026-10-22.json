@@ -5,43 +5,47 @@
   "kind": "daily",
   "cover": {
    "tag": "Deal of the day",
-   "region": "Global",
-   "headline": "Yoghurt takes the WTA Finals.",
-   "highlight": "Yoghurt",
-   "deal": "FAGE x WTA Finals",
-   "descriptor": "Title partner to 2029"
+   "region": "ANZ",
+   "headline": "Hahn pours into the AO.",
+   "highlight": "Hahn",
+   "deal": "Hahn x Australian Open",
+   "descriptor": "Official beer, multi-year"
   },
   "deal": {
-   "title": "Four Finals, one name.",
+   "title": "The AO's official beer.",
    "rows": [
     {
-     "main": "Title partner",
-     "sub": "Plus official yoghurt partner of the WTA"
+     "main": "Official Beer",
+     "sub": "AO and the Australian Summer of Tennis"
     },
     {
-     "main": "Indian Wells 2026",
-     "sub": "8 to 15 November"
+     "main": "Hahn House",
+     "sub": "Two storeys and a beer garden on Grand Slam Oval"
     },
     {
-     "main": "Charlotte 2027-29",
-     "sub": "The Finals' new home for three editions"
+     "main": "More from Lion",
+     "sub": "Stone & Wood at Garden Square, Four Pillars at Kia Arena"
     }
    ]
   },
   "why": {
-   "title": "An anchor for the move.",
+   "title": "A whole summer to pour.",
    "points": [
     {
-     "main": "Locked in early",
-     "sub": "Named partner before Charlotte's first ball"
+     "main": "Beyond Melbourne Park",
+     "sub": "Pop-up pickleball courts around the country"
     },
     {
-     "main": "Year-round play",
-     "sub": "Marketing and digital activity from 2027"
+     "main": "Summer slot filled",
+     "sub": "Joins the Hahn Australia Cup and the Wallabies"
     }
    ]
   },
   "others": [
+   {
+    "deal": "FAGE x WTA Finals",
+    "sub": "Tennis - Title partner to 2029"
+   },
    {
     "deal": "Isuzu x Rugby World Cup 2027",
     "sub": "Rugby union - Official automotive partner"
@@ -51,19 +55,32 @@
     "sub": "Motorsport - Official AI finance partner"
    },
    {
-    "deal": "Northwest Bank x Columbus Crew",
-    "sub": "Football - Partnership and gate naming"
+    "deal": "Academy Sports + Outdoors x HYROX North America",
+    "sub": "Endurance - Official partner"
+   },
+   {
+    "deal": "Introl x Racing Bulls",
+    "sub": "Motorsport - Data centre partner"
    }
   ]
  },
  "stories": [
   {
    "tag": "Deal of the day",
+   "deal": "Hahn x Australian Open",
+   "property": "Australian Open",
+   "points": [
+    "Official Beer, multi-year",
+    "Hahn House on Grand Slam Oval",
+    "AO and Summer of Tennis"
+   ]
+  },
+  {
+   "tag": "Also today",
    "deal": "FAGE x WTA Finals",
    "property": "WTA Finals",
    "points": [
     "Title partner through 2029",
-    "Official yoghurt partner of the WTA",
     "Indian Wells, then Charlotte"
    ]
   },
@@ -87,14 +104,23 @@
   },
   {
    "tag": "Also today",
-   "deal": "Northwest Bank x Columbus Crew",
-   "property": "Columbus Crew",
+   "deal": "Academy Sports + Outdoors x HYROX North America",
+   "property": "HYROX North America",
    "points": [
-    "New partnership",
-    "Northwest Bank Gate opens"
+    "Official partner, multiyear",
+    "Title sponsor of HYROX Houston 2027"
+   ]
+  },
+  {
+   "tag": "Also today",
+   "deal": "Introl x Racing Bulls",
+   "property": "Racing Bulls",
+   "points": [
+    "Data centre deployment partner",
+    "On the nose of the car"
    ]
   }
  ],
- "caption": "FAGE has put its name on the biggest week in women's tennis.\n\nIt's the new title partner of the WTA Finals and official yoghurt partner of the WTA, through 2029. It starts at Indian Wells next month, then follows the Finals to Charlotte from 2027. No fee was disclosed.\n\nAlso today: Isuzu x Rugby World Cup 2027, Airwallex x McLaren, Northwest Bank x Columbus Crew.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
- "reel_caption": "FAGE is the new name on the WTA Finals.\n\nPlus three more deals from the last 48 hours.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+ "caption": "Hahn is the new Official Beer of the Australian Open.\n\nLion's flagship beer signs a multi-year deal covering the AO and the Australian Summer of Tennis, with a two-storey Hahn House on Grand Slam Oval. Stone & Wood and Four Pillars come along for the ride. No fee or length disclosed.\n\nAlso today: FAGE x WTA Finals, Isuzu x Rugby World Cup 2027, Airwallex x McLaren, Academy Sports + Outdoors x HYROX North America, Introl x Racing Bulls.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "reel_caption": "Hahn is the AO's new official beer.\n\nPlus five more deals from the last 48 hours.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
 }

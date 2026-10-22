@@ -5,30 +5,40 @@
  },
  "deals": [
   {
+   "date": "2026-10-22",
+   "added": "2026-10-22",
+   "deal": "Hahn × Australian Open",
+   "sport": "Tennis",
+   "type": "Official partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Hahn pours into the AO.",
+   "summary": "Lion's Hahn is the Official Beer of the Australian Open and the Australian Summer of Tennis in a multi-year deal, with a two-storey Hahn House on Grand Slam Oval.",
+   "url": "https://www.tennis.com.au/fan-zone/media-releases/2026/10/22/game-set-beer-hahn-joins-the-australian-open-as-the-official-beer-partner",
+   "image": "assets/img/2026-10-22-hahn-australian-open.jpg",
+   "imageCredit": "Tennis Australia",
+   "article": {
+    "standfirst": "Hahn has landed the biggest pour of the Australian summer.",
+    "body": [
+     "Tennis Australia has named Lion's Hahn the Official Beer of the Australian Open and the Australian Summer of Tennis in a multi-year deal announced on Thursday 22 October. Neither side has put a length or a number on it, so we won't either.",
+     "The centrepiece is Hahn House, a two-storey venue with a beer garden on Grand Slam Oval, which Tennis Australia is pitching as a new social hub for the tournament. Lion is bringing more of its portfolio too: Stone & Wood takes over Garden Square, and Four Pillars runs a new gin bar at Kia Arena.",
+     "Away from Melbourne Park, Hahn plans limited-edition packaging, competitions, tennis merch and surprise experiences, plus pop-up pickleball courts and racket-shaped drinks trays around the country. That reach matters. The AO is a fortnight, but the Summer of Tennis gives Hahn a whole season of pub and bottle-shop activity to hang it on.",
+     "It also rounds out a big sporting slate for the brand. Hahn already holds the naming rights to the Hahn Australia Cup and is the official beer of the Wallabies, so the AO gives Lion a marquee summer property to sit alongside its football and rugby plays.",
+     "What to watch: how Hahn House lands with AO crowds in January, and whether Lion stacks more of its brands across the Summer of Tennis events outside Melbourne."
+    ],
+    "close": "Summer's sorted: the AO has picked its beer."
+   },
+   "slug": "2026-10-22-hahn-australian-open"
+  },
+  {
    "date": "2026-10-20",
    "added": "2026-10-22",
    "deal": "FAGE × WTA Finals",
    "sport": "Tennis",
    "type": "Title sponsorship",
    "region": "Global",
-   "lead": true,
-   "headline": "Yoghurt takes the WTA Finals.",
    "summary": "FAGE is title partner of the WTA Finals and official yoghurt partner of the WTA through 2029, starting at Indian Wells in 2026 before the event moves to Charlotte.",
-   "url": "https://www.wtatennis.com/news/4594846/fage-named-title-partner-of-wta-finals-through-2029",
-   "image": "https://images.unsplash.com/photo-1777761267146-ba0515a124cd",
-   "imageCredit": "Unsplash",
-   "article": {
-    "standfirst": "A yoghurt brand now has its name on the biggest week in women's tennis.",
-    "body": [
-     "FAGE has been named title partner of the WTA Finals in a multi-year deal that runs through 2029. It also becomes the official yoghurt partner of the WTA. The WTA announced it on Tuesday 20 October, US time. No fee has been disclosed, so we won't guess at one.",
-     "The timing is the story. The Finals are on the move: this year's edition heads to Indian Wells, California, from 8 to 15 November, and from 2027 the event settles in Charlotte, North Carolina, for three editions. FAGE's name sits across all four: one stopover in the desert and three in the new home.",
-     "That matters for the WTA. Moving a flagship event is a commercial risk, and a title partner locked in before the first ball in Charlotte gives the tour something to build the rest of its sales around. The deal was brokered by THE·TEAM's US rights sales group working with SPORTFIVE, and the rights cover broadcast and venue branding, sampling, fan experiences and hospitality, with year-round marketing planned from 2027.",
-     "For FAGE it's a clean fit. Women's tennis skews toward the health-conscious, well-off shopper that a premium yoghurt brand chases in supermarket aisles, and a title deal puts the brand in every broadcast mention of the event rather than on a courtside board.",
-     "What to watch: who fills the rest of the Charlotte partner roster, and whether more food and drink brands follow FAGE into title rights across women's sport. If the US move lands well, the next round of WTA deals should get easier to sell."
-    ],
-    "close": "The Finals have a new home and a new name to go with it."
-   },
-   "slug": "2026-10-22-fage-wta-finals"
+   "url": "https://www.wtatennis.com/news/4594846/fage-named-title-partner-of-wta-finals-through-2029"
   },
   {
    "date": "2026-10-21",
@@ -49,6 +59,26 @@
    "region": "ANZ",
    "summary": "Airwallex steps up from technology partner, a deal that began in 2024, to official AI finance partner of the McLaren F1 team from January 2027.",
    "url": "https://financialit.net/news/infrastructure/mclaren-mastercard-formula-1-team-designates-airwallex-official-ai-finance"
+  },
+  {
+   "date": "2026-10-21",
+   "deal": "Academy Sports + Outdoors × HYROX North America",
+   "sport": "Endurance",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "The US retailer is an official partner of HYROX North America in a multiyear deal, building to title sponsorship of HYROX Houston in spring 2027.",
+   "url": "https://prnewswire.com/news-releases/academy-sports--outdoors-signs-on-as-official-partner-of-hyrox-north-america-302914203.html",
+   "added": "2026-10-22"
+  },
+  {
+   "date": "2026-10-20",
+   "deal": "Introl × Racing Bulls",
+   "sport": "Motorsport",
+   "type": "Technology partner",
+   "region": "Global",
+   "summary": "AI infrastructure firm Introl is Racing Bulls' data centre deployment partner, with its name on the nose of the car.",
+   "url": "https://www.visacashapprb.com/int-en/2026-introl-partnership-announcement",
+   "added": "2026-10-22"
   },
   {
    "date": "2026-10-21",
@@ -139,6 +169,116 @@
    "region": "Global",
    "summary": "Kohler India was an official partner of the DP World India Championship at Delhi Golf Club, running a fan-zone putting challenge.",
    "url": "https://thebridge.in/sports-market/kohler-joins-dp-world-india-championship-as-official-partner-58089"
+  },
+  {
+   "date": "2026-10-21",
+   "deal": "Ara Institute of Canterbury × Hagley Oval",
+   "sport": "Cricket",
+   "type": "Naming rights",
+   "region": "ANZ",
+   "summary": "A naming rights deal with the Canterbury Cricket Trust creates the Ara Stand, Ara Tunnel and Ara Towers at Christchurch's Hagley Oval.",
+   "url": "https://www.ausleisure.com.au/news/ara-institute-of-canterbury-acquires-naming-rights-for-christchurchs-hagley-oval",
+   "added": "2026-10-22"
+  },
+  {
+   "date": "2026-10-20",
+   "deal": "Hitachi × Team Penske",
+   "sport": "Motorsport",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Hitachi extends its IndyCar sponsorship with Team Penske, staying on the front wings of all three cars. A partnership dating to 2012.",
+   "url": "https://www.prnewswire.com/news-releases/hitachi-and-team-penske-extend-partnership-connecting-championship-racing-to-the-technology-powering-penskes-fleet-302913710.html",
+   "added": "2026-10-22"
+  },
+  {
+   "date": "2026-10-20",
+   "deal": "General Atlantic × NFL 32 Equity",
+   "sport": "NFL",
+   "type": "Investment",
+   "region": "Global",
+   "summary": "Growth investor General Atlantic and the NFL's investment arm 32 Equity form a global partnership to invest across the sports industry.",
+   "url": "https://www.generalatlantic.com/media-article/general-atlantic-and-nfls-32-equity-announce-global-strategic-partnership/",
+   "added": "2026-10-22"
+  },
+  {
+   "date": "2026-10-19",
+   "deal": "The Home Depot × Atlanta Hawks",
+   "sport": "Basketball",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Multiyear deal as official home improvement partner of the Hawks and State Farm Arena, including naming of the Hawks Fan Zone.",
+   "url": "https://corporate.homedepot.com/news/partnerships/atlanta-hawks-and-home-depot-announce-multiyear-partnership",
+   "added": "2026-10-22"
+  },
+  {
+   "date": "2026-10-19",
+   "deal": "Fanatics × Atlanta Hawks",
+   "sport": "Basketball",
+   "type": "Retail partner",
+   "region": "Global",
+   "summary": "Fanatics takes over the Hawks' online and arena retail and will open a flagship store at Centennial Yards.",
+   "url": "https://www.axios.com/local/atlanta/2026/10/19/atlanta-hawks-centennial-yards-fanatics-store",
+   "added": "2026-10-22"
+  },
+  {
+   "date": "2026-10-19",
+   "deal": "Padeltek × Aston Martin",
+   "sport": "Motorsport",
+   "type": "Licensing",
+   "region": "Global",
+   "summary": "Padeltek and the Aston Martin Aramco F1 team launch co-branded padel rackets, with pickleball gear to follow in 2027.",
+   "url": "https://www.astonmartinf1.com/en-GB/news/announcement/aston-martin-aramco-collaborate-with-padeltek",
+   "added": "2026-10-22"
+  },
+  {
+   "date": "2026-10-19",
+   "deal": "Zafiro Palace Alcudia × HotelPlanner Tour",
+   "sport": "Golf",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Official hotel of the HotelPlanner Tour's 2026 Grand Final in Mallorca.",
+   "url": "https://www.europeantour.com/hotelplanner-tour/news/articles/detail/zafiro-palace-alcudia-announced-as-official-hotel-for-grand-final/",
+   "added": "2026-10-22"
+  },
+  {
+   "date": "2026-10-19",
+   "deal": "Sanrio × F1 Academy",
+   "sport": "Motorsport",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Hello Kitty and Friends return to F1 Academy's Las Vegas finale with a Sanrio fan zone in the paddock.",
+   "url": "https://www.licenseglobal.com/entertainment/sanrio-f1-academy-partner-to-bring-hello-kitty-and-friends-back-to-las-vegas",
+   "added": "2026-10-22"
+  },
+  {
+   "date": "2026-10-16",
+   "deal": "DAZN × EPCR",
+   "sport": "Rugby union",
+   "type": "Broadcast rights",
+   "region": "Global",
+   "summary": "DAZN takes Champions Cup and Challenge Cup rights in a range of international markets for 2026-27 and 2027-28.",
+   "url": "https://www.epcrugby.com/champions-cup/content/epcr-and-dazn-agree-international-broadcast-partnership-for-investec-champions-cup-and-epcr-challenge-cup",
+   "added": "2026-10-22"
+  },
+  {
+   "date": "2026-10-15",
+   "deal": "Öhlins × Audi F1",
+   "sport": "Motorsport",
+   "type": "Official supplier",
+   "region": "Global",
+   "summary": "Öhlins is confirmed as Audi's F1 suspension supplier, formalising an engineering partnership.",
+   "url": "https://www.formulareport.com/articles/audi-extends-long-running-partnership-into-formula-1-era",
+   "added": "2026-10-22"
+  },
+  {
+   "date": "2026-10-15",
+   "deal": "viagogo × Formula Drift",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "viagogo is Formula Drift's official open distribution partner, selling VIP packages for the Long Beach finale.",
+   "url": "https://newsroom.viagogo.com/2026/10/15/getting-closer-to-the-action-viagogo-partners-with-formula-drift-to-unlock-exclusive-fan-experiences/",
+   "added": "2026-10-22"
   },
   {
    "date": "2026-10-20",
