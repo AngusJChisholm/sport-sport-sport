@@ -22,6 +22,8 @@ SITE_LABEL = "Full archive - link in bio"
 
 FEED_W, FEED_H = 1080, 1350
 STORY_W, STORY_H = 1080, 1920
+RENDER_STORIES = False  # Angus switched off stories and Reels
+RENDER_REELS = False
 
 
 def esc(s):
@@ -506,7 +508,9 @@ def render(date):
             print("Warning: today's feature has no photo in features.json - slide 1 will be plain black")
     jobs = [(f"feed-{i}.jpg", page(s, FEED_W, FEED_H, "#000000", "#FFFFFF", FEED_CSS), FEED_W, FEED_H)
             for i, s in enumerate(build_feed(q["feed"]), 1)]
-    jobs += [(f"story-{i}.jpg", story(s), STORY_W, STORY_H) for i, s in enumerate(q.get("stories", []), 1)]
+    # Stories and Reels switched off (22 Oct 2026): carousels only.
+    if RENDER_STORIES:
+        jobs += [(f"story-{i}.jpg", story(s), STORY_W, STORY_H) for i, s in enumerate(q.get("stories", []), 1)]
     if q.get("evergreen"):
         jobs += [(f"evergreen-{i}.jpg", page(s, FEED_W, FEED_H, "#000000", "#FFFFFF", FEED_CSS), FEED_W, FEED_H)
                  for i, s in enumerate(build_evergreen(q["evergreen"]), 1)]
@@ -523,7 +527,7 @@ def render(date):
 
     feed_files = [j[0] for j in jobs if j[0].startswith("feed-")]
     reel = None
-    if q.get("reel", True) and feed_files:
+    if RENDER_REELS and q.get("reel", True) and feed_files:
         try:
             make_reel([out / f for f in feed_files], out / "reel.mp4")
             reel = "reel.mp4"

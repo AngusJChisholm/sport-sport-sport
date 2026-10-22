@@ -172,3 +172,7 @@ Send Angus the post, then a "Today's deals" block with one short snippet for eve
 - Verified facts only, same voice rules as the post. No figures or lengths that failed the accuracy gate.
 - End with: "Every deal, filed: sportsportsport.com.au"
 - Angus tags the pages himself, so don't look up or list LinkedIn page URLs.
+
+### 4. No Instagram stories or Reels
+Switched off for good (22 Oct 2026). Queue files carry the feed carousel and caption only: no "stories",
+no "reel_caption", no "story_time". The renderer and poster skip both.
