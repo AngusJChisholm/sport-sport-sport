@@ -130,7 +130,8 @@
    "domain": "alibaba.com"
   },
   "alliance-broadband": {
-   "name": "Alliance Broadband"
+   "name": "Alliance Broadband",
+   "domain": "alliancebroadband.co.in"
   },
   "allwyn": {
    "name": "Allwyn",
@@ -145,7 +146,8 @@
    "domain": "alpinecars.com"
   },
   "altos": {
-   "name": "Altos"
+   "name": "Altos",
+   "domain": "altostequila.com"
   },
   "american-express": {
    "name": "American Express",
@@ -954,7 +956,8 @@
    "name": "Fundamental"
   },
   "gac": {
-   "name": "GAC"
+   "name": "GAC",
+   "domain": "gacmotor.com"
   },
   "garrett-smithley": {
    "name": "Garrett Smithley"
@@ -1563,7 +1566,8 @@
    "domain": "mycar.com.au"
   },
   "myplace": {
-   "name": "MyPlace"
+   "name": "MyPlace",
+   "domain": "myplace.com.au"
   },
   "nambawan-super": {
    "name": "Nambawan Super",
@@ -1846,7 +1850,8 @@
    "domain": "priceline.com.au"
   },
   "ptp": {
-   "name": "PTP"
+   "name": "PTP",
+   "domain": "ptpfit.com"
   },
   "public-investment-fund": {
    "name": "Public Investment Fund",
@@ -2473,14 +2478,16 @@
    "domain": "xgames.com"
   },
   "xfm": {
-   "name": "XFM"
+   "name": "XFM",
+   "domain": "xfm.com.au"
   },
   "xtb": {
    "name": "XTB",
    "domain": "xtb.com"
   },
   "y-series": {
-   "name": "Y Series"
+   "name": "Y Series",
+   "domain": "yalumba.com"
   },
   "yelophant": {
    "name": "Yelophant"
