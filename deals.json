@@ -6,6 +6,142 @@
  "deals": [
   {
    "date": "2026-10-20",
+   "added": "2026-10-22",
+   "deal": "FAGE × WTA Finals",
+   "sport": "Tennis",
+   "type": "Title sponsorship",
+   "region": "Global",
+   "lead": true,
+   "headline": "Yoghurt takes the WTA Finals.",
+   "summary": "FAGE is title partner of the WTA Finals and official yoghurt partner of the WTA through 2029, starting at Indian Wells in 2026 before the event moves to Charlotte.",
+   "url": "https://www.wtatennis.com/news/4594846/fage-named-title-partner-of-wta-finals-through-2029",
+   "image": "https://images.unsplash.com/photo-1777761267146-ba0515a124cd",
+   "imageCredit": "Unsplash",
+   "article": {
+    "standfirst": "A yoghurt brand now has its name on the biggest week in women's tennis.",
+    "body": [
+     "FAGE has been named title partner of the WTA Finals in a multi-year deal that runs through 2029. It also becomes the official yoghurt partner of the WTA. The WTA announced it on Tuesday 20 October, US time. No fee has been disclosed, so we won't guess at one.",
+     "The timing is the story. The Finals are on the move: this year's edition heads to Indian Wells, California, from 8 to 15 November, and from 2027 the event settles in Charlotte, North Carolina, for three editions. FAGE's name sits across all four: one stopover in the desert and three in the new home.",
+     "That matters for the WTA. Moving a flagship event is a commercial risk, and a title partner locked in before the first ball in Charlotte gives the tour something to build the rest of its sales around. The deal was brokered by THE·TEAM's US rights sales group working with SPORTFIVE, and the rights cover broadcast and venue branding, sampling, fan experiences and hospitality, with year-round marketing planned from 2027.",
+     "For FAGE it's a clean fit. Women's tennis skews toward the health-conscious, well-off shopper that a premium yoghurt brand chases in supermarket aisles, and a title deal puts the brand in every broadcast mention of the event rather than on a courtside board.",
+     "What to watch: who fills the rest of the Charlotte partner roster, and whether more food and drink brands follow FAGE into title rights across women's sport. If the US move lands well, the next round of WTA deals should get easier to sell."
+    ],
+    "close": "The Finals have a new home and a new name to go with it."
+   },
+   "slug": "2026-10-22-fage-wta-finals"
+  },
+  {
+   "date": "2026-10-21",
+   "added": "2026-10-22",
+   "deal": "Isuzu × Rugby World Cup 2027",
+   "sport": "Rugby union",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Isuzu Motors is World Rugby's official automotive partner for the men's Rugby World Cup 2027 and women's Rugby World Cup 2029, both in Australia.",
+   "url": "https://ministryofsport.com/isuzu-motors-announce-partnership-with-rugby-world-cup-australia-2027-and-2029/"
+  },
+  {
+   "date": "2026-10-21",
+   "added": "2026-10-22",
+   "deal": "Airwallex × McLaren",
+   "sport": "Motorsport",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Airwallex steps up from technology partner, a deal that began in 2024, to official AI finance partner of the McLaren F1 team from January 2027.",
+   "url": "https://financialit.net/news/infrastructure/mclaren-mastercard-formula-1-team-designates-airwallex-official-ai-finance"
+  },
+  {
+   "date": "2026-10-21",
+   "added": "2026-10-22",
+   "deal": "Northwest Bank × Columbus Crew",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Northwest Bank has announced a partnership with the MLS club, including the new Northwest Bank Gate at ScottsMiracle-Gro Field.",
+   "url": "https://www.marketscreener.com/news/northwest-bancshares-columbus-crew-welcomes-northwest-bank-as-official-partner-cuts-ribbon-on-nor-ce785cd9da8ef726"
+  },
+  {
+   "date": "2026-10-22",
+   "added": "2026-10-22",
+   "deal": "Leica × Formula 1",
+   "sport": "Motorsport",
+   "type": "Licensing",
+   "region": "Global",
+   "summary": "Leica and Formula 1 have a licensing deal behind a Leica Q3 43 Formula 1 Edition camera.",
+   "url": "https://ministryofsport.com/formula-1-and-leica-camera-announce-licensing-deal-with-limited-edition-leica-q3-43/"
+  },
+  {
+   "date": "2026-10-16",
+   "added": "2026-10-22",
+   "deal": "Hyundai × Fremantle",
+   "sport": "AFL",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Hyundai is premier partner of Fremantle's AFL and AFLW teams for three years, on the upper back of both guernseys. Its third AFL club after Carlton and Brisbane.",
+   "url": "https://www.fremantlefc.com.au/news/2151936/fremantle-dockers-welcome-hyundai-as-premier-partner"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-22",
+   "deal": "Klaviyo × Williams",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Klaviyo is the Atlassian Williams F1 Team's official B2C CRM partner in a multi-year deal from 2027, with branding on the car, suits and kit.",
+   "url": "https://www.klaviyo.com/blog/atlassian-williams-f1-partnership"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-22",
+   "deal": "ThreatLocker × Racing Bulls",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "ThreatLocker is Racing Bulls' official cybersecurity partner from the US Grand Prix, on the mirrors, bargeboards, helmets and suits.",
+   "url": "https://www.threatlocker.com/press-release/threatlocker-joins-visa-cash-app-racing-bulls-as-official-cybersecurity-partner"
+  },
+  {
+   "date": "2026-10-16",
+   "added": "2026-10-22",
+   "deal": "Ford Australia × Newcastle Jets",
+   "sport": "Football",
+   "type": "Sleeve sponsorship",
+   "region": "ANZ",
+   "summary": "Ford Australia joins the Jets as a major partner, on the sleeve of the A-League Men's jersey for 2026/27.",
+   "url": "https://newcastlejetsfc.com.au/news/ford-australia-to-drive-the-jets-further-in-2026-27/"
+  },
+  {
+   "date": "2026-10-15",
+   "added": "2026-10-22",
+   "deal": "Carnival Cruise Line × Dolphins",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Carnival is the Dolphins' official cruise line partner, membership partner and presenting partner of the matchday Mini League program.",
+   "url": "https://www.dolphinsnrl.com.au/news/2026/10/15/welcome-aboard-carnival/"
+  },
+  {
+   "date": "2026-10-15",
+   "added": "2026-10-22",
+   "deal": "21X Sports × Detroit Pistons",
+   "sport": "Basketball",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "AI engagement firm 21X's new sports unit is an official partner of the Pistons.",
+   "url": "https://finance.yahoo.com/media-advertising/articles/21x-sports-named-official-partner-110000161.html"
+  },
+  {
+   "date": "2026-10-19",
+   "added": "2026-10-22",
+   "deal": "Kohler × DP World India Championship",
+   "sport": "Golf",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Kohler India was an official partner of the DP World India Championship at Delhi Golf Club, running a fan-zone putting challenge.",
+   "url": "https://thebridge.in/sports-market/kohler-joins-dp-world-india-championship-as-official-partner-58089"
+  },
+  {
+   "date": "2026-10-20",
    "added": "2026-10-21",
    "deal": "Woolworths × Rugby World Cup 2027",
    "sport": "Rugby union",
