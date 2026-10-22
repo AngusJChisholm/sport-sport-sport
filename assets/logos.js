@@ -65,7 +65,7 @@ window.SSSLogos=(function(){
     let src="",steps="";
     if(e.logo){src=e.logo}
     else if(BF&&e.domain){
-      const order=big?["logo","symbol","icon"]:["symbol","icon"];
+      const order=big?["logo","symbol","icon"]:["symbol","icon","logo"];
       src=bfUrl(e.domain,order[0],px*2);steps=order.slice(1).map(t=>bfUrl(e.domain,t,px*2)).join(" ");
     }
     const img=src?`<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="strict-origin-when-cross-origin"${steps?` data-next="${esc(steps)}"`:""} onerror="SSSLogos.fail(this)">`:"";
