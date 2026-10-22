@@ -27,7 +27,7 @@ only = sys.argv[1:]  # optional list of slugs to search for
 rep = {"checked": {}, "search": {}}
 with cf.ThreadPoolExecutor(8) as ex:
     rep["checked"] = dict(ex.map(check, [s for s, v in ents.items() if v.get("domain") and not v.get("logo")]))
-    targets = only or [s for s, v in ents.items() if not v.get("domain") and not v.get("logo")]
+    targets = [s for s in only if s in ents] if only else [s for s, v in ents.items() if not v.get("domain") and not v.get("logo")]
     rep["search"] = dict(ex.map(search, targets))
 # Candidate websites to try for each entity (tools/logo_candidates.json): records what each returns.
 import os
