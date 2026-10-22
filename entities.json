@@ -5,6 +5,9 @@
   "13-nfl-teams": {
    "name": "13 NFL teams"
   },
+  "1905-gsyiad": {
+   "name": "1905 GSYİAD"
+  },
   "1xbet": {
    "name": "1xBet",
    "domain": "1xbet.com"
@@ -37,6 +40,10 @@
   "abbvie": {
    "name": "AbbVie",
    "domain": "abbvie.com"
+  },
+  "academy-sports-outdoors": {
+   "name": "Academy Sports + Outdoors",
+   "domain": "academy.com"
   },
   "adelaide-36ers": {
    "name": "Adelaide 36ers",
@@ -149,6 +156,10 @@
   "apl": {
    "name": "APL"
   },
+  "ara-institute-of-canterbury": {
+   "name": "Ara Institute of Canterbury",
+   "domain": "ara.ac.nz"
+  },
   "arrow-mclaren": {
    "name": "Arrow McLaren"
   },
@@ -174,6 +185,10 @@
   "asics": {
    "name": "ASICS",
    "domain": "asics.com"
+  },
+  "aston-martin": {
+   "name": "Aston Martin",
+   "domain": "astonmartinf1.com"
   },
   "aston-martin-f1": {
    "name": "Aston Martin F1",
@@ -203,6 +218,9 @@
   "audi": {
    "name": "Audi",
    "domain": "audi.com"
+  },
+  "audi-f1": {
+   "name": "Audi F1"
   },
   "ausenco": {
    "name": "Ausenco",
@@ -357,6 +375,10 @@
   "bupa": {
    "name": "Bupa",
    "domain": "bupa.com.au"
+  },
+  "byd": {
+   "name": "BYD",
+   "domain": "byd.com"
   },
   "cadillac-f1": {
    "name": "Cadillac F1"
@@ -691,6 +713,10 @@
    "name": "England Rugby",
    "domain": "englandrugby.com"
   },
+  "epcr": {
+   "name": "EPCR",
+   "domain": "epcrugby.com"
+  },
   "essendon": {
    "name": "Essendon",
    "domain": "essendonfc.com.au"
@@ -710,6 +736,10 @@
   "expressvpn": {
    "name": "ExpressVPN",
    "domain": "expressvpn.com"
+  },
+  "f1-academy": {
+   "name": "F1 Academy",
+   "domain": "f1academy.com"
   },
   "fage": {
    "name": "FAGE",
@@ -802,6 +832,10 @@
    "name": "Formula 1",
    "domain": "formula1.com"
   },
+  "formula-drift": {
+   "name": "Formula Drift",
+   "domain": "formulad.com"
+  },
   "formula-e": {
    "name": "Formula E",
    "domain": "fiaformulae.com"
@@ -858,6 +892,10 @@
   },
   "gello-beans-and-snakes": {
    "name": "Gello Beans and Snakes"
+  },
+  "general-atlantic": {
+   "name": "General Atlantic",
+   "domain": "generalatlantic.com"
   },
   "generali": {
    "name": "Generali",
@@ -916,6 +954,10 @@
    "name": "H&R Block",
    "domain": "hrblock.com"
   },
+  "hagley-oval": {
+   "name": "Hagley Oval",
+   "domain": "hagleyoval.co.nz"
+  },
   "hahn": {
    "name": "Hahn"
   },
@@ -964,6 +1006,10 @@
    "name": "Hisense",
    "domain": "hisense.com"
   },
+  "hitachi": {
+   "name": "Hitachi",
+   "domain": "hitachi.com"
+  },
   "hitiq": {
    "name": "HITIQ"
   },
@@ -977,6 +1023,9 @@
   "hoops-capital": {
    "name": "Hoops Capital"
   },
+  "hotelplanner-tour": {
+   "name": "HotelPlanner Tour"
+  },
   "hsbc": {
    "name": "HSBC",
    "domain": "hsbc.com"
@@ -987,6 +1036,10 @@
   },
   "hyrox": {
    "name": "HYROX",
+   "domain": "hyrox.com"
+  },
+  "hyrox-north-america": {
+   "name": "HYROX North America",
    "domain": "hyrox.com"
   },
   "hyundai": {
@@ -1036,6 +1089,10 @@
   },
   "intix": {
    "name": "INTIX"
+  },
+  "introl": {
+   "name": "Introl",
+   "domain": "introl.com"
   },
   "invictus-australia-sports-festival": {
    "name": "Invictus Australia Sports Festival"
@@ -1189,6 +1246,9 @@
   },
   "liberty-financial": {
    "name": "Liberty Financial"
+  },
+  "liga-profesional-de-futbol": {
+   "name": "Liga Profesional de Fútbol"
   },
   "ligas-gaming": {
    "name": "LIGAS Gaming"
@@ -1458,6 +1518,9 @@
    "name": "NFL",
    "domain": "nfl.com"
   },
+  "nfl-32-equity": {
+   "name": "NFL 32 Equity"
+  },
   "nfl-melbourne-game": {
    "name": "NFL Melbourne Game",
    "domain": "nfl.com"
@@ -1524,6 +1587,10 @@
   "odisha-fc": {
    "name": "Odisha FC"
   },
+  "ohlins": {
+   "name": "Öhlins",
+   "domain": "ohlins.com"
+  },
   "old-el-paso": {
    "name": "Old El Paso",
    "domain": "oldelpaso.com"
@@ -1549,6 +1616,9 @@
   "ospreys": {
    "name": "Ospreys",
    "domain": "ospreysrugby.com"
+  },
+  "padeltek": {
+   "name": "Padeltek"
   },
   "panini-america": {
    "name": "Panini America",
@@ -1771,6 +1841,10 @@
    "name": "San Francisco 49ers",
    "domain": "49ers.com"
   },
+  "sanrio": {
+   "name": "Sanrio",
+   "domain": "sanrio.com"
+  },
   "sbs-world-cup-fan-zones": {
    "name": "SBS World Cup Fan Zones",
    "domain": "sbs.com.au"
@@ -1986,6 +2060,10 @@
    "name": "Team GB",
    "domain": "teamgb.com"
   },
+  "team-penske": {
+   "name": "Team Penske",
+   "domain": "teampenske.com"
+  },
   "tennessee-athletics": {
    "name": "Tennessee Athletics",
    "domain": "utsports.com"
@@ -1997,6 +2075,10 @@
   "the-fa": {
    "name": "The FA",
    "domain": "thefa.com"
+  },
+  "the-home-depot": {
+   "name": "The Home Depot",
+   "domain": "homedepot.com"
   },
   "the-iconic": {
    "name": "THE ICONIC",
@@ -2102,6 +2184,10 @@
   "usga": {
    "name": "USGA",
    "domain": "usga.org"
+  },
+  "viagogo": {
+   "name": "viagogo",
+   "domain": "viagogo.com"
   },
   "vinarchy": {
    "name": "Vinarchy"
@@ -2237,6 +2323,10 @@
   "youi": {
    "name": "Youi",
    "domain": "youi.com.au"
+  },
+  "zafiro-palace-alcudia": {
+   "name": "Zafiro Palace Alcudia",
+   "domain": "zafirohotels.com"
   },
   "zeller": {
    "name": "Zeller",
