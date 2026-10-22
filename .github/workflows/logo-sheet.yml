@@ -1,0 +1,18 @@
+name: Logo sheet screenshots
+on: workflow_dispatch
+permissions: {contents: write}
+jobs:
+  shots:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          mkdir shots
+          for i in 0 1 2 3 4 5 6; do
+            from=$((i*96))
+            google-chrome --headless=new --no-sandbox --hide-scrollbars --window-size=1400,880 --virtual-time-budget=30000 \
+              --screenshot=shots/sheet-$i.png "https://sportsportsport.com.au/logo-sheet.html?from=$from&n=96&v=$GITHUB_RUN_ID"
+          done
+          ls -la shots
+      - run: |
+          cd shots && git init -q && git checkout -q -b logo-shots && git add . && git -c user.name="SSS bot" -c user.email="bot@sportsportsport.com.au" commit -qm shots
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" logo-shots

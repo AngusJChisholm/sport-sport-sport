@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Logo sheet</title>
+<style>
+:root{--line:#e5e5e5;--canvas:#f6f6f6;--ink-2:#444;--white:#fff}
+body{margin:0;background:#fff;font:11px/1.2 Archivo,Arial,sans-serif;color:#111}
+.g{display:grid;grid-template-columns:repeat(12,1fr);gap:0}
+.c{border:1px solid var(--line);margin:-1px 0 0 -1px;padding:8px 4px;display:flex;flex-direction:column;align-items:center;gap:6px;height:92px}
+.c b{font-weight:600;text-align:center;overflow:hidden;max-height:2.4em}
+.lg{--s:48px;position:relative;display:inline-flex;width:var(--s);height:var(--s);flex:none;align-items:center;justify-content:center}
+.lg .mono{display:flex;align-items:center;justify-content:center;width:100%;height:100%;border:1px solid var(--line);background:var(--canvas);color:var(--ink-2);font-weight:800;font-size:16px}
+.lg.has-img .mono{display:none}.lg img{width:100%;height:100%;object-fit:contain;display:block}
+</style></head><body><div class="g" id="g"></div>
+<script src="assets/logos.js"></script>
+<script>
+SSSLogos.load().then(()=>{const all=SSSLogos.all();const p=new URLSearchParams(location.search);const from=+(p.get("from")||0),n=+(p.get("n")||9999);
+document.getElementById("g").innerHTML=Object.keys(all).sort().slice(from,from+n).map(s=>{const e=SSSLogos.byId(s);return `<div class="c">${SSSLogos.mark(e,{px:48}).replace(/loading="lazy"/,'loading="eager"')}<b>${SSSLogos.esc(e.name)}</b></div>`}).join("")})
+</script></body></html>

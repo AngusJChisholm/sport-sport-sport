@@ -53,6 +53,8 @@ window.SSSLogos=(function(){
   function bfUrl(domain,type,px){
     return `https://cdn.brandfetch.io/domain/${encodeURIComponent(domain)}/w/${px}/h/${px}/fallback/404/type/${type}?c=${encodeURIComponent(BF)}`;
   }
+  // Last resort: the organisation's own site icon (used only if it is big enough to look sharp; see ok()).
+  const favUrl=domain=>`https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=128`;
   // big=true asks for the wide logo first (profile page header); small marks try the symbol, then the icon.
   function mark(e,opts){
     opts=opts||{};
@@ -66,9 +68,10 @@ window.SSSLogos=(function(){
     if(e.logo){src=e.logo}
     else if(BF&&e.domain){
       const order=big?["logo","symbol","icon"]:["symbol","icon","logo"];
-      src=bfUrl(e.domain,order[0],px*2);steps=order.slice(1).map(t=>bfUrl(e.domain,t,px*2)).join(" ");
+      src=bfUrl(e.domain,order[0],px*2);steps=order.slice(1).map(t=>bfUrl(e.domain,t,px*2)).concat(favUrl(e.domain)).join(" ");
     }
-    const img=src?`<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="strict-origin-when-cross-origin"${steps?` data-next="${esc(steps)}"`:""} onerror="SSSLogos.fail(this)">`:"";
+    else if(e.domain){src=favUrl(e.domain)}
+    const img=src?`<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="strict-origin-when-cross-origin"${steps?` data-next="${esc(steps)}"`:""} onload="SSSLogos.ok(this)" onerror="SSSLogos.fail(this)">`:"";
     return `<span class="lg${img?" has-img":""}${big?" lg-big":""}">${mono}${img}</span>`;
   }
   function fail(img){
@@ -76,6 +79,8 @@ window.SSSLogos=(function(){
     if(next.length){img.dataset.next=next.slice(1).join(" ");img.src=next[0];return}
     const box=img.parentElement;img.remove();if(box)box.classList.remove("has-img");
   }
+  // Tiny images (blank placeholders, 16px favicons) look worse than a monogram, so treat them as missing.
+  function ok(img){if(img.naturalWidth&&img.naturalWidth<48)fail(img)}
   const page=slug=>`profile.html?id=${encodeURIComponent(slug)}`;
   // Logo pair for a deal: every brand, ×, every property.
   function pair(d,opts){
@@ -87,5 +92,5 @@ window.SSSLogos=(function(){
     if(!e)return "";
     return `<a class="lga" href="${esc(page(e.slug))}" aria-label="${esc(e.name)}" title="${esc(e.name)}">${mark(e,opts)}</a>`;
   }
-  return {load,split,resolve,many,tag,has,pair,byId,mark,link,fail,page,esc,leagues:()=>LEAGUES,all:()=>ENT};
+  return {load,split,resolve,many,tag,has,pair,ok,byId,mark,link,fail,page,esc,leagues:()=>LEAGUES,all:()=>ENT};
 })();
