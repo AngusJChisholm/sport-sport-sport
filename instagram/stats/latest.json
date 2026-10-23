@@ -1,10 +1,10 @@
 {
- "date": "2026-10-23",
+ "date": "2026-10-24",
  "username": "sportsportsport.hq",
  "followers": 7,
  "followers_change_7d": 3,
- "since": "2026-10-16",
- "posts_last_7d": 14,
+ "since": "2026-10-17",
+ "posts_last_7d": 12,
  "best_post_7d": {
   "when": "Sat 17 Oct 15:47",
   "hour": 15,
@@ -18,7 +18,7 @@
   "score": 1
  },
  "totals_7d": {
-  "likes": 2,
+  "likes": 1,
   "comments": 0,
   "saved": 0,
   "shares": 0,
@@ -186,30 +186,6 @@
    "link": "https://www.instagram.com/p/DelSK1VmKDN/",
    "recent": true,
    "score": 1
-  },
-  {
-   "when": "Fri 16 Oct 20:16",
-   "hour": 20,
-   "weekday": "Fri",
-   "type": "REELS",
-   "likes": 1,
-   "comments": 0,
-   "caption": "The five biggest sponsorship deals of the week, in 15 seconds.",
-   "link": "https://www.instagram.com/reel/DejMGYclDhy/",
-   "recent": true,
-   "score": 1
-  },
-  {
-   "when": "Fri 16 Oct 18:02",
-   "hour": 18,
-   "weekday": "Fri",
-   "type": "FEED",
-   "likes": 0,
-   "comments": 0,
-   "caption": "Five deals that defined the week.",
-   "link": "https://www.instagram.com/p/Dei82h5F7W0/",
-   "recent": true,
-   "score": 0
   }
  ]
 }
