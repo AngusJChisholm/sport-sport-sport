@@ -14902,6 +14902,42 @@
    "region": "Global",
    "summary": "Telefónica signs a five-year Espai Barça tech deal.",
    "url": "https://ministryofsport.com/fc-barcelona-secures-five-year-espai-barca-technology-partnership-with-telefonica/"
+  },
+  {
+   "date": "2026-06-05",
+   "deal": "DiDi × AFL",
+   "sport": "AFL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "DiDi extends its AFL partnership through 2027.",
+   "url": "https://ministryofsport.com/afl-and-didi-announce-multi-year-partnership-extension-through-2027/"
+  },
+  {
+   "date": "2026-05-19",
+   "deal": "Tradable Bits × AFL",
+   "sport": "AFL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Tradable Bits renews and expands its fan engagement deal with the AFL and clubs.",
+   "url": "https://ministryofsport.com/afl-and-clubs-extend-tradable-bits-partnership-to-unify-fan-engagement/"
+  },
+  {
+   "date": "2026-08-18",
+   "deal": "Athoz × NBL",
+   "sport": "Basketball",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "Athoz signs partnerships with the NRL, NBL and AFL.",
+   "url": "https://ministryofsport.com/andrew-bogut-backed-athoz-expands-to-australia-with-major-nrl-nbl-and-afl-partnerships/"
+  },
+  {
+   "date": "2026-08-03",
+   "deal": "Pirate Life × Fremantle",
+   "sport": "AFL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Pirate Life extends with Fremantle with a fifth collab lager.",
+   "url": "https://ministryofsport.com/fremantle-fc-and-pirate-life-launch-fifth-collaborative-retro-lager-in-commercial-partnership-extension/"
   }
  ]
 }
