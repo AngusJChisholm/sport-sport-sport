@@ -1,0 +1,2328 @@
+{
+ "missing": 1022,
+ "proposals": {
+  "LA28": {
+   "domain": "la28.org",
+   "bf": [
+    "icon"
+   ],
+   "deals": 10
+  },
+  "NSW Waratahs": {
+   "domain": "waratahs.rugby",
+   "bf": [
+    "icon"
+   ],
+   "deals": 8
+  },
+  "Punjab Kings": {
+   "domain": "punjabkingsipl.in",
+   "bf": [
+    "icon"
+   ],
+   "deals": 8
+  },
+  "Google": {
+   "domain": "google.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 7
+  },
+  "Royal Challengers Bengaluru": {
+   "domain": "royalchallengers.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 7
+  },
+  "Golf Australia": {
+   "domain": "ausopengolf.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 6
+  },
+  "Queensland Reds": {
+   "domain": "reds.rugby",
+   "bf": [
+    "icon"
+   ],
+   "deals": 6
+  },
+  "Melbourne Demons": {
+   "domain": "melbournefc.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 6
+  },
+  "New Balance": {
+   "domain": "newbalance.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 6
+  },
+  "Victoria Racing Club": {
+   "domain": "vrc.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 6
+  },
+  "British & Irish Lions": {
+   "domain": "lionsrugby.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 6
+  },
+  "Tottenham Hotspur": {
+   "domain": "tottenhamhotspur.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 6
+  },
+  "DP World Tour": {
+   "domain": "europeantour.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 6
+  },
+  "Mumbai Indians": {
+   "domain": "mumbaiindians.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 6
+  },
+  "Rolex": {
+   "domain": "rolex.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 6
+  },
+  "New Zealand Rugby": {
+   "domain": "nzrugby.co.nz",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 5
+  },
+  "Budget Direct": {
+   "domain": "budgetdirect.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 5
+  },
+  "ATP Tour": {
+   "domain": "atptour.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 5
+  },
+  "Corpay": {
+   "domain": "corpay.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 5
+  },
+  "Accor Stadium": {
+   "domain": "accorstadium.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 4
+  },
+  "La Trobe Financial": {
+   "domain": "latrobefinancial.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "Elastoplast": {
+   "domain": "elastoplast.co.uk",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "Melbourne Racing Club": {
+   "domain": "mrcshop.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "Softball Australia": {
+   "domain": "softball.org.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 4
+  },
+  "Queensland Cricket": {
+   "domain": "qldcricket.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 4
+  },
+  "New Zealand Olympic Committee": {
+   "domain": "olympic.org.nz",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "Crusaders": {
+   "domain": "crusaders.gg",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "SIXT": {
+   "domain": "mydriver.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "Glasgow 2026": {
+   "domain": "glasgow2026.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "EA Sports": {
+   "domain": "easports.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 4
+  },
+  "Gujarat Titans": {
+   "domain": "gujarattitansipl.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "Rajasthan Royals": {
+   "domain": "rajasthanroyals.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 4
+  },
+  "Manchester City": {
+   "domain": "mancity.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "Hockey Australia": {
+   "domain": "hockey.org.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "Western Force": {
+   "domain": "westernforce.store",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "Adelaide Grand Final": {
+   "domain": "adelaide500.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 4
+  },
+  "Leeds United": {
+   "domain": "leedsunited.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 4
+  },
+  "Rio Tinto": {
+   "domain": "riotinto.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Perth Lynx": {
+   "domain": "perthlynx.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 3
+  },
+  "Coca-Cola Europacific Partners": {
+   "domain": "ccep.jobs",
+   "bf": [
+    "icon"
+   ],
+   "deals": 3
+  },
+  "Victor Sports": {
+   "domain": "victor-sports.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 3
+  },
+  "Water Polo Australia": {
+   "domain": "waterpoloaustralia.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Omoda Jaecoo": {
+   "domain": "omoda-jaecoo.cz",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Snap Fitness": {
+   "domain": "snapfitness.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Suzuki": {
+   "domain": "suzuki.co.jp",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "World Rugby": {
+   "domain": "world.rugby",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "HART Sport": {
+   "domain": "hartsport.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "ACT Brumbies": {
+   "domain": "brumbies.rugby",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Tyrepower": {
+   "domain": "tyrepower.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 3
+  },
+  "Everton": {
+   "domain": "evertonfc.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Laver Cup": {
+   "domain": "lavercup.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Betano": {
+   "domain": "betano.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 3
+  },
+  "FIFA": {
+   "domain": "fifa.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Intex": {
+   "domain": "intex.es",
+   "bf": [
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Accenture": {
+   "domain": "accenture.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Skechers": {
+   "domain": "skechers-twn.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Fijian Drua": {
+   "domain": "drua.rugby",
+   "bf": [
+    "icon"
+   ],
+   "deals": 3
+  },
+  "RAA": {
+   "domain": "raa.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "SailGP": {
+   "domain": "sailgp.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Canterbury": {
+   "domain": "canterbury.ac.nz",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "AC Milan": {
+   "domain": "acmilan.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 3
+  },
+  "Galatasaray": {
+   "domain": "galata-saray.net",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "Workplace Law": {
+   "domain": "workplace-law.ca",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "AusTriathlon": {
+   "domain": "triathlon.org.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Allianz Stadium": {
+   "domain": "allianzstadiumtwickenham.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "Triple Eight Race Engineering": {
+   "domain": "tripleeight.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Foodland": {
+   "domain": "kahalamarket.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Melbourne Park": {
+   "domain": "melbournepark.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Swimming Australia": {
+   "domain": "mountainpoolswimmingclub.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "SBS": {
+   "domain": "sbs.com.pe",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Cricket NSW": {
+   "domain": "cricketnsw.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "Seven": {
+   "domain": "seven.io",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Townsville Fire": {
+   "domain": "firememberships.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Swisse": {
+   "domain": "swisse.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Quint": {
+   "domain": "quint.dk",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Tasmania Jewels": {
+   "domain": "tasmaniajewels.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Wilson Security": {
+   "domain": "wilsonsecurity.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Cadbury": {
+   "domain": "cadbury.co.uk",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Tennis Australia": {
+   "domain": "tennis.com.au",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Beyond Bank": {
+   "domain": "firstchoicecu.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Viva Leisure": {
+   "domain": "vivaleisure.group",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "FreshChoice": {
+   "domain": "freshchoice.co.nz",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "IHG Hotels & Resorts": {
+   "domain": "ichotelsgroup.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Cricket Victoria": {
+   "domain": "cricketvictoria.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "YETI": {
+   "domain": "yeti.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Matt Stone Racing": {
+   "domain": "stoneracing.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Seattle Seahawks": {
+   "domain": "seahawks.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Tickford Racing": {
+   "domain": "tickfordstore.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Santos": {
+   "domain": "santos.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Alinta Energy": {
+   "domain": "alintaenergy.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "SkyCity": {
+   "domain": "skycity.co.nz",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Brad Jones Racing": {
+   "domain": "bradjonesracing.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Geely": {
+   "domain": "geely.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Ai+ Smartphone": {
+   "domain": "aiplusstore.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Gallagher": {
+   "domain": "gallagher.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Castore": {
+   "domain": "castore.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Send My Bag": {
+   "domain": "sendmybag.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Sokin": {
+   "domain": "sokin.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "WHOOP": {
+   "domain": "whoop.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "BMD Group": {
+   "domain": "bmdgroup.global",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "OPPO": {
+   "domain": "oppo.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "AS Roma": {
+   "domain": "asroma.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "S8UL": {
+   "domain": "s8ul.store",
+   "bf": [
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Electrolit": {
+   "domain": "electrolit.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Flexjet": {
+   "domain": "flexjet.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "PREM Rugby": {
+   "domain": "premrugby.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "Kalshi": {
+   "domain": "kalshi.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Portsmouth": {
+   "domain": "portsmouth-eats.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Kia": {
+   "domain": "kia.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "CMC Markets": {
+   "domain": "cmcmarkets.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "World Athletics": {
+   "domain": "worldathletics.org",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Amul": {
+   "domain": "amul.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "AB InBev": {
+   "domain": "ab-inbev.de",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "HELL Energy": {
+   "domain": "hellenergy.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "US Soccer": {
+   "domain": "uslsoccer.com",
+   "bf": [
+    "logo"
+   ],
+   "deals": 2
+  },
+  "MI London": {
+   "domain": "milondon.co.uk",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "Accor": {
+   "domain": "accor.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Asahi": {
+   "domain": "asahi.mn",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Oura": {
+   "domain": "ouraring.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "HCLTech": {
+   "domain": "hcltech.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "WNBA": {
+   "domain": "wnba.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Michelob Ultra": {
+   "domain": "michelobultra.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "Sunrisers Hyderabad": {
+   "domain": "sunrisershyderabad.in",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "WTA": {
+   "domain": "wta.org",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Indeed": {
+   "domain": "indeed.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Mastercard": {
+   "domain": "mastercard.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Lucknow Super Giants": {
+   "domain": "lucknowsupergiants.in",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "Super Rugby Pacific": {
+   "domain": "sanzarrugby.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "MG": {
+   "domain": "mg.tn",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Kumho Tyre": {
+   "domain": "kumho.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Komatsu": {
+   "domain": "komatsu.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "Step One": {
+   "domain": "step-one.fr",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "SEN": {
+   "domain": "sen.es",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Intuit": {
+   "domain": "intuit.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Guinness": {
+   "domain": "guinness.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "World Surf League": {
+   "domain": "worldsurfleague.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Theme Group": {
+   "domain": "themegroup.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "LEGO": {
+   "domain": "lego.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Nostra Homes": {
+   "domain": "nostrahomes.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Ray White": {
+   "domain": "raywhite.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Shannons": {
+   "domain": "shannons.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Lite n' Easy": {
+   "domain": "liteneasy.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "1Cover": {
+   "domain": "1cover.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "Rebel Sport": {
+   "domain": "rebelsport.co.nz",
+   "bf": [
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Intrepid Travel": {
+   "domain": "intrepidtravel.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "STATSports": {
+   "domain": "statsports.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Midea": {
+   "domain": "mideastore.com.br",
+   "bf": [
+    "logo"
+   ],
+   "deals": 2
+  },
+  "FICO": {
+   "domain": "fico.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Ryder Cup": {
+   "domain": "rydercup.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "Nottingham Forest": {
+   "domain": "nottinghamforest.co.uk",
+   "bf": [
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Toyota": {
+   "domain": "toyota.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Grey Goose": {
+   "domain": "greygoose.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "NOCO": {
+   "domain": "no.co",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "AFC": {
+   "domain": "afc.ch",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Visit Qatar": {
+   "domain": "visitqatar.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "PepsiCo": {
+   "domain": "pepsico.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Motul": {
+   "domain": "motul.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Vitality": {
+   "domain": "vitality.io",
+   "bf": [
+    "icon"
+   ],
+   "deals": 2
+  },
+  "Lidl": {
+   "domain": "lidl.cz",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "Spotify": {
+   "domain": "spotify.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 2
+  },
+  "CoinSpot": {
+   "domain": "coinspot.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "TAL": {
+   "domain": "tal.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Queensland Government": {
+   "domain": "qld.gov.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Hockey Queensland": {
+   "domain": "hockeyqld.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Sharpie": {
+   "domain": "sharpie.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "ActewAGL": {
+   "domain": "actewagl.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Leesa": {
+   "domain": "leesa.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Leapmotor": {
+   "domain": "leapmotor.net",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "National Pickleball League": {
+   "domain": "nplpickleball.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Diageo": {
+   "domain": "diageo.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Suntory Global Spirits": {
+   "domain": "suntoryglobalspirits.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Trilogy Funds": {
+   "domain": "trilogyfunds.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "FM": {
+   "domain": "fm.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "D'Orsogna": {
+   "domain": "dorsogna.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Seiko": {
+   "domain": "seiko.co.th",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Destination Sport": {
+   "domain": "destinationsport.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "East Coast Car Rentals": {
+   "domain": "eastcoastcarrentals.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "WWE": {
+   "domain": "wwe.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "S-Trend": {
+   "domain": "s-trend.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "China Airlines": {
+   "domain": "china-airlines.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Amadio Wines": {
+   "domain": "amadiowines.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Sport Australia Hall of Fame": {
+   "domain": "sahof.org.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Polestar": {
+   "domain": "polestar.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "sportsmed": {
+   "domain": "sportsmed.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Eckersley Print Group": {
+   "domain": "eckersleygroup.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "SCA": {
+   "domain": "sca.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Adept IT Solutions": {
+   "domain": "adept-it-solutions.co.uk",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Northside Rentals": {
+   "domain": "northsiderentals.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "JOOLA": {
+   "domain": "joola.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Picklr": {
+   "domain": "picklr.club",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Vaseline": {
+   "domain": "vaseline.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "City2Surf": {
+   "domain": "city2surf.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Brooks Running": {
+   "domain": "brooksrunning.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "New Era": {
+   "domain": "new-era.ro",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Always Made Special": {
+   "domain": "alwaysmadespecial.co.nz",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Plantation Homes": {
+   "domain": "plantationhomes.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "AICD": {
+   "domain": "aicd.nu",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Prezzee": {
+   "domain": "prezzee.uk",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "VÖOST": {
+   "domain": "voostmusic.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Event Cinemas": {
+   "domain": "eventcinemas.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Fridgy": {
+   "domain": "fridgy.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Venues NSW": {
+   "domain": "venuesnsw.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "SABA": {
+   "domain": "saba.ye",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Solstice Energy": {
+   "domain": "solsticeenergy.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Recovery Partners Australia": {
+   "domain": "rrp.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "2degrees": {
+   "domain": "2degrees.nz",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Everything Fleet": {
+   "domain": "everythingfleet.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Challenger": {
+   "domain": "challengerinc.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Maple Living": {
+   "domain": "mapleliving.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Kappa": {
+   "domain": "kappa.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Pacific Radiology": {
+   "domain": "pacificradiology.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Repco": {
+   "domain": "repco.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Asahi Beverages": {
+   "domain": "asahibeverages.com",
+   "bf": [
+    "logo"
+   ],
+   "deals": 1
+  },
+  "South Bank Corporation": {
+   "domain": "whatsonsouthbank.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "MSWA": {
+   "domain": "mswa.org.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Kapitol": {
+   "domain": "kapitol.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Nature Valley": {
+   "domain": "naturevalley.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Bulk Nutrients": {
+   "domain": "bulknutrients.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "TechnologyOne": {
+   "domain": "technologyonecorp.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Brisbane Airport": {
+   "domain": "bne.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Guzman y Gomez": {
+   "domain": "guzmanygomez.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Comfort Sleep": {
+   "domain": "comfortsleep.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "VAFA": {
+   "domain": "vafa.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Ārepa": {
+   "domain": "arepa.no",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Starward Whisky": {
+   "domain": "starward.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "NME Group": {
+   "domain": "nmegroup.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Ord Minnett": {
+   "domain": "ords.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "QUT": {
+   "domain": "qut.edu.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "COEX": {
+   "domain": "coex.co.kr",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Hoop City": {
+   "domain": "hoopcity.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Nippy's": {
+   "domain": "nippys.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Seven Consulting": {
+   "domain": "sevenconsulting.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "AFGRI Equipment": {
+   "domain": "afgriequipment.co.za",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "RugbyWA": {
+   "domain": "rugbywa.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "BMS Group": {
+   "domain": "bmsgroup.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Bowlsome": {
+   "domain": "bowlsome.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Nexus Airlines": {
+   "domain": "nexusairlines.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Basketball WA": {
+   "domain": "basketballwa.asn.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Table of Plenty": {
+   "domain": "tableofplenty.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Pirate Life": {
+   "domain": "piratelife.ca",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Choice Hotels": {
+   "domain": "choicehotels.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Konqa": {
+   "domain": "konqa.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "St. Ali": {
+   "domain": "stali.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Chobani": {
+   "domain": "chobani.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Armillary": {
+   "domain": "armillary.jp",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "TVNZ": {
+   "domain": "tvnz.co.nz",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Coors": {
+   "domain": "coors.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Carbiz": {
+   "domain": "carbiz.vn",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "One NZ": {
+   "domain": "oneconnect.nz",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Radiology Victoria": {
+   "domain": "radiologyvictoria.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "DJI": {
+   "domain": "dji.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Dreamworld": {
+   "domain": "dreamworld.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Think Renewable": {
+   "domain": "thinkrenewable.com.au",
+   "bf": [
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Sirromet": {
+   "domain": "sirromet.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "South32": {
+   "domain": "south32.net",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Red Hat": {
+   "domain": "redhat.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "DEWALT": {
+   "domain": "dewalt.co.uk",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "MyPayNow": {
+   "domain": "mypaynow.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Greenworks": {
+   "domain": "greenworks.nl",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "StudyAdelaide": {
+   "domain": "studyadelaide.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "PacLease": {
+   "domain": "paclease.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Kingsgrove Sports": {
+   "domain": "kingsgrovesports.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "NBA 2K": {
+   "domain": "nba2k.games",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Spotlight": {
+   "domain": "spotlight.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Kraft Heinz": {
+   "domain": "kraftheinz.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "RSM Australia": {
+   "domain": "rsm.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "99 Bikes": {
+   "domain": "99bikes.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "AusCycling": {
+   "domain": "auscycling.org.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Beverly": {
+   "domain": "beverly.io",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Bayleys": {
+   "domain": "bayleys.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Yonex": {
+   "domain": "yonex.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Badminton Australia": {
+   "domain": "badminton.org.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "7-Eleven": {
+   "domain": "7-eleven.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Chicken Treat": {
+   "domain": "chickentreat.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Focus Construct": {
+   "domain": "focusconstruct.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Midas": {
+   "domain": "midas.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Rhino": {
+   "domain": "sayrhino.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Cub Cadet": {
+   "domain": "cubcadet.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Rokeby Nutrition": {
+   "domain": "rokebynutrition.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Hungry Jack's": {
+   "domain": "hungryjacks.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Four'N Twenty": {
+   "domain": "fourntwenty.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Zaparas Lawyers": {
+   "domain": "zaparaslaw.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Equity One": {
+   "domain": "equity-one.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Autobarn": {
+   "domain": "autobarn.com.au",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Ampol": {
+   "domain": "ampol.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Humanitix": {
+   "domain": "humanitix.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Liquorland": {
+   "domain": "liquorland.co.nz",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Volkswagen": {
+   "domain": "volkswagen.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Bosch": {
+   "domain": "bosch.com",
+   "bf": [
+    "symbol",
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Premiair Racing": {
+   "domain": "premiairracing.com",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "TAFE Queensland": {
+   "domain": "tafeqld.edu.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Royal Caribbean": {
+   "domain": "royal-caribbean.co.il",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "Dodo": {
+   "domain": "dodo.com",
+   "bf": [
+    "logo"
+   ],
+   "deals": 1
+  },
+  "polytec": {
+   "domain": "polytec.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "ASC": {
+   "domain": "asc.sa",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  },
+  "RYCO": {
+   "domain": "ryco.inc",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "Sony": {
+   "domain": "sony.com",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "deals": 1
+  },
+  "HIF": {
+   "domain": "hif.ch",
+   "bf": [
+    "icon"
+   ],
+   "deals": 1
+  }
+ }
+}
