@@ -1,0 +1,20 @@
+name: Archive post list
+on:
+  workflow_dispatch:
+    inputs:
+      site: {description: "WordPress site host", required: true}
+      after: {description: "YYYY-MM-DD", required: true}
+      before: {description: "YYYY-MM-DD", required: true}
+      search: {description: "optional search term", required: false, default: ""}
+permissions: {contents: write}
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/wp_fetch.py "${{ inputs.site }}" "${{ inputs.after }}" "${{ inputs.before }}" "${{ inputs.search }}"
+      # Results go to a side branch so they never touch the live site.
+      - run: |
+          mv wp-report.json /tmp/ && git checkout --orphan wp-report && git rm -rqf . && mv /tmp/wp-report.json .
+          git add wp-report.json && git -c user.name="SSS bot" -c user.email="bot@sportsportsport.com.au" commit -qm "Post list"
+          git push -qf origin wp-report
