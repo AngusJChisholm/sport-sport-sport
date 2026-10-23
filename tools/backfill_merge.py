@@ -14,7 +14,8 @@ for slug, v in ents.items():
     for name in [v["name"], *v.get("aliases", [])]: canon[n(name)] = slug
 RENAME = {"Melbourne City": "Melbourne City FC", "Manly Warringah Sea Eagles": "Manly Sea Eagles",
           "New Zealand Rugby League": "NZ Rugby League", "Hurricanes": "Hurricanes (Super Rugby)",
-          "Blues": "Blues (Super Rugby)", "Tasmania Football Club": "Tasmania Devils"}
+          "Blues": "Blues (Super Rugby)", "Tasmania Football Club": "Tasmania Devils",
+          "Williams Racing": "Williams F1", "FIFA World Cup 2026": "FIFA World Cup"}
 c = lambda s: canon.get(n(s), n(s))
 def key(brand, prop): return frozenset([c(brand), c(prop)])
 have = set()
