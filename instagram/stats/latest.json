@@ -1,24 +1,24 @@
 {
- "date": "2026-10-24",
+ "date": "2026-10-25",
  "username": "sportsportsport.hq",
  "followers": 7,
  "followers_change_7d": 3,
- "since": "2026-10-17",
- "posts_last_7d": 12,
+ "since": "2026-10-18",
+ "posts_last_7d": 10,
  "best_post_7d": {
-  "when": "Sat 17 Oct 15:47",
-  "hour": 15,
-  "weekday": "Sat",
+  "when": "Thu 22 Oct 14:58",
+  "hour": 14,
+  "weekday": "Thu",
   "type": "FEED",
-  "likes": 1,
+  "likes": 0,
   "comments": 0,
-  "caption": "Three deals in eight days. The Australian Open's sponsor machine is running hot.",
-  "link": "https://www.instagram.com/p/DelSK1VmKDN/",
+  "caption": "Hahn is the new Official Beer of the Australian Open.",
+  "link": "https://www.instagram.com/p/DeyEk-dlE8K/",
   "recent": true,
-  "score": 1
+  "score": 0
  },
  "totals_7d": {
-  "likes": 1,
+  "likes": 0,
   "comments": 0,
   "saved": 0,
   "shares": 0,
@@ -162,30 +162,6 @@
    "link": "https://www.instagram.com/p/DenRj1RDazM/",
    "recent": true,
    "score": 0
-  },
-  {
-   "when": "Sat 17 Oct 18:20",
-   "hour": 18,
-   "weekday": "Sat",
-   "type": "REELS",
-   "likes": 0,
-   "comments": 0,
-   "caption": "How the Australian Open turned sponsorship into a production line. Three new deals in eigh",
-   "link": "https://www.instagram.com/reel/Deljo2HFTem/",
-   "recent": true,
-   "score": 0
-  },
-  {
-   "when": "Sat 17 Oct 15:47",
-   "hour": 15,
-   "weekday": "Sat",
-   "type": "FEED",
-   "likes": 1,
-   "comments": 0,
-   "caption": "Three deals in eight days. The Australian Open's sponsor machine is running hot.",
-   "link": "https://www.instagram.com/p/DelSK1VmKDN/",
-   "recent": true,
-   "score": 1
   }
  ]
 }
