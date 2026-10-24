@@ -1,0 +1,95 @@
+{
+ "date": "2026-10-25",
+ "hold": false,
+ "feed": {
+  "kind": "feature",
+  "cover": {
+   "tag": "Weekend feature",
+   "region": "ANZ",
+   "headline": "Inside the NRL's $5.3bn deal.",
+   "highlight": "$5.3bn",
+   "deal": "How the 2028 to 2034 rights deal is carved up",
+   "descriptor": "Explainer"
+  },
+  "slides": [
+   {
+    "label": "The story",
+    "title": "Seven years, three buyers",
+    "rows": [
+     {
+      "main": "$5.3bn from 2028",
+      "sub": "Runs to 2034, a record for Australian sport"
+     },
+     {
+      "main": "Up 90% a year",
+      "sub": "Cash per year versus the current deal"
+     },
+     {
+      "main": "Foxtel, Nine, Sky NZ",
+      "sub": "Each gets a different slice"
+     }
+    ]
+   },
+   {
+    "label": "The split",
+    "title": "Who gets what",
+    "rows": [
+     {
+      "main": "Foxtel and Kayo",
+      "sub": "Every game bar Origin and the grand final"
+     },
+     {
+      "main": "Nine",
+      "sub": "Origin, grand final, three games a week"
+     },
+     {
+      "main": "Sky NZ",
+      "sub": "130+ fixtures on its free platforms"
+     }
+    ]
+   },
+   {
+    "label": "Why it matters",
+    "title": "The NRL takes back control",
+    "rows": [
+     {
+      "main": "The draw is back",
+      "sub": "The league controls the schedule again"
+     },
+     {
+      "main": "95% cash",
+      "sub": "Only 5% contra, said V'landys"
+     },
+     {
+      "main": "Global push",
+      "sub": "DAZN to reach 200 markets"
+     }
+    ]
+   },
+   {
+    "label": "What's next",
+    "title": "A 20th club",
+    "rows": [
+     {
+      "main": "Perth in 2027",
+      "sub": "PNG Chiefs follow in 2028"
+     },
+     {
+      "main": "Club 20 by 2029?",
+      "sub": "Foxtel gets an extra game if so"
+     }
+    ]
+   }
+  ]
+ },
+ "caption": "Australian sport's biggest media deal is $5.3 billion, and the split is the clever part.\n\nFrom 2028 to 2034, Foxtel keeps nearly every NRL game, Nine keeps State of Origin and the grand final free, and Sky NZ gets 130+ games on its free platforms. Cash per year is up 90% on today's deal, and the league takes back control of the draw. A 20th club is on the cards, and DAZN is selling the NRL to 200 markets.\n\nRead the full feature: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "tags": [
+  {
+   "username": "nrl",
+   "slide": 1
+  }
+ ],
+ "collaborators": [
+  "nrl"
+ ]
+}

@@ -1,6 +1,40 @@
 {
  "features": [
   {
+   "date": "2026-10-25",
+   "headline": "Inside the NRL's $5.3bn deal.",
+   "descriptor": "How the 2028 to 2034 rights deal is carved up",
+   "topic": "Explainer",
+   "sport": "NRL",
+   "region": "ANZ",
+   "article": {
+    "standfirst": "The NRL's seven-year, $5.3 billion rights deal is the biggest in Australian sport. Here is who gets what.",
+    "body": [
+     "The NRL's new broadcast deal is worth $5.3 billion over seven years, from 2028 to 2034, and it is the biggest commercial agreement any Australian sport has signed. The league says cash per year jumps 90 per cent on the current arrangement. Spread evenly, that is about $757 million a season, against the more than $400 million a year the NRL announced when it signed the 2023 to 2027 deal. By the same rough maths, the AFL's $4.5 billion deal for 2025 to 2031 works out at $643 million a season.",
+     "The headline number gets the attention. The structure is where the value sits. There are three buyers and each gets a different slice. Foxtel Group, which is owned by DAZN, stays the home of the league across Foxtel and Kayo Sports. It shows every NRL and NRLW premiership match live, including the finals, other than State of Origin and the grand final.",
+     "Nine keeps the free-to-air crown jewels. It has exclusive coverage of the NRL Grand Final and of both the men's and women's State of Origin series. On top of that it simulcasts three NRL and NRLW games a week, so the pay-TV home and the free home show the same match at the same time. For a sponsor, that mix matters. Origin and the grand final deliver the mass audience on free TV, while the weekly simulcasts keep brand exposure steady across the season. Across the Tasman, Sky NZ will put more than 130 fixtures on its free platforms.",
+     "Then there is the world outside Australia and New Zealand. Foxtel has a revenue-sharing and marketing agreement on international rights, which excludes New Zealand and Papua New Guinea. Foxtel chief executive Patrick Delany says NRL content will reach 200 international markets through DAZN. ARLC chairman Peter V'landys has described going global as the priority once this deal is done.",
+     "The deal also changes who holds the pen. The Australian Rugby League Commission takes back control of season structure, scheduling and the draw. V'landys says that will mean fair scheduling for all clubs. He also says about 95 per cent of the money is cash and only 5 per cent contra, which is free advertising and promotion rather than dollars in the bank.",
+     "The growth built into the contract is just as important. Perth joins in 2027 as the 18th team, with the PNG Chiefs following in 2028. The NRL has told DAZN it will look at a 20th club around 2029, with New Zealand and Queensland the names in the frame. If that happens, Foxtel picks up an extra exclusive game each week. More games mean more inventory for sponsors, more reasons for fans to subscribe and more leverage for the league at the next renewal.",
+     "The rest of the market was circling. Seven and Amazon Prime Video were reported to have been interested, and Ten has been named too. The NRL went the other way on packaging. It kept a single pay-TV and streaming partner rather than splitting games across several services. NRL chief executive Andrew Abdo said the league could have put more content behind the paywall but went the other way. The open question is price, because fans will want to know if Kayo gets dearer. Delany says the entry-level Kayo price has risen only once in nearly nine years, and V'landys says he has protected the price point.",
+     "For brands and rights holders, the message is clear. Free-to-air reach is locked in for Origin and the grand final through 2034, the pay-TV rights are priced for growth, and the league now controls its own calendar. That gives sponsors seven years of certainty on where their logos will be seen, and gives clubs a stronger base to sell from. Nine's chief executive Matt Stanton has pointed to a commitment to bring the action live and free, and the NRL says its audience has roughly doubled over the past five years, so the pitch to brands is built on momentum as well as money. How much of that momentum survives a bigger, more expensive league is the real test."
+    ],
+    "close": "Watch the 20th club decision, the Kayo price and whether DAZN can sell the NRL overseas, because those three will decide how the deal ages."
+   },
+   "sources": [
+    "https://www.nrl.com/news/2026/07/07/historic-$5.3-billion-media-rights-deal-sets-new-benchmark-for-australian-sport/",
+    "https://nrl.com/news/2021/12/20/record-broadcast-deal-a-partnership-to-grow-game",
+    "https://www.afl.com.au/news/837244/seven-years-4-5b-afl-reveals-huge-new-broadcast-rights-deal",
+    "https://www.abc.net.au/news/2026-07-07/nrl-new-broadcast-rights-deal/106888646",
+    "https://www.sportcal.com/newsletters/foxtel-nine-sky-nz-seal-record-a5-3bn-nrl-rights-deals-through-2034",
+    "https://www.sportspro.com/news/broadcast-ott/nrl-foxtel-nine-sky-nz-rugby-league-broadcast-rights-contracts-july-2026/",
+    "https://www.bandt.com.au/nine-foxtel-lock-in-record-5-3-billion-nrl-rights-deal/",
+    "https://www.mediaweek.com.au/nrl-confirms-record-breaking-5-3bn-broadcast-deal-with-nine-and-foxtel/",
+    "https://www.zerotackle.com/nrl-tv-rights-20-teams-global-expansion-state-of-origin-and-more-big-talking-points-235617/"
+   ],
+   "slug": "2026-10-25-inside-the-nrl-s-5-3bn-deal"
+  },
+  {
    "date": "2026-10-18",
    "headline": "The NBA's most expensive square.",
    "descriptor": "How NBA jersey patches work and what they're worth",
