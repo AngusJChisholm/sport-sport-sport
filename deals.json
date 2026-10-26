@@ -5,6 +5,92 @@
  },
  "deals": [
   {
+   "date": "2026-10-26",
+   "added": "2026-10-27",
+   "deal": "Kalshi / Polymarket × NBA",
+   "sport": "Basketball",
+   "type": "Partnership",
+   "region": "Global",
+   "lead": true,
+   "headline": "NBA lets markets in.",
+   "summary": "The NBA named Kalshi and Polymarket its preferred prediction market exchanges, with IP rights, official Sportradar data and a CFTC information-sharing agreement alongside.",
+   "url": "https://frontofficesports.com/article/nba-tips-off-prediction-market-era-with-kalshi-polymarket/",
+   "article": {
+    "standfirst": "The NBA has named Kalshi and Polymarket its preferred prediction market exchanges, and a regulator agreement came with them.",
+    "body": [
+     "The NBA announced on Monday, US time, that Kalshi and Polymarket are now its preferred prediction market exchanges. Both get the right to use NBA intellectual property, including league and team names and logos, plus marketing and promotional rights across the United States. How long the arrangements run and what the exchanges are paying haven't been disclosed.",
+     "The data and the rules are as important as the branding. Both exchanges will settle authorised markets using official NBA data from Sportradar, the league's official data distribution partner. In return the NBA has laid down conditions: players, league employees and team employees can't trade on NBA contracts, the range of markets is limited, and information on suspicious trading gets shared. The sportsbook restrictions the league set earlier this month, such as the ban on parlays built on unders for low-minute players, will apply to prediction markets as well.",
+     "A regulator is part of the picture too. The NBA signed a memorandum of understanding with the US Commodity Futures Trading Commission to share information and build a framework for NBA-related markets. The Block reports the NBA is the third league to sign one, after MLB and the NHL. DraftKings, already an NBA marketing partner, has widened its deal to cover prediction markets nationwide and carries the status of authorised prediction market operator.",
+     "For sponsorship, the interesting part is the order of operations. Prediction markets have lived in a grey zone, and the league has put guardrails and a regulator's paperwork around them before putting the logos out. That gives other rights holders a template and gives the exchanges a sanctioned place in a sport that fills its arenas and its feeds. It also sets up the next fight over who else gets in.",
+     "Watch for the follow-ups. The league has said it will add more partners in the coming weeks, and Front Office Sports reports Novig is expected to sign later this week. The WNBA isn't automatically covered, so the exchanges would need separate deals for that. And the NFL is the major US league still without a commercial deal with prediction markets."
+    ],
+    "close": "The league has signed up for the money and the guardrails at the same time."
+   },
+   "image": "https://images.unsplash.com/photo-1765924705648-9a0731ac5202",
+   "imageCredit": "Unsplash",
+   "slug": "2026-10-27-kalshi-polymarket-nba"
+  },
+  {
+   "date": "2026-10-26",
+   "added": "2026-10-27",
+   "deal": "Radar Tires × MPBL",
+   "sport": "Basketball",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Radar Tires (Omni United) became official partner and exclusive tyre sponsor of the Philippines' Maharlika Pilipinas Basketball League in a multi-year deal.",
+   "url": "https://en.prnasia.com/releases/global/radar-tires-joins-forces-with-the-8-division-boxing-world-champion-manny-pacquiao-s-basketball-league-the-mpbl-to-drive-youth-forward-through-sport-in-the-philippines-553249.shtml"
+  },
+  {
+   "date": "2026-10-26",
+   "added": "2026-10-27",
+   "deal": "Smart Energy GB × SPFL",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Smart Energy GB was named the SPFL's Official Smart Meter Partner and Official Timing Partner, with branding on live Scottish Premiership TV graphics.",
+   "url": "https://www.insideworldfootball.com/2026/10/26/spfl-plugs-in-smart-energy-gb-to-sponsorship-roster-with-tv-graphics-deal"
+  },
+  {
+   "date": "2026-10-26",
+   "added": "2026-10-27",
+   "deal": "Winamax × WTT Champions",
+   "sport": "Table tennis",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Winamax returned as official partner of WTT Champions Montpellier and WTT Champions Frankfurt after partnering with WTT in 2025.",
+   "url": "https://www.sportcal.com/news/winamax-returns-as-wtt-champions-sponsor/"
+  },
+  {
+   "date": "2026-10-26",
+   "added": "2026-10-27",
+   "deal": "DraftKings × NBA",
+   "sport": "Basketball",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "DraftKings expanded its existing NBA marketing deal to cover prediction markets nationwide, as an authorised prediction market operator.",
+   "url": "https://sbcamericas.com/2026/10/26/nba-prediction-market-cftc-partnerships/"
+  },
+  {
+   "date": "2026-10-23",
+   "added": "2026-10-27",
+   "deal": "Sokin × Chelsea",
+   "sport": "Football",
+   "type": "Sleeve sponsorship",
+   "region": "Global",
+   "summary": "Sokin became Principal Partner and Official Business Payments and FX Partner of Chelsea FC and Chelsea FC Women in a multi-year sleeve deal.",
+   "url": "https://www.prnewswire.co.uk/news-releases/chelsea-fc-announces-multi-year-sleeve-partnership-with-sokin-the-business-payments-and-fx-platform-302918466.html"
+  },
+  {
+   "date": "2026-10-24",
+   "added": "2026-10-27",
+   "deal": "Sendwave × Olympique de Marseille",
+   "sport": "Football",
+   "type": "Premium partner",
+   "region": "Global",
+   "summary": "Sendwave, the Zepz money-transfer app, joined Marseille as a premium partner with branding on the back of the men's shirt this season.",
+   "url": "https://www.foot-sur7.fr/789634-lom-officialise-un-nouveau-sponsor-premium-sur-son-maillot"
+  },
+  {
    "date": "2026-10-23",
    "added": "2026-10-26",
    "deal": "Pitchwise Holdings × Valencia CF",

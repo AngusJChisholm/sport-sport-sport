@@ -6529,6 +6529,36 @@
     "icon",
     "logo"
    ]
+  },
+  "draftkings": {
+   "name": "DraftKings"
+  },
+  "radar-tires": {
+   "name": "Radar Tires"
+  },
+  "mpbl": {
+   "name": "MPBL"
+  },
+  "spfl": {
+   "name": "SPFL",
+   "domain": "spfl.co.uk"
+  },
+  "smart-energy-gb": {
+   "name": "Smart Energy GB",
+   "domain": "smartenergygb.org"
+  },
+  "winamax": {
+   "name": "Winamax"
+  },
+  "wtt-champions": {
+   "name": "WTT Champions"
+  },
+  "sendwave": {
+   "name": "Sendwave"
+  },
+  "olympique-de-marseille": {
+   "name": "Olympique de Marseille",
+   "domain": "om.fr"
   }
  },
  "leagues": [
