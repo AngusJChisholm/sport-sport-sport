@@ -6565,6 +6565,21 @@
   },
   "inspire-arena": {
    "name": "Inspire Arena"
+  },
+  "ariat": {
+   "name": "Ariat"
+  },
+  "dickies-arena": {
+   "name": "Dickies Arena"
+  },
+  "cska-sofia": {
+   "name": "CSKA Sofia"
+  },
+  "inbet": {
+   "name": "Inbet"
+  },
+  "amusnet": {
+   "name": "Amusnet"
   }
  },
  "leagues": [
