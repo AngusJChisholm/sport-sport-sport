@@ -325,30 +325,37 @@ def safe_post_carousel(uid, base, names, caption, tags=None, collaborators=None)
 
 
 def dedupe(delete=False, hours=48):
-    """Find repeat posts (same hook line) from the last `hours` and delete all but the first of each."""
+    """Find repeat posts (same hook line) from the last `hours` and delete all but the first of each.
+    Writes a report to instagram/state/dedupe.json."""
     uid = os.environ["IG_USER_ID"]
-    groups = {}
-    for md in recent_media(uid, hours):
-        groups.setdefault(caption_key(md.get("caption")), []).append(md)
+    report = {"at": now().isoformat(timespec="minutes"), "mode": "delete" if delete else "check", "groups": []}
     extras = []
-    for key, items in groups.items():
-        items.sort(key=lambda m: m["ts"])
-        print(f"::notice title=Posts::{len(items)}x '{key[:70]}' (keeping {items[0]['id']})")
-        extras += items[1:]
-    print(f"::notice title=Duplicates::{len(extras)} duplicate posts found in the last {hours}h")
-    if not delete:
-        return
-    gone, failed = 0, []
-    for md in extras:
-        try:
-            api("DELETE", md["id"])
-            gone += 1
-        except Exception as e:
-            failed.append(f"{md['id']}: {str(e)[:200]}")
-        time.sleep(1)
-    print(f"::notice title=Deleted::{gone} of {len(extras)} duplicates deleted")
-    for f in failed[:5]:
-        print(f"::error title=Delete failed::{f}")
+    try:
+        groups = {}
+        for md in recent_media(uid, hours):
+            groups.setdefault(caption_key(md.get("caption")), []).append(md)
+        for key, items in groups.items():
+            items.sort(key=lambda m: m["ts"])
+            report["groups"].append({"hook": key[:90], "count": len(items), "keep": items[0]["id"],
+                                     "first_posted": items[0]["ts"].astimezone(MEL).strftime("%a %H:%M"),
+                                     "keep_link": items[0].get("permalink")})
+            extras += items[1:]
+        report["duplicates"] = len(extras)
+        if delete:
+            report["deleted"], report["failed"] = 0, []
+            for md in extras:
+                try:
+                    api("DELETE", md["id"])
+                    report["deleted"] += 1
+                except Exception as e:
+                    report["failed"].append(f"{md['id']}: {str(e)[:300]}")
+                time.sleep(1)
+    except Exception as e:
+        report["error"] = f"{type(e).__name__}: {str(e)[:500]}"
+    print(json.dumps(report, indent=1))
+    out = ROOT / "instagram" / "state" / "dedupe.json"
+    save(out, report)
+    commit_push(f"Instagram repeat-post {report['mode']}", out)
 
 
 def post_carousel(uid, base, names, caption, tags=None, collaborators=None):
@@ -588,6 +595,9 @@ if __name__ == "__main__":
             do_post()
         except BaseException as e:
             print(f"::error title=Post failed::{type(e).__name__}: {str(e)[:500]}")
+            err = ROOT / "instagram" / "state" / "last-error.json"
+            save(err, {"at": now().isoformat(timespec="minutes"), "error": f"{type(e).__name__}: {str(e)[:800]}"})
+            try_commit_push("Instagram post error", err)
             raise
     elif cmd == "dedupe":
         dedupe(delete=len(sys.argv) > 2 and sys.argv[2] == "delete")
