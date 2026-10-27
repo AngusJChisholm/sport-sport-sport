@@ -1,31 +1,60 @@
 {
- "at": "2026-10-28T01:02+11:00",
- "mode": "delete",
+ "at": "2026-10-28T09:42+11:00",
+ "mode": "check",
  "groups": [
   {
    "hook": "five names, one league. here's who the nba lists as official and preferred in betting and ",
    "count": 4,
    "keep": "18000916545041025",
    "first_posted": "Tue 17:05",
-   "keep_link": "https://www.instagram.com/p/De_LGCQF9bq/"
+   "keep_link": "https://www.instagram.com/p/De_LGCQF9bq/",
+   "delete": [
+    {
+     "posted": "Tue 18:03",
+     "link": "https://www.instagram.com/p/De_RvGrl08O/",
+     "id": "18028778096702407"
+    },
+    {
+     "posted": "Tue 18:59",
+     "link": "https://www.instagram.com/p/De_YFNQl6_f/",
+     "id": "18115967390038361"
+    },
+    {
+     "posted": "Tue 23:20",
+     "link": "https://www.instagram.com/p/De_19QWj2gl/",
+     "id": "18142875487720430"
+    }
+   ]
   },
   {
    "hook": "the nba has let prediction markets in, with guardrails.",
    "count": 5,
    "keep": "18097315172446409",
    "first_posted": "Tue 19:43",
-   "keep_link": "https://www.instagram.com/p/De_dGqxlIas/"
+   "keep_link": "https://www.instagram.com/p/De_dGqxlIas/",
+   "delete": [
+    {
+     "posted": "Tue 20:23",
+     "link": "https://www.instagram.com/p/De_hvcIIKrf/",
+     "id": "18057606158799613"
+    },
+    {
+     "posted": "Tue 21:13",
+     "link": "https://www.instagram.com/p/De_naFQILBW/",
+     "id": "17984572556898887"
+    },
+    {
+     "posted": "Tue 21:57",
+     "link": "https://www.instagram.com/p/De_scK3FwT8/",
+     "id": "17879516610561184"
+    },
+    {
+     "posted": "Tue 22:35",
+     "link": "https://www.instagram.com/p/De_w2F7Fy7v/",
+     "id": "18632914090036158"
+    }
+   ]
   }
  ],
- "duplicates": 7,
- "deleted": 0,
- "failed": [
-  "18028778096702407: Instagram API 400 on 18028778096702407: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Aa7sBQQ7L0d6vH0m9t7w9Ax\"}}",
-  "18115967390038361: Instagram API 400 on 18115967390038361: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AHEnvlVRYcBE_39zMusn-IX\"}}",
-  "18142875487720430: Instagram API 400 on 18142875487720430: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Asoa9nQboYs3TaShNQl2O4Z\"}}",
-  "18057606158799613: Instagram API 400 on 18057606158799613: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AeoQ0jGbN80U9-WTnGqxmC0\"}}",
-  "17984572556898887: Instagram API 400 on 17984572556898887: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AJyJqQmxz2hsg5hSeFE7jqM\"}}",
-  "17879516610561184: Instagram API 400 on 17879516610561184: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Ay5EwujP1qN8WYsf4_z9yND\"}}",
-  "18632914090036158: Instagram API 400 on 18632914090036158: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Agp8-KvfWW1A6cfPZHgRMD-\"}}"
- ]
+ "duplicates": 7
 }
