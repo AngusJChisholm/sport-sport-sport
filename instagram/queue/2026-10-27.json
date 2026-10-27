@@ -1,0 +1,103 @@
+{
+ "date": "2026-10-27",
+ "hold": false,
+ "feed": {
+  "kind": "daily",
+  "cover": {
+   "tag": "Deal of the day",
+   "region": "Global",
+   "headline": "The NBA lets markets in.",
+   "highlight": "markets",
+   "deal": "Kalshi / Polymarket x NBA",
+   "descriptor": "Prediction market partnership"
+  },
+  "deal": {
+   "title": "Guardrails first, logos second.",
+   "rows": [
+    {
+     "main": "Preferred exchanges",
+     "sub": "Kalshi and Polymarket named by the NBA"
+    },
+    {
+     "main": "IP and data rights",
+     "sub": "League IP plus official Sportradar data"
+    },
+    {
+     "main": "Terms undisclosed",
+     "sub": "No length or fee announced"
+    }
+   ]
+  },
+  "why": {
+   "title": "Why this one matters.",
+   "points": [
+    {
+     "main": "Regulator on board",
+     "sub": "CFTC information-sharing agreement signed"
+    },
+    {
+     "main": "More partners coming",
+     "sub": "The league says others will follow"
+    }
+   ]
+  },
+  "others": [
+   {
+    "deal": "DraftKings x NBA",
+    "sub": "Basketball - Extension"
+   },
+   {
+    "deal": "Sokin x Chelsea",
+    "sub": "Football - Sleeve sponsorship"
+   },
+   {
+    "deal": "Sendwave x Olympique de Marseille",
+    "sub": "Football - Premium partner"
+   },
+   {
+    "deal": "Smart Energy GB x SPFL",
+    "sub": "Football - Official partner"
+   },
+   {
+    "deal": "Radar Tires x MPBL",
+    "sub": "Basketball - Official partner"
+   }
+  ]
+ },
+ "caption": "The NBA has let prediction markets in, with guardrails.\n\nKalshi and Polymarket are now the league's preferred prediction market exchanges, with IP rights and official Sportradar data. A CFTC information-sharing agreement came with them. Terms weren't disclosed, and the NBA says more partners are coming.\n\nAlso today: DraftKings x NBA, Sokin x Chelsea, Sendwave x Olympique de Marseille, Smart Energy GB x SPFL, Radar Tires x MPBL.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships",
+ "evergreen": {
+  "label": "The breakdown",
+  "headline": "Who's in the NBA's betting lineup.",
+  "highlight": "betting",
+  "descriptor": "The official names, from sportsbooks to prediction markets",
+  "region": "Global",
+  "items": [
+   {
+    "title": "DraftKings x NBA",
+    "sub": "Official gaming partner, now covering prediction markets",
+    "tag": "Sportsbook"
+   },
+   {
+    "title": "FanDuel x NBA",
+    "sub": "Official gaming partner",
+    "tag": "Sportsbook"
+   },
+   {
+    "title": "Kalshi x NBA",
+    "sub": "Preferred prediction market exchange",
+    "tag": "Prediction market"
+   },
+   {
+    "title": "Polymarket x NBA",
+    "sub": "Preferred prediction market exchange",
+    "tag": "Prediction market"
+   },
+   {
+    "title": "TAB x NBA",
+    "sub": "Official betting partner for Australia",
+    "tag": "ANZ"
+   }
+  ],
+  "caption": "Five names, one league. Here's who the NBA lists as official and preferred in betting and prediction markets.\n\nDraftKings and FanDuel are the official gaming partners, and DraftKings has just widened its deal to cover prediction markets. Kalshi and Polymarket are the preferred prediction market exchanges. In Australia, TAB is the NBA's official betting partner.\n\nSave this for later.\n\nFull archive: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+ }
+}
