@@ -320,6 +320,10 @@ def safe_post_carousel(uid, base, names, caption, tags=None, collaborators=None)
         found = already_posted(uid, caption)
         if found:
             print(f"::warning title=Instagram error after posting::{str(e)[:300]} (post is live: {found})")
+            note = ROOT / "instagram" / "state" / "last-error.json"
+            save(note, {"at": now().isoformat(timespec="minutes"), "post_is_live": found,
+                        "error": f"{type(e).__name__}: {str(e)[:800]}"})
+            try_commit_push("Instagram error after posting (post is live)", note)
             return found
         raise
 
@@ -338,7 +342,9 @@ def dedupe(delete=False, hours=48):
             items.sort(key=lambda m: m["ts"])
             report["groups"].append({"hook": key[:90], "count": len(items), "keep": items[0]["id"],
                                      "first_posted": items[0]["ts"].astimezone(MEL).strftime("%a %H:%M"),
-                                     "keep_link": items[0].get("permalink")})
+                                     "keep_link": items[0].get("permalink"),
+                                     "delete": [{"posted": m["ts"].astimezone(MEL).strftime("%a %H:%M"),
+                                                 "link": m.get("permalink"), "id": m["id"]} for m in items[1:]]})
             extras += items[1:]
         report["duplicates"] = len(extras)
         if delete:
