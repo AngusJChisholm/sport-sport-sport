@@ -105,6 +105,14 @@ def commit_push(message, *files):
     raise SystemExit("Could not push to main")
 
 
+def try_commit_push(message, *files):
+    """Saving state must never stop a run: the duplicate check reads Instagram itself."""
+    try:
+        commit_push(message, *files)
+    except BaseException as e:
+        print(f"::warning title=State not saved::{message}: {str(e)[:300]}")
+
+
 def story_window(q):
     """Stories go at 8am unless the queue sets "story_time" (e.g. "19:00" for a late first post)."""
     if q.get("story_time"):
@@ -224,8 +232,8 @@ def api(method, path, **params):
     params["access_token"] = os.environ["IG_ACCESS_TOKEN"]
     data = urllib.parse.urlencode(params).encode()
     url = f"{API}/{path}"
-    if method == "GET":
-        req = urllib.request.Request(url + "?" + data.decode())
+    if method in ("GET", "DELETE"):
+        req = urllib.request.Request(url + "?" + data.decode(), method=method)
     else:
         req = urllib.request.Request(url, data=data, method="POST")
     try:
@@ -269,6 +277,78 @@ def with_fallback(make, extras):
         except Exception as e:
             print("Tags/collaborators rejected, posting without them:", str(e)[:300])
     return make({})
+
+
+def caption_key(text):
+    """First line of a caption: the hook, unique to each post."""
+    return (text or "").strip().split("\n")[0].strip().lower()
+
+
+def recent_media(uid, hours=36):
+    media = api("GET", f"{uid}/media", fields="id,caption,timestamp,permalink", limit=50).get("data", [])
+    cutoff = datetime.now(MEL) - timedelta(hours=hours)
+    out = []
+    for md in media:
+        ts = datetime.fromisoformat(md["timestamp"].replace("+0000", "+00:00"))
+        if ts >= cutoff:
+            md["ts"] = ts
+            out.append(md)
+    return out
+
+
+def already_posted(uid, caption):
+    """The id of a post from the last 36 hours with the same hook line, if Instagram already has one."""
+    key = caption_key(caption)
+    if not key:
+        return None
+    for md in recent_media(uid):
+        if caption_key(md.get("caption")) == key:
+            return md["id"]
+    return None
+
+
+def safe_post_carousel(uid, base, names, caption, tags=None, collaborators=None):
+    """Post once. If Instagram errors after the post went live, find it instead of failing (which caused repeats)."""
+    found = already_posted(uid, caption)
+    if found:
+        print("Already on Instagram, not posting again:", found)
+        return found
+    try:
+        return post_carousel(uid, base, names, caption, tags, collaborators)
+    except Exception as e:
+        time.sleep(20)
+        found = already_posted(uid, caption)
+        if found:
+            print(f"::warning title=Instagram error after posting::{str(e)[:300]} (post is live: {found})")
+            return found
+        raise
+
+
+def dedupe(delete=False, hours=48):
+    """Find repeat posts (same hook line) from the last `hours` and delete all but the first of each."""
+    uid = os.environ["IG_USER_ID"]
+    groups = {}
+    for md in recent_media(uid, hours):
+        groups.setdefault(caption_key(md.get("caption")), []).append(md)
+    extras = []
+    for key, items in groups.items():
+        items.sort(key=lambda m: m["ts"])
+        print(f"::notice title=Posts::{len(items)}x '{key[:70]}' (keeping {items[0]['id']})")
+        extras += items[1:]
+    print(f"::notice title=Duplicates::{len(extras)} duplicate posts found in the last {hours}h")
+    if not delete:
+        return
+    gone, failed = 0, []
+    for md in extras:
+        try:
+            api("DELETE", md["id"])
+            gone += 1
+        except Exception as e:
+            failed.append(f"{md['id']}: {str(e)[:200]}")
+        time.sleep(1)
+    print(f"::notice title=Deleted::{gone} of {len(extras)} duplicates deleted")
+    for f in failed[:5]:
+        print(f"::error title=Delete failed::{f}")
 
 
 def post_carousel(uid, base, names, caption, tags=None, collaborators=None):
@@ -345,19 +425,19 @@ def do_post():
     d = due(q, state, m, t)
 
     if d["feed"]:
-        state["feed_id"] = post_carousel(uid, base, m["feed"], q.get("caption"), q.get("tags"), q.get("collaborators"))
+        state["feed_id"] = safe_post_carousel(uid, base, m["feed"], q.get("caption"), q.get("tags"), q.get("collaborators"))
         state["feed_done"] = t.isoformat(timespec="minutes")
         save(p["state"], state)
         print("Posted carousel", state["feed_id"])
-        commit_push(f"Instagram carousel posted {date}", p["state"])
+        try_commit_push(f"Instagram carousel posted {date}", p["state"])
 
     if d["evergreen"] and m.get("evergreen"):
         ev = q["evergreen"]
-        state["evergreen_id"] = post_carousel(uid, base, m["evergreen"], ev.get("caption"), ev.get("tags"), ev.get("collaborators"))
+        state["evergreen_id"] = safe_post_carousel(uid, base, m["evergreen"], ev.get("caption"), ev.get("tags"), ev.get("collaborators"))
         state["evergreen_done"] = t.isoformat(timespec="minutes")
         save(p["state"], state)
         print("Posted evergreen carousel", state["evergreen_id"])
-        commit_push(f"Instagram evergreen posted {date}", p["state"])
+        try_commit_push(f"Instagram evergreen posted {date}", p["state"])
 
     if d["reel"]:
         try:
@@ -504,7 +584,13 @@ if __name__ == "__main__":
     elif cmd == "render":
         do_render()
     elif cmd == "post":
-        do_post()
+        try:
+            do_post()
+        except BaseException as e:
+            print(f"::error title=Post failed::{type(e).__name__}: {str(e)[:500]}")
+            raise
+    elif cmd == "dedupe":
+        dedupe(delete=len(sys.argv) > 2 and sys.argv[2] == "delete")
     elif cmd == "check":
         check()
     elif cmd == "stats":

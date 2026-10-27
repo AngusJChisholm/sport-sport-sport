@@ -9,10 +9,10 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "plan = normal run, render = force re-render today's images"
+        description: "plan = normal run, render = force re-render today's images, dedupe-check = list repeat posts, dedupe-delete = delete repeat posts (keeps the first of each)"
         default: plan
         type: choice
-        options: [plan, render]
+        options: [plan, render, dedupe-check, dedupe-delete]
 
 permissions:
   contents: write
@@ -30,8 +30,17 @@ jobs:
         with:
           fetch-depth: 1
 
+      - name: Clean up repeat posts
+        if: startsWith(inputs.action, 'dedupe')
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_LOGIN: ${{ vars.IG_LOGIN }}
+        run: python3 tools/instagram_post.py dedupe ${{ inputs.action == 'dedupe-delete' && 'delete' || 'check' }}
+
       - name: What's due
         id: plan
+        if: ${{ !startsWith(inputs.action, 'dedupe') }}
         run: python3 tools/instagram_post.py plan
 
       - name: Install renderer
