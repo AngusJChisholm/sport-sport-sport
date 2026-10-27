@@ -6,6 +6,42 @@
  "deals": [
   {
    "date": "2026-10-26",
+   "added": "2026-10-28",
+   "deal": "Youi × Big Bash League",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Youi joins the Bash.",
+   "summary": "Youi becomes official partner of the men's and women's Big Bash leagues and backs five clubs.",
+   "url": "https://www.brisbaneheat.com.au/news/4598843/heat-fans-win-with-youi-big-bash-backer-announced",
+   "image": "https://images.unsplash.com/photo-1512719994953-eabf50895df7",
+   "imageCredit": "Unsplash",
+   "article": {
+    "standfirst": "Youi has signed on as an official partner of the men's and women's Big Bash leagues, and it is backing five clubs on top.",
+    "body": [
+     "Youi has become an official partner of Cricket Australia's two Big Bash competitions, the KFC BBL and the Weber WBBL. The insurer is also signing direct deals with five clubs: Brisbane Heat, Hobart Hurricanes, Melbourne Renegades, Melbourne Stars and Sydney Thunder. The club releases went out on Monday 26 October, with trade coverage following a day later. Length and value were not disclosed.",
+     "The visible parts are easy to spot. Youi will be on the playing kit of those five clubs through the BBL|16 season, and on umpire uniforms in both the men's and women's competitions. The deal kicks off with the opening of WBBL|12 on Thursday 29 October, so the brand gets its first look at a live audience within days of the announcement.",
+     "What stands out is the shape of it. One brand holds a league-wide partner role and also sits on the shirts of five of the competition's clubs. Most insurers pick one or the other. Splitting the spend across the league and a majority of its clubs gives Youi both the broadcast-level exposure and the local, club-level relationships that tend to build loyalty.",
+     "Youi is also leaning on the fans rather than the players. Its marketing chief, Angela Greenwood, says the brand wants to celebrate fans, communities and volunteers, and the plan includes match-day fan engagement, volunteer recognition and grassroots community cricket activations. In a category where insurers fight for attention, a pitch built around the people in the stands and the local clubs is a sensible fit for a summer competition that runs through the holidays.",
+     "For the Big Bash, it adds another name to a sponsor list that already carries plenty of big brands. For rival insurers, it raises the bar on how much of the cricket calendar one competitor can own. Watch how Youi uses the five-club structure, and whether the league-wide rights lead to more in-stadium activity once the men's season starts."
+    ],
+    "close": "One insurer, two leagues, five clubs. That is a serious summer."
+   },
+   "slug": "2026-10-28-youi-big-bash-league"
+  },
+  {
+   "date": "2026-10-26",
+   "added": "2026-10-28",
+   "deal": "Naver × Inspire Arena",
+   "sport": "Venues",
+   "type": "Naming rights",
+   "region": "Global",
+   "summary": "Naver takes naming rights to Incheon's Inspire Arena on a three-year deal from December.",
+   "url": "https://en.sedaily.com/technology/2026/10/26/inspire-arena-to-be-renamed-naver-arena-under-3-year-deal"
+  },
+  {
+   "date": "2026-10-26",
    "added": "2026-10-27",
    "deal": "Kalshi / Polymarket × NBA",
    "sport": "Basketball",

@@ -6559,6 +6559,12 @@
   "olympique-de-marseille": {
    "name": "Olympique de Marseille",
    "domain": "om.fr"
+  },
+  "naver": {
+   "name": "Naver"
+  },
+  "inspire-arena": {
+   "name": "Inspire Arena"
   }
  },
  "leagues": [
