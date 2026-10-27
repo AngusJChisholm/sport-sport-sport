@@ -1,6 +1,6 @@
 {
  "at": "2026-10-28T01:02+11:00",
- "mode": "check",
+ "mode": "delete",
  "groups": [
   {
    "hook": "five names, one league. here's who the nba lists as official and preferred in betting and ",
@@ -17,5 +17,15 @@
    "keep_link": "https://www.instagram.com/p/De_dGqxlIas/"
   }
  ],
- "duplicates": 7
+ "duplicates": 7,
+ "deleted": 0,
+ "failed": [
+  "18028778096702407: Instagram API 400 on 18028778096702407: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Aa7sBQQ7L0d6vH0m9t7w9Ax\"}}",
+  "18115967390038361: Instagram API 400 on 18115967390038361: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AHEnvlVRYcBE_39zMusn-IX\"}}",
+  "18142875487720430: Instagram API 400 on 18142875487720430: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Asoa9nQboYs3TaShNQl2O4Z\"}}",
+  "18057606158799613: Instagram API 400 on 18057606158799613: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AeoQ0jGbN80U9-WTnGqxmC0\"}}",
+  "17984572556898887: Instagram API 400 on 17984572556898887: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AJyJqQmxz2hsg5hSeFE7jqM\"}}",
+  "17879516610561184: Instagram API 400 on 17879516610561184: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Ay5EwujP1qN8WYsf4_z9yND\"}}",
+  "18632914090036158: Instagram API 400 on 18632914090036158: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"Agp8-KvfWW1A6cfPZHgRMD-\"}}"
+ ]
 }
