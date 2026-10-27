@@ -6580,6 +6580,24 @@
   },
   "amusnet": {
    "name": "Amusnet"
+  },
+  "tank-juice": {
+   "name": "TANK Juice"
+  },
+  "green-com-au": {
+   "name": "Green.com.au"
+  },
+  "1komma5": {
+   "name": "1KOMMA5°"
+  },
+  "fancode": {
+   "name": "FanCode"
+  },
+  "nepal-premier-league": {
+   "name": "Nepal Premier League"
+  },
+  "herbalife": {
+   "name": "Herbalife"
   }
  },
  "leagues": [
