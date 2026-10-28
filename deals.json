@@ -5,6 +5,82 @@
  },
  "deals": [
   {
+   "date": "2026-10-28",
+   "added": "2026-10-29",
+   "deal": "adidas × Melbourne Storm",
+   "sport": "Rugby league",
+   "type": "Apparel partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Storm go three stripes.",
+   "summary": "adidas became the Storm's Official Apparel Partner in a multi-year deal covering kit for the NRL squad, pathways and academy, with the new jersey debuting in Las Vegas.",
+   "url": "https://ministryofsport.com/melbourne-storm-announce-adidas-as-official-apparel-partner/",
+   "image": "assets/img/2026-10-29-adidas-melbourne-storm.jpg",
+   "imageCredit": "Supplied",
+   "article": {
+    "standfirst": "adidas is the Melbourne Storm's new Official Apparel Partner, and the three stripes will make their debut in Las Vegas.",
+    "body": [
+     "Melbourne Storm have named adidas as their Official Apparel Partner on a multi-year agreement. The deal runs through adidas Pacific and covers playing kit, training, performance and lifestyle apparel for the NRL squad, the club's elite male and female pathway teams and its academy programs. Neither side has put a number on it or said how long it lasts.",
+     "The timing does a lot of the work. The Storm's new jersey is set to debut when the club opens its 2027 season in Las Vegas, a first for the club on US soil. Storm executive Tayah Bot says the club will be debuting the new jersey on the world stage. For a global sportswear brand, that is a made-for-TV launch moment with an American audience watching an NRL strip for the first time.",
+     "It also shows how far the apparel conversation has moved. A kit deal used to be about the jersey and the merch rack. This one spans the pathways, the women's program and the academy, which means one brand shapes how the club looks from junior representative level up. adidas Pacific's Rachel Howard is on the record backing the club's elite programs, which tells you where the brand sees the value.",
+     "For the NRL, it is another sign that the big global sportswear names see rugby league as worth a serious play, particularly when the schedule gives them a stage like Vegas. For rivals, it raises the bar on what an apparel partner is expected to bring beyond supplying kit.",
+     "What to watch next: the jersey reveal itself, how adidas uses the Vegas trip in its global marketing, and whether the retail range lands before or after the big night."
+    ],
+    "close": "The Storm have picked their moment. Vegas is the runway."
+   },
+   "slug": "2026-10-29-adidas-melbourne-storm"
+  },
+  {
+   "date": "2026-10-28",
+   "added": "2026-10-29",
+   "deal": "Taittinger × Newcastle United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Taittinger became Newcastle's champagne partner in a multi-year hospitality deal covering St James' Park.",
+   "url": "https://sportsmintmedia.com/newcastle-united-raise-a-glass-to-taittinger-in-new-hospitality-partnership/"
+  },
+  {
+   "date": "2026-10-28",
+   "added": "2026-10-29",
+   "deal": "waterdrop × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "waterdrop is the Sixers' Official Hydration and Refill Bottle Partner on a one-year deal, with shirt branding in WBBL|12.",
+   "url": "https://ministryofsport.com/sydney-sixers-signs-waterdrop-as-official-hydration-partner/"
+  },
+  {
+   "date": "2026-10-28",
+   "added": "2026-10-29",
+   "deal": "CSP International × World Surf League",
+   "sport": "Surfing",
+   "type": "Agency partnership",
+   "region": "ANZ",
+   "summary": "The WSL appointed Gold Coast agency CSP International as its sales and sponsorship agency across Australia, New Zealand and APAC.",
+   "url": "https://www.bandt.com.au/word-surf-league-hires-csp-international-to-help-grow-partnerships-across-apac/"
+  },
+  {
+   "date": "2026-10-23",
+   "added": "2026-10-29",
+   "deal": "The R&A × Golf Australia / PGA of Australia",
+   "sport": "Golf",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "Golf Australia and the PGA of Australia are bringing The R&A's Just Swing participation campaign to Australia, fronted by Dylan Alcott and Anabelle Smith.",
+   "url": "https://www.bandt.com.au/dylan-alcott-fronts-golf-australia-campaign-to-get-more-people-playing/"
+  },
+  {
+   "date": "2026-10-18",
+   "added": "2026-10-29",
+   "deal": "Dreamworld × Supercars",
+   "sport": "Motorsport",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "Dreamworld partnered with Supercars around the Boost Mobile Gold Coast 500, with discounted park entry for ticket holders. Year inferred from the article's 18 Oct stamp.",
+   "url": "https://www.supercars.com/news/supercars-news-2026-dreamworld-revs-up-gold-coast-500-thrill-ride-partnership-fan-activation-announcement"
+  },
+  {
    "date": "2026-10-26",
    "added": "2026-10-28",
    "deal": "Youi × Big Bash League",

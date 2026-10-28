@@ -6598,6 +6598,20 @@
   },
   "herbalife": {
    "name": "Herbalife"
+  },
+  "taittinger": {
+   "name": "Taittinger"
+  },
+  "waterdrop": {
+   "name": "waterdrop"
+  },
+  "csp-international": {
+   "name": "CSP International",
+   "domain": "cspinternational.co"
+  },
+  "the-r-a": {
+   "name": "The R&A",
+   "domain": "randa.org"
   }
  },
  "leagues": [
