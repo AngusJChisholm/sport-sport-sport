@@ -1,0 +1,5 @@
+{
+ "at": "2026-10-28T19:15+11:00",
+ "post_is_live": "17914336224489082",
+ "error": "RuntimeError: Instagram API 403 on 17841421029030442/media_publish: {\"error\":{\"message\":\"Application request limit reached\",\"type\":\"OAuthException\",\"is_transient\":false,\"code\":4,\"error_subcode\":2207051,\"error_user_title\":\"action is blocked\",\"error_user_msg\":\"We restrict certain activity to protect our community. Tell us if you think we made a mistake.\",\"fbtrace_id\":\"Alt8PeM9G2ZeQKib6GybhCo\"}}"
+}
