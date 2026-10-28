@@ -1,19 +1,19 @@
 {
- "date": "2026-10-28",
+ "date": "2026-10-29",
  "username": "sportsportsport.hq",
  "followers": 8,
  "followers_change_7d": 1,
- "since": "2026-10-21",
- "posts_last_7d": 13,
+ "since": "2026-10-22",
+ "posts_last_7d": 5,
  "best_post_7d": {
-  "when": "Tue 27 Oct 23:20",
-  "hour": 23,
-  "weekday": "Tue",
+  "when": "Wed 28 Oct 19:15",
+  "hour": 19,
+  "weekday": "Wed",
   "type": "FEED",
   "likes": 0,
   "comments": 0,
-  "caption": "Five names, one league. Here's who the NBA lists as official and preferred in betting and ",
-  "link": "https://www.instagram.com/p/De_19QWj2gl/",
+  "caption": "Youi just went big on the Bash.",
+  "link": "https://www.instagram.com/p/DfB-s6ljVta/",
   "recent": true,
   "score": 0
  },
@@ -26,11 +26,6 @@
  },
  "best_time_slots": [
   {
-   "slot": "Wed 19:00",
-   "avg_score": 1.0,
-   "posts": 1
-  },
-  {
    "slot": "Sat 15:00",
    "avg_score": 1.0,
    "posts": 1
@@ -39,19 +34,24 @@
    "slot": "Fri 20:00",
    "avg_score": 1.0,
    "posts": 1
+  },
+  {
+   "slot": "Wed 19:00",
+   "avg_score": 0.5,
+   "posts": 2
   }
  ],
  "insights_available": false,
  "recent_posts": [
   {
-   "when": "Tue 27 Oct 23:20",
-   "hour": 23,
-   "weekday": "Tue",
+   "when": "Wed 28 Oct 19:15",
+   "hour": 19,
+   "weekday": "Wed",
    "type": "FEED",
    "likes": 0,
    "comments": 0,
-   "caption": "Five names, one league. Here's who the NBA lists as official and preferred in betting and ",
-   "link": "https://www.instagram.com/p/De_19QWj2gl/",
+   "caption": "Youi just went big on the Bash.",
+   "link": "https://www.instagram.com/p/DfB-s6ljVta/",
    "recent": true,
    "score": 0
   },
@@ -64,78 +64,6 @@
    "comments": 0,
    "caption": "The NBA has let prediction markets in, with guardrails.",
    "link": "https://www.instagram.com/p/De_w2F7Fy7v/",
-   "recent": true,
-   "score": 0
-  },
-  {
-   "when": "Tue 27 Oct 21:57",
-   "hour": 21,
-   "weekday": "Tue",
-   "type": "FEED",
-   "likes": 0,
-   "comments": 0,
-   "caption": "The NBA has let prediction markets in, with guardrails.",
-   "link": "https://www.instagram.com/p/De_scK3FwT8/",
-   "recent": true,
-   "score": 0
-  },
-  {
-   "when": "Tue 27 Oct 21:13",
-   "hour": 21,
-   "weekday": "Tue",
-   "type": "FEED",
-   "likes": 0,
-   "comments": 0,
-   "caption": "The NBA has let prediction markets in, with guardrails.",
-   "link": "https://www.instagram.com/p/De_naFQILBW/",
-   "recent": true,
-   "score": 0
-  },
-  {
-   "when": "Tue 27 Oct 20:23",
-   "hour": 20,
-   "weekday": "Tue",
-   "type": "FEED",
-   "likes": 0,
-   "comments": 0,
-   "caption": "The NBA has let prediction markets in, with guardrails.",
-   "link": "https://www.instagram.com/p/De_hvcIIKrf/",
-   "recent": true,
-   "score": 0
-  },
-  {
-   "when": "Tue 27 Oct 19:43",
-   "hour": 19,
-   "weekday": "Tue",
-   "type": "FEED",
-   "likes": 0,
-   "comments": 0,
-   "caption": "The NBA has let prediction markets in, with guardrails.",
-   "link": "https://www.instagram.com/p/De_dGqxlIas/",
-   "recent": true,
-   "score": 0
-  },
-  {
-   "when": "Tue 27 Oct 18:59",
-   "hour": 18,
-   "weekday": "Tue",
-   "type": "FEED",
-   "likes": 0,
-   "comments": 0,
-   "caption": "Five names, one league. Here's who the NBA lists as official and preferred in betting and ",
-   "link": "https://www.instagram.com/p/De_YFNQl6_f/",
-   "recent": true,
-   "score": 0
-  },
-  {
-   "when": "Tue 27 Oct 18:03",
-   "hour": 18,
-   "weekday": "Tue",
-   "type": "FEED",
-   "likes": 0,
-   "comments": 0,
-   "caption": "Five names, one league. Here's who the NBA lists as official and preferred in betting and ",
-   "link": "https://www.instagram.com/p/De_RvGrl08O/",
    "recent": true,
    "score": 0
   },
@@ -172,30 +100,6 @@
    "comments": 0,
    "caption": "Hahn is the new Official Beer of the Australian Open.",
    "link": "https://www.instagram.com/p/DeyEk-dlE8K/",
-   "recent": true,
-   "score": 0
-  },
-  {
-   "when": "Wed 21 Oct 18:10",
-   "hour": 18,
-   "weekday": "Wed",
-   "type": "FEED",
-   "likes": 0,
-   "comments": 0,
-   "caption": "Sport Sport Sport has a proper home now.",
-   "link": "https://www.instagram.com/p/Dev1wZpDfSf/",
-   "recent": true,
-   "score": 0
-  },
-  {
-   "when": "Wed 21 Oct 12:21",
-   "hour": 12,
-   "weekday": "Wed",
-   "type": "FEED",
-   "likes": 0,
-   "comments": 0,
-   "caption": "Woolworths has put its hand up for both home Rugby World Cups.",
-   "link": "https://www.instagram.com/p/DevN2JeFGY-/",
    "recent": true,
    "score": 0
   }
