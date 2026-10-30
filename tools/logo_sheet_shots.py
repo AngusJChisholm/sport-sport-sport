@@ -10,6 +10,11 @@ async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
         pg = await b.new_page(viewport={"width": 1600, "height": 1000})
+        # Brandfetch only serves logos to the site's own address, so present the live site as the referrer.
+        async def ref(route):
+            h = dict(route.request.headers); h["referer"] = "https://sportsportsport.com.au/"
+            await route.continue_(headers=h)
+        await pg.route("**/*brandfetch.io/**", ref)
         for i in range((total + N - 1) // N):
             await pg.goto(f"http://localhost:8000/logo-sheet.html?from={i*N}&n={N}", wait_until="domcontentloaded")
             await pg.wait_for_timeout(25000)
