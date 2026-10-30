@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: pip install -q pillow
-      - run: if [ "${{ inputs.mode }}" = "verify" ]; then python3 tools/logo_verify.py; elif [ "${{ inputs.mode }}" = "find" ]; then python3 tools/logo_find.py; elif [ "${{ inputs.mode }}" = "discover" ]; then python3 tools/logo_discover.py; else python3 tools/logo_check.py ${{ inputs.mode }}; fi
+      - run: if [ "${{ inputs.mode }}" = "search" ]; then python3 tools/logo_search.py; elif [ "${{ inputs.mode }}" = "verify" ]; then python3 tools/logo_verify.py; elif [ "${{ inputs.mode }}" = "find" ]; then python3 tools/logo_find.py; elif [ "${{ inputs.mode }}" = "discover" ]; then python3 tools/logo_discover.py; else python3 tools/logo_check.py ${{ inputs.mode }}; fi
         timeout-minutes: 300
       # The report goes to its own branch so it never touches the live site.
       - run: |

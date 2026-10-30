@@ -10,7 +10,6 @@ import json, os, re, time, threading, urllib.parse, urllib.request, io
 from concurrent.futures import ThreadPoolExecutor
 
 E = json.load(open("entities.json")); cid = E["brandfetch"]
-todo = json.load(open("tools/logo_verify_input.json"))
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
       "Accept": "text/html,application/xhtml+xml,image/*,*/*;q=0.8"}
 lock = threading.Lock(); last = [0.0]
@@ -108,10 +107,12 @@ def run(item):
     return slug, {"none": doms}
 
 
-rep = {"ok": {}, "none": {}}
-with ThreadPoolExecutor(3) as ex:
+if __name__ == "__main__":
+  todo = json.load(open("tools/logo_verify_input.json"))
+  rep = {"ok": {}, "none": {}}
+  with ThreadPoolExecutor(3) as ex:
     for i, (slug, r) in enumerate(ex.map(run, todo.items())):
         (rep["none"] if "none" in r else rep["ok"])[slug] = r
         if i % 50 == 0: print(i, len(rep["ok"]), flush=True)
-json.dump(rep, open("logo-report.json", "w"), indent=1, ensure_ascii=False)
-print("ok", len(rep["ok"]), "none", len(rep["none"]))
+  json.dump(rep, open("logo-report.json", "w"), indent=1, ensure_ascii=False)
+  print("ok", len(rep["ok"]), "none", len(rep["none"]))
