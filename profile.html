@@ -145,7 +145,7 @@ const L=window.SSSLogos, esc=L.esc;
 const id=String(new URLSearchParams(location.search).get("id")||"").toLowerCase().replace(/[^a-z0-9-]/g,"");
 const sortKey=d=>d.date||((d.month||"0000-00")+"-00");
 const dObj=d=>d.date?new Date(d.date+"T00:00:00"):new Date((d.month||"2026-01")+"-01T00:00:00");
-const fmt=d=>d.date?dObj(d).toLocaleDateString("en-AU",{day:"2-digit",month:"short",year:"numeric"}):dObj(d).toLocaleDateString("en-AU",{month:"short",year:"numeric"});
+const fmt=d=>!d.date&&!d.month?"Current partner":d.date?dObj(d).toLocaleDateString("en-AU",{day:"2-digit",month:"short",year:"numeric"}):dObj(d).toLocaleDateString("en-AU",{month:"short",year:"numeric"});
 const art=d=>d.slug&&d.article?`articles/${encodeURIComponent(d.slug)}.html`:"";
 $("yr").textContent=new Date().getFullYear();
 
@@ -172,7 +172,7 @@ Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()])
   $("bigLogo").innerHTML=L.mark(e,{px:280,big:true});
   if(!mine.length){$("none").hidden=false;return}
 
-  const first=mine[mine.length-1], latest=mine[0];
+  const dated=mine.filter(d=>d.date||d.month), first=dated[dated.length-1]||mine[mine.length-1], latest=dated[0]||mine[0];
   $("stats").innerHTML=[[mine.length,mine.length===1?"deal filed":"deals filed"],[sports.length,sports.length===1?"sport":"sports"],[fmt(latest),"latest deal"],[fmt(first),"first filed"]]
     .map(([v,l])=>`<div class="stat"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("");
   $("acts").innerHTML=`<a class="more" href="index.html?club=${encodeURIComponent(id)}#archive">See them in the archive →</a>`+(e.domain?`<a class="more" href="https://${esc(e.domain)}" target="_blank" rel="noopener">${esc(e.domain)} ↗</a>`:"");

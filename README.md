@@ -19,6 +19,7 @@ Add new entries to the top of the `deals` list in `deals.json`:
 - `headline` - lead story only, the big display line
 - `summary`, `url` - optional. With a `url`, the deal links to its source
 - `month` instead of `date` (e.g. `"2026-09"`) for deals where the exact day isn't known
+- No `date` or `month`, plus `"listed": "YYYY-MM-DD"`, for a current partner taken from the club's official partners page whose announcement can't be found. It shows as "Current partner" and sits at the bottom of the archive and profile pages. Swap in the real `date` once the announcement turns up
 
 The newest dated lead story always becomes the hero, and the other deals from that same day fill the round-up.
 
