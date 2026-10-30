@@ -1,24 +1,24 @@
 {
- "date": "2026-10-30",
+ "date": "2026-10-31",
  "username": "sportsportsport.hq",
  "followers": 8,
  "followers_change_7d": 1,
- "since": "2026-10-23",
- "posts_last_7d": 5,
+ "since": "2026-10-24",
+ "posts_last_7d": 6,
  "best_post_7d": {
   "when": "Thu 29 Oct 19:52",
   "hour": 19,
   "weekday": "Thu",
   "type": "FEED",
-  "likes": 0,
+  "likes": 1,
   "comments": 0,
   "caption": "Storm go three stripes.",
   "link": "https://www.instagram.com/p/DfEnzfJjlw-/",
   "recent": true,
-  "score": 0
+  "score": 1
  },
  "totals_7d": {
-  "likes": 0,
+  "likes": 1,
   "comments": 0,
   "saved": 0,
   "shares": 0,
@@ -44,16 +44,28 @@
  "insights_available": false,
  "recent_posts": [
   {
+   "when": "Fri 30 Oct 19:10",
+   "hour": 19,
+   "weekday": "Fri",
+   "type": "FEED",
+   "likes": 0,
+   "comments": 0,
+   "caption": "Six deals that shaped the week.",
+   "link": "https://www.instagram.com/p/DfHHwTlFyYr/",
+   "recent": true,
+   "score": 0
+  },
+  {
    "when": "Thu 29 Oct 19:52",
    "hour": 19,
    "weekday": "Thu",
    "type": "FEED",
-   "likes": 0,
+   "likes": 1,
    "comments": 0,
    "caption": "Storm go three stripes.",
    "link": "https://www.instagram.com/p/DfEnzfJjlw-/",
    "recent": true,
-   "score": 0
+   "score": 1
   },
   {
    "when": "Wed 28 Oct 19:15",
