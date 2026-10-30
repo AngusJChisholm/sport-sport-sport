@@ -24210,13 +24210,13 @@
    "url": "https://sportsmintmedia.com/napoli-expand-commercial-portfolio-with-dongfeng-and-it-centric-partnerships/"
   },
   {
-   "listed": "2026-10-30",
+   "month": "2024-09",
    "deal": "Youi × Brisbane Lions",
    "sport": "AFL",
-   "type": "Principal partner",
+   "type": "Renewal",
    "region": "ANZ",
-   "summary": "Listed as a principal partner on the club's official partners page.",
-   "url": "https://www.lions.com.au/partners"
+   "summary": "Youi extended with the Lions for five years from November 2024, stepping up to sole Principal Partner across AFL, AFLW, Academy and community.",
+   "url": "https://lions.com.au/news/1646350/high-fives-all-round-as-youi-and-the-lions-sign-on-for-five-more-years"
   },
   {
    "listed": "2026-10-30",
@@ -24233,8 +24233,8 @@
    "sport": "AFL",
    "type": "Major partner",
    "region": "ANZ",
-   "summary": "Listed as a major partner on the club's official partners page.",
-   "url": "https://www.lions.com.au/partners"
+   "summary": "Keri Juice joined the Lions as a Major Partner, taking the game-day and training shorts and venue rights across the club's venues.",
+   "url": "https://www.lions.com.au/news/1968587/keri-juice-joins-back-to-back-premiers-as-major-partner"
   },
   {
    "listed": "2026-10-30",
@@ -24584,17 +24584,17 @@
    "sport": "AFL",
    "type": "Major partner",
    "region": "ANZ",
-   "summary": "Listed as a major partner on the club's official partners page.",
-   "url": "https://www.carltonfc.com.au/partners"
+   "summary": "Hyundai signed a five-year extension as Carlton's co-major partner, one of the longest-running partnerships in Australian sport.",
+   "url": "https://www.carltonfc.com.au/news/1268627/hyundai-extend-for-five-years-as-a-co-major"
   },
   {
-   "listed": "2026-10-30",
+   "date": "2024-03-11",
    "deal": "Great Southern Bank × Carlton",
    "sport": "AFL",
-   "type": "Major partner",
+   "type": "Extension",
    "region": "ANZ",
-   "summary": "Listed as a major partner on the club's official partners page.",
-   "url": "https://www.carltonfc.com.au/partners"
+   "summary": "Great Southern Bank extended as Carlton's co-major partner until at least the end of 2027.",
+   "url": "https://www.greatsouthernbank.com.au/about/news/great-southern-bank-expands-partnership-with-carlton-football-club"
   },
   {
    "listed": "2026-10-30",
@@ -24804,13 +24804,13 @@
    "url": "https://www.collingwoodfc.com.au/partners"
   },
   {
-   "listed": "2026-10-30",
+   "date": "2024-02-28",
    "deal": "Primo × Collingwood",
    "sport": "AFL",
-   "type": "Major partner",
+   "type": "Extension",
    "region": "ANZ",
-   "summary": "Listed as a major partner on the club's official partners page.",
-   "url": "https://www.collingwoodfc.com.au/partners"
+   "summary": "Primo stepped up to Major Partner of Collingwood's AFL and AFLW programs for three years, to the end of 2026.",
+   "url": "https://www.collingwoodfc.com.au/news/1494559/pies-extend-partnership-with-primo-foods"
   },
   {
    "listed": "2026-10-30",
@@ -24863,8 +24863,8 @@
    "sport": "AFL",
    "type": "Major partner",
    "region": "ANZ",
-   "summary": "Listed as a major partner on the club's official partners page.",
-   "url": "https://www.essendonfc.com.au/partners"
+   "summary": "Dutton Automotive joined Essendon as co-major partner and official automotive partner for at least three years, announced at the end of 2023.",
+   "url": "https://essendonfc.com.au/news/1464154/bombers-join-forces-with-dutton-automotive"
   },
   {
    "listed": "2026-10-30",
@@ -25070,8 +25070,8 @@
    "sport": "AFL",
    "type": "Major partner",
    "region": "ANZ",
-   "summary": "Listed as a major partner on the club's official partners page.",
-   "url": "https://www.fremantlefc.com.au/partners"
+   "summary": "Bankwest returned to Fremantle as co-major partner of the AFL and AFLW teams on a four-season deal.",
+   "url": "https://fremantlefc.com.au/news/1239514/bankwest-signs-on-as-co-major-partner-of-the-fremantle-dockers"
   },
   {
    "listed": "2026-10-30",
@@ -25079,8 +25079,8 @@
    "sport": "AFL",
    "type": "Major partner",
    "region": "ANZ",
-   "summary": "Listed as a major partner on the club's official partners page.",
-   "url": "https://www.fremantlefc.com.au/partners"
+   "summary": "Woodside extended as Fremantle's co-major partner and Indigenous Program Partner to the end of 2027.",
+   "url": "https://www.fremantlefc.com.au/news/1706016/fremantle-and-woodside-energy-strengthen-ongoing-partnership-to-2027"
   },
   {
    "listed": "2026-10-30",
@@ -25250,8 +25250,8 @@
    "sport": "AFL",
    "type": "Major partner",
    "region": "ANZ",
-   "summary": "Listed as a major partner on the club's official partners page.",
-   "url": "https://www.geelongcats.com.au/partners"
+   "summary": "Simonds Homes stepped up to Major Partner from 2026 on a three-year extension to 2028, moving to the back of the guernsey.",
+   "url": "https://www.geelongcats.com.au/news/1907859/from-homes-to-back-of-jumper-simonds-homes-builds-on-cats-partnership"
   },
   {
    "listed": "2026-10-30",
@@ -27925,6 +27925,1419 @@
    "region": "ANZ",
    "summary": "Listed as an official partner on the club's official partners page.",
    "url": "https://www.afc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Macquarie University × Sydney FC",
+   "sport": "Football",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Kennards Hire × Sydney FC",
+   "sport": "Football",
+   "type": "Gold partner",
+   "region": "ANZ",
+   "summary": "Listed as a gold partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "GAC × Sydney FC",
+   "sport": "Football",
+   "type": "Gold partner",
+   "region": "ANZ",
+   "summary": "Listed as a gold partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "McDonald's × Sydney FC",
+   "sport": "Football",
+   "type": "Gold partner",
+   "region": "ANZ",
+   "summary": "Listed as a gold partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Acronis × Sydney FC",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Nexen Tyre × Sydney FC",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "San Miguel × Sydney FC",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "OTB LED Services × Sydney FC",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "SNAP × Sydney FC",
+   "sport": "Football",
+   "type": "Bronze partner",
+   "region": "ANZ",
+   "summary": "Listed as a bronze partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Farmer Joe's Chicken × Sydney FC",
+   "sport": "Football",
+   "type": "Bronze partner",
+   "region": "ANZ",
+   "summary": "Listed as a bronze partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "JOGA × Sydney FC",
+   "sport": "Football",
+   "type": "Bronze partner",
+   "region": "ANZ",
+   "summary": "Listed as a bronze partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "AlphaFit × Sydney FC",
+   "sport": "Football",
+   "type": "Bronze partner",
+   "region": "ANZ",
+   "summary": "Listed as a bronze partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Call It Schorle × Sydney FC",
+   "sport": "Football",
+   "type": "Pathways partner",
+   "region": "ANZ",
+   "summary": "Listed as a pathways partner on the club's official partners page.",
+   "url": "https://www.sydneyfc.com/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Etihad Airways × Melbourne City FC",
+   "sport": "Football",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Asahi Super Dry × Melbourne City FC",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "CTRL Cyber × Melbourne City FC",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Hostplus × Melbourne City FC",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "McDonald's × Melbourne City FC",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Puma × Melbourne City FC",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "AXS × Melbourne City FC",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "City of Casey × Melbourne City FC",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "EA Sports × Melbourne City FC",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Federation University × Melbourne City FC",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "TAC × Melbourne City FC",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Gumbuya World × Melbourne City FC",
+   "sport": "Football",
+   "type": "Associate partner",
+   "region": "ANZ",
+   "summary": "Listed as an associate partner on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Advara HeartCare × Melbourne City FC",
+   "sport": "Football",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Blue Sky × Melbourne City FC",
+   "sport": "Football",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Dreamstreet × Melbourne City FC",
+   "sport": "Football",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Club Warehouse × Melbourne City FC",
+   "sport": "Football",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on the club's official partners page.",
+   "url": "https://www.melbournecityfc.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "IGA × Adelaide United",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Macron × Adelaide United",
+   "sport": "Football",
+   "type": "Platinum partner",
+   "region": "ANZ",
+   "summary": "Listed as a platinum partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "McDonald's × Adelaide United",
+   "sport": "Football",
+   "type": "Platinum partner",
+   "region": "ANZ",
+   "summary": "Listed as a platinum partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Stillwell Hyundai × Adelaide United",
+   "sport": "Football",
+   "type": "Gold partner",
+   "region": "ANZ",
+   "summary": "Listed as a gold partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Rhino Football × Adelaide United",
+   "sport": "Football",
+   "type": "Gold partner",
+   "region": "ANZ",
+   "summary": "Listed as a gold partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Castle Tavern × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Motor Accident Commission × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "RAA × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Caiazza Constructions × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "SA Power Networks × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Bartercard × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "The Watson × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Triple M × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Balfours × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Telstra × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Channel 7 × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Apex Steel Supplies × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Acryloc × Adelaide United",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Beiersdorf × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Fasta Pasta × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "City of Playford × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Enzo's Ristorante × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Linebreak × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Coca-Cola × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Dr Jones & Partners × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "KTI × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "AEH Signs × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Terry Howe Printing × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Staging Connections × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Torrens University Australia × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "New Balance × Adelaide United",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.adelaideunited.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Westpoint Autos × Brisbane Roar",
+   "sport": "Football",
+   "type": "Platinum partner",
+   "region": "ANZ",
+   "summary": "Listed as a platinum partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "XXXX × Brisbane Roar",
+   "sport": "Football",
+   "type": "Platinum partner",
+   "region": "ANZ",
+   "summary": "Listed as a platinum partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "CSQ × Brisbane Roar",
+   "sport": "Football",
+   "type": "Platinum partner",
+   "region": "ANZ",
+   "summary": "Listed as a platinum partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Allied × Brisbane Roar",
+   "sport": "Football",
+   "type": "Platinum partner",
+   "region": "ANZ",
+   "summary": "Listed as a platinum partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "BAC × Brisbane Roar",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Coca-Cola × Brisbane Roar",
+   "sport": "Football",
+   "type": "Silver partner",
+   "region": "ANZ",
+   "summary": "Listed as a silver partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Pristine Homes × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Arrivederci Pizza × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Secure Parking × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Big Michaels × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Awards and Trophies × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "HART Sport × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Vulcan Fitness × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Rygg × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "My Fresh Laundry × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Rise 96.5 × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Teski × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Signosaur × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Nook Saunas × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "JOGA × Brisbane Roar",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Strapit × Brisbane Roar",
+   "sport": "Football",
+   "type": "Medical partner",
+   "region": "ANZ",
+   "summary": "Listed as a medical partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Lumus Imaging × Brisbane Roar",
+   "sport": "Football",
+   "type": "Medical partner",
+   "region": "ANZ",
+   "summary": "Listed as a medical partner on the club's official partners page.",
+   "url": "https://www.brisbaneroar.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "APD Global × Perth Glory",
+   "sport": "Football",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Macron × Perth Glory",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "DLGSC × Perth Glory",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Brightside × Perth Glory",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Renewables Warehouse × Perth Glory",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Recovery Haus × Perth Glory",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Tony Barlow Menswear × Perth Glory",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Onside Sports × Perth Glory",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "The West Australian × Perth Glory",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Nova × Perth Glory",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Perth Radiological Clinic × Perth Glory",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Chemist Warehouse × Perth Glory",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Blackroll × Perth Glory",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "City of Stirling × Perth Glory",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Asahi × Perth Glory",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Allflags × Perth Glory",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.perthglory.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Turkish Airlines × Melbourne Victory",
+   "sport": "Football",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner in Melbourne Victory's partner listings.",
+   "url": "https://melbournevictory.com.au/news/category/commercial-news"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "KFC × Melbourne Victory",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner in Melbourne Victory's partner listings.",
+   "url": "https://melbournevictory.com.au/news/category/commercial-news"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Aussie × Melbourne Victory",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner in Melbourne Victory's partner listings.",
+   "url": "https://melbournevictory.com.au/news/category/commercial-news"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "TAC × Melbourne Victory",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner in Melbourne Victory's partner listings.",
+   "url": "https://melbournevictory.com.au/news/category/commercial-news"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Checkpoint × Melbourne Victory",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner in Melbourne Victory's partner listings.",
+   "url": "https://melbournevictory.com.au/news/category/commercial-news"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "AXS × Melbourne Victory",
+   "sport": "Football",
+   "type": "Ticketing partner",
+   "region": "ANZ",
+   "summary": "Listed as a ticketing partner in Melbourne Victory's partner listings.",
+   "url": "https://melbournevictory.com.au/news/category/commercial-news"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "The Pass × Melbourne Victory",
+   "sport": "Football",
+   "type": "Associate partner",
+   "region": "ANZ",
+   "summary": "Listed as an associate partner in Melbourne Victory's partner listings.",
+   "url": "https://melbournevictory.com.au/news/category/commercial-news"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "CLN Facility Services × Melbourne Victory",
+   "sport": "Football",
+   "type": "Associate partner",
+   "region": "ANZ",
+   "summary": "Listed as an associate partner in Melbourne Victory's partner listings.",
+   "url": "https://melbournevictory.com.au/news/category/commercial-news"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Committee for Melbourne × Melbourne Victory",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner in Melbourne Victory's partner listings.",
+   "url": "https://melbournevictory.com.au/news/category/commercial-news"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "3AW × Melbourne Victory",
+   "sport": "Football",
+   "type": "Media partner",
+   "region": "ANZ",
+   "summary": "Listed as a media partner in Melbourne Victory's partner listings.",
+   "url": "https://melbournevictory.com.au/news/category/commercial-news"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Sharp × Melbourne Stars",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournestars.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Kookaburra × Melbourne Stars",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournestars.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "RMIT × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Everything Fleet × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "COMO × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Novotel Geelong × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "TAC × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Mirvac × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Visit Victoria × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "City of Greater Geelong × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "GMHBA × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "CITECO × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "HiTZ × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "YETI × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Kookaburra × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Tinnies × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "James Busby × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "New Balance × Melbourne Renegades",
+   "sport": "Cricket",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on the club's official partners page.",
+   "url": "https://www.melbournerenegades.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "iiNet × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Priceline Pharmacy × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Toyo Tires × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Sydney Water × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Summit Fleet × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "The Daily Telegraph × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Cricketers Arms × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Carrington Associates × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Brokenwood × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Transport for NSW × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "StudyNSW × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Nova × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Media partner",
+   "region": "ANZ",
+   "summary": "Listed as a media partner on the club's official partners page.",
+   "url": "https://www.sydneysixers.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Homestar Finance × Sydney Thunder",
+   "sport": "Cricket",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner on the club's official partners page.",
+   "url": "https://www.sydneythunder.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Carnival Cruise Line × Sydney Thunder",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.sydneythunder.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Transport for NSW × Sydney Thunder",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.sydneythunder.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "New Balance × Sydney Thunder",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.sydneythunder.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Shark Beauty × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Ninja × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Tasmanian Government × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Hobart Airport × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Masuri × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "The Mercury × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "JMC × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Qscan × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Flying Colours × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Old Woolstore × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Aurora Energy × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Lawrenny Distillery × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "Fulltrack AI × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "New Balance × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
+  },
+  {
+   "listed": "2026-10-30",
+   "deal": "The Ponting Foundation × Hobart Hurricanes",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the club's official partners page.",
+   "url": "https://www.hobarthurricanes.com.au/partners"
   }
  ]
 }
