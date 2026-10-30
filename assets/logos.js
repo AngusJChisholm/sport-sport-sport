@@ -73,21 +73,35 @@ window.SSSLogos=(function(){
       src=urls[0];steps=urls.slice(1).join(" ");
     }
     else if(e.domain){src=favUrl(e.domain)}
-    const img=src?`<img src="${esc(src)}" alt="" loading="lazy" decoding="async" referrerpolicy="strict-origin-when-cross-origin"${steps?` data-next="${esc(steps)}"`:""} onload="SSSLogos.ok(this)" onerror="SSSLogos.fail(this)">`:"";
+    // Images start without a src; the queue below loads them a few at a time as they come into view.
+    const img=src?`<img data-src="${esc(src)}" alt="" decoding="async" referrerpolicy="strict-origin-when-cross-origin"${steps?` data-next="${esc(steps)}"`:""} onload="SSSLogos.ok(this)" onerror="SSSLogos.fail(this)">`:"";
+    queueSoon();
     return `<span class="lg${img?" has-img":""}${big?" lg-big":""}">${mono}${img}</span>`;
   }
   function fail(img){
     // Retry once after a short pause first: a busy page can be briefly rate-limited.
     // Brandfetch rate-limits bursts (a page of 100 logos), so retry up to 3 times with growing, jittered waits.
     const n=+(img.dataset.retried||0);
-    if(n<3&&/brandfetch\.io/.test(img.src)){img.dataset.retried=String(n+1);const u=img.src.replace(/&r=\d+$/,"")+"&r="+(n+1);setTimeout(()=>{img.src=u},(1500+Math.random()*2500)*(n+1));return}
+    if(n<3&&/brandfetch\.io/.test(img.src)){img.dataset.retried=String(n+1);const u=img.src.replace(/&r=\d+$/,"")+"&r="+(n+1);done(img);setTimeout(()=>{img.dataset.src=u;want(img)},(1500+Math.random()*2500)*(n+1));return}
     img.dataset.retried="0";
     const next=(img.dataset.next||"").split(" ").filter(Boolean);
-    if(next.length){img.dataset.next=next.slice(1).join(" ");img.src=next[0];return}
+    done(img);
+    if(next.length){img.dataset.next=next.slice(1).join(" ");img.dataset.src=next[0];want(img);return}
     const box=img.parentElement;img.remove();if(box)box.classList.remove("has-img");
   }
   // Tiny images (blank placeholders, 16px favicons) look worse than a monogram, so treat them as missing.
-  function ok(img){if(img.naturalWidth&&img.naturalWidth<48)fail(img)}
+  function ok(img){if(img.naturalWidth&&img.naturalWidth<48){fail(img);return}done(img)}
+  // Load queue: Brandfetch's free CDN throttles bursts, so at most MAX logos are in flight at once,
+  // and only ones on (or near) the screen are requested.
+  const MAX=4;let busy=0;const waiting=[];const inflight=new Set();
+  const io=("IntersectionObserver" in window)?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){io.unobserve(e.target);want(e.target)}}),{rootMargin:"300px"}):null;
+  function want(img){if(!img.isConnected||!img.dataset.src)return;waiting.push(img);pump()}
+  function pump(){while(busy<MAX&&waiting.length){const img=waiting.shift();if(!img.isConnected||!img.dataset.src)continue;busy++;inflight.add(img);img.src=img.dataset.src;img.removeAttribute("data-src")}}
+  function done(img){if(inflight.delete(img)){busy--;setTimeout(pump,60)}}
+  let qt=0;
+  function queueSoon(){if(qt)return;qt=setTimeout(()=>{qt=0;document.querySelectorAll("img[data-src]:not([data-q])").forEach(img=>{img.dataset.q="1";io?io.observe(img):want(img)})},0)}
+  // Pages render with innerHTML, so watch for new logos being added.
+  if("MutationObserver" in window)new MutationObserver(queueSoon).observe(document.documentElement,{childList:true,subtree:true});
   // Every brand and property has its own page (tools/build_profiles.py); brand-new names fall back to profile.html.
   const page=slug=>{const x=ENT[slug];return x&&(x.k==="b"||x.k==="p")?`${x.k==="b"?"brands":"properties"}/${encodeURIComponent(slug)}.html`:`profile.html?id=${encodeURIComponent(slug)}`};
   // Logo pair for a deal: every brand, ×, every property.
