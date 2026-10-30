@@ -134,17 +134,42 @@ FEED_CSS = ".frame{padding:88px;--line:#292929;--muted:#9E9E9E}" + """
 
 # ---------- feed slides (slide 1 black/photo, inner slides white) ----------
 
+COVER_CSS = """
+.frame.cover{padding:0!important;display:block}
+.cover>.cv-ph,.cover>.cv-fade,.cover>.cv-big,.cover>.cv-reg,.cover>.cv-low{position:absolute!important}
+.cv-ph{position:absolute;inset:0;background-position:center 25%;background-size:cover;z-index:0}
+.cv-fade{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 12%,rgba(0,0,0,0) 50%,rgba(0,0,0,.75) 64%,#000 76%,#000 100%)}
+.cv-big{position:absolute;left:80px;right:80px;top:170px;text-align:center;font-weight:800;font-size:150px;font-stretch:72%;line-height:.9;text-transform:uppercase;color:rgba(255,255,255,.95);z-index:2}
+.cv-reg{position:absolute;right:64px;top:64px;font-weight:800;font-size:22px;letter-spacing:.18em;text-transform:uppercase;color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.5);z-index:2}
+.cv-low{position:absolute;left:64px;right:64px;bottom:64px;display:flex;flex-direction:column;align-items:center;text-align:center;z-index:2}
+.cv-brand{font-weight:800;font-size:28px;letter-spacing:.14em;text-transform:uppercase;font-stretch:90%}
+.cv-brand span{color:#D2FF3C}
+.cv-h{width:100%;margin:16px 0 0;font-weight:800;font-size:128px;font-stretch:68%;text-transform:uppercase;line-height:.9;letter-spacing:-.005em}
+.cv-meta{margin-top:22px;font-weight:600;font-size:24px;letter-spacing:.14em;text-transform:uppercase;color:#BDBDBD}
+.cv-meta b{color:#fff;font-weight:800}
+.cv-swipe{margin-top:26px;background:#fff;color:#000;font-weight:800;font-size:24px;letter-spacing:.12em;text-transform:uppercase;padding:9px 14px 7px;line-height:1}
+"""
+
+
 def feed_cover(c):
-    ph = photo_layer(deal_image(c), FEED_W, SHADE_FEED) if (c.get("image") or c.get("deal")) else ""
-    body = f"""<div class="frame{' photo' if ph else ''}">{ph}
-<div class="top"><div class="tag">{esc(c.get('tag') or 'Deal of the day')}</div><div class="lbl" style="color:#9E9E9E">{esc(c.get('region',''))}</div></div>
-<div style="display:flex;flex-direction:column;gap:40px">
-<h1 class="disp" data-fit="640" style="font-size:196px">{highlight(c['headline'], c.get('highlight'))}</h1>
-<div class="sup">{esc(c.get('deal',''))}{(' - ' + esc(c['descriptor'])) if c.get('descriptor') else ''}</div>
-</div>
-<div class="foot" style="border-top:1px solid #292929;padding-top:36px">{wordmark('white')}{SWIPE}</div>
+    """Photo-led cover (Front Office Sports style): full-bleed photo, fade to black, centred text in the bottom third."""
+    src = photo_src(deal_image(c), FEED_W) if (c.get("image") or c.get("deal")) else ""
+    deal = esc(c.get("deal", ""))
+    pair = re.sub(r"\s+x\s+", " &times; ", deal, count=1)
+    if src:
+        top = f'<div class="cv-ph" style="background-image:url(\'{src}\')"></div>'
+    else:  # no photo: property colour with the pairing set large up top
+        bg = club_colours({"deal": c.get("deal", ""), "colours": c.get("colours")})[0] if c.get("deal") else "#161616"
+        bg = "#161616" if bg == VOLT else bg
+        top = f'<div class="cv-ph" style="background:{bg}"></div>' + (f'<div class="cv-big">{pair}</div>' if deal else "")
+    meta = (f'<b>{pair}</b> &middot; ' if src and deal else "") + esc(c.get("descriptor", ""))
+    return f"""<style>{COVER_CSS}</style><div class="frame cover" style="background:#000">{top}<div class="cv-fade"></div>
+<div class="cv-reg">{esc(c.get('region',''))}</div>
+<div class="cv-low"><div class="cv-brand">Sport Sport Sport <span>/ {esc(c.get('tag') or 'Deal of the day')}</span></div>
+<h1 class="cv-h" data-fit="240" data-min="56">{highlight(c['headline'], c.get('highlight'))}</h1>
+<div class="cv-meta">{meta}</div>
+<div class="cv-swipe">Swipe &raquo;</div></div>
 </div>"""
-    return body
 
 
 def edge_bar(colour):
