@@ -163,11 +163,7 @@
   "8bit-creatives": {
    "name": "8Bit Creatives",
    "ptype": "Club & team",
-   "k": "p",
-   "domain": "8bitcreatives.com",
-   "bf": [
-    "icon"
-   ]
+   "k": "p"
   },
   "90-9-sea-fm": {
    "name": "90.9 SEA FM",

@@ -2,7 +2,7 @@
 Used by logo-sheet.yml. Serves the checked-out branch locally, so it shows the branch, not the live site."""
 import asyncio, os, json, subprocess, time
 from playwright.async_api import async_playwright
-N = 160
+N = 96
 async def main():
     os.makedirs("shots", exist_ok=True)
     srv = subprocess.Popen(["python3", "-m", "http.server", "8000"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL); time.sleep(2)
@@ -17,7 +17,7 @@ async def main():
         await pg.route("**/*brandfetch.io/**", ref)
         for i in range((total + N - 1) // N):
             await pg.goto(f"http://localhost:8000/logo-sheet.html?from={i*N}&n={N}", wait_until="domcontentloaded")
-            await pg.wait_for_timeout(25000)
+            await pg.wait_for_timeout(35000)
             await pg.screenshot(path=f"shots/sheet-{i:02d}.png", full_page=True)
         await b.close()
     srv.terminate()

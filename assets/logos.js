@@ -78,7 +78,9 @@ window.SSSLogos=(function(){
   }
   function fail(img){
     // Retry once after a short pause first: a busy page can be briefly rate-limited.
-    if(img.dataset.retried!=="1"&&/brandfetch\.io/.test(img.src)){img.dataset.retried="1";const u=img.src+"&r=1";setTimeout(()=>{img.src=u},1200+Math.random()*1800);return}
+    // Brandfetch rate-limits bursts (a page of 100 logos), so retry up to 3 times with growing, jittered waits.
+    const n=+(img.dataset.retried||0);
+    if(n<3&&/brandfetch\.io/.test(img.src)){img.dataset.retried=String(n+1);const u=img.src.replace(/&r=\d+$/,"")+"&r="+(n+1);setTimeout(()=>{img.src=u},(1500+Math.random()*2500)*(n+1));return}
     img.dataset.retried="0";
     const next=(img.dataset.next||"").split(" ").filter(Boolean);
     if(next.length){img.dataset.next=next.slice(1).join(" ");img.src=next[0];return}
