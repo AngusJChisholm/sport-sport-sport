@@ -6608,6 +6608,21 @@
   "the-r-a": {
    "name": "The R&A",
    "domain": "randa.org"
+  },
+  "australian-grand-prix": {
+   "name": "Australian Grand Prix",
+   "domain": "grandprix.com.au"
+  },
+  "united-cup": {
+   "name": "United Cup",
+   "domain": "unitedcup.com"
+  },
+  "tour-down-under": {
+   "name": "Tour Down Under",
+   "domain": "tourdownunder.com.au",
+   "aliases": [
+    "Santos Tour Down Under"
+   ]
   }
  },
  "leagues": [
