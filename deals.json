@@ -5,6 +5,121 @@
  },
  "deals": [
   {
+   "date": "2026-10-30",
+   "added": "2026-10-30",
+   "deal": "OXEN × Dolphins",
+   "sport": "NRL",
+   "type": "Kit supplier",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "OXEN dresses the Dolphins.",
+   "summary": "OXEN becomes the Dolphins' on-field apparel partner from 2027, with the ECHO home jersey unveiled alongside.",
+   "url": "https://www.dolphinsnrl.com.au/news/2026/10/30/oxen-announced-as-dolphins-on-field-apparel-partner-from-2027/",
+   "article": {
+    "standfirst": "A UK sportswear brand has landed one of the NRL's newest clubs, and the Dolphins will play in OXEN from 2027.",
+    "body": [
+     "The Dolphins have named OXEN as their On-Field Apparel Partner from 2027. The club's own announcement also calls the brand its Official Technical and Kit Partner, and the deal covers supporter merchandise as well as the playing kit. No length or value has been disclosed.",
+     "OXEN is a UK-founded performance sportswear and lifestyle brand, and it already knows the club. It has already backed the Dolphins Academy and been a boot partner for the club, so this is a step up from the Academy and the boots to the main jersey. The new ECHO home jersey was unveiled alongside the announcement.",
+     "The club's chief executive Terry Reader said OXEN has been a valued partner and the club is keen to take the relationship to the next level. OXEN Sports chief executive Lee Jenkinson said the brand was proud to be joining the Dolphins at such an exciting stage in the club's journey.",
+     "OXEN has also been building a local footprint. The announcement says the company has invested in an Australian headquarters and distribution centre, which matters when you are supplying a club's merchandise as well as its match kit. It is also already in the NRL ecosystem as the Parramatta Eels' footwear partner, a deal announced in 2025.",
+     "Why it matters: a challenger brand is taking on a whole NRL club, playing kit and supporter range included, rather than just boots. For the Dolphins it means a supplier that is already invested locally and that has plenty to prove, and for OXEN it puts its product in front of a full NRL crowd.",
+     "Watch for how OXEN uses the deal at retail and how the ECHO jersey sells."
+    ],
+    "close": "OXEN has moved from the boots to the jersey, and the Dolphins are the test case."
+   },
+   "slug": "2026-10-30-oxen-dolphins"
+  },
+  {
+   "date": "2026-10-30",
+   "added": "2026-10-30",
+   "deal": "Pepperstone × Fernando Alonso",
+   "sport": "Motorsport",
+   "type": "Ambassador",
+   "region": "Global",
+   "summary": "Alonso becomes Pepperstone's global ambassador, expanding its Aston Martin Aramco F1 partnership.",
+   "url": "https://www.bandt.com.au/fernando-alonso-jumps-into-pepperstones-drivers-seat-as-global-ambassador/"
+  },
+  {
+   "date": "2026-10-30",
+   "added": "2026-10-30",
+   "deal": "Mountain Culture × Melbourne Stars",
+   "sport": "Cricket",
+   "type": "Official beer partner",
+   "region": "ANZ",
+   "summary": "Mountain Culture is official beer partner of Cricket Victoria and the Stars on a two-year deal with pouring rights at Junction Oval.",
+   "url": "https://ministryofsport.com/cricket-victoria-and-melbourne-stars-appoint-mountain-culture-as-official-beer-partner/"
+  },
+  {
+   "date": "2026-10-30",
+   "added": "2026-10-30",
+   "deal": "Queensland Country Bank × Brisbane Heat",
+   "sport": "Cricket",
+   "type": "Principal partner extension",
+   "region": "ANZ",
+   "summary": "Queensland Country Bank extends as Heat principal partner through 2027-28, keeping front-of-jersey branding.",
+   "url": "https://ministryofsport.com/queensland-country-bank-extends-principal-partnership-with-brisbane-heat-through-2027-28-season/"
+  },
+  {
+   "date": "2026-10-29",
+   "added": "2026-10-30",
+   "deal": "Omega × Sydney Thunder",
+   "sport": "Cricket",
+   "type": "Official appliance partner",
+   "region": "ANZ",
+   "summary": "Omega signs as Thunder's Official Appliance Partner for two seasons, with shirt placement in WBBL|12 and BBL|16.",
+   "url": "https://www.applianceretailer.com.au/omega-signs-on-as-official-appliance-partner-of-sydney-thunder/"
+  },
+  {
+   "date": "2026-10-29",
+   "added": "2026-10-30",
+   "deal": "Ares Management × Capital.com Australian Open",
+   "sport": "Golf",
+   "type": "Major partner upgrade",
+   "region": "ANZ",
+   "summary": "Ares Management moves up to Major Partner of the Capital.com Australian Open after its first championship in 2025.",
+   "url": "https://ministryofsport.com/capital-com-australian-open-elevates-ares-and-renews-aws-and-fortinet-partnerships-for-2026-tournament/"
+  },
+  {
+   "date": "2026-10-30",
+   "added": "2026-10-30",
+   "deal": "Gazley × Wellington Phoenix",
+   "sport": "Football",
+   "type": "Commercial partner renewal",
+   "region": "ANZ",
+   "summary": "Gazley renews with the Phoenix for a sixth year and now also backs the A-League Women team.",
+   "url": "https://ministryofsport.com/wellington-phoenix-renews-commercial-partnership-with-family-owned-dealership-group-gazley/"
+  },
+  {
+   "date": "2026-10-29",
+   "added": "2026-10-30",
+   "deal": "Amazon Web Services × Capital.com Australian Open",
+   "sport": "Golf",
+   "type": "Official cloud partner renewal",
+   "region": "ANZ",
+   "summary": "AWS renews for one year as Official Cloud Computing Services Partner of the Capital.com Australian Open.",
+   "url": "https://ministryofsport.com/capital-com-australian-open-elevates-ares-and-renews-aws-and-fortinet-partnerships-for-2026-tournament/"
+  },
+  {
+   "date": "2026-10-29",
+   "added": "2026-10-30",
+   "deal": "Fortinet × Capital.com Australian Open",
+   "sport": "Golf",
+   "type": "Official cybersecurity partner renewal",
+   "region": "ANZ",
+   "summary": "Fortinet renews for one year as Official Cybersecurity Partner of the Capital.com Australian Open.",
+   "url": "https://ministryofsport.com/capital-com-australian-open-elevates-ares-and-renews-aws-and-fortinet-partnerships-for-2026-tournament/"
+  },
+  {
+   "date": "2026-10-28",
+   "added": "2026-10-30",
+   "deal": "Tourism WA × Richmond / Essendon",
+   "sport": "AFL",
+   "type": "Event partnership",
+   "region": "ANZ",
+   "summary": "Tourism WA backs a two-year Dreamtime at Maali fixture between Richmond and Essendon in Perth, starting 4 July 2027.",
+   "url": "https://ministryofsport.com/richmond-and-essendon-partner-with-tourism-wa-for-two-year-dreamtime-at-maali-series-in-perth/"
+  },
+  {
    "date": "2026-10-28",
    "added": "2026-10-29",
    "deal": "adidas × Melbourne Storm",

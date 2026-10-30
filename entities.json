@@ -6623,6 +6623,43 @@
    "aliases": [
     "Santos Tour Down Under"
    ]
+  },
+  "oxen": {
+   "name": "OXEN"
+  },
+  "pepperstone": {
+   "name": "Pepperstone",
+   "domain": "pepperstone.com"
+  },
+  "fernando-alonso": {
+   "name": "Fernando Alonso"
+  },
+  "omega": {
+   "name": "Omega"
+  },
+  "mountain-culture": {
+   "name": "Mountain Culture"
+  },
+  "queensland-country-bank": {
+   "name": "Queensland Country Bank"
+  },
+  "ares-management": {
+   "name": "Ares Management"
+  },
+  "capital-com-australian-open": {
+   "name": "Capital.com Australian Open"
+  },
+  "gazley": {
+   "name": "Gazley"
+  },
+  "amazon-web-services": {
+   "name": "Amazon Web Services"
+  },
+  "fortinet": {
+   "name": "Fortinet"
+  },
+  "tourism-wa": {
+   "name": "Tourism WA"
   }
  },
  "leagues": [
