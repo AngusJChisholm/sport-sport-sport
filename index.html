@@ -49,6 +49,12 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;border-bottom:1px solid var(--grey-800)}
 .hd{display:flex;align-items:center;gap:40px;height:84px}
 .nav{display:flex;gap:28px;margin-left:auto}
+.act-g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+.act-r{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:1px 0 0 1px;margin-top:14px}
+.act{border:1px solid var(--line);margin:-1px 0 0 -1px;padding:16px 12px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;min-width:0}
+.act .lg{--s:48px}.act b{font-weight:800;text-transform:uppercase;letter-spacing:-.02em;font-size:13px;line-height:1.1;overflow-wrap:anywhere}.act span:last-child{font-size:12px;color:var(--ink-3)}
+a.act:hover{background:var(--canvas)}
+@media (max-width:900px){.act-g{grid-template-columns:minmax(0,1fr)}}
 .nav a{font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey-500)}
 .nav a:hover,.nav a.on{color:var(--white)}
 .menu{display:none;margin-left:auto;background:none;border:1px solid var(--white);color:var(--white);font:inherit;font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;padding:11px 14px;cursor:pointer}
@@ -209,7 +215,7 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 <body>
 <header class="dk"><div class="wrap hd">
 <a href="#latest" class="logo" aria-label="Sport Sport Sport home"><img src="assets/wordmark-white.svg" alt="Sport Sport Sport" width="56" height="42"></a>
-<nav class="nav" id="nav"><a href="news.html">News</a><a href="#archive">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="#about">About</a></nav>
+<nav class="nav" id="nav"><a href="news.html">News</a><a href="#archive">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="insights.html">Insights</a></nav>
 <a href="#follow" class="btn">Follow</a>
 <button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
 </div></header>
@@ -244,6 +250,11 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 <div class="nl" id="nl"><div><h3>The weekly <span class="v">wrap.</span></h3><p>Every deal from the week, the ones that matter and why, in your inbox each Friday. Free.</p></div><div class="nl-f" id="nlF"><span class="btn nl-soon" aria-disabled="true">Coming soon</span><small>The weekly wrap launches shortly. Follow on LinkedIn or Instagram in the meantime.</small></div></div>
 </div></section>
 
+<section class="sec" id="active" hidden style="padding-bottom:0"><div class="wrap">
+<div class="sh"><div><span class="lbl mute-l">Most active in <span id="actYr">2026</span></span><h2 class="disp">Who's signing.</h2></div><span class="acts" style="display:flex;gap:24px;flex-wrap:wrap"><a class="more" href="brands.html">All brands →</a><a class="more" href="properties.html">All properties →</a></span></div>
+<div class="act-g"><div><span class="lbl mute-l">Brands</span><div class="act-r" id="actB"></div></div><div><span class="lbl mute-l">Properties</span><div class="act-r" id="actP"></div></div></div>
+</div></section>
+
 <section class="sec" id="archive"><div class="wrap">
 <div class="sh"><div><span class="lbl mute-l">Deal archive</span><h2 class="disp">Every deal. Filed.</h2></div></div>
 <div class="fil">
@@ -267,11 +278,11 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 <footer class="dk" id="about"><div class="wrap">
 <div class="ft"><div><a href="#latest" class="logo logo-ft" aria-label="Sport Sport Sport home"><img src="assets/wordmark-white.svg" alt="Sport Sport Sport" width="120" height="90"></a>
 <p class="mute" style="margin:28px 0 0;font-size:16px;max-width:420px;line-height:1.5">All things sport business. Global &amp; ANZ. A daily round-up of the sponsorship, partnership and commercial deals moving sport.</p></div>
-<nav class="ft-l" aria-label="Footer"><span id="ftLi" style="display:contents"></span><a href="news.html">News</a><a href="#archive">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a></nav></div>
+<nav class="ft-l" aria-label="Footer"><span id="ftLi" style="display:contents"></span><a href="news.html">News</a><a href="#archive">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="insights.html">Insights</a><a href="renewals.html">Renewal watch</a></nav></div>
 <div class="ft-b"><span>That's the day. Same time tomorrow.</span><span>© <span id="yr">2026</span> Sport Sport Sport</span></div>
 </div></footer>
 
-<script src="assets/logos.js?v=3"></script>
+<script src="assets/logos.js?v=4"></script>
 <script>
 (function(){
 const $=id=>document.getElementById(id);
@@ -391,6 +402,16 @@ function render(){
   $("count").textContent=`${r.length} of ${DEALS.length} deals`;
   $("moreBtn").parentElement.hidden=r.length<=shown;
 }
+// Most active this year: top brands and properties by deals filed, linking to their pages.
+function active(){
+  const y=String(new Date().getFullYear()),cb=new Map(),cp=new Map();
+  DEALS.forEach(d=>{if(!sortKey(d).startsWith(y))return;
+    d._bs.forEach(e=>{if(e){const m=cb.get(e.slug)||{e,n:0};m.n++;cb.set(e.slug,m)}});
+    d._ps.forEach(e=>{if(e){const m=cp.get(e.slug)||{e,n:0};m.n++;cp.set(e.slug,m)}})});
+  const row=m=>[...m.values()].sort((a,b)=>b.n-a.n||a.e.name.localeCompare(b.e.name)).slice(0,6)
+    .map(x=>`<a class="act" href="${L.esc(L.page(x.e.slug))}">${L.mark(x.e,{px:48})}<b>${L.esc(x.e.name)}</b><span>${x.n} deals</span></a>`).join("");
+  $("actYr").textContent=y;$("actB").innerHTML=row(cb);$("actP").innerHTML=row(cp);$("active").hidden=!cb.size;
+}
 // Club and brand strip: league tabs, a row of crests; tapping one filters the archive to that club or brand.
 function strip(){
   const count={};
@@ -439,7 +460,7 @@ fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.statu
   if(L)DEALS.forEach(d=>L.tag(d));
   const q=new URLSearchParams(location.search).get("club");if(q&&L&&L.byId(q))st.ent=q;
   const lead=hero();if(lead)roundup(lead);
-  features();columns();follow();newsletter();filters();wire();if(L)strip();render();if(st.ent)$("archive").scrollIntoView();
+  features();columns();follow();newsletter();filters();wire();if(L){strip();active()}render();if(st.ent)$("archive").scrollIntoView();
 }).catch(()=>{const h=$("heroHead"),k=$("heroDek");if(h)h.textContent="Deals unavailable";if(k)k.textContent="The deals file didn't load. Refresh to try again.";wire();});
 })();
 </script>

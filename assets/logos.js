@@ -29,7 +29,7 @@ window.SSSLogos=(function(){
     if(!name)return null;
     const slug=LOOK[norm(name)]||slugify(name);
     const x=ENT[slug]||{name};
-    return {slug,name:x.name||name,domain:okDomain(String(x.domain||""))?x.domain:"",logo:okFile(String(x.logo||""))?x.logo:"",bf:Array.isArray(x.bf)?x.bf:null,aliases:x.aliases||[]};
+    return {slug,name:x.name||name,domain:okDomain(String(x.domain||""))?x.domain:"",logo:okFile(String(x.logo||""))?x.logo:"",bf:Array.isArray(x.bf)?x.bf:null,aliases:x.aliases||[],cat:x.cat||"",ptype:x.ptype||""};
   }
   // One side of a deal can name several organisations: "Harvey Norman / Westpac / KFC".
   const many=name=>String(name||"").split(/\s+\/\s+/).map(s=>s.trim()).filter(Boolean).map(resolve);
@@ -86,7 +86,8 @@ window.SSSLogos=(function(){
   }
   // Tiny images (blank placeholders, 16px favicons) look worse than a monogram, so treat them as missing.
   function ok(img){if(img.naturalWidth&&img.naturalWidth<48)fail(img)}
-  const page=slug=>`profile.html?id=${encodeURIComponent(slug)}`;
+  // Every brand and property has its own page (tools/build_profiles.py); brand-new names fall back to profile.html.
+  const page=slug=>{const x=ENT[slug];return x&&(x.k==="b"||x.k==="p")?`${x.k==="b"?"brands":"properties"}/${encodeURIComponent(slug)}.html`:`profile.html?id=${encodeURIComponent(slug)}`};
   // Logo pair for a deal: every brand, ×, every property.
   function pair(d,opts){
     const side=a=>(a||[]).map(e=>link(e,opts)).join("");

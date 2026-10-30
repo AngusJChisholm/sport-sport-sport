@@ -1,0 +1,44 @@
+name: Enrich deals and build brand/property pages
+
+# Runs whenever deals.json or entities.json changes (e.g. the 6am update). Adds deal type, term and end
+# year to new deals (tools/enrich.py), then rebuilds the page for every brand and property plus the
+# sitemap (tools/build_profiles.py). Its own commit triggers one more run, which finds nothing to do.
+on:
+  push:
+    branches: [main]
+    paths: ["deals.json", "entities.json", "profile.html", "tools/enrich.py", "tools/build_profiles.py"]
+  workflow_dispatch:
+
+concurrency:
+  group: profiles
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Enrich new deals
+        run: python3 tools/enrich.py
+
+      - name: Build brand and property pages
+        run: python3 tools/build_profiles.py
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add deals.json entities.json brands properties sitemap.xml
+          if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
+          git commit -m "Brand and property pages [skip netlify]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase -q origin main && git push -q origin HEAD:main && exit 0
+            sleep 5
+          done
+          exit 1
