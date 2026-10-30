@@ -101,12 +101,12 @@ footer{padding-block:clamp(56px,7vw,96px) 32px}
 <body>
 <header class="dk"><div class="wrap hd">
 <a href="index.html" class="logo" aria-label="Sport Sport Sport home"><img src="assets/wordmark-white.svg" alt="Sport Sport Sport" width="56" height="42"></a>
-<nav class="nav" aria-label="Main"><a href="index.html#latest">Latest</a><a href="index.html#global">Global</a><a href="index.html#anz">ANZ</a><a href="index.html#archive" class="on">Archive</a></nav>
+<nav class="nav" aria-label="Main" id="mainNav"><a href="news.html">News</a><a href="index.html#archive">Deals</a><a href="brands.html" id="navB">Brands</a><a href="properties.html" id="navP">Properties</a></nav>
 <a href="index.html#follow" class="btn">Follow</a>
 </div></header>
 
 <main class="wrap" id="main">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html#archive">Archive</a><span aria-hidden="true">/</span><span id="crKind">Partners</span><span aria-hidden="true">/</span><span id="crName" style="color:var(--ink)">Loading</span></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html#archive">Deals</a><span aria-hidden="true">/</span><a id="crKind" href="brands.html">Partners</a><span aria-hidden="true">/</span><span id="crName" style="color:var(--ink)">Loading</span></nav>
 <section class="top" id="top">
 <div id="bigLogo"></div>
 <div class="top-t">
@@ -133,7 +133,7 @@ footer{padding-block:clamp(56px,7vw,96px) 32px}
 <footer class="dk"><div class="wrap">
 <div class="ft"><div><a href="index.html" class="logo logo-ft" aria-label="Sport Sport Sport home"><img src="assets/wordmark-white.svg" alt="Sport Sport Sport" width="120" height="90"></a>
 <p class="mute" style="margin:28px 0 0;font-size:16px;max-width:420px;line-height:1.5">All things sport business. Global &amp; ANZ. A daily round-up of the sponsorship, partnership and commercial deals moving sport.</p></div>
-<nav class="ft-l" aria-label="Footer"><a href="index.html#archive">Archive</a><a href="index.html#global">Global</a><a href="index.html#anz">ANZ</a></nav></div>
+<nav class="ft-l" aria-label="Footer"><a href="news.html">News</a><a href="index.html#archive">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a></nav></div>
 <div class="ft-b"><span>That's the day. Same time tomorrow.</span><span>© <span id="yr">2026</span> Sport Sport Sport</span></div>
 </div></footer>
 
@@ -165,7 +165,8 @@ Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()])
   const sports=[...new Set(mine.map(d=>d.sport).filter(Boolean))].sort();
 
   document.title=`${e.name} deals | Sport Sport Sport`;
-  $("crKind").textContent=kind==="Brand"?"Brands":kind==="Rights holder"?"Clubs and properties":"Partners";
+  $("crKind").textContent=kind==="Rights holder"?"Properties":"Brands";$("crKind").href=kind==="Rights holder"?"properties.html":"brands.html";
+  const nv=$(kind==="Rights holder"?"navP":"navB");nv.classList.add("on");nv.setAttribute("aria-current","page");
   $("crName").textContent=e.name;
   $("kind").textContent=[kind,...regions].join(" · ");
   $("name").textContent=e.name;
