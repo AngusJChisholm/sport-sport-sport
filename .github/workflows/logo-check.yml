@@ -2,17 +2,18 @@ name: Logo check
 on:
   workflow_dispatch:
     inputs:
-      mode: {description: "candidates, all, discover or find", required: false, default: "candidates"}
+      mode: {description: "candidates, all, discover, find or verify", required: false, default: "candidates"}
 permissions: {contents: write}
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: if [ "${{ inputs.mode }}" = "find" ]; then python3 tools/logo_find.py; elif [ "${{ inputs.mode }}" = "discover" ]; then python3 tools/logo_discover.py; else python3 tools/logo_check.py ${{ inputs.mode }}; fi
+      - run: pip install -q pillow
+      - run: if [ "${{ inputs.mode }}" = "verify" ]; then python3 tools/logo_verify.py; elif [ "${{ inputs.mode }}" = "find" ]; then python3 tools/logo_find.py; elif [ "${{ inputs.mode }}" = "discover" ]; then python3 tools/logo_discover.py; else python3 tools/logo_check.py ${{ inputs.mode }}; fi
         timeout-minutes: 300
       # The report goes to its own branch so it never touches the live site.
       - run: |
-          mv logo-report.json /tmp/ && git checkout --orphan logo-report && git rm -rqf . && mv /tmp/logo-report.json .
-          git add logo-report.json && git -c user.name="SSS bot" -c user.email="bot@sportsportsport.com.au" commit -qm "Logo report"
+          mv logo-report.json /tmp/ && mkdir -p /tmp/logos && cp -r assets/logos/. /tmp/logos/ 2>/dev/null; git checkout --orphan logo-report && git rm -rqf . && mv /tmp/logo-report.json . && mkdir -p logos && cp -r /tmp/logos/. logos/
+          git add -A && git -c user.name="SSS bot" -c user.email="bot@sportsportsport.com.au" commit -qm "Logo report"
           git push -qf origin logo-report
