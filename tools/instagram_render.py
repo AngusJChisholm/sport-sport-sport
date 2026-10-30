@@ -340,10 +340,18 @@ def build_feed(feed):
     if feed.get("kind") == "week":
         items = feed["items"][:8]
         total = len(items) + 2
-        slides.append(feed_cover({"tag": "Week in deals", "region": feed.get("region", "Global & ANZ"),
-                                  "headline": feed.get("headline", "The week in deals."),
-                                  "highlight": feed.get("highlight", "week"),
-                                  "deal": feed.get("descriptor", "The biggest deals this week")}))
+        if feed.get("image"):
+            # Photo-led week cover: today's lead photo, with its pairing named in the meta line.
+            slides.append(feed_cover({"tag": "Week in deals", "region": feed.get("region", "Global & ANZ"),
+                                      "headline": feed.get("headline", "The week in deals."),
+                                      "highlight": feed.get("highlight", "week"),
+                                      "image": feed["image"], "deal": feed.get("deal", ""),
+                                      "descriptor": feed.get("descriptor", "The biggest deals this week")}))
+        else:
+            slides.append(feed_cover({"tag": "Week in deals", "region": feed.get("region", "Global & ANZ"),
+                                      "headline": feed.get("headline", "The week in deals."),
+                                      "highlight": feed.get("highlight", "week"),
+                                      "deal": feed.get("descriptor", "The biggest deals this week")}))
         for i, it in enumerate(items, 1):
             slides.append(week_item(it, i, i + 1, total))
         slides.append(feed_close(total, total))
