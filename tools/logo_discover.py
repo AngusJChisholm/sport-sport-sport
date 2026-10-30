@@ -1,3 +1,5 @@
+# DO NOT RUN against Brandfetch again: its terms ban automated logo checks (risk of the client ID being blocked)
+# and cap the site at 2,400 logo loads per 5 minutes. Kept for reference; logo_verify.site_icon() is fine on its own.
 """Find logos for brands/clubs in deals.json that aren't in entities.json yet.
 Asks Brandfetch's brand search for each name and keeps only results whose name matches exactly,
 then checks that a symbol or icon exists. Writes logo-proposals.json for review. Slow and polite."""

@@ -1,3 +1,5 @@
+# DO NOT RUN against Brandfetch again: its terms ban automated logo checks (risk of the client ID being blocked)
+# and cap the site at 2,400 logo loads per 5 minutes. Kept for reference; logo_verify.site_icon() is fine on its own.
 """Finds the official website (and so the logo) for every brand and property that has no "domain" yet.
 Runs on GitHub (.github/workflows/logo-find.yml), since Brandfetch can't be reached from Claude's sandbox.
 

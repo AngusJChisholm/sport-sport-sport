@@ -1,3 +1,5 @@
+# DO NOT RUN against Brandfetch again: its terms ban automated logo checks (risk of the client ID being blocked)
+# and cap the site at 2,400 logo loads per 5 minutes. Kept for reference; logo_verify.site_icon() is fine on its own.
 """Checks a list of official websites for logos and fills the gaps Brandfetch can't.
 Input: tools/logo_verify_input.json  {"slug": ["domain1", "domain2"], ...}   (first one that works wins)
 For each slug:

@@ -1,3 +1,5 @@
+# DO NOT RUN against Brandfetch again: its terms ban automated logo checks (risk of the client ID being blocked)
+# and cap the site at 2,400 logo loads per 5 minutes. Kept for reference; logo_verify.site_icon() is fine on its own.
 """Finds official websites for names Brandfetch couldn't place. Runs on GitHub (logo-check.yml mode "search").
 Input: tools/logo_search_input.json  {"slug": {"name": "...", "context": "Brand × Club (Sport)", "page": "club partner page url or ''"}}
 1. If the deal came from a club's partner page, read that page and take the link next to the partner's logo or name.
