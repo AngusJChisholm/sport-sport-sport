@@ -1,6 +1,47 @@
 {
  "features": [
   {
+   "date": "2026-11-01",
+   "headline": "What Australia's betting ban covers.",
+   "descriptor": "The new rules for sport, from kit to live broadcasts",
+   "topic": "Explainer",
+   "sport": "Multi-sport",
+   "region": "ANZ",
+   "image": "https://images.unsplash.com/photo-1777177188107-e96be9af519d",
+   "article": {
+    "standfirst": "A new federal law starts on 1 January 2027 and rewrites how betting money flows into Australian sport, but the logos will not vanish overnight.",
+    "body": [
+     "Australia's wagering advertising reforms are due to start on 1 January 2027. They ban betting ads on playing kit, around grounds and through live sport coverage. The catch is a long runway for deals already signed, so the change will roll through the sport calendar over several years, not land in a single day.",
+     "Prime Minister Anthony Albanese announced the package at the National Press Club on 2 April 2026. The Interactive Gambling Amendment (Gambling Reform) Bill 2026 then passed Parliament on 19 August after a deal with the Coalition, and the Act received assent in late August. It stops short of the full ban on online gambling advertising that a 2023 parliamentary inquiry recommended.",
+     "The part that matters most to rights holders is the kit and venue rule. A licensed wagering provider cannot authorise or cause wagering advertising to appear on a player's or official's uniform, or at premises connected with a sporting event where the public can see it. The government's FAQ spells out the reach: on-field signage, external stadium signage, perimeter signage and even coaches' boxes. The civil penalty is 1,000 penalty units. Note where the duty sits. It lands on the bookmaker, not the club.",
+     "Broadcasts get their own rules. Wagering ads are banned on broadcast, datacast and online content services around live sport, from 15 minutes before the scheduled start until five minutes after the event ends, between 5am and 8:30pm. TV is capped at three betting ads an hour. Promoting odds is banned, and athletes, celebrities and influencers cannot front betting ads.",
+     "Racing is carved out. Under the Act a horse, harness or greyhound race is not treated as a sporting event, and the uniform and venue ban does not apply to it. The government's FAQ also exempts dedicated racing and wagering channels, programs and venues.",
+     "Now the transition, and read this part carefully. The government's April FAQ said existing deals would be honoured until they finish. Trade reports since the Act passed say existing sponsorships can run until 31 December 2031, a five-year window. Communications Minister Anika Wells said she would prefer clubs end betting ties early but left it to each organisation. Independent senator David Pocock called the delay absurd, and Liberal MP Andrew Wallace had pushed for two years. The Act also sets a statutory review three years after commencement.",
+     "Some sponsors were already heading for the exit. In 2024 PointsBet Australia CEO Andrew Catterall said stadium naming rights and perimeter signage were no longer appropriate for the category, and the company said it would not renew its naming rights at the Sharks' home ground when its deal expired at the end of 2024.",
+     "Offshore, the Premier League shows how it can go. Its clubs agreed in April 2023 to pull gambling sponsors from the front of matchday shirts from the end of the 2025/26 season. Sky Sports reported eight clubs carried such sponsors, worth an estimated 60 million pounds a year. That move covered the front of the shirt only. The Australian rules reach kit, grounds and the broadcast.",
+     "The open question for brands is who fills the space. Alcohol is already everywhere. A report from the Foundation for Alcohol Research and Education found every AFL and NRL club had an alcohol sponsor as of May 2026. Rights holders sitting on betting deals now have a planning job: when each contract ends, what replaces it, and how to price kit, signage and broadcast inventory without the category.",
+     "Dates to watch are the 1 January 2027 start, the first clubs to walk away from their betting deals early, the first naming and perimeter deals signed in other categories, and the three-year review."
+    ],
+    "close": "The first clubs to cut betting deals early will show what the replacement market is really paying."
+   },
+   "sources": [
+    "https://www.infrastructure.gov.au/media-communications/media-gambling-laws-regulation/gambling/gambling-reforms-2026",
+    "https://www.infrastructure.gov.au/sites/default/files/documents/gambling-reforms-2026-frequently-asked-questions.pdf",
+    "https://minister.infrastructure.gov.au/wells/media-release/strongest-ever-gambling-reforms-passed",
+    "https://www.legislation.gov.au/C2026A00072/asmade/2026-08-26/text/original/pdf",
+    "https://www.abc.net.au/news/2026-04-02/anthony-albanese-gambling-reform-national-press-club/106525548",
+    "https://hallandwilcox.com.au/news/new-wagering-advertising-reforms-expanded-restrictions-for-sport-media-and-online-platforms/",
+    "https://thestraight.com.au/done-deal-wagering-reforms-pass-through-parliament/",
+    "https://www.gambling.com/au/news/australia-gambling-jersey-ban-delayed-to-2031",
+    "https://focusgn.com/asia-pacific/australia-to-allow-gambling-logos-on-sports-jerseys-until-2031",
+    "https://www.bandt.com.au/cronulla-sharks-to-lose-stadium-sponsor-after-proposed-changes-to-gambling-advertising/",
+    "https://www.premierleague.com/en/news/3147426",
+    "https://www.skysports.com/football/news/11095/12856367/premier-league-clubs-agree-to-withdraw-gambling-sponsorships-on-front-of-shirts",
+    "https://www.thedailyaus.com.au/sport/afl-nrl-alcohol-sponsors"
+   ],
+   "slug": "2026-11-01-what-australia-s-betting-ban-covers"
+  },
+  {
    "date": "2026-10-25",
    "headline": "Inside the NRL's $5.3bn deal.",
    "descriptor": "How the 2028 to 2034 rights deal is carved up",

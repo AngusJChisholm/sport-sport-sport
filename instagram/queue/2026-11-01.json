@@ -1,0 +1,86 @@
+{
+ "date": "2026-11-01",
+ "hold": false,
+ "feed": {
+  "kind": "feature",
+  "cover": {
+   "tag": "Weekend feature",
+   "region": "ANZ",
+   "headline": "What Australia's betting ban covers.",
+   "highlight": "betting",
+   "deal": "The new rules for sport, from kit to broadcasts",
+   "descriptor": "Explainer"
+  },
+  "slides": [
+   {
+    "label": "The story",
+    "title": "The law starts 1 Jan 2027",
+    "rows": [
+     {
+      "main": "Passed in August",
+      "sub": "Parliament cleared it on 19 August 2026"
+     },
+     {
+      "main": "Kit and grounds",
+      "sub": "No betting ads on uniforms or at venues"
+     },
+     {
+      "main": "Live sport",
+      "sub": "Betting ads banned around live events"
+     }
+    ]
+   },
+   {
+    "label": "The rules",
+    "title": "What gets banned",
+    "rows": [
+     {
+      "main": "Perimeter signage",
+      "sub": "On-field, stadium and coaches' box signs"
+     },
+     {
+      "main": "15 min before to 5 after",
+      "sub": "Live sport window, 5am to 8:30pm"
+     },
+     {
+      "main": "3 betting ads an hour",
+      "sub": "The cap on TV"
+     }
+    ]
+   },
+   {
+    "label": "The catch",
+    "title": "Existing deals get time",
+    "rows": [
+     {
+      "main": "Racing carved out",
+      "sub": "Races are not treated as sporting events"
+     },
+     {
+      "main": "Runway to 2031",
+      "sub": "Trade reports say existing deals can run on"
+     },
+     {
+      "main": "Review in year three",
+      "sub": "A statutory review is built in"
+     }
+    ]
+   },
+   {
+    "label": "What's next",
+    "title": "Who fills the space",
+    "rows": [
+     {
+      "main": "Alcohol is everywhere",
+      "sub": "Every AFL and NRL club has one, FARE found"
+     },
+     {
+      "main": "Early exits",
+      "sub": "The first clubs to leave will set the price"
+     }
+    ]
+   }
+  ]
+ },
+ "caption": "Australia's betting ad ban starts 1 January 2027, and sport is right in the firing line.\n\nBetting brands can no longer advertise on playing kit or around grounds, and live sport broadcasts get a betting ad blackout from 15 minutes before the start to 5 minutes after the finish. Racing is carved out, and trade reports say existing deals can run until the end of 2031. The big question is who fills the space.\n\nRead the full feature: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+}
