@@ -28127,6 +28127,115 @@
     "icon",
     "logo"
    ]
+  },
+  "casper-s-pies-and-pastries": {
+   "name": "Casper's Pies & Pastries",
+   "domain": "caspers.com.au",
+   "k": "b",
+   "cat": "Food & nutrition"
+  },
+  "cirka": {
+   "name": "Cirka",
+   "domain": "cirka.com.au",
+   "cat": "Technology",
+   "k": "b"
+  },
+  "cygnett": {
+   "name": "Cygnett",
+   "domain": "cygnett.com",
+   "cat": "Technology",
+   "k": "b"
+  },
+  "don-julio": {
+   "name": "Don Julio",
+   "domain": "donjulio.com",
+   "cat": "Alcohol",
+   "k": "b"
+  },
+  "g-h-mumm": {
+   "name": "G.H. Mumm",
+   "domain": "mumm.com",
+   "cat": "Alcohol",
+   "aliases": [
+    "Mumm",
+    "G.H Mumm"
+   ],
+   "k": "b"
+  },
+  "herald-sun": {
+   "name": "Herald Sun",
+   "domain": "heraldsun.com.au",
+   "cat": "Media & broadcast",
+   "k": "b"
+  },
+  "st-remio": {
+   "name": "St Remio",
+   "domain": "stremio.com.au",
+   "k": "b",
+   "cat": "Food & nutrition"
+  },
+  "apwireless": {
+   "name": "APWireless",
+   "domain": "apwireless.com",
+   "aliases": [
+    "AP Wireless"
+   ],
+   "k": "b",
+   "cat": "Telco"
+  },
+  "coolmore": {
+   "name": "Coolmore",
+   "domain": "coolmore.com",
+   "cat": "Agriculture",
+   "k": "b"
+  },
+  "darley": {
+   "name": "Darley",
+   "domain": "darley.com.au",
+   "cat": "Agriculture",
+   "k": "b"
+  },
+  "drinkwise": {
+   "name": "DrinkWise",
+   "domain": "drinkwise.org.au",
+   "cat": "Not-for-profit",
+   "k": "b"
+  },
+  "gilgai-farm": {
+   "name": "Gilgai Farm",
+   "domain": "gilgaifarm.com.au",
+   "cat": "Agriculture",
+   "k": "b"
+  },
+  "hong-kong-jockey-club": {
+   "name": "Hong Kong Jockey Club",
+   "domain": "hkjc.com",
+   "k": "b",
+   "cat": "Sport & events"
+  },
+  "inglis": {
+   "name": "Inglis",
+   "domain": "inglis.com.au",
+   "cat": "Agriculture",
+   "k": "b"
+  },
+  "yulong": {
+   "name": "Yulong",
+   "domain": "yulong.com.au",
+   "cat": "Agriculture",
+   "k": "b"
+  },
+  "racing-com": {
+   "name": "Racing.com",
+   "domain": "racing.com",
+   "cat": "Media & broadcast",
+   "k": "b"
+  },
+  "sky-racing": {
+   "name": "Sky Racing",
+   "domain": "skyracing.com.au",
+   "cat": "Media & broadcast",
+   "k": "b"
   }
  },
  "leagues": [

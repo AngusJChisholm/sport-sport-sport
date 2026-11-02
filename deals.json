@@ -5,6 +5,309 @@
  },
  "deals": [
   {
+   "date": "2025-10-23",
+   "deal": "McDonald's × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "McDonald's becomes inaugural presenting partner of The Elms Live Stage at the Melbourne Cup Carnival.",
+   "url": "https://www.vrc.com.au/latest-news/mcdonald-s-australia-joins-vrc-as-inaugural-elms-stage-partner-for-2025-melbourne-cup-carnival/",
+   "status": "New",
+   "tier": "Official partner"
+  },
+  {
+   "date": "2023-11-03",
+   "deal": "Howden × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Howden becomes the VRC's official insurance partner on a three-year deal, with naming rights to the Australian Guineas.",
+   "url": "https://www.vrc.com.au/latest-news/victoria-racing-club-welcomes-howden-as-new-sponsor",
+   "status": "New",
+   "term": 3,
+   "tier": "Official partner",
+   "ends": 2026,
+   "endsEst": true
+  },
+  {
+   "date": "2025-07-02",
+   "deal": "Ticketmaster × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Ticketing partner",
+   "region": "ANZ",
+   "summary": "Ticketmaster renews as the VRC's exclusive ticketing partner on a 10-year deal.",
+   "url": "https://www.vrc.com.au/latest-news/ticketmaster-australia-announce-a-milestone-10-year-ticketing-partnership-with-the-victoria-racing-club",
+   "status": "Renewal",
+   "term": 10,
+   "tier": "Official partner",
+   "ends": 2035,
+   "endsEst": true
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "ABC Bullion × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Casper's Pies & Pastries × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Cirka × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Cygnett × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "DiDi × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Don Julio × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "G.H. Mumm × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Herald Sun × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Schweppes × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Sharp EIT Solutions × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "St Remio × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "TCL × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "APWireless × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Coolmore × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Darley × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "DrinkWise × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Gilgai Farm × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Hong Kong Jockey Club × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Inglis × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Yulong × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Nine × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Broadcast partner",
+   "region": "ANZ",
+   "summary": "Listed as a broadcast partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Media & broadcast"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Seven × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Broadcast partner",
+   "region": "ANZ",
+   "summary": "Listed as a broadcast partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Media & broadcast"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Racing.com × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Broadcast partner",
+   "region": "ANZ",
+   "summary": "Listed as a broadcast partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Media & broadcast"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Sky Racing × Victoria Racing Club",
+   "sport": "Horse racing",
+   "type": "Broadcast partner",
+   "region": "ANZ",
+   "summary": "Listed as a broadcast partner on the VRC's official partners page.",
+   "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
+   "status": "Current partner",
+   "tier": "Media & broadcast"
+  },
+  {
    "date": "2026-11-01",
    "added": "2026-11-02",
    "deal": "McDonald's × NZ Warriors",
@@ -6380,15 +6683,16 @@
    "needsSource": true
   },
   {
-   "date": "2026-07-21",
+   "date": "2026-07-19",
    "deal": "McDonald's × Victoria Racing Club",
    "sport": "Horse racing",
    "type": "Renewal",
    "region": "ANZ",
-   "summary": "McDonald's renews as presenting partner of The Elms Live Stage at Flemington.",
+   "summary": "McDonald's returns as presenting partner of The Elms Live Stage for the 2026 Melbourne Cup Carnival.",
    "tier": "Official partner",
    "status": "Renewal",
-   "needsSource": true
+   "url": "https://cms.vrc.com.au/latest-news/global-dj-phenomenon-fisher-returns-to-flemington-to-close-the-2026-melbourne-cup-carnival-on-the-elms-live-stage-presented-by-maccas/",
+   "ends": 2026
   },
   {
    "date": "2026-07-21",
@@ -6766,18 +7070,19 @@
    "needsSource": true
   },
   {
-   "date": "2026-08-04",
+   "date": "2026-04-20",
    "deal": "Asahi Beverages × Victoria Racing Club",
    "sport": "Horse racing",
-   "type": "Official partner",
+   "type": "Major partner",
    "region": "ANZ",
-   "summary": "Asahi signs a seven-year deal as Flemington's official beer and cider partner.",
-   "tier": "Official partner",
+   "summary": "Asahi signs a seven-year deal as Flemington's official beer and cider partner, replacing Lion after 25 years, and joins the VRC's major partners.",
+   "tier": "Principal & major",
    "status": "New",
    "term": 7,
    "ends": 2033,
    "endsEst": true,
-   "needsSource": true
+   "url": "https://www.asahibeverages.com/news-and-media/victoria-racing-club-announces-long-term-partnership-with-asahi-beverages",
+   "tierLock": true
   },
   {
    "date": "2026-08-04",
@@ -9001,16 +9306,17 @@
    "needsSource": true
   },
   {
-   "date": "2025-09-09",
+   "date": "2025-07-24",
    "deal": "Kirin × Victoria Racing Club",
    "sport": "Horse racing",
-   "type": "Partner",
+   "type": "Official partner",
    "region": "ANZ",
-   "summary": "Kirin Ichiban takes a Birdcage spot at Flemington for 2025.",
+   "summary": "Kirin Ichiban (Lion) becomes the official beer of the VRC, replacing Furphy, with a Birdcage marquee.",
    "tier": "Official partner",
    "status": "New",
-   "ends": 2025,
-   "needsSource": true
+   "ends": 2026,
+   "url": "https://cms.vrc.com.au/latest-news/kirin-ichiban-tapped-as-the-new-official-beer/",
+   "endsEst": true
   },
   {
    "date": "2025-09-09",
@@ -11994,15 +12300,18 @@
    "needsSource": true
   },
   {
-   "date": "2025-06-25",
+   "date": "2025-06-20",
    "deal": "De Bortoli Wines × Victoria Racing Club",
    "sport": "Horse racing",
    "type": "Official partner",
    "region": "ANZ",
-   "summary": "De Bortoli becomes official wine of the VRC and Melbourne Cup Carnival.",
+   "summary": "De Bortoli becomes official wine partner of the VRC and Melbourne Cup Carnival on a three-year deal.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "url": "https://www.vrc.com.au/latest-news/vrc-and-de-bortoli-launch-premium-new-partnership/",
+   "term": 3,
+   "ends": 2028,
+   "endsEst": true
   },
   {
    "date": "2025-06-25",
@@ -13536,15 +13845,15 @@
    "needsSource": true
   },
   {
-   "date": "2026-02-11",
+   "date": "2026-02-05",
    "deal": "Delaware North × Victoria Racing Club",
    "sport": "Horse racing",
-   "type": "Official partner",
+   "type": "Hospitality partner",
    "region": "ANZ",
-   "summary": "Delaware North wins the VRC hospitality contract.",
+   "summary": "Delaware North replaces Crown as hospitality services provider at Flemington on a multi-year deal.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "url": "https://www.vrc.com.au/latest-news/delaware-north-appointed-hospitality-services-provider-for-the-victoria-racing-club"
   },
   {
    "date": "2026-02-11",
@@ -14770,15 +15079,18 @@
    "needsSource": true
   },
   {
-   "date": "2025-09-17",
+   "date": "2025-09-11",
    "deal": "Howden × Victoria Racing Club",
    "sport": "Horse racing",
    "type": "Naming rights",
    "region": "ANZ",
-   "summary": "Howden takes naming rights to Victoria Derby Day.",
+   "summary": "Howden takes naming rights to Victoria Derby Day on a three-year deal and steps up to major partner.",
    "tier": "Naming rights",
    "status": "New",
-   "needsSource": true
+   "url": "https://www.vrc.com.au/latest-news/vrc-announces-howden-victoria-derby-day/",
+   "term": 3,
+   "ends": 2028,
+   "endsEst": true
   },
   {
    "date": "2025-09-17",
@@ -44366,23 +44678,23 @@
    "status": "Current partner"
   },
   {
-   "listed": "2026-10-30",
+   "listed": "2026-11-02",
    "deal": "Lexus × Victoria Racing Club",
    "sport": "Horse racing",
    "type": "Principal partner",
    "region": "ANZ",
-   "summary": "Listed as a principal partner on the event's official partners page.",
+   "summary": "Listed as a principal partner on the VRC's official partners page.",
    "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
    "tier": "Principal & major",
    "status": "Current partner"
   },
   {
-   "listed": "2026-10-30",
+   "listed": "2026-11-02",
    "deal": "TAB × Victoria Racing Club",
    "sport": "Horse racing",
    "type": "Major partner",
    "region": "ANZ",
-   "summary": "Listed as a major partner on the event's official partners page.",
+   "summary": "Listed as a major partner on the VRC's official partners page.",
    "url": "https://www.vrc.com.au/media-sponsors/our-partners/",
    "tier": "Principal & major",
    "status": "Current partner"
