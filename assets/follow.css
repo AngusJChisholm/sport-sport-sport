@@ -1,0 +1,21 @@
+/* Follow + weekly wrap block. Sits last on every page, directly above the footer. Added by tools/add_follow.py. */
+@font-face{font-family:"ArchivoV";src:url("fonts/Archivo[wdth,wght].ttf") format("truetype");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+.sf{background:#D2FF3C;color:#000;padding-block:clamp(72px,10vw,160px);font-family:"Archivo","Helvetica Neue",Arial,sans-serif;font-weight:500}
+.sf .sf-w{max-width:1440px;margin:0 auto;padding-inline:clamp(20px,4vw,56px)}
+.sf .sf-l{display:block;margin:0 0 28px;font-weight:800;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:rgba(0,0,0,.65)}
+.sf h2{font-family:"ArchivoV","Archivo","Helvetica Neue",Arial,sans-serif;font-stretch:68%;font-weight:800;text-transform:uppercase;letter-spacing:-.005em;line-height:.88;margin:0;font-size:clamp(48px,8.4vw,140px);text-wrap:balance;color:#000}
+.sf h2 .sf-g{display:block;font-size:.42em;letter-spacing:-.03em;margin-top:.5em}
+.sf .sf-a{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:clamp(40px,5vw,64px)}
+.sf .sf-a p{margin:0;font-size:15px;color:rgba(0,0,0,.65);flex-basis:100%}
+.sf .sf-b{font:inherit;font-weight:800;font-size:13px;letter-spacing:.14em;text-transform:uppercase;background:#000;color:#fff;border:1px solid #000;border-radius:0;padding:14px 22px;white-space:nowrap;display:inline-block;text-decoration:none}
+.sf a.sf-b:hover{background:#fff;color:#000;border-color:#fff}
+.sf .sf-o{background:transparent;color:#000}
+.sf a.sf-o:hover{background:#000;color:#D2FF3C;border-color:#000}
+.sf .sf-soon{cursor:default}
+.sf .sf-n{margin-top:clamp(48px,6vw,80px);padding-top:clamp(32px,4vw,48px);border-top:1px solid rgba(0,0,0,.3);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,64px);align-items:center}
+.sf .sf-n h3{margin:0 0 10px;font-family:"ArchivoV","Archivo","Helvetica Neue",Arial,sans-serif;font-stretch:68%;font-weight:800;text-transform:uppercase;letter-spacing:-.005em;font-size:clamp(32px,4vw,56px);line-height:.95;color:#000}
+.sf .sf-n h3 span{background:#000;color:#D2FF3C;padding:0 .08em}
+.sf .sf-n p{margin:0;font-size:16px;line-height:1.45;color:rgba(0,0,0,.65);max-width:46ch}
+.sf .nl-f iframe{display:block;width:100%;height:56px;border:0;background:transparent}
+.sf .nl-f small{display:block;margin-top:10px;font-size:12px;line-height:1.4;color:rgba(0,0,0,.65)}
+@media (max-width:760px){.sf .sf-n{grid-template-columns:1fr}}

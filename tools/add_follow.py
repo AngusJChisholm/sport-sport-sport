@@ -1,0 +1,60 @@
+"""Put the follow + weekly wrap block at the bottom of every page, directly above the footer.
+
+Safe to re-run: it removes any old copy (including the old mid-page one) and writes one fresh copy
+as the last thing inside <main>. Edit the block here, then run:  python3 tools/add_follow.py
+Then rebuild generated pages (python3 tools/build_articles.py, python3 tools/build_profiles.py).
+"""
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+LI = "https://www.linkedin.com/company/sportsportsport/"
+IG = "https://www.instagram.com/sportsportsport.hq/"
+
+BLOCK = f"""<!-- follow:start -->
+<section class="sf" id="follow"><div class="sf-w">
+<span class="sf-l">Deals, data and features</span>
+<h2>All things sport business. <span class="sf-g">Follow along on LinkedIn and Instagram.</span></h2>
+<div class="sf-a"><a class="sf-b" href="{LI}" target="_blank" rel="noopener">Follow on LinkedIn</a><a class="sf-b sf-o" href="{IG}" target="_blank" rel="noopener">Follow on Instagram</a><p>The latest deals, news and analysis from global and ANZ sport business.</p></div>
+<div class="sf-n" id="nl"><div><h3>The weekly <span>wrap.</span></h3><p>Every deal from the week, the ones that matter and why, in your inbox each Friday. Free.</p></div><div class="nl-f" id="nlF"><span class="sf-b sf-soon" aria-disabled="true">Coming soon</span><small>The weekly wrap launches shortly. Follow on LinkedIn or Instagram in the meantime.</small></div></div>
+</div></section>
+<!-- follow:end -->
+"""
+
+OLD_FO = re.compile(r'\n?<section class="dk fo"[^>]*>.*?</div></section>\n?', re.S)
+MARKED = re.compile(r'\n?<!-- follow:start -->.*?<!-- follow:end -->\n?', re.S)
+PRESENTED = '<div data-partner-slot="presented" hidden></div>'
+
+
+def apply(text, css_href):
+    # Keep the article "presented by" ad slot, but outside the follow block.
+    had_presented = PRESENTED in (OLD_FO.search(text).group(0) if OLD_FO.search(text) else "")
+    text = OLD_FO.sub("\n", text)
+    text = MARKED.sub("\n", text)
+    extra = f'<section class="read"><div class="wrap"><div class="col">{PRESENTED}</div></div></section>\n' if had_presented else ""
+    if "</main>" not in text:
+        return None
+    text = text.replace("</main>", extra + BLOCK + "</main>", 1)
+    text = re.sub(r"\n{3,}(<!-- follow:start -->)", r"\n\n\1", text)
+    link = f'<link rel="stylesheet" href="{css_href}">'
+    if "follow.css" not in text:
+        text = text.replace("</head>", link + "\n</head>", 1)
+    return text
+
+
+def main():
+    targets = [(p, "assets/follow.css") for p in sorted(ROOT.glob("*.html"))]
+    targets.append((ROOT / "tools" / "article_template.html", "../assets/follow.css"))
+    for p, href in targets:
+        t = p.read_text(encoding="utf-8")
+        new = apply(t, href)
+        if new is None:
+            print("skip (no <main>):", p.name)
+            continue
+        if new != t:
+            p.write_text(new, encoding="utf-8")
+            print("updated:", p.relative_to(ROOT))
+
+
+if __name__ == "__main__":
+    main()
