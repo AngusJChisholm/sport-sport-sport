@@ -1,0 +1,1926 @@
+{
+ "_help": "SSS Pro coverage tracker for official partner pages (ANZ). The daily 'SSS partner data' task works down this list: never-checked first (lowest tier first), then the oldest lastChecked. name = the property exactly as written in deals.json. partnersUrl = the official partners page found. lastChecked = YYYY-MM-DD. onPage = partners readable on that page at the last check. Add a property here to get it covered.",
+ "target": 9000,
+ "properties": [
+  {
+   "name": "Carlton",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Collingwood",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Essendon",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Geelong Cats",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Hawthorn",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Melbourne",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "North Melbourne",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Richmond",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "St Kilda",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Western Bulldogs",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Adelaide Crows",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "SA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Port Adelaide",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "SA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Fremantle",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "WA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "West Coast Eagles",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "WA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Sydney Swans",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "GWS Giants",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Brisbane Lions",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Gold Coast SUNS",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Tasmania Devils",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "TAS",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "AFL",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "National",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "AFLW",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "National",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Sydney Roosters",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "South Sydney Rabbitohs",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Wests Tigers",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Canterbury-Bankstown Bulldogs",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Parramatta Eels",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Penrith Panthers",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Manly Sea Eagles",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Cronulla Sharks",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "St George Illawarra Dragons",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Newcastle Knights",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Brisbane Broncos",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Dolphins",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Gold Coast Titans",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "North Queensland Cowboys",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Melbourne Storm",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Canberra Raiders",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "ACT",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Perth Bears",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "WA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "NRL",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "National",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "NRLW",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "National",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "NZ Warriors",
+   "sport": "NRL",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "PNG Chiefs",
+   "sport": "NRL",
+   "country": "PNG",
+   "state": "PNG",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Sydney FC",
+   "sport": "Football",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Western Sydney Wanderers",
+   "sport": "Football",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Macarthur FC",
+   "sport": "Football",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Central Coast Mariners",
+   "sport": "Football",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Newcastle Jets",
+   "sport": "Football",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Melbourne Victory",
+   "sport": "Football",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Melbourne City FC",
+   "sport": "Football",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Western United",
+   "sport": "Football",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Brisbane Roar",
+   "sport": "Football",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Adelaide United",
+   "sport": "Football",
+   "country": "AU",
+   "state": "SA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Perth Glory",
+   "sport": "Football",
+   "country": "AU",
+   "state": "WA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Canberra United",
+   "sport": "Football",
+   "country": "AU",
+   "state": "ACT",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "A-Leagues",
+   "sport": "Football",
+   "country": "AU",
+   "state": "National",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Football Australia",
+   "sport": "Football",
+   "country": "AU",
+   "state": "National",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Adelaide 36ers",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "SA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Brisbane Bullets",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Cairns Taipans",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Sydney Kings",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Illawarra Hawks",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Melbourne United",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "South East Melbourne Phoenix",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Perth Wildcats",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "WA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Tasmania JackJumpers",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "TAS",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "NBL",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "National",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "NZ Breakers",
+   "sport": "Basketball",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Melbourne Vixens",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Melbourne Mavericks",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "NSW Swifts",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Giants Netball",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Queensland Firebirds",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Sunshine Coast Lightning",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Adelaide Thunderbirds",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "SA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "West Coast Fever",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "WA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Netball Australia",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "National",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Sydney Sixers",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Sydney Thunder",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Melbourne Stars",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Melbourne Renegades",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Brisbane Heat",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Adelaide Strikers",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "SA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Perth Scorchers",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "WA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Hobart Hurricanes",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "TAS",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Cricket Australia",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "National",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "ACT Brumbies",
+   "sport": "Rugby union",
+   "country": "AU",
+   "state": "ACT",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Queensland Reds",
+   "sport": "Rugby union",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "NSW Waratahs",
+   "sport": "Rugby union",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Western Force",
+   "sport": "Rugby union",
+   "country": "AU",
+   "state": "WA",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Rugby Australia",
+   "sport": "Rugby union",
+   "country": "AU",
+   "state": "National",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Supercars",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 1,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Blues (Super Rugby)",
+   "sport": "Rugby union",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Chiefs (Super Rugby)",
+   "sport": "Rugby union",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Hurricanes (Super Rugby)",
+   "sport": "Rugby union",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Crusaders",
+   "sport": "Rugby union",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Highlanders",
+   "sport": "Rugby union",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Moana Pasifika",
+   "sport": "Rugby union",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "New Zealand Rugby",
+   "sport": "Rugby union",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Fijian Drua",
+   "sport": "Rugby union",
+   "country": "FJ",
+   "state": "FJ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Wellington Phoenix",
+   "sport": "Football",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Auckland FC",
+   "sport": "Football",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "New Zealand Football",
+   "sport": "Football",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "New Zealand Cricket",
+   "sport": "Cricket",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Netball New Zealand",
+   "sport": "Netball",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Northern Mystics",
+   "sport": "Netball",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Northern Stars",
+   "sport": "Netball",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Waikato Bay of Plenty Magic",
+   "sport": "Netball",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Central Pulse",
+   "sport": "Netball",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Mainland Tactix",
+   "sport": "Netball",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Southern Steel",
+   "sport": "Netball",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "NZ Rugby League",
+   "sport": "Rugby league",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "New Zealand Olympic Committee",
+   "sport": "Olympics",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Basketball New Zealand",
+   "sport": "Basketball",
+   "country": "NZ",
+   "state": "NZ",
+   "tier": 2,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Adelaide Lightning",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "SA",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Bendigo Spirit",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Southside Melbourne Flyers",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Geelong United",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Perth Lynx",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "WA",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Sydney Flames",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Townsville Fire",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "UC Capitals",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "ACT",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "WNBL",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Basketball Australia",
+   "sport": "Basketball",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Australian Open",
+   "sport": "Tennis",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Tennis Australia",
+   "sport": "Tennis",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "United Cup",
+   "sport": "Tennis",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Australian Grand Prix",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "MotoGP Australian Grand Prix",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Motorsport Australia",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "AUSX Supercross",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Triple Eight Race Engineering",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Erebus Motorsport",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Brad Jones Racing",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Tickford Racing",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Grove Racing",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Walkinshaw Andretti United",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Dick Johnson Racing",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "PremiAir Racing",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Matt Stone Racing",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Blanchard Racing Team",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Team 18",
+   "sport": "Motorsport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Victoria Racing Club",
+   "sport": "Horse racing",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Melbourne Racing Club",
+   "sport": "Horse racing",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Moonee Valley Racing Club",
+   "sport": "Horse racing",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Australian Turf Club",
+   "sport": "Horse racing",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Brisbane Racing Club",
+   "sport": "Horse racing",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Tour Down Under",
+   "sport": "Cycling",
+   "country": "AU",
+   "state": "SA",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "AusCycling",
+   "sport": "Cycling",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Golf Australia",
+   "sport": "Golf",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "PGA of Australia",
+   "sport": "Golf",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Australian Olympic Committee",
+   "sport": "Multi-sport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Paralympics Australia",
+   "sport": "Multi-sport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Commonwealth Games Australia",
+   "sport": "Multi-sport",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Swimming Australia",
+   "sport": "Swimming",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Athletics Australia",
+   "sport": "Athletics",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Hockey Australia",
+   "sport": "Hockey",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Surfing Australia",
+   "sport": "Surfing",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Cricket NSW",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Cricket Victoria",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Queensland Cricket",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "South Australian Cricket Association",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "SA",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "WACA",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "WA",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Cricket Tasmania",
+   "sport": "Cricket",
+   "country": "AU",
+   "state": "TAS",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "NSWRL",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "QRL",
+   "sport": "NRL",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Wallabies",
+   "sport": "Rugby union",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Wallaroos",
+   "sport": "Rugby union",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Rugby World Cup 2027",
+   "sport": "Rugby union",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "CommBank Matildas",
+   "sport": "Football",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Socceroos",
+   "sport": "Football",
+   "country": "AU",
+   "state": "National",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "MCG",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Marvel Stadium",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "AAMI Park",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Rod Laver Arena",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Accor Stadium",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Allianz Stadium",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Qudos Bank Arena",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Suncorp Stadium",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "The Gabba",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Adelaide Oval",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "SA",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Optus Stadium",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "WA",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "RAC Arena",
+   "sport": "Venues",
+   "country": "AU",
+   "state": "WA",
+   "tier": 3,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "VFL",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 4,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "VFLW",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 4,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Victorian Amateur Football Association",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 4,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "SANFL",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "SA",
+   "tier": 4,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "WAFL",
+   "sport": "AFL",
+   "country": "AU",
+   "state": "WA",
+   "tier": 4,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Australian Championship",
+   "sport": "Football",
+   "country": "AU",
+   "state": "National",
+   "tier": 4,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Netball Victoria",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "VIC",
+   "tier": 4,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Netball NSW",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "NSW",
+   "tier": 4,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Netball Queensland",
+   "sport": "Netball",
+   "country": "AU",
+   "state": "QLD",
+   "tier": 4,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  },
+  {
+   "name": "Hockey One",
+   "sport": "Hockey",
+   "country": "AU",
+   "state": "National",
+   "tier": 4,
+   "partnersUrl": null,
+   "lastChecked": null,
+   "onPage": null
+  }
+ ]
+}
