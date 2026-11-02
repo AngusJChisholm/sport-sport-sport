@@ -201,7 +201,7 @@ Deal run windows: Tuesday covers everything announced since the Thursday run (th
 covers the last 3 days (Tue to Thu). Wherever a prompt or the skill says "last 72 hours", "last 48 hours" or "last 24
 hours", use that window instead, for logging, the lead and the round-up. The lead should be the strongest confirmed deal
 in the window, favouring the freshest when two are close.
-Monday, Wednesday and Friday posts are features: each one is an entry in features.json with "label" set to "Feature",
+Monday, Wednesday and Friday posts are features (full steps in FEATURES.md): each one is an entry in features.json with "label" set to "Feature",
 "Data drop" or "Breakdown", built with tools/build_articles.py, plus an Instagram queue file with "kind": "feature" (slide 1
 pulls the photo from features.json) and a LinkedIn spec in instagram/linkedin/<date>.json (slide 2 heading set with
 "label"). Instagram posts Mon-Thu 7pm and Fri 6pm. The Tuesday evergreen and Friday "week in deals" carousels are
