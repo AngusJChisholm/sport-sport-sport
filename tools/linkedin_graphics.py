@@ -37,59 +37,64 @@ def photo(img):
         return "data:image/jpeg;base64," + base64.b64encode((ROOT / "assets/img/u" / f"{m.group(1)}.jpg").read_bytes()).decode()
     return f"https://images.unsplash.com/{m.group(1)}?w=1080&h=1080&q=80&auto=format&fit=crop" if m else ""
 
-# House look (2 Nov 2026): white, centred, matching the Instagram cover. Volt is only ever a fill
-# behind black type. Slide 1 = the lead's photo fading into white; slide 2 = white round-up.
-LABEL = ("font-weight:800;font-size:24px;letter-spacing:.14em;text-transform:uppercase")
+# LinkedIn look (2 Nov 2026): white and editorial, more buttoned-up than Instagram. Left-aligned,
+# hard-edged photo panel, no volt fills: volt appears only as a thin accent bar. Same photo as everywhere.
+from datetime import date as _date
 
-def brand(tag):
-    return (f'<div class="br">Sport Sport Sport <span>/ {e(tag)}</span></div>')
+def nice_date(d):
+    try:
+        x = _date.fromisoformat(d)
+        return f"{x.day} {x.strftime('%B %Y')}"
+    except Exception:
+        return d
+
+PRO_CSS = """
+body{background:#fff;color:#111}
+.kick{display:flex;align-items:center;gap:16px;font-weight:800;font-size:21px;letter-spacing:.16em;text-transform:uppercase;color:#111}
+.kick i{display:block;width:44px;height:6px;background:#D2FF3C}
+.kick em{font-style:normal;font-weight:600;color:#7A7A74}
+.ft{position:absolute;left:80px;right:80px;bottom:64px;display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #DEDED8;padding-top:24px}
+.ft img{width:96px}.ft div{font-weight:600;font-size:19px;letter-spacing:.12em;text-transform:uppercase;color:#7A7A74}
+"""
 
 def slide1(s):
     src = photo(s.get("image"))
     head = " ".join(l.strip() for l in s["headline_lines"])
-    hl = s.get("highlight", "").strip(".,!?' ")
-    words = []
-    for w in head.split():
-        core = w.strip(".,!?'")
-        words.append(f'<span class="v">{e(w)}</span>' if hl and core.upper() == hl.upper() else e(w))
     pair = e(s["deal"]).replace(" x ", " &times; ", 1)
     ph = (f'<div class="ph" style="background-image:url(\'{src}\')"></div>') if src else '<div class="ph" style="background:#EDEDE8"></div>'
-    return f"""<style>{css()}
-body{{background:#fff;color:#000}}
-.ph{{position:absolute;inset:0 0 auto 0;height:760px;background-position:center 30%;background-size:cover}}
-.fade{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 14%,rgba(255,255,255,0) 40%,rgba(255,255,255,.85) 55%,#fff 66%,#fff 100%)}}
-.low{{position:absolute;left:70px;right:70px;bottom:70px;display:flex;flex-direction:column;align-items:center;text-align:center}}
-.br{{{LABEL}}}.br span{{background:#D2FF3C;padding:.12em .3em 0}}
-.h{{margin-top:18px;font-weight:800;font-size:118px;font-stretch:68%;line-height:.9;text-transform:uppercase;letter-spacing:-.005em}}
-.h .v{{color:#000;background:#D2FF3C;padding:0 .06em}}
-.d{{margin-top:22px;font-weight:600;font-size:23px;letter-spacing:.14em;text-transform:uppercase;color:#5C5C57}}.d b{{color:#000;font-weight:800}}</style>
-{ph}<div class="fade"></div>
-<div class="low">{brand("Deal of the day")}<div class="h">{" ".join(words)}</div>
-<div class="d"><b>{pair}</b> &middot; {e(s["descriptor"])}</div></div>"""
+    return f"""<style>{css()}{PRO_CSS}
+.ph{{position:absolute;left:0;right:0;top:0;height:520px;background-position:center 30%;background-size:cover}}
+.txt{{position:absolute;left:80px;right:80px;top:576px}}
+.h{{margin-top:22px;font-weight:800;font-size:96px;font-stretch:75%;line-height:.92;text-transform:uppercase;letter-spacing:-.005em;color:#111}}
+.d{{margin-top:22px;font-weight:500;font-size:26px;color:#5C5C57}}.d b{{font-weight:800;color:#111}}</style>
+{ph}<div class="txt"><div class="kick"><i></i>Deal of the day <em>&middot; {e(nice_date(s.get("date","")))}</em></div>
+<div class="h" data-fit>{e(head)}</div>
+<div class="d"><b>{pair}</b> &nbsp;|&nbsp; {e(s["descriptor"])}</div></div>
+<div class="ft"><img src="data:image/svg+xml;base64,{wordmark('black')}"><div>sportsportsport.com.au</div></div>"""
 
 def slide2(s):
-    """White round-up in the same centred style. Volt is a fill behind black type, never text on white."""
+    """Round-up as a clean table: deal on the left, sport and deal type on the right."""
     rows = []
     for o in s["others"][:5]:
         sport, _, rest = str(o.get("sub") or "").partition(" - ")
         if not rest:
             sport, rest = "", sport
-        rows.append('<div class="r">' + (f'<i>{e(sport)}</i>' if sport else "")
-                    + f'<b>{e(o["deal"])}</b>' + (f'<span>{e(rest)}</span>' if rest else "") + "</div>")
+        rows.append(f'<div class="r"><b>{e(o["deal"])}</b><div class="m"><span class="sp">{e(sport)}</span>'
+                    f'<span>{e(rest[:1].upper() + rest[1:])}</span></div></div>')
     n = len(rows)
-    big = 62 if n <= 3 else 52 if n == 4 else 44
-    return f"""<style>{css()}
-body{{background:#fff;color:#000}}
-.top{{position:absolute;left:0;right:0;top:64px;display:flex;justify-content:center}}
-.br{{{LABEL}}}.br span{{background:#D2FF3C;padding:.12em .3em 0}}
-.rows{{position:absolute;left:90px;right:90px;top:150px;bottom:190px;display:flex;flex-direction:column;justify-content:center;text-align:center}}
-.r{{padding:{int(big*.42)}px 0;border-top:1px solid #E2E2DC}}.r:last-child{{border-bottom:1px solid #E2E2DC}}
-.r i{{display:inline-block;font-style:normal;font-weight:800;font-size:20px;letter-spacing:.18em;text-transform:uppercase;background:#D2FF3C;padding:6px 10px 4px;margin-bottom:12px}}
-.r b{{display:block;font-weight:800;font-size:{big}px;font-stretch:72%;line-height:.95;text-transform:uppercase}}
-.r span{{display:block;font-size:26px;color:#5C5C57;margin-top:10px}}
-.ft{{position:absolute;left:0;right:0;bottom:60px;display:flex;flex-direction:column;align-items:center;gap:16px}}
-.ft img{{width:104px}}.ft div{{font-weight:600;font-size:21px;letter-spacing:.14em;text-transform:uppercase;color:#7A7A74}}</style>
-<div class="top">{brand("Today's other deals")}</div><div class="rows">{"".join(rows)}</div>
+    big = 52 if n <= 3 else 44 if n == 4 else 36
+    return f"""<style>{css()}{PRO_CSS}
+.top{{position:absolute;left:80px;right:80px;top:80px}}
+.t{{margin-top:22px;font-weight:800;font-size:74px;font-stretch:75%;line-height:.95;text-transform:uppercase;color:#111}}
+.rows{{position:absolute;left:80px;right:80px;top:300px;border-top:3px solid #111}}
+.r{{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:{int(big*.62)}px 0;border-bottom:1px solid #DEDED8}}
+.r b{{font-weight:800;font-size:{big}px;font-stretch:78%;line-height:1;text-transform:uppercase;color:#111}}
+.r .m{{text-align:right;flex-shrink:0;max-width:40%}}
+.r .m span{{display:block;font-size:22px;color:#5C5C57;line-height:1.3}}
+.r .m .sp{{font-weight:800;font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:#111;margin-bottom:4px}}</style>
+<div class="top"><div class="kick"><i></i>Today's other deals <em>&middot; {e(nice_date(s.get("date","")))}</em></div>
+<div class="t">Also signed today.</div></div>
+<div class="rows">{"".join(rows)}</div>
 <div class="ft"><img src="data:image/svg+xml;base64,{wordmark('black')}"><div>Every deal, filed: sportsportsport.com.au</div></div>"""
 
 def render(spec, out):

@@ -80,7 +80,7 @@ Every weekday the afternoon Instagram task (about 1:30pm Melbourne) writes `inst
 
 **Stop a post:** set `"hold": true` in that day's queue file (editable in the GitHub app). **Pause everything:** add an empty file called `instagram/PAUSE`; delete it to resume.
 
-**Carousel look (2 Nov 2026):** everything is white, centred and condensed, with no black backgrounds. Slide 1 is the lead's photo (the same one as the article and LinkedIn) fading into white, with the headline centred in the bottom third. The inner slides are white with centred numbered rows. Volt is only ever a fill behind black type (labels, sport tags, the highlighted word), never volt text on white. The LinkedIn graphics (tools/linkedin_graphics.py) follow the same look. Switches at the top of the photo section in tools/instagram_render.py: `LIGHT`, `COVER_LIGHT`, `INNER_BG`.
+**Carousel look (2 Nov 2026):** everything is white, centred and condensed, with no black backgrounds. Slide 1 is the lead's photo (the same one as the article and LinkedIn) fading into white, with the headline centred in the bottom third. The inner slides are white with centred numbered rows. Volt is only ever a fill behind black type (labels, sport tags, the highlighted word), never volt text on white. The LinkedIn graphics (tools/linkedin_graphics.py) are the more professional, editorial version: white, left-aligned, the same photo in a hard-edged top panel, a dated kicker, a clean round-up table, and volt only as a thin accent bar (no highlight fills). Switches at the top of the photo section in tools/instagram_render.py: `LIGHT`, `COVER_LIGHT`, `INNER_BG`.
 
 **Club colours** for stories live in `instagram/colours.json`. Anything not listed uses black.
 
