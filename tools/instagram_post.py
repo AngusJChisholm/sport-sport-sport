@@ -37,8 +37,8 @@ API = API_HOST + os.environ.get("IG_API_VERSION", "v26.0")
 
 STORY_TIME = dtime(8, 0)
 STORY_CUTOFF = dtime(15, 0)   # don't post the morning stories later than this
-# Posting schedule (3 Nov 2026): Mon feature, Tue deals, Wed Data Drop, Thu deals, Fri week in deals, weekends off.
-FEED_TIMES = {0: dtime(12, 30), 1: dtime(19, 0), 2: dtime(12, 30), 3: dtime(19, 0), 4: dtime(17, 0),
+# Posting schedule (SOURCES.md rule 6): Mon feature, Tue deals, Wed data drop, Thu deals, Fri breakdown, weekends off.
+FEED_TIMES = {0: dtime(19, 0), 1: dtime(19, 0), 2: dtime(19, 0), 3: dtime(19, 0), 4: dtime(18, 0),
               5: dtime(23, 59), 6: dtime(23, 59)}
 WEEKENDS_OFF = True
 FEED_CUTOFF = dtime(23, 0)
@@ -210,11 +210,7 @@ def auto_queue(t, p):
     x = lambda d: str(d.get("deal", "")).replace(" \u00d7 ", " x ").replace("\u00d7", "x")
     today = [d for d in deals if d.get("added") == date]
     lead = next((d for d in today if d.get("lead")), None)
-    if t.weekday() == 4:   # Friday week in deals: no scan on Fridays, so use the week's leads
-        monday = (t.date() - timedelta(days=4)).isoformat()
-        leads = [d for d in deals if d.get("lead") and monday <= str(d.get("added", "")) <= date]
-        lead = leads[0] if leads else None
-    elif t.weekday() not in (1, 3):
+    if t.weekday() not in (1, 3):   # backup only covers the Tue/Thu deals posts; feature days have their own tasks
         return False
     if not lead:
         return False
@@ -269,8 +265,7 @@ def plan():
         out["reason"] = "weekend: no posting (the Sunday feature posts on Monday)"
     elif (ROOT / "instagram" / "PAUSE").exists():
         out["reason"] = "paused (instagram/PAUSE exists)"
-    elif not p["queue"].exists() and not carry_over(t, p) and not (
-            t.time() >= (dtime(6, 0) if t.weekday() == 4 else AUTO_FROM) and auto_queue(t, p)):
+    elif not p["queue"].exists() and not (t.time() >= AUTO_FROM and auto_queue(t, p)):
         out["reason"] = "no queue file for today yet"
     else:
         state = load(p["state"], {})
