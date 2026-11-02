@@ -307,7 +307,7 @@ def feed_rows_slide(label, title, rows, n, total, footer_right=""):
 def feed_close(n, total):
     return f"""<style>{DARK_CSS}</style><div class="frame dk{' lt' if LIGHT else ''}">{dk_top("Follow", n, total)}
 <div class="d-mid"><h2 class="d-big">All things <span class="v">sport</span> business.</h2>
-<div class="d-sup">Global &amp; ANZ deals, every weekday</div><div class="d-pill">Follow for daily deals</div></div>
+<div class="d-sup">Deals, news and analysis. Global &amp; ANZ.</div><div class="d-pill">Follow for more</div></div>
 {dk_foot(SITE_LABEL, n, total)}</div>"""
 
 
