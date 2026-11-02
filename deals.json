@@ -29,7 +29,10 @@
     ],
     "close": "Two rivals, one name on the door, and the first game still about five years off."
    },
-   "slug": "2026-11-03-generali-ac-milan-inter-milan"
+   "slug": "2026-11-03-generali-ac-milan-inter-milan",
+   "tier": "Naming rights",
+   "status": "New",
+   "ends": 2032
   },
   {
    "date": "2026-10-30",
@@ -39,7 +42,9 @@
    "type": "Jersey patch",
    "region": "Global",
    "summary": "Carvana becomes exclusive auto partner of Arizona Athletics and the first jersey patch sponsor in school history, on the men's and women's basketball teams.",
-   "url": "https://www.yourvalley.net/stories/arizona-athletics-and-carvana-announce-landmark-jersey-patch-partnership,736326"
+   "url": "https://www.yourvalley.net/stories/arizona-athletics-and-carvana-announce-landmark-jersey-patch-partnership,736326",
+   "tier": "Shirt & kit placement",
+   "status": "New"
   },
   {
    "date": "2026-11-02",
@@ -49,7 +54,9 @@
    "type": "Partnership",
    "region": "Global",
    "summary": "The WTA and TikTok expand their global content partnership, with TikTok GamePlan hubs at tour events and an exclusive live stream of the WTA Finals draw.",
-   "url": "https://www.sportsvideo.org/2026/11/02/wta-tiktok-expands-global-effort-with-dedicated-gameplan-experience/"
+   "url": "https://www.sportsvideo.org/2026/11/02/wta-tiktok-expands-global-effort-with-dedicated-gameplan-experience/",
+   "tier": "Official partner",
+   "status": "Expansion"
   },
   {
    "date": "2026-11-02",
@@ -59,7 +66,9 @@
    "type": "Partnership",
    "region": "Global",
    "summary": "Multi-year partnership puts TGL and WTGL holes and watch parties into Topgolf venues and Toptracer Range facilities ahead of the first WTGL season.",
-   "url": "https://www.prnewswire.com/news-releases/topgolf--tmrw-sports-partner-to-bring-tgl--wtgl-experiences-to-golf-fans-worldwide-ahead-of-inaugural-wtgl-season-302926445.html"
+   "url": "https://www.prnewswire.com/news-releases/topgolf--tmrw-sports-partner-to-bring-tgl--wtgl-experiences-to-golf-fans-worldwide-ahead-of-inaugural-wtgl-season-302926445.html",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-10-30",
@@ -69,7 +78,10 @@
    "type": "Media rights",
    "region": "ANZ",
    "summary": "Short-term deal gives TNT Sports exclusive live UK rights to 16 games of Australia's 2026-27 home summer, with 5 showing highlights of the England limited-overs matches.",
-   "url": "https://www.sportcal.com/?p=154674"
+   "url": "https://www.sportcal.com/?p=154674",
+   "tier": "Media & broadcast",
+   "status": "New",
+   "ends": 2027
   },
   {
    "date": "2026-10-29",
@@ -79,7 +91,9 @@
    "type": "Media partner",
    "region": "ANZ",
    "summary": "Expanded media partnership across the Herald Sun, news.com.au and Vogue Australia runs past the Melbourne Cup Carnival and through the racing season.",
-   "url": "https://www.mediaweek.com.au/news-australia-and-vrc-expand-racing-partnership"
+   "url": "https://www.mediaweek.com.au/news-australia-and-vrc-expand-racing-partnership",
+   "tier": "Media & broadcast",
+   "status": "Expansion"
   },
   {
    "date": "2026-11-02",
@@ -89,7 +103,9 @@
    "type": "Jersey patch",
    "region": "Global",
    "summary": "WWT expands its Mizzou deal with a jersey patch on men's and women's basketball and branding on Norm Stewart Court.",
-   "url": "https://mutigers.com/news/2026/11/02/athletics-announces-technology-and-athletics-partnership-with-world-wide-technology"
+   "url": "https://mutigers.com/news/2026/11/02/athletics-announces-technology-and-athletics-partnership-with-world-wide-technology",
+   "tier": "Shirt & kit placement",
+   "status": "Expansion"
   },
   {
    "date": "2026-11-02",
@@ -99,7 +115,9 @@
    "type": "Partnership",
    "region": "ANZ",
    "summary": "Melbourne Storm signs a commercial partnership with Australian dog food brand Perfect Bowl, sold exclusively at Petstock, ahead of the 2027 season.",
-   "url": "https://ministryofsport.com/melbourne-storm-secures-commercial-partnership-with-aussie-pet-food-brand-perfect-bowl-exclusively-at-petstock/"
+   "url": "https://ministryofsport.com/melbourne-storm-secures-commercial-partnership-with-aussie-pet-food-brand-perfect-bowl-exclusively-at-petstock/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-02",
@@ -109,7 +127,9 @@
    "type": "Partnership",
    "region": "Global",
    "summary": "SI Tickets expands its Bengals deal as fan experience partner for the Madrid game, with a ticket sweepstakes and fan party.",
-   "url": "https://sportcal.com/news/sit-brings-bengals-partnership-to-spain-rounding-out-madrid-game-coverage"
+   "url": "https://sportcal.com/news/sit-brings-bengals-partnership-to-spain-rounding-out-madrid-game-coverage",
+   "tier": "Official partner",
+   "status": "Expansion"
   },
   {
    "date": "2025-10-23",

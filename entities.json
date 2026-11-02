@@ -1743,6 +1743,15 @@
     "logo"
    ]
   },
+  "apwireless": {
+   "name": "APWireless",
+   "domain": "apwireless.com",
+   "aliases": [
+    "AP Wireless"
+   ],
+   "k": "b",
+   "cat": "Telco"
+  },
   "aquame": {
    "name": "AQUAME",
    "cat": "Non-alcoholic drinks",
@@ -1841,6 +1850,10 @@
     "icon",
     "logo"
    ]
+  },
+  "arizona-wildcats": {
+   "name": "Arizona Wildcats",
+   "k": "p"
   },
   "arlec": {
    "name": "Arlec",
@@ -2614,6 +2627,14 @@
    "bf": [],
    "ptype": "Event",
    "k": "p"
+  },
+  "australian-open-golf": {
+   "name": "Australian Open (golf)",
+   "ptype": "Event",
+   "k": "p",
+   "aliases": [
+    "Australian Open golf"
+   ]
   },
   "australian-turf-club": {
    "name": "Australian Turf Club",
@@ -5165,6 +5186,10 @@
     "logo"
    ]
   },
+  "carvana": {
+   "name": "Carvana",
+   "k": "b"
+  },
   "casa-spirits": {
    "name": "Casa Spirits",
    "cat": "Alcohol",
@@ -5200,6 +5225,12 @@
     "icon",
     "logo"
    ]
+  },
+  "casper-s-pies-and-pastries": {
+   "name": "Casper's Pies & Pastries",
+   "domain": "caspers.com.au",
+   "k": "b",
+   "cat": "Food & nutrition"
   },
   "castelli": {
    "name": "Castelli",
@@ -5684,6 +5715,10 @@
    "ptype": "Venue",
    "k": "p"
   },
+  "cincinnati-bengals": {
+   "name": "Cincinnati Bengals",
+   "k": "p"
+  },
   "circa": {
    "name": "Circa",
    "cat": "Betting & wagering",
@@ -5703,6 +5738,12 @@
     "icon",
     "logo"
    ]
+  },
+  "cirka": {
+   "name": "Cirka",
+   "domain": "cirka.com.au",
+   "cat": "Technology",
+   "k": "b"
   },
   "cisco": {
    "name": "Cisco",
@@ -6438,6 +6479,12 @@
     "logo"
    ]
   },
+  "coolmore": {
+   "name": "Coolmore",
+   "domain": "coolmore.com",
+   "cat": "Agriculture",
+   "k": "b"
+  },
   "coopers": {
    "name": "Coopers",
    "cat": "Alcohol",
@@ -6936,6 +6983,12 @@
     "logo"
    ]
   },
+  "cygnett": {
+   "name": "Cygnett",
+   "domain": "cygnett.com",
+   "cat": "Technology",
+   "k": "b"
+  },
   "cynergy-bank": {
    "name": "Cynergy Bank",
    "cat": "Banking & finance",
@@ -7061,6 +7114,12 @@
     "icon"
    ],
    "cat": "Non-alcoholic drinks",
+   "k": "b"
+  },
+  "darley": {
+   "name": "Darley",
+   "domain": "darley.com.au",
+   "cat": "Agriculture",
    "k": "b"
   },
   "databricks": {
@@ -7302,6 +7361,16 @@
    "cat": "Health & beauty",
    "k": "b"
   },
+  "destination-nsw": {
+   "name": "Destination NSW",
+   "cat": "Tourism & government",
+   "domain": "destinationnsw.com.au",
+   "aliases": [
+    "NSW Government",
+    "Feel New Sydney"
+   ],
+   "k": "b"
+  },
   "destination-sport": {
    "name": "Destination Sport",
    "domain": "destinationsport.com",
@@ -7521,6 +7590,12 @@
    "ptype": "Athlete & talent",
    "k": "p"
   },
+  "don-julio": {
+   "name": "Don Julio",
+   "domain": "donjulio.com",
+   "cat": "Alcohol",
+   "k": "b"
+  },
   "dongfeng": {
    "name": "Dongfeng",
    "cat": "Automotive",
@@ -7643,6 +7718,12 @@
     "icon"
    ],
    "cat": "Hospitality & entertainment",
+   "k": "b"
+  },
+  "drinkwise": {
+   "name": "DrinkWise",
+   "domain": "drinkwise.org.au",
+   "cat": "Not-for-profit",
    "k": "b"
   },
   "drip-water": {
@@ -9608,6 +9689,16 @@
    "name": "Future Form",
    "k": "b"
   },
+  "g-h-mumm": {
+   "name": "G.H. Mumm",
+   "domain": "mumm.com",
+   "cat": "Alcohol",
+   "aliases": [
+    "Mumm",
+    "G.H Mumm"
+   ],
+   "k": "b"
+  },
   "g-j-gardner-homes": {
    "name": "G.J. Gardner Homes",
    "cat": "Construction & property",
@@ -9882,6 +9973,12 @@
     "icon",
     "logo"
    ]
+  },
+  "gilgai-farm": {
+   "name": "Gilgai Farm",
+   "domain": "gilgaifarm.com.au",
+   "cat": "Agriculture",
+   "k": "b"
   },
   "gillette": {
    "name": "Gillette",
@@ -10899,6 +10996,12 @@
     "logo"
    ]
   },
+  "herald-sun": {
+   "name": "Herald Sun",
+   "domain": "heraldsun.com.au",
+   "cat": "Media & broadcast",
+   "k": "b"
+  },
   "herbalife": {
    "name": "Herbalife",
    "cat": "Food & nutrition",
@@ -11185,6 +11288,12 @@
     "icon",
     "logo"
    ]
+  },
+  "hong-kong-jockey-club": {
+   "name": "Hong Kong Jockey Club",
+   "domain": "hkjc.com",
+   "k": "b",
+   "cat": "Sport & events"
   },
   "hoop-city": {
    "name": "Hoop City",
@@ -11929,6 +12038,12 @@
     "icon",
     "logo"
    ]
+  },
+  "inglis": {
+   "name": "Inglis",
+   "domain": "inglis.com.au",
+   "cat": "Agriculture",
+   "k": "b"
   },
   "innova-dental": {
    "name": "Innova Dental",
@@ -15763,6 +15878,11 @@
     "logo"
    ]
   },
+  "missouri-tigers": {
+   "name": "Missouri Tigers",
+   "domain": "mutigers.com",
+   "k": "p"
+  },
   "mitre-10": {
    "name": "Mitre 10",
    "cat": "Retail",
@@ -17048,6 +17168,10 @@
    ],
    "ptype": "Club & team",
    "k": "p"
+  },
+  "news-australia": {
+   "name": "News Australia",
+   "k": "b"
   },
   "nex": {
    "name": "Nex",
@@ -18706,6 +18830,10 @@
    "cat": "Non-alcoholic drinks",
    "k": "b"
   },
+  "perfect-bowl": {
+   "name": "Perfect Bowl",
+   "k": "b"
+  },
   "perfect-game": {
    "name": "Perfect Game",
    "domain": "perfectgame.org",
@@ -18714,6 +18842,15 @@
    ],
    "ptype": "Other",
    "k": "p"
+  },
+  "peroni": {
+   "name": "Peroni",
+   "domain": "peroni.com.au",
+   "cat": "Alcohol",
+   "k": "b",
+   "aliases": [
+    "Peroni Nastro Azzurro"
+   ]
   },
   "perpetual-wealth": {
    "name": "Perpetual Wealth",
@@ -19947,6 +20084,12 @@
    "bf": [],
    "ptype": "Club & team",
    "k": "p"
+  },
+  "racing-com": {
+   "name": "Racing.com",
+   "domain": "racing.com",
+   "cat": "Media & broadcast",
+   "k": "b"
   },
   "racq": {
    "name": "RACQ",
@@ -22260,6 +22403,12 @@
    ],
    "k": "b"
   },
+  "sky-racing": {
+   "name": "Sky Racing",
+   "domain": "skyracing.com.au",
+   "cat": "Media & broadcast",
+   "k": "b"
+  },
   "sky-sport": {
    "name": "Sky Sport",
    "cat": "Media & broadcast",
@@ -23004,6 +23153,12 @@
    "bf": [
     "icon"
    ]
+  },
+  "st-remio": {
+   "name": "St Remio",
+   "domain": "stremio.com.au",
+   "k": "b",
+   "cat": "Food & nutrition"
   },
   "staging-connections": {
    "name": "Staging Connections",
@@ -24871,6 +25026,16 @@
    "bf": [
     "icon"
    ]
+  },
+  "tmrw-sports": {
+   "name": "TMRW Sports",
+   "k": "p"
+  },
+  "tnt-sports": {
+   "name": "TNT Sports",
+   "domain": "tntsports.co.uk",
+   "cat": "Media & broadcast",
+   "k": "b"
   },
   "todaytix": {
    "name": "TodayTix",
@@ -27500,6 +27665,11 @@
     "World Surf League Australia"
    ]
   },
+  "world-wide-technology": {
+   "name": "World Wide Technology",
+   "cat": "Technology",
+   "k": "b"
+  },
   "wotif": {
    "name": "Wotif",
    "cat": "Airlines & travel",
@@ -27933,6 +28103,12 @@
    "ptype": "Athlete & talent",
    "k": "p"
   },
+  "yulong": {
+   "name": "Yulong",
+   "domain": "yulong.com.au",
+   "cat": "Agriculture",
+   "k": "b"
+  },
   "zafiro-palace-alcudia": {
    "name": "Zafiro Palace Alcudia",
    "domain": "zafirohotels.com",
@@ -28131,171 +28307,6 @@
     "icon",
     "logo"
    ]
-  },
-  "casper-s-pies-and-pastries": {
-   "name": "Casper's Pies & Pastries",
-   "domain": "caspers.com.au",
-   "k": "b",
-   "cat": "Food & nutrition"
-  },
-  "cirka": {
-   "name": "Cirka",
-   "domain": "cirka.com.au",
-   "cat": "Technology",
-   "k": "b"
-  },
-  "cygnett": {
-   "name": "Cygnett",
-   "domain": "cygnett.com",
-   "cat": "Technology",
-   "k": "b"
-  },
-  "don-julio": {
-   "name": "Don Julio",
-   "domain": "donjulio.com",
-   "cat": "Alcohol",
-   "k": "b"
-  },
-  "g-h-mumm": {
-   "name": "G.H. Mumm",
-   "domain": "mumm.com",
-   "cat": "Alcohol",
-   "aliases": [
-    "Mumm",
-    "G.H Mumm"
-   ],
-   "k": "b"
-  },
-  "herald-sun": {
-   "name": "Herald Sun",
-   "domain": "heraldsun.com.au",
-   "cat": "Media & broadcast",
-   "k": "b"
-  },
-  "st-remio": {
-   "name": "St Remio",
-   "domain": "stremio.com.au",
-   "k": "b",
-   "cat": "Food & nutrition"
-  },
-  "apwireless": {
-   "name": "APWireless",
-   "domain": "apwireless.com",
-   "aliases": [
-    "AP Wireless"
-   ],
-   "k": "b",
-   "cat": "Telco"
-  },
-  "coolmore": {
-   "name": "Coolmore",
-   "domain": "coolmore.com",
-   "cat": "Agriculture",
-   "k": "b"
-  },
-  "darley": {
-   "name": "Darley",
-   "domain": "darley.com.au",
-   "cat": "Agriculture",
-   "k": "b"
-  },
-  "drinkwise": {
-   "name": "DrinkWise",
-   "domain": "drinkwise.org.au",
-   "cat": "Not-for-profit",
-   "k": "b"
-  },
-  "gilgai-farm": {
-   "name": "Gilgai Farm",
-   "domain": "gilgaifarm.com.au",
-   "cat": "Agriculture",
-   "k": "b"
-  },
-  "hong-kong-jockey-club": {
-   "name": "Hong Kong Jockey Club",
-   "domain": "hkjc.com",
-   "k": "b",
-   "cat": "Sport & events"
-  },
-  "inglis": {
-   "name": "Inglis",
-   "domain": "inglis.com.au",
-   "cat": "Agriculture",
-   "k": "b"
-  },
-  "yulong": {
-   "name": "Yulong",
-   "domain": "yulong.com.au",
-   "cat": "Agriculture",
-   "k": "b"
-  },
-  "racing-com": {
-   "name": "Racing.com",
-   "domain": "racing.com",
-   "cat": "Media & broadcast",
-   "k": "b"
-  },
-  "sky-racing": {
-   "name": "Sky Racing",
-   "domain": "skyracing.com.au",
-   "cat": "Media & broadcast",
-   "k": "b"
-  },
-  "destination-nsw": {
-   "name": "Destination NSW",
-   "cat": "Tourism & government",
-   "domain": "destinationnsw.com.au",
-   "aliases": [
-    "NSW Government",
-    "Feel New Sydney"
-   ],
-   "k": "b"
-  },
-  "peroni": {
-   "name": "Peroni",
-   "domain": "peroni.com.au",
-   "cat": "Alcohol",
-   "k": "b",
-   "aliases": [
-    "Peroni Nastro Azzurro"
-   ]
-  },
-  "australian-open-golf": {
-   "name": "Australian Open (golf)",
-   "ptype": "Event",
-   "k": "p",
-   "aliases": [
-    "Australian Open golf"
-   ]
-  },
-  "carvana": {
-   "name": "Carvana"
-  },
-  "arizona-wildcats": {
-   "name": "Arizona Wildcats"
-  },
-  "tmrw-sports": {
-   "name": "TMRW Sports"
-  },
-  "tnt-sports": {
-   "name": "TNT Sports",
-   "domain": "tntsports.co.uk"
-  },
-  "news-australia": {
-   "name": "News Australia"
-  },
-  "world-wide-technology": {
-   "name": "World Wide Technology"
-  },
-  "missouri-tigers": {
-   "name": "Missouri Tigers",
-   "domain": "mutigers.com"
-  },
-  "perfect-bowl": {
-   "name": "Perfect Bowl"
-  },
-  "cincinnati-bengals": {
-   "name": "Cincinnati Bengals"
   }
  },
  "leagues": [
