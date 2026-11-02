@@ -1,5 +1,5 @@
 {
- "_help": "Brands and rights holders shown with logos on the site. Key = the slug used in profile.html?id=. name = how it's written in deal names (brand or property side of 'Brand × Property'). domain = official website, used to fetch the logo from Brandfetch (needs site.brandfetch in deals.json). logo = optional path to a logo file in assets/logos/ that overrides Brandfetch. aliases = other names the same organisation appears under. Anything not listed still gets a page and a monogram. leagues = the club strips on the archive, in order. cat = industry category for brands; ptype = property type (Club & team, National team, League & competition, Event, Governing body, Athlete & talent, Venue, Other). Both are used by the Brands, Properties and Categories pages; tools/enrich.py fills them for new names where it can.",
+ "_help": "Brands and rights holders shown with logos on the site. Key = the slug used in profile.html?id=. name = how it's written in deal names (brand or property side of 'Brand × Property'). domain = official website, used to fetch the logo from Brandfetch (needs site.brandfetch in deals.json). logo = optional path to a logo file in assets/logos/ that overrides Brandfetch. aliases = other names the same organisation appears under. Anything not listed still gets a page and a monogram. leagues = the club strips on the archive, in order. cat = industry category for brands; ptype = property type (Club & team, National team, League & competition, Event, Governing body, Athlete & talent, Venue, Other). Both are used by the Brands, Properties and Categories pages; tools/enrich.py fills them for new names where it can. parent = the slug of the company that owns this brand (e.g. Carlton Draught -> carlton-and-united-breweries). Deals stay filed under the name the club uses; the league map rolls brands up to the parent when counting clubs.",
  "brandfetch": "1id3YP6BfnOFNiIAppf",
  "entities": {
   "13-nfl-teams": {
@@ -5082,7 +5082,8 @@
    "bf": [
     "icon",
     "logo"
-   ]
+   ],
+   "short": "CUB"
   },
   "carlton-draught": {
    "name": "Carlton Draught",
@@ -5091,7 +5092,8 @@
    "domain": "carltondraught.com.au",
    "bf": [
     "icon"
-   ]
+   ],
+   "parent": "carlton-and-united-breweries"
   },
   "carlyle": {
    "name": "Carlyle",
@@ -10192,7 +10194,8 @@
    "bf": [
     "icon",
     "logo"
-   ]
+   ],
+   "parent": "carlton-and-united-breweries"
   },
   "great-southern-bank": {
    "name": "Great Southern Bank",
@@ -10540,7 +10543,8 @@
     "icon"
    ],
    "cat": "Alcohol",
-   "k": "b"
+   "k": "b",
+   "parent": "lion"
   },
   "haier": {
    "name": "Haier",
@@ -16205,7 +16209,8 @@
    "bf": [
     "icon",
     "logo"
-   ]
+   ],
+   "parent": "carlton-and-united-breweries"
   },
   "mounties": {
    "name": "Mounties",
@@ -19016,7 +19021,8 @@
    "name": "Pirate Life",
    "domain": "piratelife.com.au",
    "cat": "Alcohol",
-   "k": "b"
+   "k": "b",
+   "parent": "carlton-and-united-breweries"
   },
   "pirelli": {
    "name": "Pirelli",
@@ -24930,7 +24936,8 @@
    "bf": [
     "icon",
     "logo"
-   ]
+   ],
+   "parent": "lion"
   },
   "top-rank": {
    "name": "Top Rank",
@@ -26115,7 +26122,8 @@
   "vb": {
    "name": "VB",
    "cat": "Alcohol",
-   "k": "b"
+   "k": "b",
+   "parent": "carlton-and-united-breweries"
   },
   "vbet": {
    "name": "VBET",
@@ -27723,7 +27731,8 @@
    "bf": [
     "icon",
     "logo"
-   ]
+   ],
+   "parent": "lion"
   },
   "y-series": {
    "name": "Y Series",

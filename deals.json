@@ -32395,15 +32395,16 @@
    "status": "Current partner"
   },
   {
-   "listed": "2026-10-30",
+   "date": "2024-03-18",
    "deal": "Carlton & United Breweries × Geelong Cats",
    "sport": "AFL",
    "type": "Premier partner",
    "region": "ANZ",
-   "summary": "Listed as a premier partner on the club's official partners page.",
-   "url": "https://www.geelongcats.com.au/partners",
-   "tier": "Principal & major",
-   "status": "Current partner"
+   "summary": "CUB renews with the Cats for five more years, pouring Carlton Draught, Great Northern, Peroni and Mountain Goat at GMHBA Stadium.",
+   "url": "https://www.geelongcats.com.au/news/1505771/cats-renew-partnership-with-carlton-united-breweries",
+   "term": 5,
+   "ends": 2029,
+   "endsEst": true
   },
   {
    "listed": "2026-10-30",

@@ -29,7 +29,7 @@ window.SSSLogos=(function(){
     if(!name)return null;
     const slug=LOOK[norm(name)]||slugify(name);
     const x=ENT[slug]||{name};
-    return {slug,name:x.name||name,domain:okDomain(String(x.domain||""))?x.domain:"",logo:okFile(String(x.logo||""))?x.logo:"",bf:Array.isArray(x.bf)?x.bf:null,aliases:x.aliases||[],cat:x.cat||"",ptype:x.ptype||""};
+    return {slug,name:x.name||name,domain:okDomain(String(x.domain||""))?x.domain:"",logo:okFile(String(x.logo||""))?x.logo:"",bf:Array.isArray(x.bf)?x.bf:null,aliases:x.aliases||[],cat:x.cat||"",ptype:x.ptype||"",parent:x.parent||"",short:x.short||""};
   }
   // One side of a deal can name several organisations: "Harvey Norman / Westpac / KFC".
   const many=name=>String(name||"").split(/\s+\/\s+/).map(s=>s.trim()).filter(Boolean).map(resolve);
