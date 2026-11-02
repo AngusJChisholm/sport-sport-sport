@@ -173,12 +173,15 @@ def feed_cover(c):
     else:  # no photo: property colour with the pairing set large up top
         bg = club_colours({"deal": c.get("deal", ""), "colours": c.get("colours")})[0] if c.get("deal") else "#161616"
         bg = "#161616" if bg == VOLT else bg
-        top = f'<div class="cv-ph" style="background:{bg}"></div>' + (f'<div class="cv-big">{pair}</div>' if deal else "")
+        if COVER_LIGHT:  # white house look: no black block, the pairing set large in black up top
+            top = '<style>.cover.cl.np .cv-fade{display:none}.cover.cl.np .cv-reg{color:#7A7A74;text-shadow:none}.cover.cl.np .cv-low{top:64px;justify-content:center}.cover.cl.np .cv-h{font-size:170px}.cover.cl.np .cv-meta{margin-top:30px;font-size:26px}</style><div class="cv-ph" style="background:#fff"></div>'
+        else:
+            top = f'<div class="cv-ph" style="background:{bg}"></div>' + (f'<div class="cv-big">{pair}</div>' if deal else "")
     meta = (f'<b>{pair}</b> &middot; ' if src and deal else "") + esc(c.get("descriptor", ""))
-    return f"""<style>{COVER_CSS}</style><div class="frame cover{' cl' if COVER_LIGHT else ''}" style="background:{'#fff' if COVER_LIGHT else '#000'}">{top}<div class="cv-fade"></div>
+    return f"""<style>{COVER_CSS}</style><div class="frame cover{' cl' if COVER_LIGHT else ''}{'' if src else ' np'}" style="background:{'#fff' if COVER_LIGHT else '#000'}">{top}<div class="cv-fade"></div>
 <div class="cv-reg">{esc(c.get('region',''))}</div>
 <div class="cv-low"><div class="cv-brand">Sport Sport Sport <span>/ {esc(c.get('tag') or 'Deal of the day')}</span></div>
-<h1 class="cv-h" data-fit="240" data-min="56">{highlight(c['headline'], c.get('highlight'))}</h1>
+<h1 class="cv-h" data-fit="{240 if src else 560}" data-min="56">{highlight(c['headline'], c.get('highlight'))}</h1>
 <div class="cv-meta">{meta}</div>
 <div class="cv-swipe">Swipe &raquo;</div></div>
 </div>"""
@@ -239,7 +242,7 @@ DARK_CSS += """
 .lt .d-num{color:#000}
 .wk.lt .cv-fade{background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 42%,rgba(255,255,255,.85) 56%,#fff 66%,#fff 100%)}
 .wk.lt .d-top{text-shadow:none}
-.wk.lt .d-top .d-brand{color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.wk.lt .d-top .d-brand{color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.7),0 0 18px rgba(0,0,0,.55)}
 .wk.lt.nophoto .d-top .d-brand{color:#000;text-shadow:none}
 """
 
