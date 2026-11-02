@@ -20,7 +20,7 @@
  "appointments": [
   {"agency": "twenty3", "client": "afl", "side": "property", "role": "Activation", "scope": "AFL and AFLW season launch events, 'Tower of Torp'", "source": "https://www.twenty3.com.au/"},
   {"agency": "twenty3", "client": "engie", "side": "brand", "role": "Activation", "scope": "NBL Finals activation and ENGIE Stadium naming rights", "source": "https://www.twenty3.com.au/"},
-  {"agency": "twenty3", "client": "tcl", "side": "brand", "role": "Activation", "scope": "F1 Australian Grand Prix activation", "source": "https://www.twenty3.com.au/", "deals": ["TCL × Australian Grand Prix"]},
+  {"agency": "twenty3", "client": "tcl", "side": "brand", "role": "Activation", "scope": "F1 Australian Grand Prix activation", "source": "https://www.twenty3.com.au/"},
   {"agency": "twenty3", "clientName": "Bondi Sands", "side": "brand", "role": "Activation", "scope": "Australian Open activation", "source": "https://www.twenty3.com.au/"},
   {"agency": "twenty3", "client": "tissot", "side": "brand", "role": "Activation", "scope": "NBA activation", "source": "https://www.twenty3.com.au/"},
   {"agency": "twenty3", "clientName": "Mars", "side": "brand", "role": "Activation", "scope": "BBL Melbourne Renegades", "source": "https://www.twenty3.com.au/"},
@@ -30,7 +30,7 @@
   {"agency": "twenty3", "client": "fiba", "side": "property", "role": "Activation", "scope": "Women's World Cup roadshow and trophy tour", "source": "https://www.twenty3.com.au/"},
   {"agency": "twenty3", "client": "toyota", "side": "brand", "role": "Activation", "scope": "AFL season launch", "source": "https://www.twenty3.com.au/"},
 
-  {"agency": "bastion", "client": "mycar-tyre-and-auto", "side": "brand", "role": "Strategy", "scope": "End-to-end on the Melbourne Stars BBL/WBBL deal, then activation", "from": "2026-08", "source": "https://lbbonline.com/news/bastion-experience-mycar-melbourne-stars-sponsorship", "deals": ["mycar Tyre & Auto × Melbourne Stars"]},
+  {"agency": "bastion", "client": "mycar-tyre-and-auto", "side": "brand", "role": "Strategy", "scope": "End-to-end on the Melbourne Stars BBL/WBBL deal, then activation", "from": "2026-08", "source": "https://lbbonline.com/news/bastion-experience-mycar-melbourne-stars-sponsorship"},
   {"agency": "bastion", "client": "bunnings", "side": "brand", "role": "Strategy", "scope": "Bunnings NZ sponsorship strategy and grassroots sport platform", "from": "2026-07", "source": "https://www.bandt.com.au/bunnings-nz-taps-bastion-aoteraroa-for-grassroots-sport-platform/"},
 
   {"agency": "rifle", "clientName": "Netball World Cup Sydney 2027", "client": "netball-world-cup", "side": "property", "role": "Sponsorship sales", "scope": "Exclusive sponsorship sales agency for NWC2027", "from": "2026-03", "until": "2027", "source": "https://www.bandt.com.au/netball-world-cup-2027-appoints-rifle-as-sponsorship-sales-agency/"},
