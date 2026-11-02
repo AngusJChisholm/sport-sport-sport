@@ -6,6 +6,7 @@ const PAGE=24;
 $("yr").textContent=new Date().getFullYear();
 const fmt=d=>new Date(d+"T00:00:00").toLocaleDateString("en-AU",{day:"numeric",month:"short",year:"numeric"});
 const okImg=s=>/^(https:\/\/|assets\/)/.test(String(s||""));
+const loc=s=>{const m=String(s||"").match(/^https:\/\/images\.unsplash\.com\/(photo-[\w-]+)/);return m?"assets/img/u/"+m[1]+".jpg":""};
 const imgSrc=s=>/^https:\/\/images\.unsplash\.com\//.test(s)&&!/[?&]w=/.test(s)?s+(s.includes("?")?"&":"?")+"w=1200&q=70&auto=format&fit=crop":s;
 
 let all=[],f="All",shown=PAGE;
@@ -23,7 +24,7 @@ Promise.all([
   draw();
 }).catch(()=>{$("grid").innerHTML=`<p class="note">Couldn't load the stories. Refresh to try again.</p>`});
 
-const img=(x,big)=>`<div class="im${okImg(x.image)?"":" noimg"}">${okImg(x.image)?`<img src="${esc(imgSrc(x.image))}" alt="" loading="${big?"eager":"lazy"}" decoding="async" onerror="this.parentElement.classList.add('noimg')">`:""}</div>`;
+const img=(x,big)=>`<div class="im${okImg(x.image)?"":" noimg"}">${okImg(x.image)?`<img src="${esc(loc(x.image)||imgSrc(x.image))}" data-alt="${esc(imgSrc(x.image))}" alt="" loading="${big?"eager":"lazy"}" decoding="async" onerror="if(this.dataset.alt&&this.src.indexOf(this.dataset.alt)<0){this.src=this.dataset.alt}else{this.parentElement.classList.add('noimg')}">`:""}</div>`;
 const meta=x=>`<div class="meta"><span class="tag${x.kind==="feature"?" r":""}">${x.kind==="feature"?"Feature":"Deal story"}</span><span>${esc(x.label||"")}</span><span>${esc(fmt(x.date))}</span></div>`;
 const href=x=>`articles/${encodeURIComponent(x.slug)}.html`;
 
