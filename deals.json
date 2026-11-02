@@ -44720,7 +44720,9 @@
    "type": "Major partner",
    "region": "ANZ",
    "summary": "Listed as a major partner on Collingwood's official partners page.",
-   "url": "https://www.collingwoodfc.com.au/partners"
+   "url": "https://www.collingwoodfc.com.au/partners",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-02",
@@ -44729,7 +44731,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Collingwood's official partners page.",
-   "url": "https://www.collingwoodfc.com.au/partners"
+   "url": "https://www.collingwoodfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-02",
@@ -44738,7 +44742,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Collingwood's official partners page.",
-   "url": "https://www.collingwoodfc.com.au/partners"
+   "url": "https://www.collingwoodfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-02",
@@ -44747,7 +44753,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Collingwood's official partners page.",
-   "url": "https://www.collingwoodfc.com.au/partners"
+   "url": "https://www.collingwoodfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-02",
@@ -44756,7 +44764,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Collingwood's official partners page.",
-   "url": "https://www.collingwoodfc.com.au/partners"
+   "url": "https://www.collingwoodfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   }
  ]
 }

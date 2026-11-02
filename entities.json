@@ -6418,6 +6418,10 @@
     "logo"
    ]
   },
+  "cool-ridge": {
+   "name": "Cool Ridge",
+   "k": "b"
+  },
   "cooley": {
    "name": "Cooley",
    "cat": "Professional services",
@@ -14445,6 +14449,10 @@
     "logo"
    ]
   },
+  "love-the-game": {
+   "name": "Love The Game",
+   "k": "b"
+  },
   "lowe-s": {
    "name": "Lowe's",
    "cat": "Retail",
@@ -15232,6 +15240,11 @@
     "icon",
     "logo"
    ]
+  },
+  "melbourne-airport-parking": {
+   "name": "Melbourne Airport Parking",
+   "k": "b",
+   "cat": "Airlines & travel"
   },
   "melbourne-city-fc": {
    "name": "Melbourne City FC",
@@ -18668,6 +18681,11 @@
     "icon",
     "logo"
    ]
+  },
+  "pepsi-max": {
+   "name": "Pepsi Max",
+   "k": "b",
+   "cat": "Non-alcoholic drinks"
   },
   "pepsico": {
    "name": "PepsiCo",
@@ -28100,22 +28118,6 @@
     "icon",
     "logo"
    ]
-  },
-  "love-the-game": {
-   "name": "Love The Game",
-   "k": "b"
-  },
-  "melbourne-airport-parking": {
-   "name": "Melbourne Airport Parking",
-   "k": "b"
-  },
-  "pepsi-max": {
-   "name": "Pepsi Max",
-   "k": "b"
-  },
-  "cool-ridge": {
-   "name": "Cool Ridge",
-   "k": "b"
   }
  },
  "leagues": [
