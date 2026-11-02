@@ -1,10 +1,10 @@
 {
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "username": "sportsportsport.hq",
- "followers": 8,
- "followers_change_7d": 0,
- "since": "2026-10-26",
- "posts_last_7d": 6,
+ "followers": 9,
+ "followers_change_7d": 1,
+ "since": "2026-10-27",
+ "posts_last_7d": 7,
  "best_post_7d": {
   "when": "Sun 01 Nov 10:47",
   "hour": 10,
@@ -43,6 +43,18 @@
  ],
  "insights_available": false,
  "recent_posts": [
+  {
+   "when": "Mon 02 Nov 23:06",
+   "hour": 23,
+   "weekday": "Mon",
+   "type": "FEED",
+   "likes": 0,
+   "comments": 0,
+   "caption": "Maccas joins the Warriors.",
+   "link": "https://www.instagram.com/p/DfPRMPYlJQp/",
+   "recent": true,
+   "score": 0
+  },
   {
    "when": "Sun 01 Nov 10:47",
    "hour": 10,
