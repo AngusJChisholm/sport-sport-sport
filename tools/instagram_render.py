@@ -173,102 +173,102 @@ def feed_cover(c):
 
 
 def edge_bar(colour):
-    """Club-colour edge. Pale colours (volt, yellows, white) get a black keyline so they hold up on white."""
-    if not colour:
-        return ""
-    pale = " pale" if HEX.match(str(colour)) and luminance(colour) > 0.6 else ""
-    return f'<div class="edge{pale}" style="background:{colour}"></div>'
+    """Retired: inner slides now follow the cover design (black, centred), no club-colour edge."""
+    return ""
+
+
+# ---------- inner slides: same look as the cover ----------
+# Black background, centred condensed type, volt accents, white pill, white wordmark.
+DARK_CSS = """
+.frame.dk{background:#000;color:#fff;padding:64px!important;display:flex;flex-direction:column;align-items:center;text-align:center}
+.dk .d-top{width:100%;display:flex;justify-content:center;position:relative}
+.dk .d-brand{font-weight:800;font-size:28px;letter-spacing:.14em;text-transform:uppercase;font-stretch:90%}
+.dk .d-brand span{color:#D2FF3C}
+.dk .d-n{position:absolute;right:0;top:0;font-weight:800;font-size:22px;letter-spacing:.18em;color:#8A8A8A}
+.dk .d-mid{flex:1;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:34px}
+.dk .d-h{width:100%;margin:0;font-weight:800;font-size:112px;font-stretch:68%;text-transform:uppercase;line-height:.9;letter-spacing:-.005em}
+.dk .d-rule{width:120px;height:4px;background:#D2FF3C}
+.dk .d-rows{width:100%;display:flex;flex-direction:column;font-size:20px}
+.dk .d-row{padding:1.25em 0;border-top:1px solid #2A2A2A}
+.dk .d-row:last-child{border-bottom:1px solid #2A2A2A}
+.dk .d-row .n{display:block;font-weight:800;font-size:1.3em;letter-spacing:.18em;text-transform:uppercase;color:#D2FF3C;margin-bottom:.35em}
+.dk .d-row b{display:block;font-weight:800;font-size:3.2em;font-stretch:72%;text-transform:uppercase;line-height:.95}
+.dk .d-row span.x{display:block;font-size:1.5em;color:#BDBDBD;margin-top:.4em;line-height:1.3;letter-spacing:.02em}
+.dk .d-foot{width:100%;display:flex;flex-direction:column;align-items:center;gap:18px}
+.dk .d-foot .wm{width:110px}
+.dk .d-meta{font-weight:600;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:#8A8A8A}
+.dk .d-pill{background:#fff;color:#000;font-weight:800;font-size:26px;letter-spacing:.12em;text-transform:uppercase;padding:12px 18px 10px;line-height:1}
+.dk .d-big{font-weight:800;font-size:200px;font-stretch:68%;text-transform:uppercase;line-height:.88;margin:0}
+.dk .d-sup{font-weight:600;font-size:26px;letter-spacing:.14em;text-transform:uppercase;color:#BDBDBD}
+.frame.dk.wk{padding:0!important;display:block}
+.wk>.cv-ph,.wk>.cv-fade{position:absolute!important}
+.wk .d-top{position:absolute!important;left:64px;right:64px;top:64px;z-index:2;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.wk .d-low{position:absolute!important;left:64px;right:64px;bottom:64px;z-index:2;display:flex;flex-direction:column;align-items:center;gap:20px}
+.wk .d-num{font-weight:800;font-size:150px;font-stretch:68%;line-height:.85;color:#D2FF3C}
+.wk.nophoto .d-low{top:200px;justify-content:center}
+"""
+
+
+def dk_top(label, n, total):
+    return f'<div class="d-top"><div class="d-brand">Sport Sport Sport <span>/ {esc(label)}</span></div></div>'
+
+
+def dk_foot(text, n=None, total=None):
+    count = f"{n} / {total}" + (" &middot; " if text else "") if n else ""
+    return f'<div class="d-foot">{wordmark("white")}<div class="d-meta">{count}{esc(text)}</div></div>'
 
 
 def rows_slide(label, title, rows, n, total, footer_right="", edge=None):
-    """Inner slide: club-colour edge, title, big numbered rows. (Only slide 1 carries the photo.)"""
+    """Inner slide in the cover style: centred title, volt rule, numbered rows."""
     rows_html = "".join(
-        f'<div class="nrow"><div class="n">{i:02d}</div><div><b>{esc(r.get("main"))}</b>'
-        + (f'<span>{esc(r.get("sub"))}</span>' if r.get("sub") else "") + "</div></div>"
+        f'<div class="d-row"><span class="n">{i:02d}</span><b>{esc(r.get("main"))}</b>'
+        + (f'<span class="x">{esc(r.get("sub"))}</span>' if r.get("sub") else "") + "</div>"
         for i, r in enumerate(rows, 1))
-    title_html = f'<h2 class="disp title-xl" data-fit="270">{esc(title)}</h2>' if title else ""
-    pad = "padding-top:56px"
-    fit = 620
-    if not title:
-        fit += 260
-    return f"""<div class="frame light">{edge_bar(edge)}
-<div class="top"><div class="lbl">{esc(label)}</div>{counter(n, total)}</div>
-<div class="mid" style="{pad};flex:1;justify-content:flex-start">
-{title_html}
-<div class="nrows" data-fit="{fit}" data-min="9">{rows_html}</div>
-</div>
-<div class="foot">{wordmark('black')}<div class="lbl mute" style="letter-spacing:.14em">{esc(footer_right)}</div></div>
-</div>"""
+    title_html = f'<h2 class="d-h" data-fit="300" data-min="56">{esc(title)}</h2><div class="d-rule"></div>' if title else ""
+    return f"""<style>{DARK_CSS}</style><div class="frame dk">{dk_top(label, n, total)}
+<div class="d-mid">{title_html}<div class="d-rows" data-fit="{640 if title else 900}" data-min="9">{rows_html}</div></div>
+{dk_foot(footer_right, n, total)}</div>"""
 
 
 def others_slide(others, n, total, edge=None):
-    """Round-up slide: each deal with its sport, a short line and its own photo when it has one."""
+    """Round-up slide in the cover style: sport in volt, pairing, deal type."""
     rows = []
     for o in others[:5]:
         sub = str(o.get("sub") or "")
         sport, _, rest = sub.partition(" - ")
         if not rest:
             sport, rest = "", sub
-        th = ""
-        rows.append(f'<div class="orow"><div>' + (f'<span class="s">{esc(sport)}</span>' if sport else "")
-                    + f'<b>{esc(o["deal"])}</b>' + (f'<span class="x">{esc(rest)}</span>' if rest else "")
-                    + f"</div>{th}</div>")
-    return f"""<div class="frame light">{edge_bar(edge)}
-<div class="top"><div class="lbl">Today's other deals</div>{counter(n, total)}</div>
-<div class="mid" style="padding-top:36px;flex:1">
-<div class="nrows" data-fit="1000" data-min="8" style="font-size:19px">{"".join(rows)}</div>
-</div>
-<div class="foot">{wordmark('black')}<div class="lbl mute" style="letter-spacing:.14em">{esc(SITE_LABEL)}</div></div>
-</div>"""
+        rows.append('<div class="d-row">' + (f'<span class="n">{esc(sport)}</span>' if sport else "")
+                    + f'<b>{esc(o["deal"])}</b>' + (f'<span class="x">{esc(rest)}</span>' if rest else "") + "</div>")
+    return f"""<style>{DARK_CSS}</style><div class="frame dk">{dk_top("Today's other deals", n, total)}
+<div class="d-mid"><div class="d-rows" data-fit="960" data-min="8" style="font-size:21px">{"".join(rows)}</div></div>
+{dk_foot(SITE_LABEL, n, total)}</div>"""
 
 
 def lead_edge(cover):
-    """Club colour for the edge bar: the property's primary, or its secondary if the primary is near black."""
-    cols = club_colours({"deal": cover.get("deal", ""), "colours": cover.get("colours")})
-    for c in cols:
-        if HEX.match(str(c)) and luminance(c) > 0.03:
-            return c
-    return VOLT
+    return None
 
 
 def feed_rows_slide(label, title, rows, n, total, footer_right=""):
-    rows_html = "".join(
-        f'<div class="row"><b>{esc(r.get("main"))}</b>' + (f'<span>{esc(r.get("sub"))}</span>' if r.get("sub") else "") + "</div>"
-        for r in rows)
-    title_html = f'<h2 class="disp" data-fit="330" style="font-size:120px">{esc(title)}</h2>' if title else ""
-    return f"""<div class="frame light">
-<div style="display:flex;flex-direction:column;gap:48px">
-<div class="top"><div class="lbl">{esc(label)}</div>{counter(n, total)}</div>
-{title_html}
-<div class="rows" data-fit="{760 if title else 1000}" data-min="9">{rows_html}</div>
-</div>
-<div class="foot">{wordmark('black')}<div class="lbl mute" style="letter-spacing:.14em">{esc(footer_right)}</div></div>
-</div>"""
+    return rows_slide(label, title, rows, n, total, footer_right)
 
 
 def feed_close(n, total):
-    return f"""<div class="frame light">
-<div class="top"><div class="lbl">Sport Sport Sport</div>{counter(n, total)}</div>
-<div style="display:flex;flex-direction:column;gap:40px">
-<h2 class="disp" style="font-size:168px">All things <span class="v">sport</span> business.</h2>
-<div class="sup">Global &amp; ANZ deals, every weekday</div>
-</div>
-<div class="foot">{wordmark('black')}<div style="background:{VOLT};color:#000;font-weight:800;font-size:26px;letter-spacing:.14em;text-transform:uppercase;padding:20px 28px">Follow for daily deals</div></div>
-</div>"""
+    return f"""<style>{DARK_CSS}</style><div class="frame dk">{dk_top("Follow", n, total)}
+<div class="d-mid"><h2 class="d-big">All things <span class="v">sport</span> business.</h2>
+<div class="d-sup">Global &amp; ANZ deals, every weekday</div><div class="d-pill">Follow for daily deals</div></div>
+{dk_foot(SITE_LABEL, n, total)}</div>"""
 
 
 def week_item(item, idx, n, total, label="The week in deals"):
-    ph = photo_layer(deal_image(item), FEED_W, SHADE_FEED)
-    sub_col = "#E6E6E6" if ph else "#33332F"
-    return f"""<div class="frame{' photo' if ph else ' light'}">{ph}
-<div class="top"><div class="lbl">{esc(label)}</div>{counter(n, total)}</div>
-<div style="display:flex;flex-direction:column;gap:36px">
-<div class="disp v" style="font-size:220px">{idx:02d}</div>
-<h2 class="disp" data-fit="420" style="font-size:132px">{esc(item['deal'])}</h2>
-<div style="font-size:32px;line-height:1.4;color:{sub_col}">{esc(item.get('sub',''))}</div>
-</div>
-<div class="foot">{wordmark('white' if ph else 'black')}<div class="lbl mute">{esc(item.get('sport',''))}</div></div>
-</div>"""
+    """Week and evergreen slides: the cover layout, with the deal's photo when it has one."""
+    src = photo_src(deal_image(item), FEED_W)
+    top = (f'<div class="cv-ph" style="background-image:url(\'{src}\')"></div><div class="cv-fade"></div>') if src else ""
+    return f"""<style>{COVER_CSS}{DARK_CSS}</style><div class="frame dk wk{'' if src else ' nophoto'}">{top}{dk_top(label, n, total)}
+<div class="d-low"><div class="d-num">{idx:02d}</div>
+<h2 class="d-h" data-fit="300" data-min="56" style="font-size:118px">{esc(item['deal'])}</h2>
+<div class="d-sup" style="text-transform:none;letter-spacing:.02em;font-size:30px;line-height:1.35">{esc(item.get('sub',''))}</div>
+<div class="d-meta">{n} / {total}{' &middot; ' + esc(item['sport']) if item.get('sport') else ''}</div></div></div>"""
 
 
 # ---------- photos ----------
