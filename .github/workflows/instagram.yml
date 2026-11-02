@@ -12,7 +12,7 @@ on:
         description: "plan = normal run, render = force re-render today's images, dedupe-check = list repeat posts, dedupe-delete = delete repeat posts (keeps the first of each)"
         default: plan
         type: choice
-        options: [plan, render, dedupe-check, dedupe-delete]
+        options: [plan, render, dedupe-check, dedupe-delete, delete-today]
 
 permissions:
   contents: write
@@ -38,9 +38,17 @@ jobs:
           IG_LOGIN: ${{ vars.IG_LOGIN }}
         run: python3 tools/instagram_post.py dedupe ${{ inputs.action == 'dedupe-delete' && 'delete' || 'check' }}
 
+      - name: Delete today's post
+        if: inputs.action == 'delete-today'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_LOGIN: ${{ vars.IG_LOGIN }}
+        run: python3 tools/instagram_post.py delete-today
+
       - name: What's due
         id: plan
-        if: ${{ !startsWith(inputs.action, 'dedupe') }}
+        if: ${{ !startsWith(inputs.action, 'dedupe') && inputs.action != 'delete-today' }}
         run: python3 tools/instagram_post.py plan
 
       - name: Install renderer

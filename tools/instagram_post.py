@@ -96,7 +96,8 @@ def commit_push(message, *files):
         "commit", "-m", message + " [skip netlify]")
     for attempt in range(4):
         try:
-            git("pull", "--rebase", "origin", "main")
+            git("-c", "user.name=SSS Instagram bot", "-c", "user.email=actions@users.noreply.github.com",
+                "pull", "--rebase", "origin", "main")
             git("push", "origin", "HEAD:main")
             return
         except subprocess.CalledProcessError as e:
@@ -364,6 +365,33 @@ def dedupe(delete=False, hours=48):
     commit_push(f"Instagram repeat-post {report['mode']}", out)
 
 
+def delete_today():
+    """Delete today's live carousel (matched by its hook line) and hold the queue file so it isn't reposted."""
+    uid = os.environ["IG_USER_ID"]
+    date = now().date().isoformat()
+    qf = ROOT / "instagram" / "queue" / f"{date}.json"
+    q = load(qf, {})
+    key = caption_key(q.get("caption"))
+    report = {"at": now().isoformat(timespec="minutes"), "date": date, "hook": key[:90], "deleted": [], "failed": []}
+    if key:
+        for md in recent_media(uid):
+            if caption_key(md.get("caption")) == key:
+                try:
+                    api("DELETE", md["id"])
+                    report["deleted"].append(md.get("permalink") or md["id"])
+                except Exception as e:
+                    report["failed"].append(f"{md['id']}: {str(e)[:300]}")
+    print(json.dumps(report, indent=1))
+    if q:
+        q["hold"] = True
+        save(qf, q)
+    out = ROOT / "instagram" / "state" / "delete.json"
+    save(out, report)
+    commit_push(f"Instagram delete {date}", out, qf)
+    if report["failed"] or not report["deleted"]:
+        raise SystemExit("Nothing deleted" if not report["failed"] else "Delete failed")
+
+
 def post_carousel(uid, base, names, caption, tags=None, collaborators=None):
     tags = tags or []
 
@@ -607,6 +635,8 @@ if __name__ == "__main__":
             raise
     elif cmd == "dedupe":
         dedupe(delete=len(sys.argv) > 2 and sys.argv[2] == "delete")
+    elif cmd == "delete-today":
+        delete_today()
     elif cmd == "check":
         check()
     elif cmd == "stats":
