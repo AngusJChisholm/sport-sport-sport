@@ -286,6 +286,22 @@ document.addEventListener("DOMContentLoaded",()=>{
 .stmt p{text-wrap:balance;margin:clamp(12px,1.6vw,20px) 0 0;font-weight:800;font-size:clamp(12px,1.1vw,15px);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
 .stmt .chip{display:inline-block;margin-top:18px;background:#000;color:#fff;font-weight:800;font-size:clamp(12px,1.1vw,15px);letter-spacing:.14em;text-transform:uppercase;padding:11px 16px 9px}
 .stmt .chip:hover{background:var(--volt);color:#000}
+/* Numbers strip (home) */
+.sts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink)}
+.st{display:flex;flex-direction:column;gap:10px;padding:22px 20px 20px 0;border-bottom:1px solid var(--line)}
+.st+.st{padding-left:20px;border-left:1px solid var(--line)}
+.st b{font-family:"ArchivoV",var(--font);font-stretch:68%;font-weight:800;text-transform:uppercase;font-size:clamp(40px,4.6vw,72px);line-height:.9;letter-spacing:-.005em}
+.st span{font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+a.st:hover b{box-shadow:inset 0 -.12em 0 var(--volt)}
+@media (max-width:900px){.sts{grid-template-columns:repeat(2,minmax(0,1fr))}.st:nth-child(3){padding-left:0;border-left:0}}
+/* Deals page top */
+.ptop{padding-block:clamp(32px,5vw,72px) clamp(28px,3.5vw,48px);border-bottom:2px solid var(--ink)}
+.ptop h1{font-size:clamp(64px,11vw,176px)}
+.ptop p{font-size:clamp(17px,1.5vw,21px);line-height:1.45;color:var(--ink-2);max-width:640px;margin:20px 0 0}
+.srch{flex:1 1 260px;max-width:420px}
+.srch input{width:100%;font:inherit;font-size:15px;border:1px solid var(--line);border-radius:0;padding:11px 14px;background:var(--white);color:var(--ink)}
+.srch input:focus{outline:2px solid var(--volt);outline-offset:2px;border-color:var(--ink)}
+.arch-sec{padding-top:clamp(28px,3.5vw,48px)}
 /* Compact key stories header */
 .hero{padding-block:clamp(18px,2.2vw,28px) clamp(32px,4vw,56px)}
 .hero-top{padding-bottom:12px}
@@ -295,7 +311,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 <body>
 <header class="dk"><div class="wrap hd">
 <a href="#latest" class="logo" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="56" height="42"></a>
-<nav class="nav" id="nav"><a href="news.html">News</a><a href="#archive">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="insights.html">Insights</a></nav>
+<nav class="nav" id="nav"><a href="news.html">News</a><a href="deals.html">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="insights.html">Insights</a></nav>
 <a href="#follow" class="btn">Follow</a>
 <button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
 </div></header>
@@ -314,14 +330,19 @@ document.addEventListener("DOMContentLoaded",()=>{
 <div class="grid" id="roundup"></div>
 </div></section>
 
+<section class="sec" id="statsSec" hidden style="padding-top:0"><div class="wrap">
+<div class="sh"><div><span class="lbl mute-l">The archive</span><h2 class="disp">By the numbers.</h2></div><a class="more" href="deals.html">Browse every deal →</a></div>
+<div class="sts" id="stats"></div>
+</div></section>
+
 <section class="sec" id="features" hidden><div class="wrap">
 <div class="sh"><div><span class="lbl mute-l">Features</span><h2 class="disp">The long reads.</h2></div><span class="lbl mute-l" id="fCount"></span></div>
 <div class="grid" id="fList"></div>
 </div></section>
 
 <section class="sec split"><div class="wrap cols">
-<div id="global"><div class="col-h"><h2 class="disp">Global</h2><a href="#archive" class="lbl" data-reg="Global">All →</a></div><div id="gList"></div></div>
-<div id="anz"><div class="col-h"><h2 class="disp">ANZ</h2><a href="#archive" class="lbl" data-reg="ANZ">All →</a></div><div id="aList"></div></div>
+<div id="global"><div class="col-h"><h2 class="disp">Global</h2><a href="deals.html?reg=Global" class="lbl">All →</a></div><div id="gList"></div></div>
+<div id="anz"><div class="col-h"><h2 class="disp">ANZ</h2><a href="deals.html?reg=ANZ" class="lbl">All →</a></div><div id="aList"></div></div>
 </div></section>
 
 <section class="dk fo" id="follow"><div class="wrap">
@@ -336,33 +357,17 @@ document.addEventListener("DOMContentLoaded",()=>{
 <div class="act-g"><div><span class="lbl mute-l">Brands</span><div class="act-r" id="actB"></div></div><div><span class="lbl mute-l">Properties</span><div class="act-r" id="actP"></div></div></div>
 </div></section>
 
-<section class="sec" id="archive"><div class="wrap">
-<div class="sh"><div><span class="lbl mute-l">Deal archive</span><h2 class="disp">Every deal. Filed.</h2></div></div>
-<div class="fil">
-<div class="cs" id="cs" hidden>
-<div class="cs-h"><span class="lbl">Filter by club or brand</span><div class="cs-t" id="csTabs" role="group" aria-label="League"></div></div>
-<div class="cs-r" id="csRow" role="group" aria-label="Clubs"></div>
-<div class="cs-on" id="csOn" hidden></div>
-</div>
-<div class="pills" id="pills" role="group" aria-label="Filter by sport"></div>
-<div class="sels">
-<label class="sel"><select id="fType" aria-label="Deal type"><option value="">All deal types</option></select></label>
-<label class="sel"><select id="fReg" aria-label="Region"><option value="">All regions</option><option>Global</option><option>ANZ</option></select></label>
-<label class="sel"><select id="fDate" aria-label="Date"><option value="">Any date</option><option value="7">Last 7 days</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option></select></label>
-<span class="count" id="count" aria-live="polite"></span>
-</div></div>
-<div class="al"><div class="ar-h"><span>Date</span><span>Deal</span><span>Sport</span><span class="c-t">Deal type</span><span>Region</span></div><div id="list"></div><p class="empty" id="empty" hidden>No deals match those filters.</p></div>
-<div class="ar-more"><button class="btn btn-ink" id="moreBtn" type="button">Load more deals</button></div>
-</div></section>
+
 </main>
 
 <footer class="dk" id="about"><div class="wrap">
 <div class="ft"><div><a href="#latest" class="logo logo-ft" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="120" height="90"></a>
 <p class="mute" style="margin:28px 0 0;font-size:16px;max-width:420px;line-height:1.5">All things sport business. Global &amp; ANZ. A daily round-up of the sponsorship, partnership and commercial deals moving sport.</p></div>
-<nav class="ft-l" aria-label="Footer"><span id="ftLi" style="display:contents"></span><a href="news.html">News</a><a href="#archive">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="insights.html">Insights</a><a href="renewals.html">Renewal watch</a></nav></div>
+<nav class="ft-l" aria-label="Footer"><span id="ftLi" style="display:contents"></span><a href="news.html">News</a><a href="deals.html">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="insights.html">Insights</a><a href="renewals.html">Renewal watch</a></nav></div>
 <div class="ft-b"><span>That's the day. Same time tomorrow.</span><span>© <span id="yr">2026</span> Sport Sport Sport</span></div>
 </div></footer>
 
+<script>if(location.hash==="#archive"&&!document.getElementById("list"))location.replace("deals.html"+location.search);</script>
 <script src="assets/logos.js?v=7"></script>
 <script>
 (function(){
@@ -370,7 +375,8 @@ const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const PAGE=15;
 let DEALS=[],ORIG=[],SITE={},FEATS=[],shown=PAGE;
-const st={sport:"All",type:"",reg:"",days:"",ent:""};
+const ARCH=!!$("list");
+const st={sport:"All",type:"",reg:"",days:"",ent:"",q:""};
 const L=window.SSSLogos;let csTab="";
 const sortKey=d=>d.date||((d.month||"0000-00")+"-00");
 // "date" = when the deal was announced; "added" = when it was posted here (the edition date).
@@ -439,7 +445,7 @@ function roundup(lead){
   $("rCount").textContent=`${same.length} deal${same.length===1?"":"s"} · ${fmtDots(asPosted(lead))}`;
   const card=d=>{const tag=href(d)?"a":"div";
     return `<${tag} class="card"${attrs(d)}>${d._b?`<div class="cl">${L.pair(d,{px:44})}</div>`:""}<div class="tags"><span class="tag">${esc(d.sport)}</span><span class="tag r">${esc(d.region)}</span></div><h3>${esc(d.deal)}</h3><p>${esc(d.summary||d.type||"")}</p>${href(d)?`<span class="more">${d.article?"Read the story →":"Read →"}</span>`:""}</${tag}>`};
-  $("roundup").innerHTML=same.map(card).join("")+`<a href="#archive" class="card all" style="--span:${3-(same.length%3)}"><span class="lbl">The archive</span><h3>Every deal. Since day one.</h3><span class="more">Browse the archive →</span></a>`;
+  $("roundup").innerHTML=same.map(card).join("")+`<a href="deals.html" class="card all" style="--span:${3-(same.length%3)}"><span class="lbl">The archive</span><h3>Every deal. Since day one.</h3><span class="more">Browse the archive →</span></a>`;
 }
 function features(){
   if(!FEATS.length)return;
@@ -464,17 +470,17 @@ function newsletter(){
 function follow(){
   const li=SITE.linkedin, ig=SITE.instagram;
   const fb=(li?`<a class="btn" href="${esc(li)}" target="_blank" rel="noopener">Follow on LinkedIn</a>`:"")+(ig?`<a class="btn btn-o" href="${esc(ig)}" target="_blank" rel="noopener">Follow on Instagram</a>`:"");
-  $("foA").innerHTML=fb?`${fb}<p>The latest deals, news and analysis from global and ANZ sport business.</p>`:`<p>Socials coming soon.</p>`;
+  if($("foA"))$("foA").innerHTML=fb?`${fb}<p>The latest deals, news and analysis from global and ANZ sport business.</p>`:`<p>Socials coming soon.</p>`;
   $("ftLi").innerHTML=(li?`<a href="${esc(li)}" target="_blank" rel="noopener">LinkedIn</a>`:"")+(ig?`<a href="${esc(ig)}" target="_blank" rel="noopener">Instagram</a>`:"");
 }
 function filters(){
   const sports=["All",...[...new Set(DEALS.map(d=>d.sport))].sort()];
-  $("pills").innerHTML=sports.map(s=>`<button type="button" class="pill${s==="All"?" on":""}" data-s="${esc(s)}" aria-pressed="${s==="All"}">${esc(s)}</button>`).join("");
+  $("pills").innerHTML=sports.map(s=>`<button type="button" class="pill${s===st.sport?" on":""}" data-s="${esc(s)}" aria-pressed="${s===st.sport}">${esc(s)}</button>`).join("");
   [...new Set(DEALS.map(d=>d.type).filter(Boolean))].sort().forEach(t=>$("fType").insertAdjacentHTML("beforeend",`<option>${esc(t)}</option>`));
 }
 function render(){
   const latest=DEALS.find(d=>d.date);const now=latest?dObj(latest):new Date();
-  const r=DEALS.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(!st.type||d.type===st.type)&&(!st.reg||d.region===st.reg)&&(!st.days||(d.date&&(now-dObj(d))/864e5<=+st.days))&&(!st.ent||L.has(d,st.ent)));
+  const r=DEALS.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(!st.type||d.type===st.type)&&(!st.reg||d.region===st.reg)&&(!st.days||(d.date&&(now-dObj(d))/864e5<=+st.days))&&(!st.ent||L.has(d,st.ent))&&(!st.q||(d.deal+" "+(d.summary||"")+" "+(d.sport||"")).toLowerCase().includes(st.q)));
   $("list").innerHTML=r.slice(0,shown).map(d=>{
     const name=href(d)?`<a${attrs(d)}><b>${esc(d.deal)}</b></a>`:`<b>${esc(d.deal)}</b>`;
     const pair=d._b?L.pair(d,{px:40}):"";
@@ -482,6 +488,17 @@ function render(){
   $("empty").hidden=r.length>0;
   $("count").textContent=`${r.length} of ${DEALS.length} deals`;
   $("moreBtn").parentElement.hidden=r.length<=shown;
+}
+// The week in numbers: a quick read on the archive, linking through to Deals.
+function stats(){
+  const dated=DEALS.filter(d=>d.date);const latest=dated[0];if(!latest)return;const now=dObj(latest);
+  const inDays=n=>dated.filter(d=>(now-dObj(d))/864e5<n);
+  const wk=inDays(7),mo=inDays(30);
+  const top=Object.entries(mo.reduce((a,d)=>(a[d.sport]=(a[d.sport]||0)+1,a),{})).sort((a,b)=>b[1]-a[1])[0];
+  const brands=new Set();DEALS.forEach(d=>(d._bs||[]).forEach(e=>e&&brands.add(e.slug)));
+  const cells=[[DEALS.length.toLocaleString("en-AU"),"Deals in the archive"],[wk.length,"Deals announced in the last 7 days"],[top?top[0]:"-","Busiest sport, last 30 days"],[brands.size?brands.size.toLocaleString("en-AU"):"-","Brands tracked"]];
+  $("stats").innerHTML=cells.map(([n,l])=>`<a class="st" href="deals.html"><b>${esc(n)}</b><span>${esc(l)}</span></a>`).join("");
+  $("statsSec").hidden=false;
 }
 // Most active this year: top brands and properties by deals filed, linking to their pages.
 function active(){
@@ -517,12 +534,14 @@ function strip(){
   draw();$("cs").hidden=false;
 }
 function wire(){
-  $("pills").onclick=e=>{const b=e.target.closest(".pill");if(!b)return;st.sport=b.dataset.s;shown=PAGE;document.querySelectorAll(".pill").forEach(p=>{p.classList.toggle("on",p===b);p.setAttribute("aria-pressed",p===b)});render()};
+  if(ARCH){
+  $("pills").onclick=e=>{const b=e.target.closest(".pill");if(!b)return;st.sport=b.dataset.s;shown=PAGE;$("pills").querySelectorAll(".pill").forEach(p=>{p.classList.toggle("on",p===b);p.setAttribute("aria-pressed",p===b)});render()};
   $("fType").onchange=e=>{st.type=e.target.value;shown=PAGE;render()};
   $("fReg").onchange=e=>{st.reg=e.target.value;shown=PAGE;render()};
   $("fDate").onchange=e=>{st.days=e.target.value;shown=PAGE;render()};
   $("moreBtn").onclick=()=>{shown+=PAGE;render()};
-  document.querySelectorAll("[data-reg]").forEach(a=>a.addEventListener("click",()=>{st.reg=a.dataset.reg;$("fReg").value=a.dataset.reg;shown=PAGE;render()}));
+  if($("fQ"))$("fQ").oninput=e=>{st.q=e.target.value.trim().toLowerCase();shown=PAGE;render()};
+  }
   $("menu").onclick=()=>{const o=$("nav").classList.toggle("open");$("menu").setAttribute("aria-expanded",o);$("menu").textContent=o?"Close":"Menu"};
   $("nav").onclick=e=>{if(e.target.tagName==="A"){$("nav").classList.remove("open");$("menu").setAttribute("aria-expanded","false");$("menu").textContent="Menu"}};
   $("yr").textContent=new Date().getFullYear();
@@ -540,8 +559,10 @@ fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.statu
   DEALS=ORIG.slice().sort((a,b)=>sortKey(b).localeCompare(sortKey(a))||(b.lead?1:0)-(a.lead?1:0));
   if(L)DEALS.forEach(d=>L.tag(d));
   const q=new URLSearchParams(location.search).get("club");if(q&&L&&L.byId(q))st.ent=q;
-  const lead=hero();if(lead)roundup(lead);
-  features();columns();follow();newsletter();filters();wire();if(L){strip();active()}render();if(st.ent)$("archive").scrollIntoView();
+  if($("ks")){const lead=hero();if(lead)roundup(lead)}
+  if($("fList"))features();if($("gList"))columns();follow();if($("nlF"))newsletter();if($("stats"))stats();
+  if(ARCH){const p=new URLSearchParams(location.search);const rg=p.get("reg");if(rg==="Global"||rg==="ANZ"){st.reg=rg;$("fReg").value=rg}const sp=p.get("sport");if(sp)st.sport=sp;filters();if(L)strip()}
+  if(L&&$("active"))active();wire();if(ARCH)render();
 }).catch(()=>{const h=$("heroHead"),k=$("heroDek");if(h)h.textContent="Deals unavailable";if(k)k.textContent="The deals file didn't load. Refresh to try again.";wire();});
 })();
 </script>

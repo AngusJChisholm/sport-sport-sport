@@ -242,3 +242,10 @@ footer.dk .logo:hover{box-shadow:none}
 .disp,.p-h,.nc h3,.hub h3,.chart h3,.cc h3,.ar-r b,.row b,.card h3{font-family:"ArchivoV",var(--font,"Archivo"),"Helvetica Neue",Arial,sans-serif;font-stretch:68%;letter-spacing:-.005em;transform:none!important;width:auto!important}
 .disp{line-height:.88}
 .vb{padding:.02em .1em 0;margin:0 -.04em}
+/* Statement block: the Instagram end slide on the site (same as the home page) */
+.stmt{padding:clamp(28px,4vw,56px) 0 clamp(22px,3vw,40px);text-align:center;border-bottom:1px solid var(--line)}
+.stmt h2{font-family:"ArchivoV",var(--font,"Archivo"),"Helvetica Neue",Arial,sans-serif;font-stretch:68%;letter-spacing:-.005em;font-weight:800;text-transform:uppercase;font-size:clamp(24px,7.2vw,88px);line-height:.95;margin:0;white-space:nowrap}
+.stmt h2 .v{display:inline-block;background:var(--volt);color:#000;padding:.04em .1em 0;line-height:.95}
+.stmt p{text-wrap:balance;margin:clamp(12px,1.6vw,20px) 0 0;font-weight:800;font-size:clamp(12px,1.1vw,15px);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.stmt .chip{display:inline-block;margin-top:18px;background:#000;color:#fff;font-weight:800;font-size:clamp(12px,1.1vw,15px);letter-spacing:.14em;text-transform:uppercase;padding:11px 16px 9px}
+.stmt .chip:hover{background:var(--volt);color:#000}

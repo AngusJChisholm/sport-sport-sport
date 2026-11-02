@@ -23,12 +23,12 @@
 <body data-id="apd-global">
 <header class="dk"><div class="wrap hd">
 <a href="index.html" class="logo" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="56" height="42"></a>
-<nav class="nav" aria-label="Main" id="mainNav"><a href="news.html">News</a><a href="index.html#archive">Deals</a><a href="brands.html" id="navB">Brands</a><a href="properties.html" id="navP">Properties</a><a href="insights.html">Insights</a></nav>
+<nav class="nav" aria-label="Main" id="mainNav"><a href="news.html">News</a><a href="deals.html">Deals</a><a href="brands.html" id="navB">Brands</a><a href="properties.html" id="navP">Properties</a><a href="insights.html">Insights</a></nav>
 <a href="index.html#follow" class="btn">Follow</a>
 </div></header>
 
 <main class="wrap" id="main">
-<nav class="crumbs" aria-label="Breadcrumb"><a href="index.html#archive">Deals</a><span aria-hidden="true">/</span><a id="crKind" href="brands.html">Partners</a><span aria-hidden="true">/</span><span id="crName" style="color:var(--ink)">APD Global</span></nav>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="deals.html">Deals</a><span aria-hidden="true">/</span><a id="crKind" href="brands.html">Partners</a><span aria-hidden="true">/</span><span id="crName" style="color:var(--ink)">APD Global</span></nav>
 <section class="top" id="top">
 <div id="bigLogo"></div>
 <div class="top-t">
@@ -55,13 +55,13 @@
 <div class="pills" id="pills" role="group" aria-label="Filter by sport" style="margin-bottom:28px"></div>
 <div class="al"><div class="ar-h"><span>Date</span><span>Deal</span><span>Sport</span><span class="c-t">Deal type</span><span>Ends</span></div><div id="list"><div class="ar-r"><span class="d">Current partner</span><span class="dl"><a href="https://www.westcoasteagles.com.au/partners" target="_blank" rel="noopener"><b>APD Global × West Coast Eagles</b></a></span><span class="s">AFL</span><span class="t">Principal &amp; major</span><span class="d">–</span></div><div class="ar-r"><span class="d">Current partner</span><span class="dl"><a href="https://www.perthglory.com.au/partners" target="_blank" rel="noopener"><b>APD Global × Perth Glory</b></a></span><span class="s">Football</span><span class="t">Principal &amp; major</span><span class="d">–</span></div></div></div>
 </section>
-<p class="note" id="none" hidden>We haven't filed any deals for this one yet. <a class="more" href="index.html#archive">Back to the archive</a></p>
+<p class="note" id="none" hidden>We haven't filed any deals for this one yet. <a class="more" href="deals.html">Back to the archive</a></p>
 </main>
 
 <footer class="dk"><div class="wrap">
 <div class="ft"><div><a href="index.html" class="logo logo-ft" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="120" height="90"></a>
 <p class="mute" style="margin:28px 0 0;font-size:16px;max-width:420px;line-height:1.5">All things sport business. Global &amp; ANZ. A daily round-up of the sponsorship, partnership and commercial deals moving sport.</p></div>
-<nav class="ft-l" aria-label="Footer"><a href="news.html">News</a><a href="index.html#archive">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="insights.html">Insights</a></nav></div>
+<nav class="ft-l" aria-label="Footer"><a href="news.html">News</a><a href="deals.html">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="insights.html">Insights</a></nav></div>
 <div class="ft-b"><span>That's the day. Same time tomorrow.</span><span>© <span id="yr">2026</span> Sport Sport Sport</span></div>
 </div></footer>
 
@@ -104,7 +104,7 @@ Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()])
   const dated=mine.filter(d=>d.date||d.month), first=dated[dated.length-1]||mine[mine.length-1], latest=dated[0]||mine[0];
   $("stats").innerHTML=[[mine.length,mine.length===1?"deal filed":"deals filed"],[sports.length,sports.length===1?"sport":"sports"],[fmt(latest),"latest deal"],[fmt(first),"first filed"]]
     .map(([v,l])=>`<div class="stat"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("");
-  $("acts").innerHTML=`<a class="more" href="index.html?club=${encodeURIComponent(id)}#archive">See them in the archive →</a>`+`<a class="more" href="compare.html?a=${encodeURIComponent(id)}">Compare →</a>`+(e.domain?`<a class="more" href="https://${esc(e.domain)}" target="_blank" rel="noopener">${esc(e.domain)} ↗</a>`:"");
+  $("acts").innerHTML=`<a class="more" href="deals.html?club=${encodeURIComponent(id)}">See them in the archive →</a>`+`<a class="more" href="compare.html?a=${encodeURIComponent(id)}">Compare →</a>`+(e.domain?`<a class="more" href="https://${esc(e.domain)}" target="_blank" rel="noopener">${esc(e.domain)} ↗</a>`:"");
 
   // Who they've signed with: the other side of each deal, most deals first.
   const other=d=>onB(d)?d._p:d._b;
