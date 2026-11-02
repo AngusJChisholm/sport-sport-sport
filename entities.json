@@ -28307,6 +28307,30 @@
     "icon",
     "logo"
    ]
+  },
+  "geico": {
+   "name": "GEICO"
+  },
+  "eurosport": {
+   "name": "Eurosport"
+  },
+  "international-biathlon-union": {
+   "name": "International Biathlon Union"
+  },
+  "tubi": {
+   "name": "Tubi"
+  },
+  "ovg-hospitality": {
+   "name": "OVG Hospitality"
+  },
+  "detroit-city-fc": {
+   "name": "Detroit City FC"
+  },
+  "planpay": {
+   "name": "PlanPay"
+  },
+  "lebron-james": {
+   "name": "LeBron James"
   }
  },
  "leagues": [

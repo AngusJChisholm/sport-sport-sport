@@ -77,8 +77,8 @@
    "sport": "Cricket",
    "type": "Media rights",
    "region": "ANZ",
-   "summary": "Short-term deal gives TNT Sports exclusive live UK rights to 16 games of Australia's 2026-27 home summer, with 5 showing highlights of the England limited-overs matches.",
-   "url": "https://www.sportcal.com/?p=154674",
+   "summary": "Short-term deal gives TNT Sports exclusive live UK rights to 16 matches of Australia's 2026-27 summer, with 5 showing highlights of the England limited-overs games.",
+   "url": "https://media.wbdsports.com/post/tnt-sports-and-5-agree-deal-with-cricket-australia-for-the-upcom",
    "tier": "Media & broadcast",
    "status": "New",
    "ends": 2027
@@ -130,6 +130,96 @@
    "url": "https://sportcal.com/news/sit-brings-bengals-partnership-to-spain-rounding-out-madrid-game-coverage",
    "tier": "Official partner",
    "status": "Expansion"
+  },
+  {
+   "date": "2026-11-02",
+   "added": "2026-11-03",
+   "deal": "Kalshi × Philadelphia 76ers",
+   "sport": "Basketball",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "Kalshi signs a multi-year deal as official prediction market partner of the 76ers, presenting the Sixers Posters digital art series.",
+   "url": "https://www.nba.com/sixers/news/philadelphia-76ers-announce-multi-year-deal-with-kalshi-as-official-prediction-market-partner"
+  },
+  {
+   "date": "2026-10-29",
+   "added": "2026-11-03",
+   "deal": "WHOOP × LeBron James",
+   "sport": "Basketball",
+   "type": "Ambassador",
+   "region": "Global",
+   "summary": "LeBron James joins WHOOP as a global ambassador and investor, formalising an 11-year relationship.",
+   "url": "https://newshub.medianet.com.au/2026/10/lebron-james-deepens-commitment-to-whoop-expanding-11-year-relationship/179293/"
+  },
+  {
+   "date": "2026-10-29",
+   "added": "2026-11-03",
+   "deal": "GEICO × Unrivaled",
+   "sport": "Basketball",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "GEICO becomes official auto, property and commercial insurance partner in a multiyear deal, with placement on the back of all eight club uniforms.",
+   "url": "https://finance.yahoo.com/media-advertising/articles/unrivaled-announces-multiyear-partnership-geico-120000605.html"
+  },
+  {
+   "date": "2026-10-29",
+   "added": "2026-11-03",
+   "deal": "DHL × NHL",
+   "sport": "Ice hockey",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "DHL becomes Official Shipping and Logistics Partner of the NHL in a multiyear international deal with marketing rights in key European markets.",
+   "url": "https://www.nhl.com/news/nhl-dhl-announce-multiyear-international-deal"
+  },
+  {
+   "date": "2026-11-02",
+   "added": "2026-11-03",
+   "deal": "Eurosport × International Biathlon Union",
+   "sport": "Biathlon",
+   "type": "Media rights",
+   "region": "Global",
+   "summary": "Eurosport and TNT Sports extend live coverage of the IBU World Cup and World Championships for at least four seasons from 2026/27.",
+   "url": "https://media.wbdsports.com/post/eurosport-and-tnt-sports-seal-long-term-extension-to-show-the-bi"
+  },
+  {
+   "date": "2026-10-29",
+   "added": "2026-11-03",
+   "deal": "Tubi × MLS",
+   "sport": "Football",
+   "type": "Media rights",
+   "region": "Global",
+   "summary": "Tubi will simulcast two MLS Decision Day matches free in the US under a content licensing agreement with MLS and Apple.",
+   "url": "https://www.mlssoccer.com/news/tubi-to-simulcast-two-major-league-soccer-decision-day-games-on-november-7"
+  },
+  {
+   "date": "2026-10-29",
+   "added": "2026-11-03",
+   "deal": "Sportradar × Borussia Dortmund",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Sportradar's integrity arm extends its work with BVB to vet prospective commercial partners.",
+   "url": "https://www.insideworldfootball.com/2026/10/29/sportradars-integrity-arm-brings-due-diligence-to-borussia-dortmunds-commercial-business/"
+  },
+  {
+   "date": "2026-10-29",
+   "added": "2026-11-03",
+   "deal": "OVG Hospitality × Detroit City FC",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "Global",
+   "summary": "OVG Hospitality is the exclusive food and beverage provider for AlumniFi Field, due to open in spring 2028.",
+   "url": "https://www.detcityfc.com/news/2026/10/29/detroit-city-football-club-selects-ovg-hospitality-as-exclusive-food-and-beverage-provider-for-alumnifi-field/"
+  },
+  {
+   "date": "2026-10-30",
+   "added": "2026-11-03",
+   "deal": "PlanPay × Brisbane Roar",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "PlanPay offers Roar members interest-free instalment plans for 2026/27 memberships.",
+   "url": "https://www.soccerscene.com.au/brisbane-roar-partners-with-planpay/"
   },
   {
    "date": "2025-10-23",
