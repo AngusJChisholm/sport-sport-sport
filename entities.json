@@ -5083,7 +5083,11 @@
     "icon",
     "logo"
    ],
-   "short": "CUB"
+   "short": "CUB",
+   "aliases": [
+    "CUB",
+    "Carlton and United Breweries"
+   ]
   },
   "carlton-draught": {
    "name": "Carlton Draught",
