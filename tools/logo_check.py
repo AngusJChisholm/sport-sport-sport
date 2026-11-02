@@ -1,3 +1,5 @@
+# DO NOT RUN against Brandfetch again: its terms ban automated logo checks (risk of the client ID being blocked)
+# and cap the site at 2,400 logo loads per 5 minutes. Kept for reference; logo_verify.site_icon() is fine on its own.
 """Logo health check. Run by .github/workflows/logo-check.yml (GitHub can reach Brandfetch; Claude's sandbox can't).
 mode "candidates": tries each website in tools/logo_candidates.json, stopping at the first that has a logo.
 mode "all": checks every mapped entity. Slow and polite, to stay under Brandfetch's rate limit.
