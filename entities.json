@@ -28100,6 +28100,22 @@
     "icon",
     "logo"
    ]
+  },
+  "love-the-game": {
+   "name": "Love The Game",
+   "k": "b"
+  },
+  "melbourne-airport-parking": {
+   "name": "Melbourne Airport Parking",
+   "k": "b"
+  },
+  "pepsi-max": {
+   "name": "Pepsi Max",
+   "k": "b"
+  },
+  "cool-ridge": {
+   "name": "Cool Ridge",
+   "k": "b"
   }
  },
  "leagues": [

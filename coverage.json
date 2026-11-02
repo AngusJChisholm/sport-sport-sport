@@ -8,7 +8,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.carltonfc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -18,9 +18,9 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://www.collingwoodfc.com.au/partners",
+   "lastChecked": "2026-11-02",
+   "onPage": 32
   },
   {
    "name": "Essendon",
@@ -28,7 +28,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.essendonfc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -38,7 +38,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.geelongcats.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -48,7 +48,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.hawthornfc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -58,7 +58,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.melbournefc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -68,7 +68,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.nmfc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -78,7 +78,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.richmondfc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -88,7 +88,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.saints.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -98,7 +98,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.westernbulldogs.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -108,7 +108,7 @@
    "country": "AU",
    "state": "SA",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.afc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -118,7 +118,7 @@
    "country": "AU",
    "state": "SA",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.portadelaidefc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -128,7 +128,7 @@
    "country": "AU",
    "state": "WA",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.fremantlefc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -138,7 +138,7 @@
    "country": "AU",
    "state": "WA",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.westcoasteagles.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -148,7 +148,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.sydneyswans.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -158,7 +158,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.gwsgiants.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -168,7 +168,7 @@
    "country": "AU",
    "state": "QLD",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.lions.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -178,7 +178,7 @@
    "country": "AU",
    "state": "QLD",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.goldcoastfc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -188,7 +188,7 @@
    "country": "AU",
    "state": "TAS",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.devilsfc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -218,7 +218,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://roosterscorporate.com.au/corporate-2/our-partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -228,7 +228,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.rabbitohs.com.au/",
    "lastChecked": null,
    "onPage": null
   },
@@ -238,7 +238,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.weststigers.com.au/about/partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -248,7 +248,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.bulldogs.com.au/corporate/partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -258,7 +258,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.parraeels.com.au/corporate/partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -268,7 +268,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.penrithpanthers.com.au/corporate/partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -278,7 +278,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.seaeagles.com.au/corporate/partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -288,7 +288,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.sharks.com.au/about/sponsors/",
    "lastChecked": null,
    "onPage": null
   },
@@ -298,7 +298,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.dragons.com.au/corporate/partnerships/partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -308,7 +308,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.newcastleknights.com.au/about/sponsors/",
    "lastChecked": null,
    "onPage": null
   },
@@ -328,7 +328,7 @@
    "country": "AU",
    "state": "QLD",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.dolphinsnrl.com.au/partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -338,7 +338,7 @@
    "country": "AU",
    "state": "QLD",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.titans.com.au/about/partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -348,7 +348,7 @@
    "country": "AU",
    "state": "QLD",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.cowboys.com.au/partners/partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -358,7 +358,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.melbournestorm.com.au/corporate/partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -368,7 +368,7 @@
    "country": "AU",
    "state": "ACT",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.raiders.com.au/corporate/partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -378,7 +378,7 @@
    "country": "AU",
    "state": "WA",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.perthbears.com.au/about/partnerships/",
    "lastChecked": null,
    "onPage": null
   },
@@ -408,7 +408,7 @@
    "country": "NZ",
    "state": "NZ",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.warriors.kiwi/corporate/partnerships/official-sponsors/",
    "lastChecked": null,
    "onPage": null
   },
@@ -428,7 +428,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.sydneyfc.com/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -488,7 +488,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.melbournecityfc.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -508,7 +508,7 @@
    "country": "AU",
    "state": "QLD",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.brisbaneroar.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -518,7 +518,7 @@
    "country": "AU",
    "state": "SA",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.adelaideunited.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -528,7 +528,7 @@
    "country": "AU",
    "state": "WA",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.perthglory.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -568,7 +568,7 @@
    "country": "AU",
    "state": "SA",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.adelaide36ers.com/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -578,7 +578,7 @@
    "country": "AU",
    "state": "QLD",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.brisbanebullets.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -588,7 +588,7 @@
    "country": "AU",
    "state": "QLD",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.taipans.com/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -598,7 +598,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.sydneykings.com/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -608,7 +608,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.hawks.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -628,7 +628,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.semphoenix.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -638,7 +638,7 @@
    "country": "AU",
    "state": "WA",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.wildcats.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -648,7 +648,7 @@
    "country": "AU",
    "state": "TAS",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.jackjumpers.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -668,7 +668,7 @@
    "country": "NZ",
    "state": "NZ",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.nzbreakers.basketball/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -678,7 +678,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://melbournevixens.com.au/team/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -688,7 +688,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://melbournemavericks.com/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -698,7 +698,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://nswswifts.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -718,7 +718,7 @@
    "country": "AU",
    "state": "QLD",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://firebirds.net.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -728,7 +728,7 @@
    "country": "AU",
    "state": "QLD",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://sunshinecoastlightning.com.au/sponsors/",
    "lastChecked": null,
    "onPage": null
   },
@@ -738,7 +738,7 @@
    "country": "AU",
    "state": "SA",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://adelaidethunderbirds.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -748,7 +748,7 @@
    "country": "AU",
    "state": "WA",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://westcoastfever.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -768,7 +768,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.sydneysixers.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -778,7 +778,7 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.sydneythunder.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -788,7 +788,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.melbournestars.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -798,7 +798,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.melbournerenegades.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -838,7 +838,7 @@
    "country": "AU",
    "state": "TAS",
    "tier": 1,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.hobarthurricanes.com.au/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -1238,7 +1238,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 3,
-   "partnersUrl": null,
+   "partnersUrl": "https://ausopen.com/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -1258,7 +1258,7 @@
    "country": "AU",
    "state": "National",
    "tier": 3,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.unitedcup.com/en/about/partners",
    "lastChecked": null,
    "onPage": null
   },
@@ -1268,7 +1268,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 3,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.grandprix.com.au/en/supporters",
    "lastChecked": null,
    "onPage": null
   },
@@ -1418,7 +1418,7 @@
    "country": "AU",
    "state": "VIC",
    "tier": 3,
-   "partnersUrl": null,
+   "partnersUrl": "https://www.vrc.com.au/media-sponsors/our-partners/",
    "lastChecked": null,
    "onPage": null
   },
@@ -1468,7 +1468,7 @@
    "country": "AU",
    "state": "SA",
    "tier": 3,
-   "partnersUrl": null,
+   "partnersUrl": "https://tourdownunder.com.au/about/partners",
    "lastChecked": null,
    "onPage": null
   },
