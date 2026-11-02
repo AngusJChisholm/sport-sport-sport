@@ -109,6 +109,8 @@ a.kt:hover{border-color:var(--volt);background:#161616;color:var(--white)}
 .card.all .more{border-bottom-color:var(--volt)}
 .card.all h3{font-size:clamp(34px,3.4vw,52px)}
 @media (min-width:1101px){.card.all{grid-column:span var(--span,1)}}
+@media (min-width:1101px){.card.fill{grid-column:span var(--span,1)}}
+@media (min-width:641px) and (max-width:1100px){#fList .card:last-child:nth-child(odd){grid-column:span 2}}
 .col-h .lbl{white-space:nowrap}
 .split{background:var(--canvas)}
 .cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(32px,5vw,80px)}
@@ -236,9 +238,6 @@ a.card:hover{box-shadow:inset 0 5px 0 var(--volt)}
 .cl{display:flex}.cl .pair{gap:8px}
 .card.all{background:var(--volt)!important;color:#000!important}
 .card.all .more{border-bottom-color:#000}.card.all .lbl{color:#000}
-.sched{list-style:none;margin:0;padding:0;border-top:1px solid rgba(0,0,0,.25)}
-.sched li{display:flex;gap:20px;align-items:baseline;padding:11px 0;border-bottom:1px solid rgba(0,0,0,.25);font-weight:800;text-transform:uppercase;letter-spacing:-.02em;font-size:clamp(17px,1.6vw,22px)}
-.sched li b{font-size:12px;letter-spacing:.16em;width:44px;flex:none}
 .split{background:#fff;border-top:1px solid var(--line)}
 .pt-sec .wrap>[data-partner-slot]{border:1px solid var(--line);padding:0 clamp(16px,2vw,28px)}
 /* Follow block: volt */
@@ -260,15 +259,13 @@ document.addEventListener("DOMContentLoaded",()=>{
    const t=h.textContent.trim().split(" ");const last=t.pop();const m=last.match(/^(.*?)([.]?)$/);
    h.innerHTML=(t.length?t.join(" ")+" ":"")+`<span class="vb">${m[1]}</span>${m[2]}`});
   document.querySelectorAll(".card h3,.kt h2,.kt h1").forEach(h=>{if(h.dataset.n)return;h.dataset.n=1;h.innerHTML=h.innerHTML.replace(/(\$[\d.,]+\s?(?:BN|M|B|K)?)/i,'<span class="num">$1</span>')});
-  document.querySelectorAll(".card.all").forEach(c=>{if(c.textContent.includes("Every week")&&!c.dataset.s){c.dataset.s=1;
-   c.innerHTML='<span class="lbl">The week on SSS</span><ul class="sched"><li><b>Mon</b>Feature</li><li><b>Tue</b>Deals</li><li><b>Wed</b>Data drop</li><li><b>Thu</b>Deals</li><li><b>Fri</b>Deal breakdown</li></ul>'}});
  };
  new MutationObserver(band).observe(document.body,{childList:true,subtree:true});band();
 });
 </script>
 <style id="condensed">
 @font-face{font-family:"ArchivoV";src:url("assets/fonts/Archivo[wdth,wght].ttf") format("truetype");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
-.disp,.kt h1,.kt h2,.card h3,.col-h h2,.row b,.ar-r b,.stmt h2,.sched li{font-family:"ArchivoV",var(--font);font-stretch:68%;letter-spacing:-.005em;transform:none!important;width:auto!important}
+.disp,.kt h1,.kt h2,.card h3,.col-h h2,.row b,.ar-r b,.stmt h2{font-family:"ArchivoV",var(--font);font-stretch:68%;letter-spacing:-.005em;transform:none!important;width:auto!important}
 .disp{line-height:.88}
 .sh h2{font-size:clamp(56px,7.6vw,120px)}
 .col-h h2{font-size:clamp(56px,6vw,96px)}
@@ -453,8 +450,7 @@ function features(){
   if(!FEATS.length)return;
   const list=FEATS.slice().sort((a,b)=>b.date.localeCompare(a.date)).slice(0,6);
   $("fCount").textContent=`${FEATS.length} feature${FEATS.length===1?"":"s"}`;
-  $("fList").innerHTML=list.map(d=>`<a class="card"${attrs(d)}><div class="tags"><span class="tag">${esc(d.sport)}</span>${d.region?`<span class="tag r">${esc(d.region)}</span>`:""}</div><h3>${esc(d.headline)}</h3><p>${esc(d.summary||d.deal||"")}</p><span class="more">Read the feature →</span></a>`).join("")
-    +(list.length%3?`<div class="card all" style="--span:${3-(list.length%3)}"><span class="lbl">Every week</span><h3>Features, data drops and deal breakdowns.</h3></div>`:"");
+  $("fList").innerHTML=list.map((d,i)=>`<a class="card${i===list.length-1&&list.length%3?' fill':''}"${i===list.length-1&&list.length%3?` style="--span:${4-(list.length%3)}"`:""}${attrs(d)}><div class="tags"><span class="tag">${esc(d.sport)}</span>${d.region?`<span class="tag r">${esc(d.region)}</span>`:""}</div><h3>${esc(d.headline)}</h3><p>${esc(d.summary||d.deal||"")}</p><span class="more">Read the feature →</span></a>`).join("");
   $("features").hidden=false;
 }
 function columns(){
