@@ -32,7 +32,7 @@ function csv(rows,file){
 // A deal is treated as live if its end year hasn't passed, or (with no end) it was announced in the last 3 years, or it's on the club's current partners page.
 const live=d=>d.ends?d.ends>=yr:dated(d)?yearOf(d)>=yr-3:true;
 
-let D,TYP={},TYP_ALL=3,state={tab:"finder"};
+let D,TYP={},TYP_ALL=3,state={tab:"dash"};
 
 /* ---------- agencies (agencies.json) ---------- */
 let AG={home:"",agencies:{},appointments:[]};const AGBY=new Map(),AGDEAL=new Map();
@@ -301,10 +301,91 @@ function agencyDetail(id){
   $("view").onclick=e=>{if(e.target.id==="agback"){e.preventDefault();state.ag="";agencies();window.scrollTo(0,0)}};
 }
 
+/* ---------- Dashboard (home tab) ---------- */
+function dashboard(){
+  const inLast=(d,m)=>dated(d)&&monthsAgo(d)<=m&&monthsAgo(d)>=0;
+  const ytd=D.deals.filter(d=>dated(d)&&yearOf(d)===yr);
+  const anzY=ytd.filter(d=>d.region==="ANZ").length, glY=ytd.length-anzY;
+  const share=ytd.length?anzY/ytd.length:0;
+  const ry=NOW.getMonth()>=8?yr+1:yr;
+  const rAll=D.deals.map(d=>({d,r:renewal(d)})).filter(x=>x.r);
+  const due=rAll.filter(x=>x.r.end===ry);
+  const dueFirm=due.filter(x=>x.r.basis!=="Estimate");
+  const dueOpen=due.filter(x=>x.d.region==="ANZ"&&!agOfDeal(x.d).length);
+  const newBrands=D.brands.filter(b=>{const f=b.deals.filter(x=>dated(x.d));return f.length&&f.every(x=>yearOf(x.d)===yr)}).length;
+  const anzProps=D.props.filter(p=>p.regions.has("ANZ")).length;
+  const agN=Object.keys(AG.agencies).length;
+
+  // Half-circle gauge, same idea as a fund meter: ANZ share of this year's deals.
+  const R=88,C=Math.PI*R,arc=`M ${110-R} 104 A ${R} ${R} 0 0 1 ${110+R} 104`;
+  const gauge=`<svg viewBox="0 0 220 116" class="gauge" aria-hidden="true"><path d="${arc}" fill="none" stroke="#292929" stroke-width="16"/><path d="${arc}" fill="none" stroke="var(--volt)" stroke-width="16" stroke-dasharray="${(C*share).toFixed(1)} ${C.toFixed(1)}"/></svg>`;
+
+  // Last 12 months by announcement month, ANZ and global stacked.
+  const months=[];for(let i=11;i>=0;i--){const dt=new Date(yr,NOW.getMonth()-i,1);months.push({k:`${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,"0")}`,lab:dt.toLocaleDateString("en-AU",{month:"short"}),a:0,g:0})}
+  const mi=new Map(months.map(m=>[m.k,m]));
+  D.deals.forEach(d=>{if(!dated(d))return;const m=mi.get(S.sortKey(d).slice(0,7));if(m)d.region==="ANZ"?m.a++:m.g++});
+  const mx=Math.max(1,...months.map(m=>m.a+m.g));
+  const W=720,H=220,pb=26,pt=18,bw=W/12;
+  const bars=months.map((m,i)=>{const x=i*bw+bw*.18,w=bw*.64,ha=(H-pb-pt)*m.a/mx,hg=(H-pb-pt)*m.g/mx,base=H-pb,cur=i===11;
+    return `<g><title>${m.lab}: ${m.a} ANZ, ${m.g} global</title><rect x="${x}" y="${base-ha}" width="${w}" height="${ha}" fill="${cur?"var(--volt)":"var(--ink)"}"${cur?' stroke="var(--ink)" stroke-width="1"':""}/><rect x="${x}" y="${base-ha-hg}" width="${w}" height="${hg}" fill="var(--grey-500)"/>${m.a+m.g?`<text x="${x+w/2}" y="${base-ha-hg-6}" text-anchor="middle" class="bv">${m.a+m.g}</text>`:""}<text x="${x+w/2}" y="${H-6}" text-anchor="middle" class="bl">${m.lab}</text></g>`}).join("");
+  const monthChart=`<svg viewBox="0 0 ${W} ${H}" class="mchart" role="img" aria-label="Deals by month, last 12 months"><line x1="0" x2="${W}" y1="${H-pb}" y2="${H-pb}" stroke="var(--ink)" stroke-width="2"/>${bars}</svg>`;
+
+  // Horizontal bar lists for the last 12 months.
+  const last12=D.deals.filter(d=>inLast(d,12));
+  const tally=f=>{const m=new Map();last12.forEach(d=>[].concat(f(d)).forEach(k=>{if(k&&k!=="Other")m.set(k,(m.get(k)||0)+1)}));return [...m.entries()].sort((a,b)=>b[1]-a[1]).slice(0,8)};
+  const hbars=(rows,attr)=>{const top=rows.length?rows[0][1]:1;return `<div class="dhb">${rows.map(([k,n])=>`<button type="button" class="hbr" data-${attr}="${esc(k)}"><span class="hbk">${esc(k)}</span><span class="hbt"><i style="width:${(100*n/top).toFixed(1)}%"></i></span><b>${n}</b></button>`).join("")}</div>`};
+  const cats=tally(d=>d._cats), sports=tally(d=>d.sport);
+
+  // Coming up: firm renewal dates first, then estimates, ANZ only.
+  const up=rAll.filter(x=>x.d.region==="ANZ"&&x.r.end>=ry&&x.r.end<=ry+1).sort((a,b)=>a.r.end-b.r.end||(a.r.basis==="Estimate")-(b.r.basis==="Estimate")||S.sortKey(b.d).localeCompare(S.sortKey(a.d))).slice(0,7);
+  const latest=D.deals.filter(dated).slice(0,7);
+  const busy=D.brands.map(b=>({b,n:b.deals.filter(x=>inLast(x.d,12)).length})).filter(x=>x.n>=2).sort((a,b)=>b.n-a.n).slice(0,12);
+
+  $("view").innerHTML=`<div class="dash">
+  <div class="dtop">
+    <div class="fund dk">
+      <div class="fh"><span>${yr} deals logged</span><span class="vt">${Math.round(share*100)}% ANZ</span></div>
+      <div class="gw">${gauge}<div class="gn"><b>${ytd.length.toLocaleString("en-AU")}</b><span>${D.deals.length.toLocaleString("en-AU")} in the archive</span></div></div>
+      <div class="ff">${anzY.toLocaleString("en-AU")} ANZ &nbsp;|&nbsp; ${glY.toLocaleString("en-AU")} global</div>
+    </div>
+    <div class="tiles">
+      <a href="#" class="tile" data-go="finder"><span>Brands tracked</span><b>${D.brands.length.toLocaleString("en-AU")}</b><em>${newBrands} new in ${yr}</em></a>
+      <a href="#" class="tile" data-go="property"><span>Properties tracked</span><b>${D.props.length.toLocaleString("en-AU")}</b><em>${anzProps.toLocaleString("en-AU")} in ANZ</em></a>
+      <a href="#" class="tile" data-go="renewals"><span>Renewals due ${ry}</span><b>${due.length.toLocaleString("en-AU")}</b><em>${dueFirm.length} with a stated end</em></a>
+      <a href="#" class="tile" data-go="agencies"><span>Agencies on record</span><b>${agN}</b><em>${AG.appointments.length} appointments</em></a>
+    </div>
+  </div>
+  ${dueOpen.length?`<div class="nudge"><span><i class="slash"></i><b>${dueOpen.length}</b> ANZ deals reach the end of their term in ${ry} with no agency on record.</span><button class="btn btn-ink" data-go="renewals" data-open="1">Open radar</button></div>`:""}
+  <div class="card">
+    <div class="ch"><span class="h3 m0">Deals by month</span><span class="key"><i class="k1"></i>ANZ <i class="k2"></i>Global</span></div>
+    ${monthChart}
+  </div>
+  <div class="two">
+    <div class="card"><div class="ch"><span class="h3 m0">Top categories</span><span class="key">Last 12 months</span></div>${hbars(cats,"dcat")}</div>
+    <div class="card"><div class="ch"><span class="h3 m0">Busiest sports</span><span class="key">Last 12 months</span></div>${hbars(sports,"dsport")}</div>
+  </div>
+  <div class="two">
+    <div class="card"><div class="ch"><span class="h3 m0">Coming up</span><a href="#" class="more" data-go="renewals">Radar</a></div>
+      <ul class="cl">${up.map(({d,r})=>`<li><span class="yr">${r.end}</span><span class="dl">${L.pair(d,{px:28})}${S.dealLink(d)}</span>${basisTag(r)}</li>`).join("")||"<li>None in the archive.</li>"}</ul></div>
+    <div class="card"><div class="ch"><span class="h3 m0">Latest deals</span><a href="index.html#archive" class="more">Archive</a></div>
+      <ul class="cl">${latest.map(d=>`<li><span class="dd">${esc(S.fmt(d).replace(/ \d{4}$/,""))}</span><span class="dl">${L.pair(d,{px:28})}${S.dealLink(d)}</span><span class="chip">${esc(d.sport||"")}</span></li>`).join("")}</ul></div>
+  </div>
+  <div class="card"><div class="ch"><span class="h3 m0">Most active brands</span><span class="key">Deals, last 12 months</span></div>
+    <div class="busy">${busy.map(x=>`<div class="bz">${logo(x.b.e,48)}<a href="${esc(L.page(x.b.e.slug))}">${esc(x.b.e.name)}</a><b>${x.n}</b></div>`).join("")}</div></div>
+  </div>`;
+  const F=o=>Object.assign({q:"",cat:"",backs:"",notIn:"",region:"All",win:"12",sort:"deals",ag:""},o);
+  $("view").onclick=e=>{
+    const g=e.target.closest("[data-go]");
+    if(g){e.preventDefault();if(g.dataset.open)state.r={q:"",sport:"",cat:"",tier:"",region:"ANZ",year:String(ry),basis:"all",ag:"none"};go(g.dataset.go);window.scrollTo(0,0);return}
+    const c=e.target.closest("[data-dcat]");if(c){state.f=F({cat:c.dataset.dcat});go("finder");window.scrollTo(0,0);return}
+    const s=e.target.closest("[data-dsport]");if(s){state.f=F({backs:s.dataset.dsport});go("finder");window.scrollTo(0,0)}
+  };
+}
+
 /* ---------- tabs ---------- */
-const TABS={finder,renewals,property,agencies,watch:watchlist};
+const TABS={dash:dashboard,finder,renewals,property,agencies,watch:watchlist};
 function go(tab){
-  state.tab=TABS[tab]?tab:"finder";
+  state.tab=TABS[tab]?tab:"dash";
   document.querySelectorAll(".tab").forEach(b=>{b.classList.toggle("on",b.dataset.tab===state.tab);b.setAttribute("aria-selected",b.dataset.tab===state.tab)});
   history.replaceState(null,"","#"+state.tab);
   $("view").onclick=null;
@@ -324,6 +405,6 @@ Promise.all([S.load(),fetch("agencies.json",{cache:"no-store"}).then(r=>r.ok?r.j
   const allT=D.deals.filter(d=>d.term).map(d=>d.term);TYP_ALL=allT.length?med(allT):3;
   by.forEach((v,k)=>{if(v.length>=8)TYP[k]=med(v)});
   $("propNames").innerHTML=D.props.slice().sort((a,b)=>b.n-a.n).slice(0,2000).map(r=>`<option value="${esc(r.e.name)}">`).join("");
-  go((location.hash||"#finder").slice(1));
+  go((location.hash||"#dash").slice(1));
 }).catch(err=>{console.error(err);$("view").innerHTML=`<p class="note">Couldn't load the archive. Refresh to try again.</p>`});
 })();

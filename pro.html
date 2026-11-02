@@ -56,6 +56,52 @@
 .wl ul{list-style:none;margin:0;padding:0}
 .wl li{padding:8px 0;border-bottom:1px solid var(--line);font-size:15px;display:flex;gap:12px;justify-content:space-between}
 .wl li span{color:var(--ink-3);font-size:13px;white-space:nowrap}
+.dash{display:grid;gap:20px}
+.dtop{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+.fund{padding:24px 26px 22px;display:flex;flex-direction:column;justify-content:space-between;min-height:300px}
+.fh{display:flex;justify-content:space-between;font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--grey-500)}
+.fh .vt{color:var(--volt)}
+.gw{position:relative;max-width:380px;width:100%;margin:18px auto 0}
+.gauge{display:block;width:100%;height:auto}
+.gn{position:absolute;left:0;right:0;bottom:0;text-align:center}
+.gn b{display:block;font-size:clamp(40px,4.4vw,60px);font-weight:800;letter-spacing:-.04em;line-height:1}
+.gn span{font-size:13px;color:var(--grey-500)}
+.ff{text-align:center;font-size:13px;color:var(--grey-500);margin-top:16px}
+.tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tile{background:var(--canvas);padding:18px 18px 16px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;border-top:4px solid transparent}
+.tile:hover{border-top-color:var(--volt);color:var(--ink)}
+.tile span{font-weight:800;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.tile b{font-size:clamp(34px,4vw,52px);font-weight:800;letter-spacing:-.04em;line-height:1}
+.tile em{font-style:normal;font-size:13px;color:var(--ink-3)}
+.nudge{display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--volt);color:var(--black);padding:14px 16px 14px 20px;font-size:15px}
+.nudge b{font-weight:800}.nudge .btn{padding:11px 16px}
+.slash{display:inline-block;width:6px;height:16px;background:var(--black);transform:skewX(-20deg);margin-right:12px;vertical-align:-2px}
+.card{border-top:2px solid var(--ink);padding-top:14px}
+.ch{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:14px}
+.m0{margin:0}
+.key{font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+.key i{display:inline-block;width:10px;height:10px;margin:0 6px 0 12px;vertical-align:-1px}.key .k1{background:var(--ink)}.key .k2{background:var(--grey-500)}
+.mchart{display:block;width:100%;height:auto}
+.mchart .bv{font:800 13px var(--font);fill:var(--ink)}.mchart .bl{font:800 11px var(--font);fill:var(--ink-3);text-transform:uppercase;letter-spacing:.1em}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+.dhb{display:grid;gap:4px}
+.hbr{font:inherit;background:none;border:0;padding:6px 0;cursor:pointer;display:grid;grid-template-columns:minmax(0,9.5em) minmax(0,1fr) 3em;gap:12px;align-items:center;text-align:left;color:var(--ink)}
+.hbk{font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hbt{height:14px;background:var(--canvas);position:relative}
+.hbt i{position:absolute;inset:0 auto 0 0;background:var(--ink)}
+.hbr:hover .hbt i{background:var(--volt)}
+.hbr b{font-weight:800;font-variant-numeric:tabular-nums;text-align:right}
+.cl{list-style:none;margin:0;padding:0}
+.cl li{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.cl .dl{display:flex;align-items:center;gap:10px;flex:1;min-width:0}.cl .dl b{font-weight:800;text-transform:uppercase;letter-spacing:-.02em;font-size:14px}
+.cl .lg{--s:28px}
+.cl .yr,.cl .dd{font-weight:800;font-size:13px;font-variant-numeric:tabular-nums;min-width:3.6em;color:var(--ink-3)}
+.busy{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.bz{background:var(--canvas);padding:16px 10px 12px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.bz .lg{--s:48px}.bz>a{font-weight:800;font-size:13px;line-height:1.2;min-height:2.4em}.bz b{font-weight:800;font-size:22px;letter-spacing:-.03em}
+.bz:hover{outline:2px solid var(--volt)}.bz>a:hover{color:var(--ink-3)}
+@media (max-width:900px){.dtop,.two{grid-template-columns:minmax(0,1fr)}.busy{grid-template-columns:repeat(3,minmax(0,1fr))}.fund{min-height:0}}
+@media (max-width:520px){.nudge{flex-direction:column;align-items:flex-start}.cl .chip,.cl .basis{display:none}.hbr{grid-template-columns:minmax(0,7.5em) minmax(0,1fr) 2.6em}}
 @media (max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.wl{grid-template-columns:minmax(0,1fr)}}
 </style>
 </head>
@@ -72,6 +118,7 @@
 <p>Find brands spending in sport, see what's coming up for renewal, work out which categories a property is missing and who could fill them, and track which agencies work for whom. Built from every deal in the SSS archive.</p>
 </section>
 <div class="wrap"><div class="tabs" role="tablist" id="tabs">
+<button class="tab" data-tab="dash" role="tab">Dashboard</button>
 <button class="tab" data-tab="finder" role="tab">Brand finder</button>
 <button class="tab" data-tab="renewals" role="tab">Renewal radar</button>
 <button class="tab" data-tab="property" role="tab">Property report</button>
@@ -87,6 +134,6 @@
 <datalist id="brandNames"></datalist>
 <script src="assets/logos.js?v=7"></script>
 <script src="assets/data.js?v=2"></script>
-<script src="assets/pro.js?v=2"></script>
+<script src="assets/pro.js?v=3"></script>
 </body>
 </html>
