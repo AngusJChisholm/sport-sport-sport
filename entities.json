@@ -7389,6 +7389,10 @@
     "icon"
    ]
   },
+  "detroit-city-fc": {
+   "name": "Detroit City FC",
+   "k": "p"
+  },
   "detroit-pistons": {
    "name": "Detroit Pistons",
    "domain": "pistons.com",
@@ -8554,6 +8558,11 @@
     "icon",
     "logo"
    ]
+  },
+  "eurosport": {
+   "name": "Eurosport",
+   "cat": "Media & broadcast",
+   "k": "b"
   },
   "event-cinemas": {
    "name": "Event Cinemas",
@@ -9847,6 +9856,10 @@
     "logo"
    ],
    "cat": "Automotive",
+   "k": "b"
+  },
+  "geico": {
+   "name": "GEICO",
    "k": "b"
   },
   "gello": {
@@ -12128,6 +12141,10 @@
     "logo"
    ]
   },
+  "international-biathlon-union": {
+   "name": "International Biathlon Union",
+   "k": "p"
+  },
   "international-luge-federation": {
    "name": "International Luge Federation",
    "domain": "fil-luge.org",
@@ -13946,6 +13963,10 @@
     "icon",
     "logo"
    ]
+  },
+  "lebron-james": {
+   "name": "LeBron James",
+   "k": "p"
   },
   "ledvance": {
    "name": "LEDVANCE",
@@ -18313,6 +18334,11 @@
     "logo"
    ]
   },
+  "ovg-hospitality": {
+   "name": "OVG Hospitality",
+   "cat": "Health & beauty",
+   "k": "b"
+  },
   "oxen": {
    "name": "OXEN",
    "k": "b"
@@ -19230,6 +19256,10 @@
     "icon",
     "logo"
    ]
+  },
+  "planpay": {
+   "name": "PlanPay",
+   "k": "b"
   },
   "plantation-homes": {
    "name": "Plantation Homes",
@@ -25547,6 +25577,10 @@
     "logo"
    ]
   },
+  "tubi": {
+   "name": "Tubi",
+   "k": "b"
+  },
   "turkish-airlines": {
    "name": "Turkish Airlines",
    "domain": "turkishairlines.com",
@@ -28307,30 +28341,6 @@
     "icon",
     "logo"
    ]
-  },
-  "geico": {
-   "name": "GEICO"
-  },
-  "eurosport": {
-   "name": "Eurosport"
-  },
-  "international-biathlon-union": {
-   "name": "International Biathlon Union"
-  },
-  "tubi": {
-   "name": "Tubi"
-  },
-  "ovg-hospitality": {
-   "name": "OVG Hospitality"
-  },
-  "detroit-city-fc": {
-   "name": "Detroit City FC"
-  },
-  "planpay": {
-   "name": "PlanPay"
-  },
-  "lebron-james": {
-   "name": "LeBron James"
   }
  },
  "leagues": [
