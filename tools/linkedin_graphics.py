@@ -6,7 +6,7 @@ spec.json: {"date":"YYYY-MM-DD","headline_lines":["MONACO'S","SHIRT FOR","EUROPE
  "highlight":"EUROPE","deal":"Brand x Property","descriptor":"Deal type",
  "others":[{"deal":"Brand x Property","sub":"Sport - deal type"}, ...]}
 Optional "image": the lead's photo ("assets/..." file or an images.unsplash.com link,
-same as its deals.json "image"). Slide 1 then sits on the photo; leave it out for plain black.
+same as its deals.json "image"). Slide 1 shows it fading into white; without it the top is plain light grey.
 Writes sss-<date>-slide1.png (headline) and sss-<date>-slide2.png (other deals).
 """
 import base64, html, json, re, sys
@@ -37,32 +37,60 @@ def photo(img):
         return "data:image/jpeg;base64," + base64.b64encode((ROOT / "assets/img/u" / f"{m.group(1)}.jpg").read_bytes()).decode()
     return f"https://images.unsplash.com/{m.group(1)}?w=1080&h=1080&q=80&auto=format&fit=crop" if m else ""
 
+# House look (2 Nov 2026): white, centred, matching the Instagram cover. Volt is only ever a fill
+# behind black type. Slide 1 = the lead's photo fading into white; slide 2 = white round-up.
+LABEL = ("font-weight:800;font-size:24px;letter-spacing:.14em;text-transform:uppercase")
+
+def brand(tag):
+    return (f'<div class="br">Sport Sport Sport <span>/ {e(tag)}</span></div>')
+
 def slide1(s):
     src = photo(s.get("image"))
-    bg = (f'<div style="position:absolute;inset:0;background:url(\'{src}\') center/cover"></div>'
-          '<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.3) 22%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.9) 100%)"></div>') if src else ""
-    lines = "".join(
-        f'<div class="{"v" if l.strip(".,!?' ").upper()==s.get("highlight","").strip(".,!?' ").upper() else ""}">{e(l)}</div>'
-        for l in s["headline_lines"])
-    return f"""<style>{css()}
-.h{{position:absolute;left:94px;right:97px;top:256px;font-weight:800;font-size:140px;font-stretch:94%;line-height:127px;text-transform:uppercase;letter-spacing:-.005em}}
-.d{{position:absolute;left:97px;bottom:100px;font-weight:500;font-size:28px;line-height:43px;letter-spacing:.13em;text-transform:uppercase;max-width:700px}}</style>
-{bg}<div class="lab">Deal of the day</div><div class="h">{lines}</div>
-<div class="d">{e(s['deal'])}<br>{e(s['descriptor'])}</div>
-<img class="wm" src="data:image/svg+xml;base64,{wordmark()}">"""
-
-def slide2(s):
-    """White slide (matches the website round-up). Volt is a fill behind black type, never text on white."""
-    rows = "".join(f'<div class="r"><b>{e(o["deal"])}</b><span>{e(o["sub"])}</span></div>' for o in s["others"][:5])
+    head = " ".join(l.strip() for l in s["headline_lines"])
+    hl = s.get("highlight", "").strip(".,!?' ")
+    words = []
+    for w in head.split():
+        core = w.strip(".,!?'")
+        words.append(f'<span class="v">{e(w)}</span>' if hl and core.upper() == hl.upper() else e(w))
+    pair = e(s["deal"]).replace(" x ", " &times; ", 1)
+    ph = (f'<div class="ph" style="background-image:url(\'{src}\')"></div>') if src else '<div class="ph" style="background:#EDEDE8"></div>'
     return f"""<style>{css()}
 body{{background:#fff;color:#000}}
-.lab{{background:#D2FF3C;color:#000;padding:10px 14px 8px;top:86px;left:97px}}
-.rows{{position:absolute;left:97px;right:96px;top:180px;border-top:2px solid #000}}
-.r{{padding:27px 0 30px;border-bottom:1px solid #DEDED8}}.r:last-child{{border-bottom:0}}
-.r b{{display:block;font-weight:800;font-size:47px;font-stretch:96%;line-height:52px;text-transform:uppercase}}
-.r span{{display:block;font-weight:400;font-size:27.5px;color:#5C5C57;margin-top:14px}}</style>
-<div class="lab">Today's other deals</div><div class="rows">{rows}</div>
-<img class="wm" src="data:image/svg+xml;base64,{wordmark('black')}">"""
+.ph{{position:absolute;inset:0 0 auto 0;height:760px;background-position:center 30%;background-size:cover}}
+.fade{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 14%,rgba(255,255,255,0) 40%,rgba(255,255,255,.85) 55%,#fff 66%,#fff 100%)}}
+.low{{position:absolute;left:70px;right:70px;bottom:70px;display:flex;flex-direction:column;align-items:center;text-align:center}}
+.br{{{LABEL}}}.br span{{background:#D2FF3C;padding:.12em .3em 0}}
+.h{{margin-top:18px;font-weight:800;font-size:118px;font-stretch:68%;line-height:.9;text-transform:uppercase;letter-spacing:-.005em}}
+.h .v{{color:#000;background:#D2FF3C;padding:0 .06em}}
+.d{{margin-top:22px;font-weight:600;font-size:23px;letter-spacing:.14em;text-transform:uppercase;color:#5C5C57}}.d b{{color:#000;font-weight:800}}</style>
+{ph}<div class="fade"></div>
+<div class="low">{brand("Deal of the day")}<div class="h">{" ".join(words)}</div>
+<div class="d"><b>{pair}</b> &middot; {e(s["descriptor"])}</div></div>"""
+
+def slide2(s):
+    """White round-up in the same centred style. Volt is a fill behind black type, never text on white."""
+    rows = []
+    for o in s["others"][:5]:
+        sport, _, rest = str(o.get("sub") or "").partition(" - ")
+        if not rest:
+            sport, rest = "", sport
+        rows.append('<div class="r">' + (f'<i>{e(sport)}</i>' if sport else "")
+                    + f'<b>{e(o["deal"])}</b>' + (f'<span>{e(rest)}</span>' if rest else "") + "</div>")
+    n = len(rows)
+    big = 62 if n <= 3 else 52 if n == 4 else 44
+    return f"""<style>{css()}
+body{{background:#fff;color:#000}}
+.top{{position:absolute;left:0;right:0;top:64px;display:flex;justify-content:center}}
+.br{{{LABEL}}}.br span{{background:#D2FF3C;padding:.12em .3em 0}}
+.rows{{position:absolute;left:90px;right:90px;top:150px;bottom:190px;display:flex;flex-direction:column;justify-content:center;text-align:center}}
+.r{{padding:{int(big*.42)}px 0;border-top:1px solid #E2E2DC}}.r:last-child{{border-bottom:1px solid #E2E2DC}}
+.r i{{display:inline-block;font-style:normal;font-weight:800;font-size:20px;letter-spacing:.18em;text-transform:uppercase;background:#D2FF3C;padding:6px 10px 4px;margin-bottom:12px}}
+.r b{{display:block;font-weight:800;font-size:{big}px;font-stretch:72%;line-height:.95;text-transform:uppercase}}
+.r span{{display:block;font-size:26px;color:#5C5C57;margin-top:10px}}
+.ft{{position:absolute;left:0;right:0;bottom:60px;display:flex;flex-direction:column;align-items:center;gap:16px}}
+.ft img{{width:104px}}.ft div{{font-weight:600;font-size:21px;letter-spacing:.14em;text-transform:uppercase;color:#7A7A74}}</style>
+<div class="top">{brand("Today's other deals")}</div><div class="rows">{"".join(rows)}</div>
+<div class="ft"><img src="data:image/svg+xml;base64,{wordmark('black')}"><div>Every deal, filed: sportsportsport.com.au</div></div>"""
 
 def render(spec, out):
     out = Path(out); out.mkdir(parents=True, exist_ok=True)

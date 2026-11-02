@@ -247,7 +247,7 @@ DARK_CSS += """
 
 INNER_BG = False  # set True to put the lead photo, blurred and darkened, behind inner slides
 LIGHT = True      # inner slides: white background (Angus is moving SSS to white)
-COVER_LIGHT = False  # cover fades to white instead of black
+COVER_LIGHT = True   # cover fades to white (Angus, 2 Nov 2026: SSS is moving to white)
 _BG_SRC = ""
 
 
