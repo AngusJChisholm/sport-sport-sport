@@ -38,15 +38,20 @@ def photo(img):
     return f"https://images.unsplash.com/{m.group(1)}?w=1080&h=1080&q=80&auto=format&fit=crop" if m else ""
 
 def slide1(s):
+    """Full photo, text on top. The photo stays bright: only a soft shade on the left, behind the text."""
     src = photo(s.get("image"))
-    bg = (f'<div style="position:absolute;inset:0;background:url(\'{src}\') center/cover"></div>'
-          '<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.3) 22%,rgba(0,0,0,.55) 45%,rgba(0,0,0,.9) 100%)"></div>') if src else ""
+    bg = (f'<div style="position:absolute;inset:0;background:url(\'{src}\') center 30%/cover"></div>'
+          '<div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.62) 0%,rgba(0,0,0,.38) 45%,rgba(0,0,0,0) 78%)"></div>'
+          '<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.18) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 70%,rgba(0,0,0,.28) 100%)"></div>') if src else ""
     lines = "".join(
-        f'<div class="{"v" if l.strip(".,!?' ").upper()==s.get("highlight","").strip(".,!?' ").upper() else ""}">{e(l)}</div>'
+        f'<div>' + (f'<span class="hv">{e(l)}</span>' if l.strip(".,!?\' ").upper()==s.get("highlight","").strip(".,!?\' ").upper() else e(l)) + '</div>'
         for l in s["headline_lines"])
     return f"""<style>{css()}
-.h{{position:absolute;left:94px;right:97px;top:256px;font-weight:800;font-size:140px;font-stretch:94%;line-height:127px;text-transform:uppercase;letter-spacing:-.005em}}
-.d{{position:absolute;left:97px;bottom:100px;font-weight:500;font-size:28px;line-height:43px;letter-spacing:.13em;text-transform:uppercase;max-width:700px}}</style>
+body{{background:#1a1a1a}}
+.lab{{background:#D2FF3C;color:#000;padding:10px 14px 8px;top:86px}}
+.hv{{background:#D2FF3C;color:#000;padding:0 .08em;text-shadow:none}}
+.h{{position:absolute;left:94px;right:97px;top:256px;font-weight:800;font-size:140px;font-stretch:94%;line-height:127px;text-transform:uppercase;letter-spacing:-.005em;text-shadow:0 3px 24px rgba(0,0,0,.35)}}
+.d{{position:absolute;left:97px;bottom:100px;font-weight:600;font-size:28px;line-height:43px;letter-spacing:.13em;text-transform:uppercase;max-width:700px;text-shadow:0 2px 14px rgba(0,0,0,.5)}}</style>
 {bg}<div class="lab">Deal of the day</div><div class="h">{lines}</div>
 <div class="d">{e(s['deal'])}<br>{e(s['descriptor'])}</div>
 <img class="wm" src="data:image/svg+xml;base64,{wordmark()}">"""
