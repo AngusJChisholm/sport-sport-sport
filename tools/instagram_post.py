@@ -37,13 +37,16 @@ API = API_HOST + os.environ.get("IG_API_VERSION", "v26.0")
 
 STORY_TIME = dtime(8, 0)
 STORY_CUTOFF = dtime(15, 0)   # don't post the morning stories later than this
-FEED_TIMES = {0: dtime(19, 0), 1: dtime(19, 0), 2: dtime(19, 0), 3: dtime(19, 0), 4: dtime(18, 0),
-              5: dtime(10, 0), 6: dtime(10, 0)}
+# Posting schedule (3 Nov 2026): Mon feature, Tue deals, Wed Data Drop, Thu deals, Fri week in deals, weekends off.
+FEED_TIMES = {0: dtime(12, 30), 1: dtime(19, 0), 2: dtime(12, 30), 3: dtime(19, 0), 4: dtime(17, 0),
+              5: dtime(23, 59), 6: dtime(23, 59)}
+WEEKENDS_OFF = True
 FEED_CUTOFF = dtime(23, 0)
 RENDER_FROM = dtime(5, 30)
 REEL_TIMES = {0: dtime(20, 30), 1: dtime(20, 30), 2: dtime(19, 0), 3: dtime(19, 0), 4: dtime(20, 0),
               5: dtime(18, 0), 6: dtime(18, 0)}
-EVERGREEN_TIME = dtime(17, 0)   # the afternoon Instagram task adds an evergreen carousel on Tuesdays
+EVERGREEN_TIME = dtime(17, 0)
+SAME_DAY_EVERGREEN = False   # Tuesday's evergreen block now carries over to Wednesday as the Data Drop
 LATE_CUTOFF = dtime(23, 30)
 # Angus switched off Instagram stories and Reels (21 Oct 2026). Only carousels post now.
 # Set either back to True to turn them on again.
@@ -148,7 +151,7 @@ def due(q, state, m, t):
                                                 or feed_start(q, t) <= t.time() < FEED_CUTOFF),
         "reel": POST_REELS and bool(m and m.get("reel")) and q.get("reel", True) and not state.get("reel_done")
                 and hm(q.get("reel_time"), REEL_TIMES[t.weekday()]) <= t.time() < LATE_CUTOFF,
-        "evergreen": bool(q.get("evergreen")) and not state.get("evergreen_done")
+        "evergreen": SAME_DAY_EVERGREEN and bool(q.get("evergreen")) and not state.get("evergreen_done")
                      and hm(q["evergreen"].get("time") if q.get("evergreen") else None, EVERGREEN_TIME) <= t.time() < LATE_CUTOFF,
     }
     return out
@@ -165,6 +168,37 @@ def _short(text, n=70):
     return cut + "..."
 
 
+def carry_over(t, p):
+    """Mon posts Sunday's feature; Wed posts Tuesday's evergreen as the Data Drop. Returns True if it wrote today's queue."""
+    date = t.date()
+    prev = (date - timedelta(days=1)).isoformat()
+    pq = load(paths(prev)["queue"], {})
+    q = None
+    if t.weekday() == 0 and pq.get("feed", {}).get("kind") == "feature":
+        q = dict(pq)
+        q["feed"] = dict(pq["feed"])
+        q["feed"]["feature_date"] = prev
+        q["feed"]["cover"] = dict(pq["feed"].get("cover", {}))
+        q["feed"]["cover"]["tag"] = "Feature"
+    elif t.weekday() == 2 and pq.get("evergreen"):
+        ev = dict(pq["evergreen"])
+        q = {"feed": dict(ev, kind="breakdown"), "caption": ev.get("caption", ""),
+             "tags": ev.get("tags", []), "collaborators": ev.get("collaborators", [])}
+        q = {k: v for k, v in q.items() if v}
+    if not q:
+        return False
+    q.update({"date": date.isoformat(), "hold": False, "carried_from": prev})
+    for k in ("evergreen", "stories", "reel_caption", "story_time", "reel_time"):
+        q.pop(k, None)
+    save(p["queue"], q)
+    try:
+        commit_push(f"Instagram for {date.isoformat()} (carried over from {prev})", p["queue"])
+    except BaseException as e:
+        print(f"::warning title=Carry-over not saved::{str(e)[:300]}")
+        return False
+    return True
+
+
 def auto_queue(t, p):
     """Safety net for when the 1:30pm Instagram build missed the day (e.g. the morning deals landed late).
     Uses only facts already verified in deals.json. No tags, no evergreen. Returns True if it wrote a file."""
@@ -176,11 +210,16 @@ def auto_queue(t, p):
     x = lambda d: str(d.get("deal", "")).replace(" \u00d7 ", " x ").replace("\u00d7", "x")
     today = [d for d in deals if d.get("added") == date]
     lead = next((d for d in today if d.get("lead")), None)
+    if t.weekday() == 4:   # Friday week in deals: no scan on Fridays, so use the week's leads
+        monday = (t.date() - timedelta(days=4)).isoformat()
+        leads = [d for d in deals if d.get("lead") and monday <= str(d.get("added", "")) <= date]
+        lead = leads[0] if leads else None
+    elif t.weekday() not in (1, 3):
+        return False
     if not lead:
         return False
     tags = "#sportsbusiness #sponsorship #sportsmarketing #partnerships"
     if t.weekday() == 4:
-        monday = (t.date() - timedelta(days=4)).isoformat()
         week = [d for d in deals if monday <= str(d.get("added", "")) <= date]
         week.sort(key=lambda d: (not d.get("lead"), str(d.get("added", ""))), reverse=False)
         items = [{"deal": x(d), "sub": _short(d.get("summary"), 80), "sport": d.get("sport", "")} for d in week[:5]]
@@ -226,12 +265,12 @@ def plan():
     out = {"date": date, "render": False, "post": False, "stats": False, "reason": ""}
     stats_state = load(ROOT / "instagram" / "stats" / "latest.json", {})
     out["stats"] = t.time() >= STATS_FROM and stats_state.get("date") != date
-    # Weekends only post when the weekend feature task has written a queue file.
-    if t.weekday() > 4 and not p["queue"].exists():
-        out["reason"] = "weekend, no feature queued"
+    if WEEKENDS_OFF and t.weekday() > 4:
+        out["reason"] = "weekend: no posting (the Sunday feature posts on Monday)"
     elif (ROOT / "instagram" / "PAUSE").exists():
         out["reason"] = "paused (instagram/PAUSE exists)"
-    elif not p["queue"].exists() and not (t.time() >= AUTO_FROM and auto_queue(t, p)):
+    elif not p["queue"].exists() and not carry_over(t, p) and not (
+            t.time() >= (dtime(6, 0) if t.weekday() == 4 else AUTO_FROM) and auto_queue(t, p)):
         out["reason"] = "no queue file for today yet"
     else:
         state = load(p["state"], {})

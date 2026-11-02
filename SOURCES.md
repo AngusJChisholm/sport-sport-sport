@@ -220,3 +220,26 @@ With deals down to two runs a week, each run is thorough. The usage-light limits
 - Accuracy gate: the verification subagent checks the lead AND every round-up deal in the post (not just the lead).
   Anything that fails is dropped from the post. Everything else logged to deals.json still needs its source page opened
   in the run, both parties and deal type matching, and the announcement date confirmed.
+
+### 6. Posting schedule (3 Nov 2026) - overrides any day or time in a run prompt
+- Mon: Feature (built by the Sunday feature run, posts Monday 12:30pm; the article still goes up Sunday)
+- Tue: Deals (scan + LinkedIn post at 6am, Instagram carousel 7pm; the Tuesday Instagram build also writes
+  the "evergreen" breakdown block, which now posts on Wednesday)
+- Wed: Data Drop (Tuesday's breakdown carousel, posts Wednesday 12:30pm; no scan, no LinkedIn post)
+- Thu: Deals (scan + LinkedIn post at 6am, Instagram carousel 7pm)
+- Fri: The week in deals (built automatically from the week's deals.json, posts 5pm; no scan, no LinkedIn post)
+- Sat/Sun: off. Nothing posts on weekends.
+The Thursday run (not Friday) adds the "Instagram this week" stats section to Angus's summary.
+The poster handles the carry-overs itself (tools/instagram_post.py); no run needs to write Monday's,
+Wednesday's or Friday's queue file.
+
+### 7. Scan deeper, recent deals only (3 Nov 2026) - overrides the 72-hour / 48-hour windows and the short source list
+The scan runs twice a week now, so it goes wider and deeper:
+- Window: every confirmed deal announced since the previous scan run (Tuesday covers back to the Thursday
+  run, Thursday back to the Tuesday run). There is no 48-hour lead rule: the lead is the biggest or most
+  interesting confirmed deal in that window, as long as it's recent and not already in deals.json.
+- Sources: all of the section 1 pages, plus SportBusiness, Sportcal, Mumbrella, mi-3 and the AFL, AFLW, NRL,
+  NRLW, A-Leagues, Cricket Australia, NBL, Super Netball, Rugby Australia, Football Australia, NZ Rugby and
+  Tennis Australia newsrooms (reached through WebSearch), plus 8 to 12 open-web backstop searches.
+- Accuracy rules and the accuracy gate are unchanged: confirmed deals only, one official source is enough
+  to log a deal, figures and "first/record" claims need an official release or two independent outlets.

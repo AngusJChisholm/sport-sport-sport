@@ -387,6 +387,8 @@ def feature_image(date):
 
 
 def build_feed(feed):
+    if feed.get("kind") == "breakdown":   # Wednesday Data Drop: the researched breakdown carousel
+        return build_evergreen(feed)
     global _BG_SRC
     c = feed.get("cover") or {}
     _BG_SRC = photo_src(feed.get("image") or deal_image(c), 400) if (c or feed.get("image")) else ""
@@ -588,7 +590,7 @@ def render(date):
         old.unlink()
 
     if q.get("feed", {}).get("kind") == "feature":
-        img = feature_image(date)
+        img = q["feed"]["cover"].get("image") or feature_image(q["feed"].get("feature_date") or date)
         if img:
             q["feed"]["cover"]["image"] = img
             for s in q.get("stories", []):
