@@ -32404,7 +32404,9 @@
    "url": "https://www.geelongcats.com.au/news/1505771/cats-renew-partnership-with-carlton-united-breweries",
    "term": 5,
    "ends": 2029,
-   "endsEst": true
+   "endsEst": true,
+   "tier": "Principal & major",
+   "status": "Renewal"
   },
   {
    "listed": "2026-10-30",
