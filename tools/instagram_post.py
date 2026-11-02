@@ -6,7 +6,8 @@
     python3 tools/instagram_post.py status   # shows today's queue and what has posted
 
 Stories and Reels are switched off (POST_STORIES / POST_REELS below).
-Schedule (Melbourne time): carousel Mon-Thu 7pm, Fri 6pm; Tuesday evergreen 5pm.
+Schedule (Melbourne time, from 3 Nov 2026): Mon feature, Tue deals, Wed data drop, Thu deals, Fri breakdown.
+Carousel Mon-Thu 7pm, Fri 6pm. Nothing on weekends.
 The queue file is written by the afternoon Instagram task (about 1:30pm), after Angus has
 had the morning to confirm the lead photo. Weekends (only when the weekend feature task writes a
 queue file): story 9am (set by the queue's "story_time"), carousel 10am, Reel 6pm. Pause everything by creating instagram/PAUSE,

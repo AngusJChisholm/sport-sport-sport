@@ -36,15 +36,15 @@ Every lead deal gets its own article page in `articles/`. Add an `article` to th
 
 Then run `python3 tools/build_articles.py` to generate the pages. The homepage links each lead to its article automatically.
 
-## Weekend features
+## Features (Mon feature, Wed data drop, Fri breakdown)
 
-Every Saturday and Sunday a scheduled task writes one sport business feature (an explainer, deep dive or trend piece) into `features.json`:
+Every Monday, Wednesday and Friday a scheduled task writes one piece into `features.json`: Monday a sport business feature (explainer, deep dive or trend piece), Wednesday a data drop built from our own archive, Friday a breakdown of the week's best deal. Set `"label"` to `"Feature"`, `"Data drop"` or `"Breakdown"`. Deals post Tuesday and Thursday. Nothing posts on weekends. See SOURCES.md rule 6.
 
 ```json
-{"date":"2026-10-18","headline":"Short punchy headline.","descriptor":"One line under the headline","topic":"Explainer","sport":"AFL","region":"ANZ","image":"https://images.unsplash.com/photo-...","related":["Brand × Property"],"article":{"standfirst":"Hook.","body":["Paragraph."],"close":"Closing line."},"sources":["https://..."]}
+{"date":"2026-10-18","label":"Feature","headline":"Short punchy headline.","descriptor":"One line under the headline","topic":"Explainer","sport":"AFL","region":"ANZ","image":"https://images.unsplash.com/photo-...","related":["Brand × Property"],"article":{"standfirst":"Hook.","body":["Paragraph."],"close":"Closing line."},"sources":["https://..."]}
 ```
 
-`python3 tools/build_articles.py` builds its page in `articles/` (labelled "Weekend feature"). Features show in Key stories and the "Weekend reads" row on the homepage, but never in the deal archive. `related` lists deals already in `deals.json`; they appear under the article. Every feature has a photo, and slide 1 of its Instagram carousel (and the story) always uses the same photo as the article, pulled from `features.json`. The same task queues a weekend Instagram carousel (`"kind": "feature"`), story and Reel: story 9am, carousel 10am, Reel 6pm.
+`python3 tools/build_articles.py` builds its page in `articles/` (labelled with its `label`). Features show in Key stories and the "Features" row on the homepage, but never in the deal archive. `related` lists deals already in `deals.json`; they appear under the article. Every feature has a photo, and slide 1 of its Instagram carousel (and the story) always uses the same photo as the article, pulled from `features.json`. The same task queues an Instagram carousel (`"kind": "feature"`, posts 7pm Mon/Wed, 6pm Fri) and a LinkedIn spec in `instagram/linkedin/<date>.json`.
 
 ## Logos, brand pages and club pages
 

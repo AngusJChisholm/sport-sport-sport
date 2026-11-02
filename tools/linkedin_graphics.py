@@ -5,6 +5,7 @@
 spec.json: {"date":"YYYY-MM-DD","headline_lines":["MONACO'S","SHIRT FOR","EUROPE","ONLY."],
  "highlight":"EUROPE","deal":"Brand x Property","descriptor":"Deal type",
  "others":[{"deal":"Brand x Property","sub":"Sport - deal type"}, ...]}
+Optional "label": slide 2 heading (default "Recent deals"), e.g. "The numbers" on a data drop.
 Optional "image": the lead's photo ("assets/..." file or an images.unsplash.com link,
 same as its deals.json "image"). Slide 1 then sits on the photo; leave it out for plain black.
 Writes sss-<date>-slide1.png (headline) and sss-<date>-slide2.png (other deals).
@@ -66,7 +67,7 @@ body{{background:#fff;color:#000}}
 .r{{padding:27px 0 30px;border-bottom:1px solid #DEDED8}}.r:last-child{{border-bottom:0}}
 .r b{{display:block;font-weight:800;font-size:47px;font-stretch:96%;line-height:52px;text-transform:uppercase}}
 .r span{{display:block;font-weight:400;font-size:27.5px;color:#5C5C57;margin-top:14px}}</style>
-<div class="lab">Recent deals</div><div class="rows">{rows}</div>
+<div class="lab">{e(s.get("label") or "Recent deals")}</div><div class="rows">{rows}</div>
 <img class="wm" src="data:image/svg+xml;base64,{wordmark('black')}">"""
 
 def render(spec, out):

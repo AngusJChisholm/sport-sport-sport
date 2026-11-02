@@ -234,7 +234,7 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 </div></section>
 
 <section class="sec" id="features" hidden><div class="wrap">
-<div class="sh"><div><span class="lbl mute-l">Weekend features</span><h2 class="disp">Weekend reads.</h2></div><span class="lbl mute-l" id="fCount"></span></div>
+<div class="sh"><div><span class="lbl mute-l">Features</span><h2 class="disp">The long reads.</h2></div><span class="lbl mute-l" id="fCount"></span></div>
 <div class="grid" id="fList"></div>
 </div></section>
 
@@ -244,7 +244,7 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 </div></section>
 
 <section class="dk fo" id="follow"><div class="wrap">
-<span class="lbl mute" style="display:block;margin-bottom:28px">Daily, Monday to Friday</span>
+<span class="lbl mute" style="display:block;margin-bottom:28px">Deals, data and features</span>
 <h2 class="disp">All things sport business. <span class="g">Follow along on LinkedIn and Instagram.</span></h2>
 <div class="fo-a" id="foA"></div>
 <div class="nl" id="nl"><div><h3>The weekly <span class="v">wrap.</span></h3><p>Every deal from the week, the ones that matter and why, in your inbox each Friday. Free.</p></div><div class="nl-f" id="nlF"><span class="btn nl-soon" aria-disabled="true">Coming soon</span><small>The weekly wrap launches shortly. Follow on LinkedIn or Instagram in the meantime.</small></div></div>
@@ -339,16 +339,16 @@ function hero(){
   const lead=leads[0]||dated[0];
   if(!lead)return null;
   // Newest article first (by the day it went up here), then back through the archive.
-  // Weekend features (features.json) sit in the same pool as the deal articles.
+  // Features (features.json) sit in the same pool as the deal articles.
   let pool=[...dated.filter(d=>d.article),...FEATS].sort((a,b)=>pKey(b).localeCompare(pKey(a))||(b.lead?1:0)-(a.lead?1:0)).slice(0,8);
   if(!pool.length)pool=[lead];
   const big=d=>{const x=href(d),tag=x?"a":"div";
     const im=imgUrl(d,1600);const sv=stripVars(d,true);
-    return `<${tag} class="kt k1${im?" img":""}"${attrs(d)}${im?` style="--img:${esc(im)}${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${d.feature?"Weekend feature":"Latest"} · ${esc(fmtLong(asPosted(d)))}</span><h1>${esc(d.headline||d.deal)}</h1><p class="kx">${esc(d.deal+(d.type?" · "+d.type:""))}</p>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}<div class="kf"><div class="tags">${tags(d)}</div>${x?`<span class="more">Read the full story →</span>`:""}</div></${tag}>`};
+    return `<${tag} class="kt k1${im?" img":""}"${attrs(d)}${im?` style="--img:${esc(im)}${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${d.feature?esc(d.label||"Feature"):"Latest"} · ${esc(fmtLong(asPosted(d)))}</span><h1>${esc(d.headline||d.deal)}</h1><p class="kx">${esc(d.deal+(d.type?" · "+d.type:""))}</p>${d.summary?`<p class="dek">${esc(d.summary)}</p>`:""}<div class="kf"><div class="tags">${tags(d)}</div>${x?`<span class="more">Read the full story →</span>`:""}</div></${tag}>`};
   const small=(d,i)=>{const tag=href(d)?"a":"div";
     const im=imgUrl(d,800);
     const sv=stripVars(d,false);
-    return `<${tag} class="kt k${i+1}${im?" img":""}"${attrs(d)}${im?` style="--img:${esc(im)}${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${d.feature?"Feature · ":""}${esc(fmtShort(asPosted(d)))} · ${esc(d.sport)}</span><h2>${esc(d.headline||d.deal)}</h2><p class="kx">${esc(d.deal)}</p></${tag}>`};
+    return `<${tag} class="kt k${i+1}${im?" img":""}"${attrs(d)}${im?` style="--img:${esc(im)}${sv?";"+sv.slice(8,-1):""}"`:sv}><span class="kd">${d.feature?esc(d.label||"Feature")+" · ":""}${esc(fmtShort(asPosted(d)))} · ${esc(d.sport)}</span><h2>${esc(d.headline||d.deal)}</h2><p class="kx">${esc(d.deal)}</p></${tag}>`};
   $("ks").innerHTML=pool.map((d,i)=>i?small(d,i):big(d)).join("");
   $("heroCount").textContent=`${pool.length} latest stories`;
   return lead;
@@ -365,7 +365,7 @@ function features(){
   const list=FEATS.slice().sort((a,b)=>b.date.localeCompare(a.date)).slice(0,6);
   $("fCount").textContent=`${FEATS.length} feature${FEATS.length===1?"":"s"}`;
   $("fList").innerHTML=list.map(d=>`<a class="card"${attrs(d)}><div class="tags"><span class="tag">${esc(d.sport)}</span>${d.region?`<span class="tag r">${esc(d.region)}</span>`:""}</div><h3>${esc(d.headline)}</h3><p>${esc(d.summary||d.deal||"")}</p><span class="more">Read the feature →</span></a>`).join("")
-    +(list.length%3?`<div class="card all" style="--span:${3-(list.length%3)}"><span class="lbl">Every weekend</span><h3>New features Saturday and Sunday.</h3></div>`:"");
+    +(list.length%3?`<div class="card all" style="--span:${3-(list.length%3)}"><span class="lbl">Every week</span><h3>Features, data drops and deal breakdowns.</h3></div>`:"");
   $("features").hidden=false;
 }
 function columns(){
@@ -446,11 +446,11 @@ function wire(){
   $("nav").onclick=e=>{if(e.target.tagName==="A"){$("nav").classList.remove("open");$("menu").setAttribute("aria-expanded","false");$("menu").textContent="Menu"}};
   $("yr").textContent=new Date().getFullYear();
 }
-// Weekend features are optional: if features.json is missing the page carries on with deals only.
+// Features are optional: if features.json is missing the page carries on with deals only.
 const featsP=fetch("features.json",{cache:"no-store"}).then(r=>r.ok?r.json():{}).then(j=>{
   FEATS=(j.features||[]).filter(f=>f.slug&&f.article&&f.date&&f.headline).map(f=>({date:f.date,added:f.date,headline:f.headline,
     deal:f.descriptor||"",sport:f.topic||f.sport||"Feature",region:f.region||"",slug:f.slug,article:true,image:f.image,
-    summary:f.article.standfirst,feature:true}))}).catch(()=>{});
+    summary:f.article.standfirst,feature:true,label:f.label||"Feature"}))}).catch(()=>{});
 const clubsP=fetch("instagram/colours.json").then(r=>r.ok?r.json():{}).then(j=>{CLUBS=j.teams||[]}).catch(()=>{});
 const logosP=L?L.load().catch(()=>{}):Promise.resolve();
 fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>Promise.all([clubsP,featsP,logosP]).then(()=>data)).then(data=>{

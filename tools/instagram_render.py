@@ -376,7 +376,7 @@ def photo_layer(img, w, shade):
 
 
 def feature_image(date):
-    """The weekend feature's article photo (features.json), so slide 1 always matches the article."""
+    """The feature's article photo (features.json), so slide 1 always matches the article."""
     try:
         for f in json.loads((ROOT / "features.json").read_text()).get("features", []):
             if f.get("date") == date and f.get("image"):
@@ -412,11 +412,11 @@ def build_feed(feed):
         return slides
 
     if feed.get("kind") == "feature":
-        # Weekend feature: cover, 2-4 point slides, close. The Reel is made from these slides as usual.
+        # Feature (Mon feature, Wed data drop, Fri breakdown): cover, 2-4 point slides, close. The Reel is made from these slides as usual.
         body = feed.get("slides", [])[:4]
         total = len(body) + 2
         cover = dict(feed["cover"])
-        cover.setdefault("tag", "Weekend feature")
+        cover.setdefault("tag", "Feature")
         slides.append(feed_cover(cover))
         for n, sl in enumerate(body, 2):
             rows = [{"main": x} if isinstance(x, str) else x for x in sl.get("rows", [])][:3]

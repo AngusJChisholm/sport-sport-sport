@@ -188,3 +188,22 @@ The lead's deals.json "image" is the single photo for the website, LinkedIn and 
   the deals.json "image".
 - Before queuing Instagram, check the two match. If the LinkedIn spec has an Unsplash photo and deals.json
   doesn't, Angus picked the LinkedIn one: copy it into deals.json.
+
+### 6. Weekly schedule (from 3 Nov 2026)
+SSS no longer posts deals every weekday. The week is:
+- Monday: Feature (website article, LinkedIn post + graphics, Instagram carousel). Task: "Sport Sport Sport Monday feature".
+- Tuesday: Deals. Task: "Sport Sport Sport deals (Tue/Thu)".
+- Wednesday: Data drop - one insight built from our own archive (deals.json, coverage.json, partners and properties data). Task: "Sport Sport Sport Wednesday data drop".
+- Thursday: Deals. Same task as Tuesday.
+- Friday: Deal breakdown - the week's best deal unpacked in depth. Task: "Sport Sport Sport Friday breakdown".
+- Weekends: nothing posts.
+Deal run windows: Tuesday covers everything announced since the Thursday run (the last 5 days, Fri to Tue); Thursday
+covers the last 3 days (Tue to Thu). Wherever a prompt or the skill says "last 72 hours", "last 48 hours" or "last 24
+hours", use that window instead, for logging, the lead and the round-up. The lead should be the strongest confirmed deal
+in the window, favouring the freshest when two are close.
+Monday, Wednesday and Friday posts are features: each one is an entry in features.json with "label" set to "Feature",
+"Data drop" or "Breakdown", built with tools/build_articles.py, plus an Instagram queue file with "kind": "feature" (slide 1
+pulls the photo from features.json) and a LinkedIn spec in instagram/linkedin/<date>.json (slide 2 heading set with
+"label"). Instagram posts Mon-Thu 7pm and Fri 6pm. The Tuesday evergreen and Friday "week in deals" carousels are
+retired. The Friday breakdown message carries the "Instagram this week" stats.
+Never write wording (site, posts, captions) that promises daily or every-weekday posting.

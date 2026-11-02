@@ -1,4 +1,4 @@
-"""Build one static article page per lead deal, plus one per weekend feature.
+"""Build one static article page per lead deal, plus one per feature (features.json).
 
 Reads deals.json, and for every deal with "lead": true and an "article" object,
 writes articles/<slug>.html from tools/article_template.html. Then reads features.json
@@ -132,7 +132,7 @@ def main():
             .replace("{{FOLLOW}}", follow)
             .replace("{{YEAR}}", e["date"][:4])
             .replace("{{LABEL}}", "Lead deal")
-            .replace("{{FOLLOWLBL}}", "Daily, Monday to Friday")
+            .replace("{{FOLLOWLBL}}", "Deals, data and features")
             .replace("{{FOLLOWHEAD}}", 'One lead deal a day. <span class="g">Every deal, filed.</span>')
         )
         (out_dir / f'{e["slug"]}.html').write_text(page, encoding="utf-8")
@@ -150,7 +150,7 @@ def deal_key(name):
 
 
 def build_features(deals, tpl, out_dir, follow):
-    """Weekend features: features.json -> articles/<slug>.html, labelled "Weekend feature"."""
+    """Weekend features: features.json -> articles/<slug>.html, labelled with its "label" (Feature, Data drop or Breakdown)."""
     fpath = ROOT / "features.json"
     if not fpath.exists():
         return
@@ -212,8 +212,8 @@ def build_features(deals, tpl, out_dir, follow):
             .replace("{{SAMEDAY}}", related)
             .replace("{{FOLLOW}}", follow)
             .replace("{{YEAR}}", f["date"][:4])
-            .replace("{{LABEL}}", "Weekend feature")
-            .replace("{{FOLLOWLBL}}", "Deals weekdays, features weekends")
+            .replace("{{LABEL}}", esc(f.get("label") or "Feature"))
+            .replace("{{FOLLOWLBL}}", "Deals, data and features")
             .replace("{{FOLLOWHEAD}}", 'All things sport business. <span class="g">Deals, news and analysis. Global &amp; ANZ.</span>')
         )
         (out_dir / f'{f["slug"]}.html').write_text(page, encoding="utf-8")
