@@ -153,7 +153,8 @@ COVER_CSS = """
 
 COVER_CSS += """
 /* Cover fading to white */
-.cover.cl .cv-fade{background:linear-gradient(180deg,rgba(0,0,0,.3) 0%,rgba(0,0,0,0) 12%,rgba(255,255,255,0) 48%,rgba(255,255,255,.85) 60%,#fff 70%,#fff 100%)}
+.cover.cl .cv-fade{background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 10%,rgba(255,255,255,0) 60%,rgba(255,255,255,.88) 71%,#fff 79%,#fff 100%)}
+.cover.cl .cv-ph{background-position:center 35%}
 .cover.cl .cv-low{color:#000}
 .cover.cl .cv-brand span{color:#000;background:#D2FF3C;padding:.1em .3em 0}
 .cover.cl .cv-h .v{color:#000;background:#D2FF3C;padding:0 .06em}
@@ -240,7 +241,7 @@ DARK_CSS += """
 .lt .d-pill{background:#000;color:#fff}
 .lt .v{color:#000;background:#D2FF3C;padding:0 .06em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .lt .d-num{color:#000}
-.wk.lt .cv-fade{background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 42%,rgba(255,255,255,.85) 56%,#fff 66%,#fff 100%)}
+.wk.lt .cv-fade{background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 52%,rgba(255,255,255,.88) 64%,#fff 73%,#fff 100%)}
 .wk.lt .d-top{text-shadow:none}
 .wk.lt .d-top .d-brand{color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.7),0 0 18px rgba(0,0,0,.55)}
 .wk.lt.nophoto .d-top .d-brand{color:#000;text-shadow:none}
