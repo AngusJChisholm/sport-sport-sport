@@ -5,6 +5,52 @@
  },
  "deals": [
   {
+   "date": "2026-11-01",
+   "added": "2026-11-02",
+   "deal": "McDonald's × NZ Warriors",
+   "sport": "NRL",
+   "type": "Restaurant partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Maccas joins the Warriors.",
+   "summary": "McDonald's NZ joins the One NZ Warriors as restaurant partner on a three-year deal, with the golden arches on the shorts of all six Warriors teams.",
+   "url": "https://www.warriors.kiwi/news/2026/11/01/mcdonalds-joins-one-nz-warriors-in-new-partnership/",
+   "image": "assets/img/2026-11-02-mcdonalds-nz-warriors.jpg",
+   "imageCredit": "One NZ Warriors",
+   "article": {
+    "standfirst": "McDonald's has joined the One NZ Warriors on a three-year deal, and the golden arches are going on the shorts.",
+    "body": [
+     "McDonald's New Zealand has become the One NZ Warriors' restaurant partner on a three-year deal announced on 1 November. The money wasn't disclosed. The golden arches will sit on the left back of the shorts for all six Warriors teams: the NRL and NRLW sides, plus the NSW Cup, Jersey Flegg Cup, SG Ball Cup and Harold Matthews Cup squads.",
+     "That reach through the pathway grades is the detail worth noticing. A lot of club deals live on the top-grade jersey and nowhere else. This one puts the brand on every team the club fields, from the juniors up to the NRL squad.",
+     "The timing suits McDonald's. The announcement lines up with 50 years since its first New Zealand restaurant opened in Porirua in 1976. The company says it now runs almost 180 outlets across the country, with more than 90 per cent of them owned by franchisees. A club with a national following and a young supporter base is a natural place to mark a milestone like that.",
+     "On the club side, the restaurant category has had a long-serving name in it. Wendy's has been a Warriors partner since 2008 and is described in the club's release as the outgoing partner. The club's CEO Cameron George thanked Wendy's for almost 20 years of support. Neither release says McDonald's takes over from Wendy's, so we won't either.",
+     "What to watch next is how the arches show up in the club's marketing once the new season gets closer, and whether the pathway teams get the same activation as the NRL side. The Warriors have kept adding commercial partners this year, and a brand this size in the quick-service category gives the club another big name to build around."
+    ],
+    "close": "Same arches, every grade, three years."
+   },
+   "slug": "2026-11-02-mcdonald-s-nz-warriors"
+  },
+  {
+   "date": "2026-10-30",
+   "added": "2026-11-02",
+   "deal": "IBM × USTA",
+   "sport": "Tennis",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "IBM extends as the US Open's Official AI and Cloud Partner for five years through 2031, continuing a 35-year relationship.",
+   "url": "https://ministryofsport.com/usta-and-ibm-announce-five-year-extension-to-securing-ai-and-cloud-partnership-through-2031/"
+  },
+  {
+   "date": "2026-10-28",
+   "added": "2026-11-02",
+   "deal": "Mimosa Homes × Melbourne Stars",
+   "sport": "Cricket",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Mimosa Homes becomes Official Residential Home Building Partner and Official Matchday Presenting Partner of the Stars for two WBBL and BBL seasons.",
+   "url": "https://www.melbournestars.com.au/news/4600058/stars-at-home-with-mimosa"
+  },
+  {
    "date": "2026-10-30",
    "added": "2026-10-30",
    "deal": "OXEN × Dolphins",
