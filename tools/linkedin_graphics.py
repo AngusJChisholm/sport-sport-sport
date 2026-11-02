@@ -52,7 +52,7 @@ body{{background:#1a1a1a}}
 .hv{{background:#D2FF3C;color:#000;padding:0 .08em;text-shadow:none}}
 .h{{position:absolute;left:94px;right:97px;top:256px;font-weight:800;font-size:140px;font-stretch:94%;line-height:127px;text-transform:uppercase;letter-spacing:-.005em;text-shadow:0 3px 24px rgba(0,0,0,.35)}}
 .d{{position:absolute;left:97px;bottom:100px;font-weight:600;font-size:28px;line-height:43px;letter-spacing:.13em;text-transform:uppercase;max-width:700px;text-shadow:0 2px 14px rgba(0,0,0,.5)}}</style>
-{bg}<div class="lab">Deal of the day</div><div class="h">{lines}</div>
+{bg}<div class="h">{lines}</div>
 <div class="d">{e(s['deal'])}<br>{e(s['descriptor'])}</div>
 <img class="wm" src="data:image/svg+xml;base64,{wordmark()}">"""
 
@@ -66,7 +66,7 @@ body{{background:#fff;color:#000}}
 .r{{padding:27px 0 30px;border-bottom:1px solid #DEDED8}}.r:last-child{{border-bottom:0}}
 .r b{{display:block;font-weight:800;font-size:47px;font-stretch:96%;line-height:52px;text-transform:uppercase}}
 .r span{{display:block;font-weight:400;font-size:27.5px;color:#5C5C57;margin-top:14px}}</style>
-<div class="lab">Today's other deals</div><div class="rows">{rows}</div>
+<div class="lab">Recent deals</div><div class="rows">{rows}</div>
 <img class="wm" src="data:image/svg+xml;base64,{wordmark('black')}">"""
 
 def render(spec, out):

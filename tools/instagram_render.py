@@ -180,7 +180,7 @@ def feed_cover(c):
     meta = (f'<b>{pair}</b> &middot; ' if src and deal else "") + esc(c.get("descriptor", ""))
     return f"""<style>{COVER_CSS}</style><div class="frame cover{' cl' if COVER_LIGHT else ''}{'' if src else ' np'}" style="background:{'#fff' if COVER_LIGHT else '#000'}">{top}<div class="cv-fade"></div>
 <div class="cv-reg">{esc(c.get('region',''))}</div>
-<div class="cv-low"><div class="cv-brand">Sport Sport Sport <span>/ {esc(c.get('tag') or 'Deal of the day')}</span></div>
+<div class="cv-low">
 <h1 class="cv-h" data-fit="{240 if src else 560}" data-min="56">{highlight(c['headline'], c.get('highlight'))}</h1>
 <div class="cv-meta">{meta}</div>
 <div class="cv-swipe">Swipe &raquo;</div></div>
@@ -259,7 +259,8 @@ def dk_bg():
 
 
 def dk_top(label, n, total, bg=True):
-    return (dk_bg() if bg else "") + f'<div class="d-top"><div class="d-brand">Sport Sport Sport <span>/ {esc(label)}</span></div></div>'
+    """No section labels on the slides any more (Angus, 2 Nov 2026): headlines only."""
+    return dk_bg() if bg else ""
 
 
 def dk_foot(text, n=None, total=None):
@@ -290,7 +291,7 @@ def others_slide(others, n, total, edge=None):
         rows.append('<div class="d-row">' + (f'<span class="n s">{esc(sport)}</span>' if sport else "")
                     + f'<b>{esc(o["deal"])}</b>' + (f'<span class="x">{esc(rest)}</span>' if rest else "") + "</div>")
     return f"""<style>{DARK_CSS}</style><div class="frame dk{' lt' if LIGHT else ''}">{dk_top("Today's other deals", n, total)}
-<div class="d-mid"><div class="d-rows" data-fit="960" data-min="8" style="font-size:21px">{"".join(rows)}</div></div>
+<div class="d-mid"><h2 class="d-h">Recent deals.</h2><div class="d-rule"></div><div class="d-rows" data-fit="760" data-min="8" style="font-size:21px">{"".join(rows)}</div></div>
 {dk_foot(SITE_LABEL, n, total)}</div>"""
 
 
