@@ -151,6 +151,18 @@ COVER_CSS = """
 """
 
 
+COVER_CSS += """
+/* Cover fading to white */
+.cover.cl .cv-fade{background:linear-gradient(180deg,rgba(0,0,0,.3) 0%,rgba(0,0,0,0) 12%,rgba(255,255,255,0) 48%,rgba(255,255,255,.85) 60%,#fff 70%,#fff 100%)}
+.cover.cl .cv-low{color:#000}
+.cover.cl .cv-brand span{color:#000;background:#D2FF3C;padding:.1em .3em 0}
+.cover.cl .cv-h .v{color:#000;background:#D2FF3C;padding:0 .06em}
+.cover.cl .cv-meta{color:#5C5C57}
+.cover.cl .cv-meta b{color:#000}
+.cover.cl .cv-swipe{background:#000;color:#fff}
+"""
+
+
 def feed_cover(c):
     """Photo-led cover (Front Office Sports style): full-bleed photo, fade to black, centred text in the bottom third."""
     src = photo_src(deal_image(c), FEED_W) if (c.get("image") or c.get("deal")) else ""
@@ -163,7 +175,7 @@ def feed_cover(c):
         bg = "#161616" if bg == VOLT else bg
         top = f'<div class="cv-ph" style="background:{bg}"></div>' + (f'<div class="cv-big">{pair}</div>' if deal else "")
     meta = (f'<b>{pair}</b> &middot; ' if src and deal else "") + esc(c.get("descriptor", ""))
-    return f"""<style>{COVER_CSS}</style><div class="frame cover" style="background:#000">{top}<div class="cv-fade"></div>
+    return f"""<style>{COVER_CSS}</style><div class="frame cover{' cl' if COVER_LIGHT else ''}" style="background:{'#fff' if COVER_LIGHT else '#000'}">{top}<div class="cv-fade"></div>
 <div class="cv-reg">{esc(c.get('region',''))}</div>
 <div class="cv-low"><div class="cv-brand">Sport Sport Sport <span>/ {esc(c.get('tag') or 'Deal of the day')}</span></div>
 <h1 class="cv-h" data-fit="240" data-min="56">{highlight(c['headline'], c.get('highlight'))}</h1>
@@ -181,6 +193,10 @@ def edge_bar(colour):
 # Black background, centred condensed type, volt accents, white pill, white wordmark.
 DARK_CSS = """
 .frame.dk{background:#000;color:#fff;padding:64px!important;display:flex;flex-direction:column;align-items:center;text-align:center}
+.dk .d-bg{position:absolute!important;inset:-80px;z-index:0!important;background-position:center;background-size:cover;filter:blur(48px) saturate(1.15) brightness(.32)}
+.dk .d-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.55))}
+.frame.dk{position:relative;overflow:hidden}
+.dk>*:not(.d-bg){position:relative;z-index:1}
 .dk .d-top{width:100%;display:flex;justify-content:center;position:relative}
 .dk .d-brand{font-weight:800;font-size:28px;letter-spacing:.14em;text-transform:uppercase;font-stretch:90%}
 .dk .d-brand span{color:#D2FF3C}
@@ -207,15 +223,45 @@ DARK_CSS = """
 .wk .d-num{font-weight:800;font-size:150px;font-stretch:68%;line-height:.85;color:#D2FF3C}
 .wk.nophoto .d-low{top:200px;justify-content:center}
 """
+DARK_CSS += """
+/* White theme for inner slides. Volt is only ever a fill behind black type on white. */
+.frame.dk.lt{background:#fff;color:#000}
+.lt .d-brand span{color:#000;background:#D2FF3C;padding:.1em .3em 0}
+.lt .d-rule{background:#000}
+.lt .d-row{border-top-color:#E2E2DC}
+.lt .d-row:last-child{border-bottom-color:#E2E2DC}
+.lt .d-row .n{color:#000}
+.lt .d-row .n.s{display:inline-block;background:#D2FF3C;padding:.3em .5em .2em}
+.lt .d-row span.x,.lt .d-sup{color:#5C5C57}
+.lt .d-meta{color:#7A7A74}
+.lt .d-pill{background:#000;color:#fff}
+.lt .v{color:#000;background:#D2FF3C;padding:0 .06em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.lt .d-num{color:#000}
+.wk.lt .cv-fade{background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 42%,rgba(255,255,255,.85) 56%,#fff 66%,#fff 100%)}
+.wk.lt .d-top{text-shadow:none}
+.wk.lt .d-top .d-brand{color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.5)}
+.wk.lt.nophoto .d-top .d-brand{color:#000;text-shadow:none}
+"""
 
 
-def dk_top(label, n, total):
-    return f'<div class="d-top"><div class="d-brand">Sport Sport Sport <span>/ {esc(label)}</span></div></div>'
+
+INNER_BG = False  # set True to put the lead photo, blurred and darkened, behind inner slides
+LIGHT = True      # inner slides: white background (Angus is moving SSS to white)
+COVER_LIGHT = False  # cover fades to white instead of black
+_BG_SRC = ""
+
+
+def dk_bg():
+    return f'<div class="d-bg" style="background-image:url(\'{_BG_SRC}\')"></div>' if INNER_BG and _BG_SRC else ""
+
+
+def dk_top(label, n, total, bg=True):
+    return (dk_bg() if bg else "") + f'<div class="d-top"><div class="d-brand">Sport Sport Sport <span>/ {esc(label)}</span></div></div>'
 
 
 def dk_foot(text, n=None, total=None):
     count = f"{n} / {total}" + (" &middot; " if text else "") if n else ""
-    return f'<div class="d-foot">{wordmark("white")}<div class="d-meta">{count}{esc(text)}</div></div>'
+    return f'<div class="d-foot">{wordmark("black" if LIGHT else "white")}<div class="d-meta">{count}{esc(text)}</div></div>'
 
 
 def rows_slide(label, title, rows, n, total, footer_right="", edge=None):
@@ -225,7 +271,7 @@ def rows_slide(label, title, rows, n, total, footer_right="", edge=None):
         + (f'<span class="x">{esc(r.get("sub"))}</span>' if r.get("sub") else "") + "</div>"
         for i, r in enumerate(rows, 1))
     title_html = f'<h2 class="d-h" data-fit="300" data-min="56">{esc(title)}</h2><div class="d-rule"></div>' if title else ""
-    return f"""<style>{DARK_CSS}</style><div class="frame dk">{dk_top(label, n, total)}
+    return f"""<style>{DARK_CSS}</style><div class="frame dk{' lt' if LIGHT else ''}">{dk_top(label, n, total)}
 <div class="d-mid">{title_html}<div class="d-rows" data-fit="{640 if title else 900}" data-min="9">{rows_html}</div></div>
 {dk_foot(footer_right, n, total)}</div>"""
 
@@ -238,9 +284,9 @@ def others_slide(others, n, total, edge=None):
         sport, _, rest = sub.partition(" - ")
         if not rest:
             sport, rest = "", sub
-        rows.append('<div class="d-row">' + (f'<span class="n">{esc(sport)}</span>' if sport else "")
+        rows.append('<div class="d-row">' + (f'<span class="n s">{esc(sport)}</span>' if sport else "")
                     + f'<b>{esc(o["deal"])}</b>' + (f'<span class="x">{esc(rest)}</span>' if rest else "") + "</div>")
-    return f"""<style>{DARK_CSS}</style><div class="frame dk">{dk_top("Today's other deals", n, total)}
+    return f"""<style>{DARK_CSS}</style><div class="frame dk{' lt' if LIGHT else ''}">{dk_top("Today's other deals", n, total)}
 <div class="d-mid"><div class="d-rows" data-fit="960" data-min="8" style="font-size:21px">{"".join(rows)}</div></div>
 {dk_foot(SITE_LABEL, n, total)}</div>"""
 
@@ -254,7 +300,7 @@ def feed_rows_slide(label, title, rows, n, total, footer_right=""):
 
 
 def feed_close(n, total):
-    return f"""<style>{DARK_CSS}</style><div class="frame dk">{dk_top("Follow", n, total)}
+    return f"""<style>{DARK_CSS}</style><div class="frame dk{' lt' if LIGHT else ''}">{dk_top("Follow", n, total)}
 <div class="d-mid"><h2 class="d-big">All things <span class="v">sport</span> business.</h2>
 <div class="d-sup">Global &amp; ANZ deals, every weekday</div><div class="d-pill">Follow for daily deals</div></div>
 {dk_foot(SITE_LABEL, n, total)}</div>"""
@@ -264,7 +310,7 @@ def week_item(item, idx, n, total, label="The week in deals"):
     """Week and evergreen slides: the cover layout, with the deal's photo when it has one."""
     src = photo_src(deal_image(item), FEED_W)
     top = (f'<div class="cv-ph" style="background-image:url(\'{src}\')"></div><div class="cv-fade"></div>') if src else ""
-    return f"""<style>{COVER_CSS}{DARK_CSS}</style><div class="frame dk wk{'' if src else ' nophoto'}">{top}{dk_top(label, n, total)}
+    return f"""<style>{COVER_CSS}{DARK_CSS}</style><div class="frame dk wk{' lt' if LIGHT else ''}{'' if src else ' nophoto'}">{top}{dk_top(label, n, total, bg=not src)}
 <div class="d-low"><div class="d-num">{idx:02d}</div>
 <h2 class="d-h" data-fit="300" data-min="56" style="font-size:118px">{esc(item['deal'])}</h2>
 <div class="d-sup" style="text-transform:none;letter-spacing:.02em;font-size:30px;line-height:1.35">{esc(item.get('sub',''))}</div>
@@ -336,6 +382,9 @@ def feature_image(date):
 
 
 def build_feed(feed):
+    global _BG_SRC
+    c = feed.get("cover") or {}
+    _BG_SRC = photo_src(feed.get("image") or deal_image(c), 400) if (c or feed.get("image")) else ""
     slides = []
     if feed.get("kind") == "week":
         items = feed["items"][:8]
@@ -398,6 +447,8 @@ def build_feed(feed):
 
 def build_evergreen(ev):
     """Weekly evergreen carousel: cover, one numbered slide per item, close."""
+    global _BG_SRC
+    _BG_SRC = ""
     items = ev["items"][:8]
     total = len(items) + 2
     label = ev.get("label", "The breakdown")
