@@ -153,6 +153,71 @@ def due(q, state, m, t):
     return out
 
 
+AUTO_FROM = dtime(16, 0)   # backup: if no queue file by 4pm on a weekday, build a plain one from deals.json
+
+
+def _short(text, n=70):
+    text = " ".join(str(text or "").split())
+    if len(text) <= n:
+        return text
+    cut = text[:n].rsplit(" ", 1)[0].rstrip(",;:-")
+    return cut + "..."
+
+
+def auto_queue(t, p):
+    """Safety net for when the 1:30pm Instagram build missed the day (e.g. the morning deals landed late).
+    Uses only facts already verified in deals.json. No tags, no evergreen. Returns True if it wrote a file."""
+    date = t.date().isoformat()
+    try:
+        deals = json.loads((ROOT / "deals.json").read_text())["deals"]
+    except Exception:
+        return False
+    x = lambda d: str(d.get("deal", "")).replace(" \u00d7 ", " x ").replace("\u00d7", "x")
+    today = [d for d in deals if d.get("added") == date]
+    lead = next((d for d in today if d.get("lead")), None)
+    if not lead:
+        return False
+    tags = "#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+    if t.weekday() == 4:
+        monday = (t.date() - timedelta(days=4)).isoformat()
+        week = [d for d in deals if monday <= str(d.get("added", "")) <= date]
+        week.sort(key=lambda d: (not d.get("lead"), str(d.get("added", ""))), reverse=False)
+        items = [{"deal": x(d), "sub": _short(d.get("summary"), 80), "sport": d.get("sport", "")} for d in week[:5]]
+        feed = {"kind": "week", "headline": "The week in deals.", "highlight": "week",
+                "descriptor": f"The biggest deals, w/e {t.day} {t.strftime('%B')}", "region": "Global & ANZ",
+                "items": items, "image": lead.get("image"), "deal": x(lead)}
+        caption = ("The week in deals.\n\n" + "\n".join(f"- {i['deal']}" for i in items)
+                   + "\n\nFull archive: link in bio\n\n" + tags)
+    else:
+        head = lead.get("headline") or "Deal of the day."
+        words = [w.strip(".,!?'") for w in head.split()]
+        rows = [{"main": lead.get("type", "Partnership"), "sub": _short(lead.get("summary"), 70)}]
+        if lead.get("term"):
+            rows.append({"main": f"{lead['term']}-year deal", "sub": f"Runs to {lead['ends']}" if lead.get("ends") and not lead.get("endsEst") else "Length confirmed"})
+        elif lead.get("ends") and not lead.get("endsEst"):
+            rows.append({"main": f"Through {lead['ends']}", "sub": "Confirmed end date"})
+        rows.append({"main": lead.get("sport", ""), "sub": "ANZ deal" if lead.get("region") == "ANZ" else "Global deal"})
+        others = [{"deal": x(d), "sub": f"{d.get('sport', '')} - {str(d.get('type', '')).lower()}"} for d in today if d is not lead][:5]
+        feed = {"kind": "daily",
+                "cover": {"tag": "Deal of the day", "region": lead.get("region", ""), "headline": head,
+                          "highlight": max(words, key=len) if words else "", "deal": x(lead), "descriptor": lead.get("type", "")},
+                "deal": {"title": x(lead), "rows": rows[:3]}}
+        if others:
+            feed["others"] = others
+        art = lead.get("article") or {}
+        caption = (head + "\n\n" + (art.get("standfirst") or lead.get("summary", "")) + "\n\n"
+                   + (("Also on the board: " + ", ".join(o["deal"] for o in others) + ".\n\n") if others else "")
+                   + "Full archive: link in bio\n\n" + tags)
+    q = {"date": date, "hold": False, "auto": True, "feed": feed, "caption": caption[:2000]}
+    save(p["queue"], q)
+    try:
+        commit_push(f"Instagram for {date} (auto backup)", p["queue"])
+    except BaseException as e:
+        print(f"::warning title=Auto queue not saved::{str(e)[:300]}")
+        return False
+    return True
+
+
 def plan():
     t = now()
     date = t.date().isoformat()
@@ -165,7 +230,7 @@ def plan():
         out["reason"] = "weekend, no feature queued"
     elif (ROOT / "instagram" / "PAUSE").exists():
         out["reason"] = "paused (instagram/PAUSE exists)"
-    elif not p["queue"].exists():
+    elif not p["queue"].exists() and not (t.time() >= AUTO_FROM and auto_queue(t, p)):
         out["reason"] = "no queue file for today yet"
     else:
         state = load(p["state"], {})
