@@ -28240,6 +28240,15 @@
    "domain": "skyracing.com.au",
    "cat": "Media & broadcast",
    "k": "b"
+  },
+  "destination-nsw": {
+   "name": "Destination NSW",
+   "cat": "Tourism & government",
+   "domain": "destinationnsw.com.au",
+   "aliases": [
+    "NSW Government",
+    "Feel New Sydney"
+   ]
   }
  },
  "leagues": [

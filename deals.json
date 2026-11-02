@@ -12559,7 +12559,7 @@
    "summary": "Liquid I.V. is hydration partner of the United Cup and Brisbane, Adelaide and Hobart events.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "url": "https://www.unitedcup.com/en/about/partners"
   },
   {
    "date": "2025-12-17",
@@ -44619,6 +44619,28 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on the event's official partners page.",
+   "url": "https://www.unitedcup.com/en/about/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Tourism WA × United Cup",
+   "sport": "Tennis",
+   "type": "Host partner",
+   "region": "ANZ",
+   "summary": "Government of Western Australia, via Tourism WA's Walking on a Dream brand, is listed as a strategic partner on the event's official partners page.",
+   "url": "https://www.unitedcup.com/en/about/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
+  },
+  {
+   "listed": "2026-11-02",
+   "deal": "Destination NSW × United Cup",
+   "sport": "Tennis",
+   "type": "Host partner",
+   "region": "ANZ",
+   "summary": "NSW Government, via Destination NSW's Feel New Sydney brand, is listed as a strategic partner on the event's official partners page.",
    "url": "https://www.unitedcup.com/en/about/partners",
    "tier": "Official partner",
    "status": "Current partner"
