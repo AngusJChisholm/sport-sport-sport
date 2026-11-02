@@ -1,0 +1,9 @@
+{
+ "at": "2026-11-02T22:58+11:00",
+ "date": "2026-11-02",
+ "hook": "maccas joins the warriors.",
+ "deleted": [],
+ "failed": [
+  "17917774614271645: Instagram API 400 on 17917774614271645: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAuthException\",\"fbtrace_id\":\"AmHMahfae0PjWgDhOgv0Xhn\"}}"
+ ]
+}
