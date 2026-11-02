@@ -90,3 +90,6 @@ footer{padding-block:clamp(56px,7vw,96px) 32px}
 .ft{grid-template-columns:minmax(0,1fr)}.ft-b{margin-top:48px}}
 @media (max-width:640px){.nav{gap:12px}.nav a{font-size:10.5px;letter-spacing:.06em}.hd{gap:14px}}
 @media (max-width:640px){.nav{gap:10px}.nav a{font-size:10px;letter-spacing:.03em}.gap{grid-template-columns:repeat(2,minmax(0,1fr))}.gap>div{min-height:90px;padding:12px}}
+/* Past partners: greyed out, years signed shown */
+.pt.past,.ar-r.past{opacity:.42;filter:grayscale(1)}
+.pt.past:hover,.ar-r.past:hover{opacity:.75}

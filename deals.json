@@ -1248,6 +1248,32 @@
    "status": "New"
   },
   {
+   "date": "2024-01-16",
+   "added": "2026-11-02",
+   "deal": "Peroni × Australian Open",
+   "sport": "Tennis",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Asahi renews Peroni as the Official Beer of the Australian Open in a multi-year deal, with Somersby as Official Cider.",
+   "url": "https://www.sportcal.com/sponsorship/asahi-renews-australian-open-partnership/",
+   "tier": "Official partner",
+   "status": "Renewal",
+   "ended": 2026
+  },
+  {
+   "date": "2021-01-08",
+   "added": "2026-11-02",
+   "deal": "Peroni × Australian Open",
+   "sport": "Tennis",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Peroni becomes the Official Beer of the Australian Open from 2021, with pouring rights across Melbourne Park.",
+   "url": "https://ausopen.com/node/156466",
+   "tier": "Official partner",
+   "status": "New",
+   "ended": 2026
+  },
+  {
    "date": "2026-10-20",
    "added": "2026-10-22",
    "deal": "FAGE × WTA Finals",
@@ -5237,9 +5263,9 @@
    "sport": "Tennis",
    "type": "Official supplier",
    "region": "ANZ",
-   "summary": "Official lifestyle outfitter from 2027.",
-   "url": "https://www.bandt.com.au/spotlight-on-sponsors-titans-ditch-lottery-office-logo-to-raise-awareness-for-youth-cancer/",
-   "tier": "Official partner",
+   "summary": "Official Lifestyle Outfitter of the Australian Open from 2027, replacing Ralph Lauren.",
+   "url": "https://ausopen.com/node/261979",
+   "tier": "Kit & apparel",
    "status": "New"
   },
   {
@@ -21177,7 +21203,8 @@
    "summary": "Red Bull brings Red Bull Bassline to the Australian Open",
    "url": "https://ministryofsport.com/australian-open-partners-with-red-bull-bassline/",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ended": true
   },
   {
    "date": "2025-01-07",
@@ -29798,7 +29825,8 @@
    "summary": "Chanel's first sports partnership of its kind",
    "url": "https://www.bandt.com.au/spotlight-on-sponsors-chanel-locks-in-first-of-its-kind-sports-partnership/",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ended": true
   },
   {
    "date": "2024-10-25",

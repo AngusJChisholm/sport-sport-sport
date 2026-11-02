@@ -21,6 +21,9 @@ Add new entries to the top of the `deals` list in `deals.json`:
 - `month` instead of `date` (e.g. `"2026-09"`) for deals where the exact day isn't known
 - No `date` or `month`, plus `"listed": "YYYY-MM-DD"`, for a current partner taken from the club's official partners page whose announcement can't be found. It shows as "Current partner" and sits at the bottom of the archive and profile pages. Swap in the real `date` once the announcement turns up
 
+- `ended` - for a partner that's no longer signed. Use the last year of the deal (e.g. `"ended": 2026`), or `true` if the year isn't confirmed. Mark every deal for that brand and property. On brand and property pages the partner is greyed out and shows the years they were signed (e.g. "Past partner · 2021-2026"). Never delete old partners: the history stays on the site
+- `since` - optional first year of a partnership, when it started before the first deal we've filed
+
 The newest dated lead story always becomes the hero, and the other deals from that same day fill the round-up.
 
 ## Lead deal articles

@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&display=swap">
-<link rel="stylesheet" href="assets/profile.css?v=3">
+<link rel="stylesheet" href="assets/profile.css?v=4">
 </head>
 <body data-id="clickhouse">
 <header class="dk"><div class="wrap hd">
@@ -109,12 +109,17 @@ Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()])
   // Who they've signed with: the other side of each deal, most deals first.
   const other=d=>onB(d)?d._p:d._b;
   const map=new Map();
-  mine.forEach(d=>{const o=other(d);if(!o)return;const m=map.get(o.slug)||{e:o,n:0,sports:new Set()};m.n++;if(d.sport)m.sports.add(d.sport);map.set(o.slug,m)});
-  const ps=[...map.values()].sort((a,b)=>b.n-a.n||a.e.name.localeCompare(b.e.name));
+  // A partner is past when every deal with them is marked "ended". Past partners are greyed and show the years they were signed.
+  const yr=d=>+(d.date||d.month||"").slice(0,4)||0;
+  mine.forEach(d=>{const o=other(d);if(!o)return;const m=map.get(o.slug)||{e:o,n:0,sports:new Set(),past:true,from:0,to:0};m.n++;if(d.sport)m.sports.add(d.sport);
+    if(!d.ended)m.past=false;const y=+d.since||yr(d);if(y&&(!m.from||y<m.from))m.from=y;if(typeof d.ended==="number"&&d.ended>m.to)m.to=d.ended;map.set(o.slug,m)});
+  const yrs=m=>m.from&&m.to?(m.from===m.to?String(m.from):`${m.from}-${m.to}`):String(m.from||m.to||"");
+  const pastOf=d=>{const o=other(d),m=o&&map.get(o.slug);return m&&m.past?m:null};
+  const ps=[...map.values()].sort((a,b)=>a.past-b.past||b.n-a.n||a.e.name.localeCompare(b.e.name));
   $("pLbl").textContent=kind==="Brand"?"Their sport partners":"Their brand partners";
   $("pHead").textContent=kind==="Brand"?"Who they've signed with.":"Who's signed with them.";
-  $("pCount").textContent=`${ps.length} partner${ps.length===1?"":"s"}`;
-  $("pGrid").innerHTML=ps.map(m=>`<a class="pt" href="${esc(L.page(m.e.slug))}">${L.mark(m.e,{px:64})}<b>${esc(m.e.name)}</b><span class="k">${m.n>1?m.n+" deals · ":""}${esc([...m.sports].join(", "))}</span></a>`).join("");
+  const nPast=ps.filter(m=>m.past).length;$("pCount").textContent=`${ps.length-nPast} current`+(nPast?` · ${nPast} past`:"");
+  $("pGrid").innerHTML=ps.map(m=>`<a class="pt${m.past?" past":""}" href="${esc(L.page(m.e.slug))}">${L.mark(m.e,{px:64})}<b>${esc(m.e.name)}</b><span class="k">${m.past?"Past partner"+(yrs(m)?" · "+esc(yrs(m)):""):(m.n>1?m.n+" deals · ":"")+esc([...m.sports].join(", "))}</span></a>`).join("");
   $("partners").hidden=!ps.length;
 
   // Category map (properties): partners by brand category, plus the common categories with nothing filed.
@@ -139,7 +144,8 @@ Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()])
     $("dCount").textContent=`${r.length} deal${r.length===1?"":"s"}`;
     $("list").innerHTML=r.map(d=>{const a=art(d);
       const name=a?`<a href="${esc(a)}"><b>${esc(d.deal)}</b></a>`:(d.url&&/^https:\/\//.test(d.url)?`<a href="${esc(d.url)}" target="_blank" rel="noopener"><b>${esc(d.deal)}</b></a>`:`<b>${esc(d.deal)}</b>`);
-      return `<div class="ar-r"><span class="d">${esc(fmt(d))}</span><span class="dl">${L.pair(d,{px:40})}${name}</span><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.tier||d.type||"")}</span><span class="d">${d.ends?(d.endsEst?"c. ":"")+d.ends:"–"}</span></div>`}).join("");
+      const pm=pastOf(d);
+      return `<div class="ar-r${pm?" past":""}"><span class="d">${esc(fmt(d))}</span><span class="dl">${L.pair(d,{px:40})}${name}</span><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.tier||d.type||"")}</span><span class="d">${pm?esc(yrs(pm)||"Past"):d.ends?(d.endsEst?"c. ":"")+d.ends:"–"}</span></div>`}).join("");
     $("pills").innerHTML=sports.length>1?["All",...sports].map(s=>`<button type="button" class="pill${s===sport?" on":""}" data-s="${esc(s)}" aria-pressed="${s===sport}">${esc(s)}</button>`).join(""):"";
   };
   $("pills").onclick=ev=>{const b=ev.target.closest("[data-s]");if(!b)return;sport=b.dataset.s;draw()};

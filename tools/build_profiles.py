@@ -116,6 +116,27 @@ def main():
         stats = "".join(f'<div class="stat"><b>{esc(v)}</b><span>{esc(l)}</span></div>' for v, l in [
             (n, "deal filed" if n == 1 else "deals filed"), (len(sports), "sport" if len(sports) == 1 else "sports"),
             (fmt(latest), "latest deal"), (fmt(first), "first filed")])
+        # Past partners: every deal with that partner is marked "ended". Greyed, with the years they were signed.
+        pinfo = {}
+        for d, side in r["deals"]:
+            b, pp = split(d.get("deal"))
+            others = [resolve(x) for x in many(pp if side == "b" else b)] if (pp or side == "p") else []
+            for o in others[:1]:
+                m = pinfo.setdefault(o, {"past": True, "from": 0, "to": 0})
+                if not d.get("ended"):
+                    m["past"] = False
+                y = int(d.get("since") or (d.get("date") or d.get("month") or "0")[:4] or 0)
+                if y and (not m["from"] or y < m["from"]):
+                    m["from"] = y
+                if isinstance(d.get("ended"), int) and not isinstance(d.get("ended"), bool) and d["ended"] > m["to"]:
+                    m["to"] = d["ended"]
+        yrs = lambda m: (str(m["from"]) if m["from"] == m["to"] else f'{m["from"]}-{m["to"]}') if m["from"] and m["to"] else str(m["from"] or m["to"] or "")
+        def past_of(d, side):
+            b, pp = split(d.get("deal"))
+            o = [resolve(x) for x in many(pp if side == "b" else b)] if (pp or side == "p") else []
+            m = pinfo.get(o[0]) if o else None
+            return m if m and m["past"] else None
+        partners.sort(key=lambda k: pinfo.get(k, {}).get("past", False))
         rows = []
         for d, side in r["deals"]:
             nm = esc(d.get("deal"))
@@ -126,8 +147,17 @@ def main():
             else:
                 nm = f"<b>{nm}</b>"
             ends = (("c. " if d.get("endsEst") else "") + str(d["ends"])) if d.get("ends") else "–"
-            rows.append(f'<div class="ar-r"><span class="d">{esc(fmt(d))}</span><span class="dl">{nm}</span><span class="s">{esc(d.get("sport"))}</span><span class="t">{esc(d.get("tier") or d.get("type"))}</span><span class="d">{esc(ends)}</span></div>')
-        ptiles = "".join(f'<a class="pt" href="{esc(("brands" if recs.get(k, {}).get("nB", 0) >= recs.get(k, {}).get("nP", 0) else "properties"))}/{esc(k)}.html"><b>{esc(pname(k))}</b><span class="k">{r["partners"][k]} deal{"s" if r["partners"][k] > 1 else ""}</span></a>' for k in partners)
+            pm = past_of(d, side)
+            if pm:
+                ends = yrs(pm) or "Past"
+            rows.append(f'<div class="ar-r{" past" if pm else ""}"><span class="d">{esc(fmt(d))}</span><span class="dl">{nm}</span><span class="s">{esc(d.get("sport"))}</span><span class="t">{esc(d.get("tier") or d.get("type"))}</span><span class="d">{esc(ends)}</span></div>')
+        def ptile(k):
+            m = pinfo.get(k, {})
+            past = m.get("past")
+            k_txt = ("Past partner" + (f" · {yrs(m)}" if yrs(m) else "")) if past else f'{r["partners"][k]} deal{"s" if r["partners"][k] > 1 else ""}'
+            folder_k = "brands" if recs.get(k, {}).get("nB", 0) >= recs.get(k, {}).get("nP", 0) else "properties"
+            return f'<a class="pt{" past" if past else ""}" href="{esc(folder_k)}/{esc(k)}.html"><b>{esc(pname(k))}</b><span class="k">{esc(k_txt)}</span></a>'
+        ptiles = "".join(ptile(k) for k in partners)
         jsonld = json.dumps({"@context": "https://schema.org", "@type": "Organization" if kind == "b" or group not in ("Athlete & talent",) else "Person",
                              "name": name, "url": url, **({"sameAs": [f"https://{e['domain']}"]} if e.get("domain") else {})}, ensure_ascii=False)
 

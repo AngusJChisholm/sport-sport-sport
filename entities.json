@@ -28250,6 +28250,23 @@
     "Feel New Sydney"
    ],
    "k": "b"
+  },
+  "peroni": {
+   "name": "Peroni",
+   "domain": "peroni.com.au",
+   "cat": "Alcohol",
+   "k": "b",
+   "aliases": [
+    "Peroni Nastro Azzurro"
+   ]
+  },
+  "australian-open-golf": {
+   "name": "Australian Open (golf)",
+   "ptype": "Event",
+   "k": "p",
+   "aliases": [
+    "Australian Open golf"
+   ]
   }
  },
  "leagues": [
