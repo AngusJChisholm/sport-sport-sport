@@ -207,3 +207,16 @@ pulls the photo from features.json) and a LinkedIn spec in instagram/linkedin/<d
 "label"). Instagram posts Mon-Thu 7pm and Fri 6pm. The Tuesday evergreen and Friday "week in deals" carousels are
 retired. The Friday breakdown message carries the "Instagram this week" stats.
 Never write wording (site, posts, captions) that promises daily or every-weekday posting.
+
+### 7. Thorough scan on Tue/Thu (from 3 Nov 2026, replaces usage-light mode)
+With deals down to two runs a week, each run is thorough. The usage-light limits are gone.
+- Open every page in rule 1 directly, plus the Tennis Australia, AFL, NRL, Cricket Australia, Football Australia,
+  Rugby Australia, Netball Australia, NBL, NZ Rugby and NZ Cricket newsrooms (reach each through WebSearch results).
+- Then check the ANZ club newsrooms that are most active (AFL and NRL clubs first, then A-League, BBL/WBBL, NBL,
+  Super Netball, Super Rugby), through WebSearch results.
+- Then 10-15 open-web backstop searches across the whole window (site: queries plus "official partner",
+  "signs sponsorship", "naming rights", "jersey patch", "extends partnership", "multi-year deal", "principal partner").
+- Window: Tuesday = the last 5 days (since Thursday's run), Thursday = the last 3 days. Nothing older is logged.
+- Accuracy gate: the verification subagent checks the lead AND every round-up deal in the post (not just the lead).
+  Anything that fails is dropped from the post. Everything else logged to deals.json still needs its source page opened
+  in the run, both parties and deal type matching, and the announcement date confirmed.
