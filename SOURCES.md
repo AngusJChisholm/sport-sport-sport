@@ -178,3 +178,13 @@ Send Angus the post, then a "Today's deals" block with one short snippet for eve
 ### 4. No Instagram stories or Reels
 Switched off for good (22 Oct 2026). Queue files carry the feed carousel and caption only: no "stories",
 no "reel_caption", no "story_time". The renderer and poster skip both.
+
+### 5. One photo everywhere, free Unsplash only (2 Nov 2026)
+The lead's deals.json "image" is the single photo for the website, LinkedIn and Instagram.
+- It must be a good-quality, free Unsplash photo (https://images.unsplash.com/photo-..., never Unsplash+),
+  with "imageCredit": "Unsplash". Never a club, brand or press photo, even with credit.
+- Any photo swap goes into deals.json "image" first (then re-run tools/build_articles.py). Never change the
+  photo in instagram/linkedin/<date>.json or a queue file alone: the LinkedIn spec "image" must always equal
+  the deals.json "image".
+- Before queuing Instagram, check the two match. If the LinkedIn spec has an Unsplash photo and deals.json
+  doesn't, Angus picked the LinkedIn one: copy it into deals.json.
