@@ -12,7 +12,7 @@ on:
         description: "plan = normal run, render = force re-render today's images, dedupe-check = list repeat posts, dedupe-delete = delete repeat posts (keeps the first of each)"
         default: plan
         type: choice
-        options: [plan, render, dedupe-check, dedupe-delete, delete-today]
+        options: [plan, render, dedupe-check, dedupe-delete, delete-today, post-now]
 
 permissions:
   contents: write
@@ -25,6 +25,8 @@ jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      FORCE_FEED: ${{ inputs.action == 'post-now' && '1' || '' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -52,7 +54,7 @@ jobs:
         run: python3 tools/instagram_post.py plan
 
       - name: Install renderer
-        if: steps.plan.outputs.render == 'true' || inputs.action == 'render'
+        if: steps.plan.outputs.render == 'true' || inputs.action == 'render' || inputs.action == 'post-now'
         run: |
           pip install playwright==1.48.0
           python3 -m playwright install --with-deps chromium
@@ -60,7 +62,7 @@ jobs:
           ffmpeg -version | head -1
 
       - name: Render today's images
-        if: steps.plan.outputs.render == 'true' || inputs.action == 'render'
+        if: steps.plan.outputs.render == 'true' || inputs.action == 'render' || inputs.action == 'post-now'
         run: python3 tools/instagram_post.py render
 
       - name: Post to Instagram

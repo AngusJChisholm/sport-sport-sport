@@ -143,7 +143,8 @@ def due(q, state, m, t):
     s0, s1 = story_window(q)
     out = {
         "stories": POST_STORIES and bool(q.get("stories")) and not state.get("stories_done") and s0 <= t.time() < s1,
-        "feed": not state.get("feed_done") and feed_start(q, t) <= t.time() < FEED_CUTOFF,
+        "feed": not state.get("feed_done") and (bool(os.environ.get("FORCE_FEED"))
+                                                or feed_start(q, t) <= t.time() < FEED_CUTOFF),
         "reel": POST_REELS and bool(m and m.get("reel")) and q.get("reel", True) and not state.get("reel_done")
                 and hm(q.get("reel_time"), REEL_TIMES[t.weekday()]) <= t.time() < LATE_CUTOFF,
         "evergreen": bool(q.get("evergreen")) and not state.get("evergreen_done")

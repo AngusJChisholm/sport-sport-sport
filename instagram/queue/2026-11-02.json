@@ -1,6 +1,6 @@
 {
  "date": "2026-11-02",
- "hold": true,
+ "hold": false,
  "feed": {
   "kind": "daily",
   "cover": {
