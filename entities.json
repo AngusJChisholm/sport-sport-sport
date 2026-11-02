@@ -28267,6 +28267,35 @@
    "aliases": [
     "Australian Open golf"
    ]
+  },
+  "carvana": {
+   "name": "Carvana"
+  },
+  "arizona-wildcats": {
+   "name": "Arizona Wildcats"
+  },
+  "tmrw-sports": {
+   "name": "TMRW Sports"
+  },
+  "tnt-sports": {
+   "name": "TNT Sports",
+   "domain": "tntsports.co.uk"
+  },
+  "news-australia": {
+   "name": "News Australia"
+  },
+  "world-wide-technology": {
+   "name": "World Wide Technology"
+  },
+  "missouri-tigers": {
+   "name": "Missouri Tigers",
+   "domain": "mutigers.com"
+  },
+  "perfect-bowl": {
+   "name": "Perfect Bowl"
+  },
+  "cincinnati-bengals": {
+   "name": "Cincinnati Bengals"
   }
  },
  "leagues": [
