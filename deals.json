@@ -45080,7 +45080,9 @@
    "type": "Partner",
    "region": "ANZ",
    "summary": "Listed as CUB on the SUNS' official partners page, alongside its Great Northern brand.",
-   "url": "https://www.goldcoastfc.com.au/partners"
+   "url": "https://www.goldcoastfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   }
  ]
 }
