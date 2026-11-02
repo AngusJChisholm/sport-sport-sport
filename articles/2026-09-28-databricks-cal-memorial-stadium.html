@@ -82,10 +82,38 @@ footer{padding-block:clamp(48px,6vw,88px) 32px}
 @media (max-width:900px){.nav{display:none}}
 @media (max-width:640px){.hd{height:72px}.wm{font-size:14px}}
 </style>
+<style id="white-volt-chrome">
+/* White + volt chrome (Nov 2026): white masthead and footer, volt accents. Overrides the black .dk header/footer above. */
+html{background:#fff}
+header.dk{background:#fff;color:var(--ink,#111);border-bottom:1px solid var(--line,#DEDED8)}
+header.dk .nav a{color:var(--ink-3,#5C5C57)}
+header.dk .nav a:hover,header.dk .nav a.on{color:#000;box-shadow:inset 0 -3px 0 var(--volt,#D2FF3C)}
+header.dk a:hover{color:#000}
+header.dk .btn:hover{background:#000;color:#fff}
+header.dk .menu{border-color:#000;color:#000}
+header.dk .nav.open{background:#fff;border-bottom-color:var(--line,#DEDED8)}
+header.dk .nav.open a{color:#000;border-bottom-color:var(--line,#DEDED8)}
+footer.dk{background:#fff;color:#000;border-top:6px solid var(--volt,#D2FF3C)}
+footer.dk .mute,footer.dk .ft-b{color:var(--ink-3,#5C5C57)}
+footer.dk .ft-b{border-top-color:var(--line,#DEDED8)}
+footer.dk a:hover{color:#000;box-shadow:inset 0 -3px 0 var(--volt,#D2FF3C)}
+footer.dk .logo:hover{box-shadow:none}
+.dk.bandd{background:var(--volt,#D2FF3C);color:#000}
+.dk.bandd .sh h2{color:#000}
+.dk.bandd .mute,.dk.bandd .mute-l{color:rgba(0,0,0,.65)}
+.dk.bandd a:hover{color:#000}
+.fo.dk{background:var(--volt,#D2FF3C);color:#000}
+.fo.dk .mute,.fo.dk p{color:rgba(0,0,0,.65)}
+.fo.dk h2 .g{color:#000}
+.fo.dk .btn{background:#000;color:#fff}.fo.dk .btn:hover{background:#fff;color:#000}
+.fo.dk .btn-o{border-color:#000;color:#000;background:transparent}
+.fo.dk a:hover{color:#000}
+.pro-badge{background:var(--volt,#D2FF3C);color:#000}
+</style>
 </head>
 <body>
 <header class="dk"><div class="wrap hd">
-<a href="../" class="logo" aria-label="Sport Sport Sport home"><img src="../assets/wordmark-white.svg" alt="Sport Sport Sport" width="56" height="42"></a>
+<a href="../" class="logo" aria-label="Sport Sport Sport home"><img src="../assets/wordmark-black.svg" alt="Sport Sport Sport" width="56" height="42"></a>
 <nav class="nav"><a href="../news.html" class="on">News</a><a href="../#archive">Deals</a><a href="../brands.html">Brands</a><a href="../properties.html">Properties</a><a href="../insights.html">Insights</a></nav>
 <a href="../#archive" class="btn">All deals</a>
 </div></header>
@@ -123,7 +151,7 @@ footer{padding-block:clamp(48px,6vw,88px) 32px}
 </main>
 
 <footer class="dk"><div class="wrap">
-<a href="../" class="logo logo-ft" aria-label="Sport Sport Sport home"><img src="../assets/wordmark-white.svg" alt="Sport Sport Sport" width="120" height="90"></a>
+<a href="../" class="logo logo-ft" aria-label="Sport Sport Sport home"><img src="../assets/wordmark-black.svg" alt="Sport Sport Sport" width="120" height="90"></a>
 <div class="ft-b"><span>All things sport business. Global &amp; ANZ.</span><span>© 2026 Sport Sport Sport</span></div>
 </div></footer>
 <script src="../assets/partner.js" defer></script>

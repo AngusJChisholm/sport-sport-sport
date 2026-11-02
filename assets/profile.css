@@ -93,3 +93,31 @@ footer{padding-block:clamp(56px,7vw,96px) 32px}
 /* Past partners: greyed out, years signed shown */
 .pt.past,.ar-r.past{opacity:.42;filter:grayscale(1)}
 .pt.past:hover,.ar-r.past:hover{opacity:.75}
+
+/* White + volt chrome (Nov 2026): white masthead and footer, volt accents. Overrides the black .dk header/footer above. */
+html{background:#fff}
+header.dk{background:#fff;color:var(--ink,#111);border-bottom:1px solid var(--line,#DEDED8)}
+header.dk .nav a{color:var(--ink-3,#5C5C57)}
+header.dk .nav a:hover,header.dk .nav a.on{color:#000;box-shadow:inset 0 -3px 0 var(--volt,#D2FF3C)}
+header.dk a:hover{color:#000}
+header.dk .btn:hover{background:#000;color:#fff}
+header.dk .menu{border-color:#000;color:#000}
+header.dk .nav.open{background:#fff;border-bottom-color:var(--line,#DEDED8)}
+header.dk .nav.open a{color:#000;border-bottom-color:var(--line,#DEDED8)}
+footer.dk{background:#fff;color:#000;border-top:6px solid var(--volt,#D2FF3C)}
+footer.dk .mute,footer.dk .ft-b{color:var(--ink-3,#5C5C57)}
+footer.dk .ft-b{border-top-color:var(--line,#DEDED8)}
+footer.dk a:hover{color:#000;box-shadow:inset 0 -3px 0 var(--volt,#D2FF3C)}
+footer.dk .logo:hover{box-shadow:none}
+.dk.bandd{background:var(--volt,#D2FF3C);color:#000}
+.dk.bandd .sh h2{color:#000}
+.dk.bandd .mute,.dk.bandd .mute-l{color:rgba(0,0,0,.65)}
+.dk.bandd a:hover{color:#000}
+.fo.dk{background:var(--volt,#D2FF3C);color:#000}
+.fo.dk .mute,.fo.dk p{color:rgba(0,0,0,.65)}
+.fo.dk h2 .g{color:#000}
+.fo.dk .btn{background:#000;color:#fff}.fo.dk .btn:hover{background:#fff;color:#000}
+.fo.dk .btn-o{border-color:#000;color:#000;background:transparent}
+.fo.dk a:hover{color:#000}
+.pro-badge{background:var(--volt,#D2FF3C);color:#000}
+.dk.bandd{--grey-500:rgba(0,0,0,.62);--grey-100:rgba(0,0,0,.75);--grey-800:#000}
