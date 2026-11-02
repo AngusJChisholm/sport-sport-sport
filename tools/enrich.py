@@ -149,8 +149,23 @@ def value_of(text):
     return v
 
 
+def single_year_of(text):
+    # A deal for one named year or event: "for 2027", "for IPL 2026", "for the rest of 2026",
+    # "for the 2026 and 2027 World Cups". Only used when no term is stated.
+    m = re.search(r"\bfor (?:the )?(?:rest of |remainder of )?(?:the )?(?:[A-Z][\w.'-]*\s){0,2}(20\d\d)(?:\s(?:and|&)\s(20\d\d))?\b(?![-/–]\d)", text)
+    if m:
+        return int(m.group(2) or m.group(1))
+    return None
+
+
 def year_of(d):
     s = d.get("date") or d.get("month") or ""
+    return int(s[:4]) if s[:4].isdigit() else None
+
+
+def listed_year_of(d):
+    # Current partners from a club's partners page have no announcement date, only the date they were listed.
+    s = d.get("listed") or ""
     return int(s[:4]) if s[:4].isdigit() else None
 
 
@@ -169,8 +184,11 @@ def enrich_deal(d):
             d["term"] = t
     if "ends" not in d:
         e = ends_of(summ) or (ends_of(stand) if stand else None)
+        if not e and not d.get("term"):
+            e = single_year_of(summ)
         y = year_of(d)
-        if e and y and y - 1 <= e <= y + 20:
+        ly = y or listed_year_of(d)
+        if e and ly and ly - 1 <= e <= ly + 20:
             d["ends"] = e
         elif d.get("term") and y:
             d["ends"] = y + d["term"]
