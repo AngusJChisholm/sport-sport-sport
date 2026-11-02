@@ -121,3 +121,9 @@ footer.dk .logo:hover{box-shadow:none}
 .fo.dk a:hover{color:#000}
 .pro-badge{background:var(--volt,#D2FF3C);color:#000}
 .dk.bandd{--grey-500:rgba(0,0,0,.62);--grey-100:rgba(0,0,0,.75);--grey-800:#000}
+
+/* Condensed display type, matching the Instagram slides (Archivo at 68% width). */
+@font-face{font-family:"ArchivoV";src:url("fonts/Archivo[wdth,wght].ttf") format("truetype");font-weight:100 900;font-stretch:62% 125%;font-display:swap}
+.disp,.p-h,.nc h3,.hub h3,.chart h3,.cc h3,.ar-r b,.row b,.card h3{font-family:"ArchivoV",var(--font,"Archivo"),"Helvetica Neue",Arial,sans-serif;font-stretch:68%;letter-spacing:-.005em;transform:none!important;width:auto!important}
+.disp{line-height:.88}
+.vb{padding:.02em .1em 0;margin:0 -.04em}
