@@ -245,7 +245,7 @@ html{scroll-behavior:smooth;scroll-padding-top:96px}
 
 <section class="dk fo" id="follow"><div class="wrap">
 <span class="lbl mute" style="display:block;margin-bottom:28px">Daily, Monday to Friday</span>
-<h2 class="disp">Every deal, every weekday. <span class="g">Follow along on LinkedIn and Instagram.</span></h2>
+<h2 class="disp">All things sport business. <span class="g">Follow along on LinkedIn and Instagram.</span></h2>
 <div class="fo-a" id="foA"></div>
 <div class="nl" id="nl"><div><h3>The weekly <span class="v">wrap.</span></h3><p>Every deal from the week, the ones that matter and why, in your inbox each Friday. Free.</p></div><div class="nl-f" id="nlF"><span class="btn nl-soon" aria-disabled="true">Coming soon</span><small>The weekly wrap launches shortly. Follow on LinkedIn or Instagram in the meantime.</small></div></div>
 </div></section>
@@ -383,7 +383,7 @@ function newsletter(){
 function follow(){
   const li=SITE.linkedin, ig=SITE.instagram;
   const fb=(li?`<a class="btn" href="${esc(li)}" target="_blank" rel="noopener">Follow on LinkedIn</a>`:"")+(ig?`<a class="btn btn-o" href="${esc(ig)}" target="_blank" rel="noopener">Follow on Instagram</a>`:"");
-  $("foA").innerHTML=fb?`${fb}<p>The day's deals every weekday morning. Features every weekend.</p>`:`<p>Socials coming soon.</p>`;
+  $("foA").innerHTML=fb?`${fb}<p>The latest deals, news and analysis from global and ANZ sport business.</p>`:`<p>Socials coming soon.</p>`;
   $("ftLi").innerHTML=(li?`<a href="${esc(li)}" target="_blank" rel="noopener">LinkedIn</a>`:"")+(ig?`<a href="${esc(ig)}" target="_blank" rel="noopener">Instagram</a>`:"");
 }
 function filters(){
