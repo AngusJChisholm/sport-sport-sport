@@ -9,7 +9,9 @@ sponsorship", "naming rights", "jersey patch", "front-of-shirt" and "extends par
 1. **Confirmed only.** A deal counts when the brand, the rights holder, or a reputable outlet reports it as
    signed. Rumours, "in talks" and "set to" stories are skipped.
 2. **Official first.** Where possible, confirm on the rights holder's or brand's own newsroom (Tier 1).
-3. **Two sources for anything big.** If a figure, length or "record/first" claim is used, it must appear in an
+3. **One official source is enough.** A deal announced only on the club's, league's or brand's own website or official
+   social account is confirmed. Most small deals only ever have that one source, and that's fine: log it.
+4. **Two sources for anything big.** If a figure, length or "record/first" claim is used, it must appear in an
    official release or in two independent outlets. If not, leave the figure out.
 4. **Date = announcement date**, not the date a story was republished.
 5. **Brand first, then the property** in every deal name.
