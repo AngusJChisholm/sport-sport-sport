@@ -29,6 +29,7 @@
 .basis.t{border-color:var(--ink);color:var(--ink)}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);padding:4px 7px 3px;white-space:nowrap}
+.chip.ag{border-color:var(--ink)}.chip.ag:hover{background:var(--canvas)}.chip.ag.home{background:var(--volt);border-color:var(--volt);color:var(--black)}
 .chip.ex{border-style:dashed;color:var(--ink-3)}
 .logos{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .logos .lg{--s:30px}
@@ -68,12 +69,13 @@
 <section class="wrap hero">
 <span class="lbl mute-l">SSS Pro</span>
 <h1 class="disp">The partnerships desk.</h1>
-<p>Find brands spending in sport, see what's coming up for renewal, and work out which categories a property is missing and who could fill them. Built from every deal in the SSS archive.</p>
+<p>Find brands spending in sport, see what's coming up for renewal, work out which categories a property is missing and who could fill them, and track which agencies work for whom. Built from every deal in the SSS archive.</p>
 </section>
 <div class="wrap"><div class="tabs" role="tablist" id="tabs">
 <button class="tab" data-tab="finder" role="tab">Brand finder</button>
 <button class="tab" data-tab="renewals" role="tab">Renewal radar</button>
 <button class="tab" data-tab="property" role="tab">Property report</button>
+<button class="tab" data-tab="agencies" role="tab">Agencies</button>
 <button class="tab" data-tab="watch" role="tab">Watchlist</button>
 </div></div>
 <section class="wrap pro-sec" id="view"><p class="note">Loading the archive…</p></section>
@@ -85,6 +87,6 @@
 <datalist id="brandNames"></datalist>
 <script src="assets/logos.js?v=7"></script>
 <script src="assets/data.js?v=2"></script>
-<script src="assets/pro.js?v=1"></script>
+<script src="assets/pro.js?v=2"></script>
 </body>
 </html>

@@ -34,6 +34,30 @@ const live=d=>d.ends?d.ends>=yr:dated(d)?yearOf(d)>=yr-3:true;
 
 let D,TYP={},TYP_ALL=3,state={tab:"finder"};
 
+/* ---------- agencies (agencies.json) ---------- */
+let AG={home:"",agencies:{},appointments:[]};const AGBY=new Map(),AGDEAL=new Map();
+function indexAgencies(){
+  AG.appointments.forEach(a=>{
+    const keys=[a.client,(a.clientName||"").toLowerCase()].filter(Boolean);
+    if(a.client&&L.all()[a.client])keys.push(L.all()[a.client].name.toLowerCase());
+    keys.forEach(k=>{if(!AGBY.has(k))AGBY.set(k,[]);if(!AGBY.get(k).includes(a))AGBY.get(k).push(a)});
+    (a.deals||[]).forEach(n=>{if(!AGDEAL.has(n))AGDEAL.set(n,[]);AGDEAL.get(n).push(a)});
+  });
+}
+const agName=id=>(AG.agencies[id]||{}).name||id;
+const agOf=e=>e?[...new Set([...(AGBY.get(e.slug)||[]),...(AGBY.get((e.name||"").toLowerCase())||[])])]:[];
+// Agencies that touch a deal: credited on it, the brand's agency, or the property's sales/strategy agency
+// (a rights holder's activation agency isn't shown against every partner deal they sign).
+const SELL=["Sponsorship sales","Media sales","Strategy"];
+const agOfDeal=d=>{const out=[];const add=(a,via)=>{if(!out.some(x=>x.a===a))out.push({a,via})};
+  (AGDEAL.get(d.deal)||[]).forEach(a=>add(a,"credited"));
+  (d._bs||[]).forEach(e=>agOf(e).forEach(a=>add(a,e.name)));
+  (d._ps||[]).forEach(e=>agOf(e).filter(a=>SELL.includes(a.role)).forEach(a=>add(a,e.name)));
+  return out};
+const agChipsDeal=d=>{const seen=new Set();return agOfDeal(d).filter(x=>!seen.has(x.a.agency)&&seen.add(x.a.agency)).map(x=>`<a class="chip ag${x.a.agency===AG.home?" home":""}" href="#" data-agency="${esc(x.a.agency)}" title="${esc((x.via==="credited"?"Credited on this deal":"Agency for "+x.via)+" · "+x.a.role)}">${esc(agName(x.a.agency))}${x.via==="credited"?"":` <span style="opacity:.6">· ${esc(x.via)}</span>`}</a>`).join("")};
+const agChip=a=>`<a class="chip ag${a.agency===AG.home?" home":""}" href="#" data-agency="${esc(a.agency)}" title="${esc(a.role+(a.scope?": "+a.scope:""))}">${esc(agName(a.agency))}</a>`;
+const agChips=list=>{const seen=new Set();return list.filter(a=>!seen.has(a.agency)&&seen.add(a.agency)).map(agChip).join("")};
+
 /* ---------- renewal year for a deal ---------- */
 function renewal(d){
   if(d.ends)return {end:d.ends,basis:d.endsEst?"From term":"Confirmed"};
@@ -45,13 +69,14 @@ const basisTag=r=>r?`<span class="basis ${r.basis==="Confirmed"?"c":r.basis==="F
 
 /* ---------- Brand finder ---------- */
 function finder(){
-  const f=state.f||(state.f={q:"",cat:"",backs:"",notIn:"",region:"ANZ",win:"24",sort:"recent"});
+  const f=state.f||(state.f={q:"",cat:"",backs:"",notIn:"",region:"ANZ",win:"24",sort:"recent",ag:""});
   const sports=[...new Set(D.deals.map(d=>d.sport))].filter(Boolean).sort();
   $("view").innerHTML=`<p class="pro-intro">Brands spending in sport. Filter by category and the sports they back, or leave out a sport to find brands active elsewhere who haven't come into yours yet.</p>
   <div class="ctl"><input class="srch" id="fq" type="search" placeholder="Search a brand" value="${esc(f.q)}" autocomplete="off">
   <select class="sel" id="fcat"><option value="">All categories</option>${S.CATS.map(c=>opt(c,f.cat)).join("")}</select>
   <select class="sel" id="fbacks"><option value="">Backs any sport</option>${sports.map(s=>opt(s,f.backs,"Backs "+s)).join("")}</select>
-  <select class="sel" id="fnot"><option value="">Not in: no exclusion</option>${sports.map(s=>opt(s,f.notIn,"Not in "+s)).join("")}</select></div>
+  <select class="sel" id="fnot"><option value="">Not in: no exclusion</option>${sports.map(s=>opt(s,f.notIn,"Not in "+s)).join("")}</select>
+  <select class="sel" id="fag"><option value="">Any agency</option>${opt("none",f.ag,"No agency on record")}${Object.keys(AG.agencies).map(k=>opt(k,f.ag,agName(k))).join("")}</select></div>
   <div class="ctl2"><div class="pills">${pills("win",[["12","Active last 12 months"],["24","Last 2 years"],["36","Last 3 years"],["all","Any time"]],f.win)}</div>
   <div class="pills">${pills("reg",[["ANZ","ANZ deals"],["Global","Global deals"],["All","Everywhere"]],f.region)}${pills("sort",[["recent","Newest first"],["deals","Most deals"]],f.sort)}</div></div>
   <div class="res"><span class="lbl mute-l" id="fcount"></span><span class="toolrow"><button class="ghost" id="fcsv">Export CSV</button></span></div><div id="flist"></div>`;
@@ -65,29 +90,33 @@ function finder(){
       if(!ds.length)return;
       if(f.backs&&!ds.some(x=>x.d.sport===f.backs))return;
       if(f.notIn&&b.deals.some(x=>x.d.sport===f.notIn))return;
+      const ags=agOf(b.e);
+      if(f.ag==="none"&&ags.length)return;
+      if(f.ag&&f.ag!=="none"&&!ags.some(a=>a.agency===f.ag))return;
       const recent=ds.filter(x=>monthsAgo(x.d)<=win);
       if(!recent.length)return;
       const last=ds.find(x=>dated(x.d))||ds[0];
       const sp=new Map();ds.forEach(x=>sp.set(x.d.sport,(sp.get(x.d.sport)||0)+1));
       const partners=[];const seen=new Set();ds.forEach(x=>(x.other||[]).forEach(o=>{if(o&&!seen.has(o.slug)&&partners.length<4){seen.add(o.slug);partners.push(o)}}));
-      rows.push({b,n:ds.length,nRecent:recent.length,last:last.d,sports:[...sp.entries()].sort((a,c)=>c[1]-a[1]).map(x=>x[0]),partners});
+      rows.push({b,ags,n:ds.length,nRecent:recent.length,last:last.d,sports:[...sp.entries()].sort((a,c)=>c[1]-a[1]).map(x=>x[0]),partners});
     });
     rows.sort(f.sort==="deals"?(a,c)=>c.n-a.n||S.sortKey(c.last).localeCompare(S.sortKey(a.last)):(a,c)=>S.sortKey(c.last).localeCompare(S.sortKey(a.last))||c.n-a.n);
     state.fRows=rows;
     $("fcount").textContent=`${rows.length} brand${rows.length===1?"":"s"}`;
     const shown=rows.slice(0,state.fMore?rows.length:150);
-    $("flist").innerHTML=rows.length?`<div class="tw"><table class="t"><thead><tr><th></th><th>Brand</th><th>Category</th><th>Deals</th><th>Last deal</th><th>Sports</th><th>Partners</th></tr></thead><tbody>${shown.map(r=>`<tr><td>${star(r.b.e.slug)}</td><td><span class="dl">${logo(r.b.e,34)}<a href="${esc(L.page(r.b.e.slug))}"><b>${esc(r.b.e.name)}</b></a></span></td><td>${esc(r.b.cat)}</td><td class="d">${r.n}${r.nRecent!==r.n?` <span class="mute-l">(${r.nRecent} recent)</span>`:""}</td><td class="d">${esc(S.fmt(r.last))}</td><td><div class="chips">${r.sports.slice(0,3).map(s=>`<span class="chip">${esc(s)}</span>`).join("")}</div></td><td><div class="logos">${r.partners.map(p=>logo(p,28)).join("")}</div></td></tr>`).join("")}</tbody></table></div>${rows.length>shown.length?`<p><button class="ghost" id="fmore">Show all ${rows.length}</button></p>`:""}`:`<p class="note">No brands match. Try a wider time window.</p>`;
+    $("flist").innerHTML=rows.length?`<div class="tw"><table class="t"><thead><tr><th></th><th>Brand</th><th>Category</th><th>Deals</th><th>Last deal</th><th>Sports</th><th>Partners</th><th>Agency</th></tr></thead><tbody>${shown.map(r=>`<tr><td>${star(r.b.e.slug)}</td><td><span class="dl">${logo(r.b.e,34)}<a href="${esc(L.page(r.b.e.slug))}"><b>${esc(r.b.e.name)}</b></a></span></td><td>${esc(r.b.cat)}</td><td class="d">${r.n}${r.nRecent!==r.n?` <span class="mute-l">(${r.nRecent} recent)</span>`:""}</td><td class="d">${esc(S.fmt(r.last))}</td><td><div class="chips">${r.sports.slice(0,3).map(s=>`<span class="chip">${esc(s)}</span>`).join("")}</div></td><td><div class="logos">${r.partners.map(p=>logo(p,28)).join("")}</div></td><td><div class="chips">${agChips(r.ags)}</div></td></tr>`).join("")}</tbody></table></div>${rows.length>shown.length?`<p><button class="ghost" id="fmore">Show all ${rows.length}</button></p>`:""}`:`<p class="note">No brands match. Try a wider time window.</p>`;
   };
   let t;$("fq").oninput=e=>{clearTimeout(t);t=setTimeout(()=>{f.q=e.target.value;draw()},150)};
   $("fcat").onchange=e=>{f.cat=e.target.value;draw()};
   $("fbacks").onchange=e=>{f.backs=e.target.value;draw()};
   $("fnot").onchange=e=>{f.notIn=e.target.value;draw()};
+  $("fag").onchange=e=>{f.ag=e.target.value;draw()};
   $("view").onclick=e=>{
     const b=e.target.closest("[data-win],[data-reg],[data-sort]");
     if(b){if(b.dataset.win)f.win=b.dataset.win;if(b.dataset.reg)f.region=b.dataset.reg;if(b.dataset.sort)f.sort=b.dataset.sort;
       b.parentNode.querySelectorAll(".pill").forEach(p=>{const on=p===b||(p.dataset.win&&p.dataset.win===f.win)||(p.dataset.reg&&p.dataset.reg===f.region)||(p.dataset.sort&&p.dataset.sort===f.sort);p.classList.toggle("on",!!on)});draw();return}
     if(e.target.id==="fmore"){state.fMore=true;draw();return}
-    if(e.target.id==="fcsv")csv([["Brand","Category","Deals","Last deal","Sports","Recent partners"],...state.fRows.map(r=>[r.b.e.name,r.b.cat,r.n,S.fmt(r.last),r.sports.join("; "),r.partners.map(p=>p.name).join("; ")])],"sss-pro-brands.csv");
+    if(e.target.id==="fcsv")csv([["Brand","Category","Deals","Last deal","Sports","Recent partners","Agency on record"],...state.fRows.map(r=>[r.b.e.name,r.b.cat,r.n,S.fmt(r.last),r.sports.join("; "),r.partners.map(p=>p.name).join("; "),[...new Set(r.ags.map(a=>agName(a.agency)))].join("; ")])],"sss-pro-brands.csv");
   };
   draw();
 }
@@ -95,7 +124,7 @@ function finder(){
 /* ---------- Renewal radar ---------- */
 function renewals(){
   const def=String(NOW.getMonth()>=8?yr+1:yr);
-  const f=state.r||(state.r={q:"",sport:"",cat:"",tier:"",region:"ANZ",year:def,basis:"all"});
+  const f=state.r||(state.r={q:"",sport:"",cat:"",tier:"",region:"ANZ",year:def,basis:"all",ag:""});
   const all=D.deals.map(d=>({d,r:renewal(d)})).filter(x=>x.r&&x.r.end>=yr-2);
   const sports=[...new Set(all.map(x=>x.d.sport))].filter(Boolean).sort();
   const years=[["due","Due now"],[String(yr),String(yr)],[String(yr+1),String(yr+1)],[String(yr+2),String(yr+2)],["later",`${yr+3}+`]];
@@ -104,31 +133,34 @@ function renewals(){
   <div class="ctl"><input class="srch" id="rq" type="search" placeholder="Search a brand or property" value="${esc(f.q)}" autocomplete="off">
   <select class="sel" id="rsport"><option value="">All sports</option>${sports.map(s=>opt(s,f.sport)).join("")}</select>
   <select class="sel" id="rcat"><option value="">All categories</option>${S.CATS.map(c=>opt(c,f.cat)).join("")}</select>
-  <select class="sel" id="rtier"><option value="">All deal types</option>${S.TIERS.map(c=>opt(c,f.tier)).join("")}</select></div>
+  <select class="sel" id="rtier"><option value="">All deal types</option>${S.TIERS.map(c=>opt(c,f.tier)).join("")}</select>
+  <select class="sel" id="rag"><option value="">Any agency</option>${opt("any",f.ag,"Agency on record")}${opt("none",f.ag,"No agency on record")}${Object.keys(AG.agencies).map(k=>opt(k,f.ag,agName(k))).join("")}</select></div>
   <div class="ctl2"><div class="pills" id="ryears"></div><div class="pills">${pills("reg",[["ANZ","ANZ"],["Global","Global"],["All","Everywhere"]],f.region)}${pills("basis",[["all","Any basis"],["firm","Confirmed + From term"],["Confirmed","Confirmed only"]],f.basis)}</div></div>
   <div class="res"><span class="lbl mute-l" id="rcount"></span><button class="ghost" id="rcsv">Export CSV</button></div><div id="rlist"></div>`;
   const draw=()=>{
     const q=f.q.trim().toLowerCase();
     const base=all.filter(x=>(!q||x.d.deal.toLowerCase().includes(q))&&(!f.sport||x.d.sport===f.sport)&&(!f.cat||(x.d._cats||[]).includes(f.cat))&&(!f.tier||x.d.tier===f.tier)&&(f.region==="All"||x.d.region===f.region)
-      &&(f.basis==="all"||(f.basis==="firm"?x.r.basis!=="Estimate":x.r.basis==="Confirmed")));
+      &&(f.basis==="all"||(f.basis==="firm"?x.r.basis!=="Estimate":x.r.basis==="Confirmed"))
+      &&(!f.ag||(()=>{const a=agOfDeal(x.d);return f.ag==="any"?a.length>0:f.ag==="none"?!a.length:a.some(y=>y.a.agency===f.ag)})()));
     $("ryears").innerHTML=years.map(([v,lab])=>{const n=base.filter(x=>inYr(x,v)).length;return `<button type="button" class="pill${f.year===v?" on":""}" data-yr="${v}">${lab} · ${n}</button>`}).join("");
     const rows=base.filter(x=>inYr(x,f.year)).sort((a,b)=>a.r.end-b.r.end||["Confirmed","From term","Estimate"].indexOf(a.r.basis)-["Confirmed","From term","Estimate"].indexOf(b.r.basis)||a.d.deal.localeCompare(b.d.deal));
     state.rRows=rows;
     const firm=rows.filter(x=>x.r.basis!=="Estimate").length;
     $("rcount").textContent=`${rows.length} deal${rows.length===1?"":"s"} · ${firm} confirmed or from term`;
     const shown=rows.slice(0,state.rMore?rows.length:200);
-    $("rlist").innerHTML=rows.length?`<div class="tw"><table class="t"><thead><tr><th>Ends</th><th>Basis</th><th>Deal</th><th>Sport</th><th>Category</th><th>Deal type</th><th>Status</th><th>Announced</th></tr></thead><tbody>${shown.map(({d,r})=>`<tr><td><span class="yr">${r.end}</span></td><td>${basisTag(r)}</td><td><span class="dl">${L.pair(d,{px:30})}${S.dealLink(d)}</span></td><td>${esc(d.sport||"")}</td><td>${esc((d._cats||[]).join(", "))}</td><td>${esc(d.tier||"")}</td><td class="d">${esc(d.status||"")}</td><td class="d">${esc(S.fmt(d))}</td></tr>`).join("")}</tbody></table></div>${rows.length>shown.length?`<p><button class="ghost" id="rmore">Show all ${rows.length}</button></p>`:""}`:`<p class="note">Nothing in that window.</p>`;
+    $("rlist").innerHTML=rows.length?`<div class="tw"><table class="t"><thead><tr><th>Ends</th><th>Basis</th><th>Deal</th><th>Sport</th><th>Category</th><th>Deal type</th><th>Status</th><th>Announced</th><th>Agency</th></tr></thead><tbody>${shown.map(({d,r})=>`<tr><td><span class="yr">${r.end}</span></td><td>${basisTag(r)}</td><td><span class="dl">${L.pair(d,{px:30})}${S.dealLink(d)}</span></td><td>${esc(d.sport||"")}</td><td>${esc((d._cats||[]).join(", "))}</td><td>${esc(d.tier||"")}</td><td class="d">${esc(d.status||"")}</td><td class="d">${esc(S.fmt(d))}</td><td><div class="chips">${agChipsDeal(d)}</div></td></tr>`).join("")}</tbody></table></div>${rows.length>shown.length?`<p><button class="ghost" id="rmore">Show all ${rows.length}</button></p>`:""}`:`<p class="note">Nothing in that window.</p>`;
   };
   let t;$("rq").oninput=e=>{clearTimeout(t);t=setTimeout(()=>{f.q=e.target.value;draw()},150)};
   $("rsport").onchange=e=>{f.sport=e.target.value;draw()};
   $("rcat").onchange=e=>{f.cat=e.target.value;draw()};
   $("rtier").onchange=e=>{f.tier=e.target.value;draw()};
+  $("rag").onchange=e=>{f.ag=e.target.value;draw()};
   $("view").onclick=e=>{
     const b=e.target.closest("[data-yr],[data-reg],[data-basis]");
     if(b){if(b.dataset.yr)f.year=b.dataset.yr;if(b.dataset.reg)f.region=b.dataset.reg;if(b.dataset.basis)f.basis=b.dataset.basis;
       b.parentNode.querySelectorAll(".pill").forEach(p=>p.classList.toggle("on",(p.dataset.reg&&p.dataset.reg===f.region)||(p.dataset.basis&&p.dataset.basis===f.basis)||false));draw();return}
     if(e.target.id==="rmore"){state.rMore=true;draw();return}
-    if(e.target.id==="rcsv")csv([["Ends","Basis","Deal","Brand","Property","Sport","Category","Deal type","Status","Term (yrs)","Announced","Source"],...state.rRows.map(({d,r})=>[r.end,r.basis,d.deal,nameOf(d),propOf(d),d.sport,(d._cats||[]).join("; "),d.tier,d.status,d.term||"",S.fmt(d),d.url||""])],"sss-pro-renewals.csv");
+    if(e.target.id==="rcsv")csv([["Ends","Basis","Deal","Brand","Property","Sport","Category","Deal type","Status","Term (yrs)","Announced","Agency on record","Source"],...state.rRows.map(({d,r})=>[r.end,r.basis,d.deal,nameOf(d),propOf(d),d.sport,(d._cats||[]).join("; "),d.tier,d.status,d.term||"",S.fmt(d),[...new Set(agOfDeal(d).map(x=>agName(x.a.agency)+(x.via==="credited"?" (credited)":" (for "+x.via+")")))].join("; "),d.url||""])],"sss-pro-renewals.csv");
   };
   draw();
 }
@@ -180,7 +212,7 @@ function property(){
     due:r.deals.filter(x=>{const q=renewal(x.d);return x.side==="p"&&q&&q.end>=yr&&q.end<=yr+1}).length}}).sort((a,b)=>b.live-a.live);
   state.pExport={p,partners,gaps,prospects};
   $("view").innerHTML=`<div class="ctl"><input class="srch" id="pq" list="propNames" placeholder="Type a property, e.g. Carlton, Wallabies, NBL" autocomplete="off"><button class="ghost" id="pcsv">Export partner list</button></div>
-  <div class="ph">${L.mark(p.e,{px:72})}<div><h2 class="disp">${esc(p.e.name)}</h2><div class="sub">${esc(p.ptype)} · ${esc(sp)} · benchmarked against ${esc(peers.label)} ${star(p.e.slug)}</div></div></div>
+  <div class="ph">${L.mark(p.e,{px:72})}<div><h2 class="disp">${esc(p.e.name)}</h2><div class="sub">${esc(p.ptype)} · ${esc(sp)} · benchmarked against ${esc(peers.label)} ${star(p.e.slug)}</div>${agOf(p.e).length?`<div class="chips" style="margin-top:10px">${agOf(p.e).map(a=>`${agChip(a)}<span class="chip">${esc(a.role)}</span>`).join("")}</div>`:`<div class="sub" style="margin-top:8px">No agency on record</div>`}</div></div>
   <div class="kpis"><div><b>${partners.length}</b><span>Live partners</span></div><div><b>${new12}</b><span>Deals, last 12 months</span></div><div><b>${have.size}</b><span>Categories covered</span></div><div><b>${due.length}</b><span>Renewals due ${yr}-${yr+2}</span></div></div>
   <p class="note-s">"Live" means the deal's end year hasn't passed, it was announced in the last three years, or the brand is on the club's current partners page.</p>
 
@@ -195,7 +227,7 @@ function property(){
   ${due.length?`<div class="tw"><table class="t"><thead><tr><th>Ends</th><th>Basis</th><th>Deal</th><th>Deal type</th><th>Announced</th></tr></thead><tbody>${due.map(({d,r})=>`<tr><td><span class="yr">${r.end}</span></td><td>${basisTag(r)}</td><td><span class="dl">${L.pair(d,{px:30})}${S.dealLink(d)}</span></td><td>${esc(d.tier||"")}</td><td class="d">${esc(S.fmt(d))}</td></tr>`).join("")}</tbody></table></div>`:`<p class="note-s">Nothing due in the next two years on what's been announced.</p>`}
 
   <div class="h3">Live partners (${partners.length})</div>
-  <div class="tw"><table class="t"><thead><tr><th>Brand</th><th>Category</th><th>Deal type</th><th>Since</th><th>Ends</th></tr></thead><tbody>${partners.sort((a,b)=>S.TIERS.indexOf(a.d.tier)-S.TIERS.indexOf(b.d.tier)||a.b.name.localeCompare(b.b.name)).map(x=>{const r=renewal(x.d);return `<tr><td><span class="dl">${logo(x.b,30)}<a href="${esc(L.page(x.b.slug))}"><b>${esc(x.b.name)}</b></a></span></td><td>${esc(catOf(x))}</td><td>${esc(x.d.tier||"")}</td><td class="d">${esc(S.fmt(x.d))}</td><td class="d">${r?`${r.end} ${basisTag(r)}`:"–"}</td></tr>`}).join("")}</tbody></table></div>`;
+  <div class="tw"><table class="t"><thead><tr><th>Brand</th><th>Category</th><th>Deal type</th><th>Since</th><th>Ends</th><th>Brand's agency</th></tr></thead><tbody>${partners.sort((a,b)=>S.TIERS.indexOf(a.d.tier)-S.TIERS.indexOf(b.d.tier)||a.b.name.localeCompare(b.b.name)).map(x=>{const r=renewal(x.d);return `<tr><td><span class="dl">${logo(x.b,30)}<a href="${esc(L.page(x.b.slug))}"><b>${esc(x.b.name)}</b></a></span></td><td>${esc(catOf(x))}</td><td>${esc(x.d.tier||"")}</td><td class="d">${esc(S.fmt(x.d))}</td><td class="d">${r?`${r.end} ${basisTag(r)}`:"–"}</td><td><div class="chips">${agChips(agOf(x.b))}</div></td></tr>`}).join("")}</tbody></table></div>`;
   const inp=$("pq");
   inp.onchange=()=>{const v=inp.value.trim().toLowerCase();const r=D.props.find(x=>x.e.name.toLowerCase()===v)||D.props.find(x=>(x.e.aliases||[]).some(a=>a.toLowerCase()===v))||D.props.find(x=>x.e.name.toLowerCase().includes(v));if(r){state.p=r;property();window.scrollTo(0,0)}};
   $("view").onclick=e=>{
@@ -219,8 +251,58 @@ function watchlist(){
   $("view").onclick=e=>{const a=e.target.closest("[data-pick]");if(a){e.preventDefault();state.p=D.orgs.get(a.dataset.pick);go("property")}};
 }
 
+/* ---------- Agencies ---------- */
+function clientEnt(a){const e=a.client&&L.all()[a.client];return e?Object.assign({slug:a.client},e):{name:a.clientName||a.client,slug:null}}
+function clientRec(a){return a.client?D.orgs.get(a.client):[...D.orgs.values()].find(r=>r.e.name.toLowerCase()===(a.clientName||"").toLowerCase())}
+function agStats(id){
+  const ap=AG.appointments.filter(a=>a.agency===id);
+  // Deals that count for an agency: its brand clients' deals, its rights-holder clients' partner deals where it sells or sets strategy, and deals it's credited on.
+  const deals=[...new Set(ap.flatMap(a=>{const r=clientRec(a);const own=(a.deals||[]).map(n=>D.deals.find(d=>d.deal===n)).filter(Boolean);if(!r)return own;
+    return own.concat(a.side==="brand"?r.deals.filter(x=>x.side==="b").map(x=>x.d):SELL.includes(a.role)?r.deals.filter(x=>x.side==="p").map(x=>x.d):[])}))];
+  const sports=new Map();deals.forEach(d=>sports.set(d.sport,(sports.get(d.sport)||0)+1));
+  return {id,ap,brands:ap.filter(a=>a.side==="brand").length,props:ap.filter(a=>a.side==="property").length,roles:[...new Set(ap.map(a=>a.role))],
+    new12:deals.filter(d=>monthsAgo(d)<=12).length,due:deals.filter(d=>{const q=renewal(d);return q&&q.end>=yr&&q.end<=yr+1}).length,
+    sports:[...sports.entries()].sort((a,b)=>b[1]-a[1]).map(x=>x[0]).slice(0,4),deals};
+}
+function agencies(){
+  const id=state.ag;
+  if(id&&AG.agencies[id])return agencyDetail(id);
+  const rows=Object.keys(AG.agencies).map(agStats).sort((a,b)=>(b.id===AG.home)-(a.id===AG.home)||b.ap.length-a.ap.length);
+  // Open accounts: the most active ANZ brands and properties with no agency on record.
+  const openB=D.brands.filter(b=>!agOf(b.e).length).map(b=>({b,n:b.deals.filter(x=>x.d.region==="ANZ"&&monthsAgo(x.d)<=24).length})).filter(x=>x.n>=2).sort((a,b)=>b.n-a.n).slice(0,25);
+  const openP=D.props.filter(p=>!agOf(p.e).length).map(p=>({p,n:p.deals.filter(x=>x.side==="p"&&x.d.region==="ANZ"&&monthsAgo(x.d)<=24).length})).filter(x=>x.n>=3).sort((a,b)=>b.n-a.n).slice(0,25);
+  $("view").innerHTML=`<p class="pro-intro">Who works for whom. Agency appointments come from public announcements and agencies' own work pages, and each one links to its source. When an agency is on record for a brand or rights holder, it shows against their deals across Pro.</p>
+  <div class="h3" style="margin-top:28px">Agencies on record</div>
+  <div class="tw"><table class="t"><thead><tr><th>Agency</th><th>Brand clients</th><th>Rights-holder clients</th><th>Roles</th><th>Client deals, last 12 mo</th><th>Client renewals due ${yr}-${yr+1}</th><th>Sports</th></tr></thead><tbody>${rows.map(r=>`<tr class="${r.id===AG.home?"me":""}"><td><a href="#" data-agency="${esc(r.id)}"><b>${esc(agName(r.id))}</b></a></td><td class="d">${r.brands}</td><td class="d">${r.props}</td><td><div class="chips">${r.roles.map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div></td><td class="d">${r.new12}</td><td class="d">${r.due}</td><td><div class="chips">${r.sports.map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div></td></tr>`).join("")}</tbody></table></div>
+
+  <div class="h3">Open accounts: brands</div>
+  <p class="note-s">The busiest brands in ANZ sport over the last two years with no agency on record. Either they run sponsorship in-house or nobody's reported who they use, and both are worth a conversation.</p>
+  <div class="tw"><table class="t"><thead><tr><th>Brand</th><th>Category</th><th>ANZ deals, 24 mo</th><th>Latest</th><th>Watch</th></tr></thead><tbody>${openB.map(x=>`<tr><td><span class="dl">${logo(x.b.e,30)}<a href="${esc(L.page(x.b.e.slug))}"><b>${esc(x.b.e.name)}</b></a></span></td><td>${esc(x.b.cat)}</td><td class="d">${x.n}</td><td>${S.dealLink(x.b.deals[0].d)}</td><td>${star(x.b.e.slug)}</td></tr>`).join("")}</tbody></table></div>
+
+  <div class="h3">Open accounts: rights holders</div>
+  <p class="note-s">ANZ properties signing the most partners with no sales or activation agency on record.</p>
+  <div class="tw"><table class="t"><thead><tr><th>Property</th><th>Type</th><th>Partner deals, 24 mo</th><th>Latest</th><th>Report</th></tr></thead><tbody>${openP.map(x=>`<tr><td><span class="dl">${logo(x.p.e,30)}<b>${esc(x.p.e.name)}</b></span></td><td>${esc(x.p.ptype)}</td><td class="d">${x.n}</td><td>${S.dealLink(x.p.deals[0].d)}</td><td><a class="more" href="#" data-pick="${esc(x.p.e.slug)}">Open</a></td></tr>`).join("")}</tbody></table></div>`;
+  $("view").onclick=e=>{const a=e.target.closest("[data-pick]");if(a){e.preventDefault();state.p=D.orgs.get(a.dataset.pick);go("property")}};
+}
+function agencyDetail(id){
+  const st=agStats(id);
+  const due=st.deals.map(d=>({d,r:renewal(d)})).filter(x=>x.r&&x.r.end>=yr&&x.r.end<=yr+2).sort((a,b)=>a.r.end-b.r.end);
+  const recent=st.deals.filter(d=>monthsAgo(d)<=12).sort((a,b)=>S.sortKey(b).localeCompare(S.sortKey(a))).slice(0,30);
+  const ent=AG.agencies[id];
+  $("view").innerHTML=`<p><a class="more" href="#" id="agback">All agencies</a></p>
+  <div class="ph"><div><h2 class="disp">${esc(ent.name)}</h2><div class="sub">${[ent.hq,ent.domain].filter(Boolean).map(esc).join(" · ")}${id===AG.home?" · Home agency":""}</div></div></div>
+  <div class="kpis"><div><b>${st.ap.length}</b><span>Appointments on record</span></div><div><b>${st.brands}</b><span>Brand clients</span></div><div><b>${st.props}</b><span>Rights-holder clients</span></div><div><b>${due.length}</b><span>Client renewals ${yr}-${yr+2}</span></div></div>
+  <div class="h3">Clients</div>
+  <div class="tw"><table class="t"><thead><tr><th>Client</th><th>Side</th><th>Role</th><th>Scope</th><th>Since</th><th>Source</th></tr></thead><tbody>${st.ap.map(a=>{const e=clientEnt(a);return `<tr><td><span class="dl">${e.slug?logo(e,30):""}${e.slug?`<a href="${esc(L.page(e.slug))}"><b>${esc(e.name)}</b></a>`:`<b>${esc(e.name)}</b>`}</span></td><td>${a.side==="brand"?"Brand":"Rights holder"}</td><td><span class="chip">${esc(a.role)}</span></td><td>${esc(a.scope||"")}</td><td class="d">${esc([a.from,a.until&&"to "+a.until].filter(Boolean).join(" ")||"–")}</td><td>${a.source?`<a class="more" href="${esc(a.source)}" target="_blank" rel="noopener">Source</a>`:""}</td></tr>`}).join("")}</tbody></table></div>
+  <div class="h3">Client renewals coming up</div>
+  ${due.length?`<div class="tw"><table class="t"><thead><tr><th>Ends</th><th>Basis</th><th>Deal</th><th>Deal type</th><th>Announced</th></tr></thead><tbody>${due.map(({d,r})=>`<tr><td><span class="yr">${r.end}</span></td><td>${basisTag(r)}</td><td><span class="dl">${L.pair(d,{px:30})}${S.dealLink(d)}</span></td><td>${esc(d.tier||"")}</td><td class="d">${esc(S.fmt(d))}</td></tr>`).join("")}</tbody></table></div>`:`<p class="note-s">None in the archive.</p>`}
+  <div class="h3">Client deals, last 12 months</div>
+  ${recent.length?`<div class="tw"><table class="t"><tbody>${recent.map(d=>`<tr><td class="d">${esc(S.fmt(d))}</td><td><span class="dl">${L.pair(d,{px:30})}${S.dealLink(d)}</span></td><td>${esc(d.tier||"")}</td><td class="d">${esc(d.status||"")}</td></tr>`).join("")}</tbody></table></div>`:`<p class="note-s">None in the archive.</p>`}`;
+  $("view").onclick=e=>{if(e.target.id==="agback"){e.preventDefault();state.ag="";agencies();window.scrollTo(0,0)}};
+}
+
 /* ---------- tabs ---------- */
-const TABS={finder,renewals,property,watch:watchlist};
+const TABS={finder,renewals,property,agencies,watch:watchlist};
 function go(tab){
   state.tab=TABS[tab]?tab:"finder";
   document.querySelectorAll(".tab").forEach(b=>{b.classList.toggle("on",b.dataset.tab===state.tab);b.setAttribute("aria-selected",b.dataset.tab===state.tab)});
@@ -228,12 +310,14 @@ function go(tab){
   $("view").onclick=null;
   TABS[state.tab]();
 }
-$("tabs").onclick=e=>{const b=e.target.closest("[data-tab]");if(b)go(b.dataset.tab)};
+$("tabs").onclick=e=>{const b=e.target.closest("[data-tab]");if(!b)return;if(b.dataset.tab==="agencies")state.ag="";go(b.dataset.tab)};
+// Agency chips open that agency on every tab.
+document.addEventListener("click",e=>{const a=e.target.closest("[data-agency]");if(!a)return;e.preventDefault();e.stopPropagation();state.ag=a.dataset.agency;go("agencies");window.scrollTo(0,0)},true);
 // Star buttons work on every tab.
 document.addEventListener("click",e=>{const s=e.target.closest("[data-star]");if(!s)return;e.stopPropagation();const on=watch.toggle(s.dataset.star);document.querySelectorAll(`[data-star="${CSS.escape(s.dataset.star)}"]`).forEach(b=>{b.classList.toggle("on",on);b.textContent=on?"★":"☆"})},true);
 
-S.load().then(data=>{
-  D=data;
+Promise.all([S.load(),fetch("agencies.json",{cache:"no-store"}).then(r=>r.ok?r.json():{}).catch(()=>({}))]).then(([data,ag])=>{
+  D=data;AG=Object.assign(AG,ag||{});indexAgencies();
   // Typical term per deal type, from deals that state one (needs 8+ examples, otherwise the overall median).
   const med=a=>{a=[...a].sort((x,y)=>x-y);const m=a.length>>1;return a.length%2?a[m]:Math.round((a[m-1]+a[m])/2)};
   const by=new Map();D.deals.forEach(d=>{if(d.term&&d.tier){if(!by.has(d.tier))by.set(d.tier,[]);by.get(d.tier).push(d.term)}});
