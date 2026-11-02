@@ -13,8 +13,8 @@ sponsorship", "naming rights", "jersey patch", "front-of-shirt" and "extends par
    social account is confirmed. Most small deals only ever have that one source, and that's fine: log it.
 4. **Two sources for anything big.** If a figure, length or "record/first" claim is used, it must appear in an
    official release or in two independent outlets. If not, leave the figure out.
-4. **Date = announcement date**, not the date a story was republished.
-5. **Brand first, then the property** in every deal name.
+5. **Date = announcement date**, not the date a story was republished.
+6. **Brand first, then the property** in every deal name.
 
 ---
 
