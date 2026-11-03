@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-04",
+ "hold": false,
+ "feed": {
+  "kind": "feature",
+  "cover": {
+   "tag": "Data drop",
+   "region": "ANZ",
+   "headline": "ANZ sport runs on renewals.",
+   "highlight": "renewals",
+   "deal": "ANZ v global, 2026 archive",
+   "descriptor": "Data"
+  },
+  "slides": [
+   {
+    "label": "The sample",
+    "title": "1,418 deals logged in 2026",
+    "rows": [
+     {
+      "main": "679 ANZ",
+      "sub": "Announced 1 Jan to 3 Nov"
+     },
+     {
+      "main": "739 Global",
+      "sub": "From the SSS archive"
+     }
+    ]
+   },
+   {
+    "label": "Renewal share",
+    "title": "ANZ leans on incumbents",
+    "rows": [
+     {
+      "main": "29.2% ANZ",
+      "sub": "198 of 679 renewals or extensions"
+     },
+     {
+      "main": "18.9% Global",
+      "sub": "140 of 739 renewals or extensions"
+     },
+     {
+      "main": "8 of 10 months",
+      "sub": "ANZ ahead, Jan to Oct"
+     }
+    ]
+   },
+   {
+    "label": "By code",
+    "title": "Football and AFL keep partners",
+    "rows": [
+     {
+      "main": "Motorsport 43.6%",
+      "sub": "17 of 39 ANZ deals"
+     },
+     {
+      "main": "Football 38.0%",
+      "sub": "27 of 71"
+     },
+     {
+      "main": "AFL 35.2%",
+      "sub": "43 of 122"
+     },
+     {
+      "main": "NRL 19.8%",
+      "sub": "19 of 96, the outlier"
+     }
+    ]
+   }
+  ]
+ },
+ "caption": "ANZ sport runs on renewals.\n\nOf the 679 ANZ deals in our 2026 archive, 198 were renewals or extensions. That is 29.2%, against 18.9% for global deals. ANZ was ahead in eight of the ten months from January to October.\n\nFootball, the AFL and motorsport sit well above that. The NRL is the outlier at 19.8%.\n\nThis is our archive, not the whole market. Read the full story: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+}
