@@ -170,7 +170,8 @@
   },
   "8-networks": {
    "name": "8 Networks",
-   "cat": "Telco"
+   "cat": "Telco",
+   "k": "b"
   },
   "8bit-creatives": {
    "name": "8Bit Creatives",
@@ -6866,7 +6867,8 @@
   "crust-pizza": {
    "name": "Crust Pizza",
    "cat": "Food & nutrition",
-   "domain": "crust.com.au"
+   "domain": "crust.com.au",
+   "k": "b"
   },
   "crypto-com": {
    "name": "Crypto.com",
@@ -15584,12 +15586,14 @@
   "merlin": {
    "name": "Merlin",
    "cat": "Home & hardware",
-   "domain": "gomerlin.com.au"
+   "domain": "gomerlin.com.au",
+   "k": "b"
   },
   "merlo-coffee": {
    "name": "Merlo Coffee",
    "cat": "Non-alcoholic drinks",
-   "domain": "merlo.com.au"
+   "domain": "merlo.com.au",
+   "k": "b"
   },
   "meta": {
    "name": "Meta",
@@ -16425,7 +16429,8 @@
   "movember": {
    "name": "Movember",
    "cat": "Not-for-profit",
-   "domain": "movember.com"
+   "domain": "movember.com",
+   "k": "b"
   },
   "mpbl": {
    "name": "MPBL",
@@ -19321,7 +19326,8 @@
   "plate-it-forward": {
    "name": "Plate It Forward",
    "cat": "Not-for-profit",
-   "domain": "plateitforward.org.au"
+   "domain": "plateitforward.org.au",
+   "k": "b"
   },
   "playbet-io": {
    "name": "Playbet.io",
@@ -21367,7 +21373,8 @@
   "safestyle": {
    "name": "SafeStyle",
    "cat": "Apparel & footwear",
-   "domain": "safestyle.com.au"
+   "domain": "safestyle.com.au",
+   "k": "b"
   },
   "safm": {
    "name": "SAFM",
@@ -24946,7 +24953,8 @@
   "thirteen-commercial-cleaning": {
    "name": "Thirteen Commercial Cleaning",
    "cat": "Professional services",
-   "domain": "13cc.com.au"
+   "domain": "13cc.com.au",
+   "k": "b"
   },
   "thomas-foods-international": {
    "name": "Thomas Foods International",
