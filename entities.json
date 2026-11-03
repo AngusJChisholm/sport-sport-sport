@@ -7116,6 +7116,10 @@
    "cat": "Non-alcoholic drinks",
    "k": "b"
   },
+  "dare-to-hope": {
+   "name": "Dare to Hope",
+   "k": "b"
+  },
   "darley": {
    "name": "Darley",
    "domain": "darley.com.au",
@@ -7361,6 +7365,11 @@
    "cat": "Health & beauty",
    "k": "b"
   },
+  "department-of-health": {
+   "name": "Department of Health",
+   "k": "b",
+   "cat": "Tourism & government"
+  },
   "destination-nsw": {
    "name": "Destination NSW",
    "cat": "Tourism & government",
@@ -7598,6 +7607,10 @@
    "name": "Don Julio",
    "domain": "donjulio.com",
    "cat": "Alcohol",
+   "k": "b"
+  },
+  "donatelife": {
+   "name": "DonateLife",
    "k": "b"
   },
   "dongfeng": {
@@ -10241,6 +10254,10 @@
     "icon",
     "logo"
    ]
+  },
+  "good-friday-appeal": {
+   "name": "Good Friday Appeal",
+   "k": "b"
   },
   "google": {
    "name": "Google",
@@ -14030,6 +14047,11 @@
    ],
    "cat": "Collectibles & licensing",
    "k": "b"
+  },
+  "lego-australia": {
+   "name": "LEGO Australia",
+   "k": "b",
+   "cat": "Collectibles & licensing"
   },
   "legora": {
    "name": "Legora",
@@ -19314,6 +19336,10 @@
     "icon",
     "logo"
    ]
+  },
+  "plenary": {
+   "name": "Plenary",
+   "k": "b"
   },
   "plum": {
    "name": "Plum",
@@ -24669,6 +24695,10 @@
    "cat": "Retail",
    "k": "b"
   },
+  "the-huddle": {
+   "name": "The Huddle",
+   "k": "b"
+  },
   "the-hundred": {
    "name": "The Hundred",
    "ptype": "League & competition",
@@ -24768,6 +24798,11 @@
     "icon",
     "logo"
    ]
+  },
+  "the-royal-children-s-hospital": {
+   "name": "The Royal Children's Hospital",
+   "k": "b",
+   "cat": "Health & beauty"
   },
   "the-sporting-globe": {
    "name": "The Sporting Globe",
@@ -28341,38 +28376,6 @@
     "icon",
     "logo"
    ]
-  },
-  "department-of-health": {
-   "name": "Department of Health",
-   "k": "b"
-  },
-  "dare-to-hope": {
-   "name": "Dare to Hope",
-   "k": "b"
-  },
-  "lego-australia": {
-   "name": "LEGO Australia",
-   "k": "b"
-  },
-  "the-huddle": {
-   "name": "The Huddle",
-   "k": "b"
-  },
-  "the-royal-children-s-hospital": {
-   "name": "The Royal Children's Hospital",
-   "k": "b"
-  },
-  "good-friday-appeal": {
-   "name": "Good Friday Appeal",
-   "k": "b"
-  },
-  "plenary": {
-   "name": "Plenary",
-   "k": "b"
-  },
-  "donatelife": {
-   "name": "DonateLife",
-   "k": "b"
   }
  },
  "leagues": [

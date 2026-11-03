@@ -45348,7 +45348,9 @@
    "type": "Gold partner",
    "region": "ANZ",
    "summary": "Listed as a gold partner on Carlton's official partners page.",
-   "url": "https://www.carltonfc.com.au/partners"
+   "url": "https://www.carltonfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45357,7 +45359,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on Carlton's official partners page.",
-   "url": "https://www.carltonfc.com.au/partners"
+   "url": "https://www.carltonfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45366,7 +45370,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on Carlton's official partners page.",
-   "url": "https://www.carltonfc.com.au/partners"
+   "url": "https://www.carltonfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45375,7 +45381,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on Carlton's official partners page.",
-   "url": "https://www.carltonfc.com.au/partners"
+   "url": "https://www.carltonfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45384,7 +45392,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on Carlton's official partners page.",
-   "url": "https://www.carltonfc.com.au/partners"
+   "url": "https://www.carltonfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45393,7 +45403,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on Carlton's official partners page.",
-   "url": "https://www.carltonfc.com.au/partners"
+   "url": "https://www.carltonfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45402,7 +45414,9 @@
    "type": "Apparel partner",
    "region": "ANZ",
    "summary": "Listed as an apparel partner on Essendon's official partners page.",
-   "url": "https://www.essendonfc.com.au/partners"
+   "url": "https://www.essendonfc.com.au/partners",
+   "tier": "Kit & apparel",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45411,7 +45425,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Essendon's official partners page.",
-   "url": "https://www.essendonfc.com.au/partners"
+   "url": "https://www.essendonfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45420,7 +45436,9 @@
    "type": "Supply partner",
    "region": "ANZ",
    "summary": "Listed as a supply partner on Essendon's official partners page.",
-   "url": "https://www.essendonfc.com.au/partners"
+   "url": "https://www.essendonfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45429,7 +45447,9 @@
    "type": "Supply partner",
    "region": "ANZ",
    "summary": "Listed as a supply partner on Essendon's official partners page.",
-   "url": "https://www.essendonfc.com.au/partners"
+   "url": "https://www.essendonfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45438,7 +45458,9 @@
    "type": "Supply partner",
    "region": "ANZ",
    "summary": "Listed as a supply partner on Essendon's official partners page.",
-   "url": "https://www.essendonfc.com.au/partners"
+   "url": "https://www.essendonfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45447,7 +45469,9 @@
    "type": "Supply partner",
    "region": "ANZ",
    "summary": "Listed as a supply partner on Essendon's official partners page.",
-   "url": "https://www.essendonfc.com.au/partners"
+   "url": "https://www.essendonfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45456,7 +45480,9 @@
    "type": "Premier partner",
    "region": "ANZ",
    "summary": "Listed as a premier partner on Geelong Cats's official partners page.",
-   "url": "https://www.geelongcats.com.au/partners"
+   "url": "https://www.geelongcats.com.au/partners",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45465,7 +45491,9 @@
    "type": "Premier partner",
    "region": "ANZ",
    "summary": "Listed as a premier partner on Geelong Cats's official partners page.",
-   "url": "https://www.geelongcats.com.au/partners"
+   "url": "https://www.geelongcats.com.au/partners",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45474,7 +45502,9 @@
    "type": "Premier partner",
    "region": "ANZ",
    "summary": "Listed as a premier partner on Geelong Cats's official partners page.",
-   "url": "https://www.geelongcats.com.au/partners"
+   "url": "https://www.geelongcats.com.au/partners",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45483,7 +45513,9 @@
    "type": "Advertising partner",
    "region": "ANZ",
    "summary": "Listed as an advertising partner on Geelong Cats's official partners page.",
-   "url": "https://www.geelongcats.com.au/partners"
+   "url": "https://www.geelongcats.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45492,7 +45524,9 @@
    "type": "Principal partner",
    "region": "ANZ",
    "summary": "Listed as a principal partner on Hawthorn's official partners page.",
-   "url": "https://www.hawthornfc.com.au/partners"
+   "url": "https://www.hawthornfc.com.au/partners",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45501,7 +45535,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Hawthorn's official partners page.",
-   "url": "https://www.hawthornfc.com.au/partners"
+   "url": "https://www.hawthornfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45510,7 +45546,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Hawthorn's official partners page.",
-   "url": "https://www.hawthornfc.com.au/partners"
+   "url": "https://www.hawthornfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45519,7 +45557,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Hawthorn's official partners page.",
-   "url": "https://www.hawthornfc.com.au/partners"
+   "url": "https://www.hawthornfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45528,7 +45568,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Hawthorn's official partners page.",
-   "url": "https://www.hawthornfc.com.au/partners"
+   "url": "https://www.hawthornfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45537,7 +45579,9 @@
    "type": "Charity partner",
    "region": "ANZ",
    "summary": "Listed as a charity partner on Hawthorn's official partners page.",
-   "url": "https://www.hawthornfc.com.au/partners"
+   "url": "https://www.hawthornfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45546,7 +45590,9 @@
    "type": "Principal partner",
    "region": "ANZ",
    "summary": "Listed as a principal partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners"
+   "url": "https://www.melbournefc.com.au/partners",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45555,7 +45601,9 @@
    "type": "Principal partner",
    "region": "ANZ",
    "summary": "Listed as a principal partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners"
+   "url": "https://www.melbournefc.com.au/partners",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45564,7 +45612,9 @@
    "type": "Major partner",
    "region": "ANZ",
    "summary": "Listed as a major partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners"
+   "url": "https://www.melbournefc.com.au/partners",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45573,7 +45623,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners"
+   "url": "https://www.melbournefc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45582,7 +45634,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners"
+   "url": "https://www.melbournefc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45591,7 +45645,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners"
+   "url": "https://www.melbournefc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45600,7 +45656,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners"
+   "url": "https://www.melbournefc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45609,7 +45667,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners"
+   "url": "https://www.melbournefc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45618,7 +45678,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on North Melbourne's official partners page.",
-   "url": "https://www.nmfc.com.au/partners"
+   "url": "https://www.nmfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45627,7 +45689,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on North Melbourne's official partners page.",
-   "url": "https://www.nmfc.com.au/partners"
+   "url": "https://www.nmfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45636,7 +45700,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on North Melbourne's official partners page.",
-   "url": "https://www.nmfc.com.au/partners"
+   "url": "https://www.nmfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45645,7 +45711,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on North Melbourne's official partners page.",
-   "url": "https://www.nmfc.com.au/partners"
+   "url": "https://www.nmfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45654,7 +45722,9 @@
    "type": "Charity and community partner",
    "region": "ANZ",
    "summary": "Listed as a charity and community partner on North Melbourne's official partners page.",
-   "url": "https://www.nmfc.com.au/partners"
+   "url": "https://www.nmfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45663,7 +45733,9 @@
    "type": "Charity and community partner",
    "region": "ANZ",
    "summary": "Listed as a charity and community partner on North Melbourne's official partners page.",
-   "url": "https://www.nmfc.com.au/partners"
+   "url": "https://www.nmfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45672,7 +45744,9 @@
    "type": "Charity and community partner",
    "region": "ANZ",
    "summary": "Listed as a charity and community partner on North Melbourne's official partners page.",
-   "url": "https://www.nmfc.com.au/partners"
+   "url": "https://www.nmfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45681,7 +45755,9 @@
    "type": "Charity and community partner",
    "region": "ANZ",
    "summary": "Listed as a charity and community partner on North Melbourne's official partners page.",
-   "url": "https://www.nmfc.com.au/partners"
+   "url": "https://www.nmfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45690,7 +45766,9 @@
    "type": "Diversity and inclusion partner",
    "region": "ANZ",
    "summary": "Listed as a diversity and inclusion partner on Richmond's official partners page.",
-   "url": "https://www.richmondfc.com.au/partners"
+   "url": "https://www.richmondfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45699,7 +45777,9 @@
    "type": "Diversity and inclusion partner",
    "region": "ANZ",
    "summary": "Listed as a diversity and inclusion partner on Richmond's official partners page.",
-   "url": "https://www.richmondfc.com.au/partners"
+   "url": "https://www.richmondfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45708,7 +45788,9 @@
    "type": "Diversity and inclusion partner",
    "region": "ANZ",
    "summary": "Listed as a diversity and inclusion partner on Richmond's official partners page.",
-   "url": "https://www.richmondfc.com.au/partners"
+   "url": "https://www.richmondfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45717,7 +45799,9 @@
    "type": "Community partner",
    "region": "ANZ",
    "summary": "Listed as a community partner on Richmond's official partners page.",
-   "url": "https://www.richmondfc.com.au/partners"
+   "url": "https://www.richmondfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45726,7 +45810,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on Richmond's official partners page.",
-   "url": "https://www.richmondfc.com.au/partners"
+   "url": "https://www.richmondfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45735,7 +45821,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on Richmond's official partners page.",
-   "url": "https://www.richmondfc.com.au/partners"
+   "url": "https://www.richmondfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45744,7 +45832,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on Richmond's official partners page.",
-   "url": "https://www.richmondfc.com.au/partners"
+   "url": "https://www.richmondfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45753,7 +45843,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on Richmond's official partners page.",
-   "url": "https://www.richmondfc.com.au/partners"
+   "url": "https://www.richmondfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45762,7 +45854,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on Richmond's official partners page.",
-   "url": "https://www.richmondfc.com.au/partners"
+   "url": "https://www.richmondfc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45771,7 +45865,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on St Kilda's official partners page.",
-   "url": "https://www.saints.com.au/partners"
+   "url": "https://www.saints.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45780,7 +45876,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on St Kilda's official partners page.",
-   "url": "https://www.saints.com.au/partners"
+   "url": "https://www.saints.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45789,7 +45887,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on St Kilda's official partners page.",
-   "url": "https://www.saints.com.au/partners"
+   "url": "https://www.saints.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45798,7 +45898,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on St Kilda's official partners page.",
-   "url": "https://www.saints.com.au/partners"
+   "url": "https://www.saints.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45807,7 +45909,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on St Kilda's official partners page.",
-   "url": "https://www.saints.com.au/partners"
+   "url": "https://www.saints.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45816,7 +45920,9 @@
    "type": "Official supplier",
    "region": "ANZ",
    "summary": "Listed as an official supplier on St Kilda's official partners page.",
-   "url": "https://www.saints.com.au/partners"
+   "url": "https://www.saints.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45825,7 +45931,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Western Bulldogs's official partners page.",
-   "url": "https://www.westernbulldogs.com.au/partners"
+   "url": "https://www.westernbulldogs.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45834,7 +45942,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Western Bulldogs's official partners page.",
-   "url": "https://www.westernbulldogs.com.au/partners"
+   "url": "https://www.westernbulldogs.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45843,7 +45953,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Western Bulldogs's official partners page.",
-   "url": "https://www.westernbulldogs.com.au/partners"
+   "url": "https://www.westernbulldogs.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45852,7 +45964,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Western Bulldogs's official partners page.",
-   "url": "https://www.westernbulldogs.com.au/partners"
+   "url": "https://www.westernbulldogs.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45861,7 +45975,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Adelaide Crows's official partners page.",
-   "url": "https://www.afc.com.au/partners"
+   "url": "https://www.afc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45870,7 +45986,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Adelaide Crows's official partners page.",
-   "url": "https://www.afc.com.au/partners"
+   "url": "https://www.afc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-03",
@@ -45879,7 +45997,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Listed as an official partner on Adelaide Crows's official partners page.",
-   "url": "https://www.afc.com.au/partners"
+   "url": "https://www.afc.com.au/partners",
+   "tier": "Official partner",
+   "status": "Current partner"
   }
  ]
 }
