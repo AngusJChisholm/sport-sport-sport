@@ -8758,18 +8758,19 @@
    "summary": "Club Racing Australia becomes a foundation partner of the Panthers, Roosters and Sea Eagles.",
    "tier": "Principal & major",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
-   "date": "2026-09-29",
+   "date": "2026-09-28",
    "deal": "Coca-Cola Europacific Partners × PNG Chiefs",
    "sport": "NRL",
    "type": "Premier partner",
    "region": "ANZ",
-   "summary": "CCEP PNG signs a multi-year deal as a PNG Chiefs premier partner.",
+   "summary": "Coca-Cola, through CCEP PNG, signs a multi-year deal as a PNG Chiefs premier partner.",
    "tier": "Principal & major",
    "status": "New",
-   "needsSource": true
+   "url": "https://www.zerotackle.com/png-chiefs-secure-major-partnership-with-globally-recognised-brand-238516/"
   },
   {
    "date": "2026-09-29",
@@ -8781,10 +8782,11 @@
    "tier": "Official partner",
    "status": "New",
    "ends": 2027,
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
-   "date": "2026-09-29",
+   "date": "2026-09-22",
    "deal": "IHG Hotels & Resorts × World Rugby",
    "sport": "Rugby union",
    "type": "Official partner",
@@ -8792,7 +8794,7 @@
    "summary": "IHG is the official hotel partner of Rugby World Cup 2027.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "url": "https://www.world.rugby/news/1047348/ihg-hotels-resorts-joins-as-official-partner-of-mens-rugby-world-cup-2027"
   },
   {
    "date": "2026-09-29",
@@ -8806,7 +8808,8 @@
    "term": 3,
    "ends": 2029,
    "endsEst": true,
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-09-29",
@@ -8820,7 +8823,8 @@
    "term": 2,
    "ends": 2028,
    "endsEst": true,
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-09-29",
@@ -8834,7 +8838,8 @@
    "term": 2,
    "ends": 2028,
    "endsEst": true,
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-09-29",
@@ -8845,7 +8850,8 @@
    "summary": "Omoda Jaecoo becomes the Breakers' official vehicle supplier for NBL27.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-09-29",
@@ -8856,7 +8862,8 @@
    "summary": "Snap Fitness becomes the Wildcats' official gym partner.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-09-29",
@@ -8867,7 +8874,8 @@
    "summary": "7-Eleven presents the NBL Ignite Cup for NBL27.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-09-29",
@@ -8878,7 +8886,8 @@
    "summary": "Chicken Treat becomes Perth Glory's principal partner.",
    "tier": "Principal & major",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-09-29",
@@ -8889,7 +8898,8 @@
    "summary": "Focus Construct becomes a Brisbane Roar major partner.",
    "tier": "Principal & major",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-09-29",
@@ -8922,7 +8932,8 @@
    "summary": "Oz Shipping Containers upgrades to principal partner and front-of-shirt for the Jets men.",
    "tier": "Shirt & kit placement",
    "status": "Expansion",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-10-06",
@@ -8933,7 +8944,8 @@
    "summary": "Verso Projects upgrades to Brisbane Bullets principal partner in a multi-year deal.",
    "tier": "Principal & major",
    "status": "Expansion",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-10-06",
@@ -8945,7 +8957,8 @@
    "tier": "Official partner",
    "status": "Renewal",
    "ends": 2028,
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-10-06",
@@ -8956,7 +8969,8 @@
    "summary": "Mahindra becomes the Perth Bears' automotive and founding partner.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-10-06",
@@ -8967,7 +8981,8 @@
    "summary": "Zoo Fit becomes a Perth Bears foundation partner and official gym operator.",
    "tier": "Principal & major",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-10-06",
@@ -8978,7 +8993,8 @@
    "summary": "Geely becomes NZRL's first official vehicle partner.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-10-06",
@@ -8989,7 +9005,8 @@
    "summary": "Rhino becomes Queensland Rugby's official ball and tackle equipment partner.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-10-06",
@@ -9000,7 +9017,8 @@
    "summary": "Cub Cadet signs with the Brisbane Heat.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-10-06",
@@ -9011,7 +9029,8 @@
    "summary": "Wilson Security renews helmet branding with the Hurricanes for a 10th season.",
    "tier": "Shirt & kit placement",
    "status": "Renewal",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-10-06",
@@ -9023,7 +9042,8 @@
    "tier": "Official partner",
    "status": "Renewal",
    "ends": 2029,
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-10-06",
@@ -9034,32 +9054,33 @@
    "summary": "Samsung renews the Samsung Lounge at Allianz Stadium for a year.",
    "tier": "Official partner",
    "status": "Renewal",
-   "needsSource": true
+   "needsSource": true,
+   "sourceTried": "2026-11-03"
   },
   {
-   "date": "2026-10-06",
+   "date": "2026-10-05",
    "deal": "Nine × Athletics Australia",
    "sport": "Athletics",
    "type": "Broadcast rights",
    "region": "ANZ",
-   "summary": "Nine signs a seven-year broadcast deal with Athletics Australia from 2027.",
+   "summary": "Nine signs a seven-year deal to broadcast domestic athletics events through 2033.",
    "tier": "Media & broadcast",
    "status": "New",
    "term": 7,
    "ends": 2033,
    "endsEst": true,
-   "needsSource": true
+   "url": "https://www.sportcal.com/news/nine-net-seven-year-domestic-rights-partnership-with-australian-athletics/"
   },
   {
-   "date": "2026-10-13",
+   "date": "2026-10-14",
    "deal": "Ai+ Smartphone × New Zealand Cricket",
    "sport": "Cricket",
-   "type": "Partner",
+   "type": "Powered by partner",
    "region": "ANZ",
-   "summary": "Ai+ is the powered-by partner for New Zealand's tour of India.",
+   "summary": "Ai+ Smartphone is the powered-by partner for India's tour of New Zealand.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "url": "https://www.sportcal.com/newsletters/duo-of-indian-brands-in-as-top-nzc-sponsors-for-india-visit/"
   },
   {
    "date": "2026-01-27",
@@ -32335,45 +32356,11 @@
   },
   {
    "listed": "2026-10-30",
-   "deal": "Dutton One × Essendon",
-   "sport": "AFL",
-   "type": "Major partner",
-   "region": "ANZ",
-   "summary": "Dutton Automotive joined Essendon as co-major partner and official automotive partner for at least three years, announced at the end of 2023.",
-   "url": "https://essendonfc.com.au/news/1464154/bombers-join-forces-with-dutton-automotive",
-   "tier": "Principal & major",
-   "status": "Current partner",
-   "term": 3
-  },
-  {
-   "listed": "2026-10-30",
    "deal": "Liberty × Essendon",
    "sport": "AFL",
    "type": "Guernsey partner",
    "region": "ANZ",
    "summary": "Listed as a guernsey partner on the club's official partners page.",
-   "url": "https://www.essendonfc.com.au/partners",
-   "tier": "Official partner",
-   "status": "Current partner"
-  },
-  {
-   "listed": "2026-10-30",
-   "deal": "Tradie × Essendon",
-   "sport": "AFL",
-   "type": "Shorts partner",
-   "region": "ANZ",
-   "summary": "Listed as a shorts partner on the club's official partners page.",
-   "url": "https://www.essendonfc.com.au/partners",
-   "tier": "Shirt & kit placement",
-   "status": "Current partner"
-  },
-  {
-   "listed": "2026-10-30",
-   "deal": "Palo Alto Networks × Essendon",
-   "sport": "AFL",
-   "type": "Coaches partner",
-   "region": "ANZ",
-   "summary": "Listed as a coaches partner on the club's official partners page.",
    "url": "https://www.essendonfc.com.au/partners",
    "tier": "Official partner",
    "status": "Current partner"
@@ -32392,17 +32379,6 @@
   {
    "listed": "2026-10-30",
    "deal": "House of Marley × Essendon",
-   "sport": "AFL",
-   "type": "Official partner",
-   "region": "ANZ",
-   "summary": "Listed as an official partner on the club's official partners page.",
-   "url": "https://www.essendonfc.com.au/partners",
-   "tier": "Official partner",
-   "status": "Current partner"
-  },
-  {
-   "listed": "2026-10-30",
-   "deal": "HoMedics × Essendon",
    "sport": "AFL",
    "type": "Official partner",
    "region": "ANZ",
@@ -33719,17 +33695,6 @@
   {
    "listed": "2026-10-30",
    "deal": "Superhero × Hawthorn",
-   "sport": "AFL",
-   "type": "Premier partner",
-   "region": "ANZ",
-   "summary": "Listed as a premier partner on the club's official partners page.",
-   "url": "https://www.hawthornfc.com.au/partners",
-   "tier": "Principal & major",
-   "status": "Current partner"
-  },
-  {
-   "listed": "2026-10-30",
-   "deal": "Nissan × Hawthorn",
    "sport": "AFL",
    "type": "Premier partner",
    "region": "ANZ",
@@ -35408,17 +35373,6 @@
    "summary": "Listed as an official supplier on the club's official partners page.",
    "url": "https://www.westcoasteagles.com.au/partners",
    "tier": "Official partner",
-   "status": "Current partner"
-  },
-  {
-   "listed": "2026-10-30",
-   "deal": "Mission Foods × Western Bulldogs",
-   "sport": "AFL",
-   "type": "Major partner",
-   "region": "ANZ",
-   "summary": "Listed as a major partner on the club's official partners page.",
-   "url": "https://www.westernbulldogs.com.au/partners",
-   "tier": "Principal & major",
    "status": "Current partner"
   },
   {
@@ -45386,6 +45340,546 @@
    "url": "https://www.goldcoastfc.com.au/partners",
    "tier": "Official partner",
    "status": "Current partner"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Department of Health × Carlton",
+   "sport": "AFL",
+   "type": "Gold partner",
+   "region": "ANZ",
+   "summary": "Listed as a gold partner on Carlton's official partners page.",
+   "url": "https://www.carltonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Cool Ridge × Carlton",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on Carlton's official partners page.",
+   "url": "https://www.carltonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Elastoplast × Carlton",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on Carlton's official partners page.",
+   "url": "https://www.carltonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Gatorade × Carlton",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on Carlton's official partners page.",
+   "url": "https://www.carltonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "New Era × Carlton",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on Carlton's official partners page.",
+   "url": "https://www.carltonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Pepsi Max × Carlton",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on Carlton's official partners page.",
+   "url": "https://www.carltonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "New Era × Essendon",
+   "sport": "AFL",
+   "type": "Apparel partner",
+   "region": "ANZ",
+   "summary": "Listed as an apparel partner on Essendon's official partners page.",
+   "url": "https://www.essendonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Melbourne Airport × Essendon",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Essendon's official partners page.",
+   "url": "https://www.essendonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Cool Ridge × Essendon",
+   "sport": "AFL",
+   "type": "Supply partner",
+   "region": "ANZ",
+   "summary": "Listed as a supply partner on Essendon's official partners page.",
+   "url": "https://www.essendonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Gatorade × Essendon",
+   "sport": "AFL",
+   "type": "Supply partner",
+   "region": "ANZ",
+   "summary": "Listed as a supply partner on Essendon's official partners page.",
+   "url": "https://www.essendonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Pepsi × Essendon",
+   "sport": "AFL",
+   "type": "Supply partner",
+   "region": "ANZ",
+   "summary": "Listed as a supply partner on Essendon's official partners page.",
+   "url": "https://www.essendonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Elastoplast × Essendon",
+   "sport": "AFL",
+   "type": "Supply partner",
+   "region": "ANZ",
+   "summary": "Listed as a supply partner on Essendon's official partners page.",
+   "url": "https://www.essendonfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Gatorade × Geelong Cats",
+   "sport": "AFL",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Geelong Cats's official partners page.",
+   "url": "https://www.geelongcats.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Cool Ridge × Geelong Cats",
+   "sport": "AFL",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Geelong Cats's official partners page.",
+   "url": "https://www.geelongcats.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Pepsi Max × Geelong Cats",
+   "sport": "AFL",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Geelong Cats's official partners page.",
+   "url": "https://www.geelongcats.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "New Era × Geelong Cats",
+   "sport": "AFL",
+   "type": "Advertising partner",
+   "region": "ANZ",
+   "summary": "Listed as an advertising partner on Geelong Cats's official partners page.",
+   "url": "https://www.geelongcats.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "BYD × Hawthorn",
+   "sport": "AFL",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner on Hawthorn's official partners page.",
+   "url": "https://www.hawthornfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Pepsi Max × Hawthorn",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Hawthorn's official partners page.",
+   "url": "https://www.hawthornfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Gatorade × Hawthorn",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Hawthorn's official partners page.",
+   "url": "https://www.hawthornfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Cool Ridge × Hawthorn",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Hawthorn's official partners page.",
+   "url": "https://www.hawthornfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Melbourne Airport × Hawthorn",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Hawthorn's official partners page.",
+   "url": "https://www.hawthornfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Dare to Hope × Hawthorn",
+   "sport": "AFL",
+   "type": "Charity partner",
+   "region": "ANZ",
+   "summary": "Listed as a charity partner on Hawthorn's official partners page.",
+   "url": "https://www.hawthornfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Zurich × Melbourne",
+   "sport": "AFL",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner on Melbourne's official partners page.",
+   "url": "https://www.melbournefc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Polestar × Melbourne",
+   "sport": "AFL",
+   "type": "Principal partner",
+   "region": "ANZ",
+   "summary": "Listed as a principal partner on Melbourne's official partners page.",
+   "url": "https://www.melbournefc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Penrite Oil × Melbourne",
+   "sport": "AFL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on Melbourne's official partners page.",
+   "url": "https://www.melbournefc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "LEGO Australia × Melbourne",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Melbourne's official partners page.",
+   "url": "https://www.melbournefc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Harcourts × Melbourne",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Melbourne's official partners page.",
+   "url": "https://www.melbournefc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Melbourne Airport Parking × Melbourne",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Melbourne's official partners page.",
+   "url": "https://www.melbournefc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "New Era × Melbourne",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Melbourne's official partners page.",
+   "url": "https://www.melbournefc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Gatorade × Melbourne",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Melbourne's official partners page.",
+   "url": "https://www.melbournefc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Melbourne Airport Parking × North Melbourne",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on North Melbourne's official partners page.",
+   "url": "https://www.nmfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Cool Ridge × North Melbourne",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on North Melbourne's official partners page.",
+   "url": "https://www.nmfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Gatorade × North Melbourne",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on North Melbourne's official partners page.",
+   "url": "https://www.nmfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Pepsi Max × North Melbourne",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on North Melbourne's official partners page.",
+   "url": "https://www.nmfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "The Huddle × North Melbourne",
+   "sport": "AFL",
+   "type": "Charity and community partner",
+   "region": "ANZ",
+   "summary": "Listed as a charity and community partner on North Melbourne's official partners page.",
+   "url": "https://www.nmfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "The Royal Children's Hospital × North Melbourne",
+   "sport": "AFL",
+   "type": "Charity and community partner",
+   "region": "ANZ",
+   "summary": "Listed as a charity and community partner on North Melbourne's official partners page.",
+   "url": "https://www.nmfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Good Friday Appeal × North Melbourne",
+   "sport": "AFL",
+   "type": "Charity and community partner",
+   "region": "ANZ",
+   "summary": "Listed as a charity and community partner on North Melbourne's official partners page.",
+   "url": "https://www.nmfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Deadly Choices × North Melbourne",
+   "sport": "AFL",
+   "type": "Charity and community partner",
+   "region": "ANZ",
+   "summary": "Listed as a charity and community partner on North Melbourne's official partners page.",
+   "url": "https://www.nmfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Plenary × Richmond",
+   "sport": "AFL",
+   "type": "Diversity and inclusion partner",
+   "region": "ANZ",
+   "summary": "Listed as a diversity and inclusion partner on Richmond's official partners page.",
+   "url": "https://www.richmondfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Australian Government × Richmond",
+   "sport": "AFL",
+   "type": "Diversity and inclusion partner",
+   "region": "ANZ",
+   "summary": "Listed as a diversity and inclusion partner on Richmond's official partners page.",
+   "url": "https://www.richmondfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Kinaway Chamber of Commerce × Richmond",
+   "sport": "AFL",
+   "type": "Diversity and inclusion partner",
+   "region": "ANZ",
+   "summary": "Listed as a diversity and inclusion partner on Richmond's official partners page.",
+   "url": "https://www.richmondfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "DonateLife × Richmond",
+   "sport": "AFL",
+   "type": "Community partner",
+   "region": "ANZ",
+   "summary": "Listed as a community partner on Richmond's official partners page.",
+   "url": "https://www.richmondfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "New Era × Richmond",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on Richmond's official partners page.",
+   "url": "https://www.richmondfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Melbourne Airport Parking × Richmond",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on Richmond's official partners page.",
+   "url": "https://www.richmondfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Cool Ridge × Richmond",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on Richmond's official partners page.",
+   "url": "https://www.richmondfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Pepsi × Richmond",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on Richmond's official partners page.",
+   "url": "https://www.richmondfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Gatorade × Richmond",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on Richmond's official partners page.",
+   "url": "https://www.richmondfc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Cool Ridge × St Kilda",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on St Kilda's official partners page.",
+   "url": "https://www.saints.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Gatorade × St Kilda",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on St Kilda's official partners page.",
+   "url": "https://www.saints.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Melbourne Airport × St Kilda",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on St Kilda's official partners page.",
+   "url": "https://www.saints.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Pepsi Max × St Kilda",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on St Kilda's official partners page.",
+   "url": "https://www.saints.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Elastoplast × St Kilda",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on St Kilda's official partners page.",
+   "url": "https://www.saints.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "New Era × St Kilda",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as an official supplier on St Kilda's official partners page.",
+   "url": "https://www.saints.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Cool Ridge × Western Bulldogs",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Western Bulldogs's official partners page.",
+   "url": "https://www.westernbulldogs.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Gatorade × Western Bulldogs",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Western Bulldogs's official partners page.",
+   "url": "https://www.westernbulldogs.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Pepsi Max × Western Bulldogs",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Western Bulldogs's official partners page.",
+   "url": "https://www.westernbulldogs.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Melbourne Airport × Western Bulldogs",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Western Bulldogs's official partners page.",
+   "url": "https://www.westernbulldogs.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Cool Ridge × Adelaide Crows",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Adelaide Crows's official partners page.",
+   "url": "https://www.afc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Gatorade × Adelaide Crows",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Adelaide Crows's official partners page.",
+   "url": "https://www.afc.com.au/partners"
+  },
+  {
+   "listed": "2026-11-03",
+   "deal": "Pepsi Max × Adelaide Crows",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on Adelaide Crows's official partners page.",
+   "url": "https://www.afc.com.au/partners"
   }
  ]
 }

@@ -28341,6 +28341,38 @@
     "icon",
     "logo"
    ]
+  },
+  "department-of-health": {
+   "name": "Department of Health",
+   "k": "b"
+  },
+  "dare-to-hope": {
+   "name": "Dare to Hope",
+   "k": "b"
+  },
+  "lego-australia": {
+   "name": "LEGO Australia",
+   "k": "b"
+  },
+  "the-huddle": {
+   "name": "The Huddle",
+   "k": "b"
+  },
+  "the-royal-children-s-hospital": {
+   "name": "The Royal Children's Hospital",
+   "k": "b"
+  },
+  "good-friday-appeal": {
+   "name": "Good Friday Appeal",
+   "k": "b"
+  },
+  "plenary": {
+   "name": "Plenary",
+   "k": "b"
+  },
+  "donatelife": {
+   "name": "DonateLife",
+   "k": "b"
   }
  },
  "leagues": [
