@@ -51,10 +51,11 @@ def slide1(s):
 body{{background:#1a1a1a}}
 .lab{{background:#D2FF3C;color:#000;padding:10px 14px 8px;top:86px}}
 .hv{{background:#D2FF3C;color:#000;padding:0 .08em;text-shadow:none}}
-.h{{position:absolute;left:94px;right:97px;top:256px;font-weight:800;font-size:140px;font-stretch:94%;line-height:127px;text-transform:uppercase;letter-spacing:-.005em;text-shadow:0 3px 24px rgba(0,0,0,.35)}}
-.d{{position:absolute;left:97px;bottom:100px;font-weight:600;font-size:28px;line-height:43px;letter-spacing:.13em;text-transform:uppercase;max-width:700px;text-shadow:0 2px 14px rgba(0,0,0,.5)}}</style>
-{bg}<div class="h">{lines}</div>
-<div class="d">{e(s['deal'])}<br>{e(s['descriptor'])}</div>
+.c{{position:absolute;left:0;right:0;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center}}
+.h{{margin-left:94px;margin-right:97px;font-weight:800;font-size:140px;font-stretch:94%;line-height:127px;text-transform:uppercase;letter-spacing:-.005em;text-shadow:0 3px 24px rgba(0,0,0,.35)}}
+.d{{margin:44px 0 0 97px;font-weight:600;font-size:28px;line-height:43px;letter-spacing:.13em;text-transform:uppercase;max-width:700px;text-shadow:0 2px 14px rgba(0,0,0,.5)}}</style>
+{bg}<div class="c"><div class="h">{lines}</div>
+<div class="d">{e(s['deal'])}<br>{e(s['descriptor'])}</div></div>
 <img class="wm" src="data:image/svg+xml;base64,{wordmark()}">"""
 
 def slide2(s):
