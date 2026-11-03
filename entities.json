@@ -168,6 +168,10 @@
     "logo"
    ]
   },
+  "8-networks": {
+   "name": "8 Networks",
+   "cat": "Telco"
+  },
   "8bit-creatives": {
    "name": "8Bit Creatives",
    "ptype": "Club & team",
@@ -6859,6 +6863,11 @@
    "ptype": "Club & team",
    "k": "p"
   },
+  "crust-pizza": {
+   "name": "Crust Pizza",
+   "cat": "Food & nutrition",
+   "domain": "crust.com.au"
+  },
   "crypto-com": {
    "name": "Crypto.com",
    "cat": "Fintech, crypto & trading",
@@ -11014,7 +11023,8 @@
   "henley-homes": {
    "name": "Henley Homes",
    "cat": "Construction & property",
-   "k": "b"
+   "k": "b",
+   "domain": "henley.com.au"
   },
   "hentley-farm": {
    "name": "Hentley Farm",
@@ -15571,6 +15581,16 @@
     "logo"
    ]
   },
+  "merlin": {
+   "name": "Merlin",
+   "cat": "Home & hardware",
+   "domain": "gomerlin.com.au"
+  },
+  "merlo-coffee": {
+   "name": "Merlo Coffee",
+   "cat": "Non-alcoholic drinks",
+   "domain": "merlo.com.au"
+  },
   "meta": {
    "name": "Meta",
    "domain": "meta.com",
@@ -16401,6 +16421,11 @@
     "icon",
     "logo"
    ]
+  },
+  "movember": {
+   "name": "Movember",
+   "cat": "Not-for-profit",
+   "domain": "movember.com"
   },
   "mpbl": {
    "name": "MPBL",
@@ -19293,6 +19318,11 @@
    "cat": "Construction & property",
    "k": "b"
   },
+  "plate-it-forward": {
+   "name": "Plate It Forward",
+   "cat": "Not-for-profit",
+   "domain": "plateitforward.org.au"
+  },
   "playbet-io": {
    "name": "Playbet.io",
    "cat": "Betting & wagering",
@@ -21333,6 +21363,11 @@
    "bf": [
     "icon"
    ]
+  },
+  "safestyle": {
+   "name": "SafeStyle",
+   "cat": "Apparel & footwear",
+   "domain": "safestyle.com.au"
   },
   "safm": {
    "name": "SAFM",
@@ -24908,6 +24943,11 @@
     "logo"
    ]
   },
+  "thirteen-commercial-cleaning": {
+   "name": "Thirteen Commercial Cleaning",
+   "cat": "Professional services",
+   "domain": "13cc.com.au"
+  },
   "thomas-foods-international": {
    "name": "Thomas Foods International",
    "cat": "Food & nutrition",
@@ -26203,7 +26243,10 @@
   "usl": {
    "name": "USL",
    "cat": "Health & beauty",
-   "k": "b"
+   "k": "b",
+   "aliases": [
+    "USL Sport"
+   ]
   },
   "usta": {
    "name": "USTA",

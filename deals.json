@@ -5,6 +5,220 @@
  },
  "deals": [
   {
+   "date": "2026-11-02",
+   "added": "2026-11-04",
+   "deal": "waterdrop × Sydney Thunder",
+   "sport": "Cricket",
+   "type": "Official hydration partner",
+   "region": "ANZ",
+   "summary": "waterdrop joins the Thunder as Official Hydration and Refill Bottle Partner for WBBL|12 and BBL|16.",
+   "url": "https://www.sydneythunder.com.au/news/4602680/a-refreshing-addition-thunder-welcomes-waterdrop",
+   "tier": "Official partner",
+   "status": "New"
+  },
+  {
+   "date": "2026-10-28",
+   "added": "2026-11-04",
+   "deal": "Plate It Forward × Sydney Thunder",
+   "sport": "Cricket",
+   "type": "Official social impact partner expansion",
+   "region": "ANZ",
+   "summary": "Plate It Forward expands its Thunder deal, becoming Official Social Impact Partner for the next two seasons.",
+   "url": "https://www.sydneythunder.com.au/news/4600046/thunder-and-plate-it-forward-expand-partnership-to-serve-up-positive-change",
+   "status": "Expansion",
+   "tier": "Official partner",
+   "term": 2,
+   "ends": 2028,
+   "endsEst": true
+  },
+  {
+   "date": "2026-10-29",
+   "added": "2026-11-04",
+   "deal": "8 Networks × Perth Scorchers",
+   "sport": "Cricket",
+   "type": "Official telecommunications partner",
+   "region": "ANZ",
+   "summary": "WA telco 8 Networks becomes the Scorchers' Official Telecommunications, Mobile & Internet Partner on a two-year deal.",
+   "url": "https://www.perthscorchers.com.au/news/4600598/scorchers-welcome-8-networks-to-orange-army",
+   "tier": "Official partner",
+   "status": "New",
+   "term": 2,
+   "ends": 2028,
+   "endsEst": true
+  },
+  {
+   "date": "2026-10-27",
+   "added": "2026-11-04",
+   "deal": "BMD × Perth Scorchers",
+   "sport": "Cricket",
+   "type": "Sleeve sponsorship extension",
+   "region": "ANZ",
+   "summary": "BMD extends with the Scorchers for two more WBBL and BBL seasons, keeping its right-sleeve branding.",
+   "url": "https://www.cricexec.com/global-sponsorship-roundup-nike-joins-mumbai-indians-youi-backs-big-bash-fever-partners-with-sa20/689584384/",
+   "status": "Extension",
+   "tier": "Shirt & kit placement"
+  },
+  {
+   "date": "2026-10-28",
+   "added": "2026-11-04",
+   "deal": "Poolwerx × Brisbane Heat",
+   "sport": "Cricket",
+   "type": "Major partner extension",
+   "region": "ANZ",
+   "summary": "Poolwerx extends as Heat major partner for two more years, staying on the front of WBBL and BBL playing and training kit.",
+   "url": "https://www.brisbaneheat.com.au/news/4600050/poolwerx-dives-in-with-heat-renewed-partnership-confirmed",
+   "status": "Extension",
+   "tier": "Principal & major",
+   "term": 2,
+   "ends": 2028,
+   "endsEst": true
+  },
+  {
+   "date": "2026-10-28",
+   "added": "2026-11-04",
+   "deal": "Merlin × Sydney Sixers",
+   "sport": "Cricket",
+   "type": "Sleeve sponsorship renewal",
+   "region": "ANZ",
+   "summary": "Merlin renews as Sixers official partner for a fourth summer, with sleeve branding on the WBBL and BBL kits.",
+   "url": "https://www.sydneysixers.com.au/news/4599900/four-summers-and-counting-merlin-renews-with-the-sydney-sixers",
+   "status": "Renewal",
+   "tier": "Shirt & kit placement"
+  },
+  {
+   "date": "2026-11-02",
+   "added": "2026-11-04",
+   "deal": "Movember × NBL",
+   "sport": "Basketball",
+   "type": "Impact partner",
+   "region": "ANZ",
+   "summary": "Movember becomes the NBL's first Impact Partner, using the league to drive men's health conversations through NBL27.",
+   "url": "https://www.nbl.com.au/news/nbl-and-movember-partner-to-build-healthier-connected-communities",
+   "tier": "Official partner",
+   "status": "New"
+  },
+  {
+   "date": "2026-10-30",
+   "added": "2026-11-04",
+   "deal": "TAC × Bendigo Spirit",
+   "sport": "Basketball",
+   "type": "Official road safety partner renewal",
+   "region": "ANZ",
+   "summary": "The TAC continues as the Spirit's Official Road Safety Partner for WNBL27, including a four-game Country Roads Series.",
+   "url": "https://bendigospirit.wnbl.com.au/news/bendigo-spirit-and-tac-join-forces-to-drive-road-safety-message-across-regional-victoria",
+   "status": "Renewal",
+   "tier": "Official partner"
+  },
+  {
+   "date": "2026-10-30",
+   "added": "2026-11-04",
+   "deal": "Merlo Coffee × Queensland Reds",
+   "sport": "Rugby union",
+   "type": "Official coffee partner",
+   "region": "ANZ",
+   "summary": "Merlo signs a one-year deal as Official Coffee Partner of the QRU, the Queensland Reds and Ballymore.",
+   "url": "https://reds.rugby/news/merlo-coffee-roasters-pour-support-into-rugby-as-new-qru-partner-20261030",
+   "tier": "Official partner",
+   "status": "New",
+   "term": 1,
+   "ends": 2027,
+   "endsEst": true
+  },
+  {
+   "date": "2026-10-27",
+   "added": "2026-11-04",
+   "deal": "Henley Homes × Melbourne Racing Club",
+   "sport": "Horse racing",
+   "type": "Naming rights extension",
+   "region": "ANZ",
+   "summary": "Henley Homes extends with the MRC for one year, keeping naming rights to the Group 1 Underwood Stakes and Underwood Stakes Day.",
+   "url": "https://thestraight.com.au/henley-homes-renews-underwood-stakes/",
+   "status": "Extension",
+   "tier": "Naming rights",
+   "term": 1,
+   "ends": 2027,
+   "endsEst": true
+  },
+  {
+   "date": "2026-11-02",
+   "added": "2026-11-04",
+   "deal": "Crust Pizza × Manly Sea Eagles",
+   "sport": "NRL",
+   "type": "Lower back-of-jersey partner",
+   "region": "ANZ",
+   "summary": "Crust Pizza signs a multi-year deal as Manly's lower back-of-jersey partner and exclusive QSR partner from 2027.",
+   "url": "https://www.rfg.com.au/our-media/fuelling-fans-and-footy-crust-pizza-scores-significant-sponsorship-deal-with-the-manly-warringah-sea-eagles",
+   "tier": "Shirt & kit placement",
+   "status": "New"
+  },
+  {
+   "month": "2026-10",
+   "added": "2026-11-04",
+   "deal": "Thirteen Commercial Cleaning × Adelaide United",
+   "sport": "Football",
+   "type": "Official cleaning partner renewal",
+   "region": "ANZ",
+   "summary": "Thirteen Commercial Cleaning continues as Adelaide United's Official Cleaning Partner for the next two years.",
+   "status": "Renewal",
+   "needsSource": true,
+   "tier": "Official partner",
+   "term": 2,
+   "ends": 2028,
+   "endsEst": true
+  },
+  {
+   "date": "2026-10-30",
+   "added": "2026-11-04",
+   "deal": "Sharp EIT Solutions × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Sharp EIT Solutions extends its Roosters partnership ahead of the deal's 10th year in 2027.",
+   "url": "https://www.roosters.com.au/news/2026/10/30/a-decade-together.-the-next-chapter-sharp-eit-and-sydney-roosters-extend-partnership/",
+   "status": "Extension",
+   "tier": "Official partner"
+  },
+  {
+   "date": "2026-11-02",
+   "added": "2026-11-04",
+   "deal": "Bankwest × Fremantle",
+   "sport": "AFL",
+   "type": "Major partner extension",
+   "region": "ANZ",
+   "summary": "Bankwest extends as co-major partner of Fremantle's AFL and AFLW teams into 2027, a fifth year.",
+   "url": "https://www.fremantlefc.com.au/news/2160703/bankwest-extends-freo-partnership-into-2027-keeping-fans-closer-to-the-club",
+   "status": "Extension",
+   "ends": 2027,
+   "tier": "Principal & major"
+  },
+  {
+   "date": "2026-11-02",
+   "added": "2026-11-04",
+   "deal": "Budget × Parramatta Eels",
+   "sport": "NRL",
+   "type": "Front-of-shorts expansion",
+   "region": "ANZ",
+   "summary": "Budget expands its Eels deal to become the NRL team's front-of-shorts sponsor from 2027.",
+   "url": "https://www.parraeels.com.au/news/2026/11/02/budget-expands-partnership-with-parramatta-eels-as-nrl-front-of-shorts-sponsor/",
+   "status": "Expansion",
+   "tier": "Shirt & kit placement",
+   "tierLock": true
+  },
+  {
+   "date": "2026-10-28",
+   "added": "2026-11-04",
+   "deal": "NSB Cyber × Richmond",
+   "sport": "AFL",
+   "type": "Official partner extension",
+   "region": "ANZ",
+   "summary": "NSB Cyber extends as Richmond's Official Cyber Security Partner for three more years, to the end of 2029.",
+   "url": "https://www.richmondfc.com.au/news/2157882/nsb-cyber-and-richmond-ink-partnership-extension",
+   "status": "Extension",
+   "ends": 2029,
+   "tier": "Official partner",
+   "term": 3
+  },
+  {
    "date": "2026-10-29",
    "added": "2026-11-03",
    "deal": "Generali × AC Milan / Inter Milan",
@@ -280,6 +494,28 @@
    "tier": "Official partner",
    "ends": 2035,
    "endsEst": true
+  },
+  {
+   "listed": "2026-11-04",
+   "deal": "USL × Wellington Phoenix",
+   "sport": "Football",
+   "type": "Corporate partner",
+   "region": "ANZ",
+   "summary": "USL Sport is listed as a corporate partner on the club's official partners page.",
+   "url": "https://wellingtonphoenix.com/our-partners/",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-04",
+   "deal": "SafeStyle × Surfing Australia",
+   "sport": "Surfing",
+   "type": "Event partner",
+   "region": "ANZ",
+   "summary": "SafeStyle presents the Australian Shortboard Titles and supports the Australian Boardriders Battle.",
+   "url": "https://surfingaustralia.com/the-australian-boardriders-battle-returns-for-14th-season-regional-series-running-september-november-2026/",
+   "status": "Current partner",
+   "tier": "Official partner"
   },
   {
    "listed": "2026-11-02",
@@ -12282,7 +12518,7 @@
    "needsSource": true
   },
   {
-   "date": "2025-12-03",
+   "date": "2025-11-26",
    "deal": "Budget × Parramatta Eels",
    "sport": "NRL",
    "type": "Official partner",
@@ -12290,7 +12526,7 @@
    "summary": "Budget becomes the Eels' official car and truck rental partner from 2026.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "url": "https://www.parraeels.com.au/news/2025/11/26/budget-trucks-drives-new-partnership-with-parramatta-eels/"
   },
   {
    "date": "2025-12-03",
@@ -15462,7 +15698,7 @@
    "needsSource": true
   },
   {
-   "date": "2025-09-23",
+   "date": "2025-09-18",
    "deal": "NSB Cyber × Richmond",
    "sport": "AFL",
    "type": "Official partner",
@@ -15470,7 +15706,7 @@
    "summary": "NSB Cyber becomes Richmond's cyber security partner.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "url": "https://www.richmondfc.com.au/news/1876030/tigers-welcome-nsb-cyber-as-cyber-security-partner"
   },
   {
    "date": "2025-09-23",
@@ -32564,7 +32800,6 @@
    "status": "Current partner"
   },
   {
-   "listed": "2026-10-30",
    "deal": "Bankwest × Fremantle",
    "sport": "AFL",
    "type": "Major partner",
@@ -32572,8 +32807,11 @@
    "summary": "Bankwest returned to Fremantle as co-major partner of the AFL and AFLW teams on a four-season deal.",
    "url": "https://fremantlefc.com.au/news/1239514/bankwest-signs-on-as-co-major-partner-of-the-fremantle-dockers",
    "tier": "Principal & major",
-   "status": "Current partner",
-   "term": 4
+   "status": "New",
+   "term": 4,
+   "date": "2022-10-21",
+   "ends": 2026,
+   "endsEst": true
   },
   {
    "listed": "2026-10-30",
@@ -41228,15 +41466,18 @@
    "status": "Current partner"
   },
   {
-   "listed": "2026-10-30",
-   "deal": "Sharp × Sydney Roosters",
+   "deal": "Sharp EIT Solutions × Sydney Roosters",
    "sport": "NRL",
-   "type": "Official partner",
+   "type": "Official technology partner",
    "region": "ANZ",
-   "summary": "Listed as an official partner on the club's official partners page.",
-   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "summary": "Sharp signs a three-year deal as the Roosters' Official Technology Partner from 2017.",
+   "url": "https://www.roosters.com.au/news/2016/12/02/roosters-partner-with-sharp",
    "tier": "Official partner",
-   "status": "Current partner"
+   "status": "New",
+   "date": "2016-12-02",
+   "term": 3,
+   "ends": 2019,
+   "endsEst": true
   },
   {
    "listed": "2026-10-30",
