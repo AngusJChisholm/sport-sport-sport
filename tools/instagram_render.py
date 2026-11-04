@@ -72,10 +72,25 @@ async () => {
 """
 
 
+_FONT_CSS = None
+
+
+def font_css():
+    """Embed the local Archivo so renders are identical in CI and offline.
+    Width is pinned to normal (100%): that's the look Angus approved, because the old Google Fonts
+    link never loaded the width axis, so the font-stretch values in the CSS have never applied."""
+    global _FONT_CSS
+    if _FONT_CSS is None:
+        import base64
+        f = base64.b64encode((ROOT / "assets/fonts/Archivo[wdth,wght].ttf").read_bytes()).decode()
+        _FONT_CSS = ("@font-face{font-family:Archivo;src:url(data:font/ttf;base64," + f +
+                     ");font-weight:100 900;font-stretch:100%}")
+    return _FONT_CSS
+
+
 def page(body, w, h, bg, fg, extra_css=""):
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&display=swap" rel="stylesheet">
-<style>{BASE_CSS}{PHOTO_CSS}
+<style>{font_css()}{BASE_CSS}{PHOTO_CSS}
 body{{width:{w}px;height:{h}px;background:{bg};color:{fg}}}
 .frame{{width:{w}px;height:{h}px}}
 {extra_css}</style></head><body>{body}</body></html>"""
@@ -306,7 +321,7 @@ def feed_rows_slide(label, title, rows, n, total, footer_right=""):
 
 def feed_close(n, total):
     return f"""<style>{DARK_CSS}</style><div class="frame dk{' lt' if LIGHT else ''}">{dk_top("Follow", n, total)}
-<div class="d-mid"><h2 class="d-big">All things <span class="v">sport</span> business.</h2>
+<div class="d-mid"><h2 class="d-big" data-fit="700" data-min="110" style="width:100%">All<br>things<br><span class="v">sport</span><br>business.</h2>
 <div class="d-sup">Deals, news and analysis. Global &amp; ANZ.</div><div class="d-pill">Follow for more</div></div>
 {dk_foot(SITE_LABEL, n, total)}</div>"""
 
