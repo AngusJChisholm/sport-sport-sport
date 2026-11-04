@@ -5,6 +5,18 @@
  },
  "deals": [
   {
+   "date": "2019-09-09",
+   "added": "2026-11-04",
+   "deal": "Ticketmaster × Australian Open",
+   "sport": "Tennis",
+   "type": "Official ticketing partner",
+   "region": "ANZ",
+   "summary": "Ticketmaster becomes Tennis Australia's official ticket agent for the Australian Open from 2020, replacing Ticketek, plus the Brisbane, Adelaide and Hobart events. Still the AO's ticketing provider for 2027.",
+   "url": "https://ausopen.com/node/127676",
+   "tier": "Official partner",
+   "status": "New"
+  },
+  {
    "date": "2026-11-02",
    "added": "2026-11-04",
    "deal": "waterdrop × Sydney Thunder",
@@ -6904,15 +6916,15 @@
    "needsSource": true
   },
   {
-   "date": "2026-09-01",
+   "date": "2026-04-21",
    "deal": "AXS × Melbourne Park",
    "sport": "Tennis",
    "type": "Ticketing partner",
    "region": "ANZ",
-   "summary": "AXS becomes Melbourne Park's year-round ticketing partner.",
+   "summary": "AXS becomes Melbourne Park's official ticketing partner for year-round events outside the Australian Open, live from 22 August 2026.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "url": "https://www.melbournepark.com.au/plan-your-visit/ticketing/"
   },
   {
    "date": "2026-09-01",
