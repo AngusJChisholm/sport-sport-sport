@@ -28460,6 +28460,30 @@
     "icon",
     "logo"
    ]
+  },
+  "dicks-foot-locker": {
+   "name": "DICK'S Sporting Goods / Foot Locker"
+  },
+  "caitlin-clark": {
+   "name": "Caitlin Clark"
+  },
+  "premier-jumping-league": {
+   "name": "Premier Jumping League"
+  },
+  "zee-entertainment": {
+   "name": "Zee Entertainment"
+  },
+  "mediapro": {
+   "name": "Mediapro"
+  },
+  "nusenda-credit-union": {
+   "name": "Nusenda Credit Union"
+  },
+  "new-mexico-lobos": {
+   "name": "New Mexico Lobos"
+  },
+  "debet": {
+   "name": "Debet"
   }
  },
  "leagues": [
