@@ -4348,6 +4348,11 @@
    "ptype": "League & competition",
    "k": "p"
   },
+  "british-supplements": {
+   "name": "British Supplements",
+   "cat": "Food & nutrition",
+   "k": "b"
+  },
   "broadside-lawyers": {
    "name": "Broadside Lawyers",
    "cat": "Professional services",
@@ -6417,6 +6422,11 @@
   "connolly-suthers-lawyers": {
    "name": "Connolly Suthers Lawyers",
    "cat": "Professional services",
+   "k": "b"
+  },
+  "connor": {
+   "name": "CONNOR",
+   "domain": "connor.com.au",
    "k": "b"
   },
   "connor-mcdavid": {
@@ -10306,6 +10316,11 @@
     "icon",
     "logo"
    ]
+  },
+  "grand-slam-of-curling": {
+   "name": "Grand Slam of Curling",
+   "domain": "thegrandslamofcurling.com",
+   "k": "p"
   },
   "grant-thornton": {
    "name": "Grant Thornton",
@@ -16866,6 +16881,9 @@
    "cat": "Gaming & esports",
    "k": "b"
   },
+  "nba-wnba": {
+   "name": "NBA / WNBA"
+  },
   "nbl": {
    "name": "NBL",
    "domain": "nbl.com.au",
@@ -17778,6 +17796,11 @@
    "bf": [
     "icon"
    ]
+  },
+  "ntt": {
+   "name": "NTT",
+   "domain": "group.ntt",
+   "k": "b"
   },
   "nubank": {
    "name": "Nubank",
@@ -19539,6 +19562,11 @@
     "icon"
    ],
    "ptype": "Club & team",
+   "k": "p"
+  },
+  "portadown-fc": {
+   "name": "Portadown FC",
+   "domain": "portadownfc.co.uk",
    "k": "p"
   },
   "portsmouth": {
@@ -26185,6 +26213,11 @@
     "logo"
    ]
   },
+  "usa-basketball": {
+   "name": "USA Basketball",
+   "domain": "usab.com",
+   "k": "p"
+  },
   "usa-cricket": {
    "name": "USA Cricket",
    "ptype": "Governing body",
@@ -28427,32 +28460,6 @@
     "icon",
     "logo"
    ]
-  },
-  "connor": {
-   "name": "CONNOR",
-   "domain": "connor.com.au"
-  },
-  "ntt": {
-   "name": "NTT",
-   "domain": "group.ntt"
-  },
-  "grand-slam-of-curling": {
-   "name": "Grand Slam of Curling",
-   "domain": "thegrandslamofcurling.com"
-  },
-  "british-supplements": {
-   "name": "British Supplements"
-  },
-  "portadown-fc": {
-   "name": "Portadown FC",
-   "domain": "portadownfc.co.uk"
-  },
-  "usa-basketball": {
-   "name": "USA Basketball",
-   "domain": "usab.com"
-  },
-  "nba-wnba": {
-   "name": "NBA / WNBA"
   }
  },
  "leagues": [

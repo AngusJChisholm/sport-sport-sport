@@ -28,7 +28,12 @@
     ],
     "close": "The kit deal gets the logo. This one gets the arrival shot."
    },
-   "slug": "2026-11-05-connor-sydney-fc"
+   "slug": "2026-11-05-connor-sydney-fc",
+   "tier": "Official partner",
+   "status": "New",
+   "term": 2,
+   "ends": 2028,
+   "endsEst": true
   },
   {
    "date": "2026-11-04",
@@ -38,7 +43,9 @@
    "type": "Official partner",
    "region": "Global",
    "summary": "NTT becomes an Official Partner of the McLaren Mastercard Formula 1 Team on a multi-year deal from 2027, with AI security governance at the centre.",
-   "url": "https://www.mclaren.com/racing/formula-1/2026/mclaren-racing-and-ntt-announce-multi-year-partnership/"
+   "url": "https://www.mclaren.com/racing/formula-1/2026/mclaren-racing-and-ntt-announce-multi-year-partnership/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-02",
@@ -48,7 +55,9 @@
    "type": "Partnership expansion",
    "region": "Global",
    "summary": "American Express takes its Official Payments Partner deal with the NBA and WNBA global, with its first season of international activations.",
-   "url": "https://pr.nba.com/american-express-nba-wnba-partnership/"
+   "url": "https://pr.nba.com/american-express-nba-wnba-partnership/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-03",
@@ -58,7 +67,12 @@
    "type": "Partnership extension",
    "region": "ANZ",
    "summary": "Toyota extends as Official Automotive Partner of Queensland Cricket and the Brisbane Heat for a further three years.",
-   "url": "https://www.brisbaneheat.com.au/news/4603429/toyota-to-drive-heat-new-deal-announced"
+   "url": "https://www.brisbaneheat.com.au/news/4603429/toyota-to-drive-heat-new-deal-announced",
+   "tier": "Official partner",
+   "status": "Extension",
+   "term": 3,
+   "ends": 2029,
+   "endsEst": true
   },
   {
    "date": "2026-11-02",
@@ -68,7 +82,9 @@
    "type": "Media rights",
    "region": "Global",
    "summary": "DAZN signs a multi-year deal to carry the Grand Slam of Curling outside Canada and the US, adding Rock League from January 2027.",
-   "url": "https://www.thegrandslamofcurling.com/media/the-grand-slam-of-curling-expands-global-broadcast-reach-through-dazn-for-the-202627-season"
+   "url": "https://www.thegrandslamofcurling.com/media/the-grand-slam-of-curling-expands-global-broadcast-reach-through-dazn-for-the-202627-season",
+   "tier": "Media & broadcast",
+   "status": "New"
   },
   {
    "date": "2026-11-04",
@@ -78,7 +94,10 @@
    "type": "Key partner",
    "region": "ANZ",
    "summary": "Klein Tools joins Port Adelaide as a new key partner of its AFL program for the 2027 season.",
-   "url": "https://portadelaidefc.com.au/news/2161656/klein-tools-joins-port-adelaide-as-a-new-key-partner"
+   "url": "https://portadelaidefc.com.au/news/2161656/klein-tools-joins-port-adelaide-as-a-new-key-partner",
+   "tier": "Official partner",
+   "status": "New",
+   "ends": 2027
   },
   {
    "date": "2026-11-02",
@@ -88,7 +107,9 @@
    "type": "Partnership expansion",
    "region": "Global",
    "summary": "American Express brings USA Basketball into its global marketing partnership with the NBA and WNBA.",
-   "url": "https://www.usab.com/news/2026/11/american-express-usa-basketball-expand-partnership-globally-bringing-card-members-and-fans-closer-to-the-game-across-international-markets"
+   "url": "https://www.usab.com/news/2026/11/american-express-usa-basketball-expand-partnership-globally-bringing-card-members-and-fans-closer-to-the-game-across-international-markets",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-02",
@@ -98,7 +119,12 @@
    "type": "Stadium naming rights",
    "region": "Global",
    "summary": "British Supplements takes four-year naming rights, turning Shamrock Park into British Supplements Shamrock Park.",
-   "url": "https://portadownfc.co.uk/2026/11/02/ports-announce-british-supplements-as-the-clubs-new-official-stadium-naming-rights-partner/"
+   "url": "https://portadownfc.co.uk/2026/11/02/ports-announce-british-supplements-as-the-clubs-new-official-stadium-naming-rights-partner/",
+   "tier": "Naming rights",
+   "status": "New",
+   "term": 4,
+   "ends": 2030,
+   "endsEst": true
   },
   {
    "date": "2026-06-09",
