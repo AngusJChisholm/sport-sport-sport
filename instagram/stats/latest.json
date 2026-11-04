@@ -1,24 +1,24 @@
 {
- "date": "2026-11-04",
+ "date": "2026-11-05",
  "username": "sportsportsport.hq",
  "followers": 9,
  "followers_change_7d": 1,
- "since": "2026-10-28",
+ "since": "2026-10-29",
  "posts_last_7d": 6,
  "best_post_7d": {
-  "when": "Mon 02 Nov 23:06",
-  "hour": 23,
-  "weekday": "Mon",
+  "when": "Wed 04 Nov 19:02",
+  "hour": 19,
+  "weekday": "Wed",
   "type": "FEED",
   "likes": 1,
   "comments": 0,
-  "caption": "Maccas joins the Warriors.",
-  "link": "https://www.instagram.com/p/DfPRMPYlJQp/",
+  "caption": "ANZ sport runs on renewals.",
+  "link": "https://www.instagram.com/p/DfT-3dWmIxf/",
   "recent": true,
   "score": 1
  },
  "totals_7d": {
-  "likes": 4,
+  "likes": 5,
   "comments": 0,
   "saved": 0,
   "shares": 0,
@@ -43,6 +43,18 @@
  ],
  "insights_available": false,
  "recent_posts": [
+  {
+   "when": "Wed 04 Nov 19:02",
+   "hour": 19,
+   "weekday": "Wed",
+   "type": "FEED",
+   "likes": 1,
+   "comments": 0,
+   "caption": "ANZ sport runs on renewals.",
+   "link": "https://www.instagram.com/p/DfT-3dWmIxf/",
+   "recent": true,
+   "score": 1
+  },
   {
    "when": "Tue 03 Nov 19:17",
    "hour": 19,
@@ -102,18 +114,6 @@
    "link": "https://www.instagram.com/p/DfEnzfJjlw-/",
    "recent": true,
    "score": 1
-  },
-  {
-   "when": "Wed 28 Oct 19:15",
-   "hour": 19,
-   "weekday": "Wed",
-   "type": "FEED",
-   "likes": 0,
-   "comments": 0,
-   "caption": "Youi just went big on the Bash.",
-   "link": "https://www.instagram.com/p/DfB-s6ljVta/",
-   "recent": true,
-   "score": 0
   }
  ]
 }
