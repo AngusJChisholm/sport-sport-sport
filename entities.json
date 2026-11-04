@@ -434,7 +434,10 @@
     "logo"
    ],
    "cat": "Airlines & travel",
-   "k": "b"
+   "k": "b",
+   "aliases": [
+    "Accor Hotels"
+   ]
   },
   "accor-stadium": {
    "name": "Accor Stadium",
@@ -4611,6 +4614,9 @@
    "bf": [
     "icon",
     "logo"
+   ],
+   "aliases": [
+    "Bunnings Warehouse"
    ]
   },
   "bupa": {
@@ -6479,6 +6485,9 @@
    "bf": [
     "icon",
     "logo"
+   ],
+   "aliases": [
+    "Continental Tyres"
    ]
   },
   "continental-resources": {
@@ -6493,7 +6502,13 @@
   },
   "cool-ridge": {
    "name": "Cool Ridge",
-   "k": "b"
+   "k": "b",
+   "domain": "coolridge.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "cat": "Non-alcoholic drinks"
   },
   "cooley": {
    "name": "Cooley",
@@ -28514,6 +28529,71 @@
     "icon",
     "logo"
    ]
+  },
+  "sportsbet": {
+   "name": "Sportsbet",
+   "domain": "sportsbet.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "cat": "Betting & wagering",
+   "k": "b"
+  },
+  "bws": {
+   "name": "BWS",
+   "domain": "bws.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "cat": "Alcohol",
+   "k": "b"
+  },
+  "hard-rated": {
+   "name": "Hard Rated",
+   "domain": "hardrated.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "cat": "Alcohol",
+   "k": "b",
+   "parent": "carlton-and-united-breweries"
+  },
+  "energyaustralia": {
+   "name": "EnergyAustralia",
+   "domain": "energyaustralia.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "cat": "Energy & utilities",
+   "k": "b",
+   "aliases": [
+    "Energy Australia"
+   ]
+  },
+  "sherrin": {
+   "name": "Sherrin",
+   "domain": "sherrin.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "cat": "Sporting goods & equipment",
+   "k": "b"
+  },
+  "grant-burge": {
+   "name": "Grant Burge",
+   "domain": "grantburgewines.com.au",
+   "bf": [
+    "icon",
+    "logo"
+   ],
+   "cat": "Alcohol",
+   "k": "b",
+   "parent": "vinarchy"
   }
  },
  "leagues": [

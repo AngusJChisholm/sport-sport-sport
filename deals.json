@@ -6459,7 +6459,7 @@
   {
    "date": "2026-02-03",
    "added": "2026-02-06",
-   "deal": "Vinarchy × AFL",
+   "deal": "Grant Burge × AFL",
    "sport": "AFL",
    "type": "Official partner",
    "region": "ANZ",
@@ -6534,9 +6534,10 @@
    "region": "ANZ",
    "summary": "Five more years as official airline, through 2030.",
    "url": "https://www.virginaustralia.com/au/en/newsroom/2026/2/virgin-australia-and-afl-kick-off-major-new-partnership/",
-   "tier": "Official partner",
+   "tier": "Principal & major",
    "status": "Extension",
-   "ends": 2030
+   "ends": 2030,
+   "tierLock": true
   },
   {
    "date": "2026-02-19",
@@ -25195,20 +25196,6 @@
    "ends": 2029
   },
   {
-   "date": "2026-03-12",
-   "deal": "Gello × AFL",
-   "sport": "AFL",
-   "type": "Licensing",
-   "region": "ANZ",
-   "summary": "Five-year AFL licensing deal",
-   "url": "https://ministryofsport.com/gello-beans-and-gello-snakes-announce-five-year-afl-partnership/",
-   "tier": "Licensing & merchandise",
-   "status": "New",
-   "term": 5,
-   "ends": 2031,
-   "endsEst": true
-  },
-  {
    "date": "2026-03-25",
    "deal": "AAMI × Commonwealth Games Australia",
    "sport": "Multi-sport",
@@ -30412,8 +30399,273 @@
    "region": "ANZ",
    "summary": "NAB's new AFL sponsorship campaign",
    "url": "https://www.bandt.com.au/nab-celebrates-how-footy-brings-aussies-together-in-new-afl-sponsorship-campaign/",
-   "tier": "Official partner",
-   "status": "New"
+   "tier": "Principal & major",
+   "status": "New",
+   "tierLock": true
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Toyota × AFL",
+   "sport": "AFL",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as the premier partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Principal & major"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Carlton Draught × AFL",
+   "sport": "AFL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Principal & major"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Continental Tyres × AFL",
+   "sport": "AFL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Principal & major"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Crypto.com × AFL",
+   "sport": "AFL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Principal & major"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "McDonald's × AFL",
+   "sport": "AFL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Principal & major"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Sportsbet × AFL",
+   "sport": "AFL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Principal & major"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Telstra × AFL",
+   "sport": "AFL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Principal & major"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Accor × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "BWS × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Cool Ridge × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "EnergyAustralia × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Gatorade × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Hard Rated × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Harvey Norman × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Hostplus × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Marsh × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Monster Energy × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "OMO × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Pepsi × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Sharp EIT Solutions × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Sherrin × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "SOLO × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Visit Victoria × AFL",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as an official partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
+  },
+  {
+   "listed": "2026-11-05",
+   "deal": "Puma × AFL",
+   "sport": "AFL",
+   "type": "Associate partner",
+   "region": "ANZ",
+   "summary": "Listed as an associate partner on the AFL's official partners page.",
+   "url": "https://www.afl.com.au/about-afl/partners/corporate",
+   "status": "Current partner",
+   "tier": "Official partner"
   },
   {
    "date": "2025-02-20",
