@@ -5,6 +5,18 @@
  },
  "deals": [
   {
+   "date": "2026-06-09",
+   "added": "2026-11-04",
+   "deal": "TikTok × ATP Tour",
+   "sport": "Tennis",
+   "type": "Content partnership expansion",
+   "region": "Global",
+   "summary": "ATP and TikTok expand their global content partnership, taking the TikTok GamePlan hub to all nine ATP Masters 1000 events and the Nitto ATP Finals in 2026.",
+   "url": "https://www.atptour.com/en/news/atp-tiktok-partnership-expansion-press-release-june-2026",
+   "tier": "Official partner",
+   "status": "Expansion"
+  },
+  {
    "date": "2019-09-09",
    "added": "2026-11-04",
    "deal": "Ticketmaster × Australian Open",
@@ -11033,15 +11045,18 @@
    "status": "New"
   },
   {
-   "date": "2026-05-04",
+   "date": "2026-04-30",
    "deal": "Oura × USTA",
    "sport": "Tennis",
-   "type": "Partnership",
+   "type": "Official sponsor and wearable partner",
    "region": "Global",
-   "summary": "Oura signs a new partnership with the USTA.",
-   "url": "https://sportsmintmedia.com/oura-serves-up-new-partnership-with-united-states-tennis-association/",
+   "summary": "Oura signs a five-year deal as Official Sponsor and Wearable Fitness Device Partner of the US Open, USTA and USTA Coaching, the USTA's first wearable partnership.",
+   "url": "https://ouraring.com/blog/oura-named-official-wearable-of-the-usta/",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "term": 5,
+   "ends": 2031,
+   "endsEst": true
   },
   {
    "date": "2026-05-04",
@@ -18303,8 +18318,9 @@
    "region": "Global",
    "summary": "Spotify extends its global FC Barcelona sponsorship.",
    "url": "https://sportsmintmedia.com/fc-barcelona-and-spotify-strengthen-global-ties-with-extended-sponsorship-alliance/",
-   "tier": "Official partner",
-   "status": "Extension"
+   "tier": "Shirt & kit placement",
+   "status": "Extension",
+   "tierLock": true
   },
   {
    "date": "2025-10-17",
