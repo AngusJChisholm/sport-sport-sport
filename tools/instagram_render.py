@@ -323,7 +323,7 @@ def feed_close(n, total):
     return f"""<style>{DARK_CSS}</style><div class="frame dk{' lt' if LIGHT else ''}">{dk_top("Follow", n, total)}
 <div class="d-mid"><h2 class="d-big" data-fit="700" data-min="110" style="width:100%">All<br>things<br><span class="v">sport</span><br>business.</h2>
 <div class="d-sup">Deals, news and analysis. Global &amp; ANZ.</div><div class="d-pill">Follow for more</div></div>
-{dk_foot(SITE_LABEL, n, total)}</div>"""
+{dk_foot("")}</div>"""
 
 
 def week_item(item, idx, n, total, label="The week in deals"):
