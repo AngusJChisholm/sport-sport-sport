@@ -4898,6 +4898,12 @@
    "ptype": "Club & team",
    "k": "p"
   },
+  "cancer-council": {
+   "name": "Cancer Council",
+   "domain": "cancercouncil.com.au",
+   "cat": "Not-for-profit",
+   "k": "b"
+  },
   "cannon-logistics": {
    "name": "Cannon Logistics",
    "cat": "Logistics & transport",
@@ -5049,7 +5055,8 @@
   "carbiz": {
    "name": "Carbiz",
    "cat": "Automotive",
-   "k": "b"
+   "k": "b",
+   "domain": "carbiz.com.au"
   },
   "cardiff-city": {
    "name": "Cardiff City",
@@ -13146,7 +13153,9 @@
   "kennards-hire": {
    "name": "Kennards Hire",
    "cat": "Logistics & transport",
-   "k": "b"
+   "k": "b",
+   "logo": "assets/logos/kennards-hire.png",
+   "domain": "kennards.com.au"
   },
   "kenogo": {
    "name": "KenoGo",
@@ -14912,7 +14921,9 @@
   "macquarie-university": {
    "name": "Macquarie University",
    "cat": "Banking & finance",
-   "k": "b"
+   "k": "b",
+   "logo": "assets/logos/macquarie-university.png",
+   "domain": "mq.edu.au"
   },
   "macron": {
    "name": "Macron",
@@ -17297,7 +17308,9 @@
   "nexen-tyre": {
    "name": "Nexen Tyre",
    "cat": "Automotive",
-   "k": "b"
+   "k": "b",
+   "logo": "assets/logos/nexen-tyre.png",
+   "domain": "nexentire.com"
   },
   "nexo": {
    "name": "Nexo",
@@ -18412,7 +18425,8 @@
   },
   "otb-led-services": {
    "name": "OTB LED Services",
-   "k": "b"
+   "k": "b",
+   "logo": "assets/logos/otb-led-services.png"
   },
   "oura": {
    "name": "Oura",
@@ -21581,7 +21595,8 @@
   },
   "san-miguel": {
    "name": "San Miguel",
-   "k": "b"
+   "k": "b",
+   "logo": "assets/logos/san-miguel.png"
   },
   "san-remo": {
    "name": "San Remo",

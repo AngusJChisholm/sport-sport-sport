@@ -13737,7 +13737,8 @@
    "tier": "Shirt & kit placement",
    "status": "New",
    "ends": 2026,
-   "needsSource": true
+   "needsSource": true,
+   "ended": true
   },
   {
    "date": "2026-02-18",
@@ -14488,7 +14489,8 @@
    "summary": "SipEnergy renews as Sydney FC's energy partner.",
    "tier": "Official partner",
    "status": "Renewal",
-   "needsSource": true
+   "needsSource": true,
+   "ended": true
   },
   {
    "date": "2026-02-25",
@@ -15033,7 +15035,8 @@
    "summary": "Naked Wines joins Sydney FC.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "ended": true
   },
   {
    "date": "2025-11-12",
@@ -15420,7 +15423,8 @@
    "summary": "Trip.com partners with Sydney FC.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "ended": true
   },
   {
    "date": "2025-11-05",
@@ -23207,7 +23211,8 @@
    "summary": "Anytime Fitness among new Sydney FC partners",
    "url": "https://ministryofsport.com/sydney-fc-announce-multiple-partnerships-in-lieu-of-wrexham-matchup/",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ended": true
   },
   {
    "date": "2025-07-07",
@@ -29253,7 +29258,8 @@
    "status": "New",
    "term": 2,
    "ends": 2026,
-   "endsEst": true
+   "endsEst": true,
+   "ended": true
   },
   {
    "date": "2024-11-15",
@@ -36665,6 +36671,31 @@
    "url": "https://www.sydneyfc.com/partners",
    "tier": "Official partner",
    "status": "Current partner"
+  },
+  {
+   "date": "2026-01-29",
+   "deal": "Under Armour × Sydney FC",
+   "sport": "Football",
+   "type": "Kit supplier",
+   "region": "ANZ",
+   "summary": "Under Armour extends as Sydney FC's Official Premium Partner, Apparel Supplier and Footwear Partner across every team, 1 July 2026 to 30 June 2029, taking the partnership to 10 years.",
+   "url": "https://sydneyfc.com/news/sydney-fc-extends-under-armour-partnership-to-10-years/",
+   "since": 2016,
+   "tier": "Kit & apparel",
+   "status": "Extension",
+   "term": 3,
+   "ends": 2029
+  },
+  {
+   "date": "2024-11-10",
+   "deal": "Cancer Council × Sydney FC",
+   "sport": "Football",
+   "type": "Charity partner",
+   "region": "ANZ",
+   "summary": "Cancer Council NSW becomes Sydney FC's charity partner for the club's 20th anniversary season, and is still listed as charity partner.",
+   "url": "https://sydneyfc.com/news/sydney-fc-sign-partnership-with-cancer-council/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "listed": "2026-10-30",
