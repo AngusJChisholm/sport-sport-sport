@@ -5,6 +5,102 @@
  },
  "deals": [
   {
+   "date": "2026-11-04",
+   "added": "2026-11-05",
+   "deal": "CONNOR × Sydney FC",
+   "sport": "Football",
+   "type": "Official off-field style partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "Dressed for the walk in.",
+   "summary": "Menswear chain CONNOR signs a two-year deal to dress Sydney FC's first team, coaches and officials for matchday arrivals and club functions.",
+   "url": "https://sydneyfc.com/news/connor-styles-up-sydney-fc/",
+   "image": "https://images.unsplash.com/photo-1556816213-431b32a38191",
+   "imageCredit": "Unsplash",
+   "article": {
+    "standfirst": "Sydney FC has sold the walk from the team bus to the sheds.",
+    "body": [
+     "CONNOR has signed a two-year deal with Sydney FC as the club's Official Off-Field Style Partner. The Australian menswear chain will supply suiting and fashion outfits for the first team, coaching staff and club officials, covering matchday arrivals and club functions. The deal also takes in matchday activations, player appearances, in-store experiences and offers for members.",
+     "The split in the wardrobe is the interesting part. Under Armour stays as the club's on-field apparel partner, so CONNOR is buying a different moment: what the players wear before and after the whistle. Football clubs have long had a formalwear line in the commercial deck, but the arrival has become a piece of content in its own right, and that gives a tailored-clothing brand something it can actually use.",
+     "The fit between brand and fans is the pitch. CONNOR has more than 200 stores across Australia and New Zealand, and its general manager, Marc Miller, described its customer as someone who is at the game on the weekend and following his team all season. Sydney FC captain Rhyan Grant put the player's side of it simply: \"Matchday is obviously all about the football, but how you turn up still matters.\"",
+     "For a mid-market retailer, that is a neat piece of category thinking. A store network means the partnership has somewhere to land beyond a logo on a backdrop, and player appearances give the shops a reason to shout about it. Sydney FC's commercial team, meanwhile, gets a new line item that doesn't tread on its kit partner.",
+     "The thing to watch is how much of this turns up where fans actually see it. If the arrivals become regular content and the in-store offers feel like more than a discount code, expect other A-League clubs to go looking for their own off-field partner."
+    ],
+    "close": "The kit deal gets the logo. This one gets the arrival shot."
+   },
+   "slug": "2026-11-05-connor-sydney-fc"
+  },
+  {
+   "date": "2026-11-04",
+   "added": "2026-11-05",
+   "deal": "NTT × McLaren",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "NTT becomes an Official Partner of the McLaren Mastercard Formula 1 Team on a multi-year deal from 2027, with AI security governance at the centre.",
+   "url": "https://www.mclaren.com/racing/formula-1/2026/mclaren-racing-and-ntt-announce-multi-year-partnership/"
+  },
+  {
+   "date": "2026-11-02",
+   "added": "2026-11-05",
+   "deal": "American Express × NBA / WNBA",
+   "sport": "Basketball",
+   "type": "Partnership expansion",
+   "region": "Global",
+   "summary": "American Express takes its Official Payments Partner deal with the NBA and WNBA global, with its first season of international activations.",
+   "url": "https://pr.nba.com/american-express-nba-wnba-partnership/"
+  },
+  {
+   "date": "2026-11-03",
+   "added": "2026-11-05",
+   "deal": "Toyota Australia × Brisbane Heat",
+   "sport": "Cricket",
+   "type": "Partnership extension",
+   "region": "ANZ",
+   "summary": "Toyota extends as Official Automotive Partner of Queensland Cricket and the Brisbane Heat for a further three years.",
+   "url": "https://www.brisbaneheat.com.au/news/4603429/toyota-to-drive-heat-new-deal-announced"
+  },
+  {
+   "date": "2026-11-02",
+   "added": "2026-11-05",
+   "deal": "DAZN × Grand Slam of Curling",
+   "sport": "Curling",
+   "type": "Media rights",
+   "region": "Global",
+   "summary": "DAZN signs a multi-year deal to carry the Grand Slam of Curling outside Canada and the US, adding Rock League from January 2027.",
+   "url": "https://www.thegrandslamofcurling.com/media/the-grand-slam-of-curling-expands-global-broadcast-reach-through-dazn-for-the-202627-season"
+  },
+  {
+   "date": "2026-11-04",
+   "added": "2026-11-05",
+   "deal": "Klein Tools × Port Adelaide",
+   "sport": "AFL",
+   "type": "Key partner",
+   "region": "ANZ",
+   "summary": "Klein Tools joins Port Adelaide as a new key partner of its AFL program for the 2027 season.",
+   "url": "https://portadelaidefc.com.au/news/2161656/klein-tools-joins-port-adelaide-as-a-new-key-partner"
+  },
+  {
+   "date": "2026-11-02",
+   "added": "2026-11-05",
+   "deal": "American Express × USA Basketball",
+   "sport": "Basketball",
+   "type": "Partnership expansion",
+   "region": "Global",
+   "summary": "American Express brings USA Basketball into its global marketing partnership with the NBA and WNBA.",
+   "url": "https://www.usab.com/news/2026/11/american-express-usa-basketball-expand-partnership-globally-bringing-card-members-and-fans-closer-to-the-game-across-international-markets"
+  },
+  {
+   "date": "2026-11-02",
+   "added": "2026-11-05",
+   "deal": "British Supplements × Portadown FC",
+   "sport": "Football",
+   "type": "Stadium naming rights",
+   "region": "Global",
+   "summary": "British Supplements takes four-year naming rights, turning Shamrock Park into British Supplements Shamrock Park.",
+   "url": "https://portadownfc.co.uk/2026/11/02/ports-announce-british-supplements-as-the-clubs-new-official-stadium-naming-rights-partner/"
+  },
+  {
    "date": "2026-06-09",
    "added": "2026-11-04",
    "deal": "TikTok × ATP Tour",

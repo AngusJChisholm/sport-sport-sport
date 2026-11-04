@@ -28427,6 +28427,32 @@
     "icon",
     "logo"
    ]
+  },
+  "connor": {
+   "name": "CONNOR",
+   "domain": "connor.com.au"
+  },
+  "ntt": {
+   "name": "NTT",
+   "domain": "group.ntt"
+  },
+  "grand-slam-of-curling": {
+   "name": "Grand Slam of Curling",
+   "domain": "thegrandslamofcurling.com"
+  },
+  "british-supplements": {
+   "name": "British Supplements"
+  },
+  "portadown-fc": {
+   "name": "Portadown FC",
+   "domain": "portadownfc.co.uk"
+  },
+  "usa-basketball": {
+   "name": "USA Basketball",
+   "domain": "usab.com"
+  },
+  "nba-wnba": {
+   "name": "NBA / WNBA"
   }
  },
  "leagues": [
