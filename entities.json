@@ -4786,6 +4786,10 @@
    "ptype": "Club & team",
    "k": "p"
   },
+  "caitlin-clark": {
+   "name": "Caitlin Clark",
+   "k": "p"
+  },
   "cal": {
    "name": "Cal (Memorial Stadium)",
    "domain": "calbears.com",
@@ -7231,6 +7235,10 @@
     "icon"
    ]
   },
+  "debet": {
+   "name": "Debet",
+   "k": "b"
+  },
   "debtmanagers": {
    "name": "DebtManagers",
    "cat": "Banking & finance",
@@ -7512,6 +7520,11 @@
    "cat": "Alcohol",
    "k": "b"
   },
+  "dick-s-sporting-goods": {
+   "name": "DICK'S Sporting Goods",
+   "cat": "Retail",
+   "k": "b"
+  },
   "dickies-arena": {
    "name": "Dickies Arena",
    "ptype": "Venue",
@@ -7520,6 +7533,9 @@
    "bf": [
     "icon"
    ]
+  },
+  "dicks-foot-locker": {
+   "name": "DICK'S Sporting Goods / Foot Locker"
   },
   "didi": {
    "name": "DiDi",
@@ -15391,6 +15407,11 @@
     "logo"
    ]
   },
+  "mediapro": {
+   "name": "Mediapro",
+   "cat": "Media & broadcast",
+   "k": "b"
+  },
   "medibank": {
    "name": "Medibank",
    "cat": "Insurance",
@@ -17138,6 +17159,10 @@
     "logo"
    ]
   },
+  "new-mexico-lobos": {
+   "name": "New Mexico Lobos",
+   "k": "p"
+  },
   "new-york-knicks": {
    "name": "New York Knicks",
    "domain": "nyknicks.com",
@@ -17820,6 +17845,11 @@
    "bf": [
     "icon"
    ]
+  },
+  "nusenda-credit-union": {
+   "name": "Nusenda Credit Union",
+   "cat": "Banking & finance",
+   "k": "b"
   },
   "nuvama": {
    "name": "Nuvama",
@@ -19647,6 +19677,10 @@
     "icon"
    ],
    "ptype": "Club & team",
+   "k": "p"
+  },
+  "premier-jumping-league": {
+   "name": "Premier Jumping League",
    "k": "p"
   },
   "premier-league": {
@@ -28315,6 +28349,11 @@
    "cat": "Professional services",
    "k": "b"
   },
+  "zee-entertainment": {
+   "name": "Zee Entertainment",
+   "cat": "Hospitality & entertainment",
+   "k": "b"
+  },
   "zeller": {
    "name": "Zeller",
    "domain": "myzeller.com",
@@ -28460,30 +28499,6 @@
     "icon",
     "logo"
    ]
-  },
-  "dicks-foot-locker": {
-   "name": "DICK'S Sporting Goods / Foot Locker"
-  },
-  "caitlin-clark": {
-   "name": "Caitlin Clark"
-  },
-  "premier-jumping-league": {
-   "name": "Premier Jumping League"
-  },
-  "zee-entertainment": {
-   "name": "Zee Entertainment"
-  },
-  "mediapro": {
-   "name": "Mediapro"
-  },
-  "nusenda-credit-union": {
-   "name": "Nusenda Credit Union"
-  },
-  "new-mexico-lobos": {
-   "name": "New Mexico Lobos"
-  },
-  "debet": {
-   "name": "Debet"
   }
  },
  "leagues": [

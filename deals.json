@@ -94,7 +94,9 @@
    "type": "Brand partner",
    "region": "Global",
    "summary": "Caitlin Clark signs a multi-year, exclusive deal as the first-ever brand partner of both DICK'S Sporting Goods and Foot Locker.",
-   "url": "https://sports.yahoo.com/articles/caitlin-clark-signs-become-brand-150000801.html"
+   "url": "https://sports.yahoo.com/articles/caitlin-clark-signs-become-brand-150000801.html",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-03",
@@ -104,7 +106,11 @@
    "type": "Media rights extension",
    "region": "Global",
    "summary": "The EBU extends its World Aquatics media rights partnership by six years, through to 2032.",
-   "url": "https://www.ebu.ch/news/2026/11/ebu-and-world-aquatics-renew-partnership-through-2032"
+   "url": "https://www.ebu.ch/news/2026/11/ebu-and-world-aquatics-renew-partnership-through-2032",
+   "tier": "Media & broadcast",
+   "status": "Extension",
+   "term": 6,
+   "ends": 2032
   },
   {
    "date": "2026-11-04",
@@ -114,7 +120,9 @@
    "type": "Ticketing partner",
    "region": "Global",
    "summary": "Fever comes on as official partner and ticketing provider for the Premier Jumping League's nine-event first season.",
-   "url": "https://www.sportcal.com/news/premier-jumping-league-unveils-fever-as-ticketing-partner/"
+   "url": "https://www.sportcal.com/news/premier-jumping-league-unveils-fever-as-ticketing-partner/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-02",
@@ -124,7 +132,9 @@
    "type": "Regional betting partner",
    "region": "Global",
    "summary": "LaLiga adds Debet as its official betting partner in Southeast Asia.",
-   "url": "https://www.insideworldfootball.com/2026/11/02/debet-agrees-laliga-betting-sponsorship-for-southeast-asia/"
+   "url": "https://www.insideworldfootball.com/2026/11/02/debet-agrees-laliga-betting-sponsorship-for-southeast-asia/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-04",
@@ -134,7 +144,10 @@
    "type": "Media rights",
    "region": "Global",
    "summary": "Zee's sports network and DD Sports take coverage of the 2026-27 Indian Football League.",
-   "url": "https://insideworldfootball.com/2026/11/04/fast-growing-indian-football-league-secures-tv-deals-with-xee-and-dd-sports"
+   "url": "https://insideworldfootball.com/2026/11/04/fast-growing-indian-football-league-secures-tv-deals-with-xee-and-dd-sports",
+   "tier": "Media & broadcast",
+   "status": "New",
+   "ends": 2027
   },
   {
    "date": "2026-11-03",
@@ -144,7 +157,10 @@
    "type": "Production partner renewal",
    "region": "Global",
    "summary": "CONMEBOL renews with Grup Mediapro through 2030 to keep running its production and distribution hub.",
-   "url": "https://www.insideworldfootball.com/2026/11/03/conmebol-renews-grup-mediapro-deal/"
+   "url": "https://www.insideworldfootball.com/2026/11/03/conmebol-renews-grup-mediapro-deal/",
+   "tier": "Official partner",
+   "status": "Renewal",
+   "ends": 2030
   },
   {
    "date": "2026-11-02",
@@ -154,7 +170,9 @@
    "type": "Jersey patch",
    "region": "Global",
    "summary": "Nusenda extends its UNM partnership to a uniform patch across eight teams, plus The Pit - Powered by Nusenda.",
-   "url": "https://golobos.com/news/2026/11/2/unm-athletics-and-nusenda-credit-union-announce-elevated-partnership"
+   "url": "https://golobos.com/news/2026/11/2/unm-athletics-and-nusenda-credit-union-announce-elevated-partnership",
+   "tier": "Shirt & kit placement",
+   "status": "Extension"
   },
   {
    "date": "2026-11-04",
