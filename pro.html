@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&display=swap">
-<link rel="stylesheet" href="assets/site.css?v=6">
+<link rel="stylesheet" href="assets/site.css?v=7">
 <style>
 .hero h1{font-size:clamp(44px,6vw,88px)}.hero{padding-block:clamp(24px,3vw,44px) clamp(20px,2.5vw,32px)}
 .pro-badge{background:var(--volt);color:var(--black);font-weight:800;font-size:11px;letter-spacing:.16em;padding:5px 8px 4px;margin-left:10px;vertical-align:middle}
@@ -29,7 +29,6 @@
 .basis.t{border-color:var(--ink);color:var(--ink)}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);padding:4px 7px 3px;white-space:nowrap}
-.chip.ag{border-color:var(--ink)}.chip.ag:hover{background:var(--canvas)}.chip.ag.home{background:var(--volt);border-color:var(--volt);color:var(--black)}
 .chip.ex{border-style:dashed;color:var(--ink-3)}
 .logos{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .logos .lg{--s:30px}
@@ -58,15 +57,15 @@
 .wl li span{color:var(--ink-3);font-size:13px;white-space:nowrap}
 .dash{display:grid;gap:20px}
 .dtop{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
-.fund{padding:24px 26px 22px;display:flex;flex-direction:column;justify-content:space-between;min-height:300px}
-.fh{display:flex;justify-content:space-between;font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--grey-500)}
-.fh .vt{color:var(--volt)}
+.fund{background:var(--white);border:1px solid var(--line);border-top:6px solid var(--volt);padding:24px 26px 22px;display:flex;flex-direction:column;justify-content:space-between;min-height:300px}
+.fh{display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.fh .vt{background:var(--volt);color:var(--black);padding:4px 7px 3px}
 .gw{position:relative;max-width:380px;width:100%;margin:18px auto 0}
 .gauge{display:block;width:100%;height:auto}
 .gn{position:absolute;left:0;right:0;bottom:0;text-align:center}
 .gn b{display:block;font-size:clamp(40px,4.4vw,60px);font-weight:800;letter-spacing:-.04em;line-height:1}
-.gn span{font-size:13px;color:var(--grey-500)}
-.ff{text-align:center;font-size:13px;color:var(--grey-500);margin-top:16px}
+.gn span{font-size:13px;color:var(--ink-3)}
+.ff{text-align:center;font-size:13px;color:var(--ink-3);margin-top:16px}
 .tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .tile{background:var(--canvas);padding:18px 18px 16px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;border-top:4px solid transparent}
 .tile:hover{border-top-color:var(--volt);color:var(--ink)}
@@ -116,14 +115,13 @@
 <section class="wrap hero">
 <span class="lbl mute-l">SSS Pro</span>
 <h1 class="disp">The partnerships desk.</h1>
-<p>Find brands spending in sport, see what's coming up for renewal, work out which categories a property is missing and who could fill them, and track which agencies work for whom. Built from every deal in the SSS archive.</p>
+<p>Find brands spending in sport, see what's coming up for renewal, and work out which categories a property is missing and who could fill them. Built from every deal in the SSS archive.</p>
 </section>
 <div class="wrap"><div class="tabs" role="tablist" id="tabs">
 <button class="tab" data-tab="dash" role="tab">Dashboard</button>
 <button class="tab" data-tab="finder" role="tab">Brand finder</button>
 <button class="tab" data-tab="renewals" role="tab">Renewal radar</button>
 <button class="tab" data-tab="property" role="tab">Property report</button>
-<button class="tab" data-tab="agencies" role="tab">Agencies</button>
 <button class="tab" data-tab="watch" role="tab">Watchlist</button>
 </div></div>
 <section class="wrap pro-sec" id="view"><p class="note">Loading the archive…</p></section>
@@ -137,12 +135,15 @@
 <!-- follow:end -->
 </main>
 <footer class="dk"><div class="wrap">
+<div class="ft"><div><a href="index.html" class="logo logo-ft" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="120" height="90"></a>
+<p class="mute" style="margin:28px 0 0;font-size:16px;max-width:420px;line-height:1.5">All things sport business. Global &amp; ANZ. A daily round-up of the sponsorship, partnership and commercial deals moving sport.</p></div>
+<nav class="ft-l" aria-label="Footer"><a href="news.html">News</a><a href="deals.html">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="insights.html">Insights</a></nav></div>
 <div class="ft-b"><span>SSS Pro. Private working tool, not linked from the site.</span><span>© <span id="yr">2026</span> Sport Sport Sport</span></div>
 </div></footer>
 <datalist id="propNames"></datalist>
 <datalist id="brandNames"></datalist>
 <script src="assets/logos.js?v=7"></script>
 <script src="assets/data.js?v=2"></script>
-<script src="assets/pro.js?v=3"></script>
+<script src="assets/pro.js?v=4"></script>
 </body>
 </html>

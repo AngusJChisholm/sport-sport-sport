@@ -100,7 +100,7 @@ last week, but it should stay useful for months. Alternate ANZ-led and global we
 words, 5-8 paragraphs.
 
 **Wednesday - Data drop** (label "Data drop", topic "Data"). One insight built from our own data: deals.json,
-coverage.json, partners.json, agencies.json and the properties pages. Examples: "Every NRL club's betting partner",
+coverage.json, partners.json and the properties pages. Examples: "Every NRL club's betting partner",
 "Which categories signed the most ANZ deals this year", "How many AFL clubs have an airline partner", "Renewals vs new
 deals in 2026". Compute every number with Python on the JSON (show the query on the fact sheet), and only use data
 sets that are complete enough to be fair: for a "every club" piece, every club in scope must be in coverage.json with a
