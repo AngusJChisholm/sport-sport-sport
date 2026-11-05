@@ -104,6 +104,10 @@ SUBS = {
         ("Energy retail", r"^(agl|origin|origin energy|energyaustralia|alinta|alinta energy|red energy|lumo|lumo energy|simply energy|powershop|momentum energy|ovo|ovo energy|engie|tango|dodo power|globird|amber|amber electric|sumo|covau|powerclub|nectr|mojo|kogan energy|meridian|genesis energy|contact energy|mercury|trustpower|electric kiwi|flick|nova energy|iren|aurora energy|synergy|ergon|energex|jemena|actewagl|powerbay)$"),
     ],
     "Telco": [("Telco", r".")],
+    "Tourism & government": [
+        ("Public health & safety", r"\btac\b|healthway|department of health|road safety|think!|responsible gambling|love ?the ?game|transport|main roads|return and earn|containers for change|vicreturn|quit\b|sunsmart"),
+        ("Destination & host government", r"."),
+    ],
     "Watches & luxury": [
         ("Watches", r"rolex|tag heuer|omega|tissot|longines|hublot|richard mille|swatch|seiko|citizen|casio|tudor|breitling|iwc|patek|audemars|watch"),
         ("Jewellery", r"tiffany|cartier|bulgari|pandora|swarovski|michael hill|jewel"),
@@ -128,12 +132,40 @@ SUBS = {
 }
 
 
+# Host state or country for destination brands. A property sells one host destination: the AO has Visit
+# Victoria and the City of Melbourne, so Tourism WA or Destination NSW is a clash, not a gap.
+STATE = [
+    ("VIC", r"victoria|\bvic\b|\.vic\.|melbourne|ballarat|geelong|casey|bendigo"),
+    ("NSW", r"\bnsw\b|\.nsw\.|new south wales|sydney|parramatta|newcastle"),
+    ("QLD", r"queensland|\bqld\b|\.qld\.|gold coast|moreton bay|cairns|townsville|mackay|ipswich|sunshine coast|south bank"),
+    ("WA", r"\bwa\b|\.wa\.|western ?australia|perth|fremantle|stirling"),
+    ("SA", r"south australia|\bsa\b|\.sa\.|adelaide|playford"),
+    ("TAS", r"tasmania|\btas\b|\.tas\.|launceston|hobart"),
+    ("NT", r"\bnt\b|\.nt\.|northern ?territory|darwin"),
+    ("ACT", r"\bact\b|\.act\.|canberra"),
+    ("AUS", r"australian government|tourism australia|australia\.gov"),
+]
+
+
+def destination(name, domain=""):
+    """Host state/country code for a destination brand, or the brand name itself if we can't tell
+    (so two unknown destinations still count as different)."""
+    t = f"{name or ''} {domain or ''}".lower()
+    for code, rx in STATE:
+        if re.search(rx, t):
+            return code
+    return (name or "").lower().strip()
+
+
 def classify(name, domain="", cat=None):
     """Return the sub-category for a brand inside its main category, or None if we can't tell."""
     if not cat or cat not in SUBS:
         return None
-    t = f"{name} {domain}".lower()
+    n = (name or "").lower().strip()
+    t = f"{n} {domain or ''}".lower()
     for sub, rx in SUBS[cat]:
-        if rx == "." or re.search(rx, t):
+        # anchored rules (^...$, e.g. car makers, kit suppliers) are exact-name lists, so test the name alone:
+        # with the domain tacked on, "toyota toyota.com" never matched and Toyota/Kia never clashed
+        if rx == "." or re.search(rx, n if rx.startswith("^") else t):
             return sub
     return None

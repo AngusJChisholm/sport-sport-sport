@@ -47,7 +47,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_profiles import norm, slugify, split, many  # same name -> slug rules as the site
-from subcat_rules import classify as subcat
+from subcat_rules import classify as subcat, destination
 from locations import CITY
 from profiles import brand_profile, property_profile, alignment
 
@@ -67,6 +67,7 @@ CLASS = {"Club & team": "club", "League & competition": "body", "Governing body"
          "National team": "national", "Athlete & talent": "athlete", "Venue": "venue"}
 TOPN, MIN_SHOW, LISTED_W = 15, 40, 0.6
 W_FIT, W_WS, W_DNA, W_AL = 74, 13, 9, 4  # chosen by backtest (Nov 2026); rerun tools/match.py --test before changing
+DEST = "Destination & host government"
 
 
 def ym(s):
@@ -128,6 +129,8 @@ class Model:
             c = e.get("cat")
             self.cat[b] = c
             self.sub[b] = e.get("sub") or subcat(e.get("name") or self.name.get(b, b), e.get("domain", ""), c)
+        self.dest = {b: destination(ent.get(b, {}).get("name") or self.name.get(b, b), ent.get(b, {}).get("domain", ""))
+                     for b in self.B if self.sub.get(b) == DEST}
         # property facts
         self.sport, self.region, self.reach, self.live_b, self.live_sub, self.live_cat = {}, {}, {}, {}, {}, {}
         self.pclass = {p: (ent.get(p) or {}).get("class") or CLASS.get((ent.get(p) or {}).get("ptype"), "other") for p in self.P}
@@ -144,6 +147,7 @@ class Model:
             self.live_b[p] = lb
             self.live_sub[p] = {self.sub.get(b) for b in lb if self.sub.get(b)}
             self.live_cat[p] = {self.cat.get(b) for b in lb if self.cat.get(b)}
+        self.live_dest = {p: {self.dest[b] for b in lb if b in self.dest} for p, lb in self.live_b.items()}
         self.blevel = {b: max(REACH[self.reach[r["p"]]] for r in rs) for b, rs in self.B.items()}
         # peers: same league if it has one, else same sport and reach
         self.groups = collections.defaultdict(set)
@@ -205,6 +209,18 @@ class Model:
         if lift <= 1:
             return 0.0, lift, n
         return min(1.0, math.log(lift) / math.log(5)), lift, n
+
+    def dest_clash(self, p, b):
+        """A property with a host destination partner doesn't sell to another state or country: the AO has
+        Visit Victoria, so Tourism WA is blocked. A council can sit beside its own state body; a second state
+        body can't (Visit Victoria already is the Victorian Government's slot)."""
+        held = self.live_dest.get(p)
+        if not held or b not in self.dest:
+            return False
+        if self.dest[b] not in held:
+            return True
+        nm = (self.ent.get(b, {}).get("name") or self.name.get(b, b)).lower()
+        return not re.search(r"city of|council|shire|regional|tourism and events", nm)
 
     def _reach(self, p, rg):
         e = self.ent.get(p, {})
@@ -297,8 +313,10 @@ class Model:
             if b in self.live_b[p] or b == p:
                 continue
             cat, sub = self.cat.get(b), self.sub.get(b)
+            if self.dest_clash(p, b):
+                continue
             flags = []
-            if sub and sub in self.live_sub[p]:
+            if sub and sub in self.live_sub[p] and sub != DEST:
                 if self.sub_hold[p].get(sub):
                     continue
                 flags.append("Slot may open")
@@ -437,8 +455,10 @@ class Model:
             if glob / Wt < 0.75 or len(anz) > 1 or min(r["age"] for r in rs) > 18:
                 continue
             cat, sub = self.cat[b], self.sub.get(b)
+            if self.dest_clash(p, b):
+                continue
             flags = []
-            if sub and sub in self.live_sub[p]:
+            if sub and sub in self.live_sub[p] and sub != DEST:
                 if self.sub_hold[p].get(sub):
                     continue
                 flags.append("Slot may open")
