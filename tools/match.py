@@ -8,7 +8,11 @@ number on the page always belongs to the formula that made the suggestions.
     python3 tools/match.py            # build matches + backtest
     python3 tools/match.py --test     # backtest only, print the numbers
 
-Match Score (0-100) = Gate x (Fit 85 + Whitespace 15)
+Match Score (0-100) = Gate x (Fit 74 + Whitespace 13 + Sport DNA 9 + Audience fit 4)
+  Sport DNA    How much more often brands in this slot back this sport worldwide than sport overall
+               (watches and champagne for racing). Brings in brands with no lookalike deal yet.
+  Audience fit Overlap between the brand's profile and the property's (tools/profiles.py): audience,
+               what they stand for, and positioning (premium, mid, value).
 Timing (out of 25), Capacity (15) and Appetite (15) are worked out and shown beside the score as signals,
 but don't count toward it: in the Nov 2026 backtest every mix that included them ranked real deals worse
 than Fit + Whitespace alone (4.1-4.5% of new deals in the top 20 vs 5.7%). Re-test as the archive grows.
@@ -45,6 +49,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_profiles import norm, slugify, split, many  # same name -> slug rules as the site
 from subcat_rules import classify as subcat
 from locations import CITY
+from profiles import brand_profile, property_profile, alignment
+
+# City links only make sense between team-sport clubs (fans pick a club in their city). For racing, golf,
+# motorsport, tennis and the rest, the sport and the property's profile lead.
+TEAM_SPORTS = {"AFL", "AFLW", "NRL", "NRLW", "Football", "Basketball", "Netball", "Cricket", "Rugby union", "Rugby league",
+               "Ice hockey", "Baseball", "NFL", "Hockey", "Volleyball", "Water polo"}
 
 TIER = {"Naming rights": 5, "Title sponsor": 5, "Principal & major": 4, "Shirt & kit placement": 4, "Kit & apparel": 3,
         "Investment & ownership": 3, "Official partner": 2, "Media & broadcast": 2, "Licensing & merchandise": 1,
@@ -56,7 +66,7 @@ REACH = {"Local": 1, "National": 2, "Global": 3}
 CLASS = {"Club & team": "club", "League & competition": "body", "Governing body": "body", "Event": "event",
          "National team": "national", "Athlete & talent": "athlete", "Venue": "venue"}
 TOPN, MIN_SHOW, LISTED_W = 15, 40, 0.6
-W_FIT, W_WS = 85, 15  # chosen by backtest; rerun tools/match.py --test before changing
+W_FIT, W_WS, W_DNA, W_AL = 74, 13, 9, 4  # chosen by backtest (Nov 2026); rerun tools/match.py --test before changing
 
 
 def ym(s):
@@ -120,7 +130,7 @@ class Model:
             self.sub[b] = e.get("sub") or subcat(e.get("name") or self.name.get(b, b), e.get("domain", ""), c)
         # property facts
         self.sport, self.region, self.reach, self.live_b, self.live_sub, self.live_cat = {}, {}, {}, {}, {}, {}
-        self.pclass = {p: CLASS.get((ent.get(p) or {}).get("ptype"), "other") for p in self.P}
+        self.pclass = {p: (ent.get(p) or {}).get("class") or CLASS.get((ent.get(p) or {}).get("ptype"), "other") for p in self.P}
         self.city = {p: (ent.get(p) or {}).get("city") or CITY.get(p) for p in self.P}
         for p, rs in self.P.items():
             sp, rg = collections.Counter(), collections.Counter()
@@ -158,6 +168,43 @@ class Model:
                 firm = (ends and ends > yr) or (not ends and r["age"] <= 24) or not r["dated"]
                 cur = self.sub_hold[p].get(sb)
                 self.sub_hold[p][sb] = (cur or firm) if cur is not None else firm
+        # profiles
+        nm = lambda x: (ent.get(x) or {}).get("name") or self.name.get(x, x)
+        self.bprof = {b: brand_profile(b, ent, self.sub.get(b), self.cat.get(b)) for b in self.B}
+        self.pprof = {p: property_profile(p, ent, self.sport[p], self.pclass[p], self.reach[p], nm(p)) for p in self.P}
+        # sport DNA: how much more often a slot (sub-category, else category) backs this sport than sport overall,
+        # counted across every region, smoothed so thin sports don't swing on one deal
+        slot = lambda b: self.sub.get(b) or self.cat.get(b)
+        n_all, n_slot, n_sport, n_ss = 0, collections.Counter(), collections.Counter(), collections.Counter()
+        for b, rs in self.B.items():
+            k = slot(b)
+            if not k:
+                continue
+            for r in rs:
+                sp = r["d"].get("sport")
+                n_all += 1
+                n_slot[k] += 1
+                n_sport[sp] += 1
+                n_ss[(sp, k)] += 1
+        self._dna = {}
+        for (sp, k), n in n_ss.items():
+            p_s = (n + 0.5) / (n_sport[sp] + 10)
+            base_p = n_slot[k] / max(1, n_all)
+            self._dna[(sp, k)] = (p_s / base_p if base_p else 1, n)
+        self.slot = slot
+        # brands active in the last 24 months, by slot, for profile-led candidates
+        self.active_by_slot = collections.defaultdict(set)
+        for b, rs in self.B.items():
+            if slot(b) and any(r["age"] <= 24 for r in rs):
+                self.active_by_slot[slot(b)].add(b)
+
+    def dna(self, sport, b):
+        """0-1 sport DNA for brand b's slot in this sport, plus the lift behind it."""
+        k = self.slot(b)
+        lift, n = self._dna.get((sport, k), (0, 0))
+        if lift <= 1:
+            return 0.0, lift, n
+        return min(1.0, math.log(lift) / math.log(5)), lift, n
 
     def _reach(self, p, rg):
         e = self.ent.get(p, {})
@@ -180,10 +227,13 @@ class Model:
         return ("S", self.sport[p], self.reach[p])
 
     def peers(self, p):
-        g = self.groups[self._gkey(p)] - {p}
-        if self.pclass[p] in ("body", "event", "national"):  # compare with the majors, not every small body
-            g = set(sorted(g, key=lambda q: -len(self.P[q]))[:15])
-        return g
+        if self.pclass[p] in ("body", "event", "national"):
+            # same kind of property; global properties compare worldwide. Same sport first, then the majors.
+            c, rg, rc = self.pclass[p], self.region[p], self.reach[p]
+            pool = [q for q in self.P if q != p and self.pclass[q] == c and self.reach[q] == rc and (rc == "Global" or self.region[q] == rg)]
+            pool.sort(key=lambda q: (self.sport[q] != self.sport[p], -len(self.P[q])))
+            return set(pool[:15])
+        return self.groups[self._gkey(p)] - {p}
 
     def sim(self, p, q):
         if p == q:
@@ -193,7 +243,8 @@ class Model:
         same_sport, same_class = self.sport[p] == self.sport[q], self.pclass[p] == self.pclass[q]
         rg, rc = self.region[p] == self.region[q], self.reach[p] == self.reach[q]
         if self.pclass[p] == "club":
-            same_city = self.city[p] is not None and self.city[p] == self.city[q]
+            same_city = (self.city[p] is not None and self.city[p] == self.city[q]
+                         and self.sport[p] in TEAM_SPORTS and self.sport[q] in TEAM_SPORTS and self.pclass[q] == "club")
             if same_sport:
                 s = 1 + (self.league_of.get(p) is not None and self.league_of.get(p) == self.league_of.get(q)) + rg * 0.5 + rc * 0.5 + 3 * j
             else:  # cross-sport lookalike counts, at a lower weight
@@ -201,10 +252,15 @@ class Model:
             if same_city:  # clubs in other codes in the same city share a market and a fan base
                 s += 1.2
             return s * (1 if same_class else 0.6)
-        # leagues, bodies, events, national teams: kind of property and market matter more than the code
-        s = same_class * 1.5 + rg * 0.7 + rc * 0.7 + same_sport * 0.4 + 3 * j
+        # leagues and governing bodies: the kind of property and market matter more than the code (the AFL
+        # learns from the NRL and Cricket Australia). Events and national teams: the sport defines the audience
+        # (racing learns from racing, tennis from tennis), so it weighs as much as the kind of property.
+        w_sport = 0.4 if self.pclass[p] == "body" else 1.5
+        s = same_class * 1.5 + rg * 0.5 + rc * 0.7 + same_sport * w_sport + 3 * j
         if not same_class:
-            s *= 0.35  # a club's sponsors say little about what a national body should sell
+            # a different kind of property counts for less, unless it's the same sport (for the AO, the ATP
+            # and WTA tours are close peers; an AFL club says little about what the AFL should sell)
+            s *= 0.8 if same_sport and self.pclass[p] != "body" else 0.35
         return s
 
     def score_property(self, p, top=TOPN, keep_all=False):
@@ -228,6 +284,12 @@ class Model:
         if not cf:
             return []
         cmax = max(cf.values())
+        # profile-led candidates: brands in slots that strongly back this sport anywhere in the world, even
+        # with no lookalike deal yet (a watch brand for racing)
+        for (spk, k), (lift, n) in self._dna.items():
+            if spk == self.sport[p] and lift >= 2 and n >= 2:
+                for b in self.active_by_slot.get(k, ()):
+                    cf.setdefault(b, 0.0)
         peers = self.peers(p)
         sp, plevel = self.sport[p], REACH[self.reach[p]]
         out = []
@@ -242,6 +304,8 @@ class Model:
                 flags.append("Slot may open")
             if cat == "Betting & wagering" and cat not in self.live_cat[p]:
                 flags.append("Check betting policy")
+            if sp in self.bprof[b].get("avoid", []):
+                continue  # researched: the brand stays away from this sport
             rs = self.B[b]
             F = W_FIT * math.log1p(c) / math.log1p(cmax)
             n12 = sum(1 for r in rs if r["dated"] and r["age"] <= 12)
@@ -265,7 +329,10 @@ class Model:
             if sub and peers:
                 adopt = sum(1 for q in peers if sub in self.live_sub[q])
                 Wsp = W_WS * adopt / len(peers)
-            total = F + Wsp  # Timing, Capacity and Appetite are shown as signals, not scored (see header)
+            dn, lift, dn_n = self.dna(sp, b)
+            al, al_on = alignment(self.bprof[b], self.pprof[p])
+            Dn, Al = W_DNA * dn, W_AL * al
+            total = F + Wsp + Dn + Al  # Timing, Capacity and Appetite are shown as signals, not scored (see header)
             if any(r["b"] == b for r in self.P[p]):
                 flags.append("Former partner")
             if self.blevel.get(b, 1) < plevel:
@@ -297,8 +364,13 @@ class Model:
             if sub and peers and adopt:
                 why.append(f"No {sub} partner here. {adopt} of {len(peers)} peers have one")
             conf = "High" if len(rs) >= 5 else "Medium" if len(rs) >= 2 else "Low"
-            out.append((round(total), b, [round(T), round(F), round(C), round(A), round(Wsp)], why[:3], flags, conf))
-        out.sort(key=lambda x: (-x[0], -x[2][1]))
+            if dn >= 0.4 and len(why) < 4:
+                why.append(f"{self.slot(b)} brands back {sp} {lift:.0f}x more than sport overall" if lift >= 2 else f"{self.slot(b)} brands over-index in {sp}")
+            if al >= 0.5 and al_on and len(why) < 4:
+                why.append("Fits the audience: " + ", ".join(al_on[:4]))
+            out.append((round(total), b, [round(T), round(F), round(C), round(A), round(Wsp), round(Dn), round(Al)], why[:4], flags, conf, total))
+        out.sort(key=lambda x: -x[6])
+        out = [x[:6] for x in out]
         return out if keep_all else out[:top]
 
 
@@ -483,7 +555,24 @@ def backtest(ent, deals, league_of, months_back=6, today=None):
             "top50": round(hits50 / n, 3), "ceiling": round(known / n, 3), "deals_before": sum(len(v) for v in m.P.values())}
 
 
+def profile_queue(n):
+    """Brands to research next: the ones suggested most often (top 15s) that don't have a researched profile."""
+    data = json.loads((ROOT / "pro" / "matches.json").read_text(encoding="utf-8"))
+    ent = json.loads((ROOT / "entities.json").read_text(encoding="utf-8"))["entities"]
+    cnt = collections.Counter()
+    for pr in data["props"].values():
+        for r in pr["m"] + pr.get("e", []):
+            cnt[r["b"]] += 1
+    out = [(b, c) for b, c in cnt.most_common() if not (ent.get(b) or {}).get("profiled")][:n]
+    for b, c in out:
+        e = ent.get(b) or {}
+        print(f"{b}\t{e.get('name', b)}\t{e.get('domain', '')}\tsuggested {c}x")
+
+
 def main():
+    if "--profile-queue" in sys.argv:
+        i = sys.argv.index("--profile-queue")
+        return profile_queue(int(sys.argv[i + 1]) if len(sys.argv) > i + 1 else 20)
     ent, deals, league_of = load()
     bt = backtest(ent, deals, league_of)
     print("Backtest", bt)
@@ -513,7 +602,9 @@ def main():
         props[p] = {"n": nm(p), "s": m.sport[p], "r": m.reach[p], "t": m.pclass[p], "v": ver.get(p), "sl": m.slots(p),
                     "e": [{"b": b, "n": nm(b), "c": m.cat.get(b) or "", "u": m.sub.get(b) or "", "x": sc, "f": conf, "p": parts, "w": why, "g": flags}
                           for sc, b, parts, why, flags, conf in ent_list],
-                    "m": [{"b": b, "n": nm(b), "c": m.cat.get(b) or "", "u": m.sub.get(b) or "", "x": sc, "k": band(sc), "f": conf, "p": parts, "w": why, "g": flags}
+                    "pf": {k: m.pprof[p][k] for k in ("pos", "aud", "align")},
+                    "m": [{"b": b, "n": nm(b), "c": m.cat.get(b) or "", "u": m.sub.get(b) or "", "x": sc, "k": band(sc), "f": conf, "p": parts, "w": why, "g": flags,
+                           "pf": [m.bprof[b]["pos"], m.bprof[b]["mkt"], m.bprof[b]["researched"]]}
                           for sc, b, parts, why, flags, conf in res[:TOPN]]}
         for sc, b, parts, why, flags, conf in ent_list:
             entry[b].append({"p": p, "n": nm(p), "s": m.sport[p], "r": m.reach[p], "v": ver.get(p), "x": sc, "f": conf, "pt": parts, "w": why, "g": flags})

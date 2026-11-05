@@ -14,12 +14,31 @@
  "dup_entities": [
   {
    "names": [
+<<<<<<< Updated upstream
     "Star Sports",
     "The Star"
    ],
    "slugs": [
     "star-sports",
     "the-star"
+=======
+    "TAB",
+    "TAB NZ"
+   ],
+   "slugs": [
+    "tab",
+    "tab-nz"
+   ]
+  },
+  {
+   "names": [
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
+   ],
+   "slugs": [
+    "commonwealth-games",
+    "commonwealth-games-australia"
+>>>>>>> Stashed changes
    ]
   },
   {
@@ -34,6 +53,48 @@
     "sky-nz",
     "sky-sport",
     "sky-sports"
+   ]
+  },
+  {
+   "names": [
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
+   ],
+   "slugs": [
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
+   ]
+  },
+  {
+   "names": [
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
+   ],
+   "slugs": [
+    "pure-nutrition",
+    "pure-sports-nutrition"
+   ]
+  },
+  {
+   "names": [
+    "Star Sports",
+    "The Star"
+   ],
+   "slugs": [
+    "star-sports",
+    "the-star"
+   ]
+  },
+  {
+   "names": [
+    "HYROX",
+    "HYROX Australia"
+   ],
+   "slugs": [
+    "hyrox",
+    "hyrox-australia"
    ]
   },
   {
@@ -97,6 +158,7 @@
     "special-olympics",
     "special-olympics-australia"
    ]
+<<<<<<< Updated upstream
   },
   {
    "names": [
@@ -107,6 +169,8 @@
     "commonwealth-games",
     "commonwealth-games-australia"
    ]
+=======
+>>>>>>> Stashed changes
   }
  ],
  "no_category": [

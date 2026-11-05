@@ -1506,7 +1506,28 @@
     "logo"
    ],
    "cat": "Banking & finance",
-   "k": "b"
+   "k": "b",
+   "pos": "premium",
+   "mkt": "both",
+   "aud": [
+    "affluent",
+    "business",
+    "travellers",
+    "fans",
+    "youth"
+   ],
+   "align": [
+    "experiences",
+    "hospitality",
+    "corporate hospitality",
+    "travel",
+    "music",
+    "luxury",
+    "performance"
+   ],
+   "profiled": "2026-11-05",
+   "pnote": "Uses sport and entertainment for Card Member access: presales, premium lounges and hosting (F1 including Melbourne, NFL, tennis, golf, music); building with Gen Z and millennials.",
+   "psrc": "https://www.bandt.com.au/american-express-hits-full-throttle-on-fan-experience-at-melbourne-gp/"
   },
   "ames": {
    "name": "AMES",
@@ -2676,6 +2697,27 @@
     "Major partner",
     "Associate partner",
     "Official partner"
+   ],
+   "pos": "premium",
+   "aud": [
+    "affluent",
+    "families",
+    "women",
+    "youth",
+    "international"
+   ],
+   "align": [
+    "luxury",
+    "fashion",
+    "wellness",
+    "hospitality",
+    "international",
+    "innovation",
+    "summer",
+    "music",
+    "culture",
+    "digital",
+    "experiences"
    ]
   },
   "australian-open-golf": {
@@ -27052,6 +27094,29 @@
     "Official partner",
     "Partner",
     "Broadcast partner"
+   ],
+   "reach": "Global",
+   "class": "event",
+   "pos": "premium",
+   "aud": [
+    "affluent",
+    "women",
+    "adults",
+    "punters",
+    "international",
+    "business"
+   ],
+   "align": [
+    "fashion",
+    "luxury",
+    "hospitality",
+    "celebration",
+    "wagering",
+    "tradition",
+    "music",
+    "international",
+    "corporate hospitality",
+    "experiences"
    ]
   },
   "victoria-university": {
@@ -27220,7 +27285,28 @@
     "logo"
    ],
    "cat": "Banking & finance",
-   "k": "b"
+   "k": "b",
+   "pos": "mid",
+   "mkt": "both",
+   "aud": [
+    "women",
+    "families",
+    "fans",
+    "travellers",
+    "business",
+    "international"
+   ],
+   "align": [
+    "equality",
+    "football",
+    "experiences",
+    "community",
+    "international",
+    "digital"
+   ],
+   "profiled": "2026-11-05",
+   "pnote": "Global payments brand whose Australian sponsorship centres on women's sport, especially women's football (FIFA Women's World Cup, AFC Women's Asian Cup 2026, 'Let's Get On Her Side').",
+   "psrc": "https://www.visa.com.au/about-visa/newsroom/press-releases/visa-rallies-fans-to-back-women-beyond-the-win-this-afc-womens-asian-cup-with-lets-get-on-her-side.html"
   },
   "vision-insights": {
    "name": "Vision Insights",
@@ -29034,6 +29120,146 @@
    "sub": "Tyres",
    "k": "b",
    "domain": "dunloptyres.com.au"
+  },
+  "kentucky-derby": {
+   "name": "Kentucky Derby",
+   "ptype": "Event",
+   "reach": "Global",
+   "k": "p",
+   "domain": "kentuckyderby.com"
+  },
+  "dubai-world-cup": {
+   "name": "Dubai World Cup",
+   "ptype": "Event",
+   "reach": "Global",
+   "k": "p",
+   "domain": "dubairacingclub.com"
+  },
+  "royal-ascot": {
+   "name": "Royal Ascot",
+   "ptype": "Event",
+   "reach": "Global",
+   "k": "p",
+   "domain": "ascot.com"
+  },
+  "breeders-cup": {
+   "name": "Breeders' Cup",
+   "ptype": "Event",
+   "reach": "Global",
+   "k": "p",
+   "domain": "breederscup.com"
+  },
+  "woodford-reserve": {
+   "name": "Woodford Reserve",
+   "cat": "Alcohol",
+   "sub": "Spirits",
+   "k": "b",
+   "domain": "woodfordreserve.com",
+   "pos": "premium"
+  },
+  "longines": {
+   "name": "Longines",
+   "cat": "Watches & luxury",
+   "sub": "Watches",
+   "k": "b",
+   "domain": "longines.com",
+   "pos": "premium",
+   "mkt": "b2c",
+   "aud": [
+    "affluent",
+    "men",
+    "women",
+    "international"
+   ],
+   "align": [
+    "elegance",
+    "tradition",
+    "precision",
+    "equestrian",
+    "luxury",
+    "performance",
+    "international"
+   ],
+   "avoid": [
+    "AFL",
+    "AFLW",
+    "NRL",
+    "NRLW",
+    "Rugby union",
+    "Rugby league",
+    "Football",
+    "Basketball",
+    "NFL",
+    "Ice hockey"
+   ],
+   "profiled": "2026-11-05",
+   "pnote": "Only backs elegant, individual sports (equestrian, flat racing, alpine skiing, tennis, gymnastics) under 'Elegance is an attitude'; avoids contact team sports.",
+   "psrc": "https://www.marketing-interactive.com/longines-tie-elegant-sporting-events"
+  },
+  "sap": {
+   "name": "SAP",
+   "cat": "Technology",
+   "sub": "Software & cloud",
+   "k": "b",
+   "domain": "sap.com"
+  },
+  "twinspires": {
+   "name": "TwinSpires",
+   "cat": "Betting & wagering",
+   "sub": "Bookmakers",
+   "k": "b",
+   "domain": "twinspires.com"
+  },
+  "white-claw": {
+   "name": "White Claw",
+   "cat": "Alcohol",
+   "sub": "Beer & cider",
+   "k": "b",
+   "domain": "whiteclaw.com"
+  },
+  "herradura": {
+   "name": "Herradura",
+   "cat": "Alcohol",
+   "sub": "Spirits",
+   "k": "b",
+   "domain": "herradura.com"
+  },
+  "old-forester": {
+   "name": "Old Forester",
+   "cat": "Alcohol",
+   "sub": "Spirits",
+   "k": "b",
+   "domain": "oldforester.com"
+  },
+  "vineyard-vines": {
+   "name": "vineyard vines",
+   "cat": "Apparel & footwear",
+   "sub": "Fashion & lifestyle",
+   "k": "b",
+   "domain": "vineyardvines.com"
+  },
+  "sunbelt-rentals": {
+   "name": "Sunbelt Rentals",
+   "cat": "Industrial & manufacturing",
+   "k": "b",
+   "domain": "sunbeltrentals.com"
+  },
+  "brisnet": {
+   "name": "Brisnet",
+   "cat": "Betting & wagering",
+   "k": "b",
+   "domain": "brisnet.com"
+  },
+  "azizi-developments": {
+   "name": "Azizi Developments",
+   "cat": "Construction & property",
+   "k": "b",
+   "domain": "azizidevelopments.com"
+  },
+  "beyond-developments": {
+   "name": "BEYOND Developments",
+   "cat": "Construction & property",
+   "k": "b"
   }
  },
  "leagues": [
