@@ -1,0 +1,68 @@
+{
+ "date": "2026-11-06",
+ "hold": false,
+ "feed": {
+  "kind": "feature",
+  "cover": {
+   "tag": "Breakdown",
+   "region": "Global",
+   "headline": "Naming a stadium that doesn't exist.",
+   "highlight": "doesn't",
+   "deal": "Generali x AC Milan / Inter",
+   "descriptor": "Breakdown"
+  },
+  "slides": [
+   {
+    "label": "The deal",
+    "title": "Generali takes the name",
+    "rows": [
+     {
+      "main": "Generali Stadium",
+      "sub": "About 71,500 seats, shared by Milan and Inter"
+     },
+     {
+      "main": "Official Insurance Partner",
+      "sub": "Of both clubs as well"
+     }
+    ]
+   },
+   {
+    "label": "The timing",
+    "title": "A name years before a building",
+    "rows": [
+     {
+      "main": "Construction from 2028",
+      "sub": "Expected, subject to approvals"
+     },
+     {
+      "main": "First match 2031/32",
+      "sub": "Targeted"
+     },
+     {
+      "main": "Partner from day one",
+      "sub": "Generali's own words"
+     }
+    ]
+   },
+   {
+    "label": "The money",
+    "title": "Reported, not confirmed",
+    "rows": [
+     {
+      "main": "About €650m",
+      "sub": "Reported by SportsPro, Sportcal, Il Sole 24 Ore"
+     },
+     {
+      "main": "20 or 25 years",
+      "sub": "Reports disagree on the term"
+     },
+     {
+      "main": "No official fee",
+      "sub": "Clubs and Generali haven't published one"
+     }
+    ]
+   }
+  ]
+ },
+ "caption": "Naming a stadium that doesn't exist.\n\nGenerali has put its name on the new home AC Milan and Inter plan to share: about 71,500 seats, construction expected from 2028, first match targeted for 2031/32.\n\nIt is also Official Insurance Partner of both clubs. A fee of about €650m has been reported, but the clubs and Generali haven't confirmed it and the reports disagree on the length.\n\nRead the full story: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+}

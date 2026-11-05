@@ -1,6 +1,43 @@
 {
  "features": [
   {
+   "date": "2026-11-06",
+   "label": "Breakdown",
+   "headline": "Naming a stadium that doesn't exist.",
+   "descriptor": "Generali, AC Milan and Inter, unpacked",
+   "topic": "Breakdown",
+   "sport": "Football",
+   "region": "Global",
+   "image": "https://images.unsplash.com/photo-1782471643030-ce0e7588c796",
+   "imageCredit": "Unsplash",
+   "related": [
+    "Generali × AC Milan / Inter Milan"
+   ],
+   "article": {
+    "standfirst": "Generali has put its name on a stadium that won't open for roughly five years, and the fee behind it is still only a report.",
+    "body": [
+     "AC Milan and Inter unveiled the Generali Stadium on 29 October: a ground of about 71,500 seats the two clubs plan to share in the San Siro area of Milan. Generali takes the naming rights and becomes Official Insurance Partner of both clubs. The insurer and the clubs call it one of the largest stadium naming rights partnerships in global sport. None of them has published a fee or a length.",
+     "Reports fill the gap, though not consistently. SportsPro and Sportcal report a fee of about €650m over 20 years, or roughly €32.5m a year. Il Sole 24 Ore reports the same €650m over 25 years, or about €26m a year. Until someone confirms it, the figure and the term are reports, not facts.",
+     "What Generali is buying is timing. Its release says it is a partner from day one of the project, and the clubs say construction is expected to begin in 2028, with the first match targeted for the 2031/32 season and subject to approvals. So the insurer gets its name on a project that is still in design, and on a 281,000 square metre regeneration of the San Siro area that goes with it. The brand rides every render, planning headline and construction milestone for years before anyone finds a seat.",
+     "Compare that with Juventus. Its ground only took the Allianz name in 2017, six years after opening. Allianz is another insurer, so the category fit is familiar. The difference is that Juventus sold a stadium fans already knew by another name. Milan's clubs are selling a name before there is a building to compare it with, and that is a cleaner pitch.",
+     "For the clubs, it is one sale covering two fan bases. Sportcal reports they bought the stadium from the City of Milan in November 2025 for just under €197m, a figure SportsPro also gives, after a 2025 agreement with the city. The Milan release names RedBird and Oaktree as making a defining investment in the project. A naming partner signed this early gives that project a major commercial backer before construction starts. The Official Insurance Partner role also gives Generali a reason to be visible at both clubs in the meantime.",
+     "It is a step up from the rest of Generali's sport. The group's release points to the Davis Cup by Generali, the Barcolana sailing regatta it has backed for more than forty years, and running events across Europe including the Berlin Marathon. It became the partner behind the Davis Cup by Generali in September, per Sportcal. Those are events and competitions. A stadium name is a different kind of asset: permanent and shared between two rivals. Generali says it chose to back the two Italian clubs from the start because the group has long represented Italy internationally, and it reported premium income of €98.1bn in 2025 across more than 50 countries.",
+     "What to watch next is short. The approvals, because the 2031/32 target depends on them. Whether the fee and term are ever confirmed. And what the clubs sell around a name this size, since a shared stadium hands every other category the same two-club pitch. For anyone selling naming rights on a venue that isn't built yet, this is the template to study."
+    ],
+    "close": "The name goes up first. The building follows."
+   },
+   "sources": [
+    "https://www.generali.com/media/News/2026/Generali-becomes-Naming-Partner-of-the-new-stadium-of-AC-Milan-and-FC-Internazionale-Milano",
+    "https://www.acmilan.com/en/news/articoli/club/2026-10-29/ac-milan-and-fc-internazionale-milano-unveil-generali-stadium-a-new-home-for-the-fans-a-new-landmark-for-milano",
+    "https://www.inter.it/en/news/inter-ac-milan-generali-unveil-new-stadium-derby",
+    "https://www.sportcal.com/?p=154664",
+    "https://en.ilsole24ore.com/art/general-stadium-inter-and-milans-new-stadium-sponsored-to-the-tune-of-650-million-AJrjiCyB",
+    "https://www.sportcal.com/news/generali-steps-in-to-take-vacant-davis-cup-presenting-partner-role/",
+    "https://www.sportspro.com/news/sponsorship-marketing/inter-ac-milan-new-stadium-generali-naming-rights-san-siro/"
+   ],
+   "slug": "2026-11-06-naming-a-stadium-that-doesn-t-exist"
+  },
+  {
    "date": "2026-11-04",
    "label": "Data drop",
    "headline": "ANZ sport runs on renewals.",
