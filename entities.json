@@ -29126,28 +29126,44 @@
    "ptype": "Event",
    "reach": "Global",
    "k": "p",
-   "domain": "kentuckyderby.com"
+   "domain": "kentuckyderby.com",
+   "ptiers": [
+    "Official partner",
+    "Signature partner"
+   ]
   },
   "dubai-world-cup": {
    "name": "Dubai World Cup",
    "ptype": "Event",
    "reach": "Global",
    "k": "p",
-   "domain": "dubairacingclub.com"
+   "domain": "dubairacingclub.com",
+   "ptiers": [
+    "Official partner"
+   ]
   },
   "royal-ascot": {
    "name": "Royal Ascot",
    "ptype": "Event",
    "reach": "Global",
    "k": "p",
-   "domain": "ascot.com"
+   "domain": "ascot.com",
+   "ptiers": [
+    "Official partner",
+    "Official catering partner",
+    "Official real estate partner"
+   ]
   },
   "breeders-cup": {
    "name": "Breeders' Cup",
    "ptype": "Event",
    "reach": "Global",
    "k": "p",
-   "domain": "breederscup.com"
+   "domain": "breederscup.com",
+   "ptiers": [
+    "Race title partner",
+    "Official time partner"
+   ]
   },
   "woodford-reserve": {
    "name": "Woodford Reserve",

@@ -14,31 +14,22 @@
  "dup_entities": [
   {
    "names": [
-<<<<<<< Updated upstream
-    "Star Sports",
-    "The Star"
+    "Special Olympics",
+    "Special Olympics Australia"
    ],
    "slugs": [
-    "star-sports",
-    "the-star"
-=======
-    "TAB",
-    "TAB NZ"
-   ],
-   "slugs": [
-    "tab",
-    "tab-nz"
+    "special-olympics",
+    "special-olympics-australia"
    ]
   },
   {
    "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
+    "Hockey Australia",
+    "Hockey New Zealand"
    ],
    "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
->>>>>>> Stashed changes
+    "hockey-australia",
+    "hockey-new-zealand"
    ]
   },
   {
@@ -57,24 +48,12 @@
   },
   {
    "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
+    "TAB",
+    "TAB NZ"
    ],
    "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
-   ],
-   "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
+    "tab",
+    "tab-nz"
    ]
   },
   {
@@ -89,26 +68,6 @@
   },
   {
    "names": [
-    "HYROX",
-    "HYROX Australia"
-   ],
-   "slugs": [
-    "hyrox",
-    "hyrox-australia"
-   ]
-  },
-  {
-   "names": [
-    "Hockey Australia",
-    "Hockey New Zealand"
-   ],
-   "slugs": [
-    "hockey-australia",
-    "hockey-new-zealand"
-   ]
-  },
-  {
-   "names": [
     "PURE Sports Nutrition",
     "Pure Nutrition"
    ],
@@ -119,12 +78,22 @@
   },
   {
    "names": [
-    "TAB",
-    "TAB NZ"
+    "HYROX",
+    "HYROX Australia"
    ],
    "slugs": [
-    "tab",
-    "tab-nz"
+    "hyrox",
+    "hyrox-australia"
+   ]
+  },
+  {
+   "names": [
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
+   ],
+   "slugs": [
+    "commonwealth-games",
+    "commonwealth-games-australia"
    ]
   },
   {
@@ -138,39 +107,6 @@
     "athletics-australia",
     "athletics-new-zealand"
    ]
-  },
-  {
-   "names": [
-    "HYROX",
-    "HYROX Australia"
-   ],
-   "slugs": [
-    "hyrox",
-    "hyrox-australia"
-   ]
-  },
-  {
-   "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
-   ],
-   "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
-   ]
-<<<<<<< Updated upstream
-  },
-  {
-   "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
-   ],
-   "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
-   ]
-=======
->>>>>>> Stashed changes
   }
  ],
  "no_category": [
