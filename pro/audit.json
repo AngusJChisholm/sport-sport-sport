@@ -4,14 +4,34 @@
   "dup_entities": 9,
   "no_category": 294,
   "cat_mismatch": 97,
-  "slot_clash": 14,
+  "slot_clash": 18,
   "dup_deals": 1,
   "no_broadcaster": 9,
   "stale": 0,
   "no_source": 688,
-  "anz_slot_clash": 12
+  "anz_slot_clash": 16
  },
  "dup_entities": [
+  {
+   "names": [
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
+   ],
+   "slugs": [
+    "commonwealth-games",
+    "commonwealth-games-australia"
+   ]
+  },
+  {
+   "names": [
+    "Special Olympics",
+    "Special Olympics Australia"
+   ],
+   "slugs": [
+    "special-olympics",
+    "special-olympics-australia"
+   ]
+  },
   {
    "names": [
     "HYROX",
@@ -24,12 +44,14 @@
   },
   {
    "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
    ],
    "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
    ]
   },
   {
@@ -48,34 +70,12 @@
   },
   {
    "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
    ],
    "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
-   ]
-  },
-  {
-   "names": [
-    "TAB",
-    "TAB NZ"
-   ],
-   "slugs": [
-    "tab",
-    "tab-nz"
-   ]
-  },
-  {
-   "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
-   ],
-   "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
+    "pure-nutrition",
+    "pure-sports-nutrition"
    ]
   },
   {
@@ -100,12 +100,12 @@
   },
   {
    "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
+    "TAB",
+    "TAB NZ"
    ],
    "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
+    "tab",
+    "tab-nz"
    ]
   }
  ],
@@ -2264,6 +2264,23 @@
  ],
  "slot_clash": [
   {
+   "property": "AUSX Supercross",
+   "anz": true,
+   "slot": "Car makers",
+   "partners": [
+    {
+     "brand": "Suzuki",
+     "since": "Sep 2026",
+     "ends": null
+    },
+    {
+     "brand": "JAECOO",
+     "since": "Jul 2026",
+     "ends": 2026
+    }
+   ]
+  },
+  {
    "property": "Brisbane Roar",
    "anz": true,
    "slot": "Quick service food",
@@ -2349,6 +2366,23 @@
    ]
   },
   {
+   "property": "Melbourne Mavericks",
+   "anz": true,
+   "slot": "Energy retail",
+   "partners": [
+    {
+     "brand": "Lumo Energy",
+     "since": "listed",
+     "ends": null
+    },
+    {
+     "brand": "Powerbay",
+     "since": "Apr 2026",
+     "ends": null
+    }
+   ]
+  },
+  {
    "property": "NBL",
    "anz": true,
    "slot": "Telco",
@@ -2419,6 +2453,23 @@
   {
    "property": "Supercars",
    "anz": true,
+   "slot": "Car makers",
+   "partners": [
+    {
+     "brand": "Subaru",
+     "since": "Feb 2026",
+     "ends": null
+    },
+    {
+     "brand": "Volkswagen",
+     "since": "Jul 2025",
+     "ends": null
+    }
+   ]
+  },
+  {
+   "property": "Supercars",
+   "anz": true,
    "slot": "Tyres",
    "partners": [
     {
@@ -2464,6 +2515,23 @@
      "brand": "Asahi",
      "since": "Jul 2025",
      "ends": 2030
+    }
+   ]
+  },
+  {
+   "property": "Sydney Swans",
+   "anz": true,
+   "slot": "Energy retail",
+   "partners": [
+    {
+     "brand": "IREN",
+     "since": "listed",
+     "ends": null
+    },
+    {
+     "brand": "Origin Energy",
+     "since": "listed",
+     "ends": null
     }
    ]
   },
