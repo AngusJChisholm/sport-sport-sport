@@ -7095,15 +7095,17 @@
    "needsSource": true
   },
   {
-   "date": "2026-09-01",
+   "date": "2026-08-31",
    "deal": "STRAUSS × AFL",
    "sport": "AFL",
    "type": "Official partner",
    "region": "ANZ",
-   "summary": "STRAUSS becomes the AFL and AFLW's official workwear partner from 2027.",
+   "summary": "STRAUSS becomes the AFL and AFLW's first official workwear partner, from the 2027 season through 2029.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "url": "https://www.afl.com.au/news/1596275/afl-welcomes-strauss-as-first-official-workwear-partner-from-2027",
+   "ends": 2029,
+   "term": 3
   },
   {
    "date": "2026-09-01",
@@ -20857,7 +20859,8 @@
    "url": "https://ministryofsport.com/afl-and-didi-announce-multi-year-partnership-extension-through-2027/",
    "tier": "Official partner",
    "status": "Extension",
-   "ends": 2027
+   "ends": 2027,
+   "ended": true
   },
   {
    "date": "2026-05-19",
@@ -30342,7 +30345,8 @@
    "summary": "Landmark AFL sponsorship across five states",
    "url": "https://www.bandt.com.au/ray-white-goes-big-with-landmark-afl-sponsorship-across-five-states/",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ended": true
   },
   {
    "date": "2025-03-28",
