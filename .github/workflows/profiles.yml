@@ -2,11 +2,12 @@ name: Enrich deals and build brand/property pages
 
 # Runs whenever deals.json or entities.json changes (e.g. the 6am update). Adds deal type, term and end
 # year to new deals (tools/enrich.py), then rebuilds the page for every brand and property plus the
-# sitemap (tools/build_profiles.py). Its own commit triggers one more run, which finds nothing to do.
+# sitemap (tools/build_profiles.py), then rebuilds SSS Pro's partner matches and their backtest (tools/match.py).
+# Its own commit triggers one more run, which finds nothing to do.
 on:
   push:
     branches: [main]
-    paths: ["deals.json", "entities.json", "profile.html", "tools/enrich.py", "tools/build_profiles.py"]
+    paths: ["deals.json", "entities.json", "profile.html", "tools/enrich.py", "tools/build_profiles.py", "tools/match.py", "tools/subcat_rules.py"]
   workflow_dispatch:
 
 concurrency:
@@ -30,11 +31,14 @@ jobs:
       - name: Build brand and property pages
         run: python3 tools/build_profiles.py
 
+      - name: SSS Pro matches and backtest
+        run: python3 tools/match.py
+
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add deals.json entities.json brands properties sitemap.xml
+          git add deals.json entities.json brands properties sitemap.xml pro/matches.json
           if git diff --cached --quiet; then echo "Nothing new"; exit 0; fi
           git commit -m "Brand and property pages [skip netlify]"
           for i in 1 2 3 4 5; do

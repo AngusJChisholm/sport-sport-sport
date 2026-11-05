@@ -2594,7 +2594,8 @@
    "domain": "grandprix.com.au",
    "bf": [
     "icon"
-   ]
+   ],
+   "reach": "Global"
   },
   "australian-motors-wayville": {
    "name": "Australian Motors Wayville",
@@ -2634,7 +2635,8 @@
    "domain": "ausopen.com",
    "bf": [],
    "ptype": "Event",
-   "k": "p"
+   "k": "p",
+   "reach": "Global"
   },
   "australian-open-golf": {
    "name": "Australian Open (golf)",
@@ -16391,7 +16393,8 @@
     "logo"
    ],
    "ptype": "Event",
-   "k": "p"
+   "k": "p",
+   "reach": "Global"
   },
   "motor-accident-commission": {
    "name": "Motor Accident Commission",

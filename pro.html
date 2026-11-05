@@ -45,6 +45,15 @@
 .t td .lg{--s:30px}
 .gapbar{height:8px;background:var(--line);width:110px;position:relative}
 .gapbar i{position:absolute;inset:0 auto 0 0;background:var(--ink)}
+.mx-acc{display:flex;gap:18px;align-items:flex-start;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);padding:16px 0;margin:20px 0 8px}
+.mx-acc b{font-size:clamp(32px,4vw,52px);font-weight:800;letter-spacing:-.04em;line-height:1;background:var(--volt);padding:4px 8px 2px}
+.mx-acc span{font-size:14px;line-height:1.5;color:var(--ink-2);max-width:760px}
+.mx-sc{display:flex;align-items:center;gap:8px;margin-bottom:6px}.mx-sc b{font-size:26px;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.mx-f{font-size:11px;margin-top:4px}
+.mx-why{margin:0;padding-left:16px;font-size:14px;line-height:1.45;max-width:440px}.mx-why li{margin:0 0 3px}
+.mx .chips{margin-top:6px}
+.mx-sig{font-size:12px;white-space:nowrap}.mx-sig span{display:block;line-height:1.6}
+@media (max-width:760px){.ctl .pills{flex-wrap:wrap}.mx-sig{display:none}.mx-acc{flex-direction:column;gap:8px}}
 .toolrow{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 .ghost{font:inherit;font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;background:var(--white);border:1px solid var(--ink);padding:10px 14px;cursor:pointer}
 .ghost:hover{background:var(--canvas)}
@@ -115,10 +124,11 @@
 <section class="wrap hero">
 <span class="lbl mute-l">SSS Pro</span>
 <h1 class="disp">The partnerships desk.</h1>
-<p>Find brands spending in sport, see what's coming up for renewal, and work out which categories a property is missing and who could fill them. Built from every deal in the SSS archive.</p>
+<p>See who should partner with whom, find brands spending in sport, see what's coming up for renewal, and work out which categories a property is missing and who could fill them. Built from every deal in the SSS archive.</p>
 </section>
 <div class="wrap"><div class="tabs" role="tablist" id="tabs">
 <button class="tab" data-tab="dash" role="tab">Dashboard</button>
+<button class="tab" data-tab="matches" role="tab">Matches</button>
 <button class="tab" data-tab="finder" role="tab">Brand finder</button>
 <button class="tab" data-tab="renewals" role="tab">Renewal radar</button>
 <button class="tab" data-tab="property" role="tab">Property report</button>
@@ -144,6 +154,6 @@
 <datalist id="brandNames"></datalist>
 <script src="assets/logos.js?v=7"></script>
 <script src="assets/data.js?v=2"></script>
-<script src="assets/pro.js?v=4"></script>
+<script src="assets/pro.js?v=5"></script>
 </body>
 </html>

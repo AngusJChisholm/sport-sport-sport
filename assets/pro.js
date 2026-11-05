@@ -1,5 +1,5 @@
 /* SSS Pro (pro.html): private working tool built on the deal archive.
-   Tabs: Brand finder, Renewal radar, Property report (partners, category gaps, prospects, peer benchmark), Watchlist.
+   Tabs: Matches (Match Score suggestions, both ways), Brand finder, Renewal radar, Property report (partners, category gaps, prospects, peer benchmark), Watchlist.
    Renewal years come in three strengths:
      Confirmed  - the announcement states when the deal ends
      From term  - the announcement states the length; end year = announced year + term
@@ -298,8 +298,51 @@ function dashboard(){
   };
 }
 
+
+/* ---------- Matches: who should partner with whom (pro/matches.json, built by tools/match.py) ---------- */
+let MX=null;
+const mxLoad=()=>MX?Promise.resolve(MX):fetch("pro/matches.json",{cache:"no-store"}).then(r=>r.json()).then(j=>MX=j);
+const pct=v=>`${(v*100).toFixed(1).replace(/\.0$/,"")}%`;
+const bandCls=k=>k==="Call now"?"c":k==="Strong"?"t":"";
+function matches(){
+  $("view").innerHTML=`<p class="note">Loading matches…</p>`;
+  mxLoad().then(()=>drawMatches()).catch(err=>{console.error(err);$("view").innerHTML=`<p class="note">Couldn't load matches. They're rebuilt each time the archive updates; refresh to try again.</p>`});
+}
+function drawMatches(){
+  const m=state.m||(state.m={side:"p",slug:null});
+  const pool=m.side==="p"?MX.props:MX.brands;
+  if(!m.slug||!pool[m.slug]){
+    const w=[...watch.get()].find(s=>pool[s]);
+    m.slug=w||(m.side==="p"?(pool.collingwood?"collingwood":Object.keys(pool)[0]):(pool["coca-cola"]?"coca-cola":Object.keys(pool)[0]));
+  }
+  const rec=pool[m.slug], bt=MX.backtest, org=D.orgs.get(m.slug);
+  const rows=rec.m||[];
+  state.mExport={rec,rows,side:m.side};
+  $("view").innerHTML=`<p class="pro-intro">${m.side==="p"?"The brands this property should be talking to":"The properties this brand should be talking to"}, ranked by Match Score: how closely the brand's existing deals look like this property (sport, league, region, reach, partners in common), plus whether the property has a gap in that sub-category its peers have filled.</p>
+  <div class="mx-acc"><b>${pct(bt.top20)}</b><span>of new deals signed ${esc(bt.from)} to ${esc(bt.to)} were in that property's top 20 when we scored the archive as it stood in ${esc(bt.from)}. ${pct(bt.top50)} were in the top 50. The best possible today is ${pct(bt.ceiling)}, because the rest came from brands with no earlier deal in the archive. Treat this as a shortlist with evidence, not a forecast.</span></div>
+  <div class="ctl"><div class="pills">${pills("mside",[["p","Property → brands"],["b","Brand → properties"]],m.side)}</div>
+  <input class="srch" id="mq" list="mxNames" placeholder="${m.side==="p"?"Type a property, e.g. Carlton, Australian Open":"Type a brand, e.g. Coca-Cola, TikTok"}" autocomplete="off"><datalist id="mxNames">${Object.entries(pool).sort((a,b)=>a[1].n.localeCompare(b[1].n)).map(([,r])=>`<option value="${esc(r.n)}">`).join("")}</datalist>
+  <button class="ghost" id="mcsv">Export CSV</button></div>
+  <div class="ph">${org?L.mark(org.e,{px:72}):""}<div><h2 class="disp">${esc(rec.n)}</h2><div class="sub">${m.side==="p"?`${esc(rec.s)} · ${esc(rec.r)} reach`:`${esc(rec.c||"Uncategorised")}${rec.u?` · ${esc(rec.u)}`:""}`} ${star(m.slug)}</div></div></div>
+  ${rows.length?`<div class="tw"><table class="t mx"><thead><tr><th>#</th><th>${m.side==="p"?"Brand":"Property"}</th><th>Match</th><th>Why</th><th>Signals</th></tr></thead><tbody>${rows.map((r,i)=>{
+    const slug=m.side==="p"?r.b:r.p, o=D.orgs.get(slug), pts=r.p&&m.side==="p"?r.p:r.pt||[];
+    const sub=m.side==="p"?`${esc(r.c||"")}${r.u?` · ${esc(r.u)}`:""}`:`${esc(r.s)} · ${esc(r.r)}`;
+    return `<tr><td class="d">${i+1}</td>
+    <td><span class="dl">${o?logo(o.e,34):""}<span><a href="${esc(L.page(slug))}"><b>${esc(r.n)}</b></a><br><span class="mute-l">${sub}</span></span></span></td>
+    <td><div class="mx-sc"><b>${r.x}</b><span class="basis ${bandCls(r.k)}">${esc(r.k)}</span></div><span class="gapbar"><i style="width:${r.x}%"></i></span><div class="mute-l mx-f">${esc(r.f)} confidence</div></td>
+    <td><ul class="mx-why">${(r.w||[]).map(w=>`<li>${esc(w)}</li>`).join("")}</ul>${(r.g||[]).length?`<div class="chips">${r.g.map(g=>`<span class="chip${g==="Former partner"?" ex":""}">${esc(g)}</span>`).join("")}</div>`:""}</td>
+    <td class="mx-sig"><span title="Lookalike: out of 85">Fit <b>${pts[1]}</b></span><span title="Sub-category gap: out of 15">Gap <b>${pts[4]}</b></span><span class="mute-l" title="Shown, not scored yet: out of 25">Timing ${pts[0]}</span><span class="mute-l" title="Shown, not scored yet: out of 15">Capacity ${pts[2]}</span><span class="mute-l" title="Shown, not scored yet: out of 15">Appetite ${pts[3]}</span></td></tr>`}).join("")}</tbody></table></div>`:`<p class="note">No matches above 40 yet. ${m.side==="p"?"This property needs more deals in the archive.":"This brand needs more deals in the archive."}</p>`}
+  <p class="note-s">Fit (out of 85) and Gap (out of 15) make up the score. Timing, Capacity and Appetite are shown but don't count yet: in testing they made the ranking worse, so they come in once the archive is deep enough to prove them. Hidden: live partners, and brands that clash with a live partner on a firm deal in the same sub-category. Rebuilt ${esc(MX.generated)} from the full archive.</p>`;
+  const inp=$("mq");
+  inp.onchange=()=>{const v=inp.value.trim().toLowerCase();const hit=Object.entries(pool).find(([,r])=>r.n.toLowerCase()===v)||Object.entries(pool).find(([,r])=>r.n.toLowerCase().includes(v));if(hit){m.slug=hit[0];drawMatches();window.scrollTo(0,0)}};
+  $("view").onclick=e=>{
+    const sd=e.target.closest("[data-mside]");if(sd){m.side=sd.dataset.mside;m.slug=null;drawMatches();return}
+    if(e.target.id==="mcsv"){const x=state.mExport;csv([[x.side==="p"?"Property":"Brand","Rank",x.side==="p"?"Brand":"Property","Match","Band","Confidence","Why","Flags","Fit","Gap","Timing","Capacity","Appetite"],...x.rows.map((r,i)=>{const pts=x.side==="p"?r.p:r.pt;return [x.rec.n,i+1,r.n,r.x,r.k,r.f,(r.w||[]).join("; "),(r.g||[]).join("; "),pts[1],pts[4],pts[0],pts[2],pts[3]]})],`sss-pro-matches-${m.slug}.csv`)}
+  };
+}
+
 /* ---------- tabs ---------- */
-const TABS={dash:dashboard,finder,renewals,property,watch:watchlist};
+const TABS={dash:dashboard,matches,finder,renewals,property,watch:watchlist};
 function go(tab){
   state.tab=TABS[tab]?tab:"dash";
   document.querySelectorAll(".tab").forEach(b=>{b.classList.toggle("on",b.dataset.tab===state.tab);b.setAttribute("aria-selected",b.dataset.tab===state.tab)});
