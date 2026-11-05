@@ -283,7 +283,7 @@ function dashboard(){
   <div class="two">
     <div class="card"><div class="ch"><span class="h3 m0">Coming up</span><a href="#" class="more" data-go="renewals">Radar</a></div>
       <ul class="cl">${up.map(({d,r})=>`<li><span class="yr">${r.end}</span><span class="dl">${L.pair(d,{px:28})}${S.dealLink(d)}</span>${basisTag(r)}</li>`).join("")||"<li>None in the archive.</li>"}</ul></div>
-    <div class="card"><div class="ch"><span class="h3 m0">Latest deals</span><a href="deals.html" class="more">Archive</a></div>
+    <div class="card"><div class="ch"><span class="h3 m0">Latest deals</span><a href="deals" class="more">Archive</a></div>
       <ul class="cl">${latest.map(d=>`<li><span class="dd">${esc(S.fmt(d).replace(/ \d{4}$/,""))}</span><span class="dl">${L.pair(d,{px:28})}${S.dealLink(d)}</span><span class="chip">${esc(d.sport||"")}</span></li>`).join("")}</ul></div>
   </div>
   <div class="card"><div class="ch"><span class="h3 m0">Most active brands</span><span class="key">Deals, last 12 months</span></div>

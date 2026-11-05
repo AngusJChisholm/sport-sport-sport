@@ -26,7 +26,7 @@ Promise.all([
 
 const img=(x,big)=>`<div class="im${okImg(x.image)?"":" noimg"}">${okImg(x.image)?`<img src="${esc(loc(x.image)||imgSrc(x.image))}" data-alt="${esc(imgSrc(x.image))}" alt="" loading="${big?"eager":"lazy"}" decoding="async" onerror="if(this.dataset.alt&&this.src.indexOf(this.dataset.alt)<0){this.src=this.dataset.alt}else{this.parentElement.classList.add('noimg')}">`:""}</div>`;
 const meta=x=>`<div class="meta"><span class="tag${x.kind==="feature"?" r":""}">${x.kind==="feature"?"Feature":"Deal story"}</span><span>${esc(x.label||"")}</span><span>${esc(fmt(x.date))}</span></div>`;
-const href=x=>`articles/${encodeURIComponent(x.slug)}.html`;
+const href=x=>`articles/${encodeURIComponent(x.slug)}`;
 
 function draw(){
   const r=all.filter(x=>f==="All"||x.kind===f||x.region===f);

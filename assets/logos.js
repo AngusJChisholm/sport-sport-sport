@@ -103,7 +103,7 @@ window.SSSLogos=(function(){
   // Pages render with innerHTML, so watch for new logos being added.
   if("MutationObserver" in window)new MutationObserver(queueSoon).observe(document.documentElement,{childList:true,subtree:true});
   // Every brand and property has its own page (tools/build_profiles.py); brand-new names fall back to profile.html.
-  const page=slug=>{const x=ENT[slug];return x&&(x.k==="b"||x.k==="p")?`${x.k==="b"?"brands":"properties"}/${encodeURIComponent(slug)}.html`:`profile.html?id=${encodeURIComponent(slug)}`};
+  const page=slug=>{const x=ENT[slug];return x&&(x.k==="b"||x.k==="p")?`${x.k==="b"?"brands":"properties"}/${encodeURIComponent(slug)}`:`profile?id=${encodeURIComponent(slug)}`};
   // Logo pair for a deal: every brand, ×, every property.
   function pair(d,opts){
     const side=a=>(a||[]).map(e=>link(e,opts)).join("");

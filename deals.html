@@ -11,7 +11,7 @@
 <meta property="og:site_name" content="Sport Sport Sport">
 <meta property="og:title" content="Deals | Sport Sport Sport">
 <meta property="og:description" content="Every sports sponsorship and partnership deal Sport Sport Sport has filed, global and ANZ.">
-<meta property="og:url" content="https://sportsportsport.com.au/deals.html">
+<meta property="og:url" content="https://sportsportsport.com.au/deals">
 <meta property="og:image" content="https://sportsportsport.com.au/assets/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -308,9 +308,9 @@ a.st:hover b{box-shadow:inset 0 -.12em 0 var(--volt)}
 </head>
 <body>
 <header class="dk"><div class="wrap hd">
-<a href="index.html" class="logo" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="56" height="42"></a>
-<nav class="nav" id="nav"><a href="news.html">News</a><a href="deals.html" class="on" aria-current="page">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="insights.html">Insights</a></nav>
-<a href="index.html#follow" class="btn">Follow</a>
+<a href="./" class="logo" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="56" height="42"></a>
+<nav class="nav" id="nav"><a href="news">News</a><a href="deals" class="on" aria-current="page">Deals</a><a href="brands">Brands</a><a href="properties">Properties</a><a href="insights">Insights</a></nav>
+<a href="./#follow" class="btn">Follow</a>
 <button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
 </div></header>
 
@@ -349,9 +349,9 @@ a.st:hover b{box-shadow:inset 0 -.12em 0 var(--volt)}
 </main>
 
 <footer class="dk" id="about"><div class="wrap">
-<div class="ft"><div><a href="index.html" class="logo logo-ft" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="120" height="90"></a>
+<div class="ft"><div><a href="./" class="logo logo-ft" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="120" height="90"></a>
 <p class="mute" style="margin:28px 0 0;font-size:16px;max-width:420px;line-height:1.5">All things sport business. Global &amp; ANZ. A daily round-up of the sponsorship, partnership and commercial deals moving sport.</p></div>
-<nav class="ft-l" aria-label="Footer"><span id="ftLi" style="display:contents"></span><a href="news.html">News</a><a href="deals.html">Deals</a><a href="brands.html">Brands</a><a href="properties.html">Properties</a><a href="insights.html">Insights</a><a href="renewals.html">Renewal watch</a></nav></div>
+<nav class="ft-l" aria-label="Footer"><span id="ftLi" style="display:contents"></span><a href="news">News</a><a href="deals">Deals</a><a href="brands">Brands</a><a href="properties">Properties</a><a href="insights">Insights</a><a href="renewals">Renewal watch</a></nav></div>
 <div class="ft-b"><span>That's the day. Same time tomorrow.</span><span>© <span id="yr">2026</span> Sport Sport Sport</span></div>
 </div></footer>
 
@@ -375,7 +375,7 @@ const fmtArch=d=>!d.date&&!d.month?"Current partner":d.date?dObj(d).toLocaleDate
 const fmtLong=d=>dObj(d).toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
 const fmtDots=d=>{const x=dObj(d);return String(x.getDate()).padStart(2,"0")+"."+String(x.getMonth()+1).padStart(2,"0")+"."+String(x.getFullYear()).slice(2)};
 const tags=d=>`<span class="tag">${esc(d.sport)}</span>${d.type?`<span class="tag">${esc(d.type)}</span>`:""}<span class="tag r">${esc(d.region)}</span>`;
-const href=d=>d.slug&&d.article?{h:`articles/${encodeURIComponent(d.slug)}.html`,ext:false}:null;
+const href=d=>d.slug&&d.article?{h:`articles/${encodeURIComponent(d.slug)}`,ext:false}:null;
 const attrs=d=>{const x=href(d);return x?` href="${esc(x.h)}"${x.ext?' target="_blank" rel="noopener"':""}`:""};
 const link=(d,label)=>href(d)?`<a${attrs(d)} class="more">${label}</a>`:"";
 
@@ -432,7 +432,7 @@ function roundup(lead){
   $("rCount").textContent=`${same.length} deal${same.length===1?"":"s"} · ${fmtDots(asPosted(lead))}`;
   const card=d=>{const tag=href(d)?"a":"div";
     return `<${tag} class="card"${attrs(d)}>${d._b?`<div class="cl">${L.pair(d,{px:44})}</div>`:""}<div class="tags"><span class="tag">${esc(d.sport)}</span><span class="tag r">${esc(d.region)}</span></div><h3>${esc(d.deal)}</h3><p>${esc(d.summary||d.type||"")}</p>${href(d)?`<span class="more">${d.article?"Read the story →":"Read →"}</span>`:""}</${tag}>`};
-  $("roundup").innerHTML=same.map(card).join("")+`<a href="deals.html" class="card all" style="--span:${3-(same.length%3)}"><span class="lbl">The archive</span><h3>Every deal. Since day one.</h3><span class="more">Browse the archive →</span></a>`;
+  $("roundup").innerHTML=same.map(card).join("")+`<a href="deals" class="card all" style="--span:${3-(same.length%3)}"><span class="lbl">The archive</span><h3>Every deal. Since day one.</h3><span class="more">Browse the archive →</span></a>`;
 }
 function features(){
   if(!FEATS.length)return;
@@ -483,7 +483,7 @@ function stats(){
   const top=Object.entries(mo.reduce((a,d)=>(a[d.sport]=(a[d.sport]||0)+1,a),{})).sort((a,b)=>b[1]-a[1])[0];
   const brands=new Set();DEALS.forEach(d=>(d._bs||[]).forEach(e=>e&&brands.add(e.slug)));
   const cells=[[DEALS.length.toLocaleString("en-AU"),"Deals in the archive"],[wk.length,"Deals filed in the last 7 days"],[top?top[0]:"-","Busiest sport, last 30 days"],[brands.size?brands.size.toLocaleString("en-AU"):"-","Brands tracked"]];
-  $("stats").innerHTML=cells.map(([n,l])=>`<a class="st" href="deals.html"><b>${esc(n)}</b><span>${esc(l)}</span></a>`).join("");
+  $("stats").innerHTML=cells.map(([n,l])=>`<a class="st" href="deals"><b>${esc(n)}</b><span>${esc(l)}</span></a>`).join("");
   $("statsSec").hidden=false;
 }
 // Most active this year: top brands and properties by deals filed, linking to their pages.

@@ -84,7 +84,7 @@ say who a brand replaced unless an official release says so. Write in your own w
 9. **Send Angus** (SendUserMessage + SendUserFile), short, same voice:
    - The LinkedIn post copy, ready to paste.
    - The two LinkedIn graphics.
-   - The article link for the first comment: https://sportsportsport.com.au/articles/<slug>.html
+   - The article link for the first comment: https://sportsportsport.com.au/articles/<slug> (no .html - the site uses clean URLs)
    - One line on the photo (what it shows, brand / sport / venue) so he can ask for a swap.
    - Accuracy line: "Accuracy check: X claims checked, Y passed, Z cut and why", plus a one-line source list.
    - One line: Instagram carousel queued for 7pm (Friday 6pm), tags or collab used, and that "hold": true in

@@ -23,7 +23,7 @@ function index(byCat){
   }).sort((a,b)=>(a.k==="Other")-(b.k==="Other")||b.g.deals.size-a.g.deals.size);
   $("view").innerHTML=`<section class="wrap hero"><span class="lbl mute-l">Insights</span><h1 class="disp">Categories.</h1>
   <p>Every brand in the archive sorted into the industry it sells in. Pick one to see who's spending, which sports they back and every deal they've done.</p></section>
-  <section class="wrap sec"><div class="cg">${cards.map(x=>`<a class="cc" href="categories.html?c=${encodeURIComponent(x.k)}"><h3>${esc(x.k)}</h3><span class="k">${plural(x.g.brands.length,"brand","brands")} · ${plural(x.g.deals.size,"deal","deals")}${x.ty?` · ${x.ty} in ${yr}`:""}</span><span class="lgs">${x.top.map(b=>L.mark(b.e,{px:40})).join("")}</span></a>`).join("")}</div></section>`;
+  <section class="wrap sec"><div class="cg">${cards.map(x=>`<a class="cc" href="categories?c=${encodeURIComponent(x.k)}"><h3>${esc(x.k)}</h3><span class="k">${plural(x.g.brands.length,"brand","brands")} · ${plural(x.g.deals.size,"deal","deals")}${x.ty?` · ${x.ty} in ${yr}`:""}</span><span class="lgs">${x.top.map(b=>L.mark(b.e,{px:40})).join("")}</span></a>`).join("")}</div></section>`;
 }
 
 function detail(c,g,q){
@@ -31,7 +31,7 @@ function detail(c,g,q){
   const st={sport:q.get("sport")||"All",region:q.get("region")||"All"};
   const deals=[...g.deals].sort((a,b)=>S.sortKey(b).localeCompare(S.sortKey(a)));
   const sports=(()=>{const m=new Map();deals.forEach(d=>m.set(d.sport,(m.get(d.sport)||0)+1));return [...m.entries()].sort((a,b)=>b[1]-a[1]).map(x=>x[0])})();
-  $("view").innerHTML=`<section class="wrap hero"><nav class="crumbs" style="padding:0 0 18px" aria-label="Breadcrumb"><a href="insights.html">Insights</a><span aria-hidden="true">/</span><a href="categories.html">Categories</a></nav>
+  $("view").innerHTML=`<section class="wrap hero"><nav class="crumbs" style="padding:0 0 18px" aria-label="Breadcrumb"><a href="insights">Insights</a><span aria-hidden="true">/</span><a href="categories">Categories</a></nav>
   <span class="lbl mute-l">Category</span><h1 class="disp" style="font-size:clamp(48px,8vw,128px)">${esc(c)}.</h1><div class="stats" id="cStats" style="margin-top:32px"></div></section>
   <section class="wrap" style="padding-top:28px"><div class="ctl2"><div class="pills" id="spPills" role="group" aria-label="Sport"></div><div class="pills" id="regPills" role="group" aria-label="Region"></div></div></section>
   <section class="wrap sec" style="padding-top:12px"><div class="sh"><div><span class="lbl mute-l">The spenders</span><h2 class="disp">Brands.</h2></div><span class="lbl mute-l" id="bCount"></span></div><div class="dg" id="bGrid"></div></section>

@@ -30,7 +30,7 @@ S.load().then(D=>{
   const colsHtml=`<div class="cols">${months.map((m,i)=>`<span class="c${i===months.length-1?" cur":""}" style="height:${(byM.get(m)/mMax*100).toFixed(1)}%" data-tip="<b>${byM.get(m)}</b> deals · ${esc(mlab(m))}${i===months.length-1?" (so far)":""}"></span>`).join("")}</div><div class="cx"><span>${esc(mlab(months[0]))}</span><span>${esc(mlab(months[months.length-1]))}</span></div>`;
 
   const sp=count(thisYr,d=>d.sport).slice(0,12);
-  const cats=count(thisYr,d=>d._cats).filter(([c])=>c!=="Other").slice(0,12).map(([c,v])=>[c,v,`categories.html?c=${encodeURIComponent(c)}`]);
+  const cats=count(thisYr,d=>d._cats).filter(([c])=>c!=="Other").slice(0,12).map(([c,v])=>[c,v,`categories?c=${encodeURIComponent(c)}`]);
   const tiers=count(thisYr,d=>d.tier).map(([t,v])=>[t,v]);
   const st=count(thisYr,d=>d.status);
   const reg=count(thisYr,d=>d.region);
@@ -38,11 +38,11 @@ S.load().then(D=>{
 
   $("charts").innerHTML=`
   <div class="chart wide"><span class="lbl mute-l">Deal flow</span><h3>Deals filed per month</h3>${colsHtml}</div>
-  <div class="chart"><span class="lbl mute-l">${yr}</span><h3>Top categories</h3>${hbars(cats)}<p style="margin-top:18px"><a class="more" href="categories.html">All categories →</a></p></div>
+  <div class="chart"><span class="lbl mute-l">${yr}</span><h3>Top categories</h3>${hbars(cats)}<p style="margin-top:18px"><a class="more" href="categories">All categories →</a></p></div>
   <div class="chart"><span class="lbl mute-l">${yr}</span><h3>Top sports</h3>${hbars(sp)}</div>
   <div class="chart"><span class="lbl mute-l">${yr}</span><h3>What brands are buying</h3>${hbars(tiers)}</div>
   <div class="chart"><span class="lbl mute-l">${yr}</span><h3>New money vs renewals</h3>${hbars(st)}
     <h3 style="margin-top:40px">ANZ vs global</h3>${hbars(reg)}
-    <p class="note-s" style="margin-top:24px"><b>${ending}</b> deals filed are due to end in ${yr+1}. <a class="more" href="renewals.html?year=${yr+1}">Renewal watch →</a></p></div>`;
+    <p class="note-s" style="margin-top:24px"><b>${ending}</b> deals filed are due to end in ${yr+1}. <a class="more" href="renewals?year=${yr+1}">Renewal watch →</a></p></div>`;
 }).catch(()=>{$("charts").innerHTML=`<p class="note">Couldn't load the numbers. Refresh to try again.</p>`});
 })();

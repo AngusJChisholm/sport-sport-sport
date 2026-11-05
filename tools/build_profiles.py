@@ -117,7 +117,7 @@ def main():
         else:
             desc = f"{name} sponsors and partners: {n} deals filed. Partners include {top_p}." if top_p else f"{name} sponsors and partners."
             title = f"{name} sponsors and partners"
-        url = f"{SITE}/{folder}/{slug}.html"
+        url = f"{SITE}/{folder}/{slug}"
         stats = "".join(f'<div class="stat"><b>{esc(v)}</b><span>{esc(l)}</span></div>' for v, l in [
             (n, "deal filed" if n == 1 else "deals filed"), (len(sports), "sport" if len(sports) == 1 else "sports"),
             (fmt(latest), "latest deal"), (fmt(first), "first filed")])
@@ -159,7 +159,7 @@ def main():
         for d, side in r["deals"]:
             nm = esc(d.get("deal"))
             if d.get("slug") and d.get("article"):
-                nm = f'<a href="articles/{esc(d["slug"])}.html"><b>{nm}</b></a>'
+                nm = f'<a href="articles/{esc(d["slug"])}"><b>{nm}</b></a>'
             elif str(d.get("url") or "").startswith("https://"):
                 nm = f'<a href="{esc(d["url"])}" target="_blank" rel="noopener"><b>{nm}</b></a>'
             else:
@@ -176,7 +176,7 @@ def main():
             title = pt_of.get(k, ("", ""))[1]
             k_txt = ("Past partner" + (f" · {yrs(m)}" if yrs(m) else "")) if past else (title or f'{r["partners"][k]} deal{"s" if r["partners"][k] > 1 else ""}')
             folder_k = "brands" if recs.get(k, {}).get("nB", 0) >= recs.get(k, {}).get("nP", 0) else "properties"
-            return f'<a class="pt{" past" if past else ""}" href="{esc(folder_k)}/{esc(k)}.html"><b>{esc(pname(k))}</b><span class="k">{esc(k_txt)}</span></a>'
+            return f'<a class="pt{" past" if past else ""}" href="{esc(folder_k)}/{esc(k)}"><b>{esc(pname(k))}</b><span class="k">{esc(k_txt)}</span></a>'
         if order:
             cur = [k for k in partners if not pinfo.get(k, {}).get("past")]
             groups = [(t, [k for k in cur if pt_of.get(k, ("", ""))[0] == t]) for t in order]
@@ -222,8 +222,8 @@ def main():
     if ent_changed:
         (ROOT / "entities.json").write_text(json.dumps(E, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    static = ["", "news.html", "deals.html", "brands.html", "properties.html", "insights.html", "categories.html", "renewals.html", "leagues.html", "compare.html"]
-    arts = sorted(p.name for p in (ROOT / "articles").glob("*.html"))
+    static = ["", "news", "deals", "brands", "properties", "insights", "categories", "renewals", "leagues", "compare"]
+    arts = sorted(p.stem for p in (ROOT / "articles").glob("*.html"))
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     sm += [f"<url><loc>{SITE}/{p}</loc></url>" for p in static]
     sm += [f"<url><loc>{SITE}/articles/{a}</loc></url>" for a in arts]

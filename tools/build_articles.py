@@ -94,7 +94,7 @@ def main():
             for o in others:
                 inner = f'<span><b>{esc(o["deal"])}</b><span class="x">{esc(o.get("sport"))} · {esc(o.get("summary") or o.get("type"))}</span></span><span>→</span>'
                 if o.get("slug") and o.get("article"):
-                    rows.append(f'<a class="row" href="{esc(o["slug"])}.html">{inner}</a>')
+                    rows.append(f'<a class="row" href="{esc(o["slug"])}">{inner}</a>')
                 else:
                     rows.append(f'<div class="row">{inner[:-len("<span>→</span>")]}</div>')
             sameday = (
@@ -114,7 +114,7 @@ def main():
         page = (
             tpl.replace("{{TITLE}}", esc(f'{e["deal"]}: {title}'))
             .replace("{{DESC}}", esc(a.get("standfirst")))
-            .replace("{{CANONICAL}}", f'{SITE_URL}/articles/{e["slug"]}.html')
+            .replace("{{CANONICAL}}", f'{SITE_URL}/articles/{e["slug"]}')
             .replace("{{ISODATE}}", posted)
             .replace("{{LONGDATE}}", esc(long_date(posted)))
             .replace("{{HEADLINE}}", esc(title))
@@ -178,7 +178,7 @@ def build_features(deals, tpl, out_dir, follow):
                 continue
             inner = f'<span><b>{esc(o["deal"])}</b><span class="x">{esc(o.get("sport"))} · {esc(o.get("summary") or o.get("type"))}</span></span>'
             if o.get("slug") and o.get("article"):
-                rows.append(f'<a class="row" href="{esc(o["slug"])}.html">{inner}<span>→</span></a>')
+                rows.append(f'<a class="row" href="{esc(o["slug"])}">{inner}<span>→</span></a>')
             else:
                 rows.append(f'<div class="row">{inner}</div>')
         related = ""
@@ -195,7 +195,7 @@ def build_features(deals, tpl, out_dir, follow):
         page = (
             tpl.replace("{{TITLE}}", esc(f["headline"]))
             .replace("{{DESC}}", esc(a.get("standfirst")))
-            .replace("{{CANONICAL}}", f'{SITE_URL}/articles/{f["slug"]}.html')
+            .replace("{{CANONICAL}}", f'{SITE_URL}/articles/{f["slug"]}')
             .replace("{{ISODATE}}", f["date"])
             .replace("{{LONGDATE}}", esc(long_date(f["date"])))
             .replace("{{HEADLINE}}", esc(f["headline"]))

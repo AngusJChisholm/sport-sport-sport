@@ -46,7 +46,7 @@ window.SSSData=(function(){
   const esc=L.esc;
   const dealLink=d=>{
     const name=esc(d.deal);
-    if(d.slug&&d.article)return `<a href="articles/${encodeURIComponent(d.slug)}.html"><b>${name}</b></a>`;
+    if(d.slug&&d.article)return `<a href="articles/${encodeURIComponent(d.slug)}"><b>${name}</b></a>`;
     if(d.url&&/^https:\/\//.test(d.url))return `<a href="${esc(d.url)}" target="_blank" rel="noopener"><b>${name}</b></a>`;
     return `<b>${name}</b>`;
   };
