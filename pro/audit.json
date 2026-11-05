@@ -14,12 +14,14 @@
  "dup_entities": [
   {
    "names": [
-    "Star Sports",
-    "The Star"
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
    ],
    "slugs": [
-    "star-sports",
-    "the-star"
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
    ]
   },
   {
@@ -38,12 +40,12 @@
   },
   {
    "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
+    "Hockey Australia",
+    "Hockey New Zealand"
    ],
    "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
+    "hockey-australia",
+    "hockey-new-zealand"
    ]
   },
   {
@@ -58,32 +60,12 @@
   },
   {
    "names": [
-    "Hockey Australia",
-    "Hockey New Zealand"
-   ],
-   "slugs": [
-    "hockey-australia",
-    "hockey-new-zealand"
-   ]
-  },
-  {
-   "names": [
     "Commonwealth Games",
     "Commonwealth Games Australia"
    ],
    "slugs": [
     "commonwealth-games",
     "commonwealth-games-australia"
-   ]
-  },
-  {
-   "names": [
-    "HYROX",
-    "HYROX Australia"
-   ],
-   "slugs": [
-    "hyrox",
-    "hyrox-australia"
    ]
   },
   {
@@ -98,14 +80,32 @@
   },
   {
    "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
    ],
    "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
+    "pure-nutrition",
+    "pure-sports-nutrition"
+   ]
+  },
+  {
+   "names": [
+    "HYROX",
+    "HYROX Australia"
+   ],
+   "slugs": [
+    "hyrox",
+    "hyrox-australia"
+   ]
+  },
+  {
+   "names": [
+    "Star Sports",
+    "The Star"
+   ],
+   "slugs": [
+    "star-sports",
+    "the-star"
    ]
   }
  ],
