@@ -68,6 +68,7 @@ CLASS = {"Club & team": "club", "League & competition": "body", "Governing body"
 TOPN, MIN_SHOW, LISTED_W = 15, 40, 0.6
 W_FIT, W_WS, W_DNA, W_AL = 74, 13, 9, 4  # chosen by backtest (Nov 2026); rerun tools/match.py --test before changing
 DEST = "Destination & host government"
+APPAREL, KIT = "Apparel & footwear", "Kit supplier"
 
 
 def ym(s):
@@ -210,6 +211,16 @@ class Model:
             return 0.0, lift, n
         return min(1.0, math.log(lift) / math.log(5)), lift, n
 
+    def kit_clash(self, p, b):
+        """A kit supplier owns apparel at the property: Nike at Collingwood covers kit, training wear,
+        headwear, licensed merch and footwear, so no other apparel brand is a gap there. Returns None (no
+        clash), "firm" (block) or "ending" (kit deal stale or ending: show as Slot may open)."""
+        if self.cat.get(b) != APPAREL or self.sub.get(b) == KIT:
+            return None
+        if KIT not in self.live_sub.get(p, ()):
+            return None
+        return "firm" if self.sub_hold[p].get(KIT) else "ending"
+
     def dest_clash(self, p, b):
         """A property with a host destination partner doesn't sell to another state or country: the AO has
         Visit Victoria, so Tourism WA is blocked. A council can sit beside its own state body; a second state
@@ -315,11 +326,15 @@ class Model:
             cat, sub = self.cat.get(b), self.sub.get(b)
             if self.dest_clash(p, b):
                 continue
-            flags = []
+            kc = self.kit_clash(p, b)
+            if kc == "firm":
+                continue
+            flags = ["Slot may open"] if kc else []
             if sub and sub in self.live_sub[p] and sub != DEST:
                 if self.sub_hold[p].get(sub):
                     continue
-                flags.append("Slot may open")
+                if "Slot may open" not in flags:
+                    flags.append("Slot may open")
             if cat == "Betting & wagering" and cat not in self.live_cat[p]:
                 flags.append("Check betting policy")
             if sp in self.bprof[b].get("avoid", []):
@@ -429,6 +444,11 @@ class Model:
                         names.append(n)
                 out.append({"u": sub, "c": cat or "", "st": "ending" if ending else "sold", "b": names[:3],
                             "e": min(ends) if ends else None, "a": adopt, "n": len(peers)})
+            elif cat == APPAREL and KIT in have:
+                # covered by the kit supplier, not a gap
+                kn = [self.ent.get(r["b"], {}).get("name") or self.name.get(r["b"], r["b"]) for r in have[KIT]]
+                out.append({"u": sub, "c": cat, "st": "sold" if self.sub_hold[p].get(KIT) else "ending",
+                            "b": list(dict.fromkeys(kn))[:1], "e": None, "a": adopt, "n": len(peers)})
             else:
                 out.append({"u": sub, "c": cat or "", "st": "open", "b": [], "e": None, "a": adopt, "n": len(peers)})
         order = {"open": 0, "ending": 1, "sold": 2}
@@ -457,11 +477,15 @@ class Model:
             cat, sub = self.cat[b], self.sub.get(b)
             if self.dest_clash(p, b):
                 continue
-            flags = []
+            kc = self.kit_clash(p, b)
+            if kc == "firm":
+                continue
+            flags = ["Slot may open"] if kc else []
             if sub and sub in self.live_sub[p] and sub != DEST:
                 if self.sub_hold[p].get(sub):
                     continue
-                flags.append("Slot may open")
+                if "Slot may open" not in flags:
+                    flags.append("Slot may open")
             if cat == "Betting & wagering":
                 if cat not in self.live_cat[p]:
                     flags.append("Check betting policy")
