@@ -308,6 +308,14 @@ function matches(){
   $("view").innerHTML=`<p class="note">Loading matches…</p>`;
   mxLoad().then(()=>drawMatches()).catch(err=>{console.error(err);$("view").innerHTML=`<p class="note">Couldn't load matches. They're rebuilt each time the archive updates; refresh to try again.</p>`});
 }
+function intl(m,rec){
+  const list=rec.e||[];
+  if(!list.length)return m.side==="p"&&rec.r!=="Local"?`<div class="h3">International brands</div><p class="note-s">No overseas brands stand out for this property yet.</p>`:"";
+  const head=m.side==="p"?"International brands that could come in here":"Ways into Australia and New Zealand";
+  const lead=m.side==="p"?"Brands that sponsor mostly overseas, with no more than one ANZ deal, active in the last 18 months. They can't show up in the main list (they have no local deals to look alike), so they're scored on the gap here (30), fit with this sport and kind of property overseas (30), how much they sponsor (20), the level they buy at (10) and whether they're entering ANZ now (10). Not backtested yet.":"This brand sponsors mostly overseas. These are the ANZ properties where it fits best as a way in: a gap in its sub-category, plus the sport and kind of property it already backs overseas.";
+  return `<div class="h3">${head}</div><p class="note-s">${lead}</p><div class="tw"><table class="t mx"><thead><tr><th>#</th><th>${m.side==="p"?"Brand":"Property"}</th><th>Score</th><th>Why</th></tr></thead><tbody>${list.map((r,i)=>{const slug=m.side==="p"?r.b:r.p,o=D.orgs.get(slug);const sub=m.side==="p"?`${esc(r.c||"")}${r.u?` · ${esc(r.u)}`:""}`:`${esc(r.s)} · ${esc(r.r)}`;
+    return `<tr><td class="d">${i+1}</td><td><span class="dl">${o?logo(o.e,34):""}<span><a href="${esc(L.page(slug))}"><b>${esc(r.n)}</b></a><br><span class="mute-l">${sub}</span></span></span></td><td><div class="mx-sc"><b>${r.x}</b></div><span class="gapbar"><i style="width:${r.x}%"></i></span><div class="mute-l mx-f">${esc(r.f)} confidence</div></td><td><ul class="mx-why">${(r.w||[]).map(w=>`<li>${esc(w)}</li>`).join("")}</ul>${(r.g||[]).length?`<div class="chips">${r.g.map(g=>`<span class="chip">${esc(g)}</span>`).join("")}</div>`:""}</td></tr>`}).join("")}</tbody></table></div>`;
+}
 function drawMatches(){
   const m=state.m||(state.m={side:"p",slug:null});
   const pool=m.side==="p"?MX.props:MX.brands;
@@ -323,7 +331,7 @@ function drawMatches(){
   <div class="ctl"><div class="pills">${pills("mside",[["p","Property → brands"],["b","Brand → properties"]],m.side)}</div>
   <input class="srch" id="mq" list="mxNames" placeholder="${m.side==="p"?"Type a property, e.g. Carlton, Australian Open":"Type a brand, e.g. Coca-Cola, TikTok"}" autocomplete="off"><datalist id="mxNames">${Object.entries(pool).sort((a,b)=>a[1].n.localeCompare(b[1].n)).map(([,r])=>`<option value="${esc(r.n)}">`).join("")}</datalist>
   <button class="ghost" id="mcsv">Export CSV</button></div>
-  <div class="ph">${org?L.mark(org.e,{px:72}):""}<div><h2 class="disp">${esc(rec.n)}</h2><div class="sub">${m.side==="p"?`${esc(rec.s)} · ${esc(rec.r)} reach`:`${esc(rec.c||"Uncategorised")}${rec.u?` · ${esc(rec.u)}`:""}`} ${star(m.slug)}</div></div></div>
+  <div class="ph">${org?L.mark(org.e,{px:72}):""}<div><h2 class="disp">${esc(rec.n)}</h2><div class="sub">${m.side==="p"?`${esc({club:"Club",body:"League or governing body",event:"Event",national:"National team",athlete:"Athlete",venue:"Venue"}[rec.t]||"Property")} · ${esc(rec.s)} · ${esc(rec.r)} reach`:`${esc(rec.c||"Uncategorised")}${rec.u?` · ${esc(rec.u)}`:""}`} ${star(m.slug)}</div></div></div>
   ${rows.length?`<div class="tw"><table class="t mx"><thead><tr><th>#</th><th>${m.side==="p"?"Brand":"Property"}</th><th>Match</th><th>Why</th><th>Signals</th></tr></thead><tbody>${rows.map((r,i)=>{
     const slug=m.side==="p"?r.b:r.p, o=D.orgs.get(slug), pts=r.p&&m.side==="p"?r.p:r.pt||[];
     const sub=m.side==="p"?`${esc(r.c||"")}${r.u?` · ${esc(r.u)}`:""}`:`${esc(r.s)} · ${esc(r.r)}`;
@@ -332,7 +340,9 @@ function drawMatches(){
     <td><div class="mx-sc"><b>${r.x}</b><span class="basis ${bandCls(r.k)}">${esc(r.k)}</span></div><span class="gapbar"><i style="width:${r.x}%"></i></span><div class="mute-l mx-f">${esc(r.f)} confidence</div></td>
     <td><ul class="mx-why">${(r.w||[]).map(w=>`<li>${esc(w)}</li>`).join("")}</ul>${(r.g||[]).length?`<div class="chips">${r.g.map(g=>`<span class="chip${g==="Former partner"?" ex":""}">${esc(g)}</span>`).join("")}</div>`:""}</td>
     <td class="mx-sig"><span title="Lookalike: out of 85">Fit <b>${pts[1]}</b></span><span title="Sub-category gap: out of 15">Gap <b>${pts[4]}</b></span><span class="mute-l" title="Shown, not scored yet: out of 25">Timing ${pts[0]}</span><span class="mute-l" title="Shown, not scored yet: out of 15">Capacity ${pts[2]}</span><span class="mute-l" title="Shown, not scored yet: out of 15">Appetite ${pts[3]}</span></td></tr>`}).join("")}</tbody></table></div>`:`<p class="note">No matches above 40 yet. ${m.side==="p"?"This property needs more deals in the archive.":"This brand needs more deals in the archive."}</p>`}
-  <p class="note-s">Fit (out of 85) and Gap (out of 15) make up the score. Timing, Capacity and Appetite are shown but don't count yet: in testing they made the ranking worse, so they come in once the archive is deep enough to prove them. Hidden: live partners, and brands that clash with a live partner on a firm deal in the same sub-category. Rebuilt ${esc(MX.generated)} from the full archive.</p>`;
+  <p class="note-s">Fit (out of 85) and Gap (out of 15) make up the score. Timing, Capacity and Appetite are shown but don't count yet: in testing they made the ranking worse, so they come in once the archive is deep enough to prove them. Hidden: live partners, and brands that clash with a live partner on a firm deal in the same sub-category. ${m.side==="p"?(rec.t==="club"?"Clubs are compared with their league and with clubs in other codes in the same city.":["body","event","national"].includes(rec.t)?"Leagues, governing bodies, events and national teams are compared with the major properties of the same kind across every code.":""):""}</p>
+  ${intl(m,rec)}
+  <p class="note-s">Rebuilt ${esc(MX.generated)} from the full archive.</p>`;
   const inp=$("mq");
   inp.onchange=()=>{const v=inp.value.trim().toLowerCase();const hit=Object.entries(pool).find(([,r])=>r.n.toLowerCase()===v)||Object.entries(pool).find(([,r])=>r.n.toLowerCase().includes(v));if(hit){m.slug=hit[0];drawMatches();window.scrollTo(0,0)}};
   $("view").onclick=e=>{

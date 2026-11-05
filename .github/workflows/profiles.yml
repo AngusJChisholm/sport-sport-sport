@@ -7,7 +7,7 @@ name: Enrich deals and build brand/property pages
 on:
   push:
     branches: [main]
-    paths: ["deals.json", "entities.json", "profile.html", "tools/enrich.py", "tools/build_profiles.py", "tools/ptiers.py", "tools/match.py", "tools/subcat_rules.py"]
+    paths: ["deals.json", "entities.json", "profile.html", "tools/enrich.py", "tools/build_profiles.py", "tools/ptiers.py", "tools/match.py", "tools/subcat_rules.py", "tools/locations.py"]
   workflow_dispatch:
 
 concurrency:
