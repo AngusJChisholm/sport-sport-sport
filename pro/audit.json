@@ -1,0 +1,5304 @@
+{
+ "generated": "2026-11-05",
+ "summary": {
+  "dup_entities": 9,
+  "no_category": 294,
+  "cat_mismatch": 97,
+  "slot_clash": 14,
+  "dup_deals": 1,
+  "no_broadcaster": 9,
+  "stale": 0,
+  "no_source": 688,
+  "anz_slot_clash": 12
+ },
+ "dup_entities": [
+  {
+   "names": [
+    "Star Sports",
+    "The Star"
+   ],
+   "slugs": [
+    "star-sports",
+    "the-star"
+   ]
+  },
+  {
+   "names": [
+    "Sky",
+    "Sky NZ",
+    "Sky Sport",
+    "Sky Sports"
+   ],
+   "slugs": [
+    "sky",
+    "sky-nz",
+    "sky-sport",
+    "sky-sports"
+   ]
+  },
+  {
+   "names": [
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
+   ],
+   "slugs": [
+    "pure-nutrition",
+    "pure-sports-nutrition"
+   ]
+  },
+  {
+   "names": [
+    "Special Olympics",
+    "Special Olympics Australia"
+   ],
+   "slugs": [
+    "special-olympics",
+    "special-olympics-australia"
+   ]
+  },
+  {
+   "names": [
+    "Hockey Australia",
+    "Hockey New Zealand"
+   ],
+   "slugs": [
+    "hockey-australia",
+    "hockey-new-zealand"
+   ]
+  },
+  {
+   "names": [
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
+   ],
+   "slugs": [
+    "commonwealth-games",
+    "commonwealth-games-australia"
+   ]
+  },
+  {
+   "names": [
+    "HYROX",
+    "HYROX Australia"
+   ],
+   "slugs": [
+    "hyrox",
+    "hyrox-australia"
+   ]
+  },
+  {
+   "names": [
+    "TAB",
+    "TAB NZ"
+   ],
+   "slugs": [
+    "tab",
+    "tab-nz"
+   ]
+  },
+  {
+   "names": [
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
+   ],
+   "slugs": [
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
+   ]
+  }
+ ],
+ "no_category": [
+  {
+   "brand": "Reclaim the Game",
+   "slug": "reclaim-the-game",
+   "deals": 4
+  },
+  {
+   "brand": "VPA",
+   "slug": "vpa",
+   "deals": 4
+  },
+  {
+   "brand": "Dynasty",
+   "slug": "dynasty",
+   "deals": 3
+  },
+  {
+   "brand": "JOGA",
+   "slug": "joga",
+   "deals": 2
+  },
+  {
+   "brand": "CSQ",
+   "slug": "csq",
+   "deals": 2
+  },
+  {
+   "brand": "Brightside",
+   "slug": "brightside",
+   "deals": 2
+  },
+  {
+   "brand": "Allflags",
+   "slug": "allflags",
+   "deals": 2
+  },
+  {
+   "brand": "JMC",
+   "slug": "jmc",
+   "deals": 2
+  },
+  {
+   "brand": "Belbaker",
+   "slug": "belbaker",
+   "deals": 2
+  },
+  {
+   "brand": "GSA",
+   "slug": "gsa",
+   "deals": 2
+  },
+  {
+   "brand": "CONNOR",
+   "slug": "connor",
+   "deals": 1
+  },
+  {
+   "brand": "Carvana",
+   "slug": "carvana",
+   "deals": 1
+  },
+  {
+   "brand": "Perfect Bowl",
+   "slug": "perfect-bowl",
+   "deals": 1
+  },
+  {
+   "brand": "Gazley",
+   "slug": "gazley",
+   "deals": 1
+  },
+  {
+   "brand": "PGA TOUR",
+   "slug": "pga-tour",
+   "deals": 1
+  },
+  {
+   "brand": "Formula 1",
+   "slug": "formula-1",
+   "deals": 1
+  },
+  {
+   "brand": "OTB LED Services",
+   "slug": "otb-led-services",
+   "deals": 1
+  },
+  {
+   "brand": "SNAP",
+   "slug": "snap",
+   "deals": 1
+  },
+  {
+   "brand": "Dreamstreet",
+   "slug": "dreamstreet",
+   "deals": 1
+  },
+  {
+   "brand": "Rhino Football",
+   "slug": "rhino-football",
+   "deals": 1
+  },
+  {
+   "brand": "Castle Tavern",
+   "slug": "castle-tavern",
+   "deals": 1
+  },
+  {
+   "brand": "Motor Accident Commission",
+   "slug": "motor-accident-commission",
+   "deals": 1
+  },
+  {
+   "brand": "Bartercard",
+   "slug": "bartercard",
+   "deals": 1
+  },
+  {
+   "brand": "The Watson",
+   "slug": "the-watson",
+   "deals": 1
+  },
+  {
+   "brand": "Acryloc",
+   "slug": "acryloc",
+   "deals": 1
+  },
+  {
+   "brand": "Beiersdorf",
+   "slug": "beiersdorf",
+   "deals": 1
+  },
+  {
+   "brand": "Fasta Pasta",
+   "slug": "fasta-pasta",
+   "deals": 1
+  },
+  {
+   "brand": "Enzo's Ristorante",
+   "slug": "enzo-s-ristorante",
+   "deals": 1
+  },
+  {
+   "brand": "Linebreak",
+   "slug": "linebreak",
+   "deals": 1
+  },
+  {
+   "brand": "Dr Jones & Partners",
+   "slug": "dr-jones-and-partners",
+   "deals": 1
+  },
+  {
+   "brand": "KTI",
+   "slug": "kti",
+   "deals": 1
+  },
+  {
+   "brand": "AEH Signs",
+   "slug": "aeh-signs",
+   "deals": 1
+  },
+  {
+   "brand": "Terry Howe Printing",
+   "slug": "terry-howe-printing",
+   "deals": 1
+  },
+  {
+   "brand": "Westpoint Autos",
+   "slug": "westpoint-autos",
+   "deals": 1
+  },
+  {
+   "brand": "Allied",
+   "slug": "allied",
+   "deals": 1
+  },
+  {
+   "brand": "BAC",
+   "slug": "bac",
+   "deals": 1
+  },
+  {
+   "brand": "Big Michaels",
+   "slug": "big-michaels",
+   "deals": 1
+  },
+  {
+   "brand": "Awards and Trophies",
+   "slug": "awards-and-trophies",
+   "deals": 1
+  },
+  {
+   "brand": "Vulcan Fitness",
+   "slug": "vulcan-fitness",
+   "deals": 1
+  },
+  {
+   "brand": "Rygg",
+   "slug": "rygg",
+   "deals": 1
+  },
+  {
+   "brand": "My Fresh Laundry",
+   "slug": "my-fresh-laundry",
+   "deals": 1
+  },
+  {
+   "brand": "Rise 96.5",
+   "slug": "rise-96-5",
+   "deals": 1
+  },
+  {
+   "brand": "Teski",
+   "slug": "teski",
+   "deals": 1
+  },
+  {
+   "brand": "Signosaur",
+   "slug": "signosaur",
+   "deals": 1
+  },
+  {
+   "brand": "Nook Saunas",
+   "slug": "nook-saunas",
+   "deals": 1
+  },
+  {
+   "brand": "Strapit",
+   "slug": "strapit",
+   "deals": 1
+  },
+  {
+   "brand": "DLGSC",
+   "slug": "dlgsc",
+   "deals": 1
+  },
+  {
+   "brand": "Recovery Haus",
+   "slug": "recovery-haus",
+   "deals": 1
+  },
+  {
+   "brand": "Onside Sports",
+   "slug": "onside-sports",
+   "deals": 1
+  },
+  {
+   "brand": "Checkpoint",
+   "slug": "checkpoint",
+   "deals": 1
+  },
+  {
+   "brand": "CLN Facility Services",
+   "slug": "cln-facility-services",
+   "deals": 1
+  },
+  {
+   "brand": "Committee for Melbourne",
+   "slug": "committee-for-melbourne",
+   "deals": 1
+  },
+  {
+   "brand": "3AW",
+   "slug": "3aw",
+   "deals": 1
+  },
+  {
+   "brand": "COMO",
+   "slug": "como",
+   "deals": 1
+  },
+  {
+   "brand": "Novotel Geelong",
+   "slug": "novotel-geelong",
+   "deals": 1
+  },
+  {
+   "brand": "CITECO",
+   "slug": "citeco",
+   "deals": 1
+  },
+  {
+   "brand": "HiTZ",
+   "slug": "hitz",
+   "deals": 1
+  },
+  {
+   "brand": "Tinnies",
+   "slug": "tinnies",
+   "deals": 1
+  },
+  {
+   "brand": "James Busby",
+   "slug": "james-busby",
+   "deals": 1
+  },
+  {
+   "brand": "iiNet",
+   "slug": "iinet",
+   "deals": 1
+  },
+  {
+   "brand": "Summit Fleet",
+   "slug": "summit-fleet",
+   "deals": 1
+  },
+  {
+   "brand": "The Daily Telegraph",
+   "slug": "the-daily-telegraph",
+   "deals": 1
+  },
+  {
+   "brand": "Cricketers Arms",
+   "slug": "cricketers-arms",
+   "deals": 1
+  },
+  {
+   "brand": "Carrington Associates",
+   "slug": "carrington-associates",
+   "deals": 1
+  },
+  {
+   "brand": "Brokenwood",
+   "slug": "brokenwood",
+   "deals": 1
+  },
+  {
+   "brand": "The Mercury",
+   "slug": "the-mercury",
+   "deals": 1
+  },
+  {
+   "brand": "Flying Colours",
+   "slug": "flying-colours",
+   "deals": 1
+  },
+  {
+   "brand": "Lawrenny Distillery",
+   "slug": "lawrenny-distillery",
+   "deals": 1
+  },
+  {
+   "brand": "CBR Canberra",
+   "slug": "cbr-canberra",
+   "deals": 1
+  },
+  {
+   "brand": "CDC",
+   "slug": "cdc",
+   "deals": 1
+  },
+  {
+   "brand": "Denman Prospect",
+   "slug": "denman-prospect",
+   "deals": 1
+  },
+  {
+   "brand": "AEI",
+   "slug": "aei",
+   "deals": 1
+  },
+  {
+   "brand": "Supaglass",
+   "slug": "supaglass",
+   "deals": 1
+  },
+  {
+   "brand": "Queanbeyan Leagues Club",
+   "slug": "queanbeyan-leagues-club",
+   "deals": 1
+  },
+  {
+   "brand": "Blumers",
+   "slug": "blumers",
+   "deals": 1
+  },
+  {
+   "brand": "Future Form",
+   "slug": "future-form",
+   "deals": 1
+  },
+  {
+   "brand": "Supporting Disabilities Australia",
+   "slug": "supporting-disabilities-australia",
+   "deals": 1
+  },
+  {
+   "brand": "CPE",
+   "slug": "cpe",
+   "deals": 1
+  },
+  {
+   "brand": "Factory Sound",
+   "slug": "factory-sound",
+   "deals": 1
+  },
+  {
+   "brand": "MTC Australia",
+   "slug": "mtc-australia",
+   "deals": 1
+  },
+  {
+   "brand": "Sydney Tools",
+   "slug": "sydney-tools",
+   "deals": 1
+  },
+  {
+   "brand": "The Jerky Co.",
+   "slug": "the-jerky-co",
+   "deals": 1
+  },
+  {
+   "brand": "Aramex",
+   "slug": "aramex",
+   "deals": 1
+  },
+  {
+   "brand": "Ace Gutters",
+   "slug": "ace-gutters",
+   "deals": 1
+  },
+  {
+   "brand": "Anglo American",
+   "slug": "anglo-american",
+   "deals": 1
+  },
+  {
+   "brand": "North Harbour",
+   "slug": "north-harbour",
+   "deals": 1
+  },
+  {
+   "brand": "Rapidline",
+   "slug": "rapidline",
+   "deals": 1
+  },
+  {
+   "brand": "WeBuild",
+   "slug": "webuild",
+   "deals": 1
+  },
+  {
+   "brand": "Centra IT",
+   "slug": "centra-it",
+   "deals": 1
+  },
+  {
+   "brand": "9News",
+   "slug": "9news",
+   "deals": 1
+  },
+  {
+   "brand": "Waves",
+   "slug": "waves",
+   "deals": 1
+  },
+  {
+   "brand": "Nomadic",
+   "slug": "nomadic",
+   "deals": 1
+  },
+  {
+   "brand": "Franklyn",
+   "slug": "franklyn",
+   "deals": 1
+  },
+  {
+   "brand": "AdSignz",
+   "slug": "adsignz",
+   "deals": 1
+  },
+  {
+   "brand": "Alivio",
+   "slug": "alivio",
+   "deals": 1
+  },
+  {
+   "brand": "Sesame Lane",
+   "slug": "sesame-lane",
+   "deals": 1
+  },
+  {
+   "brand": "EMF Australia",
+   "slug": "emf-australia",
+   "deals": 1
+  },
+  {
+   "brand": "Corpsure",
+   "slug": "corpsure",
+   "deals": 1
+  },
+  {
+   "brand": "Hot Tomato",
+   "slug": "hot-tomato",
+   "deals": 1
+  },
+  {
+   "brand": "Narellan Pools",
+   "slug": "narellan-pools",
+   "deals": 1
+  },
+  {
+   "brand": "IKON",
+   "slug": "ikon",
+   "deals": 1
+  },
+  {
+   "brand": "Taylors",
+   "slug": "taylors",
+   "deals": 1
+  },
+  {
+   "brand": "Industree",
+   "slug": "industree",
+   "deals": 1
+  },
+  {
+   "brand": "Sportscraft",
+   "slug": "sportscraft",
+   "deals": 1
+  },
+  {
+   "brand": "BayWash",
+   "slug": "baywash",
+   "deals": 1
+  },
+  {
+   "brand": "RedZed",
+   "slug": "redzed",
+   "deals": 1
+  },
+  {
+   "brand": "Big Ant Studios",
+   "slug": "big-ant-studios",
+   "deals": 1
+  },
+  {
+   "brand": "Bluebox",
+   "slug": "bluebox",
+   "deals": 1
+  },
+  {
+   "brand": "TLA",
+   "slug": "tla",
+   "deals": 1
+  },
+  {
+   "brand": "WT Partnership",
+   "slug": "wt-partnership",
+   "deals": 1
+  },
+  {
+   "brand": "CitiPower",
+   "slug": "citipower",
+   "deals": 1
+  },
+  {
+   "brand": "Lotus Living",
+   "slug": "lotus-living",
+   "deals": 1
+  },
+  {
+   "brand": "Newcastle Permanent",
+   "slug": "newcastle-permanent",
+   "deals": 1
+  },
+  {
+   "brand": "Thiess",
+   "slug": "thiess",
+   "deals": 1
+  },
+  {
+   "brand": "James Place",
+   "slug": "james-place",
+   "deals": 1
+  },
+  {
+   "brand": "Reflections Holiday Parks",
+   "slug": "reflections-holiday-parks",
+   "deals": 1
+  },
+  {
+   "brand": "Hunter City Motor Group",
+   "slug": "hunter-city-motor-group",
+   "deals": 1
+  },
+  {
+   "brand": "Helloworld",
+   "slug": "helloworld",
+   "deals": 1
+  },
+  {
+   "brand": "Hunter Imaging",
+   "slug": "hunter-imaging",
+   "deals": 1
+  },
+  {
+   "brand": "My Sports Tape",
+   "slug": "my-sports-tape",
+   "deals": 1
+  },
+  {
+   "brand": "NBN",
+   "slug": "nbn",
+   "deals": 1
+  },
+  {
+   "brand": "New FM",
+   "slug": "new-fm",
+   "deals": 1
+  },
+  {
+   "brand": "ARDO",
+   "slug": "ardo",
+   "deals": 1
+  },
+  {
+   "brand": "Townsville Bulletin",
+   "slug": "townsville-bulletin",
+   "deals": 1
+  },
+  {
+   "brand": "Forks 4 U",
+   "slug": "forks-4-u",
+   "deals": 1
+  },
+  {
+   "brand": "INC Sports Nutrition",
+   "slug": "inc-sports-nutrition",
+   "deals": 1
+  },
+  {
+   "brand": "Autex",
+   "slug": "autex",
+   "deals": 1
+  },
+  {
+   "brand": "Flava",
+   "slug": "flava",
+   "deals": 1
+  },
+  {
+   "brand": "Hallensteins",
+   "slug": "hallensteins",
+   "deals": 1
+  },
+  {
+   "brand": "Maxigesic",
+   "slug": "maxigesic",
+   "deals": 1
+  },
+  {
+   "brand": "Persil",
+   "slug": "persil",
+   "deals": 1
+  },
+  {
+   "brand": "Sport Nation",
+   "slug": "sport-nation",
+   "deals": 1
+  },
+  {
+   "brand": "Shapes",
+   "slug": "shapes",
+   "deals": 1
+  },
+  {
+   "brand": "Snap Rentals",
+   "slug": "snap-rentals",
+   "deals": 1
+  },
+  {
+   "brand": "Wendy's",
+   "slug": "wendy-s",
+   "deals": 1
+  },
+  {
+   "brand": "Baker Tilly",
+   "slug": "baker-tilly",
+   "deals": 1
+  },
+  {
+   "brand": "The PARRA Group",
+   "slug": "the-parra-group",
+   "deals": 1
+  },
+  {
+   "brand": "Aland",
+   "slug": "aland",
+   "deals": 1
+  },
+  {
+   "brand": "Actron Air",
+   "slug": "actron-air",
+   "deals": 1
+  },
+  {
+   "brand": "Allam",
+   "slug": "allam",
+   "deals": 1
+  },
+  {
+   "brand": "Kevin Waters and Sons Towing",
+   "slug": "kevin-waters-and-sons-towing",
+   "deals": 1
+  },
+  {
+   "brand": "Panthers Penrith Leagues Club",
+   "slug": "panthers-penrith-leagues-club",
+   "deals": 1
+  },
+  {
+   "brand": "Ultra Air",
+   "slug": "ultra-air",
+   "deals": 1
+  },
+  {
+   "brand": "USANA",
+   "slug": "usana",
+   "deals": 1
+  },
+  {
+   "brand": "VSP Solutions",
+   "slug": "vsp-solutions",
+   "deals": 1
+  },
+  {
+   "brand": "Young Henrys",
+   "slug": "young-henrys",
+   "deals": 1
+  },
+  {
+   "brand": "Pioneer",
+   "slug": "pioneer",
+   "deals": 1
+  },
+  {
+   "brand": "The Juniors",
+   "slug": "the-juniors",
+   "deals": 1
+  },
+  {
+   "brand": "Strata Republic",
+   "slug": "strata-republic",
+   "deals": 1
+  },
+  {
+   "brand": "Optimus Fleet BI",
+   "slug": "optimus-fleet-bi",
+   "deals": 1
+  },
+  {
+   "brand": "Remara",
+   "slug": "remara",
+   "deals": 1
+  },
+  {
+   "brand": "Dynamoney",
+   "slug": "dynamoney",
+   "deals": 1
+  },
+  {
+   "brand": "AGS Structural",
+   "slug": "ags-structural",
+   "deals": 1
+  },
+  {
+   "brand": "Gearbox",
+   "slug": "gearbox",
+   "deals": 1
+  },
+  {
+   "brand": "HSE Global",
+   "slug": "hse-global",
+   "deals": 1
+  },
+  {
+   "brand": "Floormania",
+   "slug": "floormania",
+   "deals": 1
+  },
+  {
+   "brand": "CBC",
+   "slug": "cbc",
+   "deals": 1
+  },
+  {
+   "brand": "Kingsgrove Sports Centre",
+   "slug": "kingsgrove-sports-centre",
+   "deals": 1
+  },
+  {
+   "brand": "St George Leagues",
+   "slug": "st-george-leagues",
+   "deals": 1
+  },
+  {
+   "brand": "Easts Group",
+   "slug": "easts-group",
+   "deals": 1
+  },
+  {
+   "brand": "Reosteel",
+   "slug": "reosteel",
+   "deals": 1
+  },
+  {
+   "brand": "Astrea",
+   "slug": "astrea",
+   "deals": 1
+  },
+  {
+   "brand": "Athelite",
+   "slug": "athelite",
+   "deals": 1
+  },
+  {
+   "brand": "JLab",
+   "slug": "jlab",
+   "deals": 1
+  },
+  {
+   "brand": "Lumen8",
+   "slug": "lumen8",
+   "deals": 1
+  },
+  {
+   "brand": "Microrentals",
+   "slug": "microrentals",
+   "deals": 1
+  },
+  {
+   "brand": "PeakMe",
+   "slug": "peakme",
+   "deals": 1
+  },
+  {
+   "brand": "Proper No. Twelve",
+   "slug": "proper-no-twelve",
+   "deals": 1
+  },
+  {
+   "brand": "Ward",
+   "slug": "ward",
+   "deals": 1
+  },
+  {
+   "brand": "Allegion",
+   "slug": "allegion",
+   "deals": 1
+  },
+  {
+   "brand": "Therabody",
+   "slug": "therabody",
+   "deals": 1
+  },
+  {
+   "brand": "Van Heusen",
+   "slug": "van-heusen",
+   "deals": 1
+  },
+  {
+   "brand": "Kure",
+   "slug": "kure",
+   "deals": 1
+  },
+  {
+   "brand": "Nextbet",
+   "slug": "nextbet",
+   "deals": 1
+  },
+  {
+   "brand": "OzCar",
+   "slug": "ozcar",
+   "deals": 1
+  },
+  {
+   "brand": "Holman Barnes Group",
+   "slug": "holman-barnes-group",
+   "deals": 1
+  },
+  {
+   "brand": "ISRI",
+   "slug": "isri",
+   "deals": 1
+  },
+  {
+   "brand": "Wests Campbelltown",
+   "slug": "wests-campbelltown",
+   "deals": 1
+  },
+  {
+   "brand": "Georgiemane",
+   "slug": "georgiemane",
+   "deals": 1
+  },
+  {
+   "brand": "KenoGo",
+   "slug": "kenogo",
+   "deals": 1
+  },
+  {
+   "brand": "Victa",
+   "slug": "victa",
+   "deals": 1
+  },
+  {
+   "brand": "Liverpool Catholic Club",
+   "slug": "liverpool-catholic-club",
+   "deals": 1
+  },
+  {
+   "brand": "Tharawal",
+   "slug": "tharawal",
+   "deals": 1
+  },
+  {
+   "brand": "Allied Express",
+   "slug": "allied-express",
+   "deals": 1
+  },
+  {
+   "brand": "C91.3",
+   "slug": "c91-3",
+   "deals": 1
+  },
+  {
+   "brand": "Burns for Blinds",
+   "slug": "burns-for-blinds",
+   "deals": 1
+  },
+  {
+   "brand": "HomeStart",
+   "slug": "homestart",
+   "deals": 1
+  },
+  {
+   "brand": "We Create Print Deliver",
+   "slug": "we-create-print-deliver",
+   "deals": 1
+  },
+  {
+   "brand": "Wavee",
+   "slug": "wavee",
+   "deals": 1
+  },
+  {
+   "brand": "Total Fusion",
+   "slug": "total-fusion",
+   "deals": 1
+  },
+  {
+   "brand": "AJ & CO",
+   "slug": "aj-and-co",
+   "deals": 1
+  },
+  {
+   "brand": "Wil Valor",
+   "slug": "wil-valor",
+   "deals": 1
+  },
+  {
+   "brand": "DriTimes",
+   "slug": "dritimes",
+   "deals": 1
+  },
+  {
+   "brand": "Double Dare Group",
+   "slug": "double-dare-group",
+   "deals": 1
+  },
+  {
+   "brand": "MorCo Fresh",
+   "slug": "morco-fresh",
+   "deals": 1
+  },
+  {
+   "brand": "KOJO",
+   "slug": "kojo",
+   "deals": 1
+  },
+  {
+   "brand": "CQUniversity",
+   "slug": "cquniversity",
+   "deals": 1
+  },
+  {
+   "brand": "Mount Peter Estate",
+   "slug": "mount-peter-estate",
+   "deals": 1
+  },
+  {
+   "brand": "Trinity Auto Group",
+   "slug": "trinity-auto-group",
+   "deals": 1
+  },
+  {
+   "brand": "Status Signs",
+   "slug": "status-signs",
+   "deals": 1
+  },
+  {
+   "brand": "Star 102.7",
+   "slug": "star-102-7",
+   "deals": 1
+  },
+  {
+   "brand": "The Chambers",
+   "slug": "the-chambers",
+   "deals": 1
+  },
+  {
+   "brand": "4CA",
+   "slug": "4ca",
+   "deals": 1
+  },
+  {
+   "brand": "Ollie's Italian",
+   "slug": "ollie-s-italian",
+   "deals": 1
+  },
+  {
+   "brand": "Next Door ELA",
+   "slug": "next-door-ela",
+   "deals": 1
+  },
+  {
+   "brand": "Hinterland Aviation",
+   "slug": "hinterland-aviation",
+   "deals": 1
+  },
+  {
+   "brand": "SKINS",
+   "slug": "skins",
+   "deals": 1
+  },
+  {
+   "brand": "i98FM",
+   "slug": "i98fm",
+   "deals": 1
+  },
+  {
+   "brand": "Bai Med",
+   "slug": "bai-med",
+   "deals": 1
+  },
+  {
+   "brand": "TinyTins",
+   "slug": "tinytins",
+   "deals": 1
+  },
+  {
+   "brand": "Illawarra Mercury",
+   "slug": "illawarra-mercury",
+   "deals": 1
+  },
+  {
+   "brand": "BNZ",
+   "slug": "bnz",
+   "deals": 1
+  },
+  {
+   "brand": "ZM",
+   "slug": "zm",
+   "deals": 1
+  },
+  {
+   "brand": "Rydges",
+   "slug": "rydges",
+   "deals": 1
+  },
+  {
+   "brand": "Holman Industries",
+   "slug": "holman-industries",
+   "deals": 1
+  },
+  {
+   "brand": "CGH Group",
+   "slug": "cgh-group",
+   "deals": 1
+  },
+  {
+   "brand": "Ibis Styles Perth",
+   "slug": "ibis-styles-perth",
+   "deals": 1
+  },
+  {
+   "brand": "Last Slice",
+   "slug": "last-slice",
+   "deals": 1
+  },
+  {
+   "brand": "Retravision",
+   "slug": "retravision",
+   "deals": 1
+  },
+  {
+   "brand": "Training Alliance",
+   "slug": "training-alliance",
+   "deals": 1
+  },
+  {
+   "brand": "TCD Group",
+   "slug": "tcd-group",
+   "deals": 1
+  },
+  {
+   "brand": "YMCA WA",
+   "slug": "ymca-wa",
+   "deals": 1
+  },
+  {
+   "brand": "William Adams CAT",
+   "slug": "william-adams-cat",
+   "deals": 1
+  },
+  {
+   "brand": "VRGF",
+   "slug": "vrgf",
+   "deals": 1
+  },
+  {
+   "brand": "Sketti",
+   "slug": "sketti",
+   "deals": 1
+  },
+  {
+   "brand": "A Maze 'N' Things",
+   "slug": "a-maze-n-things",
+   "deals": 1
+  },
+  {
+   "brand": "United Carriers",
+   "slug": "united-carriers",
+   "deals": 1
+  },
+  {
+   "brand": "Freecity",
+   "slug": "freecity",
+   "deals": 1
+  },
+  {
+   "brand": "Novotel Sydney Olympic Park",
+   "slug": "novotel-sydney-olympic-park",
+   "deals": 1
+  },
+  {
+   "brand": "Chameleon Touring",
+   "slug": "chameleon-touring",
+   "deals": 1
+  },
+  {
+   "brand": "Waterview",
+   "slug": "waterview",
+   "deals": 1
+  },
+  {
+   "brand": "Zone 34",
+   "slug": "zone-34",
+   "deals": 1
+  },
+  {
+   "brand": "TRNR",
+   "slug": "trnr",
+   "deals": 1
+  },
+  {
+   "brand": "Salon Warehouse",
+   "slug": "salon-warehouse",
+   "deals": 1
+  },
+  {
+   "brand": "WhatAbility",
+   "slug": "whatability",
+   "deals": 1
+  },
+  {
+   "brand": "MJP Projects",
+   "slug": "mjp-projects",
+   "deals": 1
+  },
+  {
+   "brand": "Spirit of Tasmania",
+   "slug": "spirit-of-tasmania",
+   "deals": 1
+  },
+  {
+   "brand": "TasWater",
+   "slug": "taswater",
+   "deals": 1
+  },
+  {
+   "brand": "Frogmore Creek",
+   "slug": "frogmore-creek",
+   "deals": 1
+  },
+  {
+   "brand": "Ibis Styles",
+   "slug": "ibis-styles",
+   "deals": 1
+  },
+  {
+   "brand": "Trade Up",
+   "slug": "trade-up",
+   "deals": 1
+  },
+  {
+   "brand": "Cobbs Hill Estate",
+   "slug": "cobbs-hill-estate",
+   "deals": 1
+  },
+  {
+   "brand": "Encore",
+   "slug": "encore",
+   "deals": 1
+  },
+  {
+   "brand": "FruChocs",
+   "slug": "fruchocs",
+   "deals": 1
+  },
+  {
+   "brand": "Signage World",
+   "slug": "signage-world",
+   "deals": 1
+  },
+  {
+   "brand": "Vili's",
+   "slug": "vili-s",
+   "deals": 1
+  },
+  {
+   "brand": "Lean Cuisine",
+   "slug": "lean-cuisine",
+   "deals": 1
+  },
+  {
+   "brand": "Natio",
+   "slug": "natio",
+   "deals": 1
+  },
+  {
+   "brand": "Sabco",
+   "slug": "sabco",
+   "deals": 1
+  },
+  {
+   "brand": "Arlec",
+   "slug": "arlec",
+   "deals": 1
+  },
+  {
+   "brand": "Choices Flooring",
+   "slug": "choices-flooring",
+   "deals": 1
+  },
+  {
+   "brand": "Kaboodle",
+   "slug": "kaboodle",
+   "deals": 1
+  },
+  {
+   "brand": "Gerni",
+   "slug": "gerni",
+   "deals": 1
+  },
+  {
+   "brand": "Crowlz",
+   "slug": "crowlz",
+   "deals": 1
+  },
+  {
+   "brand": "Bostik",
+   "slug": "bostik",
+   "deals": 1
+  },
+  {
+   "brand": "Ritchies",
+   "slug": "ritchies",
+   "deals": 1
+  },
+  {
+   "brand": "imar",
+   "slug": "imar",
+   "deals": 1
+  },
+  {
+   "brand": "WorkSafe Victoria",
+   "slug": "worksafe-victoria",
+   "deals": 1
+  },
+  {
+   "brand": "The Butcher Club",
+   "slug": "the-butcher-club",
+   "deals": 1
+  },
+  {
+   "brand": "CMS Australasia",
+   "slug": "cms-australasia",
+   "deals": 1
+  },
+  {
+   "brand": "Bio Concepts",
+   "slug": "bio-concepts",
+   "deals": 1
+  },
+  {
+   "brand": "Homeworld",
+   "slug": "homeworld",
+   "deals": 1
+  },
+  {
+   "brand": "MySportsTape",
+   "slug": "mysportstape",
+   "deals": 1
+  },
+  {
+   "brand": "Imagination Graphics",
+   "slug": "imagination-graphics",
+   "deals": 1
+  },
+  {
+   "brand": "Tribal Sport",
+   "slug": "tribal-sport",
+   "deals": 1
+  },
+  {
+   "brand": "Rockwear",
+   "slug": "rockwear",
+   "deals": 1
+  },
+  {
+   "brand": "Protector Aluminium",
+   "slug": "protector-aluminium",
+   "deals": 1
+  },
+  {
+   "brand": "Avani Mooloolaba Beach",
+   "slug": "avani-mooloolaba-beach",
+   "deals": 1
+  },
+  {
+   "brand": "Unitywater",
+   "slug": "unitywater",
+   "deals": 1
+  },
+  {
+   "brand": "IFYS",
+   "slug": "ifys",
+   "deals": 1
+  },
+  {
+   "brand": "Sunshine Plaza",
+   "slug": "sunshine-plaza",
+   "deals": 1
+  },
+  {
+   "brand": "The Beach Bars",
+   "slug": "the-beach-bars",
+   "deals": 1
+  },
+  {
+   "brand": "Palms",
+   "slug": "palms",
+   "deals": 1
+  },
+  {
+   "brand": "AngloGold Ashanti",
+   "slug": "anglogold-ashanti",
+   "deals": 1
+  },
+  {
+   "brand": "RecLab",
+   "slug": "reclab",
+   "deals": 1
+  },
+  {
+   "brand": "Mitti",
+   "slug": "mitti",
+   "deals": 1
+  },
+  {
+   "brand": "Olmeca Altos",
+   "slug": "olmeca-altos",
+   "deals": 1
+  },
+  {
+   "brand": "Engineers Australia",
+   "slug": "engineers-australia",
+   "deals": 1
+  },
+  {
+   "brand": "Be Safe Be Seen",
+   "slug": "be-safe-be-seen",
+   "deals": 1
+  },
+  {
+   "brand": "The Advertiser",
+   "slug": "the-advertiser",
+   "deals": 1
+  },
+  {
+   "brand": "Vanguard",
+   "slug": "vanguard",
+   "deals": 1
+  },
+  {
+   "brand": "Ziptrak",
+   "slug": "ziptrak",
+   "deals": 1
+  },
+  {
+   "brand": "MyWhoosh",
+   "slug": "mywhoosh",
+   "deals": 1
+  },
+  {
+   "brand": "Santini",
+   "slug": "santini",
+   "deals": 1
+  },
+  {
+   "brand": "Giro",
+   "slug": "giro",
+   "deals": 1
+  },
+  {
+   "brand": "Scicon",
+   "slug": "scicon",
+   "deals": 1
+  },
+  {
+   "brand": "Cervelo",
+   "slug": "cervelo",
+   "deals": 1
+  },
+  {
+   "brand": "Schwalbe",
+   "slug": "schwalbe",
+   "deals": 1
+  },
+  {
+   "brand": "Love The Game",
+   "slug": "love-the-game",
+   "deals": 1
+  },
+  {
+   "brand": "Dare to Hope",
+   "slug": "dare-to-hope",
+   "deals": 1
+  },
+  {
+   "brand": "The Huddle",
+   "slug": "the-huddle",
+   "deals": 1
+  },
+  {
+   "brand": "Good Friday Appeal",
+   "slug": "good-friday-appeal",
+   "deals": 1
+  },
+  {
+   "brand": "Plenary",
+   "slug": "plenary",
+   "deals": 1
+  },
+  {
+   "brand": "DonateLife",
+   "slug": "donatelife",
+   "deals": 1
+  }
+ ],
+ "cat_mismatch": [
+  {
+   "brand": "Monster Energy",
+   "slug": "monster-energy",
+   "cat": "Non-alcoholic drinks",
+   "rules_say": "Energy & utilities",
+   "deals": 5
+  },
+  {
+   "brand": "Crown Resorts",
+   "slug": "crown-resorts",
+   "cat": "Hospitality & entertainment",
+   "rules_say": "Airlines & travel",
+   "deals": 5
+  },
+  {
+   "brand": "V Energy",
+   "slug": "v-energy",
+   "cat": "Non-alcoholic drinks",
+   "rules_say": "Energy & utilities",
+   "deals": 5
+  },
+  {
+   "brand": "Paramount ANZ",
+   "slug": "paramount-anz",
+   "cat": "Media & broadcast",
+   "rules_say": "Banking & finance",
+   "deals": 3
+  },
+  {
+   "brand": "Jones Radiology",
+   "slug": "jones-radiology",
+   "cat": "Health & beauty",
+   "rules_say": "Media & broadcast",
+   "deals": 3
+  },
+  {
+   "brand": "ABC Bullion",
+   "slug": "abc-bullion",
+   "cat": "Banking & finance",
+   "rules_say": "Media & broadcast",
+   "deals": 2
+  },
+  {
+   "brand": "Capital.com",
+   "slug": "capital-com",
+   "cat": "Fintech, crypto & trading",
+   "rules_say": "Banking & finance",
+   "deals": 2
+  },
+  {
+   "brand": "MOVA",
+   "slug": "mova",
+   "cat": "Home & hardware",
+   "rules_say": "Technology",
+   "deals": 2
+  },
+  {
+   "brand": "SKG Radiology",
+   "slug": "skg-radiology",
+   "cat": "Health & beauty",
+   "rules_say": "Media & broadcast",
+   "deals": 2
+  },
+  {
+   "brand": "Wilson Security",
+   "slug": "wilson-security",
+   "cat": "Professional services",
+   "rules_say": "Sporting goods & equipment",
+   "deals": 2
+  },
+  {
+   "brand": "Seven Consulting",
+   "slug": "seven-consulting",
+   "cat": "Professional services",
+   "rules_say": "Media & broadcast",
+   "deals": 2
+  },
+  {
+   "brand": "Mother Energy",
+   "slug": "mother-energy",
+   "cat": "Non-alcoholic drinks",
+   "rules_say": "Energy & utilities",
+   "deals": 2
+  },
+  {
+   "brand": "Zoo Fit",
+   "slug": "zoo-fit",
+   "cat": "Health & beauty",
+   "rules_say": "Hospitality & entertainment",
+   "deals": 2
+  },
+  {
+   "brand": "HELL Energy",
+   "slug": "hell-energy",
+   "cat": "Non-alcoholic drinks",
+   "rules_say": "Energy & utilities",
+   "deals": 2
+  },
+  {
+   "brand": "Prime Video",
+   "slug": "prime-video",
+   "cat": "Media & broadcast",
+   "rules_say": "Non-alcoholic drinks",
+   "deals": 2
+  },
+  {
+   "brand": "Maurice Blackburn",
+   "slug": "maurice-blackburn",
+   "cat": "Professional services",
+   "rules_say": "Apparel & footwear",
+   "deals": 2
+  },
+  {
+   "brand": "Toyo Tires",
+   "slug": "toyo-tires",
+   "cat": "Automotive",
+   "rules_say": "Collectibles & licensing",
+   "deals": 2
+  },
+  {
+   "brand": "Athletic Brewing",
+   "slug": "athletic-brewing",
+   "cat": "Non-alcoholic drinks",
+   "rules_say": "Alcohol",
+   "deals": 2
+  },
+  {
+   "brand": "PIF",
+   "slug": "pif",
+   "cat": "Banking & finance",
+   "rules_say": "Tourism & government",
+   "deals": 2
+  },
+  {
+   "brand": "StreetSmarts",
+   "slug": "streetsmarts",
+   "cat": "Other",
+   "rules_say": "Food & nutrition",
+   "deals": 2
+  },
+  {
+   "brand": "Mitre 10",
+   "slug": "mitre-10",
+   "cat": "Retail",
+   "rules_say": "Sporting goods & equipment",
+   "deals": 2
+  },
+  {
+   "brand": "Predator Energy",
+   "slug": "predator-energy",
+   "cat": "Non-alcoholic drinks",
+   "rules_say": "Energy & utilities",
+   "deals": 2
+  },
+  {
+   "brand": "KPMG",
+   "slug": "kpmg",
+   "cat": "Professional services",
+   "rules_say": "Technology",
+   "deals": 2
+  },
+  {
+   "brand": "Culture Amp",
+   "slug": "culture-amp",
+   "cat": "Technology",
+   "rules_say": "Banking & finance",
+   "deals": 2
+  },
+  {
+   "brand": "JioStar",
+   "slug": "jiostar",
+   "cat": "Media & broadcast",
+   "rules_say": "Telco",
+   "deals": 2
+  },
+  {
+   "brand": "Park on King",
+   "slug": "park-on-king",
+   "cat": "Hospitality & entertainment",
+   "rules_say": "Apparel & footwear",
+   "deals": 2
+  },
+  {
+   "brand": "8 Networks",
+   "slug": "8-networks",
+   "cat": "Telco",
+   "rules_say": "Media & broadcast",
+   "deals": 1
+  },
+  {
+   "brand": "Merlin",
+   "slug": "merlin",
+   "cat": "Home & hardware",
+   "rules_say": "Hospitality & entertainment",
+   "deals": 1
+  },
+  {
+   "brand": "Hong Kong Jockey Club",
+   "slug": "hong-kong-jockey-club",
+   "cat": "Sport & events",
+   "rules_say": "Apparel & footwear",
+   "deals": 1
+  },
+  {
+   "brand": "Ara Institute of Canterbury",
+   "slug": "ara-institute-of-canterbury",
+   "cat": "Education",
+   "rules_say": "Apparel & footwear",
+   "deals": 1
+  },
+  {
+   "brand": "BOSS Parfums",
+   "slug": "boss-parfums",
+   "cat": "Health & beauty",
+   "rules_say": "Apparel & footwear",
+   "deals": 1
+  },
+  {
+   "brand": "Champion Data",
+   "slug": "champion-data",
+   "cat": "Technology",
+   "rules_say": "Apparel & footwear",
+   "deals": 1
+  },
+  {
+   "brand": "Castelli",
+   "slug": "castelli",
+   "cat": "Apparel & footwear",
+   "rules_say": "Sporting goods & equipment",
+   "deals": 1
+  },
+  {
+   "brand": "Walt Disney World",
+   "slug": "walt-disney-world",
+   "cat": "Hospitality & entertainment",
+   "rules_say": "Media & broadcast",
+   "deals": 1
+  },
+  {
+   "brand": "Pixellot",
+   "slug": "pixellot",
+   "cat": "Technology",
+   "rules_say": "Media & broadcast",
+   "deals": 1
+  },
+  {
+   "brand": "Capital Power",
+   "slug": "capital-power",
+   "cat": "Energy & utilities",
+   "rules_say": "Banking & finance",
+   "deals": 1
+  },
+  {
+   "brand": "Hydro Flask",
+   "slug": "hydro-flask",
+   "cat": "Sporting goods & equipment",
+   "rules_say": "Energy & utilities",
+   "deals": 1
+  },
+  {
+   "brand": "Legora",
+   "slug": "legora",
+   "cat": "Technology",
+   "rules_say": "Collectibles & licensing",
+   "deals": 1
+  },
+  {
+   "brand": "Sharpie",
+   "slug": "sharpie",
+   "cat": "Other",
+   "rules_say": "Technology",
+   "deals": 1
+  },
+  {
+   "brand": "Audio-Technica",
+   "slug": "audio-technica",
+   "cat": "Technology",
+   "rules_say": "Automotive",
+   "deals": 1
+  },
+  {
+   "brand": "Your Nursing Agency",
+   "slug": "your-nursing-agency",
+   "cat": "Health & beauty",
+   "rules_say": "Professional services",
+   "deals": 1
+  },
+  {
+   "brand": "Pacific Radiology",
+   "slug": "pacific-radiology",
+   "cat": "Health & beauty",
+   "rules_say": "Media & broadcast",
+   "deals": 1
+  },
+  {
+   "brand": "South Bank Corporation",
+   "slug": "south-bank-corporation",
+   "cat": "Tourism & government",
+   "rules_say": "Banking & finance",
+   "deals": 1
+  },
+  {
+   "brand": "AFGRI Equipment",
+   "slug": "afgri-equipment",
+   "cat": "Agriculture",
+   "rules_say": "Sporting goods & equipment",
+   "deals": 1
+  },
+  {
+   "brand": "Radiology Victoria",
+   "slug": "radiology-victoria",
+   "cat": "Health & beauty",
+   "rules_say": "Media & broadcast",
+   "deals": 1
+  },
+  {
+   "brand": "StudyAdelaide",
+   "slug": "studyadelaide",
+   "cat": "Tourism & government",
+   "rules_say": "Education",
+   "deals": 1
+  },
+  {
+   "brand": "Cub Cadet",
+   "slug": "cub-cadet",
+   "cat": "Home & hardware",
+   "rules_say": "Alcohol",
+   "deals": 1
+  },
+  {
+   "brand": "Powerade",
+   "slug": "powerade",
+   "cat": "Non-alcoholic drinks",
+   "rules_say": "Energy & utilities",
+   "deals": 1
+  },
+  {
+   "brand": "Fiji",
+   "slug": "fiji",
+   "cat": "Tourism & government",
+   "rules_say": "Airlines & travel",
+   "deals": 1
+  },
+  {
+   "brand": "Blackmores",
+   "slug": "blackmores",
+   "cat": "Health & beauty",
+   "rules_say": "Apparel & footwear",
+   "deals": 1
+  },
+  {
+   "brand": "Velocity Black",
+   "slug": "velocity-black",
+   "cat": "Hospitality & entertainment",
+   "rules_say": "Apparel & footwear",
+   "deals": 1
+  },
+  {
+   "brand": "Seat Unique",
+   "slug": "seat-unique",
+   "cat": "Hospitality & entertainment",
+   "rules_say": "Automotive",
+   "deals": 1
+  },
+  {
+   "brand": "Honeywell",
+   "slug": "honeywell",
+   "cat": "Industrial & manufacturing",
+   "rules_say": "Technology",
+   "deals": 1
+  },
+  {
+   "brand": "Scapia",
+   "slug": "scapia",
+   "cat": "Fintech, crypto & trading",
+   "rules_say": "Collectibles & licensing",
+   "deals": 1
+  },
+  {
+   "brand": "Rio Sound & Vision",
+   "slug": "rio-sound-and-vision",
+   "cat": "Retail",
+   "rules_say": "Health & beauty",
+   "deals": 1
+  },
+  {
+   "brand": "AWSN",
+   "slug": "awsn",
+   "cat": "Not-for-profit",
+   "rules_say": "Technology",
+   "deals": 1
+  },
+  {
+   "brand": "BlackBull Markets",
+   "slug": "blackbull-markets",
+   "cat": "Fintech, crypto & trading",
+   "rules_say": "Apparel & footwear",
+   "deals": 1
+  },
+  {
+   "brand": "Supplement Mart",
+   "slug": "supplement-mart",
+   "cat": "Retail",
+   "rules_say": "Food & nutrition",
+   "deals": 1
+  },
+  {
+   "brand": "Experience Gold Coast",
+   "slug": "experience-gold-coast",
+   "cat": "Tourism & government",
+   "rules_say": "Mining & resources",
+   "deals": 1
+  },
+  {
+   "brand": "Opal",
+   "slug": "opal",
+   "cat": "Other",
+   "rules_say": "Logistics & transport",
+   "deals": 1
+  },
+  {
+   "brand": "Minerals Council of Australia",
+   "slug": "minerals-council-of-australia",
+   "cat": "Mining & resources",
+   "rules_say": "Tourism & government",
+   "deals": 1
+  },
+  {
+   "brand": "Virtual Eye",
+   "slug": "virtual-eye",
+   "cat": "Technology",
+   "rules_say": "Health & beauty",
+   "deals": 1
+  },
+  {
+   "brand": "Birds Eye",
+   "slug": "birds-eye",
+   "cat": "Food & nutrition",
+   "rules_say": "Health & beauty",
+   "deals": 1
+  },
+  {
+   "brand": "E.ON",
+   "slug": "e-on",
+   "cat": "Energy & utilities",
+   "rules_say": "Apparel & footwear",
+   "deals": 1
+  },
+  {
+   "brand": "Fortune Prime Global",
+   "slug": "fortune-prime-global",
+   "cat": "Fintech, crypto & trading",
+   "rules_say": "Non-alcoholic drinks",
+   "deals": 1
+  },
+  {
+   "brand": "Smith+Nephew",
+   "slug": "smith-nephew",
+   "cat": "Health & beauty",
+   "rules_say": "Non-alcoholic drinks",
+   "deals": 1
+  },
+  {
+   "brand": "Canon Medical",
+   "slug": "canon-medical",
+   "cat": "Health & beauty",
+   "rules_say": "Technology",
+   "deals": 1
+  },
+  {
+   "brand": "Siemens",
+   "slug": "siemens",
+   "cat": "Industrial & manufacturing",
+   "rules_say": "Technology",
+   "deals": 1
+  },
+  {
+   "brand": "ABB",
+   "slug": "abb",
+   "cat": "Industrial & manufacturing",
+   "rules_say": "Technology",
+   "deals": 1
+  },
+  {
+   "brand": "Palo Alto Networks",
+   "slug": "palo-alto-networks",
+   "cat": "Technology",
+   "rules_say": "Media & broadcast",
+   "deals": 1
+  },
+  {
+   "brand": "Morgan Stanley",
+   "slug": "morgan-stanley",
+   "cat": "Banking & finance",
+   "rules_say": "Sporting goods & equipment",
+   "deals": 1
+  },
+  {
+   "brand": "PwC",
+   "slug": "pwc",
+   "cat": "Professional services",
+   "rules_say": "Technology",
+   "deals": 1
+  },
+  {
+   "brand": "Cash App",
+   "slug": "cash-app",
+   "cat": "Fintech, crypto & trading",
+   "rules_say": "Technology",
+   "deals": 1
+  },
+  {
+   "brand": "Sherrin Rentals",
+   "slug": "sherrin-rentals",
+   "cat": "Logistics & transport",
+   "rules_say": "Sporting goods & equipment",
+   "deals": 1
+  },
+  {
+   "brand": "Transport and Main Roads",
+   "slug": "transport-and-main-roads",
+   "cat": "Tourism & government",
+   "rules_say": "Logistics & transport",
+   "deals": 1
+  },
+  {
+   "brand": "Gold Coast Commercial Real Estate",
+   "slug": "gold-coast-commercial-real-estate",
+   "cat": "Construction & property",
+   "rules_say": "Mining & resources",
+   "deals": 1
+  },
+  {
+   "brand": "Luxury Paints",
+   "slug": "luxury-paints",
+   "cat": "Home & hardware",
+   "rules_say": "Watches & luxury",
+   "deals": 1
+  },
+  {
+   "brand": "Zoomlite",
+   "slug": "zoomlite",
+   "cat": "Sporting goods & equipment",
+   "rules_say": "Technology",
+   "deals": 1
+  },
+  {
+   "brand": "revolutioniseSPORT",
+   "slug": "revolutionisesport",
+   "cat": "Technology",
+   "rules_say": "Fintech, crypto & trading",
+   "deals": 1
+  },
+  {
+   "brand": "Continental Resources",
+   "slug": "continental-resources",
+   "cat": "Energy & utilities",
+   "rules_say": "Automotive",
+   "deals": 1
+  },
+  {
+   "brand": "Meat & Livestock Australia",
+   "slug": "meat-and-livestock-australia",
+   "cat": "Agriculture",
+   "rules_say": "Food & nutrition",
+   "deals": 1
+  },
+  {
+   "brand": "Rockstar Energy",
+   "slug": "rockstar-energy",
+   "cat": "Non-alcoholic drinks",
+   "rules_say": "Energy & utilities",
+   "deals": 1
+  },
+  {
+   "brand": "STARZ ON",
+   "slug": "starz-on",
+   "cat": "Media & broadcast",
+   "rules_say": "Apparel & footwear",
+   "deals": 1
+  },
+  {
+   "brand": "On Location",
+   "slug": "on-location",
+   "cat": "Hospitality & entertainment",
+   "rules_say": "Apparel & footwear",
+   "deals": 1
+  },
+  {
+   "brand": "Freedom Holding",
+   "slug": "freedom-holding",
+   "cat": "Fintech, crypto & trading",
+   "rules_say": "Retail",
+   "deals": 1
+  },
+  {
+   "brand": "Vision Insights",
+   "slug": "vision-insights",
+   "cat": "Technology",
+   "rules_say": "Health & beauty",
+   "deals": 1
+  },
+  {
+   "brand": "Victorian Responsible Gambling Foundation",
+   "slug": "victorian-responsible-gambling-foundation",
+   "cat": "Tourism & government",
+   "rules_say": "Betting & wagering",
+   "deals": 1
+  },
+  {
+   "brand": "Harbour Town Gold Coast",
+   "slug": "harbour-town-gold-coast",
+   "cat": "Retail",
+   "rules_say": "Mining & resources",
+   "deals": 1
+  },
+  {
+   "brand": "AFL Northern Territory",
+   "slug": "afl-northern-territory",
+   "cat": "Sport & events",
+   "rules_say": "Tourism & government",
+   "deals": 1
+  },
+  {
+   "brand": "Office of Responsible Gambling",
+   "slug": "office-of-responsible-gambling",
+   "cat": "Tourism & government",
+   "rules_say": "Betting & wagering",
+   "deals": 1
+  },
+  {
+   "brand": "Sydney Children's Hospitals Foundation",
+   "slug": "sydney-children-s-hospitals-foundation",
+   "cat": "Not-for-profit",
+   "rules_say": "Health & beauty",
+   "deals": 1
+  },
+  {
+   "brand": "98 Gym",
+   "slug": "98-gym",
+   "cat": "Health & beauty",
+   "rules_say": "Sporting goods & equipment",
+   "deals": 1
+  },
+  {
+   "brand": "Bird in Hand",
+   "slug": "bird-in-hand",
+   "cat": "Alcohol",
+   "rules_say": "Logistics & transport",
+   "deals": 1
+  },
+  {
+   "brand": "Radiology Tasmania",
+   "slug": "radiology-tasmania",
+   "cat": "Health & beauty",
+   "rules_say": "Media & broadcast",
+   "deals": 1
+  },
+  {
+   "brand": "Hentley Farm",
+   "slug": "hentley-farm",
+   "cat": "Alcohol",
+   "rules_say": "Agriculture",
+   "deals": 1
+  },
+  {
+   "brand": "Cancer Council",
+   "slug": "cancer-council",
+   "cat": "Not-for-profit",
+   "rules_say": "Tourism & government",
+   "deals": 1
+  },
+  {
+   "brand": "McDonald Jones Homes",
+   "slug": "mcdonald-jones-homes",
+   "cat": "Construction & property",
+   "rules_say": "Food & nutrition",
+   "deals": 1
+  }
+ ],
+ "slot_clash": [
+  {
+   "property": "Brisbane Roar",
+   "anz": true,
+   "slot": "Quick service food",
+   "partners": [
+    {
+     "brand": "Arrivederci Pizza",
+     "since": "listed",
+     "ends": null
+    },
+    {
+     "brand": "Guzman y Gomez",
+     "since": "Aug 2026",
+     "ends": null
+    }
+   ]
+  },
+  {
+   "property": "Canterbury-Bankstown Bulldogs",
+   "anz": true,
+   "slot": "Quick service food",
+   "partners": [
+    {
+     "brand": "KFC",
+     "since": "listed",
+     "ends": null
+    },
+    {
+     "brand": "M&J Chickens",
+     "since": "listed",
+     "ends": null
+    }
+   ]
+  },
+  {
+   "property": "Geelong Cats",
+   "anz": true,
+   "slot": "Beer & cider",
+   "partners": [
+    {
+     "brand": "Blackmans Brewery",
+     "since": "listed",
+     "ends": null
+    },
+    {
+     "brand": "Carlton & United Breweries",
+     "since": "Mar 2024",
+     "ends": 2029
+    }
+   ]
+  },
+  {
+   "property": "Gold Coast SUNS",
+   "anz": true,
+   "slot": "Beer & cider",
+   "partners": [
+    {
+     "brand": "Carlton & United Breweries",
+     "since": "listed",
+     "ends": null
+    },
+    {
+     "brand": "Great Northern",
+     "since": "listed",
+     "ends": null
+    }
+   ]
+  },
+  {
+   "property": "Manly Sea Eagles",
+   "anz": true,
+   "slot": "Quick service food",
+   "partners": [
+    {
+     "brand": "Crust Pizza",
+     "since": "Nov 2026",
+     "ends": null
+    },
+    {
+     "brand": "KFC",
+     "since": "listed",
+     "ends": null
+    }
+   ]
+  },
+  {
+   "property": "NBL",
+   "anz": true,
+   "slot": "Telco",
+   "partners": [
+    {
+     "brand": "Optus",
+     "since": "Jun 2026",
+     "ends": null
+    },
+    {
+     "brand": "Tangerine",
+     "since": "Sep 2025",
+     "ends": null
+    }
+   ]
+  },
+  {
+   "property": "NSW Waratahs",
+   "anz": true,
+   "slot": "Beer & cider",
+   "partners": [
+    {
+     "brand": "Guinness",
+     "since": "Feb 2026",
+     "ends": null
+    },
+    {
+     "brand": "Coopers",
+     "since": "Aug 2025",
+     "ends": null
+    }
+   ]
+  },
+  {
+   "property": "Queensland Reds",
+   "anz": true,
+   "slot": "Airlines",
+   "partners": [
+    {
+     "brand": "China Airlines",
+     "since": "Sep 2026",
+     "ends": null
+    },
+    {
+     "brand": "Alliance Airlines",
+     "since": "Jun 2025",
+     "ends": 2028
+    }
+   ]
+  },
+  {
+   "property": "South East Melbourne Phoenix",
+   "anz": true,
+   "slot": "Banks",
+   "partners": [
+    {
+     "brand": "Judo Bank",
+     "since": "listed",
+     "ends": null
+    },
+    {
+     "brand": "ANZ Explorer",
+     "since": "listed",
+     "ends": null
+    }
+   ]
+  },
+  {
+   "property": "Supercars",
+   "anz": true,
+   "slot": "Tyres",
+   "partners": [
+    {
+     "brand": "Tyrepower",
+     "since": "Feb 2026",
+     "ends": 2027
+    },
+    {
+     "brand": "Dunlop Tyres",
+     "since": "Feb 2026",
+     "ends": 2030
+    }
+   ]
+  },
+  {
+   "property": "Sydney FC",
+   "anz": true,
+   "slot": "Quick service food",
+   "partners": [
+    {
+     "brand": "McDonald's",
+     "since": "listed",
+     "ends": null
+    },
+    {
+     "brand": "Farmer Joe's Chicken",
+     "since": "listed",
+     "ends": null
+    }
+   ]
+  },
+  {
+   "property": "Sydney Roosters",
+   "anz": true,
+   "slot": "Beer & cider",
+   "partners": [
+    {
+     "brand": "VB",
+     "since": "listed",
+     "ends": null
+    },
+    {
+     "brand": "Asahi",
+     "since": "Jul 2025",
+     "ends": 2030
+    }
+   ]
+  },
+  {
+   "property": "Arsenal",
+   "anz": false,
+   "slot": "Beer & cider",
+   "partners": [
+    {
+     "brand": "Guinness",
+     "since": "Jul 2025",
+     "ends": null
+    },
+    {
+     "brand": "Asahi",
+     "since": "Jul 2025",
+     "ends": null
+    }
+   ]
+  },
+  {
+   "property": "FC Barcelona",
+   "anz": false,
+   "slot": "Telco",
+   "partners": [
+    {
+     "brand": "Telefónica",
+     "since": "Sep 2026",
+     "ends": 2031
+    },
+    {
+     "brand": "NEVG",
+     "since": "Nov 2024",
+     "ends": null
+    }
+   ]
+  }
+ ],
+ "dup_deals": [
+  {
+   "deal": "V Energy × NZ Warriors",
+   "issue": "listed entry next to a dated one (drop the listed one)"
+  }
+ ],
+ "no_broadcaster": [
+  {
+   "property": "Hockey Australia",
+   "deals": 11
+  },
+  {
+   "property": "Golf Australia",
+   "deals": 10
+  },
+  {
+   "property": "NZ Rugby League",
+   "deals": 8
+  },
+  {
+   "property": "AUSX Supercross",
+   "deals": 8
+  },
+  {
+   "property": "World Surf League",
+   "deals": 7
+  },
+  {
+   "property": "Commonwealth Games Australia",
+   "deals": 7
+  },
+  {
+   "property": "Basketball Australia",
+   "deals": 6
+  },
+  {
+   "property": "Cricket Victoria",
+   "deals": 6
+  },
+  {
+   "property": "New Zealand Football",
+   "deals": 5
+  }
+ ],
+ "stale": [],
+ "no_source": [
+  {
+   "deal": "Thirteen Commercial Cleaning × Adelaide United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "L'Oréal × Paris Saint-Germain",
+   "issue": "no url"
+  },
+  {
+   "deal": "LendUX × Adelaide United (A-League Women)",
+   "issue": "no url"
+  },
+  {
+   "deal": "MILO (Nestlé) × NBA",
+   "issue": "no url"
+  },
+  {
+   "deal": "JD Sports × NZ Rugby League",
+   "issue": "no url"
+  },
+  {
+   "deal": "Optus / Virgin Australia × NBL",
+   "issue": "no url"
+  },
+  {
+   "deal": "Topps × Arsenal",
+   "issue": "no url"
+  },
+  {
+   "deal": "Sofascore × NHL",
+   "issue": "no url"
+  },
+  {
+   "deal": "adidas × French Rugby Federation",
+   "issue": "no url"
+  },
+  {
+   "deal": "Visa × 13 NFL teams",
+   "issue": "no url"
+  },
+  {
+   "deal": "Visa × Asian Football Confederation",
+   "issue": "no url"
+  },
+  {
+   "deal": "Li-Ning × Global gymnastics",
+   "issue": "no url"
+  },
+  {
+   "deal": "Sydney Airport × Rugby World Cup 2027",
+   "issue": "no url"
+  },
+  {
+   "deal": "Bridgestone × Formula E",
+   "issue": "no url"
+  },
+  {
+   "deal": "Westfield × Western Sydney Wanderers",
+   "issue": "no url"
+  },
+  {
+   "deal": "Nine × Australian Athletics",
+   "issue": "no url"
+  },
+  {
+   "deal": "First Community Credit Union × Rice Stadium",
+   "issue": "no url"
+  },
+  {
+   "deal": "ASICS × Netball Australia",
+   "issue": "no url"
+  },
+  {
+   "deal": "Edward Jones × McLaren Racing",
+   "issue": "no url"
+  },
+  {
+   "deal": "Bloom Energy × Philadelphia 76ers",
+   "issue": "no url"
+  },
+  {
+   "deal": "Paze × Phoenix Suns",
+   "issue": "no url"
+  },
+  {
+   "deal": "Friskies × six college mascots",
+   "issue": "no url"
+  },
+  {
+   "deal": "Nine × NBL",
+   "issue": "no url"
+  },
+  {
+   "deal": "Rugby Bricks × Sophie de Goede",
+   "issue": "no url"
+  },
+  {
+   "deal": "Adobe × NHL",
+   "issue": "no url"
+  },
+  {
+   "deal": "Decimal Data Group × Cricket Australia",
+   "issue": "no url"
+  },
+  {
+   "deal": "Databricks × Cal (Memorial Stadium)",
+   "issue": "no url"
+  },
+  {
+   "deal": "Red Bull × NBL",
+   "issue": "no url"
+  },
+  {
+   "deal": "Muthoot Fincorp × BCCI",
+   "issue": "no url"
+  },
+  {
+   "deal": "LIGAS Gaming × La Liga",
+   "issue": "no url"
+  },
+  {
+   "deal": "Uline × Milwaukee Bucks",
+   "issue": "no url"
+  },
+  {
+   "deal": "Genesis × New Zealand Cricket",
+   "issue": "no url"
+  },
+  {
+   "deal": "Jersey Mike's × EFL Trophy",
+   "issue": "no url"
+  },
+  {
+   "deal": "On × Kylian Mbappé",
+   "issue": "no url"
+  },
+  {
+   "deal": "FedEx Freight × NASCAR Truck Series",
+   "issue": "no url"
+  },
+  {
+   "deal": "Rakuten × Scuderia Ferrari HP",
+   "issue": "no url"
+  },
+  {
+   "deal": "SharkNinja × McLaren Racing",
+   "issue": "no url"
+  },
+  {
+   "deal": "AAMI × Sydney Sixers",
+   "issue": "no url"
+  },
+  {
+   "deal": "Firmus Technologies × Cricket Tasmania",
+   "issue": "no url"
+  },
+  {
+   "deal": "Visa × Rugby World Cups (Australia)",
+   "issue": "no url"
+  },
+  {
+   "deal": "Generali × Davis Cup",
+   "issue": "no url"
+  },
+  {
+   "deal": "adidas × Benfica",
+   "issue": "no url"
+  },
+  {
+   "deal": "Tissot × FIBA",
+   "issue": "no url"
+  },
+  {
+   "deal": "Mega Rewards × Tasmania JackJumpers",
+   "issue": "no url"
+  },
+  {
+   "deal": "Shuffle × Sunderland",
+   "issue": "no url"
+  },
+  {
+   "deal": "LeoVegas / BetMGM × Newcastle United",
+   "issue": "no url"
+  },
+  {
+   "deal": "Fenway Sports Group × WTGL / Boston Common Golf",
+   "issue": "no url"
+  },
+  {
+   "deal": "MGI Golf × UNLV Athletics",
+   "issue": "no url"
+  },
+  {
+   "deal": "BLAST × Mongolian Esports Association",
+   "issue": "no url"
+  },
+  {
+   "deal": "Turkish Airlines × Liverpool FC",
+   "issue": "no url"
+  },
+  {
+   "deal": "Toyota Australia × NFL Melbourne Game",
+   "issue": "no url"
+  },
+  {
+   "deal": "SumUp × Manchester United",
+   "issue": "no url"
+  },
+  {
+   "deal": "Campa / SBI Life / ChatGPT × BCCI",
+   "issue": "no url"
+  },
+  {
+   "deal": "Rogers × Edmonton Oilers / Rogers Place",
+   "issue": "no url"
+  },
+  {
+   "deal": "Cobram Estate × Melbourne Mavericks",
+   "issue": "no url"
+  },
+  {
+   "deal": "Starbucks × Toulouse FC",
+   "issue": "no url"
+  },
+  {
+   "deal": "Hyundai × UEFA Champions League",
+   "issue": "no url"
+  },
+  {
+   "deal": "Commonwealth Bank × LeadStory",
+   "issue": "no url"
+  },
+  {
+   "deal": "STRAUSS × UEFA",
+   "issue": "no url"
+  },
+  {
+   "deal": "LSKD × Brisbane Bullets",
+   "issue": "no url"
+  },
+  {
+   "deal": "Toyota Material Handling × Australian Turf Club",
+   "issue": "no url"
+  },
+  {
+   "deal": "Kin Insurance × FSU Athletics",
+   "issue": "no url"
+  },
+  {
+   "deal": "Haier × UEFA Champions League",
+   "issue": "no url"
+  },
+  {
+   "deal": "DoorDash × Live Nation ANZ",
+   "issue": "no url"
+  },
+  {
+   "deal": "Puma × A$AP Rocky",
+   "issue": "no url"
+  },
+  {
+   "deal": "First Horizon Bank × Tennessee Athletics",
+   "issue": "no url"
+  },
+  {
+   "deal": "Elite Eleven × Melbourne Victory",
+   "issue": "no url"
+  },
+  {
+   "deal": "Kayo Sports / Binge × Surfing Super League",
+   "issue": "no url"
+  },
+  {
+   "deal": "GWM × NZ Warriors",
+   "issue": "no url"
+  },
+  {
+   "deal": "Old El Paso × Melbourne Stars",
+   "issue": "no url"
+  },
+  {
+   "deal": "TikTok × NFL",
+   "issue": "no url"
+  },
+  {
+   "deal": "Hisense × UEFA",
+   "issue": "no url"
+  },
+  {
+   "deal": "AXS × Melbourne Vixens",
+   "issue": "no url"
+  },
+  {
+   "deal": "Club Lime × Canberra Raiders",
+   "issue": "no url"
+  },
+  {
+   "deal": "Capital Power × Alpine Canada",
+   "issue": "no url"
+  },
+  {
+   "deal": "Lloyds Banking Group × England Rugby",
+   "issue": "no url"
+  },
+  {
+   "deal": "BSP Financial Group × PNG Chiefs",
+   "issue": "no url"
+  },
+  {
+   "deal": "Firmus Technologies × Tasmania Devils",
+   "issue": "no url"
+  },
+  {
+   "deal": "Salomon × IRONMAN",
+   "issue": "no url"
+  },
+  {
+   "deal": "Mortgage Choice × NBL / WNBL",
+   "issue": "no url"
+  },
+  {
+   "deal": "Hydro Flask × NZ Rugby League",
+   "issue": "no url"
+  },
+  {
+   "deal": "1xBet × PGL",
+   "issue": "no url"
+  },
+  {
+   "deal": "CoinSpot × Western Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "CyberCX × Collingwood",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hyundai × Brisbane Lions",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "TAL × GWS Giants",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Queensland Government × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Budget × Perth Scorchers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Budget × Cricket Tasmania",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Metro Ford Newstead × Hockey Queensland",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Sharpie × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "ActewAGL × UC Capitals",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Good Drinks Australia × Adelaide 36ers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Rio Tinto × Perth Lynx",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Leesa × Sunshine Coast Lightning",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Workplace Law × Melbourne City FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Leapmotor × National Pickleball League",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Anytime Fitness × AusTriathlon",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Lion × Accor Stadium",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Coca-Cola Europacific Partners × Accor Stadium",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Diageo × Accor Stadium",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Suntory Global Spirits × Accor Stadium",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "La Trobe Financial × Collingwood",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "La Trobe Financial × Allianz Stadium",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ingenia Holiday Parks × Geelong Cats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Trilogy Funds × Hawthorn",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Police Bank × Sydney Roosters",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Red Bull × Triple Eight Race Engineering",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Century Yuasa × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mayfield Childcare × Cairns Taipans",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Elastoplast × Tasmania JackJumpers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Harvey Norman × Sydney Kings",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "PTP × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Foodland × Adelaide United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "FM × Golf Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Fertility SA × Port Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "D'Orsogna × Fremantle",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Seiko × Brisbane Heat",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Destination Sport × Netball World Cup 2027",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Sprite × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "East Coast Car Rentals × Newcastle Jets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Stow Storage × Melbourne Racing Club",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "WWE × Western Australian Government",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "S-Trend × Softball Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "China Airlines × Queensland Reds",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Tourism WA × Swimming Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Amadio Wines × Adelaide 36ers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Northern Star Resources × Perth Lynx",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Melbourne Park × Sport Australia Hall of Fame",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Australian Government × Australian Olympic Committee",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SBS × FIFA World Cup 2030",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Polestar × Melbourne Demons",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "sportsmed × Port Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "New Balance × Cricket NSW",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "KFC × Queensland Cricket",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Seven × Queensland Cricket",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Eckersley Print Group × Softball Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SCA × Townsville Fire",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Adept IT Solutions × Newcastle Jets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Northside Rentals × Perth Glory",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "JOOLA × Picklr",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Vaseline × Sydney Marathon",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Swisse × City2Surf",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Brooks Running × New Zealand Olympic Committee",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "GAC × Melbourne City FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "New Era × Port Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "MOVA TECH × Essendon",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Always Made Special × Blues (Super Rugby)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Plantation Homes × Brisbane Heat",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Quint × Netball World Cup 2027",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "AICD × Golf Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Victor Sports × Brisbane Bullets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Audio-Technica × Brisbane Roar",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Prezzee × Sydney FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "VÖOST × Sydney FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Event Cinemas × Brisbane Roar",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "More Telecom × Sydney FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Fridgy × AUSX Supercross",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Heinz × Venues NSW",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "adidas × Australian College of Physical Education",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SABA × Geelong Cats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Solstice Energy × Tasmania Devils",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Your Nursing Agency × Port Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SKG Radiology × West Coast Eagles",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Recovery Partners Australia × Canterbury-Bankstown Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "2degrees × New Zealand Rugby",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Everything Fleet × NSW Waratahs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Challenger × PGA Tour of Australasia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Maple Living × South East Melbourne Phoenix",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ninja × A-Leagues",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Kappa × A-Leagues",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Pacific Radiology × Wellington Phoenix",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Repco × Kayo Sports",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Seven × NFL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "South Bank Corporation × Squash Australian Open",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "MSWA × West Coast Eagles",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Kapitol × Western Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Nature Valley × Hawthorn",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Workplace Law × Sydney Roosters",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bulk Nutrients × Tasmania Jewels",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Budget × Adelaide 36ers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "TechnologyOne × WNBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Wilson Security × South East Melbourne Phoenix",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Revo Fitness × Perth Glory",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Brisbane Airport × Brisbane Roar",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Guzman y Gomez × Brisbane Roar",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "oOh!media × Newcastle Jets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "La Trobe Financial × NFL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Cadbury × Tasmania Devils",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Comfort Sleep × Collingwood",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Revo Fitness × VAFA",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ārepa × NZ Rugby League",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Coca-Cola × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Starward Whisky × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "NME Group × Hurricanes (Super Rugby)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Airwallex × Blues (Super Rugby)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "CyberCX × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Western Heights College × Melbourne Vixens",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "PGA TOUR × Tennis Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Kayo Sports × Water Polo Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ord Minnett × Water Polo Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "QUT × Softball Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Beyond Bank × Geelong United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "COEX × Basketball Queensland",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hoop City × Red Energy Arena",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Motor Scout Australia × Brisbane Bullets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Nippy's × Adelaide 36ers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Seven Consulting × Basketball Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Omoda Jaecoo × Western Sydney Wanderers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Viva Leisure × Fremantle",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "KFC × Hawthorn",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Toyota Material Handling × Canberra Raiders",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "FreshChoice × Matatū",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "AFGRI Equipment × RugbyWA",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hahn × South Australian Cricket Association",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "BMS Group × Water Polo Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bowlsome × Adelaide Lightning",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Nexus Airlines × Basketball WA",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Table of Plenty × Melbourne United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Pirate Life × Perth Wildcats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Choice Hotels × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Konqa × Central Coast Mariners",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Speedo × AusTriathlon",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hahn × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "IHG Hotels & Resorts × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Avis × Golf Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "St. Ali × Hawthorn",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mega Rewards × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Victor Sports × Tasmania Devils",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "The Sporting Globe × Collingwood",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Chobani × NZ Warriors",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Penrite Oil × Perth Bears",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mother Energy × Parramatta Eels",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "One World Courier × Wests Tigers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Reddawn × Sydney Roosters",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Armillary × Hurricanes Poua",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "TVNZ × Crusaders",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Masuri × Cricket Victoria",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "TAB × Harness Racing Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Coors × Brisbane Bullets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SKG Services × Adelaide 36ers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Carbiz × Sydney FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Omoda Jaecoo × AUSX Supercross",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "ASB × New Zealand Olympic Committee",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "ASB × Athletics New Zealand",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "One NZ × New Zealand Olympic Committee",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "YETI × Commonwealth Games Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Radiology Victoria × Geelong Cats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Toyota Material Handling × Essendon",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bank South Pacific × Rugby League World Cup 2026",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "DJI × NZ Rugby League",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Dreamworld × NZ Warriors",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Think Renewable × Cronulla Sharks",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Toyota Hilux × New Zealand Rugby",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Budget × South East Melbourne Phoenix",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Sirromet × Brisbane Bullets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "South32 × Townsville Fire",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "ASICS × Western Sydney Wanderers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Red Hat × Matt Stone Racing",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "DEWALT × AUSX Supercross",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "MyPayNow × AUSX Supercross",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Seattle Seahawks × Collingwood",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bank South Pacific × PNG Chiefs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Manly Fast Ferry × Manly Sea Eagles",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Firmus Technologies × Hobart Hurricanes",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Firmus Technologies × Tasmania JackJumpers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Komo Technologies × Cricket Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Greenworks × Melbourne Stars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Snap Fitness × NZ Breakers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Rio Tinto × Perth Wildcats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "StudyAdelaide × Adelaide United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "PacLease × Tickford Racing",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Suzuki × AUSX Supercross",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "STRAUSS × NFL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SIPEnergy × Sydney Roosters",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Silver Fern Sport × NSW Waratahs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Santos × Queensland Reds",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "AAMI × Perth Scorchers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Tangerine × Melbourne Renegades",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Kingsgrove Sports × Cricket NSW",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Swisse × Tennis Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Liquid I.V. × Adelaide Lightning",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "NBA 2K × Brisbane Bullets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Spotlight × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Kraft Heinz × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "RSM Australia × Perth Wildcats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Alinta Energy × Perth Lynx",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SkyCity × AUSX Supercross",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "99 Bikes × AusCycling",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Beverly × Melbourne Racing Club",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Club Racing Australia × Penrith Panthers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Samoa Beverages × Melbourne Storm",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bayleys × Crusaders",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "HART Sport × Queensland Cricket",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Yonex × Badminton Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Omoda Jaecoo × NZ Breakers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Snap Fitness × Perth Wildcats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "7-Eleven × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Chicken Treat × Perth Glory",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Focus Construct × Brisbane Roar",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "FreshChoice × Auckland FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Midas × Brad Jones Racing",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Oz Shipping Containers × Newcastle Jets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Verso Projects × Brisbane Bullets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Red Hill Estate × North Melbourne",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mahindra × Perth Bears",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Zoo Fit × Perth Bears",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Geely × NZ Rugby League",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Rhino × Queensland Reds",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Cub Cadet × Brisbane Heat",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Wilson Security × Hobart Hurricanes",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Tourism WA × Basketball Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Samsung × Allianz Stadium",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Rokeby Nutrition × Western Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hungry Jack's × Adelaide Crows",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Four'N Twenty × Baseball Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Zaparas Lawyers × Melbourne Victory",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Equity One × Porsche Carrera Cup Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Autobarn × Tickford Racing",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "USL × NZ Warriors",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Gallagher × ACT Brumbies",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Castore × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Kayo Sports × Softball Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "CyberCX × Australian Open",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SIPEnergy × Parramatta Eels",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ampol × North Queensland Cowboys",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Westfield × Manly Sea Eagles",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Send My Bag × Melbourne Storm",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Humanitix × Basketball Queensland",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Carnival Cruise Line × Brisbane Bullets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Liquorland × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Sokin × British & Irish Lions",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "WHOOP × British & Irish Lions",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Volkswagen × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bosch × Premiair Racing",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "TAFE Queensland × Gold Coast Suns",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Send My Bag × Sunshine Coast Lightning",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "BMD Group × Melbourne Vixens",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "New Balance × Big Bash League",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Royal Caribbean × Brisbane Heat",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Dodo × Melbourne Stars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "New Balance × Newcastle Jets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "polytec × Central Coast Stadium",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "ASC × Port Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mega Rewards × Adelaide 36ers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "St Lukes Health × Tasmania Jewels",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Quint × Australian Grand Prix",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "RYCO × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Sony × Canterbury-Bankstown Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "McDonald's × Western Sydney Wanderers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "HIF × Perth Wildcats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Tyrepower × Melbourne United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "CricViz × New Zealand Cricket",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "OneActive × Hockey One",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Turner Freeman × Penrith Panthers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "OPPO × New Zealand Football",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Powerade × New Zealand Football",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Cape Mentelle × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mountain Goat × Marvel Stadium",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Budget Direct × Perth Bears",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Fiji × St Kilda",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "GWM × Richmond",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "WHOOP × Brisbane Lions",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Rio Tinto × Athletics Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Foot Locker × Sydney Kings",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Blackmores × WNBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "2K × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SIXT × Macarthur FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Quest Apartment Hotels × Auckland FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Dulux × Melbourne Victory",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "OPPO × Wellington Phoenix",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Multi Civil & Rail × Illawarra Hawks",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SMARTECH × Super Rugby Pacific",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "MG × Blues (Super Rugby)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "EPC Solar × ACT Brumbies",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hawke's Brewing × NSW Waratahs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Witzer × NRL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Picklebet × Penrith Panthers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Kumho Tyre × Canterbury-Bankstown Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Shine Drinks × Cronulla Sharks",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "MyPlace × West Coast Eagles",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "TeamViewer × Adelaide United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bailey Ladders × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ripper GC × Golf Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Gatorade × Cricket Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Tyrepower × Brisbane Lions",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mars Wrigley × Western Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Red Energy × Newcastle Knights",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Aspen Pharmacare × Manly Sea Eagles",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ford × New Zealand Football",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hino × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "LIQUI MOLY × Blanchard Racing Team",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "National Storage × Brisbane Broncos",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Nectr × Penrith Panthers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Rio Sound & Vision × St Kilda",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "ISLA Vodka × Cricket Victoria",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Spalding × Brisbane Bullets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Social Protect × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Stoic360 × Illawarra Hawks",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Vodafone Fiji × Fijian Drua",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "South Ave × Sydney FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "CommBank × AFC Women's Asian Cup",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "U by Kotex × Netball NSW",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hellmann's × NFL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Musco Lighting × Hockey Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Accor × Qudos Bank Arena",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Toyota New Zealand × New Zealand Olympic Committee",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "CommBank × Football Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Under Armour × Sydney FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Elastoplast × Melbourne City FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Wattyl × Canterbury-Bankstown Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Kogan.com × Canterbury-Bankstown Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Harvey Norman × NZ Warriors",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "PTP × Manly Sea Eagles",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ancestry × State of Origin",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "AWSN × Netball Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "RACV × Netball Victoria",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Comwire IT × Adelaide 36ers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Jameson × Collingwood",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Healthway × WA Football Commission",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Komatsu × Perth Scorchers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Compare & Connect × Melbourne Renegades",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ringers Western × KTM Racing Team",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Cash Converters × Perth Bears",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "DB × NZ Warriors",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Southern Cross Austereo × Perth Bears",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "HART Sport × Gold Coast Titans",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "CRL Express × Carlton",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Credit Union SA × Port Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Silver Fern Sport × Fijian Drua",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Victor Sports × Blues (Super Rugby)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Sci-Fleet Toyota × Brad Jones Racing",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Zoho × Auckland FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "BlackBull Markets × Auckland FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Modus Brewing × Newcastle Jets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "RSEA × Sydney Thunder",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Jones Radiology × Adelaide Strikers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Kumho Tyre × Hockey Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "YoPRO × Australian Open",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Apex Steel × Adelaide 36ers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "BDO × Netball Queensland",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "AG1 × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Sky NZ × New Zealand Rugby",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Isaac Group × Crusaders",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "CODE Sports × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Step One × Basketball Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Carnival Cruise Line × Melbourne Renegades",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "RAA × Adelaide Strikers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Harvey Norman × GWS Giants",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Yamaha × AUSX Supercross",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Grant Thornton × Paddle Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Corpay × New Zealand Football",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Anchor × Auckland FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SEN × NFL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Moose Toys × St Kilda",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Intuit × Carlton",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "RACQ × Brisbane Bullets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Foodland × Adelaide 36ers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Sinopec × Matt Stone Racing",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Sidelink Transport × Melbourne Victory",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Chubb × Australian Open",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Coopers × NSW Waratahs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SEN × Melbourne Racing Club",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "MG × Qudos Bank Arena",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "HOKA × North Melbourne",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Nike × Sydney Swans",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bowens × Collingwood",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SC Technology Group × Geelong Cats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "KFC × Port Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mega Rewards × Sydney FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Chemist Warehouse × LIV Golf Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Corpay × LIV Golf",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "NOVA Entertainment × Melbourne Racing Club",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "TotalEnergies × Erebus Motorsport",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Campos Coffee × Australian Grand Prix",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Michelin × Motorsport Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "NAPA × PremiAir Racing",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Specsavers × Giants Netball",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "HART Sport × Netball Queensland",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "MCB Lawyers × Manly Sea Eagles",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Modoras × South Sydney Rabbitohs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hostplus × Melbourne Storm",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Guinness × NSW Waratahs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Chery × Fijian Drua",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Club Med × Blues (Super Rugby)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Snap Fitness × Western Force",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Breitling × World Surf League",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bioglan × World Surf League",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "13cabs × North Melbourne",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Latina Fresh × WNBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Old El Paso × Melbourne Renegades",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Supplement Mart × Macarthur FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "University of Newcastle × Newcastle Jets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Theme Group × Perth Glory",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Moët Hennessy × Brisbane Racing Club",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Budget Direct × Melbourne Storm",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Gage Roads × Perth Bears",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Under Armour × NSW Waratahs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "First Homebuilders × Western Force",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SIXT × Gold Coast Suns",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "RMIT × Essendon",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Value Dental × Melbourne Victory",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "ASICS × Brisbane Broncos",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Nemiroff × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Beyond Bank × Hoops Capital",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "TripADeal × Bowls Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "JD Sports × Geelong Cats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Punt Road Wines × Richmond",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "LEGO × Melbourne Demons",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Village Roadshow × Gold Coast Titans",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Anytime Fitness × NZ Warriors",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Elastoplast × NZ Warriors",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SkyCity × Super Rugby Pacific",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Theme Group × Western Force",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Gates × Grove Racing",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Experience Gold Coast × Basketball Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "People First Bank × Adelaide Strikers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hancock Prospecting × Rowing Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bakers Delight × Swimming Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Tabcorp × Golf Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "DriversDepot × Melbourne Demons",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "AUCyber × St Kilda",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Nostra Homes × Western Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Deicorp × South Sydney Rabbitohs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "PKF × Newcastle Knights",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Tait Communications × Crusaders",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ray White × New Zealand Rugby",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Valvoline × Adelaide Grand Final",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "MECCA MAX × Australian Grand Prix",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Shannons × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Subaru × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Thrifty × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Isuzu × Football Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SipEnergy × Sydney FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Jellis Craig × Melbourne Vixens",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "University of Queensland × Queensland Firebirds",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "HITIQ × Hockey Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Harvey Norman × Paralympics Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Planet Fitness × GWS Giants",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Penrite Oil × Melbourne Demons",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "KEF × Port Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Elastoplast × Richmond",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Reebok × WNBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Johnnie Walker × LIV Golf Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "BYD × LIV Golf Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Penfolds × Australian Grand Prix",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Tyrepower × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SIXT × Giants Netball",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Formbay × Wests Tigers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "IBM × Perth Bears",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Maurice Blackburn × North Queensland Cowboys",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Corpay × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Foxtel × SailGP",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Stanley 1913 × Sydney FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "O'Neills × Central Coast Mariners",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Entelar × Wellington Phoenix",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Kite Projects × Adelaide United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Asahi × Sydney Roosters",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Airtouch × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "RAA × Adelaide Thunderbirds",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mr Whippy × NSW Swifts",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bleasdale × Adelaide 36ers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Orbit Logistics × North Melbourne",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "NT Government × Dolphins",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "78 Degrees × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Barry × Supercars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Europcar × Perth Wildcats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Alliance Airlines × Queensland Reds",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ocular × Hurricanes (Super Rugby)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Allianz × West Coast Eagles",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "New Balance × Tasmania Devils",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "McDonald's × Brisbane Lions",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Opal × St Kilda",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Geely × Canterbury-Bankstown Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Budget Direct × Dolphins",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Lite n' Easy × Melbourne Stars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Lite n' Easy × Sydney Sixers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Budget Direct × Perth Scorchers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Naked Wines × Sydney FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Paywise × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "LEGO × Blues (Super Rugby)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "APM × Hockey Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Crown Resorts × Australian Open (golf)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Resmed × British & Irish Lions",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Australian Unity × Essendon",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Muscle Nation × Melbourne Storm",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Santos × Port Adelaide",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mazda × North Melbourne",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Nostra Homes × Melbourne City FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Minerals Council of Australia × Pacific Four Series",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Delivereasy × Chatham Cup",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "CMC Markets × Blues (Super Rugby)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Science in Sport × Rugby Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Origin Energy × Cricket Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mini Melts × Sydney Sixers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Arnott's × Brisbane Heat",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "NRMA Insurance × Cricket Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "adidas × Sydney Roosters",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "YETI × Geelong Cats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ford × Geelong Cats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Cotton On × Geelong Cats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "MA Services Group × Melbourne Demons",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "McDonald's × Queensland Firebirds",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "1Cover × NSW Waratahs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Gallagher × Chiefs (Super Rugby)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Century Yuasa × Triple Eight Race Engineering",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "RAC × RAC Arena",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Budget Direct × South Sydney Rabbitohs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Virtual Eye × New Zealand Cricket",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Rebel Sport × HYROX Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "JD Sports × Auckland FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Trip.com × Sydney FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Fanatics × Football Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Harcourts × Melbourne Demons",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Kookaburra × North Melbourne",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Under Armour × Hawthorn",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Canterbury × Wests Tigers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "MR Roads × Dolphins",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Westfund × Penrith Panthers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "New Balance × Western Force",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Sunbeam × NSW Swifts",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Aussie Broadband × Cricket Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "GIO × NSWRL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "JAECOO × IRONMAN Oceania",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "BHP × Adelaide Crows",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ford × New Zealand Cricket",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Canterbury × Queensland Reds",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Intrepid Travel × North Melbourne",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "1Cover × St Kilda",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Alinta Energy × Melbourne Storm",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "NZME × NZ Warriors",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Bank of Queensland × Queensland Reds",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ray White × Queensland Firebirds",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "McDonald's × New Zealand Football",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "BMD Group × North Queensland Cowboys",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Guinness × British & Irish Lions",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "RugbyPass × British & Irish Lions",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "STATSports × British & Irish Lions",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "La Trobe Financial × Wrexham AFC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Battery World × Adelaide Grand Final",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hyland Sportswear × Australian Turf Club",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Tangerine × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Dabble × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Step One × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mattel × Melbourne United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ozito × Melbourne United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Midea × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Chemist Warehouse × Cricket Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Qscan × Queensland Cricket",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "STATSports × Wellington Phoenix",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Muzz Buzz × Perth Glory",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Team Global Express × Auckland FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Daiwa × Western Sydney Wanderers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Homedics × Melbourne Storm",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ondeck × Adelaide Grand Final",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Sportradar × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Birds Eye × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Foot Locker × NBL",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Rokeby × Melbourne United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Intrepid Travel × Melbourne Stars",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Hola Health × WA Cricket",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Rolex × Australian Open (golf)",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Mayfield Childcare × Melbourne Victory",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Solotel × Western Sydney Wanderers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SBS × Football Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Skechers × Melbourne Victory",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "RAA × Adelaide Grand Final",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Viva Leisure × ACT Brumbies",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "SharkNinja × A-League Women",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Rebel Sport × Auckland FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "McDonald's × Auckland FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Rolex × PGA of Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Toyo Tires × GWS Giants",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Palmerbet × Newcastle Knights",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Tooheys × Penrith Panthers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Brydens Lawyers × Newcastle Jets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Scotts × Melbourne City FC",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "M.J. Bale × Sydney Kings",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Budget × Central Coast Mariners",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "NRW Holdings × Perth Wildcats",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Westpac × Cricket Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Treu Construct × Western Bulldogs",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Ford × Basketball Australia",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Beaumont Tiles × Melbourne United",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "AWS × New Zealand Rugby",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "WIN Television × Newcastle Jets",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Club Lime × Western Sydney Wanderers",
+   "issue": "needsSource"
+  },
+  {
+   "deal": "Shannons × AUSX Supercross",
+   "issue": "needsSource"
+  }
+ ]
+}

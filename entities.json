@@ -322,7 +322,7 @@
   },
   "abc-bullion": {
    "name": "ABC Bullion",
-   "cat": "Media & broadcast",
+   "cat": "Banking & finance",
    "k": "b"
   },
   "abhibus": {
@@ -747,7 +747,8 @@
   },
   "advara-heartcare": {
    "name": "Advara HeartCare",
-   "k": "b"
+   "k": "b",
+   "cat": "Health & beauty"
   },
   "advil": {
    "name": "Advil",
@@ -1857,7 +1858,8 @@
   },
   "ares-management": {
    "name": "Ares Management",
-   "k": "b"
+   "k": "b",
+   "cat": "Banking & finance"
   },
   "argentina": {
    "name": "Argentina",
@@ -4882,7 +4884,8 @@
   },
   "call-it-schorle": {
    "name": "Call It Schorle",
-   "k": "b"
+   "k": "b",
+   "cat": "Non-alcoholic drinks"
   },
   "caltex": {
    "name": "Caltex",
@@ -7355,7 +7358,8 @@
   },
   "debet": {
    "name": "Debet",
-   "k": "b"
+   "k": "b",
+   "cat": "Betting & wagering"
   },
   "debtmanagers": {
    "name": "DebtManagers",
@@ -7982,13 +7986,14 @@
   },
   "dunlop": {
    "name": "Dunlop",
-   "cat": "Automotive",
+   "cat": "Sporting goods & equipment",
    "k": "b",
    "domain": "dunlop.com",
    "bf": [
     "icon",
     "logo"
-   ]
+   ],
+   "sub": "Balls & racquets"
   },
   "duracell": {
    "name": "Duracell",
@@ -9576,7 +9581,8 @@
   },
   "fortinet": {
    "name": "Fortinet",
-   "k": "b"
+   "k": "b",
+   "cat": "Technology"
   },
   "fortune-prime-global": {
    "name": "Fortune Prime Global",
@@ -10055,7 +10061,8 @@
   },
   "geico": {
    "name": "GEICO",
-   "k": "b"
+   "k": "b",
+   "cat": "Insurance"
   },
   "gello": {
    "name": "Gello",
@@ -11587,7 +11594,8 @@
   },
   "hot-91-1": {
    "name": "HOT 91.1",
-   "k": "b"
+   "k": "b",
+   "cat": "Media & broadcast"
   },
   "hot-tomato": {
    "name": "Hot Tomato",
@@ -11946,7 +11954,8 @@
   },
   "icons-of-sport": {
    "name": "Icons of Sport",
-   "k": "b"
+   "k": "b",
+   "cat": "Collectibles & licensing"
   },
   "ideagen": {
    "name": "Ideagen",
@@ -13266,11 +13275,6 @@
    "ptype": "Athlete & talent",
    "k": "p"
   },
-  "kayo": {
-   "name": "Kayo",
-   "cat": "Media & broadcast",
-   "k": "b"
-  },
   "kayo-sports": {
    "name": "Kayo Sports",
    "domain": "kayosports.com.au",
@@ -13278,7 +13282,10 @@
     "icon"
    ],
    "cat": "Media & broadcast",
-   "k": "b"
+   "k": "b",
+   "aliases": [
+    "Kayo"
+   ]
   },
   "keece-group": {
    "name": "Keece Group",
@@ -14277,12 +14284,10 @@
     "logo"
    ],
    "cat": "Collectibles & licensing",
-   "k": "b"
-  },
-  "lego-australia": {
-   "name": "LEGO Australia",
    "k": "b",
-   "cat": "Collectibles & licensing"
+   "aliases": [
+    "LEGO Australia"
+   ]
   },
   "legora": {
    "name": "Legora",
@@ -14983,7 +14988,8 @@
   },
   "lumus-imaging": {
    "name": "Lumus Imaging",
-   "k": "b"
+   "k": "b",
+   "cat": "Health & beauty"
   },
   "luton-town": {
    "name": "Luton Town",
@@ -15017,7 +15023,8 @@
   },
   "luzhou-laojiao": {
    "name": "Luzhou Laojiao",
-   "k": "b"
+   "k": "b",
+   "cat": "Alcohol"
   },
   "lxme": {
    "name": "Lxme",
@@ -15503,7 +15510,8 @@
   },
   "mccain": {
    "name": "McCain",
-   "k": "b"
+   "k": "b",
+   "cat": "Food & nutrition"
   },
   "mccormack": {
    "name": "McCormack",
@@ -15522,7 +15530,7 @@
   },
   "mcdonald-jones-homes": {
    "name": "McDonald Jones Homes",
-   "cat": "Food & nutrition",
+   "cat": "Construction & property",
    "k": "b"
   },
   "mcdonald-s": {
@@ -15589,7 +15597,8 @@
   },
   "mecca": {
    "name": "MECCA",
-   "k": "b"
+   "k": "b",
+   "cat": "Health & beauty"
   },
   "mecca-max": {
    "name": "MECCA MAX",
@@ -16671,7 +16680,8 @@
   },
   "mountain-culture": {
    "name": "Mountain Culture",
-   "k": "b"
+   "k": "b",
+   "cat": "Alcohol"
   },
   "mountain-goat": {
    "name": "Mountain Goat",
@@ -17076,16 +17086,9 @@
     "logo"
    ],
    "ptype": "League & competition",
-   "k": "p"
-  },
-  "national-pickleball-league-australia": {
-   "name": "National Pickleball League Australia",
-   "ptype": "League & competition",
    "k": "p",
-   "domain": "nplpickleball.com",
-   "bf": [
-    "icon",
-    "logo"
+   "aliases": [
+    "National Pickleball League Australia"
    ]
   },
   "national-squash-league": {
@@ -17540,7 +17543,8 @@
   },
   "news-australia": {
    "name": "News Australia",
-   "k": "b"
+   "k": "b",
+   "cat": "Media & broadcast"
   },
   "nex": {
    "name": "Nex",
@@ -18099,7 +18103,8 @@
   "ntt": {
    "name": "NTT",
    "domain": "group.ntt",
-   "k": "b"
+   "k": "b",
+   "cat": "Technology"
   },
   "nubank": {
    "name": "Nubank",
@@ -18731,10 +18736,6 @@
    "cat": "Health & beauty",
    "k": "b"
   },
-  "oxen": {
-   "name": "OXEN",
-   "k": "b"
-  },
   "oxen-sport": {
    "name": "Oxen Sport",
    "cat": "Apparel & footwear",
@@ -18742,6 +18743,9 @@
    "domain": "oxensports.com",
    "bf": [
     "icon"
+   ],
+   "aliases": [
+    "OXEN"
    ]
   },
   "oz-shipping-containers": {
@@ -19225,7 +19229,8 @@
   "pepperstone": {
    "name": "Pepperstone",
    "domain": "pepperstone.com",
-   "k": "b"
+   "k": "b",
+   "cat": "Fintech, crypto & trading"
   },
   "pepsi": {
    "name": "Pepsi",
@@ -19594,7 +19599,8 @@
   },
   "piper-heidsieck": {
    "name": "Piper-Heidsieck",
-   "k": "b"
+   "k": "b",
+   "cat": "Alcohol"
   },
   "pirate-life": {
    "name": "Pirate Life",
@@ -19671,7 +19677,8 @@
   },
   "planpay": {
    "name": "PlanPay",
-   "k": "b"
+   "k": "b",
+   "cat": "Fintech, crypto & trading"
   },
   "plantation-homes": {
    "name": "Plantation Homes",
@@ -19856,11 +19863,13 @@
   },
   "pongbot": {
    "name": "Pongbot",
-   "k": "b"
+   "k": "b",
+   "cat": "Sporting goods & equipment"
   },
   "poolwerx": {
    "name": "Poolwerx",
-   "k": "b"
+   "k": "b",
+   "cat": "Home & hardware"
   },
   "porcelanosa": {
    "name": "Porcelanosa",
@@ -20466,7 +20475,8 @@
   },
   "queensland-x-ray": {
    "name": "Queensland X-Ray",
-   "k": "b"
+   "k": "b",
+   "cat": "Health & beauty"
   },
   "quest-apartment-hotels": {
    "name": "Quest Apartment Hotels",
@@ -21905,7 +21915,8 @@
   "san-miguel": {
    "name": "San Miguel",
    "k": "b",
-   "logo": "assets/logos/san-miguel.png"
+   "logo": "assets/logos/san-miguel.png",
+   "cat": "Alcohol"
   },
   "san-remo": {
    "name": "San Remo",
@@ -26130,7 +26141,8 @@
   },
   "tubi": {
    "name": "Tubi",
-   "k": "b"
+   "k": "b",
+   "cat": "Media & broadcast"
   },
   "turkish-airlines": {
    "name": "Turkish Airlines",
@@ -26504,7 +26516,8 @@
   },
   "unisc": {
    "name": "UniSC",
-   "k": "b"
+   "k": "b",
+   "cat": "Education"
   },
   "united-carriers": {
    "name": "United Carriers",
@@ -26792,7 +26805,8 @@
   },
   "valour-sport": {
    "name": "Valour Sport",
-   "k": "b"
+   "k": "b",
+   "cat": "Apparel & footwear"
   },
   "valspar": {
    "name": "Valspar",
@@ -28429,7 +28443,8 @@
     "logo"
    ],
    "ptype": "League & competition",
-   "k": "p"
+   "k": "p",
+   "cat": "Media & broadcast"
   },
   "wyatt-s-lawyers": {
    "name": "Wyatt's Lawyers",
@@ -29012,6 +29027,13 @@
    "cat": "Alcohol",
    "k": "b",
    "parent": "vinarchy"
+  },
+  "dunlop-tyres": {
+   "name": "Dunlop Tyres",
+   "cat": "Automotive",
+   "sub": "Tyres",
+   "k": "b",
+   "domain": "dunloptyres.com.au"
   }
  },
  "leagues": [

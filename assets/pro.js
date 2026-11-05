@@ -301,12 +301,27 @@ function dashboard(){
 
 /* ---------- Matches: who should partner with whom (pro/matches.json, built by tools/match.py) ---------- */
 let MX=null;
+/* Feedback on matches: kept in this browser, exported to pro/feedback.json so the engine can learn from it. */
+const FKEY="sssPro.feedback";
+const fbk={all(){try{return JSON.parse(localStorage.getItem(FKEY)||"{}")}catch(e){return {}}},
+  get(p,b){return this.all()[p+"|"+b]||""},
+  set(p,b,s){const a=this.all();const k=p+"|"+b;if(a[k]===s)delete a[k];else a[k]=s;try{localStorage.setItem(FKEY,JSON.stringify(a))}catch(e){}return a[k]||""}};
+const FB=[["nofit","Not a fit"],["pitched","Pitched"],["won","Won"]];
+const fbBtns=(p,b)=>{const cur=fbk.get(p,b);return `<div class="fb" data-fbp="${esc(p)}" data-fbb="${esc(b)}">${FB.map(([k,l])=>`<button type="button" class="fbb${cur===k?" on":""}" data-fb="${k}">${l}</button>`).join("")}</div>`};
+const verTag=v=>v?`<span class="basis c" title="Official partners page checked on this date">Verified ${esc(new Date(v+"T00:00:00").toLocaleDateString("en-AU",{day:"numeric",month:"short"}))}</span>`:`<span class="basis" title="This property's official partners page hasn't been checked yet, so its partner list may be incomplete">Not verified yet</span>`;
 const mxLoad=()=>MX?Promise.resolve(MX):fetch("pro/matches.json",{cache:"no-store"}).then(r=>r.json()).then(j=>MX=j);
 const pct=v=>`${(v*100).toFixed(1).replace(/\.0$/,"")}%`;
 const bandCls=k=>k==="Call now"?"c":k==="Strong"?"t":"";
 function matches(){
   $("view").innerHTML=`<p class="note">Loading matches…</p>`;
   mxLoad().then(()=>drawMatches()).catch(err=>{console.error(err);$("view").innerHTML=`<p class="note">Couldn't load matches. They're rebuilt each time the archive updates; refresh to try again.</p>`});
+}
+function slotMap(rec){
+  const sl=rec.sl||[];if(!sl.length)return "";
+  const lab={open:"Open",ending:"Ending soon",sold:"Sold"};
+  const cell=s=>`<div class="sl ${s.st}"><span class="sl-st">${lab[s.st]}${s.e?` · ${s.e}`:""}</span><b>${esc(s.u)}</b><span class="sl-b">${s.b.length?esc(s.b.join(", ")):`${s.a} of ${s.n} peers have one`}</span></div>`;
+  const n=k=>sl.filter(s=>s.st===k).length;
+  return `<div class="h3">Slot map</div><p class="note-s">Every partner slot this property or its peers have filled. ${n("open")} open, ${n("ending")} ending soon or past their last confirmed date, ${n("sold")} sold. Open slots are sorted by how many peers have filled them.${rec.v?"":" This property isn't verified yet, so some open slots may already be sold."}</p><div class="slmap">${sl.map(cell).join("")}</div>`;
 }
 function intl(m,rec){
   const list=rec.e||[];
@@ -327,26 +342,32 @@ function drawMatches(){
   const rows=rec.m||[];
   state.mExport={rec,rows,side:m.side};
   $("view").innerHTML=`<p class="pro-intro">${m.side==="p"?"The brands this property should be talking to":"The properties this brand should be talking to"}, ranked by Match Score: how closely the brand's existing deals look like this property (sport, league, region, reach, partners in common), plus whether the property has a gap in that sub-category its peers have filled.</p>
+  <p class="note-s">${MX.verified} of ${Object.keys(MX.props).length} properties are verified against their official partners page. Matches for unverified properties may suggest a brand that's already a partner.</p>
   <div class="mx-acc"><b>${pct(bt.top20)}</b><span>of new deals signed ${esc(bt.from)} to ${esc(bt.to)} were in that property's top 20 when we scored the archive as it stood in ${esc(bt.from)}. ${pct(bt.top50)} were in the top 50. The best possible today is ${pct(bt.ceiling)}, because the rest came from brands with no earlier deal in the archive. Treat this as a shortlist with evidence, not a forecast.</span></div>
   <div class="ctl"><div class="pills">${pills("mside",[["p","Property → brands"],["b","Brand → properties"]],m.side)}</div>
   <input class="srch" id="mq" list="mxNames" placeholder="${m.side==="p"?"Type a property, e.g. Carlton, Australian Open":"Type a brand, e.g. Coca-Cola, TikTok"}" autocomplete="off"><datalist id="mxNames">${Object.entries(pool).sort((a,b)=>a[1].n.localeCompare(b[1].n)).map(([,r])=>`<option value="${esc(r.n)}">`).join("")}</datalist>
   <button class="ghost" id="mcsv">Export CSV</button></div>
-  <div class="ph">${org?L.mark(org.e,{px:72}):""}<div><h2 class="disp">${esc(rec.n)}</h2><div class="sub">${m.side==="p"?`${esc({club:"Club",body:"League or governing body",event:"Event",national:"National team",athlete:"Athlete",venue:"Venue"}[rec.t]||"Property")} · ${esc(rec.s)} · ${esc(rec.r)} reach`:`${esc(rec.c||"Uncategorised")}${rec.u?` · ${esc(rec.u)}`:""}`} ${star(m.slug)}</div></div></div>
+  <div class="ph">${org?L.mark(org.e,{px:72}):""}<div><h2 class="disp">${esc(rec.n)}</h2><div class="sub">${m.side==="p"?`${verTag(rec.v)} ${esc({club:"Club",body:"League or governing body",event:"Event",national:"National team",athlete:"Athlete",venue:"Venue"}[rec.t]||"Property")} · ${esc(rec.s)} · ${esc(rec.r)} reach`:`${esc(rec.c||"Uncategorised")}${rec.u?` · ${esc(rec.u)}`:""}`} ${star(m.slug)}</div></div></div>
   ${rows.length?`<div class="tw"><table class="t mx"><thead><tr><th>#</th><th>${m.side==="p"?"Brand":"Property"}</th><th>Match</th><th>Why</th><th>Signals</th></tr></thead><tbody>${rows.map((r,i)=>{
     const slug=m.side==="p"?r.b:r.p, o=D.orgs.get(slug), pts=r.p&&m.side==="p"?r.p:r.pt||[];
     const sub=m.side==="p"?`${esc(r.c||"")}${r.u?` · ${esc(r.u)}`:""}`:`${esc(r.s)} · ${esc(r.r)}`;
     return `<tr><td class="d">${i+1}</td>
     <td><span class="dl">${o?logo(o.e,34):""}<span><a href="${esc(L.page(slug))}"><b>${esc(r.n)}</b></a><br><span class="mute-l">${sub}</span></span></span></td>
     <td><div class="mx-sc"><b>${r.x}</b><span class="basis ${bandCls(r.k)}">${esc(r.k)}</span></div><span class="gapbar"><i style="width:${r.x}%"></i></span><div class="mute-l mx-f">${esc(r.f)} confidence</div></td>
-    <td><ul class="mx-why">${(r.w||[]).map(w=>`<li>${esc(w)}</li>`).join("")}</ul>${(r.g||[]).length?`<div class="chips">${r.g.map(g=>`<span class="chip${g==="Former partner"?" ex":""}">${esc(g)}</span>`).join("")}</div>`:""}</td>
+    <td><ul class="mx-why">${(r.w||[]).map(w=>`<li>${esc(w)}</li>`).join("")}</ul>${(r.g||[]).length?`<div class="chips">${r.g.map(g=>`<span class="chip${g==="Former partner"?" ex":""}">${esc(g)}</span>`).join("")}</div>`:""}${m.side==="b"?`<div class="mute-l mx-f">${r.v?"Verified":"Not verified yet"}</div>`:""}${fbBtns(m.side==="p"?m.slug:r.p,m.side==="p"?r.b:m.slug)}</td>
     <td class="mx-sig"><span title="Lookalike: out of 85">Fit <b>${pts[1]}</b></span><span title="Sub-category gap: out of 15">Gap <b>${pts[4]}</b></span><span class="mute-l" title="Shown, not scored yet: out of 25">Timing ${pts[0]}</span><span class="mute-l" title="Shown, not scored yet: out of 15">Capacity ${pts[2]}</span><span class="mute-l" title="Shown, not scored yet: out of 15">Appetite ${pts[3]}</span></td></tr>`}).join("")}</tbody></table></div>`:`<p class="note">No matches above 40 yet. ${m.side==="p"?"This property needs more deals in the archive.":"This brand needs more deals in the archive."}</p>`}
   <p class="note-s">Fit (out of 85) and Gap (out of 15) make up the score. Timing, Capacity and Appetite are shown but don't count yet: in testing they made the ranking worse, so they come in once the archive is deep enough to prove them. Hidden: live partners, and brands that clash with a live partner on a firm deal in the same sub-category. ${m.side==="p"?(rec.t==="club"?"Clubs are compared with their league and with clubs in other codes in the same city.":["body","event","national"].includes(rec.t)?"Leagues, governing bodies, events and national teams are compared with the major properties of the same kind across every code.":""):""}</p>
+  ${m.side==="p"?slotMap(rec):""}
   ${intl(m,rec)}
+  <div class="h3">Your feedback</div><p class="note-s">Mark matches as Not a fit, Pitched or Won. It's saved in this browser. Export it and add it to the repo as pro/feedback.json (or send it to Claude): "Not a fit" pairs are then hidden for good, and Pitched and Won show on the match and count toward the hit rate. ${MX.feedback?`So far: ${MX.feedback.pitched} pitched, ${MX.feedback.won} won, ${MX.feedback.nofit} not a fit.`:""}</p>
+  <div class="toolrow"><button class="ghost" id="fbexp">Export feedback (${Object.keys(fbk.all()).length})</button></div>
   <p class="note-s">Rebuilt ${esc(MX.generated)} from the full archive.</p>`;
   const inp=$("mq");
   inp.onchange=()=>{const v=inp.value.trim().toLowerCase();const hit=Object.entries(pool).find(([,r])=>r.n.toLowerCase()===v)||Object.entries(pool).find(([,r])=>r.n.toLowerCase().includes(v));if(hit){m.slug=hit[0];drawMatches();window.scrollTo(0,0)}};
   $("view").onclick=e=>{
     const sd=e.target.closest("[data-mside]");if(sd){m.side=sd.dataset.mside;m.slug=null;drawMatches();return}
+    const fb=e.target.closest("[data-fb]");if(fb){const w=fb.closest(".fb");const now=fbk.set(w.dataset.fbp,w.dataset.fbb,fb.dataset.fb);w.querySelectorAll(".fbb").forEach(x=>x.classList.toggle("on",x.dataset.fb===now));const ex=$("fbexp");if(ex)ex.textContent=`Export feedback (${Object.keys(fbk.all()).length})`;return}
+    if(e.target.id==="fbexp"){const a=fbk.all();const items=Object.entries(a).map(([k,s])=>{const [p,b]=k.split("|");return {p,b,s,d:new Date().toISOString().slice(0,10)}});const blob=new Blob([JSON.stringify({items},null,1)],{type:"application/json"});const l=document.createElement("a");l.href=URL.createObjectURL(blob);l.download="feedback.json";document.body.appendChild(l);l.click();l.remove();return}
     if(e.target.id==="mcsv"){const x=state.mExport;csv([[x.side==="p"?"Property":"Brand","Rank",x.side==="p"?"Brand":"Property","Match","Band","Confidence","Why","Flags","Fit","Gap","Timing","Capacity","Appetite"],...x.rows.map((r,i)=>{const pts=x.side==="p"?r.p:r.pt;return [x.rec.n,i+1,r.n,r.x,r.k,r.f,(r.w||[]).join("; "),(r.g||[]).join("; "),pts[1],pts[4],pts[0],pts[2],pts[3]]})],`sss-pro-matches-${m.slug}.csv`)}
   };
 }

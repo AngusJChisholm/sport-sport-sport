@@ -4071,32 +4071,6 @@
    "endsEst": true
   },
   {
-   "date": "2026-09-28",
-   "added": "2026-10-02",
-   "deal": "Coca-Cola Europacific Partners PNG × PNG Chiefs",
-   "sport": "NRL",
-   "type": "Premier partner",
-   "region": "ANZ",
-   "lead": true,
-   "headline": "Coke backs the Chiefs early.",
-   "summary": "Sleeve branding and non-alcoholic beverage rights, two years before the club's debut.",
-   "slug": "2026-10-02-coca-cola-europacific-partners-png-png-chiefs",
-   "article": {
-    "standfirst": "An NRL franchise that won't play its first match for two years just landed Coca-Cola as a premier partner.",
-    "body": [
-     "Coca-Cola Europacific Partners PNG has signed on as premier partner of the PNG Chiefs, the NRL's new Papua New Guinea franchise debuting in 2028. The deal includes exclusive jersey sleeve branding and exclusive non-alcoholic beverage rights across matchdays and hospitality.",
-     "Rugby league is close to a national obsession in Papua New Guinea, and brands have eyed it for years as a market the NRL couldn't ignore. A beverage giant backing the team before it's played a game signals confidence that passion converts into commercial value, not just expansion goodwill."
-    ],
-    "close": "Expect more brands to treat PNG's NRL entry as a market play, not a novelty."
-   },
-   "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97",
-   "tier": "Principal & major",
-   "status": "New",
-   "term": 2,
-   "ends": 2028,
-   "endsEst": true
-  },
-  {
    "date": "2026-10-01",
    "added": "2026-10-02",
    "deal": "ASICS × Netball Australia",
@@ -5701,18 +5675,6 @@
    "tier": "Official partner",
    "status": "New",
    "ends": 2026
-  },
-  {
-   "date": "2026-05-28",
-   "added": "2026-05-28",
-   "deal": "HITIQ × Ebony Marinoff / Jamal Fogarty",
-   "sport": "Multi-sport",
-   "type": "Athlete endorsement",
-   "region": "ANZ",
-   "summary": "Ambassadors for the PROTEQT smart mouthguard.",
-   "url": "https://www.bandt.com.au/spotlight-on-sponsors-harvey-norman-backs-aussie-athletes-in-commonwealth-games-gold-hunt/",
-   "tier": "Ambassador & endorsement",
-   "status": "New"
   },
   {
    "date": "2026-05-27",
@@ -10118,7 +10080,8 @@
    "status": "New",
    "ends": 2026,
    "url": "https://cms.vrc.com.au/latest-news/kirin-ichiban-tapped-as-the-new-official-beer/",
-   "endsEst": true
+   "endsEst": true,
+   "ended": 2026
   },
   {
    "date": "2025-09-09",
@@ -10570,17 +10533,6 @@
   },
   {
    "date": "2026-06-04",
-   "deal": "EQT × ATP Tour",
-   "sport": "Tennis",
-   "type": "Platinum partner",
-   "region": "Global",
-   "summary": "EQT joins the ATP as a platinum partner.",
-   "url": "https://sportsmintmedia.com/eqt-joins-atps-platinum-partner-portfolio-in-new-global-sponsorship-deal/",
-   "tier": "Principal & major",
-   "status": "New"
-  },
-  {
-   "date": "2026-06-04",
    "deal": "Socios.com × Inter Milan",
    "sport": "Football",
    "type": "Extension",
@@ -10772,17 +10724,6 @@
    "url": "https://sportsmintmedia.com/everton-retain-stake-with-new-sleeve-sponsorship-deal/",
    "tier": "Shirt & kit placement",
    "status": "Renewal"
-  },
-  {
-   "date": "2026-07-01",
-   "deal": "3M × Cadillac F1",
-   "sport": "Motorsport",
-   "type": "Technical partner",
-   "region": "Global",
-   "summary": "3M partners with the Cadillac F1 team.",
-   "url": "https://sportsmintmedia.com/cadillac-formula-1-team-deepens-technical-capabilities-with-3m-partnership/",
-   "tier": "Official partner",
-   "status": "New"
   },
   {
    "date": "2026-06-30",
@@ -13417,18 +13358,6 @@
   },
   {
    "date": "2025-08-27",
-   "deal": "Resilience × NSW Waratahs",
-   "sport": "Rugby union",
-   "type": "Principal partner",
-   "region": "ANZ",
-   "summary": "Resilience becomes Waratahs principal partner through 2028.",
-   "tier": "Principal & major",
-   "status": "New",
-   "ends": 2028,
-   "needsSource": true
-  },
-  {
-   "date": "2025-08-27",
    "deal": "Sky NZ × New Zealand Rugby",
    "sport": "Rugby union",
    "type": "Broadcast rights",
@@ -13473,17 +13402,6 @@
    "summary": "Step One sponsors Ford Aussie Hoops.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
-  },
-  {
-   "date": "2025-08-27",
-   "deal": "Mobil Card × Melbourne United",
-   "sport": "Basketball",
-   "type": "Renewal",
-   "region": "ANZ",
-   "summary": "Mobil Card renews with Melbourne United for a sixth year.",
-   "tier": "Official partner",
-   "status": "Renewal",
    "needsSource": true
   },
   {
@@ -18056,17 +17974,6 @@
    "summary": "Ram signs a TKO partnership across UFC and WWE.",
    "url": "https://sportsmintmedia.com/ram-accelerates-into-combat-sports-with-new-tko-partnership/",
    "tier": "Official partner",
-   "status": "New"
-  },
-  {
-   "date": "2025-12-01",
-   "deal": "Visit Qatar × Audi F1",
-   "sport": "Motorsport",
-   "type": "Principal partner",
-   "region": "Global",
-   "summary": "Visit Qatar becomes Audi F1's principal partner.",
-   "url": "https://sportsmintmedia.com/audi-f1-strengthens-commercial-lineup-with-visit-qatar-principal-deal/",
-   "tier": "Principal & major",
    "status": "New"
   },
   {
@@ -23465,7 +23372,7 @@
   },
   {
    "date": "2026-02-04",
-   "deal": "Dunlop × Supercars",
+   "deal": "Dunlop Tyres × Supercars",
    "sport": "Motorsport",
    "type": "Extension",
    "region": "ANZ",
@@ -24004,17 +23911,6 @@
    "url": "https://ministryofsport.com/manly-sea-eagles-upgrade-and-extend-partnership-with-volvo-cars-mosman/",
    "tier": "Official partner",
    "status": "Extension"
-  },
-  {
-   "date": "2025-12-09",
-   "deal": "Paulaner × Audi F1 Team",
-   "sport": "Motorsport",
-   "type": "Official supplier",
-   "region": "Global",
-   "summary": "Long-term Paulaner deal with Audi's F1 team",
-   "url": "https://ministryofsport.com/audi-f1-team-secures-paulaner-brewery-as-official-supplier/",
-   "tier": "Official partner",
-   "status": "New"
   },
   {
    "date": "2025-12-09",
@@ -39730,18 +39626,6 @@
   },
   {
    "listed": "2026-10-30",
-   "deal": "Oxen × Dolphins",
-   "sport": "NRL",
-   "type": "Premier partner",
-   "region": "ANZ",
-   "summary": "Listed as a premier partner on the club's official partners page.",
-   "url": "https://www.dolphinsnrl.com.au/partners/",
-   "tier": "Principal & major",
-   "status": "Current partner",
-   "ptier": "Premier partner"
-  },
-  {
-   "listed": "2026-10-30",
    "deal": "Classic Sportswear × Dolphins",
    "sport": "NRL",
    "type": "Premier partner",
@@ -47676,66 +47560,6 @@
   },
   {
    "listed": "2026-11-03",
-   "deal": "Zurich × Melbourne",
-   "sport": "AFL",
-   "type": "Principal partner",
-   "region": "ANZ",
-   "summary": "Listed as a principal partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners",
-   "tier": "Principal & major",
-   "status": "Current partner",
-   "ptier": "Principal partner"
-  },
-  {
-   "listed": "2026-11-03",
-   "deal": "Polestar × Melbourne",
-   "sport": "AFL",
-   "type": "Principal partner",
-   "region": "ANZ",
-   "summary": "Listed as a principal partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners",
-   "tier": "Principal & major",
-   "status": "Current partner",
-   "ptier": "Principal partner"
-  },
-  {
-   "listed": "2026-11-03",
-   "deal": "Penrite Oil × Melbourne",
-   "sport": "AFL",
-   "type": "Major partner",
-   "region": "ANZ",
-   "summary": "Listed as a major partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners",
-   "tier": "Principal & major",
-   "status": "Current partner",
-   "ptier": "Major partner"
-  },
-  {
-   "listed": "2026-11-03",
-   "deal": "LEGO Australia × Melbourne",
-   "sport": "AFL",
-   "type": "Official partner",
-   "region": "ANZ",
-   "summary": "Listed as an official partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners",
-   "tier": "Official partner",
-   "status": "Current partner",
-   "ptier": "Official partner"
-  },
-  {
-   "listed": "2026-11-03",
-   "deal": "Harcourts × Melbourne",
-   "sport": "AFL",
-   "type": "Official partner",
-   "region": "ANZ",
-   "summary": "Listed as an official partner on Melbourne's official partners page.",
-   "url": "https://www.melbournefc.com.au/partners",
-   "tier": "Official partner",
-   "status": "Current partner",
-   "ptier": "Official partner"
-  },
-  {
-   "listed": "2026-11-03",
    "deal": "Melbourne Airport Parking × Melbourne",
    "sport": "AFL",
    "type": "Official partner",
@@ -48191,6 +48015,200 @@
    "type": "Subscription broadcast partner",
    "summary": "Under the AFL's 2025-2031 broadcast deal, every AFLW match is live on Foxtel and Kayo with a dedicated Fox Footy commentary team.",
    "url": "https://www.afl.com.au/aflw/news/1001134/what-the-new-broadcast-deal-means-for-the-aflw"
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2026-07-07",
+   "deal": "Nine × NRL",
+   "sport": "NRL",
+   "type": "Free-to-air broadcast partner",
+   "status": "Renewal",
+   "term": 7,
+   "ends": 2034,
+   "url": "https://www.adnews.com.au/news/nine-and-foxtel-keep-and-extend-nrl-rights",
+   "summary": "Nine renews its NRL rights for 2028-2034 in a $5.3 billion deal with Nine, Foxtel and Sky NZ, keeping State of Origin, the Grand Final, finals and three live games a week."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2026-07-07",
+   "deal": "Foxtel × NRL",
+   "sport": "NRL",
+   "type": "Subscription broadcast partner",
+   "status": "Renewal",
+   "term": 7,
+   "ends": 2034,
+   "url": "https://www.adnews.com.au/news/nine-and-foxtel-keep-and-extend-nrl-rights",
+   "summary": "Foxtel extends its NRL partnership to 2034 in the $5.3 billion deal, with every NRL and NRLW premiership and finals match live on Foxtel and Kayo."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2026-07-07",
+   "deal": "Sky NZ × NRL",
+   "sport": "NRL",
+   "type": "NZ broadcast partner",
+   "status": "Renewal",
+   "term": 7,
+   "ends": 2034,
+   "url": "https://www.adnews.com.au/news/nine-and-foxtel-keep-and-extend-nrl-rights",
+   "summary": "Sky NZ renews its NRL rights for 2028-2034 as part of the $5.3 billion deal, with more than 130 games on its free platforms."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2025-04-09",
+   "deal": "Nine × Rugby Australia",
+   "sport": "Rugby union",
+   "type": "Broadcast partner",
+   "status": "Renewal",
+   "term": 5,
+   "ends": 2030,
+   "url": "https://www.rugby.com.au/news/rugby-australia-agrees-landmark-broadcast-deal-with-nine-202548",
+   "summary": "Nine and Stan Sport renew Rugby Australia's broadcast rights for 2026-2030, covering Wallabies and Wallaroos Tests and Super Rugby, in a deal worth up to $240 million."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2025-09-01",
+   "deal": "Foxtel × Supercars",
+   "sport": "Motorsport",
+   "type": "Subscription broadcast partner",
+   "status": "Renewal",
+   "ends": 2029,
+   "endsEst": true,
+   "url": "https://www.supercars.com/news/supercars-news-2025-record-breaking-broadcast-deal-foxtel-group-seven-bathurst-1000-2026",
+   "summary": "Foxtel renews its Supercars rights in a record multi-year deal, with every round live on Kayo and Foxtel in UHD."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2025-09-01",
+   "deal": "Seven × Supercars",
+   "sport": "Motorsport",
+   "type": "Free-to-air broadcast partner",
+   "status": "Renewal",
+   "ends": 2029,
+   "endsEst": true,
+   "url": "https://www.supercars.com/news/supercars-news-2025-record-breaking-broadcast-deal-foxtel-group-seven-bathurst-1000-2026",
+   "summary": "Seven keeps Supercars' free-to-air rights to marquee events including the Bathurst 1000 and Gold Coast 500 in the new multi-year deal."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2022-11-11",
+   "deal": "Nine × Tennis Australia",
+   "sport": "Tennis",
+   "type": "Broadcast partner",
+   "status": "Renewal",
+   "term": 5,
+   "ends": 2029,
+   "url": "https://ausopen.com/node/219881",
+   "summary": "Tennis Australia extends its broadcast partnership with Nine for 2025-2029, the biggest deal in its history, covering the AO and summer lead-in events."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2022-11-11",
+   "deal": "Nine × Australian Open",
+   "sport": "Tennis",
+   "type": "Broadcast partner",
+   "status": "Renewal",
+   "term": 5,
+   "ends": 2029,
+   "url": "https://ausopen.com/node/219881",
+   "summary": "Nine holds the Australian Open's domestic broadcast rights for 2025-2029 under Tennis Australia's extension, live and free on Nine and 9Now."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2026-05-22",
+   "deal": "Paramount ANZ × A-Leagues",
+   "sport": "Football",
+   "type": "Broadcast and streaming partner",
+   "status": "Renewal",
+   "term": 3,
+   "ends": 2029,
+   "url": "https://www.paramountanz.com.au/news/paramount-remains-the-home-of-australian-football/",
+   "summary": "Paramount ANZ extends its A-Leagues rights for three seasons to 2028-29, with every match on Paramount+ and a weekly men's game free on Network 10."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2024-08-28",
+   "deal": "Paramount ANZ × Football Australia",
+   "sport": "Football",
+   "type": "Broadcast partner",
+   "status": "New",
+   "ends": 2028,
+   "url": "https://www.advanced-television.com/?p=247692",
+   "summary": "Paramount signs a multi-year deal to broadcast Socceroos and Matildas games on Network 10 and Paramount+ through to 2028."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2023-01-03",
+   "deal": "Foxtel × Cricket Australia",
+   "sport": "Cricket",
+   "type": "Subscription broadcast partner",
+   "status": "Renewal",
+   "term": 7,
+   "ends": 2031,
+   "url": "https://www.cricket.com.au/news/foxtel-seven-west-media-television-broadcast-rights-australian-cricket-2031-kayo-7plus-big-bash-bbl/2023-01-03",
+   "summary": "Foxtel renews its Cricket Australia rights for 2024-25 to 2030-31 in a $1.512 billion deal with Foxtel and Seven, with every match live on Fox Cricket and Kayo."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2023-01-03",
+   "deal": "Seven × Big Bash League",
+   "sport": "Cricket",
+   "type": "Free-to-air broadcast partner",
+   "status": "Renewal",
+   "term": 7,
+   "ends": 2031,
+   "url": "https://www.cricket.com.au/news/foxtel-seven-west-media-television-broadcast-rights-australian-cricket-2031-kayo-7plus-big-bash-bbl/2023-01-03",
+   "summary": "Seven keeps free-to-air rights to most BBL and WBBL matches to 2030-31 under Cricket Australia's $1.512 billion deal."
+  },
+  {
+   "added": "2026-11-05",
+   "region": "ANZ",
+   "tier": "Media & broadcast",
+   "tierLock": true,
+   "date": "2023-01-03",
+   "deal": "Foxtel × Big Bash League",
+   "sport": "Cricket",
+   "type": "Subscription broadcast partner",
+   "status": "Renewal",
+   "term": 7,
+   "ends": 2031,
+   "url": "https://www.cricket.com.au/news/foxtel-seven-west-media-television-broadcast-rights-australian-cricket-2031-kayo-7plus-big-bash-bbl/2023-01-03",
+   "summary": "Foxtel and Kayo show every BBL match to 2030-31, including 10 exclusive games, under Cricket Australia's $1.512 billion deal."
   }
  ]
 }

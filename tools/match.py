@@ -302,6 +302,49 @@ class Model:
         return out if keep_all else out[:top]
 
 
+    def slots(self, p):
+        """Slot map: every sub-category this property or its peers have filled, marked sold, ending or open."""
+        yr = self.now // 12
+        peers = self.peers(p)
+        have = collections.defaultdict(list)
+        for r in self.P[p]:
+            sub = self.sub.get(r["b"])
+            if r["live"] and sub:
+                have[sub].append(r)
+        subs = set(have)
+        for q in peers:
+            subs |= self.live_sub[q]
+        out = []
+        for sub in subs:
+            adopt = sum(1 for q in peers if sub in self.live_sub[q])
+            rs = have.get(sub, [])
+            if not rs and adopt < 2:
+                continue
+            cat = next((self.cat.get(r["b"]) for r in rs), None)
+            if not cat:
+                for q in peers:
+                    for r in self.P[q]:
+                        if self.sub.get(r["b"]) == sub:
+                            cat = self.cat.get(r["b"]); break
+                    if cat:
+                        break
+            if rs:
+                ends = [r["d"].get("ends") for r in rs if r["d"].get("ends")]
+                firm = self.sub_hold[p].get(sub)
+                ending = (ends and min(ends) <= yr + 1) or not firm
+                names = []
+                for r in sorted(rs, key=lambda r: -r["ym"]):
+                    n = self.ent.get(r["b"], {}).get("name") or self.name.get(r["b"], r["b"])
+                    if n not in names:
+                        names.append(n)
+                out.append({"u": sub, "c": cat or "", "st": "ending" if ending else "sold", "b": names[:3],
+                            "e": min(ends) if ends else None, "a": adopt, "n": len(peers)})
+            else:
+                out.append({"u": sub, "c": cat or "", "st": "open", "b": [], "e": None, "a": adopt, "n": len(peers)})
+        order = {"open": 0, "ending": 1, "sold": 2}
+        out.sort(key=lambda x: (order[x["st"]], -x["a"], x["u"]))
+        return out
+
     def entrants(self, p, top=8):
         """International brands that could come into Australia/NZ through property p.
 
@@ -370,6 +413,35 @@ class Model:
         return out[:top]
 
 
+def verified_dates(ent):
+    """Property slug -> date its official partners page was last checked (coverage.json lastChecked)."""
+    look = {}
+    for slug, x in ent.items():
+        look[norm(x["name"])] = slug
+        for a in x.get("aliases", []):
+            look[norm(a)] = slug
+    out = {}
+    try:
+        cov = json.loads((ROOT / "coverage.json").read_text(encoding="utf-8"))
+    except Exception:
+        return out
+    for c in cov.get("properties", []):
+        if c.get("lastChecked"):
+            out[look.get(norm(c["name"])) or slugify(c["name"])] = c["lastChecked"]
+    return out
+
+
+def load_feedback():
+    """pro/feedback.json: [{"p": property slug, "b": brand slug, "s": "nofit"|"pitched"|"won", "d": date}].
+    Exported from the Matches tab. "nofit" hides the pair; "pitched" and "won" show as flags and count toward
+    the hit rate."""
+    try:
+        fb = json.loads((ROOT / "pro" / "feedback.json").read_text(encoding="utf-8"))
+        return {(x["p"], x["b"]): x["s"] for x in fb.get("items", []) if x.get("p") and x.get("b")}
+    except Exception:
+        return {}
+
+
 def join(xs):
     return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " and " + xs[-1]
 
@@ -420,21 +492,33 @@ def main():
     today = datetime.date.today()
     m = Model(ent, deals, league_of, today.year * 12 + today.month - 1)
     nm = lambda s: m.ent.get(s, {}).get("name") or m.name.get(s, s)
+    ver, fb = verified_dates(ent), load_feedback()
+
+    def apply_fb(p, rows):
+        keep = []
+        for row in rows:
+            st = fb.get((p, row[1]))
+            if st == "nofit":
+                continue
+            if st:
+                row[4].append({"pitched": "Pitched", "won": "Won"}[st])
+            keep.append(row)
+        return keep
     props, brands, entry = {}, collections.defaultdict(list), collections.defaultdict(list)
     for p, rs in m.P.items():
         if len(rs) < 3:
             continue
-        res = m.score_property(p, top=200)
-        ent_list = m.entrants(p)
-        props[p] = {"n": nm(p), "s": m.sport[p], "r": m.reach[p], "t": m.pclass[p],
+        res = apply_fb(p, m.score_property(p, top=200))
+        ent_list = apply_fb(p, m.entrants(p))
+        props[p] = {"n": nm(p), "s": m.sport[p], "r": m.reach[p], "t": m.pclass[p], "v": ver.get(p), "sl": m.slots(p),
                     "e": [{"b": b, "n": nm(b), "c": m.cat.get(b) or "", "u": m.sub.get(b) or "", "x": sc, "f": conf, "p": parts, "w": why, "g": flags}
                           for sc, b, parts, why, flags, conf in ent_list],
                     "m": [{"b": b, "n": nm(b), "c": m.cat.get(b) or "", "u": m.sub.get(b) or "", "x": sc, "k": band(sc), "f": conf, "p": parts, "w": why, "g": flags}
                           for sc, b, parts, why, flags, conf in res[:TOPN]]}
         for sc, b, parts, why, flags, conf in ent_list:
-            entry[b].append({"p": p, "n": nm(p), "s": m.sport[p], "r": m.reach[p], "x": sc, "f": conf, "pt": parts, "w": why, "g": flags})
+            entry[b].append({"p": p, "n": nm(p), "s": m.sport[p], "r": m.reach[p], "v": ver.get(p), "x": sc, "f": conf, "pt": parts, "w": why, "g": flags})
         for sc, b, parts, why, flags, conf in res:
-            brands[b].append({"p": p, "n": nm(p), "s": m.sport[p], "r": m.reach[p], "x": sc, "k": band(sc), "f": conf, "pt": parts, "w": why, "g": flags})
+            brands[b].append({"p": p, "n": nm(p), "s": m.sport[p], "r": m.reach[p], "v": ver.get(p), "x": sc, "k": band(sc), "f": conf, "pt": parts, "w": why, "g": flags})
     bout = {}
     for b in set(brands) | set(entry):
         if len(m.B.get(b, [])) < 2:
@@ -442,7 +526,10 @@ def main():
         lst = sorted(brands.get(b, []), key=lambda x: -x["x"])
         ent_r = sorted(entry.get(b, []), key=lambda x: -x["x"])
         bout[b] = {"n": nm(b), "c": m.cat.get(b) or "", "u": m.sub.get(b) or "", "m": lst[:TOPN], "e": ent_r[:TOPN]}
-    out = {"generated": today.isoformat(), "version": 3, "backtest": bt, "props": props, "brands": bout}
+    fbs = collections.Counter(fb.values())
+    feedback = {"nofit": fbs.get("nofit", 0), "pitched": fbs.get("pitched", 0), "won": fbs.get("won", 0)}
+    out = {"generated": today.isoformat(), "version": 4, "backtest": bt, "verified": sum(1 for p in props if props[p]["v"]),
+           "feedback": feedback, "props": props, "brands": bout}
     (ROOT / "pro").mkdir(exist_ok=True)
     (ROOT / "pro" / "matches.json").write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"Wrote pro/matches.json: {len(props)} properties, {len(bout)} brands")

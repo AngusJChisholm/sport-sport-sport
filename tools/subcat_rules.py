@@ -25,7 +25,7 @@ SUBS = {
     ],
     "Food & nutrition": [
         ("Food delivery", r"doordash|uber eats|menulog|deliveroo|hellofresh|youfoodz|marley spoon|dinnerly|my muscle chef"),
-        ("Quick service food", r"mcdonald|kfc|hungry jack|burger king|domino|pizza|subway|guzman|grill'd|nando|red rooster|oporto|zambrero|el jannah|jersey mike|chicken|taco"),
+        ("Quick service food", r"mcdonald'?s|maccas|kfc|hungry jack|burger king|domino|pizza|subway|guzman|grill'd|nando|red rooster|oporto|zambrero|el jannah|jersey mike|chicken|taco"),
         ("Snacks & confectionery", r"cadbury|mondelez|mars\b|wrigley|chocolate|lolly|lollies|confection|smith's|doritos|pringles|lay's|frito|arnott|snack|allen's|natural confectionery|m&m|snickers|kitkat"),
         ("Supplements & protein", r"protein|supplement|bulk nutrients|optimum nutrition|musashi|ehp|myprotein|vitamin|ezz"),
         ("Packaged food", r"nestle|kellogg|uncle tobys|weet-bix|sanitarium|heinz|maggi|masterfoods|old el paso|mccain|continental|bakery|bread|tip top|cereal|meat|beef|lamb|pork|seafood|steggles|ingham|ice cream|streets|peters|bulla|food"),
@@ -41,9 +41,11 @@ SUBS = {
         ("General insurance", r"aami|nrma|racv|racq|allianz|axa|zurich|generali|youi|budget direct|suncorp|qbe|iag\b|gio\b|chubb|1cover|real insurance|howden|jab insurance|insurance|insurer|broker"),
     ],
     "Automotive": [
-        ("Tyres", r"tyre|tire|bridgestone|pirelli|michelin|goodyear|continental|dunlop|beaurepaires|kumho|hankook|yokohama"),
-        ("Oils & parts", r"oil\b|castrol|penrite|mobil|valvoline|repco|supercheap|parts|bosch car|ngk"),
-        ("Car makers", r"."),
+        ("Tyres", r"tyre|tire|bridgestone|pirelli|michelin|goodyear|continental|beaurepaires|kumho|hankook|yokohama|tyrepower"),
+        ("Oils & parts", r"oil\b|castrol|penrite|mobil|valvoline|repco|supercheap|parts|bosch car|ngk|niterra|ntk|midas"),
+        ("Motorcycles", r"yamaha|ducati|ktm|harley|kawasaki|husqvarna|triumph|royal enfield|hero vida|hero moto|aprilia|vespa|suzuki moto"),
+        ("Car dealers", r"motors\b|motor group|dealer|autos\b|village motors|sci-fleet|motor scout|autograb|carsales|car ?finance"),
+        ("Car makers", r"^(toyota|hyundai|kia|ford|holden|mazda|nissan|honda|subaru|mitsubishi|isuzu|gwm|great wall|haval|byd|tesla|bmw|mercedes|mercedes-benz|audi|volkswagen|vw|skoda|porsche|ferrari|lamborghini|cupra|seat|volvo|polestar|jeep|ram|chevrolet|cadillac|lexus|genesis|mg|ldv|chery|omoda|jaecoo|kgm|ssangyong|gac|zeekr|xpeng|nio|leapmotor|renault|peugeot|citroen|suzuki|land rover|range rover|jaguar|mini|alfa romeo|fiat|maserati|aston martin|bentley|rolls-royce|mclaren automotive|lotus|deepal|smart|geely|lynk|tank|mahindra|tata motors)( (australia|new zealand|nz|motor corporation|motor company|motors|cars|automotive|group))?$"),
     ],
     "Airlines & travel": [
         ("Airlines", r"airline|airways|qantas|jetstar|virgin|air new zealand|emirates|etihad|qatar|singapore airlines|cathay|turkish|delta|united airlines|american airlines|lufthansa|air france|klm|riyadh air|saudia|fly|aviation|flexjet|netjets"),
@@ -91,13 +93,15 @@ SUBS = {
         ("Pharmacy retail", r"chemist warehouse|priceline"),
     ],
     "Apparel & footwear": [
-        ("Fashion & lifestyle", r"boss\b|hugo|ralph lauren|lacoste|tommy|zara|h&m|uniqlo|r\.?m\.? williams|gucci|prada|fred perry|country road|calvin klein|polo"),
-        ("Performance & kit", r"."),
+        ("Kit supplier", r"^(nike|adidas|puma|asics|new balance|under armour|mizuno|kappa|umbro|macron|castore|hummel|joma|kelme|errea|le coq sportif|canterbury|classic sportswear|isc|iscsport|o'neills|oneills|oxen|oxen sport|alpha sport|burley|bla(c)?k|x-blades|reebok|fila|champion|li-ning|anta|peak|xtep|ozone|sekem|kombat|strauss|konqa|sylvia p teamwear|belgravia|saba|valour sport|oneills)( (australia|sport|sports|teamwear))?$"),
+        ("Fashion & lifestyle", r"boss\b|hugo|ralph lauren|lacoste|tommy|zara|h&m|uniqlo|r\.?m\.? williams|gucci|prada|fred perry|country road|calvin klein|polo|superdry|cotton on|kookai|menswear|outfitters|ringers western|ariat|tony barlow|tradie"),
+        ("Activewear & recovery", r"2xu|lululemon|lskd|gymshark|jaggad|skins|blackroll|on running|hoka|skechers|vuori|rhone"),
+        ("Headwear & licensing", r"new era|47 brand|'47|fanatics|mitchell & ness"),
     ],
     "Energy & utilities": [
         ("Fuel & oil", r"ampol|bp\b|shell|chevron|exxon|aramco|petronas|totalenergies|eni\b|caltex|viva energy|petrol|fuel|7-eleven"),
         ("Renewables & solar", r"solar|renewable|wind|vestas|1komma5|tesla energy|hydro|battery"),
-        ("Energy retail", r"."),
+        ("Energy retail", r"^(agl|origin|origin energy|energyaustralia|alinta|alinta energy|red energy|lumo|lumo energy|simply energy|powershop|momentum energy|ovo|ovo energy|engie|tango|dodo power|globird|amber|amber electric|sumo|covau|powerclub|nectr|mojo|kogan energy|meridian|genesis energy|contact energy|mercury|trustpower|electric kiwi|flick|nova energy|iren|aurora energy|synergy|ergon|energex|jemena|actewagl|powerbay)$"),
     ],
     "Telco": [("Telco", r".")],
     "Watches & luxury": [
