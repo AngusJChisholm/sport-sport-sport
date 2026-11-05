@@ -127,3 +127,9 @@ footer.dk .logo:hover{box-shadow:none}
 .disp,.p-h,.nc h3,.hub h3,.chart h3,.cc h3,.ar-r b,.row b,.card h3{font-family:"ArchivoV",var(--font,"Archivo"),"Helvetica Neue",Arial,sans-serif;font-stretch:68%;letter-spacing:-.005em;transform:none!important;width:auto!important}
 .disp{line-height:.88}
 .vb{padding:.02em .1em 0;margin:0 -.04em}
+
+/* Property pages: partners grouped by the property's own tiers (Nov 2026) */
+.pgh{grid-column:1/-1;display:flex;align-items:baseline;gap:12px;margin:40px 0 14px 0;font-family:Archivo,sans-serif;font-weight:800;font-size:clamp(20px,2.4vw,28px);letter-spacing:-.02em;text-transform:uppercase;line-height:1}
+.pgh:first-child{margin-top:4px}
+.pgh span{font-size:12px;letter-spacing:.18em;color:var(--ink-3)}
+.pgh::after{content:"";flex:1;height:3px;background:var(--volt,#D4FF00);align-self:center;max-width:48px}

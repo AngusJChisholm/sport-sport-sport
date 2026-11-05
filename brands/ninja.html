@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&display=swap">
-<link rel="stylesheet" href="assets/profile.css?v=6">
+<link rel="stylesheet" href="assets/profile.css?v=7">
 <link rel="stylesheet" href="assets/follow.css">
 </head>
 <body data-id="ninja">
@@ -74,7 +74,7 @@
 <div class="ft-b"><span>That's the day. Same time tomorrow.</span><span>© <span id="yr">2026</span> Sport Sport Sport</span></div>
 </div></footer>
 
-<script src="assets/logos.js?v=7"></script>
+<script src="assets/logos.js?v=8"></script>
 <script>
 (function(){
 const $=id=>document.getElementById(id);
@@ -84,6 +84,7 @@ const sortKey=d=>d.date||((d.month||"0000-00")+"-00");
 const dObj=d=>d.date?new Date(d.date+"T00:00:00"):new Date((d.month||"2026-01")+"-01T00:00:00");
 const fmt=d=>!d.date&&!d.month?"Current partner":d.date?dObj(d).toLocaleDateString("en-AU",{day:"2-digit",month:"short",year:"numeric"}):dObj(d).toLocaleDateString("en-AU",{month:"short",year:"numeric"});
 const art=d=>d.slug&&d.article?`articles/${encodeURIComponent(d.slug)}.html`:"";
+const plural=t=>/(partner|supplier|supporter|sponsor|provider|ambassador)$/i.test(t=String(t||"").trim())?t+"s":t;
 $("yr").textContent=new Date().getFullYear();
 
 function none(){$("name").textContent="Not found";$("crName").textContent="Not found";$("none").hidden=false;$("top").hidden=true}
@@ -128,7 +129,18 @@ Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()])
   $("pLbl").textContent=kind==="Brand"?"Their sport partners":"Their brand partners";
   $("pHead").textContent=kind==="Brand"?"Who they've signed with.":"Who's signed with them.";
   const nPast=ps.filter(m=>m.past).length;$("pCount").textContent=`${ps.length-nPast} current`+(nPast?` · ${nPast} past`:"");
-  $("pGrid").innerHTML=ps.map(m=>`<a class="pt${m.past?" past":""}" href="${esc(L.page(m.e.slug))}">${L.mark(m.e,{px:64})}<b>${esc(m.e.name)}</b><span class="k">${m.past?"Past partner"+(yrs(m)?" · "+esc(yrs(m)):""):(m.n>1?m.n+" deals · ":"")+esc([...m.sports].join(", "))}</span></a>`).join("");
+  // Property pages: partners grouped the way the property's own partners page groups them (ptier on each deal,
+  // ptiers on the property for the order). SSS's own deal types stay in the data for filters and insights.
+  const isP=kind==="Rights holder";
+  if(isP)mine.forEach(d=>{if(onB(d)||!d.ptier||d.ended)return;const m=d._b&&map.get(d._b.slug);if(m&&!m.pt){m.pt=d.ptier;m.title=d.ptitle||""}});
+  const tile=m=>`<a class="pt${m.past?" past":""}" href="${esc(L.page(m.e.slug))}">${L.mark(m.e,{px:64})}<b>${esc(m.e.name)}</b><span class="k">${m.past?"Past partner"+(yrs(m)?" · "+esc(yrs(m)):""):m.title?esc(m.title):(m.n>1?m.n+" deals · ":"")+esc([...m.sports].join(", "))}</span></a>`;
+  const order=isP?[...(e.ptiers||[])]:[];
+  if(isP)ps.forEach(m=>{if(m.pt&&!m.past&&!order.includes(m.pt))order.push(m.pt)});
+  if(order.length){
+    const cur=ps.filter(m=>!m.past);
+    const groups=[...order.map(t=>[t,cur.filter(m=>m.pt===t)]),["Other partners",cur.filter(m=>!m.pt)],["Past partners",ps.filter(m=>m.past)]];
+    $("pGrid").innerHTML=groups.filter(g=>g[1].length).map(([t,ms])=>`<h3 class="pgh">${esc(plural(t))}<span>${ms.length}</span></h3>`+ms.map(tile).join("")).join("");
+  }else $("pGrid").innerHTML=ps.map(tile).join("");
   $("partners").hidden=!ps.length;
 
   // Category map (properties): partners by brand category, plus the common categories with nothing filed.
@@ -154,7 +166,7 @@ Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()])
     $("list").innerHTML=r.map(d=>{const a=art(d);
       const name=a?`<a href="${esc(a)}"><b>${esc(d.deal)}</b></a>`:(d.url&&/^https:\/\//.test(d.url)?`<a href="${esc(d.url)}" target="_blank" rel="noopener"><b>${esc(d.deal)}</b></a>`:`<b>${esc(d.deal)}</b>`);
       const pm=pastOf(d);
-      return `<div class="ar-r${pm?" past":""}"><span class="d">${esc(fmt(d))}</span><span class="dl">${L.pair(d,{px:40})}${name}</span><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.tier||d.type||"")}</span><span class="d">${pm?esc(yrs(pm)||"Past"):d.ends?(d.endsEst?"c. ":"")+d.ends:"–"}</span></div>`}).join("");
+      return `<div class="ar-r${pm?" past":""}"><span class="d">${esc(fmt(d))}</span><span class="dl">${L.pair(d,{px:40})}${name}</span><span class="s">${esc(d.sport)}</span><span class="t">${esc((isP&&!onB(d)&&d.ptier)||d.tier||d.type||"")}</span><span class="d">${pm?esc(yrs(pm)||"Past"):d.ends?(d.endsEst?"c. ":"")+d.ends:"–"}</span></div>`}).join("");
     $("pills").innerHTML=sports.length>1?["All",...sports].map(s=>`<button type="button" class="pill${s===sport?" on":""}" data-s="${esc(s)}" aria-pressed="${s===sport}">${esc(s)}</button>`).join(""):"";
   };
   $("pills").onclick=ev=>{const b=ev.target.closest("[data-s]");if(!b)return;sport=b.dataset.s;draw()};

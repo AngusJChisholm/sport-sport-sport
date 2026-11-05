@@ -1,13 +1,13 @@
 name: Enrich deals and build brand/property pages
 
 # Runs whenever deals.json or entities.json changes (e.g. the 6am update). Adds deal type, term and end
-# year to new deals (tools/enrich.py), then rebuilds the page for every brand and property plus the
+# year to new deals (tools/enrich.py), files each property's own partner tiers (tools/ptiers.py), then rebuilds the page for every brand and property plus the
 # sitemap (tools/build_profiles.py), then rebuilds SSS Pro's partner matches and their backtest (tools/match.py).
 # Its own commit triggers one more run, which finds nothing to do.
 on:
   push:
     branches: [main]
-    paths: ["deals.json", "entities.json", "profile.html", "tools/enrich.py", "tools/build_profiles.py", "tools/match.py", "tools/subcat_rules.py"]
+    paths: ["deals.json", "entities.json", "profile.html", "tools/enrich.py", "tools/build_profiles.py", "tools/ptiers.py", "tools/match.py", "tools/subcat_rules.py"]
   workflow_dispatch:
 
 concurrency:
@@ -27,6 +27,9 @@ jobs:
 
       - name: Enrich new deals
         run: python3 tools/enrich.py
+
+      - name: Property tiers (each property's own partner groupings)
+        run: cd tools && python3 ptiers.py
 
       - name: Build brand and property pages
         run: python3 tools/build_profiles.py

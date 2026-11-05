@@ -569,7 +569,11 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Supporting partner"
+   ]
   },
   "adelaide-crows": {
    "name": "Adelaide Crows",
@@ -579,7 +583,12 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Premier partner",
+    "Official partner"
+   ]
   },
   "adelaide-grand-final": {
    "name": "Adelaide Grand Final",
@@ -614,7 +623,15 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Official partner",
+    "Apparel partner",
+    "Media partner",
+    "Official supplier"
+   ]
   },
   "adelaide-united": {
    "name": "Adelaide United",
@@ -626,7 +643,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Platinum partner",
+    "Premier partner",
+    "Gold partner",
+    "Silver partner",
+    "Official partner"
+   ]
   },
   "adelaide-university": {
    "name": "Adelaide University",
@@ -850,7 +874,13 @@
     "icon"
    ],
    "ptype": "League & competition",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Premier partner",
+    "Associate partner",
+    "Official partner"
+   ]
   },
   "afl-northern-territory": {
    "name": "AFL Northern Territory",
@@ -2595,7 +2625,10 @@
    "bf": [
     "icon"
    ],
-   "reach": "Global"
+   "reach": "Global",
+   "ptiers": [
+    "Event supporter"
+   ]
   },
   "australian-motors-wayville": {
    "name": "Australian Motors Wayville",
@@ -2636,7 +2669,12 @@
    "bf": [],
    "ptype": "Event",
    "k": "p",
-   "reach": "Global"
+   "reach": "Global",
+   "ptiers": [
+    "Major partner",
+    "Associate partner",
+    "Official partner"
+   ]
   },
   "australian-open-golf": {
    "name": "Australian Open (golf)",
@@ -4281,7 +4319,13 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Official partner",
+    "Media partner",
+    "Official supplier"
+   ]
   },
   "brisbane-heat": {
    "name": "Brisbane Heat",
@@ -4299,7 +4343,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Premier partner",
+    "Official partner",
+    "Media partner",
+    "Official supplier"
+   ]
   },
   "brisbane-racing-club": {
    "name": "Brisbane Racing Club",
@@ -4321,7 +4372,13 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Platinum partner",
+    "Silver partner",
+    "Official partner",
+    "Medical partner"
+   ]
   },
   "british-and-irish-lions": {
    "name": "British & Irish Lions",
@@ -4792,7 +4849,12 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Naming rights",
+    "Major partner",
+    "Official supplier"
+   ]
   },
   "caitlin-clark": {
    "name": "Caitlin Clark",
@@ -4904,7 +4966,11 @@
    ],
    "bf": [],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "NRLW major partner",
+    "Major partner"
+   ]
   },
   "cancer-council": {
    "name": "Cancer Council",
@@ -4958,7 +5024,14 @@
    "domain": "bulldogs.com.au",
    "bf": [],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Premier partner",
+    "Category partner",
+    "Apparel partner",
+    "Membership partner"
+   ]
   },
   "canterbury-league-club": {
    "name": "Canterbury League Club",
@@ -5122,7 +5195,17 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Platinum partner",
+    "Gold partner",
+    "Official partner",
+    "Official supplier",
+    "University partner",
+    "Member partner",
+    "Sustainability partner"
+   ]
   },
   "carlton-and-united-breweries": {
    "name": "Carlton & United Breweries",
@@ -6237,7 +6320,13 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Platinum partner",
+    "Premier partner",
+    "Official partner"
+   ]
   },
   "colorado-avalanche": {
    "name": "Colorado Avalanche",
@@ -6869,7 +6958,12 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Premier partner",
+    "NRLW partner"
+   ]
   },
   "crowlz": {
    "name": "Crowlz",
@@ -7647,7 +7741,13 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Premier partner",
+    "Gold partner",
+    "Official partner"
+   ]
   },
   "dominance-guardian-services": {
    "name": "Dominance Guardian Services",
@@ -8566,7 +8666,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Official partner",
+    "Guernsey partner",
+    "Apparel partner",
+    "Official supplier",
+    "Supply partner"
+   ]
   },
   "essential-coffee": {
    "name": "Essential Coffee",
@@ -9581,7 +9688,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Diamond partner",
+    "Premier partner",
+    "Gold partner",
+    "Silver partner"
+   ]
   },
   "fremantle-derby-club": {
    "name": "Fremantle Derby Club",
@@ -9910,7 +10024,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Elite partner",
+    "Premier partner",
+    "Associate partner",
+    "Advertising partner"
+   ]
   },
   "geelong-united": {
    "name": "Geelong United",
@@ -10226,7 +10347,15 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Official partner",
+    "Partner",
+    "Media partner",
+    "Official supplier",
+    "Stadium partner",
+    "Foundation partner"
+   ]
   },
   "gold-coast-titans": {
    "name": "Gold Coast Titans",
@@ -10236,7 +10365,16 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "NRLW major partner",
+    "Premier partner",
+    "Executive partner",
+    "Associate partner",
+    "Media partner",
+    "Official supplier"
+   ]
   },
   "gold-coast-turf-club": {
    "name": "Gold Coast Turf Club",
@@ -10682,7 +10820,12 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Platinum partner",
+    "Official partner",
+    "Media partner"
+   ]
   },
   "h-and-h-capital": {
    "name": "h&h Capital",
@@ -10948,7 +11091,15 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Naming rights",
+    "Principal partner",
+    "Premier partner",
+    "Gold partner",
+    "Official partner",
+    "Charity partner"
+   ]
   },
   "hay-shed-hill-wines": {
    "name": "Hay Shed Hill Wines",
@@ -11251,7 +11402,12 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Official partner"
+   ]
   },
   "hobsons-bay-dental": {
    "name": "Hobsons Bay Dental",
@@ -11923,7 +12079,13 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Platinum partner",
+    "Premium partner",
+    "Official partner",
+    "Media partner"
+   ]
   },
   "illawarra-mercury": {
    "name": "Illawarra Mercury",
@@ -15080,7 +15242,11 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Official supplier"
+   ]
   },
   "manu-bhaker": {
    "name": "Manu Bhaker",
@@ -15471,7 +15637,14 @@
     "Melbourne FC"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Corporate partner",
+    "Official partner",
+    "Official supplier"
+   ]
   },
   "melbourne-airport": {
    "name": "Melbourne Airport",
@@ -15498,7 +15671,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Premier partner",
+    "Associate partner",
+    "Official supplier"
+   ]
   },
   "melbourne-cup": {
    "name": "Melbourne Cup",
@@ -15516,7 +15696,15 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Diamond partner",
+    "Gold partner",
+    "Official partner",
+    "Official supplier",
+    "Foundation partner"
+   ]
   },
   "melbourne-park": {
    "name": "Melbourne Park",
@@ -15542,7 +15730,12 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Official partner",
+    "Official supplier"
+   ]
   },
   "melbourne-sock-co": {
    "name": "Melbourne Sock Co.",
@@ -15557,14 +15750,23 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Official partner"
+   ]
   },
   "melbourne-storm": {
    "name": "Melbourne Storm",
    "domain": "melbournestorm.com.au",
    "bf": [],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Premium partner",
+    "Official partner",
+    "Official supplier"
+   ]
   },
   "melbourne-united": {
    "name": "Melbourne United",
@@ -15588,7 +15790,15 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Associate partner",
+    "Official partner",
+    "Media partner",
+    "Ticketing partner"
+   ]
   },
   "melbourne-vixens": {
    "name": "Melbourne Vixens",
@@ -15597,7 +15807,13 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Official partner",
+    "Official supplier"
+   ]
   },
   "melitta": {
    "name": "Melitta",
@@ -17298,7 +17514,15 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Platinum partner",
+    "Official partner",
+    "Media partner",
+    "Membership partner",
+    "NRLW partner"
+   ]
   },
   "newcastle-permanent": {
    "name": "Newcastle Permanent",
@@ -17594,6 +17818,11 @@
    "k": "p",
    "aliases": [
     "North Melbourne Kangaroos"
+   ],
+   "ptiers": [
+    "Official partner",
+    "Official supplier",
+    "Charity and community partner"
    ]
   },
   "north-queensland-cowboys": {
@@ -17608,7 +17837,15 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Platinum partner",
+    "Gold partner",
+    "Silver partner",
+    "Official supplier"
+   ]
   },
   "northamptonshire-ccc": {
    "name": "Northamptonshire CCC",
@@ -17833,7 +18070,13 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Premier partner",
+    "Official supplier"
+   ]
   },
   "nsw-waratahs": {
    "name": "NSW Waratahs",
@@ -17908,7 +18151,13 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Naming rights",
+    "Major partner",
+    "Official partner",
+    "Official supplier"
+   ]
   },
   "nz-herald": {
    "name": "NZ Herald",
@@ -17937,7 +18186,13 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Official partner",
+    "Official supplier"
+   ]
   },
   "nzme": {
    "name": "NZME",
@@ -18765,7 +19020,10 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner"
+   ]
   },
   "pat-cash": {
    "name": "Pat Cash",
@@ -18907,7 +19165,11 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Platinum partner"
+   ]
   },
   "pensionbee": {
    "name": "PensionBee",
@@ -19067,7 +19329,10 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Official partner"
+   ]
   },
   "perth-glory": {
    "name": "Perth Glory",
@@ -19077,7 +19342,12 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Official partner"
+   ]
   },
   "perth-lynx": {
    "name": "Perth Lynx",
@@ -19117,7 +19387,12 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Diamond partner",
+    "Platinum partner",
+    "Gold partner"
+   ]
   },
   "peterborough-united": {
    "name": "Peterborough United",
@@ -19624,7 +19899,11 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Platinum partner"
+   ]
   },
   "portadown-fc": {
    "name": "Portadown FC",
@@ -20138,7 +20417,10 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Official partner"
+   ]
   },
   "queensland-government": {
    "name": "Queensland Government",
@@ -20864,7 +21146,16 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Naming rights",
+    "Major partner",
+    "Platinum partner",
+    "Gold partner",
+    "Official supplier",
+    "Diversity and inclusion partner",
+    "Community partner"
+   ]
   },
   "richmond-motor-group": {
    "name": "Richmond Motor Group",
@@ -22917,7 +23208,11 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Official partner"
+   ]
   },
   "south-sydney-rabbitohs": {
    "name": "South Sydney Rabbitohs",
@@ -22930,7 +23225,12 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Platinum partner",
+    "Premier partner"
+   ]
   },
   "south32": {
    "name": "South32",
@@ -23293,7 +23593,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Icon partner",
+    "Executive partner",
+    "Premier partner",
+    "Apparel partner"
+   ]
   },
   "st-george-leagues": {
    "name": "St George Leagues",
@@ -23317,7 +23624,14 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Platinum partner",
+    "Official partner",
+    "Official supplier"
+   ]
   },
   "st-louis-city-sc": {
    "name": "St. Louis City SC",
@@ -23794,7 +24108,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Premium partner",
+    "Official partner",
+    "Media partner",
+    "Official supplier"
+   ]
   },
   "sunshine-plaza": {
    "name": "Sunshine Plaza",
@@ -23959,6 +24280,9 @@
    "bf": [
     "icon",
     "logo"
+   ],
+   "ptiers": [
+    "Event partner"
    ]
   },
   "surfing-super-league": {
@@ -24082,7 +24406,14 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Gold partner",
+    "Silver partner",
+    "Bronze partner",
+    "Pathways partner"
+   ]
   },
   "sydney-kings": {
    "name": "Sydney Kings",
@@ -24092,7 +24423,10 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Official partner"
+   ]
   },
   "sydney-marathon": {
    "name": "Sydney Marathon",
@@ -24109,7 +24443,13 @@
    "domain": "roosters.com.au",
    "bf": [],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Platinum partner",
+    "Premier partner",
+    "Official partner",
+    "Official supplier"
+   ]
   },
   "sydney-showground": {
    "name": "Sydney Showground",
@@ -24128,7 +24468,13 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Official partner",
+    "Media partner"
+   ]
   },
   "sydney-swans": {
    "name": "Sydney Swans",
@@ -24137,7 +24483,13 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Premier partner",
+    "Official partner"
+   ]
   },
   "sydney-thunder": {
    "name": "Sydney Thunder",
@@ -24146,7 +24498,11 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Official partner"
+   ]
   },
   "sydney-tools": {
    "name": "Sydney Tools",
@@ -24359,7 +24715,10 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Official supplier"
+   ]
   },
   "tasmania-jackjumpers": {
    "name": "Tasmania JackJumpers",
@@ -24372,7 +24731,15 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Premium partner",
+    "Official partner",
+    "Official supplier",
+    "Government partner"
+   ]
   },
   "tasmania-jewels": {
    "name": "Tasmania Jewels",
@@ -25471,7 +25838,13 @@
    "aliases": [
     "Santos Tour Down Under"
    ],
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Naming rights",
+    "Major partner",
+    "Premier partner",
+    "Official partner"
+   ]
   },
   "tourism-and-events-moreton-bay": {
    "name": "Tourism and Events Moreton Bay",
@@ -26145,6 +26518,11 @@
    "bf": [
     "icon",
     "logo"
+   ],
+   "ptiers": [
+    "Official partner",
+    "Official supplier",
+    "Host partner"
    ]
   },
   "united-rugby-championship": {
@@ -26653,7 +27031,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Official partner",
+    "Partner",
+    "Broadcast partner"
+   ]
   },
   "victoria-university": {
    "name": "Victoria University",
@@ -27301,7 +27686,10 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Corporate partner"
+   ]
   },
   "wembley-stadium": {
    "name": "Wembley Stadium",
@@ -27333,7 +27721,14 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Platinum partner",
+    "Premier partner",
+    "Official partner",
+    "Official supplier"
+   ]
   },
   "west-coast-fever": {
    "name": "West Coast Fever",
@@ -27342,7 +27737,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Principal partner",
+    "Major partner",
+    "Elite partner",
+    "Official partner",
+    "Official supplier"
+   ]
   },
   "west-ham-united": {
    "name": "West Ham United",
@@ -27371,7 +27773,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Platinum partner",
+    "Premier partner",
+    "Official partner",
+    "Official supplier"
+   ]
   },
   "western-force": {
    "name": "Western Force",
@@ -27481,7 +27890,13 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Platinum partner",
+    "Premier partner",
+    "Gold partner",
+    "Official supplier"
+   ]
   },
   "westside-auto": {
    "name": "Westside Auto",

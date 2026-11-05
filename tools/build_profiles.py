@@ -52,6 +52,11 @@ def fmt(d):
     return "Current partner"
 
 
+def plural_tier(t):  # same as plural() in profile.html: "Platinum partner" -> "Platinum partners"
+    t = str(t or "").strip()
+    return t + "s" if re.search(r"(partner|supplier|supporter|sponsor|provider|ambassador)$", t, re.I) else t
+
+
 def esc(x):
     return html.escape(str(x or ""), quote=True)
 
@@ -137,6 +142,19 @@ def main():
             m = pinfo.get(o[0]) if o else None
             return m if m and m["past"] else None
         partners.sort(key=lambda k: pinfo.get(k, {}).get("past", False))
+        # Property pages: the property's own grouping for each partner (its "ptier", from the official partners page),
+        # taken from the newest current deal with that partner. SSS's own "tier" stays on the deal for filters.
+        pt_of = {}
+        if kind == "p":
+            for d, side in r["deals"]:
+                if side == "p" and d.get("ptier") and not d.get("ended"):
+                    for o in [resolve(x) for x in many(split(d.get("deal"))[0])]:
+                        pt_of.setdefault(o, (d["ptier"], d.get("ptitle") or ""))
+        order = list(e.get("ptiers") or []) if kind == "p" else []
+        for k in partners:
+            t = pt_of.get(k, ("", ""))[0]
+            if t and t not in order:
+                order.append(t)
         rows = []
         for d, side in r["deals"]:
             nm = esc(d.get("deal"))
@@ -150,14 +168,23 @@ def main():
             pm = past_of(d, side)
             if pm:
                 ends = yrs(pm) or "Past"
-            rows.append(f'<div class="ar-r{" past" if pm else ""}"><span class="d">{esc(fmt(d))}</span><span class="dl">{nm}</span><span class="s">{esc(d.get("sport"))}</span><span class="t">{esc(d.get("tier") or d.get("type"))}</span><span class="d">{esc(ends)}</span></div>')
+            dtype = (d.get("ptier") if kind == "p" and side == "p" else None) or d.get("tier") or d.get("type")
+            rows.append(f'<div class="ar-r{" past" if pm else ""}"><span class="d">{esc(fmt(d))}</span><span class="dl">{nm}</span><span class="s">{esc(d.get("sport"))}</span><span class="t">{esc(dtype)}</span><span class="d">{esc(ends)}</span></div>')
         def ptile(k):
             m = pinfo.get(k, {})
             past = m.get("past")
-            k_txt = ("Past partner" + (f" · {yrs(m)}" if yrs(m) else "")) if past else f'{r["partners"][k]} deal{"s" if r["partners"][k] > 1 else ""}'
+            title = pt_of.get(k, ("", ""))[1]
+            k_txt = ("Past partner" + (f" · {yrs(m)}" if yrs(m) else "")) if past else (title or f'{r["partners"][k]} deal{"s" if r["partners"][k] > 1 else ""}')
             folder_k = "brands" if recs.get(k, {}).get("nB", 0) >= recs.get(k, {}).get("nP", 0) else "properties"
             return f'<a class="pt{" past" if past else ""}" href="{esc(folder_k)}/{esc(k)}.html"><b>{esc(pname(k))}</b><span class="k">{esc(k_txt)}</span></a>'
-        ptiles = "".join(ptile(k) for k in partners)
+        if order:
+            cur = [k for k in partners if not pinfo.get(k, {}).get("past")]
+            groups = [(t, [k for k in cur if pt_of.get(k, ("", ""))[0] == t]) for t in order]
+            groups.append(("Other partners", [k for k in cur if not pt_of.get(k, ("", ""))[0]]))
+            groups.append(("Past partners", [k for k in partners if pinfo.get(k, {}).get("past")]))
+            ptiles = "".join(f'<h3 class="pgh">{esc(plural_tier(t))}<span>{len(ks)}</span></h3>' + "".join(ptile(k) for k in ks) for t, ks in groups if ks)
+        else:
+            ptiles = "".join(ptile(k) for k in partners)
         jsonld = json.dumps({"@context": "https://schema.org", "@type": "Organization" if kind == "b" or group not in ("Athlete & talent",) else "Person",
                              "name": name, "url": url, **({"sameAs": [f"https://{e['domain']}"]} if e.get("domain") else {})}, ensure_ascii=False)
 
