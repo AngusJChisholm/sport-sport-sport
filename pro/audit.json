@@ -14,12 +14,12 @@
  "dup_entities": [
   {
    "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
+    "Star Sports",
+    "The Star"
    ],
    "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
+    "star-sports",
+    "the-star"
    ]
   },
   {
@@ -48,6 +48,16 @@
   },
   {
    "names": [
+    "Special Olympics",
+    "Special Olympics Australia"
+   ],
+   "slugs": [
+    "special-olympics",
+    "special-olympics-australia"
+   ]
+  },
+  {
+   "names": [
     "Athletics",
     "Athletics Australia",
     "Athletics New Zealand"
@@ -56,16 +66,6 @@
     "athletics",
     "athletics-australia",
     "athletics-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Harness Racing Australia",
-    "Harness Racing NZ"
-   ],
-   "slugs": [
-    "harness-racing-australia",
-    "harness-racing-nz"
    ]
   },
   {
@@ -80,22 +80,22 @@
   },
   {
    "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
+    "Harness Racing Australia",
+    "Harness Racing NZ"
    ],
    "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
+    "harness-racing-australia",
+    "harness-racing-nz"
    ]
   },
   {
    "names": [
-    "Star Sports",
-    "The Star"
+    "TAB",
+    "TAB NZ"
    ],
    "slugs": [
-    "star-sports",
-    "the-star"
+    "tab",
+    "tab-nz"
    ]
   },
   {
@@ -110,12 +110,12 @@
   },
   {
    "names": [
-    "TAB",
-    "TAB NZ"
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
    ],
    "slugs": [
-    "tab",
-    "tab-nz"
+    "commonwealth-games",
+    "commonwealth-games-australia"
    ]
   }
  ],
