@@ -341,8 +341,8 @@ class Model:
             if b in self.live_b[p] or b == p:
                 continue
             cat, sub = self.cat.get(b), self.sub.get(b)
-            if self.dest_clash(p, b) or self.media_clash(p, b):
-                continue
+            if self.dest_clash(p, b) or self.media_clash(p, b) or self.pclass[p] in self.bprof[b].get("avoid_class", ()):
+                continue  # avoid_class: researched, the brand doesn't buy this kind of property (EnergyAustralia: no clubs)
             kc = self.kit_clash(p, b)
             if kc == "firm":
                 continue
@@ -492,8 +492,8 @@ class Model:
             if glob / Wt < 0.75 or len(anz) > 1 or min(r["age"] for r in rs) > 18:
                 continue
             cat, sub = self.cat[b], self.sub.get(b)
-            if self.dest_clash(p, b) or self.media_clash(p, b):
-                continue
+            if self.dest_clash(p, b) or self.media_clash(p, b) or self.pclass[p] in self.bprof[b].get("avoid_class", ()):
+                continue  # avoid_class: researched, the brand doesn't buy this kind of property (EnergyAustralia: no clubs)
             kc = self.kit_clash(p, b)
             if kc == "firm":
                 continue

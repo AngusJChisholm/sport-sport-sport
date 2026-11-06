@@ -194,7 +194,7 @@ def brand_profile(slug, ent, sub, cat):
         pos = V
     researched = bool(e.get("profiled"))
     return {"pos": e.get("pos") or pos, "mkt": e.get("mkt") or mkt, "aud": e.get("aud") or list(aud),
-            "align": e.get("align") or list(align), "avoid": e.get("avoid") or [], "note": e.get("pnote") or "",
+            "align": e.get("align") or list(align), "avoid": e.get("avoid") or [], "avoid_class": e.get("avoid_class") or [], "note": e.get("pnote") or "",
             "researched": researched}
 
 

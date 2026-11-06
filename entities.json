@@ -29122,7 +29122,11 @@
    "k": "b",
    "aliases": [
     "Energy Australia"
-   ]
+   ],
+   "avoid_class": [
+    "club"
+   ],
+   "pnote": "Backs leagues and venues, not clubs: left its Port Adelaide major partnership after three seasons when it changed its sponsorship strategy, and now partners the AFL, AFLW and Marvel Stadium on renewable energy."
   },
   "sherrin": {
    "name": "Sherrin",

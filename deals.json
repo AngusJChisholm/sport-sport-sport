@@ -30456,16 +30456,19 @@
    "ptier": "Official partner"
   },
   {
-   "listed": "2026-11-05",
    "deal": "EnergyAustralia × AFL",
    "sport": "AFL",
    "type": "Official partner",
    "region": "ANZ",
-   "summary": "Listed as an official partner on the AFL's official partners page.",
-   "url": "https://www.afl.com.au/about-afl/partners/corporate",
-   "status": "Current partner",
+   "summary": "EnergyAustralia signs a five-year deal as Official Energy Partner of the AFL, AFLW and Marvel Stadium, matching the stadium and AFL House with renewable energy and backing grassroots club energy projects.",
+   "url": "https://www.marvelstadium.com.au/marvel-stadium-power-into-five-year-partnership-with-energyaustralia",
+   "status": "New partner",
    "tier": "Official partner",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "month": "2026-03",
+   "term": 5,
+   "ends": 2030,
+   "title": "Official Energy Partner"
   },
   {
    "listed": "2026-11-05",
@@ -50668,7 +50671,7 @@
    "summary": "Hart Sport continues with the Warriors for another two years.",
    "url": "https://www.warriors.kiwi/news/2025/12/19/hart-sport-to-continue-partnership-for-another-two-years/",
    "status": "Renewal",
-   "term": "2 years"
+   "term": 2
   },
   {
    "date": "2026-03-02",
@@ -50679,7 +50682,7 @@
    "summary": "Arnott's extends its Warriors partnership by two years.",
    "url": "https://www.warriors.kiwi/news/2026/03/02/arnotts-extends-partnership-by-two-more-years/",
    "status": "Extension",
-   "term": "2 years"
+   "term": 2
   },
   {
    "date": "2025-12-17",
@@ -50690,7 +50693,7 @@
    "summary": "TLH Recruitment signs with the Warriors as a new partner.",
    "url": "https://www.warriors.kiwi/news/2025/12/17/tlh-recruitment-signed-as-new-partner-on-two-year-deal/",
    "status": "New",
-   "term": "2 years"
+   "term": 2
   },
   {
    "date": "2025-03-18",
@@ -50792,6 +50795,49 @@
    "summary": "Nectr extends its Panthers partnership.",
    "url": "https://www.penrithpanthers.com.au/news/2023/09/28/nectr-extends-panthers-partnership/",
    "status": "Extension"
+  },
+  {
+   "month": "2026-03",
+   "added": "2026-11-06",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "EnergyAustralia signs a five-year deal as Official Energy Partner of the AFL, AFLW and Marvel Stadium, matching the stadium and AFL House with renewable energy and backing grassroots club energy projects.",
+   "url": "https://www.marvelstadium.com.au/marvel-stadium-power-into-five-year-partnership-with-energyaustralia",
+   "status": "New partner",
+   "tier": "Official partner",
+   "term": 5,
+   "ends": 2030,
+   "title": "Official Energy Partner",
+   "deal": "EnergyAustralia × AFLW"
+  },
+  {
+   "month": "2026-03",
+   "added": "2026-11-06",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "EnergyAustralia signs a five-year deal as Official Energy Partner of the AFL, AFLW and Marvel Stadium, matching the stadium and AFL House with renewable energy and backing grassroots club energy projects.",
+   "url": "https://www.marvelstadium.com.au/marvel-stadium-power-into-five-year-partnership-with-energyaustralia",
+   "status": "New partner",
+   "tier": "Official partner",
+   "term": 5,
+   "ends": 2030,
+   "title": "Official Energy Partner",
+   "deal": "EnergyAustralia × Marvel Stadium"
+  },
+  {
+   "date": "2014-01-31",
+   "added": "2026-11-06",
+   "deal": "EnergyAustralia × Port Adelaide",
+   "sport": "AFL",
+   "type": "Principal & major",
+   "region": "ANZ",
+   "summary": "EnergyAustralia joins Port Adelaide as joint major partner of its AFL and SANFL teams, its first AFL club deal. It stepped back after three seasons when it changed its sponsorship strategy.",
+   "url": "https://www.portadelaidefc.com.au/news/54631/joint-major-partner-announced",
+   "status": "New partner",
+   "tier": "Principal & major",
+   "ended": 2016
   }
  ]
 }
