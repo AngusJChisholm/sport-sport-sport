@@ -14,44 +14,12 @@
  "dup_entities": [
   {
    "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
+    "Special Olympics",
+    "Special Olympics Australia"
    ],
    "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
-   ]
-  },
-  {
-   "names": [
-    "Hockey Australia",
-    "Hockey New Zealand"
-   ],
-   "slugs": [
-    "hockey-australia",
-    "hockey-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Star Sports",
-    "The Star"
-   ],
-   "slugs": [
-    "star-sports",
-    "the-star"
-   ]
-  },
-  {
-   "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
-   ],
-   "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
+    "special-olympics",
+    "special-olympics-australia"
    ]
   },
   {
@@ -70,6 +38,28 @@
   },
   {
    "names": [
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
+   ],
+   "slugs": [
+    "pure-nutrition",
+    "pure-sports-nutrition"
+   ]
+  },
+  {
+   "names": [
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
+   ],
+   "slugs": [
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
+   ]
+  },
+  {
+   "names": [
     "Harness Racing Australia",
     "Harness Racing NZ"
    ],
@@ -80,22 +70,32 @@
   },
   {
    "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
+    "Hockey Australia",
+    "Hockey New Zealand"
    ],
    "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
+    "hockey-australia",
+    "hockey-new-zealand"
    ]
   },
   {
    "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
    ],
    "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
+    "commonwealth-games",
+    "commonwealth-games-australia"
+   ]
+  },
+  {
+   "names": [
+    "Star Sports",
+    "The Star"
+   ],
+   "slugs": [
+    "star-sports",
+    "the-star"
    ]
   },
   {
