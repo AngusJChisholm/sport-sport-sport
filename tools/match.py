@@ -69,6 +69,8 @@ TOPN, MIN_SHOW, LISTED_W = 15, 40, 0.6
 W_FIT, W_WS, W_DNA, W_AL = 74, 13, 9, 4  # chosen by backtest (Nov 2026); rerun tools/match.py --test before changing
 DEST = "Destination & host government"
 APPAREL, KIT = "Apparel & footwear", "Kit supplier"
+TAILOR = "Tailoring & formalwear"  # suits sit beside a kit deal (M.J. Bale and Nike at the same club), so no kit clash
+MEDIA, LOCAL_MEDIA = "Media & broadcast", {"Broadcast TV", "Radio"}
 
 
 def ym(s):
@@ -148,6 +150,14 @@ class Model:
             self.live_b[p] = lb
             self.live_sub[p] = {self.sub.get(b) for b in lb if self.sub.get(b)}
             self.live_cat[p] = {self.cat.get(b) for b in lb if self.cat.get(b)}
+        # club media partners are local stations (Seven backs the Crows, Lions and Suns through its Adelaide,
+        # Brisbane and Gold Coast stations), so a broadcaster is only a fit for clubs in cities it already covers
+        self.media_city = collections.defaultdict(set)
+        for b, rs in self.B.items():
+            if self.cat.get(b) == MEDIA and self.sub.get(b) in LOCAL_MEDIA:
+                for r in rs:
+                    if self.pclass.get(r["p"]) == "club" and self.city.get(r["p"]):
+                        self.media_city[b].add(self.city[r["p"]])
         self.live_dest = {p: {self.dest[b] for b in lb if b in self.dest} for p, lb in self.live_b.items()}
         self.blevel = {b: max(REACH[self.reach[r["p"]]] for r in rs) for b, rs in self.B.items()}
         # peers: same league if it has one, else same sport and reach
@@ -215,11 +225,18 @@ class Model:
         """A kit supplier owns apparel at the property: Nike at Collingwood covers kit, training wear,
         headwear, licensed merch and footwear, so no other apparel brand is a gap there. Returns None (no
         clash), "firm" (block) or "ending" (kit deal stale or ending: show as Slot may open)."""
-        if self.cat.get(b) != APPAREL or self.sub.get(b) == KIT:
+        if self.cat.get(b) != APPAREL or self.sub.get(b) in (KIT, TAILOR):
             return None
         if KIT not in self.live_sub.get(p, ()):
             return None
         return "firm" if self.sub_hold[p].get(KIT) else "ending"
+
+    def media_clash(self, p, b):
+        """A broadcaster with no club deal in this club's city isn't a club partner here (Seven at Collingwood)."""
+        if self.cat.get(b) != MEDIA or self.sub.get(b) not in LOCAL_MEDIA or self.pclass.get(p) != "club":
+            return False
+        c = self.city.get(p)
+        return bool(c) and c not in self.media_city.get(b, ())
 
     def dest_clash(self, p, b):
         """A property with a host destination partner doesn't sell to another state or country: the AO has
@@ -324,7 +341,7 @@ class Model:
             if b in self.live_b[p] or b == p:
                 continue
             cat, sub = self.cat.get(b), self.sub.get(b)
-            if self.dest_clash(p, b):
+            if self.dest_clash(p, b) or self.media_clash(p, b):
                 continue
             kc = self.kit_clash(p, b)
             if kc == "firm":
@@ -475,7 +492,7 @@ class Model:
             if glob / Wt < 0.75 or len(anz) > 1 or min(r["age"] for r in rs) > 18:
                 continue
             cat, sub = self.cat[b], self.sub.get(b)
-            if self.dest_clash(p, b):
+            if self.dest_clash(p, b) or self.media_clash(p, b):
                 continue
             kc = self.kit_clash(p, b)
             if kc == "firm":

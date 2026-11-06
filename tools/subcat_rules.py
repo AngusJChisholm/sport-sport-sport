@@ -79,6 +79,7 @@ SUBS = {
         ("Live events & music", r"live nation|festival|concert|tour\b|fever|events"),
     ],
     "Health & beauty": [
+        ("Sports medicine & strapping", r"elastoplast|victor sports|rocktape|leukoplast|mueller|strapping|sports tape|kinesio|physique\b|sports medicine"),
         ("Pharmacy & medical", r"chemist|pharmacy|priceline|amcal|terry white|pharma|medical|hospital|pathology|abbvie|pfizer|novartis|gsk|sanofi|csl\b|cochlear|resmed|sonic|healius|ramsay|healthscope|dental|physio|optom|specsavers|opsm|hearing|audiology"),
         ("Fitness clubs", r"fitness first|anytime fitness|f45|goodlife|jetts|plus fitness|snap fitness|club lime|gym\b|fitness"),
         ("Vitamins & wellness", r"vitamin|blackmores|swisse|nature's way|elevit|wellness|ezz life"),
@@ -94,6 +95,7 @@ SUBS = {
     ],
     "Apparel & footwear": [
         ("Kit supplier", r"^(nike|adidas|puma|asics|new balance|under armour|mizuno|kappa|umbro|macron|castore|hummel|joma|kelme|errea|le coq sportif|canterbury|classic sportswear|isc|iscsport|o'neills|oneills|oxen|oxen sport|alpha sport|burley|bla(c)?k|x-blades|reebok|fila|champion|li-ning|anta|peak|xtep|ozone|sekem|kombat|strauss|konqa|sylvia p teamwear|belgravia|saba|valour sport|oneills)( (australia|sport|sports|teamwear))?$"),
+        ("Tailoring & formalwear", r"m\.?\s?j\.? bale|politix|tarocash|suitsupply|rodd & gunn|calibre\b|tailor|suits?\b"),
         ("Fashion & lifestyle", r"boss\b|hugo|ralph lauren|lacoste|tommy|zara|h&m|uniqlo|r\.?m\.? williams|gucci|prada|fred perry|country road|calvin klein|polo|superdry|cotton on|kookai|menswear|outfitters|ringers western|ariat|tony barlow|tradie"),
         ("Activewear & recovery", r"2xu|lululemon|lskd|gymshark|jaggad|skins|blackroll|on running|hoka|skechers|vuori|rhone"),
         ("Headwear & licensing", r"new era|47 brand|'47|fanatics|mitchell & ness"),
@@ -124,6 +126,7 @@ SUBS = {
         ("Payments & BNPL", r"afterpay|zip\b|klarna|sumup|paze|stripe|revolut|wise\b"),
     ],
     "Sporting goods & equipment": [
+        ("Sports medicine & strapping", r"elastoplast|victor sports|rocktape|leukoplast|mueller|strapping|sports tape|kinesio|physique\b|sports medicine"),
         ("Balls & racquets", r"dunlop|wilson|head\b|babolat|yonex|slazenger|sherrin|steeden|gilbert|spalding|molten|mikasa|select|mitre|kookaburra|gray-nicolls|gm cricket|masuri|ball"),
         ("Golf", r"titleist|taylormade|callaway|ping\b|srixon|cobra|golf"),
         ("Bikes & cycling", r"shimano|specialized|trek|giant|cannondale|99 bikes|bike|cycl"),

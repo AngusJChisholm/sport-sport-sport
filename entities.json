@@ -8367,7 +8367,8 @@
     "logo"
    ],
    "cat": "Health & beauty",
-   "k": "b"
+   "k": "b",
+   "sub": "Sports medicine & strapping"
   },
   "elders": {
    "name": "Elders",
@@ -27103,7 +27104,8 @@
    "name": "Victor Sports",
    "domain": "victorsports.com.au",
    "cat": "Sporting goods & equipment",
-   "k": "b"
+   "k": "b",
+   "sub": "Sports medicine & strapping"
   },
   "victoria-racing-club": {
    "name": "Victoria Racing Club",
