@@ -51328,7 +51328,9 @@
    "status": "Renewal",
    "tier": "Naming rights",
    "term": 1,
-   "ended": true
+   "ended": true,
+   "ends": 2025,
+   "endsEst": true
   }
  ]
 }

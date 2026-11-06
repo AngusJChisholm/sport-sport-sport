@@ -6,7 +6,7 @@
   "cat_mismatch": 97,
   "slot_clash": 20,
   "dup_deals": 0,
-  "no_broadcaster": 9,
+  "no_broadcaster": 10,
   "stale": 0,
   "no_source": 688,
   "anz_slot_clash": 18
@@ -14,24 +14,12 @@
  "dup_entities": [
   {
    "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
    ],
    "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
-   ],
-   "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
+    "commonwealth-games",
+    "commonwealth-games-australia"
    ]
   },
   {
@@ -46,32 +34,24 @@
   },
   {
    "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
+    "Star Sports",
+    "The Star"
    ],
    "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
+    "star-sports",
+    "the-star"
    ]
   },
   {
    "names": [
-    "Harness Racing Australia",
-    "Harness Racing NZ"
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
    ],
    "slugs": [
-    "harness-racing-australia",
-    "harness-racing-nz"
-   ]
-  },
-  {
-   "names": [
-    "HYROX",
-    "HYROX Australia"
-   ],
-   "slugs": [
-    "hyrox",
-    "hyrox-australia"
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
    ]
   },
   {
@@ -90,22 +70,42 @@
   },
   {
    "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
+    "Harness Racing Australia",
+    "Harness Racing NZ"
    ],
    "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
+    "harness-racing-australia",
+    "harness-racing-nz"
    ]
   },
   {
    "names": [
-    "Star Sports",
-    "The Star"
+    "Special Olympics",
+    "Special Olympics Australia"
    ],
    "slugs": [
-    "star-sports",
-    "the-star"
+    "special-olympics",
+    "special-olympics-australia"
+   ]
+  },
+  {
+   "names": [
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
+   ],
+   "slugs": [
+    "pure-nutrition",
+    "pure-sports-nutrition"
+   ]
+  },
+  {
+   "names": [
+    "HYROX",
+    "HYROX Australia"
+   ],
+   "slugs": [
+    "hyrox",
+    "hyrox-australia"
    ]
   },
   {
@@ -3277,6 +3277,10 @@
   {
    "property": "Cricket Victoria",
    "deals": 6
+  },
+  {
+   "property": "Netball Australia",
+   "deals": 5
   },
   {
    "property": "New Zealand Football",
