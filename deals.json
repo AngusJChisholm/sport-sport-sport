@@ -51315,6 +51315,20 @@
    "status": "New partner",
    "tier": "Principal & major",
    "ended": 2016
+  },
+  {
+   "date": "2024-01-18",
+   "added": "2026-11-06",
+   "deal": "Origin Energy × Netball Australia",
+   "sport": "Netball",
+   "type": "Naming rights",
+   "region": "ANZ",
+   "summary": "Origin Energy re-signs as naming rights partner of the Origin Australian Diamonds for a fifth year, after first partnering Netball Australia in 2020. The deal has since ended.",
+   "url": "https://netball.com.au/news/origin-energy-extends-partnership",
+   "status": "Renewal",
+   "tier": "Naming rights",
+   "term": 1,
+   "ended": true
   }
  ]
 }
