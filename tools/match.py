@@ -107,6 +107,7 @@ class Model:
 
     def __init__(self, ent, deals, league_of, now, use_listed=True):
         self.ent, self.now, self.league_of = ent, now, league_of
+        self.bwhy = {}  # (property, brand) -> reasons written for the brand's Matches page
         yr = now // 12
         self.B, self.P, self.name = collections.defaultdict(list), collections.defaultdict(list), {}
         for x in deals:
@@ -317,6 +318,78 @@ class Model:
             s *= 0.8 if same_sport and self.pclass[p] != "body" else 0.35
         return s
 
+    def nm(self, x):
+        return self.ent.get(x, {}).get("name") or self.name.get(x, x)
+
+    def brand_reasons(self, p, b, rs, sub, flags, peers, adopt, rival, mine, dn, lift, al_on, entrant=False):
+        """Reasons written for the brand: what this property gives the brand. The property-side list says why the
+        brand fits the property ("Backs Richmond, Carlton..."); this one is the pitch a brand reads on its own
+        Matches page, so every line is about this property: the open slot and who holds it at its rivals, new
+        ground for the brand, who the property has just signed, the company the brand would keep and the
+        audience it reaches."""
+        P, sp, out = self.nm(p), self.sport[p], []
+        kind = {"club": "clubs", "body": "bodies", "event": "events", "athlete": "athletes", "venue": "venues",
+                "national": "national teams"}.get(self.pclass[p], "properties")
+        group = f"{sp} {kind}" if sp not in ("Venues", "Multi-sport", "Other") else kind
+        # 1. the slot, and which rivals hold it at similar properties
+        what = sub or self.cat.get(b)
+        if what and "Slot may open" in flags:
+            out.append(f"{P}'s {what} slot may open up soon")
+        elif sub and sub not in self.live_sub[p]:
+            riv = collections.defaultdict(list)
+            for q in peers:
+                for r in self.P[q]:
+                    if r["live"] and r["b"] != b and self.sub.get(r["b"]) == sub and q not in riv[r["b"]]:
+                        riv[r["b"]].append(q)
+            if riv:
+                rb = max(riv, key=lambda x: len(riv[x]))
+                n = len(riv[rb])
+                out.append(f"No {sub} partner at {P} yet, while {self.nm(rb)} is with {n} other {group}"
+                           if n > 1 else f"No {sub} partner at {P} yet, while {self.nm(rb)} is with {self.nm(riv[rb][0])}")
+            else:
+                out.append(f"No {sub} partner at {P} yet, so you'd own the category")
+        # 2. new ground for the brand
+        sports = {r["d"].get("sport") for r in rs}
+        cities = {self.city.get(r["p"]) for r in rs if self.city.get(r["p"])}
+        anz = any(r["d"].get("region") == "ANZ" for r in rs)
+        if entrant and self.region[p] == "ANZ":
+            out.append(f"Builds on your first ANZ deal with a {self.reach[p].lower()} property" if anz
+                       else f"A {self.reach[p].lower()} way into Australia and NZ")
+        elif sp not in sports:
+            out.append(f"Opens up {sp.lower() if sp == 'Venues' else sp}, which you're not in yet")
+        elif self.pclass[p] == "club" and self.city[p] and self.city[p] not in cities:
+            out.append(f"Gets you into {self.city[p]}, a city you don't cover yet")
+        elif REACH[self.reach[p]] > self.blevel.get(b, 1):
+            out.append(f"Steps you up to a {self.reach[p].lower()} property")
+        # 3. who the property has just signed (it's selling, and these are the names you'd stand beside)
+        recent, seen = [], set()
+        for r in sorted(self.P[p], key=lambda r: r["age"]):
+            if r["dated"] and r["age"] <= 12 and r["b"] != b and r["b"] not in seen and r["b"] not in self.P:
+                seen.add(r["b"]); recent.append(self.nm(r["b"]))
+        if len(recent) >= 2:
+            more = f" and {len(recent) - 2} more" if len(recent) > 2 else ""
+            out.append(f"Selling now: signed {recent[0]}, {recent[1]}{more} in the last year")
+        else:
+            big = sorted({(-TIER.get(r["d"].get("tier"), 2), self.nm(r["b"])) for r in self.P[p] if r["live"] and r["b"] != b and r["b"] not in self.P})
+            if len(big) >= 2:
+                out.append(f"Puts you alongside {big[0][1]} and {big[1][1]}")
+        # 4. audience
+        aud = self.pprof[p].get("aud") or []
+        if al_on:
+            out.append("The crowd matches yours: " + ", ".join(al_on[:3]))
+        elif aud and len(out) < 4:
+            out.append("Reaches " + ", ".join(aud[:3]))
+        # 5. history and portfolio fit
+        if "Former partner" in flags:
+            out.insert(1, f"You've partnered {P} before, so there's a relationship to restart")
+        else:
+            same = [q for q in mine if q != p and self.sport.get(q) == sp]
+            if same and len(out) < 4:
+                out.append(f"Builds on what you've started with {self.nm(same[0])}")
+        if dn >= 0.4 and lift and lift >= 2 and len(out) < 4:
+            out.append(f"{self.slot(b)} brands back {sp} {lift:.0f}x more than sport overall")
+        return out[:4]
+
     def score_property(self, p, top=TOPN, keep_all=False):
         """All candidate brands for property p, best first: [(score, brand, parts, why, flags)]."""
         sims = {}
@@ -370,7 +443,7 @@ class Model:
             F = W_FIT * math.log1p(c) / math.log1p(cmax)
             n12 = sum(1 for r in rs if r["dated"] and r["age"] <= 12)
             mom = min(15, 5 * n12)
-            trig, why_t = 0, None
+            trig, why_t, rival = 0, None, None
             if any(r["dated"] and r["age"] <= 6 and r["d"].get("sport") == sp and r["p"] != p for r in rs):
                 trig += 5
             if sub:
@@ -380,6 +453,7 @@ class Model:
                         trig += 5
                         h = min(hit, key=lambda r: r["age"])
                         why_t = f"Rival {self.ent.get(h['b'], {}).get('name') or self.name.get(h['b'], h['b'])} signed {self.ent.get(q, {}).get('name') or self.name.get(q, q)} in {fmt_ym(h['ym'])}"
+                        rival = (h["b"], q, h["ym"])
                         break
             T = mom + min(10, trig)
             C = max(TIER.get(r["d"].get("tier"), 2) for r in rs) / 5 * 15
@@ -428,6 +502,8 @@ class Model:
                 why.append(f"{self.slot(b)} brands back {sp} {lift:.0f}x more than sport overall" if lift >= 2 else f"{self.slot(b)} brands over-index in {sp}")
             if al >= 0.5 and al_on and len(why) < 4:
                 why.append("Fits the audience: " + ", ".join(al_on[:4]))
+            # the brand's side: why this property is worth it for the brand, not why the brand fits the property
+            self.bwhy[(p, b)] = self.brand_reasons(p, b, rs, sub, flags, peers, adopt, rival, [q for _, q in top_ev], dn, lift, al_on)
             out.append((round(total), b, [round(T), round(F), round(C), round(A), round(Wsp), round(Dn), round(Al)], why[:4], flags, conf, total))
         out.sort(key=lambda x: -x[6])
         out = [x[:6] for x in out]
@@ -550,6 +626,9 @@ class Model:
                 why.append(f"No {key} partner here")
             if f_sport >= 0.2:
                 why.append(f"Already backs {sp} overseas")
+            dn, lift, _ = self.dna(sp, b)
+            al, al_on = alignment(self.bprof[b], self.pprof[p])
+            self.bwhy[(p, b)] = self.brand_reasons(p, b, rs, sub, flags, peers, adopt, None, [r["p"] for r in recent], dn, lift, al_on, entrant=True)
             out.append((total, b, [round(App), round(Cap), round(Gap), round(Fit), Ent], why[:3], flags,
                         "High" if len(rs) >= 5 else "Medium"))
         out.sort(key=lambda x: -x[0])
@@ -678,9 +757,9 @@ def main():
                            "pf": [m.bprof[b]["pos"], m.bprof[b]["mkt"], m.bprof[b]["researched"]]}
                           for sc, b, parts, why, flags, conf in res[:TOPN]]}
         for sc, b, parts, why, flags, conf in ent_list:
-            entry[b].append({"p": p, "n": nm(p), "s": m.sport[p], "r": m.reach[p], "v": ver.get(p), "x": sc, "f": conf, "pt": parts, "w": why, "g": flags})
+            entry[b].append({"p": p, "n": nm(p), "s": m.sport[p], "r": m.reach[p], "v": ver.get(p), "x": sc, "f": conf, "pt": parts, "w": m.bwhy.get((p, b), why), "g": flags})
         for sc, b, parts, why, flags, conf in res:
-            brands[b].append({"p": p, "n": nm(p), "s": m.sport[p], "r": m.reach[p], "v": ver.get(p), "x": sc, "k": band(sc), "f": conf, "pt": parts, "w": why, "g": flags})
+            brands[b].append({"p": p, "n": nm(p), "s": m.sport[p], "r": m.reach[p], "v": ver.get(p), "x": sc, "k": band(sc), "f": conf, "pt": parts, "w": m.bwhy.get((p, b), why), "g": flags})
     bout = {}
     for b in set(brands) | set(entry):
         if len(m.B.get(b, [])) < 2:
