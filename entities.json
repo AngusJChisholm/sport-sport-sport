@@ -21263,14 +21263,18 @@
    ]
   },
   "qudos-bank-arena": {
-   "name": "Qudos Bank Arena",
+   "name": "Afterpay Arena",
    "domain": "qudosbankarena.com.au",
    "bf": [
     "icon",
     "logo"
    ],
    "ptype": "Venue",
-   "k": "p"
+   "k": "p",
+   "aliases": [
+    "Qudos Bank Arena",
+    "Sydney SuperDome"
+   ]
   },
   "queanbeyan-leagues-club": {
    "name": "Queanbeyan Leagues Club",
