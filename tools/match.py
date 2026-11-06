@@ -48,7 +48,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_profiles import norm, slugify, split, many  # same name -> slug rules as the site
 from subcat_rules import classify as subcat, destination
-from locations import CITY
+from locations import CITY, state_of
 from profiles import brand_profile, property_profile, alignment
 
 # City links only make sense between team-sport clubs (fans pick a club in their city). For racing, golf,
@@ -158,6 +158,9 @@ class Model:
                 for r in rs:
                     if self.pclass.get(r["p"]) == "club" and self.city.get(r["p"]):
                         self.media_city[b].add(self.city[r["p"]])
+        # market (state, or NZ) for ANZ properties, so a brand that only sells in some states skips the rest
+        self.pstate = {p: state_of(p, (ent.get(p) or {}).get("name") or self.name.get(p, p), (ent.get(p) or {}).get("domain", ""), self.city[p])
+                       if self.region[p] == "ANZ" else None for p in self.P}
         self.live_dest = {p: {self.dest[b] for b in lb if b in self.dest} for p, lb in self.live_b.items()}
         self.blevel = {b: max(REACH[self.reach[r["p"]]] for r in rs) for b, rs in self.B.items()}
         # peers: same league if it has one, else same sport and reach
@@ -237,6 +240,13 @@ class Model:
             return False
         c = self.city.get(p)
         return bool(c) and c not in self.media_city.get(b, ())
+
+    def market_clash(self, p, b):
+        """The brand only sells in some markets (EnergyAustralia: NSW, VIC, south-east QLD, SA, ACT) and this
+        property sits outside them. National bodies have no market, so they never clash."""
+        mk = (self.ent.get(b) or {}).get("markets")
+        st = self.pstate.get(p)
+        return bool(mk and st and st not in mk)
 
     def dest_clash(self, p, b):
         """A property with a host destination partner doesn't sell to another state or country: the AO has
@@ -341,7 +351,7 @@ class Model:
             if b in self.live_b[p] or b == p:
                 continue
             cat, sub = self.cat.get(b), self.sub.get(b)
-            if self.dest_clash(p, b) or self.media_clash(p, b) or self.pclass[p] in self.bprof[b].get("avoid_class", ()):
+            if self.dest_clash(p, b) or self.media_clash(p, b) or self.pclass[p] in self.bprof[b].get("avoid_class", ()) or self.market_clash(p, b):
                 continue  # avoid_class: researched, the brand doesn't buy this kind of property (EnergyAustralia: no clubs)
             kc = self.kit_clash(p, b)
             if kc == "firm":
@@ -492,7 +502,7 @@ class Model:
             if glob / Wt < 0.75 or len(anz) > 1 or min(r["age"] for r in rs) > 18:
                 continue
             cat, sub = self.cat[b], self.sub.get(b)
-            if self.dest_clash(p, b) or self.media_clash(p, b) or self.pclass[p] in self.bprof[b].get("avoid_class", ()):
+            if self.dest_clash(p, b) or self.media_clash(p, b) or self.pclass[p] in self.bprof[b].get("avoid_class", ()) or self.market_clash(p, b):
                 continue  # avoid_class: researched, the brand doesn't buy this kind of property (EnergyAustralia: no clubs)
             kc = self.kit_clash(p, b)
             if kc == "firm":

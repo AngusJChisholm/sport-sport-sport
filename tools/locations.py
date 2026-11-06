@@ -44,3 +44,45 @@ CITY = {
     "crusaders": "Christchurch", "matat": "Christchurch", "chiefs": "Hamilton",
     "png-chiefs": "Port Moresby", "fijian-drua": "Fiji",
 }
+
+
+# Market (state, or country outside Australia) for a property, so a brand that only sells in some states isn't
+# pointed at a property outside them (EnergyAustralia doesn't retail in WA, Tasmania, the NT or NZ).
+# North and far-north Queensland is "QLD-REG": several energy retailers only sell in south-east Queensland.
+CITY_STATE = {
+    "Melbourne": "VIC", "Geelong": "VIC", "Bendigo": "VIC", "Ballarat": "VIC",
+    "Sydney": "NSW", "Newcastle": "NSW", "Wollongong": "NSW", "Central Coast": "NSW",
+    "Brisbane": "QLD", "Gold Coast": "QLD", "Sunshine Coast": "QLD", "Townsville": "QLD-REG", "Cairns": "QLD-REG",
+    "Adelaide": "SA", "Perth": "WA", "Canberra": "ACT", "Tasmania": "TAS", "Hobart": "TAS", "Launceston": "TAS",
+    "Darwin": "NT", "Auckland": "NZ", "Wellington": "NZ", "Christchurch": "NZ", "Hamilton": "NZ", "Dunedin": "NZ",
+    "Port Moresby": "PNG", "Fiji": "FJ",
+}
+# Name patterns, checked in order (state bodies and venues: "Netball Queensland", "Optus Stadium", "Eden Park")
+NAME_STATE = [
+    ("NZ", r"new zealand|\bnz\b|aotearoa|auckland|wellington|christchurch|eden park|sky stadium|hagley oval|silver ferns|all blacks|black ?caps|tall blacks|super smash|round the bays|super rugby pacific|anz premiership|waikato|otago|dunedin|bay of plenty|taranaki"),
+    ("WA", r"\bwa\b|western australia|perth|fremantle|optus stadium|rac arena|hbf park|wa cricket|waca\b|rottnest"),
+    ("TAS", r"tasmania|\btas\b|hobart|launceston|blundstone arena|ninja stadium|utas stadium|york park"),
+    ("NT", r"northern territory|\bnt\b|darwin|alice springs|tio stadium"),
+    ("SA", r"south australia|\bsa\b|adelaide|sanfl|adelaide oval|coopers stadium"),
+    ("ACT", r"\bact\b|canberra|manuka|gio stadium"),
+    ("QLD-REG", r"townsville|cairns|north queensland|mackay|rockhampton|toowoomba|queensland country bank stadium"),
+    ("QLD", r"queensland|\bqld\b|brisbane|gold coast|sunshine coast|gabba|suncorp stadium|ipswich|moreton bay|redcliffe"),
+    ("NSW", r"\bnsw\b|new south wales|sydney|newcastle|wollongong|parramatta|penrith|illawarra|accor stadium|allianz stadium|afterpay arena|qudos bank arena|commbank stadium|scg\b|sydney cricket ground|homebush|bathurst|mount panorama|venues nsw|royal randwick|rosehill"),
+    ("VIC", r"victoria\b|victorian|\bvic\b|melbourne|geelong|ballarat|bendigo|mcg\b|marvel stadium|aami park|rod laver|kardinia|flemington|moonee valley|phillip island|australian open|australian grand prix"),
+]
+
+
+def state_of(slug, name="", domain="", city=None):
+    """Market code for a property ("VIC", "NSW", "QLD", "QLD-REG", "SA", "WA", "TAS", "NT", "ACT", "NZ", ...), or
+    None for national bodies, overseas properties and anything we can't place. None never blocks a match."""
+    import re
+    c = city or CITY.get(slug)
+    if c in CITY_STATE:
+        return CITY_STATE[c]
+    if (domain or "").endswith(".nz") or ".nz/" in (domain or ""):
+        return "NZ"
+    t = (name or slug or "").lower()
+    for code, rx in NAME_STATE:
+        if re.search(rx, t):
+            return code
+    return None
