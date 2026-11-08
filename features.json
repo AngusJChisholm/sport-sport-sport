@@ -1,6 +1,49 @@
 {
  "features": [
   {
+   "date": "2026-11-09",
+   "label": "Feature",
+   "headline": "How Australia's national teams get paid.",
+   "descriptor": "How the Socceroos and Matildas split the money",
+   "topic": "Explainer",
+   "sport": "Football",
+   "region": "ANZ",
+   "image": "https://images.unsplash.com/photo-1782355341395-78f9a62428ef",
+   "imageCredit": "Unsplash",
+   "related": [
+    "CommBank × Football Australia",
+    "Coca-Cola × Football Australia",
+    "Isuzu × Football Australia",
+    "M.J. Bale × Socceroos",
+    "Ecosa × CommBank Matildas",
+    "Fanatics × Football Australia"
+   ],
+   "article": {
+    "standfirst": "A court action, a late payment and a deal that expires in 2027 all point at how the Socceroos and Matildas share the money.",
+    "body": [
+     "Two stories about Football Australia broke within a week of each other, and they circle the same question. On 3 November, AAP reported that Socceroos and Matildas players, acting through their union Professional Footballers Australia (PFA), had launched action against Football Australia (FA) in the NSW Supreme Court. Three days later, the ABC reported that Socceroos who played at the World Cup were still waiting on their match fees. Both come back to how a national team's money reaches the players.",
+     "Start with what is actually known about the court action, because it isn't much. AAP says the PFA is understood to be pursuing a seven-figure claim and is expected to argue that the revenue-sharing agreement is not being serviced properly. The PFA declined to comment. FA says the Supreme Court action relates to a third party in connection with a separate matter before the National Dispute Resolution Chamber, that the court's role is limited to the subpoena process, and that it will not comment further. Nothing has been decided, and the detail of any dispute hasn't been made public.",
+     "The model sitting behind it is worth understanding. Revenue sharing started with the 2019 agreement, which gave players 24 per cent of national team generated revenue in 2019/20 and added a percentage point each year of the four-year deal. The current agreement, announced on 8 November 2023 and covering 2023 to 2027, builds on that model and links player rewards to national team commercial growth. Matildas players moved off centralised contracts onto match and commercial payments. AAP and Reuters both reported the payments split as 70 per cent match fees and 30 per cent commercial payments, with at least 5 per cent of national team revenue set aside for youth national team programs.",
+     "For a sponsor, that is the part to take in. A brand that signs with a national team is buying into a revenue pool that players share in under a formula both sides agreed to. The 2023 deal also created a joint committee of FA and the PFA focused on commercial opportunities, team brands and high-performance standards. That makes the way national team revenue is counted a commercial question as much as an industrial one, and it gives players a direct interest in how well the commercial program performs.",
+     "The governing body is under its own pressure. FA reported on 21 May 2026 that 2025 revenue hit a record of about $139.45 million and that it had posted a record net loss of $15.34 million, up from $8.5 million the year before. Chief executive Martin Kugeler said about one in five staff would go, with the senior national teams not affected, and called the rising losses \"not a situation that is sustainable or acceptable\". When revenue and losses are both climbing, every shared dollar gets looked at harder.",
+     "Then there is the payment problem. The ABC, using AAP copy, reported on 6 November that Socceroos who played at the 2026 World Cup had not been paid match fees three months after the tournament. FA blamed the need for final specialist advice on North American tax and withholding obligations, and said it is ready to pay once that is sorted. PFA chief executive Beau Busch called the situation unacceptable. Nothing in the reporting links this to the court action, so the two should be read as separate threads.",
+     "What comes next is the bigger commercial story. The ABC reports the current agreement is due to expire in September 2027, and that talks on new terms haven't started. The deal in place covers the cycle through the FIFA Women's World Cup 2027, so its replacement will set the terms for everything after it. Every national team sponsor is funding a formula as well as a team, and that formula goes back on the table within the year."
+    ],
+    "close": "Who gets what from a national team's sponsors is about to be renegotiated."
+   },
+   "sources": [
+    "https://www.abc.net.au/news/2026-11-03/socceroos-matildas-launch-court-action-against-football-austalia/107341718",
+    "https://www.abc.net.au/news/2026-11-06/socceroos-still-waiting-for-world-cup-payment-from-fa/107354910",
+    "https://footballaustralia.com.au/news/new-national-teams-cba-drive-continued-growth-australian-football",
+    "https://footballaustralia.com.au/news/historic-cba-close-footballs-gender-pay-gap",
+    "https://global.espn.com/football/story/_/id/38845606/football-australia-seals-cba-eyes-record-tv-deal",
+    "https://www.flashscore.com/news/soccer-world-cup-women-matildas-switch-to-match-commercial-payments-under-new-australia-pay-deal/UTn5U0JU",
+    "https://www.sheppnews.com.au/aap-soccer/football-australias-record-losses-top-15-million/",
+    "https://www.ausleisure.com.au/news/football-australia-to-report-record-15-million-loss-for-2025"
+   ],
+   "slug": "2026-11-09-how-australia-s-national-teams-get-paid"
+  },
+  {
    "date": "2026-11-06",
    "label": "Breakdown",
    "headline": "Naming a stadium that doesn't exist.",

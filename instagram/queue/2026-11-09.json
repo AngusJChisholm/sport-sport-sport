@@ -1,0 +1,68 @@
+{
+ "date": "2026-11-09",
+ "hold": false,
+ "feed": {
+  "kind": "feature",
+  "cover": {
+   "tag": "Feature",
+   "region": "ANZ",
+   "headline": "How Australia's national teams get paid.",
+   "highlight": "paid",
+   "deal": "Socceroos x Matildas",
+   "descriptor": "Explainer"
+  },
+  "slides": [
+   {
+    "label": "The model",
+    "title": "Players share the revenue",
+    "rows": [
+     {
+      "main": "24% in 2019",
+      "sub": "First revenue-share deal, rising yearly"
+     },
+     {
+      "main": "70 / 30 split",
+      "sub": "Match fees and commercial, 2023 deal"
+     },
+     {
+      "main": "5% to youth",
+      "sub": "At least, of national team revenue"
+     }
+    ]
+   },
+   {
+    "label": "The dispute",
+    "title": "Court action, few details",
+    "rows": [
+     {
+      "main": "NSW Supreme Court",
+      "sub": "PFA acts for players, per AAP"
+     },
+     {
+      "main": "Seven-figure claim",
+      "sub": "Understood, not confirmed"
+     },
+     {
+      "main": "FA responds",
+      "sub": "Says it relates to a separate matter"
+     }
+    ]
+   },
+   {
+    "label": "What's next",
+    "title": "A deal up in 2027",
+    "rows": [
+     {
+      "main": "Expires Sept 2027",
+      "sub": "Talks haven't started, per ABC"
+     },
+     {
+      "main": "$15.34m FA loss",
+      "sub": "Record, on record revenue"
+     }
+    ]
+   }
+  ]
+ },
+ "caption": "How Australia's national teams get paid.\n\nSocceroos and Matildas players, through the PFA, have taken action against Football Australia in the NSW Supreme Court, per AAP. A seven-figure claim is understood. FA says it relates to a separate matter.\n\nBehind it sits a revenue-share model that began in 2019 and was rebuilt in 2023, with payments split 70 per cent match fees and 30 per cent commercial.\n\nThe current deal expires in 2027, and talks on the next one haven't started.\n\nRead the full story: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+}
