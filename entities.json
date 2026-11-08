@@ -7469,6 +7469,10 @@
     "logo"
    ]
   },
+  "custommed": {
+   "name": "CustomMed",
+   "k": "b"
+  },
   "cybercx": {
    "name": "CyberCX",
    "domain": "cybercx.com.au",
@@ -10294,6 +10298,11 @@
    "cat": "Home & hardware",
    "k": "b"
   },
+  "friendly-plumbing": {
+   "name": "Friendly Plumbing",
+   "k": "b",
+   "cat": "Construction & property"
+  },
   "friskies": {
    "name": "Friskies",
    "domain": "friskies.com",
@@ -11381,6 +11390,8 @@
    "ptype": "Club & team",
    "k": "p",
    "ptiers": [
+    "Major partner",
+    "AFL Principal Partner",
     "Platinum partner",
     "Official partner",
     "Media partner"
@@ -12687,6 +12698,10 @@
    "name": "Illawarra Mercury",
    "k": "b"
   },
+  "ilr": {
+   "name": "ILR",
+   "k": "b"
+  },
   "im8": {
    "name": "IM8",
    "domain": "im8health.com",
@@ -13538,6 +13553,10 @@
    "cat": "Retail",
    "k": "b"
   },
+  "jdc-flooring": {
+   "name": "JDC Flooring",
+   "k": "b"
+  },
   "jeep": {
    "name": "Jeep",
    "cat": "Automotive",
@@ -13883,6 +13902,10 @@
    "cat": "Not-for-profit",
    "k": "b"
   },
+  "kas-australia": {
+   "name": "KAS Australia",
+   "k": "b"
+  },
   "kaylee-mckeown": {
    "name": "Kaylee McKeown",
    "ptype": "Athlete & talent",
@@ -13899,6 +13922,10 @@
    "aliases": [
     "Kayo"
    ]
+  },
+  "kd-community": {
+   "name": "KD Community",
+   "k": "b"
   },
   "keece-group": {
    "name": "Keece Group",
@@ -26456,6 +26483,10 @@
    "cat": "Professional services",
    "k": "b"
   },
+  "the-territory": {
+   "name": "The Territory",
+   "k": "b"
+  },
   "the-village-building-co": {
    "name": "The Village Building Co.",
    "cat": "Construction & property",
@@ -29729,6 +29760,10 @@
    "k": "p",
    "domain": "worldtabletennis.com"
   },
+  "wumara-group": {
+   "name": "Wumara Group",
+   "k": "b"
+  },
   "wwe": {
    "name": "WWE",
    "domain": "wwe.com",
@@ -30265,38 +30300,6 @@
     "icon",
     "logo"
    ]
-  },
-  "custommed": {
-   "name": "CustomMed",
-   "k": "b"
-  },
-  "friendly-plumbing": {
-   "name": "Friendly Plumbing",
-   "k": "b"
-  },
-  "ilr": {
-   "name": "ILR",
-   "k": "b"
-  },
-  "jdc-flooring": {
-   "name": "JDC Flooring",
-   "k": "b"
-  },
-  "kas-australia": {
-   "name": "KAS Australia",
-   "k": "b"
-  },
-  "kd-community": {
-   "name": "KD Community",
-   "k": "b"
-  },
-  "the-territory": {
-   "name": "The Territory",
-   "k": "b"
-  },
-  "wumara-group": {
-   "name": "Wumara Group",
-   "k": "b"
   }
  },
  "leagues": [

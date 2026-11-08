@@ -397,7 +397,9 @@
    "term": 2,
    "endsEst": true,
    "date": "2025-02-12",
-   "url": "https://adelaideunited.com.au/?p=329345"
+   "url": "https://adelaideunited.com.au/?p=329345",
+   "tier": "Official partner",
+   "ends": 2027
   },
   {
    "date": "2026-10-30",
@@ -9398,7 +9400,8 @@
    "summary": "Oz Shipping Containers joins the Jets as a major partner for 2025/26, with its logo on the sleeve of the men's kit.",
    "status": "New",
    "url": "https://newcastlejetsfc.com.au/news/newcastle-jets-and-oz-shipping-containers-announce-partnership/",
-   "ends": 2026
+   "ends": 2026,
+   "tier": "Principal & major"
   },
   {
    "date": "2026-10-01",
@@ -32372,7 +32375,8 @@
    "url": "https://www.ipswich.qld.gov.au/News-Articles-Folder/2024/New-Lions-partnership-roaring-with-Ipswich-pride",
    "status": "New",
    "term": 3,
-   "ends": 2027
+   "ends": 2027,
+   "tier": "Official partner"
   },
   {
    "listed": "2026-10-30",
@@ -34229,7 +34233,8 @@
    "summary": "Aware Super signs on as the Giants' official superannuation partner, running to the end of 2026.",
    "url": "https://mumbrella.com.au/gws-giants-sign-aware-super-as-official-partner-840393",
    "status": "New",
-   "ends": 2026
+   "ends": 2026,
+   "tier": "Official partner"
   },
   {
    "listed": "2026-10-30",
@@ -35790,7 +35795,8 @@
    "url": "https://www.virginaustralia.com/cn/en/newsroom/2026/3/sydney-swans-to-set-flight-with-virgin-australia/",
    "status": "New",
    "term": 3,
-   "ends": 2028
+   "ends": 2028,
+   "tier": "Official partner"
   },
   {
    "listed": "2026-10-30",
@@ -41946,7 +41952,9 @@
    "type": "Official training partner",
    "summary": "VSP Security Wholesale becomes the Rabbitohs' official training partner, extending its deal for the 2023 and 2024 seasons.",
    "url": "https://www.rabbitohs.com.au/news/vsp-security-wholesale-become-the-official-training-partner-of-the-club",
-   "status": "Extension"
+   "status": "Extension",
+   "tier": "Official partner",
+   "ends": 2024
   },
   {
    "listed": "2026-10-30",
@@ -51249,7 +51257,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on West Coast Eagles's official partners page.",
    "url": "https://www.westcoasteagles.com.au/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51259,7 +51269,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on West Coast Eagles's official partners page.",
    "url": "https://www.westcoasteagles.com.au/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51269,7 +51281,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on West Coast Eagles's official partners page.",
    "url": "https://www.westcoasteagles.com.au/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51279,7 +51293,9 @@
    "region": "ANZ",
    "summary": "Listed as a official supplier on West Coast Eagles's official partners page.",
    "url": "https://www.westcoasteagles.com.au/partners",
-   "ptier": "Official supplier"
+   "ptier": "Official supplier",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51289,7 +51305,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on GWS Giants's official partners page.",
    "url": "https://www.gwsgiants.com.au/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51299,7 +51317,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on GWS Giants's official partners page.",
    "url": "https://www.gwsgiants.com.au/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51309,7 +51329,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on GWS Giants's official partners page.",
    "url": "https://www.gwsgiants.com.au/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51319,7 +51341,9 @@
    "region": "ANZ",
    "summary": "Listed as a official supplier on Brisbane Lions's official partners page.",
    "url": "https://www.lions.com.au/partners",
-   "ptier": "Official supplier"
+   "ptier": "Official supplier",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51329,7 +51353,9 @@
    "region": "ANZ",
    "summary": "Listed as a official supplier on Brisbane Lions's official partners page.",
    "url": "https://www.lions.com.au/partners",
-   "ptier": "Official supplier"
+   "ptier": "Official supplier",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51339,7 +51365,9 @@
    "region": "ANZ",
    "summary": "Listed as a official supplier on Brisbane Lions's official partners page.",
    "url": "https://www.lions.com.au/partners",
-   "ptier": "Official supplier"
+   "ptier": "Official supplier",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51349,7 +51377,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Gold Coast SUNS's official partners page.",
    "url": "https://www.goldcoastfc.com.au/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51359,7 +51389,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Gold Coast SUNS's official partners page.",
    "url": "https://www.goldcoastfc.com.au/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51369,7 +51401,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Gold Coast SUNS's official partners page.",
    "url": "https://www.goldcoastfc.com.au/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51379,7 +51413,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Gold Coast SUNS's official partners page.",
    "url": "https://www.goldcoastfc.com.au/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51389,7 +51425,9 @@
    "region": "ANZ",
    "summary": "Listed as a official supplier on Gold Coast SUNS's official partners page.",
    "url": "https://www.goldcoastfc.com.au/partners",
-   "ptier": "Official supplier"
+   "ptier": "Official supplier",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51399,7 +51437,9 @@
    "region": "ANZ",
    "summary": "Listed as a premier partner on Sydney Roosters's official partners page.",
    "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "ptier": "Premier partner"
+   "ptier": "Premier partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51409,7 +51449,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
    "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51419,7 +51461,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
    "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51429,7 +51473,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
    "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51439,7 +51485,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
    "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51449,7 +51497,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
    "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51459,7 +51509,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
    "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51469,7 +51521,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
    "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51479,7 +51533,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
    "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51489,7 +51545,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
    "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51499,7 +51557,9 @@
    "region": "ANZ",
    "summary": "Listed as a official supplier on Sydney Roosters's official partners page.",
    "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "ptier": "Official supplier"
+   "ptier": "Official supplier",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51509,7 +51569,9 @@
    "region": "ANZ",
    "summary": "Listed as a premier partner on South Sydney Rabbitohs's official partners page.",
    "url": "https://www.rabbitohs.com.au/",
-   "ptier": "Premier partner"
+   "ptier": "Premier partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-08",
@@ -51519,7 +51581,9 @@
    "region": "ANZ",
    "summary": "Listed as a platinum partner on South Sydney Rabbitohs's official partners page.",
    "url": "https://www.rabbitohs.com.au/",
-   "ptier": "Platinum partner"
+   "ptier": "Platinum partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   }
  ]
 }

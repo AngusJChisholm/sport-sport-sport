@@ -1,15 +1,15 @@
 {
- "generated": "2026-11-06",
+ "generated": "2026-11-08",
  "summary": {
   "dup_entities": 10,
-  "no_category": 419,
+  "no_category": 426,
   "cat_mismatch": 97,
-  "slot_clash": 20,
+  "slot_clash": 19,
   "dup_deals": 0,
   "no_broadcaster": 10,
   "stale": 0,
-  "no_source": 688,
-  "anz_slot_clash": 18
+  "no_source": 676,
+  "anz_slot_clash": 17
  },
  "dup_entities": [
   {
@@ -24,64 +24,12 @@
   },
   {
    "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
+    "Hockey Australia",
+    "Hockey New Zealand"
    ],
    "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
-   ]
-  },
-  {
-   "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
-   ],
-   "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
-   ]
-  },
-  {
-   "names": [
-    "TAB",
-    "TAB NZ"
-   ],
-   "slugs": [
-    "tab",
-    "tab-nz"
-   ]
-  },
-  {
-   "names": [
-    "Star Sports",
-    "The Star"
-   ],
-   "slugs": [
-    "star-sports",
-    "the-star"
-   ]
-  },
-  {
-   "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
-   ],
-   "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
-   ],
-   "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
+    "hockey-australia",
+    "hockey-new-zealand"
    ]
   },
   {
@@ -100,12 +48,54 @@
   },
   {
    "names": [
-    "Hockey Australia",
-    "Hockey New Zealand"
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
    ],
    "slugs": [
-    "hockey-australia",
-    "hockey-new-zealand"
+    "commonwealth-games",
+    "commonwealth-games-australia"
+   ]
+  },
+  {
+   "names": [
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
+   ],
+   "slugs": [
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
+   ]
+  },
+  {
+   "names": [
+    "Special Olympics",
+    "Special Olympics Australia"
+   ],
+   "slugs": [
+    "special-olympics",
+    "special-olympics-australia"
+   ]
+  },
+  {
+   "names": [
+    "Star Sports",
+    "The Star"
+   ],
+   "slugs": [
+    "star-sports",
+    "the-star"
+   ]
+  },
+  {
+   "names": [
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
+   ],
+   "slugs": [
+    "pure-nutrition",
+    "pure-sports-nutrition"
    ]
   },
   {
@@ -116,6 +106,16 @@
    "slugs": [
     "harness-racing-australia",
     "harness-racing-nz"
+   ]
+  },
+  {
+   "names": [
+    "TAB",
+    "TAB NZ"
+   ],
+   "slugs": [
+    "tab",
+    "tab-nz"
    ]
   }
  ],
@@ -193,6 +193,11 @@
   {
    "brand": "Good Friday Appeal",
    "slug": "good-friday-appeal",
+   "deals": 2
+  },
+  {
+   "brand": "Daily Press",
+   "slug": "daily-press",
    "deals": 2
   },
   {
@@ -1691,11 +1696,6 @@
    "deals": 1
   },
   {
-   "brand": "Daily Press",
-   "slug": "daily-press",
-   "deals": 1
-  },
-  {
    "brand": "Doolan Co.",
    "slug": "doolan-co",
    "deals": 1
@@ -2214,6 +2214,41 @@
    "brand": "Allam",
    "slug": "allam",
    "deals": 1
+  },
+  {
+   "brand": "The Territory",
+   "slug": "the-territory",
+   "deals": 1
+  },
+  {
+   "brand": "ILR",
+   "slug": "ilr",
+   "deals": 1
+  },
+  {
+   "brand": "JDC Flooring",
+   "slug": "jdc-flooring",
+   "deals": 1
+  },
+  {
+   "brand": "KD Community",
+   "slug": "kd-community",
+   "deals": 1
+  },
+  {
+   "brand": "Wumara Group",
+   "slug": "wumara-group",
+   "deals": 1
+  },
+  {
+   "brand": "KAS Australia",
+   "slug": "kas-australia",
+   "deals": 1
+  },
+  {
+   "brand": "CustomMed",
+   "slug": "custommed",
+   "deals": 1
   }
  ],
  "cat_mismatch": [
@@ -2281,13 +2316,6 @@
    "deals": 2
   },
   {
-   "brand": "Wilson Security",
-   "slug": "wilson-security",
-   "cat": "Professional services",
-   "rules_say": "Sporting goods & equipment",
-   "deals": 2
-  },
-  {
    "brand": "Seven Consulting",
    "slug": "seven-consulting",
    "cat": "Professional services",
@@ -2299,13 +2327,6 @@
    "slug": "mother-energy",
    "cat": "Non-alcoholic drinks",
    "rules_say": "Energy & utilities",
-   "deals": 2
-  },
-  {
-   "brand": "Zoo Fit",
-   "slug": "zoo-fit",
-   "cat": "Health & beauty",
-   "rules_say": "Hospitality & entertainment",
    "deals": 2
   },
   {
@@ -2523,6 +2544,13 @@
    "slug": "south-bank-corporation",
    "cat": "Tourism & government",
    "rules_say": "Banking & finance",
+   "deals": 1
+  },
+  {
+   "brand": "Wilson Security",
+   "slug": "wilson-security",
+   "cat": "Professional services",
+   "rules_say": "Sporting goods & equipment",
    "deals": 1
   },
   {
@@ -2789,6 +2817,13 @@
    "slug": "rockstar-energy",
    "cat": "Non-alcoholic drinks",
    "rules_say": "Energy & utilities",
+   "deals": 1
+  },
+  {
+   "brand": "Zoo Fit",
+   "slug": "zoo-fit",
+   "cat": "Health & beauty",
+   "rules_say": "Hospitality & entertainment",
    "deals": 1
   },
   {
@@ -3176,23 +3211,6 @@
    ]
   },
   {
-   "property": "Sydney Roosters",
-   "anz": true,
-   "slot": "Beer & cider",
-   "partners": [
-    {
-     "brand": "VB",
-     "since": "listed",
-     "ends": null
-    },
-    {
-     "brand": "Asahi",
-     "since": "Jul 2025",
-     "ends": 2030
-    }
-   ]
-  },
-  {
    "property": "Sydney Swans",
    "anz": true,
    "slot": "Energy retail",
@@ -3271,12 +3289,12 @@
    "deals": 7
   },
   {
-   "property": "Basketball Australia",
+   "property": "Cricket Victoria",
    "deals": 6
   },
   {
-   "property": "Cricket Victoria",
-   "deals": 6
+   "property": "Basketball Australia",
+   "deals": 5
   },
   {
    "property": "Netball Australia",
@@ -3289,10 +3307,6 @@
  ],
  "stale": [],
  "no_source": [
-  {
-   "deal": "Thirteen Commercial Cleaning × Adelaide United",
-   "issue": "needsSource"
-  },
   {
    "deal": "L'Oréal × Paris Saint-Germain",
    "issue": "no url"
@@ -4495,50 +4509,6 @@
   },
   {
    "deal": "Midas × Brad Jones Racing",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Oz Shipping Containers × Newcastle Jets",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Verso Projects × Brisbane Bullets",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Red Hill Estate × North Melbourne",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Mahindra × Perth Bears",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Zoo Fit × Perth Bears",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Geely × NZ Rugby League",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Rhino × Queensland Reds",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Cub Cadet × Brisbane Heat",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Wilson Security × Hobart Hurricanes",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Tourism WA × Basketball Australia",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Samsung × Allianz Stadium",
    "issue": "needsSource"
   },
   {
