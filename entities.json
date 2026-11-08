@@ -6516,7 +6516,18 @@
     "logo"
    ],
    "cat": "Non-alcoholic drinks",
-   "k": "b"
+   "k": "b",
+   "mkt": "b2c",
+   "aud": [
+    "fans"
+   ],
+   "align": [
+    "community",
+    "experiences"
+   ],
+   "pnote": "Backs national teams to connect communities through shared moments, with fan campaigns and retail promotions around events like the World Cup.",
+   "psrc": "https://www.bandt.com.au/coca-cola-signs-two-year-partnership-with-football-australia-ahead-of-fifa-world-cup/",
+   "profiled": "2026-11-08"
   },
   "coca-cola-europacific-partners": {
    "name": "Coca-Cola Europacific Partners",
@@ -8823,7 +8834,23 @@
     "icon"
    ],
    "cat": "Airlines & travel",
-   "k": "b"
+   "k": "b",
+   "mkt": "b2c",
+   "aud": [
+    "travellers",
+    "fans",
+    "international",
+    "youth"
+   ],
+   "align": [
+    "travel",
+    "international",
+    "experiences",
+    "hospitality"
+   ],
+   "pnote": "Uses global sport (tennis, football, rugby) for worldwide profile and hospitality, with campaigns that bring in younger fans.",
+   "psrc": "https://www.marketingweek.com/emirates-continues-sponsorship-drive-as-it-signs-biggest-deal-in-atp-history/",
+   "profiled": "2026-11-08"
   },
   "emirates-cricket-board": {
    "name": "Emirates Cricket Board",
@@ -10854,13 +10881,15 @@
    "ptype": "Club & team",
    "k": "p",
    "ptiers": [
-    "Official partner",
-    "Partner",
-    "Media partner",
-    "Official supplier",
+    "Foundation partner",
+    "Major partner",
     "Stadium partner",
-    "Foundation partner"
-   ]
+    "Official partner",
+    "Official supplier",
+    "Media partner",
+    "Partner"
+   ],
+   "ptiersChecked": "2026-11-08"
   },
   "gold-coast-titans": {
    "name": "Gold Coast Titans",
@@ -18114,7 +18143,21 @@
     "logo"
    ],
    "cat": "Apparel & footwear",
-   "k": "b"
+   "k": "b",
+   "mkt": "b2c",
+   "aud": [
+    "youth",
+    "active"
+   ],
+   "align": [
+    "equality",
+    "wellness",
+    "lifestyle",
+    "culture"
+   ],
+   "pnote": "Sits at the intersection of sport, style and culture, with a core 16 to 34 audience that cares about equity, diversity and mental health.",
+   "psrc": "https://insideretail.com.au/business/intersection-of-sport-and-culture-whats-behind-new-balances-rapid-growth-202309",
+   "profiled": "2026-11-08"
   },
   "new-delhi-marathon": {
    "name": "New Delhi Marathon",
@@ -25508,11 +25551,13 @@
    "ptype": "Club & team",
    "k": "p",
    "ptiers": [
+    "Major partner",
     "Platinum partner",
     "Premier partner",
     "Official partner",
     "Official supplier"
-   ]
+   ],
+   "ptiersChecked": "2026-11-08"
   },
   "sydney-showground": {
    "name": "Sydney Showground",
@@ -27011,7 +27056,19 @@
     "Toyota Australia",
     "Toyota Hilux",
     "Toyota New Zealand"
-   ]
+   ],
+   "mkt": "b2c",
+   "aud": [
+    "fans",
+    "families"
+   ],
+   "align": [
+    "community",
+    "innovation"
+   ],
+   "pnote": "Backs the AFL as premier partner from community footy to the elite level, tying it to the Good for Footy grassroots program and its dealer network.",
+   "psrc": "https://www.toyota.com.au/discover/news/toyota-australia-and-afl-renew-premier-sponsorship-deal",
+   "profiled": "2026-11-08"
   },
   "toyota-material-handling": {
    "name": "Toyota Material Handling",
@@ -28935,7 +28992,8 @@
     "Premier partner",
     "Official partner",
     "Official supplier"
-   ]
+   ],
+   "ptiersChecked": "2026-11-08"
   },
   "west-coast-fever": {
    "name": "West Coast Fever",
@@ -30207,6 +30265,38 @@
     "icon",
     "logo"
    ]
+  },
+  "custommed": {
+   "name": "CustomMed",
+   "k": "b"
+  },
+  "friendly-plumbing": {
+   "name": "Friendly Plumbing",
+   "k": "b"
+  },
+  "ilr": {
+   "name": "ILR",
+   "k": "b"
+  },
+  "jdc-flooring": {
+   "name": "JDC Flooring",
+   "k": "b"
+  },
+  "kas-australia": {
+   "name": "KAS Australia",
+   "k": "b"
+  },
+  "kd-community": {
+   "name": "KD Community",
+   "k": "b"
+  },
+  "the-territory": {
+   "name": "The Territory",
+   "k": "b"
+  },
+  "wumara-group": {
+   "name": "Wumara Group",
+   "k": "b"
   }
  },
  "leagues": [

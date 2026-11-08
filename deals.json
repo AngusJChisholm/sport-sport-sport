@@ -387,19 +387,17 @@
    "status": "New"
   },
   {
-   "month": "2026-10",
    "added": "2026-11-04",
    "deal": "Thirteen Commercial Cleaning × Adelaide United",
    "sport": "Football",
-   "type": "Official cleaning partner renewal",
+   "type": "Official cleaning partner",
    "region": "ANZ",
-   "summary": "Thirteen Commercial Cleaning continues as Adelaide United's Official Cleaning Partner for the next two years.",
-   "status": "Renewal",
-   "needsSource": true,
-   "tier": "Official partner",
+   "summary": "Thirteen Commercial Cleaning becomes Adelaide United's Official Cleaning Partner, looking after the Elizabeth training facility and Hindmarsh head office.",
+   "status": "New",
    "term": 2,
-   "ends": 2028,
-   "endsEst": true
+   "endsEst": true,
+   "date": "2025-02-12",
+   "url": "https://adelaideunited.com.au/?p=329345"
   },
   {
    "date": "2026-10-30",
@@ -6142,7 +6140,8 @@
    "summary": "Tech brand partners with the Swans to grow in Australia.",
    "url": "https://www.mi-3.com.au/26-03-2026/dreame-technology-partners-sydney-swans-expand-australian-market-presence",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ptier": "Premier partner"
   },
   {
    "date": "2026-03-23",
@@ -6404,7 +6403,8 @@
    "status": "New",
    "term": 3,
    "ends": 2029,
-   "endsEst": true
+   "endsEst": true,
+   "ptier": "Premier partner"
   },
   {
    "date": "2026-02-26",
@@ -6738,7 +6738,8 @@
    "term": 3,
    "ends": 2029,
    "endsEst": true,
-   "needsSource": true
+   "needsSource": true,
+   "ptier": "Official partner"
   },
   {
    "date": "2026-08-18",
@@ -7705,7 +7706,8 @@
    "summary": "SKG Radiology renews as the Eagles' preferred medical imaging provider.",
    "tier": "Official partner",
    "status": "Renewal",
-   "needsSource": true
+   "needsSource": true,
+   "ptier": "Official supplier"
   },
   {
    "date": "2026-08-04",
@@ -9388,68 +9390,18 @@
    "needsSource": true
   },
   {
-   "date": "2026-10-06",
+   "date": "2025-08-21",
    "deal": "Oz Shipping Containers × Newcastle Jets",
    "sport": "Football",
-   "type": "Shirt sponsorship",
+   "type": "Major partner",
    "region": "ANZ",
-   "summary": "Oz Shipping Containers upgrades to principal partner and front-of-shirt for the Jets men.",
-   "tier": "Shirt & kit placement",
-   "status": "Expansion",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-10-06",
-   "deal": "Verso Projects × Brisbane Bullets",
-   "sport": "Basketball",
-   "type": "Principal partner",
-   "region": "ANZ",
-   "summary": "Verso Projects upgrades to Brisbane Bullets principal partner in a multi-year deal.",
-   "tier": "Principal & major",
-   "status": "Expansion",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-10-06",
-   "deal": "Red Hill Estate × North Melbourne",
-   "sport": "AFL",
-   "type": "Renewal",
-   "region": "ANZ",
-   "summary": "Red Hill Estate renews with North Melbourne to the end of 2028.",
-   "tier": "Official partner",
-   "status": "Renewal",
-   "ends": 2028,
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-10-06",
-   "deal": "Mahindra × Perth Bears",
-   "sport": "NRL",
-   "type": "Official partner",
-   "region": "ANZ",
-   "summary": "Mahindra becomes the Perth Bears' automotive and founding partner.",
-   "tier": "Official partner",
+   "summary": "Oz Shipping Containers joins the Jets as a major partner for 2025/26, with its logo on the sleeve of the men's kit.",
    "status": "New",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
+   "url": "https://newcastlejetsfc.com.au/news/newcastle-jets-and-oz-shipping-containers-announce-partnership/",
+   "ends": 2026
   },
   {
-   "date": "2026-10-06",
-   "deal": "Zoo Fit × Perth Bears",
-   "sport": "NRL",
-   "type": "Foundation partner",
-   "region": "ANZ",
-   "summary": "Zoo Fit becomes a Perth Bears foundation partner and official gym operator.",
-   "tier": "Principal & major",
-   "status": "New",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-10-06",
+   "date": "2026-10-01",
    "deal": "Geely × NZ Rugby League",
    "sport": "Rugby league",
    "type": "Official partner",
@@ -9457,23 +9409,12 @@
    "summary": "Geely becomes NZRL's first official vehicle partner.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
+   "url": "https://autotrader.co.nz/news/geely-becomes-nz-rugby-leagues-first-vehicle-partner",
+   "term": 3,
+   "ends": 2029
   },
   {
-   "date": "2026-10-06",
-   "deal": "Rhino × Queensland Reds",
-   "sport": "Rugby union",
-   "type": "Official supplier",
-   "region": "ANZ",
-   "summary": "Rhino becomes Queensland Rugby's official ball and tackle equipment partner.",
-   "tier": "Official partner",
-   "status": "New",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-10-06",
+   "date": "2026-10-01",
    "deal": "Cub Cadet × Brisbane Heat",
    "sport": "Cricket",
    "type": "Partner",
@@ -9481,45 +9422,7 @@
    "summary": "Cub Cadet signs with the Brisbane Heat.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-10-06",
-   "deal": "Wilson Security × Hobart Hurricanes",
-   "sport": "Cricket",
-   "type": "Renewal",
-   "region": "ANZ",
-   "summary": "Wilson Security renews helmet branding with the Hurricanes for a 10th season.",
-   "tier": "Shirt & kit placement",
-   "status": "Renewal",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-10-06",
-   "deal": "Tourism WA × Basketball Australia",
-   "sport": "Basketball",
-   "type": "Renewal",
-   "region": "ANZ",
-   "summary": "The WA Government and Tourism WA renew support of the U14 Club Championships to 2029.",
-   "tier": "Official partner",
-   "status": "Renewal",
-   "ends": 2029,
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-10-06",
-   "deal": "Samsung × Allianz Stadium",
-   "sport": "Venues",
-   "type": "Renewal",
-   "region": "ANZ",
-   "summary": "Samsung renews the Samsung Lounge at Allianz Stadium for a year.",
-   "tier": "Official partner",
-   "status": "Renewal",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
+   "url": "https://sportsmintmedia.com/cub-cadet-takes-its-place-on-the-brisbane-heat-summer-stage/"
   },
   {
    "date": "2026-10-05",
@@ -10148,7 +10051,8 @@
    "summary": "WHOOP becomes the Lions AFLW's official supply partner.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "ended": true
   },
   {
    "date": "2025-09-30",
@@ -12396,7 +12300,8 @@
    "status": "Renewal",
    "term": 3,
    "ends": 2029,
-   "endsEst": true
+   "endsEst": true,
+   "ptier": "Major partner"
   },
   {
    "date": "2026-03-12",
@@ -12589,7 +12494,8 @@
    "summary": "MyPlace by Advantage Air joins the Eagles as a platinum partner.",
    "tier": "Principal & major",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "ptier": "Platinum partner"
   },
   {
    "date": "2025-02-18",
@@ -13441,7 +13347,8 @@
    "term": 2,
    "ends": 2027,
    "endsEst": true,
-   "needsSource": true
+   "needsSource": true,
+   "ptier": "Major partner"
   },
   {
    "date": "2025-08-27",
@@ -13637,7 +13544,8 @@
    "tier": "Official partner",
    "status": "New",
    "ends": 2026,
-   "needsSource": true
+   "needsSource": true,
+   "ptier": "Premier partner"
   },
   {
    "date": "2026-02-18",
@@ -14500,7 +14408,8 @@
    "summary": "Planet Fitness becomes the GWS Giants' official gym partner.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "needsSource": true,
+   "ptier": "Platinum partner"
   },
   {
    "date": "2026-02-11",
@@ -14732,7 +14641,8 @@
    "term": 5,
    "ends": 2030,
    "endsEst": true,
-   "needsSource": true
+   "needsSource": true,
+   "ended": true
   },
   {
    "date": "2025-07-16",
@@ -14881,7 +14791,8 @@
    "term": 4,
    "ends": 2029,
    "endsEst": true,
-   "needsSource": true
+   "needsSource": true,
+   "ptier": "Platinum partner"
   },
   {
    "date": "2025-11-12",
@@ -16105,7 +16016,8 @@
    "tier": "Official partner",
    "status": "Extension",
    "ends": 2029,
-   "needsSource": true
+   "needsSource": true,
+   "ptier": "AFL Principal Partner"
   },
   {
    "date": "2024-09-18",
@@ -20600,7 +20512,8 @@
    "summary": "New Balance expands its GWS Giants partnership.",
    "url": "https://ministryofsport.com/sport/australian-rules-football//page/4",
    "tier": "Official partner",
-   "status": "Extension"
+   "status": "Extension",
+   "ptier": "Platinum partner"
   },
   {
    "date": "2026-05-11",
@@ -21103,7 +21016,8 @@
    "summary": "The Eagles add Bar Health and Hygiene as a new partner",
    "url": "https://ministryofsport.com/west-coast-eagles-partner-with-bar-health-and-hygiene/",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ended": true
   },
   {
    "date": "2025-08-15",
@@ -22227,7 +22141,8 @@
    "summary": "IVE Group continues as a Swans partner",
    "url": "https://ministryofsport.com/swans-continues-marketing-initiatives-with-ive-partnership/",
    "tier": "Official partner",
-   "status": "Renewal"
+   "status": "Renewal",
+   "ended": true
   },
   {
    "date": "2025-03-27",
@@ -23810,7 +23725,8 @@
    "summary": "Multi-year collaboration with the Australian fashion label",
    "url": "https://ministryofsport.com/west-coast-eagles-announce-collaboration-with-saba/",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ended": true
   },
   {
    "date": "2025-12-18",
@@ -24757,7 +24673,8 @@
    "status": "New",
    "term": 2,
    "ends": 2028,
-   "endsEst": true
+   "endsEst": true,
+   "ptier": "Official partner"
   },
   {
    "date": "2026-03-04",
@@ -25376,7 +25293,8 @@
    "summary": "New Eagles partner",
    "url": "https://ministryofsport.com/west-coast-eagles-partner-with-tony-barlow-menswear/",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ptier": "Official supplier"
   },
   {
    "date": "2026-04-10",
@@ -30635,7 +30553,8 @@
    "summary": "Adora Fertility partners with the Swans",
    "url": "https://www.bandt.com.au/sydney-swans-births-deal-with-adora-fertility/",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ptier": "Official partner"
   },
   {
    "date": "2025-02-05",
@@ -30817,7 +30736,8 @@
    "url": "https://www.bandt.com.au/carsales-extends-sydney-swans-partnership-in-2025/",
    "tier": "Official partner",
    "status": "Extension",
-   "ends": 2025
+   "ends": 2025,
+   "ended": 2025
   },
   {
    "date": "2024-10-08",
@@ -32442,16 +32362,17 @@
    "ptier": "Official partner"
   },
   {
-   "listed": "2026-10-30",
    "deal": "Ipswich City Council × Brisbane Lions",
    "sport": "AFL",
-   "type": "Official partner",
    "region": "ANZ",
-   "summary": "Listed as an official partner on the club's official partners page.",
-   "url": "https://www.lions.com.au/partners",
-   "tier": "Official partner",
-   "status": "Current partner",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "date": "2024-05-24",
+   "type": "Official partner",
+   "summary": "Ipswich City Council backs the Lions in a three-year partnership.",
+   "url": "https://www.ipswich.qld.gov.au/News-Articles-Folder/2024/New-Lions-partnership-roaring-with-Ipswich-pride",
+   "status": "New",
+   "term": 3,
+   "ends": 2027
   },
   {
    "listed": "2026-10-30",
@@ -34299,16 +34220,16 @@
    "ptier": "Platinum partner"
   },
   {
-   "listed": "2026-10-30",
    "deal": "Aware Super × GWS Giants",
    "sport": "AFL",
-   "type": "Platinum partner",
    "region": "ANZ",
-   "summary": "Listed as a platinum partner on the club's official partners page.",
-   "url": "https://www.gwsgiants.com.au/partners",
-   "tier": "Principal & major",
-   "status": "Current partner",
-   "ptier": "Platinum partner"
+   "ptier": "Platinum partner",
+   "date": "2024-07-19",
+   "type": "Official superannuation partner",
+   "summary": "Aware Super signs on as the Giants' official superannuation partner, running to the end of 2026.",
+   "url": "https://mumbrella.com.au/gws-giants-sign-aware-super-as-official-partner-840393",
+   "status": "New",
+   "ends": 2026
   },
   {
    "listed": "2026-10-30",
@@ -35704,18 +35625,6 @@
   },
   {
    "listed": "2026-10-30",
-   "deal": "Princess Cruises × Sydney Swans",
-   "sport": "AFL",
-   "type": "Premier partner",
-   "region": "ANZ",
-   "summary": "Listed as a premier partner on the club's official partners page.",
-   "url": "https://www.sydneyswans.com.au/partners",
-   "tier": "Principal & major",
-   "status": "Current partner",
-   "ptier": "Premier partner"
-  },
-  {
-   "listed": "2026-10-30",
    "deal": "Channel 7 × Sydney Swans",
    "sport": "AFL",
    "type": "Premier partner",
@@ -35871,16 +35780,17 @@
    "ptier": "Official partner"
   },
   {
-   "listed": "2026-10-30",
    "deal": "Virgin Australia × Sydney Swans",
    "sport": "AFL",
-   "type": "Official partner",
    "region": "ANZ",
-   "summary": "Listed as an official partner on the club's official partners page.",
-   "url": "https://www.sydneyswans.com.au/partners",
-   "tier": "Official partner",
-   "status": "Current partner",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "date": "2026-03-13",
+   "type": "Official domestic airline partner",
+   "summary": "Virgin Australia becomes the Swans' official domestic airline on a three-year deal.",
+   "url": "https://www.virginaustralia.com/cn/en/newsroom/2026/3/sydney-swans-to-set-flight-with-virgin-australia/",
+   "status": "New",
+   "term": 3,
+   "ends": 2028
   },
   {
    "listed": "2026-10-30",
@@ -42028,16 +41938,15 @@
    "ptier": "Platinum partner"
   },
   {
-   "listed": "2026-10-30",
    "deal": "VSP Solutions × South Sydney Rabbitohs",
    "sport": "NRL",
-   "type": "Platinum partner",
    "region": "ANZ",
-   "summary": "Listed as a platinum partner on the club's official partners page.",
-   "url": "https://www.rabbitohs.com.au/",
-   "tier": "Principal & major",
-   "status": "Current partner",
-   "ptier": "Platinum partner"
+   "ptier": "Platinum partner",
+   "date": "2023-01-24",
+   "type": "Official training partner",
+   "summary": "VSP Security Wholesale becomes the Rabbitohs' official training partner, extending its deal for the 2023 and 2024 seasons.",
+   "url": "https://www.rabbitohs.com.au/news/vsp-security-wholesale-become-the-official-training-partner-of-the-club",
+   "status": "Extension"
   },
   {
    "listed": "2026-10-30",
@@ -51331,6 +51240,286 @@
    "ended": true,
    "ends": 2025,
    "endsEst": true
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Cool Ridge × West Coast Eagles",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on West Coast Eagles's official partners page.",
+   "url": "https://www.westcoasteagles.com.au/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Gatorade × West Coast Eagles",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on West Coast Eagles's official partners page.",
+   "url": "https://www.westcoasteagles.com.au/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Pepsi Max × West Coast Eagles",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on West Coast Eagles's official partners page.",
+   "url": "https://www.westcoasteagles.com.au/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "New Era × West Coast Eagles",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as a official supplier on West Coast Eagles's official partners page.",
+   "url": "https://www.westcoasteagles.com.au/partners",
+   "ptier": "Official supplier"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Cool Ridge × GWS Giants",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on GWS Giants's official partners page.",
+   "url": "https://www.gwsgiants.com.au/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Gatorade × GWS Giants",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on GWS Giants's official partners page.",
+   "url": "https://www.gwsgiants.com.au/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Pepsi Max × GWS Giants",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on GWS Giants's official partners page.",
+   "url": "https://www.gwsgiants.com.au/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Cool Ridge × Brisbane Lions",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as a official supplier on Brisbane Lions's official partners page.",
+   "url": "https://www.lions.com.au/partners",
+   "ptier": "Official supplier"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Gatorade × Brisbane Lions",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as a official supplier on Brisbane Lions's official partners page.",
+   "url": "https://www.lions.com.au/partners",
+   "ptier": "Official supplier"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "New Era × Brisbane Lions",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as a official supplier on Brisbane Lions's official partners page.",
+   "url": "https://www.lions.com.au/partners",
+   "ptier": "Official supplier"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "The Territory × Gold Coast SUNS",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Gold Coast SUNS's official partners page.",
+   "url": "https://www.goldcoastfc.com.au/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Pepsi Max × Gold Coast SUNS",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Gold Coast SUNS's official partners page.",
+   "url": "https://www.goldcoastfc.com.au/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Cool Ridge × Gold Coast SUNS",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Gold Coast SUNS's official partners page.",
+   "url": "https://www.goldcoastfc.com.au/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Gatorade × Gold Coast SUNS",
+   "sport": "AFL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Gold Coast SUNS's official partners page.",
+   "url": "https://www.goldcoastfc.com.au/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "New Era × Gold Coast SUNS",
+   "sport": "AFL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as a official supplier on Gold Coast SUNS's official partners page.",
+   "url": "https://www.goldcoastfc.com.au/partners",
+   "ptier": "Official supplier"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Deadly Choices × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Sydney Roosters's official partners page.",
+   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "ptier": "Premier partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Daily Press × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
+   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "ILR × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
+   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "JDC Flooring × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
+   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "KD Community × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
+   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Wumara Group × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
+   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "KAS Australia × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
+   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "New Era × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
+   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Friendly Plumbing × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
+   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Club Racing Australia × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on Sydney Roosters's official partners page.",
+   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "CustomMed × Sydney Roosters",
+   "sport": "NRL",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Listed as a official supplier on Sydney Roosters's official partners page.",
+   "url": "https://roosterscorporate.com.au/corporate-2/our-partners",
+   "ptier": "Official supplier"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Pepperstone × South Sydney Rabbitohs",
+   "sport": "NRL",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on South Sydney Rabbitohs's official partners page.",
+   "url": "https://www.rabbitohs.com.au/",
+   "ptier": "Premier partner"
+  },
+  {
+   "listed": "2026-11-08",
+   "deal": "Deadly Choices × South Sydney Rabbitohs",
+   "sport": "NRL",
+   "type": "Platinum partner",
+   "region": "ANZ",
+   "summary": "Listed as a platinum partner on South Sydney Rabbitohs's official partners page.",
+   "url": "https://www.rabbitohs.com.au/",
+   "ptier": "Platinum partner"
   }
  ]
 }

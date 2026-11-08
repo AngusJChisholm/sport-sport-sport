@@ -139,8 +139,8 @@
    "state": "WA",
    "tier": 1,
    "partnersUrl": "https://www.westcoasteagles.com.au/partners",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-08",
+   "onPage": 40
   },
   {
    "name": "Sydney Swans",
@@ -149,8 +149,8 @@
    "state": "NSW",
    "tier": 1,
    "partnersUrl": "https://www.sydneyswans.com.au/partners",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-08",
+   "onPage": 36
   },
   {
    "name": "GWS Giants",
@@ -159,8 +159,8 @@
    "state": "NSW",
    "tier": 1,
    "partnersUrl": "https://www.gwsgiants.com.au/partners",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-08",
+   "onPage": 34
   },
   {
    "name": "Brisbane Lions",
@@ -169,8 +169,8 @@
    "state": "QLD",
    "tier": 1,
    "partnersUrl": "https://www.lions.com.au/partners",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-08",
+   "onPage": 46
   },
   {
    "name": "Gold Coast SUNS",
@@ -179,8 +179,8 @@
    "state": "QLD",
    "tier": 1,
    "partnersUrl": "https://www.goldcoastfc.com.au/partners",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-08",
+   "onPage": 38
   },
   {
    "name": "Tasmania Devils",
@@ -189,8 +189,8 @@
    "state": "TAS",
    "tier": 1,
    "partnersUrl": "https://www.devilsfc.com.au/partners",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-08",
+   "onPage": 9
   },
   {
    "name": "AFL",
@@ -198,9 +198,9 @@
    "country": "AU",
    "state": "National",
    "tier": 1,
-   "partnersUrl": null,
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://www.afl.com.au/about-afl/partners/corporate",
+   "lastChecked": "2026-11-08",
+   "onPage": 34
   },
   {
    "name": "AFLW",
@@ -219,8 +219,8 @@
    "state": "NSW",
    "tier": 1,
    "partnersUrl": "https://roosterscorporate.com.au/corporate-2/our-partners",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-08",
+   "onPage": 55
   },
   {
    "name": "South Sydney Rabbitohs",
@@ -229,8 +229,8 @@
    "state": "NSW",
    "tier": 1,
    "partnersUrl": "https://www.rabbitohs.com.au/",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-08",
+   "onPage": 23
   },
   {
    "name": "Wests Tigers",
