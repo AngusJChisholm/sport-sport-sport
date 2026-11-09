@@ -26,7 +26,13 @@
     ],
     "close": "The NRLW deal was the audition. Quest got the part."
    },
-   "slug": "2026-11-10-quest-apartment-hotels-cronulla-sharks"
+   "slug": "2026-11-10-quest-apartment-hotels-cronulla-sharks",
+   "tier": "Principal & major",
+   "status": "Extension",
+   "term": 3,
+   "ends": 2029,
+   "endsEst": true,
+   "ptier": "Major partner"
   },
   {
    "date": "2026-11-09",
@@ -36,7 +42,13 @@
    "type": "Co-major partner",
    "region": "ANZ",
    "summary": "Tyrepower steps up to co-major partner of Port Adelaide on a three-year deal, with its brand on the upper back of the men's guernsey from 2027.",
-   "url": "https://www.portadelaidefc.com.au/news/2162324/tyrepower-elevates-to-co-major-partner-of-port-adelaide"
+   "url": "https://www.portadelaidefc.com.au/news/2162324/tyrepower-elevates-to-co-major-partner-of-port-adelaide",
+   "tier": "Principal & major",
+   "status": "Expansion",
+   "term": 3,
+   "ends": 2029,
+   "endsEst": true,
+   "ptier": "Platinum partner"
   },
   {
    "date": "2026-11-06",
@@ -46,7 +58,10 @@
    "type": "Major partner",
    "region": "ANZ",
    "summary": "Omoda Jaecoo becomes major partner and official membership partner of the Sydney Kings for the 2026/27 NBL season, and presenting partner of Hoops Capital's B2B program.",
-   "url": "https://ministryofsport.com/hoops-capital-and-sydney-kings-announce-partnership-with-omoda-jaecoo/"
+   "url": "https://ministryofsport.com/hoops-capital-and-sydney-kings-announce-partnership-with-omoda-jaecoo/",
+   "tier": "Principal & major",
+   "status": "New",
+   "ends": 2027
   },
   {
    "date": "2026-11-06",
@@ -56,7 +71,11 @@
    "type": "Extension",
    "region": "ANZ",
    "summary": "Callaway Golf extends its unified commercial partnership with Golf Australia, the PGA of Australia and the WPGA Tour of Australasia for three years, through 2029.",
-   "url": "https://ministryofsport.com/callaway-golf-extends-australian-golf-governing-body-partnerships-through-2029/"
+   "url": "https://ministryofsport.com/callaway-golf-extends-australian-golf-governing-body-partnerships-through-2029/",
+   "tier": "Official partner",
+   "status": "Extension",
+   "term": 3,
+   "ends": 2029
   },
   {
    "date": "2026-11-05",
@@ -66,7 +85,9 @@
    "type": "Official partner",
    "region": "Global",
    "summary": "Amazon-owned Zoox becomes official autonomous ride-hail partner of the Las Vegas Grand Prix in a multi-year deal, with robotaxi rides to Grand Prix Plaza planned from 2027.",
-   "url": "https://www.fox5vegas.com/2026/11/05/zoox-las-vegas-grand-prix-announced-multi-year-partnership/"
+   "url": "https://www.fox5vegas.com/2026/11/05/zoox-las-vegas-grand-prix-announced-multi-year-partnership/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-06",
@@ -76,7 +97,9 @@
    "type": "Apparel partner",
    "region": "ANZ",
    "summary": "adidas becomes Richmond's official apparel partner for its AFL and AFLW teams in a multi-year deal starting in 2027, the brand's return to the AFL.",
-   "url": "https://www.richmondfc.com.au/news/2161646/adidas-returns-to-the-afl-with-richmond-football-club-partnership"
+   "url": "https://www.richmondfc.com.au/news/2161646/adidas-returns-to-the-afl-with-richmond-football-club-partnership",
+   "tier": "Kit & apparel",
+   "status": "New"
   },
   {
    "date": "2026-11-09",
@@ -86,7 +109,9 @@
    "type": "Global sponsor",
    "region": "Global",
    "summary": "German workwear brand Engelbert Strauss becomes a global sponsor of UEFA Euro 2028, building on its UEFA refereeing and club competition deals.",
-   "url": "https://www.sportcal.com/news/strauss-strengthens-growing-uefa-ties-with-euro-2028-sponsorship/"
+   "url": "https://www.sportcal.com/news/strauss-strengthens-growing-uefa-ties-with-euro-2028-sponsorship/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-05",
@@ -96,7 +121,9 @@
    "type": "Presenting partner",
    "region": "Global",
    "summary": "Kaufland signs a multi-year deal as presenting sponsor of the NHL Global Series Germany and official grocery retail partner in Germany, Czechia and Slovakia.",
-   "url": "https://sportcal.com/news/nhl-and-kaufland-in-tie-up-covering-pair-of-german-games"
+   "url": "https://sportcal.com/news/nhl-and-kaufland-in-tie-up-covering-pair-of-german-games",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-05",
@@ -106,7 +133,9 @@
    "type": "Partnership",
    "region": "Global",
    "summary": "Brazilian bank Bradesco becomes Haas's first Brazilian commercial partner, taking the rear wing as Rafael Câmara makes his F1 debut.",
-   "url": "https://racingnews365.com/haas-announce-major-new-partner-as-ferrari-star-awaits-emotional-home-f1-debut"
+   "url": "https://racingnews365.com/haas-announce-major-new-partner-as-ferrari-star-awaits-emotional-home-f1-debut",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-05",
@@ -116,7 +145,9 @@
    "type": "Official partner",
    "region": "Global",
    "summary": "Yonex signs a multi-year deal as official tennis ball partner of the Davis Cup Final Eight, starting in Bologna this month.",
-   "url": "https://www.sportcal.com/sponsorship/world-tennis-nets-yonex-as-ball-supplier-for-davis-cup-final-eight/"
+   "url": "https://www.sportcal.com/sponsorship/world-tennis-nets-yonex-as-ball-supplier-for-davis-cup-final-eight/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-06",
@@ -126,7 +157,9 @@
    "type": "Official partner",
    "region": "Global",
    "summary": "Nestlé Confectionery becomes official chocolate and grab bag sweet partner of Everton Women in a multi-year deal, plus a stadium supplier role.",
-   "url": "https://www.foodnavigator.com/Article/2026/11/06/nestle-backs-womens-sport-in-major-multi-year-everton-deal/"
+   "url": "https://www.foodnavigator.com/Article/2026/11/06/nestle-backs-womens-sport-in-major-multi-year-everton-deal/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-06",
@@ -136,7 +169,9 @@
    "type": "Official partner",
    "region": "Global",
    "summary": "Newmark becomes official commercial real estate partner of the Knicks and Rangers and an official partner of Madison Square Garden.",
-   "url": "https://sportsmintmedia.com/newmark-brings-commercial-real-wstate-into-the-knicks-and-rangers-sponsorship-ecosystem/"
+   "url": "https://sportsmintmedia.com/newmark-brings-commercial-real-wstate-into-the-knicks-and-rangers-sponsorship-ecosystem/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-06",
@@ -146,7 +181,9 @@
    "type": "Title sponsorship",
    "region": "Global",
    "summary": "WRC tyre supplier Hankook takes title sponsorship of the 2027 WRC United States round, to be called Hankook Rally US.",
-   "url": "https://sportsmintmedia.com/hankook-expands-wrc-partnership-with-title-sponsorship-of-2027-us-rally/"
+   "url": "https://sportsmintmedia.com/hankook-expands-wrc-partnership-with-title-sponsorship-of-2027-us-rally/",
+   "tier": "Title sponsor",
+   "status": "New"
   },
   {
    "date": "2026-11-06",
@@ -156,7 +193,9 @@
    "type": "Ticketing partner",
    "region": "Global",
    "summary": "SeatGeek renews as official ticketing partner of Eredivisie clubs AZ, PEC Zwolle and PSV.",
-   "url": "https://www.sportcal.com/?p=154829"
+   "url": "https://www.sportcal.com/?p=154829",
+   "tier": "Official partner",
+   "status": "Renewal"
   },
   {
    "date": "2026-11-06",
@@ -166,7 +205,9 @@
    "type": "Licensing",
    "region": "Global",
    "summary": "The WTA and Sanrio's Hello Kitty launch their first official merchandise collaboration.",
-   "url": "https://ministryofsport.com/wta-and-sanrios-hello-kitty-partner-for-first-official-merchandise-collaboration/"
+   "url": "https://ministryofsport.com/wta-and-sanrios-hello-kitty-partner-for-first-official-merchandise-collaboration/",
+   "tier": "Licensing & merchandise",
+   "status": "New"
   },
   {
    "date": "2026-11-05",
@@ -176,7 +217,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Stage and Screen becomes official travel management partner of the Boomers and Opals in a multi-year deal.",
-   "url": "https://ministryofsport.com/stage-and-screen-named-official-travel-partner-of-basketball-australia-for-boomers-and-opals/"
+   "url": "https://ministryofsport.com/stage-and-screen-named-official-travel-partner-of-basketball-australia-for-boomers-and-opals/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-05",
@@ -186,7 +229,9 @@
    "type": "Presenting partner",
    "region": "ANZ",
    "summary": "Indigenous-owned agency We Create Studio is presenting major partner of the 36ers' NBL Indigenous Round game.",
-   "url": "https://ministryofsport.com/adelaide-36ers-partner-with-we-create-studio-as-major-partner-for-nbl-indigenous-round/"
+   "url": "https://ministryofsport.com/adelaide-36ers-partner-with-we-create-studio-as-major-partner-for-nbl-indigenous-round/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-04",

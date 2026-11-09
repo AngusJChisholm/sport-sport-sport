@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-08",
+ "generated": "2026-11-09",
  "summary": {
   "dup_entities": 10,
-  "no_category": 426,
+  "no_category": 432,
   "cat_mismatch": 97,
   "slot_clash": 19,
-  "dup_deals": 0,
-  "no_broadcaster": 10,
+  "dup_deals": 2,
+  "no_broadcaster": 11,
   "stale": 0,
   "no_source": 676,
   "anz_slot_clash": 17
@@ -14,12 +14,12 @@
  "dup_entities": [
   {
    "names": [
-    "HYROX",
-    "HYROX Australia"
+    "TAB",
+    "TAB NZ"
    ],
    "slugs": [
-    "hyrox",
-    "hyrox-australia"
+    "tab",
+    "tab-nz"
    ]
   },
   {
@@ -48,12 +48,12 @@
   },
   {
    "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
+    "Special Olympics",
+    "Special Olympics Australia"
    ],
    "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
+    "special-olympics",
+    "special-olympics-australia"
    ]
   },
   {
@@ -66,16 +66,6 @@
     "athletics",
     "athletics-australia",
     "athletics-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
-   ],
-   "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
    ]
   },
   {
@@ -110,12 +100,22 @@
   },
   {
    "names": [
-    "TAB",
-    "TAB NZ"
+    "HYROX",
+    "HYROX Australia"
    ],
    "slugs": [
-    "tab",
-    "tab-nz"
+    "hyrox",
+    "hyrox-australia"
+   ]
+  },
+  {
+   "names": [
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
+   ],
+   "slugs": [
+    "commonwealth-games",
+    "commonwealth-games-australia"
    ]
   }
  ],
@@ -139,6 +139,11 @@
    "brand": "GSA",
    "slug": "gsa",
    "deals": 3
+  },
+  {
+   "brand": "Newmark",
+   "slug": "newmark",
+   "deals": 2
   },
   {
    "brand": "JOGA",
@@ -199,6 +204,31 @@
    "brand": "Daily Press",
    "slug": "daily-press",
    "deals": 2
+  },
+  {
+   "brand": "Kaufland",
+   "slug": "kaufland",
+   "deals": 1
+  },
+  {
+   "brand": "Bradesco",
+   "slug": "bradesco",
+   "deals": 1
+  },
+  {
+   "brand": "Hello Kitty",
+   "slug": "hello-kitty",
+   "deals": 1
+  },
+  {
+   "brand": "Stage and Screen",
+   "slug": "stage-and-screen",
+   "deals": 1
+  },
+  {
+   "brand": "We Create Studio",
+   "slug": "we-create-studio",
+   "deals": 1
   },
   {
    "brand": "CONNOR",
@@ -3262,15 +3292,24 @@
    ]
   }
  ],
- "dup_deals": [],
+ "dup_deals": [
+  {
+   "deal": "Quest Apartment Hotels × Cronulla Sharks",
+   "issue": "listed entry next to a dated one (drop the listed one)"
+  },
+  {
+   "deal": "Tyrepower × Port Adelaide",
+   "issue": "listed entry next to a dated one (drop the listed one)"
+  }
+ ],
  "no_broadcaster": [
   {
-   "property": "Hockey Australia",
+   "property": "Golf Australia",
    "deals": 11
   },
   {
-   "property": "Golf Australia",
-   "deals": 10
+   "property": "Hockey Australia",
+   "deals": 11
   },
   {
    "property": "NZ Rugby League",
@@ -3289,11 +3328,15 @@
    "deals": 7
   },
   {
+   "property": "Basketball Australia",
+   "deals": 6
+  },
+  {
    "property": "Cricket Victoria",
    "deals": 6
   },
   {
-   "property": "Basketball Australia",
+   "property": "PGA of Australia",
    "deals": 5
   },
   {

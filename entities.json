@@ -3029,6 +3029,13 @@
    "cat": "Hospitality & entertainment",
    "k": "b"
   },
+  "az": {
+   "name": "AZ",
+   "k": "p"
+  },
+  "az-pec-zwolle-psv": {
+   "name": "AZ / PEC Zwolle / PSV"
+  },
   "azizi-developments": {
    "name": "Azizi Developments",
    "cat": "Construction & property",
@@ -4400,6 +4407,10 @@
    "name": "Bradcorp",
    "k": "b"
   },
+  "bradesco": {
+   "name": "Bradesco",
+   "k": "b"
+  },
   "bravus": {
    "name": "Bravus",
    "domain": "bravusmining.com.au",
@@ -5167,6 +5178,11 @@
    "name": "Call It Schorle",
    "k": "b",
    "cat": "Non-alcoholic drinks"
+  },
+  "callaway-golf": {
+   "name": "Callaway Golf",
+   "cat": "Sporting goods & equipment",
+   "k": "b"
   },
   "caltex": {
    "name": "Caltex",
@@ -9283,6 +9299,10 @@
    "ptype": "Club & team",
    "k": "p"
   },
+  "everton-women": {
+   "name": "Everton Women",
+   "k": "p"
+  },
   "everything-fleet": {
    "name": "Everything Fleet",
    "domain": "everythingfleet.com.au",
@@ -10972,6 +10992,9 @@
    "ptype": "Governing body",
    "k": "p"
   },
+  "golf-australia-pga-of-australia": {
+   "name": "Golf Australia / PGA of Australia"
+  },
   "golootlo": {
    "name": "Golootlo",
    "cat": "Fintech, crypto & trading",
@@ -11813,6 +11836,10 @@
     "icon",
     "logo"
    ]
+  },
+  "hello-kitty": {
+   "name": "Hello Kitty",
+   "k": "b"
   },
   "helloworld": {
    "name": "Helloworld",
@@ -13904,6 +13931,10 @@
   },
   "kas-australia": {
    "name": "KAS Australia",
+   "k": "b"
+  },
+  "kaufland": {
+   "name": "Kaufland",
    "k": "b"
   },
   "kaylee-mckeown": {
@@ -18069,6 +18100,11 @@
     "logo"
    ]
   },
+  "nestle-confectionery": {
+   "name": "Nestlé Confectionery",
+   "cat": "Food & nutrition",
+   "k": "b"
+  },
   "netball-australia": {
    "name": "Netball Australia",
    "domain": "netball.com.au",
@@ -18243,6 +18279,9 @@
    "ptype": "Club & team",
    "k": "p"
   },
+  "new-york-knicks-new-york-rangers": {
+   "name": "New York Knicks / New York Rangers"
+  },
   "new-york-liberty": {
    "name": "New York Liberty",
    "ptype": "Club & team",
@@ -18252,6 +18291,10 @@
     "icon",
     "logo"
    ]
+  },
+  "new-york-rangers": {
+   "name": "New York Rangers",
+   "k": "p"
   },
   "new-york-yankees": {
    "name": "New York Yankees",
@@ -18363,6 +18406,10 @@
    ],
    "ptype": "Club & team",
    "k": "p"
+  },
+  "newmark": {
+   "name": "Newmark",
+   "k": "b"
   },
   "news-australia": {
    "name": "News Australia",
@@ -19982,6 +20029,10 @@
    "name": "PeakMe",
    "k": "b"
   },
+  "pec-zwolle": {
+   "name": "PEC Zwolle",
+   "k": "p"
+  },
   "pedal-mafia": {
    "name": "Pedal Mafia",
    "cat": "Apparel & footwear",
@@ -21132,6 +21183,10 @@
     "logo"
    ]
   },
+  "psv": {
+   "name": "PSV",
+   "k": "p"
+  },
   "ptp": {
    "name": "PTP",
    "domain": "ptpfit.com",
@@ -21611,6 +21666,10 @@
    ],
    "cat": "Technology",
    "k": "b"
+  },
+  "rally-us": {
+   "name": "Rally US",
+   "k": "p"
   },
   "ralph-lauren": {
    "name": "Ralph Lauren",
@@ -24773,6 +24832,10 @@
    "domain": "stremio.com.au",
    "k": "b",
    "cat": "Food & nutrition"
+  },
+  "stage-and-screen": {
+   "name": "Stage and Screen",
+   "k": "b"
   },
   "staging-connections": {
    "name": "Staging Connections",
@@ -28957,6 +29020,10 @@
    "name": "We Create Print Deliver",
    "k": "b"
   },
+  "we-create-studio": {
+   "name": "We Create Studio",
+   "k": "b"
+  },
   "we-love-group": {
    "name": "We Love Group",
    "k": "b"
@@ -30300,45 +30367,6 @@
     "icon",
     "logo"
    ]
-  },
-  "callaway-golf": {
-   "name": "Callaway Golf"
-  },
-  "golf-australia-pga-of-australia": {
-   "name": "Golf Australia / PGA of Australia"
-  },
-  "kaufland": {
-   "name": "Kaufland"
-  },
-  "bradesco": {
-   "name": "Bradesco"
-  },
-  "nestle-confectionery": {
-   "name": "Nestlé Confectionery"
-  },
-  "everton-women": {
-   "name": "Everton Women"
-  },
-  "newmark": {
-   "name": "Newmark"
-  },
-  "new-york-knicks-new-york-rangers": {
-   "name": "New York Knicks / New York Rangers"
-  },
-  "rally-us": {
-   "name": "Rally US"
-  },
-  "az-pec-zwolle-psv": {
-   "name": "AZ / PEC Zwolle / PSV"
-  },
-  "hello-kitty": {
-   "name": "Hello Kitty"
-  },
-  "stage-and-screen": {
-   "name": "Stage and Screen"
-  },
-  "we-create-studio": {
-   "name": "We Create Studio"
   }
  },
  "leagues": [
