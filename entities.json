@@ -30300,6 +30300,45 @@
     "icon",
     "logo"
    ]
+  },
+  "callaway-golf": {
+   "name": "Callaway Golf"
+  },
+  "golf-australia-pga-of-australia": {
+   "name": "Golf Australia / PGA of Australia"
+  },
+  "kaufland": {
+   "name": "Kaufland"
+  },
+  "bradesco": {
+   "name": "Bradesco"
+  },
+  "nestle-confectionery": {
+   "name": "Nestlé Confectionery"
+  },
+  "everton-women": {
+   "name": "Everton Women"
+  },
+  "newmark": {
+   "name": "Newmark"
+  },
+  "new-york-knicks-new-york-rangers": {
+   "name": "New York Knicks / New York Rangers"
+  },
+  "rally-us": {
+   "name": "Rally US"
+  },
+  "az-pec-zwolle-psv": {
+   "name": "AZ / PEC Zwolle / PSV"
+  },
+  "hello-kitty": {
+   "name": "Hello Kitty"
+  },
+  "stage-and-screen": {
+   "name": "Stage and Screen"
+  },
+  "we-create-studio": {
+   "name": "We Create Studio"
   }
  },
  "leagues": [
