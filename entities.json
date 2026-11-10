@@ -8960,14 +8960,35 @@
    "avoid_class": [
     "club"
    ],
-   "pnote": "Backs leagues and venues, not clubs: left its Port Adelaide major partnership after three seasons when it changed its sponsorship strategy, and now partners the AFL, AFLW and Marvel Stadium on renewable energy. Retails in NSW, Victoria, south-east Queensland, SA and the ACT only (not WA, Tasmania, the NT or NZ).",
+   "pnote": "Backs leagues and venues, not clubs: left its Port Adelaide major partnership (2014-16) when it changed strategy, ran the MCG energy partnership 2016-22 (first major stadium on 100% renewables), and since March 2026 is Official Energy Partner of the AFL, AFLW and Marvel Stadium on a five-year deal matched to Golden Plains wind. Retails in NSW, Victoria, south-east Queensland, SA and the ACT only (not WA, Tasmania, the NT or NZ).",
    "markets": [
     "NSW",
     "VIC",
     "QLD",
     "SA",
     "ACT"
-   ]
+   ],
+   "pos": "mid",
+   "mkt": "both",
+   "aud": [
+    "families",
+    "fans",
+    "community",
+    "women",
+    "business",
+    "local"
+   ],
+   "align": [
+    "community",
+    "sustainability",
+    "home",
+    "innovation",
+    "fans",
+    "equality",
+    "family"
+   ],
+   "profiled": "2026-11-10",
+   "psrc": "https://www.marvelstadium.com.au/marvel-stadium-power-into-five-year-partnership-with-energyaustralia"
   },
   "enerven": {
    "name": "Enerven",
