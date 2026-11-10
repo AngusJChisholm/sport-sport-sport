@@ -10594,7 +10594,22 @@
     "logo"
    ],
    "cat": "Non-alcoholic drinks",
-   "k": "b"
+   "k": "b",
+   "pos": "mid",
+   "mkt": "b2c",
+   "aud": [
+    "active",
+    "youth",
+    "fans"
+   ],
+   "align": [
+    "performance",
+    "community",
+    "equality"
+   ],
+   "pnote": "Pairs elite stars with grassroots and youth sport (5v5 football, college women's athletes) to widen its reach and help remove barriers to participation.",
+   "psrc": "https://www.marketingbrew.com/stories/2023/06/08/why-gatorade-is-expanding-its-marketing-beyond-superstar-athletes",
+   "profiled": "2026-11-10"
   },
   "gavmanak": {
    "name": "GAVMANAK",
@@ -16385,7 +16400,21 @@
     "logo"
    ],
    "cat": "Food & nutrition",
-   "k": "b"
+   "k": "b",
+   "pos": "value",
+   "mkt": "b2c",
+   "aud": [
+    "families",
+    "youth"
+   ],
+   "align": [
+    "community",
+    "family",
+    "health"
+   ],
+   "pnote": "Backs grassroots and junior sport through local restaurants, aiming to improve the health and wellbeing of Australian children.",
+   "psrc": "https://www.mcdonalds.com/au/en-au/about-us/our-impact/community-connection/local-initiatives.html",
+   "profiled": "2026-11-10"
   },
   "mchenry-hohnen": {
    "name": "McHenry Hohnen",
@@ -30494,6 +30523,438 @@
   },
   "damsel-and-sprout": {
    "name": "Damsel & Sprout",
+   "k": "b"
+  },
+  "a-corp-computers": {
+   "name": "A Corp. Computers",
+   "k": "b"
+  },
+  "accolade-wines": {
+   "name": "Accolade Wines",
+   "k": "b"
+  },
+  "alltech-payroll": {
+   "name": "Alltech Payroll",
+   "k": "b"
+  },
+  "athletes-foot": {
+   "name": "Athletes Foot",
+   "k": "b"
+  },
+  "car-park-king": {
+   "name": "Car Park King",
+   "k": "b"
+  },
+  "climate-edge": {
+   "name": "Climate Edge",
+   "k": "b"
+  },
+  "club-central-menai": {
+   "name": "Club Central Menai",
+   "k": "b"
+  },
+  "corey-fox-landscaping": {
+   "name": "Corey Fox Landscaping",
+   "k": "b"
+  },
+  "cronulla-carpets": {
+   "name": "Cronulla Carpets",
+   "k": "b"
+  },
+  "dacca-architecture": {
+   "name": "DACCA Architecture",
+   "k": "b"
+  },
+  "easy-signs": {
+   "name": "Easy Signs",
+   "k": "b"
+  },
+  "elite-legal": {
+   "name": "Elite Legal",
+   "k": "b"
+  },
+  "gen-leads": {
+   "name": "Gen Leads",
+   "k": "b"
+  },
+  "gold-management-building-facilities": {
+   "name": "Gold Management Building & Facilities",
+   "k": "b"
+  },
+  "green-by-nature": {
+   "name": "Green by Nature",
+   "k": "b"
+  },
+  "guardian-venue-management-international": {
+   "name": "Guardian Venue Management International",
+   "k": "b"
+  },
+  "hicon-building": {
+   "name": "HICON Building",
+   "k": "b"
+  },
+  "john-ryan-freight-services": {
+   "name": "John Ryan Freight Services",
+   "k": "b"
+  },
+  "life-outdoors": {
+   "name": "Life Outdoors",
+   "k": "b"
+  },
+  "longwall-chain-australia": {
+   "name": "Longwall Chain Australia",
+   "k": "b"
+  },
+  "nulon": {
+   "name": "Nulon",
+   "k": "b"
+  },
+  "o-brien-palmer": {
+   "name": "O'Brien Palmer",
+   "k": "b"
+  },
+  "picker-financial": {
+   "name": "Picker Financial",
+   "k": "b"
+  },
+  "pointsbet": {
+   "name": "PointsBet",
+   "k": "b"
+  },
+  "resolution-strata-services": {
+   "name": "Resolution Strata Services",
+   "k": "b"
+  },
+  "select-events": {
+   "name": "Select Events",
+   "k": "b"
+  },
+  "shire-steel-fabrication": {
+   "name": "Shire Steel & Fabrication",
+   "k": "b"
+  },
+  "strata-management-services-nsw": {
+   "name": "Strata Management Services NSW",
+   "k": "b"
+  },
+  "tailored-protection-security": {
+   "name": "Tailored Protection & Security",
+   "k": "b"
+  },
+  "the-healthy-milennial": {
+   "name": "The Healthy Milennial",
+   "k": "b"
+  },
+  "the-outperformer": {
+   "name": "The Outperformer",
+   "k": "b"
+  },
+  "the-roaming-cup": {
+   "name": "The Roaming Cup",
+   "k": "b"
+  },
+  "the-vinyl-room": {
+   "name": "The Vinyl Room",
+   "k": "b"
+  },
+  "totally-workwear-kirrawee": {
+   "name": "Totally Workwear Kirrawee",
+   "k": "b"
+  },
+  "victor": {
+   "name": "Victor",
+   "k": "b"
+  },
+  "wed-group": {
+   "name": "WED Group",
+   "k": "b"
+  },
+  "westfield-miranda": {
+   "name": "Westfield Miranda",
+   "k": "b"
+  },
+  "white-wolf-constructions": {
+   "name": "White Wolf Constructions",
+   "k": "b"
+  },
+  "panetta": {
+   "name": "Panetta",
+   "k": "b"
+  },
+  "united-rentals": {
+   "name": "United Rentals",
+   "k": "b"
+  },
+  "d-velop-r": {
+   "name": "D.velop.R",
+   "k": "b"
+  },
+  "american-tire-and-racing-services": {
+   "name": "American Tire and Racing Services",
+   "k": "b"
+  },
+  "anthony-greenwood-legal": {
+   "name": "Anthony Greenwood Legal",
+   "k": "b"
+  },
+  "australian-hammer-supplies": {
+   "name": "Australian Hammer Supplies",
+   "k": "b"
+  },
+  "the-collective-co": {
+   "name": "The Collective Co.",
+   "k": "b"
+  },
+  "connection-2-sports": {
+   "name": "Connection 2 Sports",
+   "k": "b"
+  },
+  "craig-chappelow-plumbing-building": {
+   "name": "Craig Chappelow Plumbing & Building",
+   "k": "b"
+  },
+  "dep-consulting": {
+   "name": "Dep Consulting",
+   "k": "b"
+  },
+  "endeavour-fleet": {
+   "name": "Endeavour Fleet",
+   "k": "b"
+  },
+  "feros-group": {
+   "name": "Feros Group",
+   "k": "b"
+  },
+  "gecko": {
+   "name": "Gecko",
+   "k": "b"
+  },
+  "gibson-partners": {
+   "name": "Gibson Partners",
+   "k": "b"
+  },
+  "hamilton-elevators-nsw": {
+   "name": "Hamilton Elevators NSW",
+   "k": "b"
+  },
+  "highland-property": {
+   "name": "Highland Property",
+   "k": "b"
+  },
+  "hi-tec-batteries": {
+   "name": "Hi-Tec Batteries",
+   "k": "b"
+  },
+  "jrb-diesel": {
+   "name": "JRB Diesel",
+   "k": "b"
+  },
+  "kindarama": {
+   "name": "Kindarama",
+   "k": "b"
+  },
+  "kinetic-electrical-data": {
+   "name": "Kinetic Electrical & Data",
+   "k": "b"
+  },
+  "menai-sand-soil": {
+   "name": "Menai Sand & Soil",
+   "k": "b"
+  },
+  "more-than-meat": {
+   "name": "More Than Meat",
+   "k": "b"
+  },
+  "career-corporation": {
+   "name": "Career Corporation",
+   "k": "b"
+  },
+  "quantaco": {
+   "name": "Quantaco",
+   "k": "b"
+  },
+  "ray-white-sutherland-shire": {
+   "name": "Ray White Sutherland Shire",
+   "k": "b"
+  },
+  "relyon-constructions": {
+   "name": "Relyon Constructions",
+   "k": "b"
+  },
+  "ressler-property": {
+   "name": "Ressler Property",
+   "k": "b"
+  },
+  "roc-boots": {
+   "name": "ROC Boots",
+   "k": "b"
+  },
+  "sba-earthmoving-attachments": {
+   "name": "SBA Earthmoving Attachments",
+   "k": "b"
+  },
+  "scape-pools": {
+   "name": "Scape Pools",
+   "k": "b"
+  },
+  "showcall-crewing": {
+   "name": "Showcall Crewing",
+   "k": "b"
+  },
+  "southern-fresh": {
+   "name": "Southern Fresh",
+   "k": "b"
+  },
+  "t-1-2-3": {
+   "name": "T 1-2-3",
+   "k": "b"
+  },
+  "the-app-group": {
+   "name": "The APP Group",
+   "k": "b"
+  },
+  "titan-education": {
+   "name": "Titan Education",
+   "k": "b"
+  },
+  "triple-h": {
+   "name": "Triple H",
+   "k": "b"
+  },
+  "advanced-lithium-battery-solutions": {
+   "name": "Advanced Lithium Battery Solutions",
+   "k": "b"
+  },
+  "warren-saunders-insurance-brokers": {
+   "name": "Warren Saunders Insurance Brokers",
+   "k": "b"
+  },
+  "waterwize-services": {
+   "name": "Waterwize Services",
+   "k": "b"
+  },
+  "wellfix": {
+   "name": "Wellfix",
+   "k": "b"
+  },
+  "whitcon": {
+   "name": "Whitcon",
+   "k": "b"
+  },
+  "wilken": {
+   "name": "Wilken",
+   "k": "b"
+  },
+  "warner-bros-movie-world": {
+   "name": "Warner Bros. Movie World",
+   "k": "b"
+  },
+  "home-carer-s-alliance": {
+   "name": "Home Carer's Alliance",
+   "k": "b"
+  },
+  "kinetic": {
+   "name": "Kinetic",
+   "k": "b"
+  },
+  "lauxes-grates": {
+   "name": "Lauxes Grates",
+   "k": "b"
+  },
+  "national-fire-ant-eradication-program": {
+   "name": "National Fire Ant Eradication Program",
+   "k": "b"
+  },
+  "parkwood-village": {
+   "name": "Parkwood Village",
+   "k": "b"
+  },
+  "peak-property-services": {
+   "name": "Peak Property Services",
+   "k": "b"
+  },
+  "rackley-swimming": {
+   "name": "Rackley Swimming",
+   "k": "b"
+  },
+  "rosel": {
+   "name": "Rosel",
+   "k": "b"
+  },
+  "all-lifting": {
+   "name": "All Lifting",
+   "k": "b"
+  },
+  "athletes-nutrition": {
+   "name": "Athletes Nutrition",
+   "k": "b"
+  },
+  "cff-project-management": {
+   "name": "CFF Project Management",
+   "k": "b"
+  },
+  "fire-systems-queensland": {
+   "name": "Fire Systems Queensland",
+   "k": "b"
+  },
+  "gold-coast-airport": {
+   "name": "Gold Coast Airport",
+   "k": "b"
+  },
+  "nerang-rsl": {
+   "name": "Nerang RSL",
+   "k": "b"
+  },
+  "painpod": {
+   "name": "PainPod",
+   "k": "b"
+  },
+  "rogers-willex": {
+   "name": "Rogers Willex",
+   "k": "b"
+  },
+  "sunshine-ford": {
+   "name": "Sunshine Ford",
+   "k": "b"
+  },
+  "coomera-anglican-college": {
+   "name": "Coomera Anglican College",
+   "k": "b"
+  },
+  "newhaven-funerals": {
+   "name": "Newhaven Funerals",
+   "k": "b"
+  },
+  "walker-corporation": {
+   "name": "Walker Corporation",
+   "k": "b"
+  },
+  "best-signs": {
+   "name": "Best Signs",
+   "k": "b"
+  },
+  "cheap-as-chips": {
+   "name": "Cheap as Chips",
+   "k": "b"
+  },
+  "fast-proof-press": {
+   "name": "Fast Proof Press",
+   "k": "b"
+  },
+  "mx3-diagnostics": {
+   "name": "MX3 Diagnostics",
+   "k": "b"
+  },
+  "newcastle-airport": {
+   "name": "Newcastle Airport",
+   "k": "b"
+  },
+  "marvan-hotel-group": {
+   "name": "Marvan Hotel Group",
+   "k": "b"
+  },
+  "cowboys-leagues-club": {
+   "name": "Cowboys Leagues Club",
    "k": "b"
   }
  },

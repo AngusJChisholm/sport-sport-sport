@@ -288,9 +288,9 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": "https://www.sharks.com.au/about/sponsors/",
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://sharks.com.au/about/sponsors",
+   "lastChecked": "2026-11-10",
+   "onPage": 103
   },
   {
    "name": "St George Illawarra Dragons",
@@ -298,9 +298,9 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": "https://www.dragons.com.au/corporate/partnerships/partners/",
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://www.dragons.com.au/corporate/partnerships/partners",
+   "lastChecked": "2026-11-10",
+   "onPage": 82
   },
   {
    "name": "Newcastle Knights",
@@ -339,8 +339,8 @@
    "state": "QLD",
    "tier": 1,
    "partnersUrl": "https://www.titans.com.au/about/partners/",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-10",
+   "onPage": 77
   },
   {
    "name": "North Queensland Cowboys",
@@ -349,8 +349,8 @@
    "state": "QLD",
    "tier": 1,
    "partnersUrl": "https://www.cowboys.com.au/partners/partners/",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-10",
+   "onPage": 43
   },
   {
    "name": "Melbourne Storm",
@@ -379,8 +379,8 @@
    "state": "WA",
    "tier": 1,
    "partnersUrl": "https://www.perthbears.com.au/about/partnerships/",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-10",
+   "onPage": 13
   },
   {
    "name": "NRL",
