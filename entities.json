@@ -302,7 +302,8 @@
     "symbol",
     "icon",
     "logo"
-   ]
+   ],
+   "sub": "Beer & cider"
   },
   "abate-fire-protection-services": {
    "name": "Abate Fire Protection Services",
@@ -5473,7 +5474,8 @@
    "domain": "carling.com",
    "bf": [
     "logo"
-   ]
+   ],
+   "sub": "Beer & cider"
   },
   "carlos-alcaraz": {
    "name": "Carlos Alcaraz",
@@ -7000,7 +7002,32 @@
    "domain": "coopers.com.au",
    "bf": [
     "icon"
-   ]
+   ],
+   "pos": "mid",
+   "mkt": "b2c",
+   "aud": [
+    "men",
+    "adults",
+    "fans",
+    "community",
+    "local",
+    "regional",
+    "active"
+   ],
+   "align": [
+    "mateship",
+    "community",
+    "tradition",
+    "summer",
+    "fans",
+    "hospitality",
+    "music",
+    "lifestyle",
+    "regional"
+   ],
+   "profiled": "2026-11-10",
+   "pnote": "Australia's largest independent, family-owned brewer, growing in a shrinking beer market (Queensland fastest). Backs community and grassroots sport (NSWRU Subbies, Football SA, Norwood), SA venues (Coopers Stadium to 2028), Supercars to 2027, golf (Blitz), tennis (Kooyong), surf and live music. Lion pourage keeps it out of Adelaide Oval cricket and most SANFL clubs.",
+   "psrc": "https://www.indailysa.com.au/news/business/2026/04/27/10-minutes-with-coopers-managing-director-michael-shearer"
   },
   "coors": {
    "name": "Coors",
@@ -7010,7 +7037,8 @@
     "logo"
    ],
    "cat": "Alcohol",
-   "k": "b"
+   "k": "b",
+   "sub": "Beer & cider"
   },
   "copa-del-rey": {
    "name": "Copa del Rey",
@@ -10485,7 +10513,8 @@
    "bf": [
     "icon",
     "logo"
-   ]
+   ],
+   "sub": "Beer & cider"
   },
   "galatasaray": {
    "name": "Galatasaray",
@@ -11024,7 +11053,8 @@
    "bf": [
     "icon",
     "logo"
-   ]
+   ],
+   "sub": "Beer & cider"
   },
   "good-friday-appeal": {
    "name": "Good Friday Appeal",
@@ -11177,7 +11207,8 @@
    "domain": "greeneking.co.uk",
    "bf": [
     "icon"
-   ]
+   ],
+   "sub": "Beer & cider"
   },
   "greene-tweed": {
    "name": "Greene Tweed",
@@ -12207,7 +12238,8 @@
    "domain": "hopnation.com.au",
    "bf": [
     "icon"
-   ]
+   ],
+   "sub": "Beer & cider"
   },
   "hostplus": {
    "name": "Hostplus",
@@ -13825,7 +13857,8 @@
    "bf": [
     "icon",
     "logo"
-   ]
+   ],
+   "sub": "Beer & cider"
   },
   "judo-bank": {
    "name": "Judo Bank",
@@ -14198,7 +14231,8 @@
    "name": "Kingfisher",
    "cat": "Alcohol",
    "k": "b",
-   "domain": "kingfisherworld.com"
+   "domain": "kingfisherworld.com",
+   "sub": "Beer & cider"
   },
   "kingsgrove-sports": {
    "name": "Kingsgrove Sports",
@@ -17197,7 +17231,8 @@
    "domain": "molsoncoors.com",
    "bf": [
     "logo"
-   ]
+   ],
+   "sub": "Beer & cider"
   },
   "monaco-grand-prix": {
    "name": "Monaco Grand Prix",
@@ -17503,7 +17538,8 @@
   "mountain-culture": {
    "name": "Mountain Culture",
    "k": "b",
-   "cat": "Alcohol"
+   "cat": "Alcohol",
+   "sub": "Beer & cider"
   },
   "mountain-goat": {
    "name": "Mountain Goat",
@@ -20008,7 +20044,8 @@
    "bf": [
     "icon",
     "logo"
-   ]
+   ],
+   "sub": "Beer & cider"
   },
   "paypal": {
    "name": "PayPal",
@@ -20577,7 +20614,8 @@
    "domain": "piratelife.com.au",
    "cat": "Alcohol",
    "k": "b",
-   "parent": "carlton-and-united-breweries"
+   "parent": "carlton-and-united-breweries",
+   "sub": "Beer & cider"
   },
   "pirelli": {
    "name": "Pirelli",
@@ -23002,7 +23040,8 @@
    "name": "San Miguel",
    "k": "b",
    "logo": "assets/logos/san-miguel.png",
-   "cat": "Alcohol"
+   "cat": "Alcohol",
+   "sub": "Beer & cider"
   },
   "san-remo": {
    "name": "San Remo",
@@ -25094,6 +25133,14 @@
    "bf": [
     "icon"
    ]
+  },
+  "stone-wood": {
+   "name": "Stone & Wood",
+   "domain": "stoneandwood.com.au",
+   "cat": "Alcohol",
+   "parent": "lion",
+   "k": "b",
+   "sub": "Beer & cider"
   },
   "stow-storage": {
    "name": "Stow Storage",
