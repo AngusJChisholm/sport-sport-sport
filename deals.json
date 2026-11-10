@@ -12,7 +12,10 @@
    "type": "Principal partner",
    "region": "ANZ",
    "summary": "BYD's first major AFL deal: principal and official automotive partner from 2027, on the front of the AFL guernsey and back of the AFLW one, plus a club vehicle fleet.",
-   "url": "https://ministryofsport.com/hawthorn-football-club-secures-multi-year-partnership-with-byd-as-principal-partner-starting-2027/"
+   "url": "https://ministryofsport.com/hawthorn-football-club-secures-multi-year-partnership-with-byd-as-principal-partner-starting-2027/",
+   "tier": "Principal & major",
+   "status": "New",
+   "ptier": "Principal partner"
   },
   {
    "date": "2026-11-10",
@@ -22,7 +25,12 @@
    "type": "Extension",
    "region": "ANZ",
    "summary": "Three-year extension to the end of 2029 that moves Ingenia to the sternum of the Souths jersey and adds a major partner role with the Pathways program.",
-   "url": "https://www.rabbitohs.com.au/news/ingenia-holiday-parks-steps-up-as-rabbitohs-official-sternum-partner-in-three-year-extension"
+   "url": "https://www.rabbitohs.com.au/news/ingenia-holiday-parks-steps-up-as-rabbitohs-official-sternum-partner-in-three-year-extension",
+   "tier": "Principal & major",
+   "status": "Extension",
+   "term": 3,
+   "ends": 2029,
+   "ptier": "Premier partner"
   },
   {
    "date": "2026-11-10",
@@ -32,7 +40,12 @@
    "type": "Extension",
    "region": "ANZ",
    "summary": "Greenworks Australia stays a Platinum Partner for three more years, through to the end of the 2029 AFL season, after one season on board.",
-   "url": "https://www.westernbulldogs.com.au/news/2163910/bulldogs-greenworks-partnership-keeps-growing"
+   "url": "https://www.westernbulldogs.com.au/news/2163910/bulldogs-greenworks-partnership-keeps-growing",
+   "tier": "Principal & major",
+   "status": "Renewal",
+   "term": 3,
+   "ends": 2029,
+   "ptier": "Platinum partner"
   },
   {
    "date": "2026-11-01",
@@ -42,7 +55,9 @@
    "type": "Extension",
    "region": "ANZ",
    "summary": "Toyota Forklifts locks in three more years as co-major partner of Essendon's AFLW program, staying on the playing guernsey.",
-   "url": "https://www.essendonfc.com.au/news/2158958/toyota-forklifts-locks-in-three-more-years-with-essendon-aflw"
+   "url": "https://www.essendonfc.com.au/news/2158958/toyota-forklifts-locks-in-three-more-years-with-essendon-aflw",
+   "tier": "Principal & major",
+   "status": "Extension"
   },
   {
    "date": "2026-11-11",
@@ -52,7 +67,9 @@
    "type": "Renewal",
    "region": "ANZ",
    "summary": "Multi-year renewal keeps YoPRO as an Official Partner of the AO, with Carlos Alcaraz staying on as its global ambassador and a supporting role at the 1 Point Slam.",
-   "url": "https://ministryofsport.com/yopro-extends-partnership-with-australian-open/"
+   "url": "https://ministryofsport.com/yopro-extends-partnership-with-australian-open/",
+   "tier": "Ambassador & endorsement",
+   "status": "Renewal"
   },
   {
    "date": "2026-11-05",
@@ -62,7 +79,9 @@
    "type": "Partnership",
    "region": "ANZ",
    "summary": "Adelaide space-tech firm Fleet's first sporting club deal, with captain Steph Talbot and Maddy Westbeld as Fleet ambassadors and Fleet on the team's warm-up gear.",
-   "url": "https://adelaidelightning.wnbl.com.au/news/adelaide-lightning-reach-new-heights-with-fleet-space-technologies-partnership"
+   "url": "https://adelaidelightning.wnbl.com.au/news/adelaide-lightning-reach-new-heights-with-fleet-space-technologies-partnership",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-11",
@@ -72,7 +91,9 @@
    "type": "Extension",
    "region": "ANZ",
    "summary": "Gullivers extends as the QRU's headline partner and official sports travel provider, part of a batch of QRU partner renewals.",
-   "url": "https://ministryofsport.com/queensland-rugby-union-locks-in-multiple-partnership-extensions-through-2027/"
+   "url": "https://ministryofsport.com/queensland-rugby-union-locks-in-multiple-partnership-extensions-through-2027/",
+   "tier": "Official partner",
+   "status": "Extension"
   },
   {
    "date": "2026-11-04",
@@ -82,7 +103,9 @@
    "type": "Event hosting",
    "region": "ANZ",
    "summary": "Host agreement through Events Tasmania brings The Nationals back to Devonport in 2027 and 2028.",
-   "url": "https://bowls.com.au/the-nationals-return-to-devonport-for-2027-and-2028/"
+   "url": "https://bowls.com.au/the-nationals-return-to-devonport-for-2027-and-2028/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-05",
@@ -92,7 +115,9 @@
    "type": "Renewal",
    "region": "ANZ",
    "summary": "MasterFoods stays on as the Mariners' Official Major Community Partner, a link going back to the club's first season, giant sauce bottles and all.",
-   "url": "https://ccmariners.com.au/news/masterfoods-continues-longstanding-partnership-with-the-central-coast-mariners/"
+   "url": "https://ccmariners.com.au/news/masterfoods-continues-longstanding-partnership-with-the-central-coast-mariners/",
+   "tier": "Principal & major",
+   "status": "Renewal"
   },
   {
    "date": "2026-11-07",
@@ -102,7 +127,12 @@
    "type": "Silver partner",
    "region": "ANZ",
    "summary": "One-year deal as Official Silver Partner and Official Training Partner, branded on the A-League Men's training and warm-up kit.",
-   "url": "https://adelaideunited.com.au/news/putting-in-the-groundwork-solmech-joins-united-as-official-training-partner/"
+   "url": "https://adelaideunited.com.au/news/putting-in-the-groundwork-solmech-joins-united-as-official-training-partner/",
+   "tier": "Official partner",
+   "status": "New",
+   "term": 1,
+   "ends": 2027,
+   "endsEst": true
   },
   {
    "date": "2026-11-05",
@@ -112,7 +142,11 @@
    "type": "Gold partner",
    "region": "ANZ",
    "summary": "One-year Official Gold Partner deal for 2026/27, on the back of the A-League Men's shorts.",
-   "url": "https://adelaideunited.com.au/news/concrete-support-adelaide-stella-concrete-backs-the-reds/"
+   "url": "https://adelaideunited.com.au/news/concrete-support-adelaide-stella-concrete-backs-the-reds/",
+   "tier": "Official partner",
+   "status": "New",
+   "term": 1,
+   "ends": 2027
   },
   {
    "date": "2026-11-06",
@@ -122,7 +156,9 @@
    "type": "Partnership",
    "region": "ANZ",
    "summary": "Hospitality app The Pass gives Basketball Queensland members 10% off at its venues.",
-   "url": "https://www.queensland.basketball/resources/news/basketball-queensland-members-to-receive-10-off-at-the-pass-venues"
+   "url": "https://www.queensland.basketball/resources/news/basketball-queensland-members-to-receive-10-off-at-the-pass-venues",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-06",
