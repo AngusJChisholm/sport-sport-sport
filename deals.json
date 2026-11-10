@@ -12,7 +12,10 @@
    "type": "Extension",
    "region": "ANZ",
    "summary": "Jim Beam extends as a proud partner of the NSW Blues through 2028, announced in a joint Instagram post with the Blues.",
-   "url": "https://www.instagram.com/nswblues/"
+   "url": "https://www.instagram.com/nswblues/",
+   "tier": "Official partner",
+   "status": "Extension",
+   "ends": 2028
   },
   {
    "date": "2026-11-04",
