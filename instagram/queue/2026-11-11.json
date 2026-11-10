@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-11",
+ "hold": false,
+ "feed": {
+  "kind": "feature",
+  "cover": {
+   "tag": "Data drop",
+   "region": "ANZ",
+   "headline": "AFL clubs barely share sponsors.",
+   "highlight": "barely",
+   "deal": "17 AFL clubs, SSS archive",
+   "descriptor": "Data"
+  },
+  "slides": [
+   {
+    "label": "The sample",
+    "title": "615 slots, 466 brands",
+    "rows": [
+     {
+      "main": "17 AFL clubs",
+      "sub": "Checked 2 to 8 Nov 2026"
+     },
+     {
+      "main": "615 partner slots",
+      "sub": "Each brand counted once per club"
+     },
+     {
+      "main": "466 brands",
+      "sub": "From the SSS archive"
+     }
+    ]
+   },
+   {
+    "label": "The split",
+    "title": "86% back just one club",
+    "rows": [
+     {
+      "main": "403 brands",
+      "sub": "Appear at one club only"
+     },
+     {
+      "main": "63 brands",
+      "sub": "Appear at two or more clubs"
+     },
+     {
+      "main": "28 brands",
+      "sub": "Reach three clubs or more"
+     }
+    ]
+   },
+   {
+    "label": "Most shared",
+    "title": "Drinks top the list",
+    "rows": [
+     {
+      "main": "Gatorade 15",
+      "sub": "Of 17 clubs"
+     },
+     {
+      "main": "Cool Ridge 14",
+      "sub": "Of 17 clubs"
+     },
+     {
+      "main": "Pepsi Max 11",
+      "sub": "New Era 9, McDonald's 8"
+     }
+    ]
+   }
+  ]
+ },
+ "caption": "AFL clubs barely share sponsors.\n\nWe counted the current partners at 17 AFL clubs: 615 partner slots, 466 different brands. 403 of those brands back one club only. That is 86%.\n\nThe ones that do spread are drinks. Gatorade is at 15 clubs, Cool Ridge at 14 and Pepsi Max at 11.\n\nThis is our archive, not the whole market. Read the full story: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+}

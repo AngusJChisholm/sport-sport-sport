@@ -1,6 +1,42 @@
 {
  "features": [
   {
+   "date": "2026-11-11",
+   "label": "Data drop",
+   "headline": "AFL clubs barely share sponsors.",
+   "descriptor": "Brand overlap across 17 AFL clubs",
+   "topic": "Data",
+   "sport": "AFL",
+   "region": "ANZ",
+   "image": "https://images.unsplash.com/photo-1741520504868-2cd8f940f977",
+   "imageCredit": "Unsplash",
+   "related": [
+    "Gatorade × St Kilda",
+    "Cool Ridge × St Kilda",
+    "Pepsi Max × St Kilda",
+    "New Era × Port Adelaide",
+    "McDonald's × Brisbane Lions",
+    "Elastoplast × Richmond"
+   ],
+   "article": {
+    "standfirst": "Across 17 AFL clubs we count 466 sponsor brands, and 403 of them back one club only.",
+    "body": [
+     "Footy sponsorship looks like a crowded market, but the overlap between clubs is tiny. We took the current partner lists for 17 AFL clubs from the Sport Sport Sport archive and counted every brand once per club. The clubs hold 615 partner slots between them, filled by 466 different brands. Of those brands, 403 appear at a single club. That is 86 per cent.",
+     "The brands that do cross club lines are a short list, and the top of it is all drinks. Gatorade shows up at 15 of the 17 clubs, Cool Ridge at 14 and Pepsi Max at 11. Together those three fill 40 slots. Behind them come New Era at nine clubs and McDonald's at eight. St Kilda's partner page is a good example: it carries Gatorade, Cool Ridge Water and Pepsi Max side by side.",
+     "McDonald's is the biggest non-drink name on the shared list. It sits at eight clubs, and Fremantle's own announcement calls it Official Quick Service Restaurant and Official Café of the Dockers for the AFL and AFLW teams. The pattern is clear enough: the brands that travel are everyday consumer names that want reach across footy's whole fan base, while the rest of the list is sold club by club.",
+     "Zoom out and 63 brands sit at two or more clubs, and between them they fill 212 of the 615 slots, or about 34 per cent. Only 28 brands reach three clubs and nine reach five. Everything else is a club-by-club deal, from a local brewery to a car maker to a cyber security firm. For a brand, that means a club partnership rarely comes with a rival sitting next door on the same list.",
+     "Rosters differ a lot in size. Geelong lists 50 partners and Brisbane 48, while Fremantle sits at 27. The average is 36 per club. The numbers move with how fully each club lists its suppliers and smaller partners, so read the totals as a guide to scale, not a league table.",
+     "A few limits apply. Brands are counted as named, so Melbourne Airport and Melbourne Airport Parking are separate entries. Port Adelaide is left out because its partner page gave us only eight names at the last check, and Tasmania is out until it plays. Every club included was checked between 2 and 8 November 2026. The figures cover our archive, not the whole market."
+    ],
+    "close": "Share a sponsor with your rival and you are the exception."
+   },
+   "sources": [
+    "https://saints.com.au/partners",
+    "https://www.fremantlefc.com.au/news/1472437/fremantle-mchappy-to-extend-partnership"
+   ],
+   "slug": "2026-11-11-afl-clubs-barely-share-sponsors"
+  },
+  {
    "date": "2026-11-09",
    "label": "Feature",
    "headline": "How Australia's national teams get paid.",

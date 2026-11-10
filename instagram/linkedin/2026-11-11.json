@@ -1,0 +1,31 @@
+{
+ "date": "2026-11-11",
+ "headline_lines": [
+  "AFL CLUBS",
+  "BARELY SHARE",
+  "SPONSORS."
+ ],
+ "highlight": "SPONSORS.",
+ "deal": "Brand overlap across 17 AFL clubs",
+ "descriptor": "Data drop",
+ "label": "The numbers",
+ "others": [
+  {
+   "deal": "615 slots",
+   "sub": "Held by 466 different brands"
+  },
+  {
+   "deal": "86% at one club",
+   "sub": "403 of 466 brands"
+  },
+  {
+   "deal": "Gatorade 15 clubs",
+   "sub": "Cool Ridge 14, Pepsi Max 11"
+  },
+  {
+   "deal": "28 brands",
+   "sub": "Reach three or more clubs"
+  }
+ ],
+ "image": "https://images.unsplash.com/photo-1741520504868-2cd8f940f977"
+}
