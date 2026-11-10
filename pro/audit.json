@@ -4,24 +4,46 @@
   "dup_entities": 10,
   "no_category": 432,
   "cat_mismatch": 97,
-  "slot_clash": 18,
+  "slot_clash": 20,
   "dup_deals": 2,
   "no_broadcaster": 11,
   "stale": 0,
   "no_source": 675,
-  "anz_slot_clash": 16
+  "anz_slot_clash": 18
  },
  "dup_entities": [
   {
    "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
+    "TAB",
+    "TAB NZ"
    ],
    "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
+    "tab",
+    "tab-nz"
+   ]
+  },
+  {
+   "names": [
+    "Sky",
+    "Sky NZ",
+    "Sky Sport",
+    "Sky Sports"
+   ],
+   "slugs": [
+    "sky",
+    "sky-nz",
+    "sky-sport",
+    "sky-sports"
+   ]
+  },
+  {
+   "names": [
+    "HYROX",
+    "HYROX Australia"
+   ],
+   "slugs": [
+    "hyrox",
+    "hyrox-australia"
    ]
   },
   {
@@ -46,46 +68,14 @@
   },
   {
    "names": [
-    "Harness Racing Australia",
-    "Harness Racing NZ"
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
    ],
    "slugs": [
-    "harness-racing-australia",
-    "harness-racing-nz"
-   ]
-  },
-  {
-   "names": [
-    "Sky",
-    "Sky NZ",
-    "Sky Sport",
-    "Sky Sports"
-   ],
-   "slugs": [
-    "sky",
-    "sky-nz",
-    "sky-sport",
-    "sky-sports"
-   ]
-  },
-  {
-   "names": [
-    "Star Sports",
-    "The Star"
-   ],
-   "slugs": [
-    "star-sports",
-    "the-star"
-   ]
-  },
-  {
-   "names": [
-    "TAB",
-    "TAB NZ"
-   ],
-   "slugs": [
-    "tab",
-    "tab-nz"
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
    ]
   },
   {
@@ -100,22 +90,32 @@
   },
   {
    "names": [
-    "HYROX",
-    "HYROX Australia"
-   ],
-   "slugs": [
-    "hyrox",
-    "hyrox-australia"
-   ]
-  },
-  {
-   "names": [
     "Hockey Australia",
     "Hockey New Zealand"
    ],
    "slugs": [
     "hockey-australia",
     "hockey-new-zealand"
+   ]
+  },
+  {
+   "names": [
+    "Harness Racing Australia",
+    "Harness Racing NZ"
+   ],
+   "slugs": [
+    "harness-racing-australia",
+    "harness-racing-nz"
+   ]
+  },
+  {
+   "names": [
+    "Star Sports",
+    "The Star"
+   ],
+   "slugs": [
+    "star-sports",
+    "the-star"
    ]
   }
  ],
@@ -2981,6 +2981,23 @@
    ]
   },
   {
+   "property": "Adelaide 36ers",
+   "anz": true,
+   "slot": "Beer & cider",
+   "partners": [
+    {
+     "brand": "Good Drinks Australia",
+     "since": "Aug 2026",
+     "ends": 2028
+    },
+    {
+     "brand": "Bleasdale",
+     "since": "Jul 2025",
+     "ends": null
+    }
+   ]
+  },
+  {
    "property": "Brisbane Roar",
    "anz": true,
    "slot": "Quick service food",
@@ -3156,6 +3173,23 @@
    ]
   },
   {
+   "property": "South Australian Cricket Association",
+   "anz": true,
+   "slot": "Beer & cider",
+   "partners": [
+    {
+     "brand": "Hahn",
+     "since": "Jun 2026",
+     "ends": null
+    },
+    {
+     "brand": "Lion",
+     "since": "Oct 2025",
+     "ends": 2029
+    }
+   ]
+  },
+  {
    "property": "South East Melbourne Phoenix",
    "anz": true,
    "slot": "Banks",
@@ -3295,16 +3329,16 @@
    "deals": 11
   },
   {
+   "property": "World Surf League",
+   "deals": 9
+  },
+  {
    "property": "NZ Rugby League",
    "deals": 8
   },
   {
    "property": "AUSX Supercross",
    "deals": 8
-  },
-  {
-   "property": "World Surf League",
-   "deals": 7
   },
   {
    "property": "Commonwealth Games Australia",
