@@ -2,7 +2,7 @@
  "generated": "2026-11-10",
  "summary": {
   "dup_entities": 10,
-  "no_category": 432,
+  "no_category": 433,
   "cat_mismatch": 97,
   "slot_clash": 20,
   "dup_deals": 5,
@@ -12,58 +12,6 @@
   "anz_slot_clash": 18
  },
  "dup_entities": [
-  {
-   "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
-   ],
-   "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
-   ],
-   "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
-   ]
-  },
-  {
-   "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
-   ],
-   "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
-   ]
-  },
-  {
-   "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
-   ],
-   "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
-   ]
-  },
-  {
-   "names": [
-    "TAB",
-    "TAB NZ"
-   ],
-   "slugs": [
-    "tab",
-    "tab-nz"
-   ]
-  },
   {
    "names": [
     "Sky",
@@ -80,22 +28,12 @@
   },
   {
    "names": [
-    "Hockey Australia",
-    "Hockey New Zealand"
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
    ],
    "slugs": [
-    "hockey-australia",
-    "hockey-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Harness Racing Australia",
-    "Harness Racing NZ"
-   ],
-   "slugs": [
-    "harness-racing-australia",
-    "harness-racing-nz"
+    "pure-nutrition",
+    "pure-sports-nutrition"
    ]
   },
   {
@@ -110,12 +48,74 @@
   },
   {
    "names": [
+    "Harness Racing Australia",
+    "Harness Racing NZ"
+   ],
+   "slugs": [
+    "harness-racing-australia",
+    "harness-racing-nz"
+   ]
+  },
+  {
+   "names": [
+    "Special Olympics",
+    "Special Olympics Australia"
+   ],
+   "slugs": [
+    "special-olympics",
+    "special-olympics-australia"
+   ]
+  },
+  {
+   "names": [
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
+   ],
+   "slugs": [
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
+   ]
+  },
+  {
+   "names": [
+    "TAB",
+    "TAB NZ"
+   ],
+   "slugs": [
+    "tab",
+    "tab-nz"
+   ]
+  },
+  {
+   "names": [
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
+   ],
+   "slugs": [
+    "commonwealth-games",
+    "commonwealth-games-australia"
+   ]
+  },
+  {
+   "names": [
     "Star Sports",
     "The Star"
    ],
    "slugs": [
     "star-sports",
     "the-star"
+   ]
+  },
+  {
+   "names": [
+    "Hockey Australia",
+    "Hockey New Zealand"
+   ],
+   "slugs": [
+    "hockey-australia",
+    "hockey-new-zealand"
    ]
   }
  ],
@@ -204,6 +204,11 @@
    "brand": "Daily Press",
    "slug": "daily-press",
    "deals": 2
+  },
+  {
+   "brand": "Damsel & Sprout",
+   "slug": "damsel-and-sprout",
+   "deals": 1
   },
   {
    "brand": "Kaufland",
