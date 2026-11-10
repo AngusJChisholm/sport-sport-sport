@@ -40050,18 +40050,6 @@
   },
   {
    "listed": "2026-10-30",
-   "deal": "Classic Sportswear × Dolphins",
-   "sport": "NRL",
-   "type": "Premier partner",
-   "region": "ANZ",
-   "summary": "Listed as a premier partner on the club's official partners page.",
-   "url": "https://www.dolphinsnrl.com.au/partners/",
-   "tier": "Principal & major",
-   "status": "Current partner",
-   "ptier": "Premier partner"
-  },
-  {
-   "listed": "2026-10-30",
    "deal": "Rapidline × Dolphins",
    "sport": "NRL",
    "type": "Major partner",
@@ -40071,18 +40059,6 @@
    "tier": "Principal & major",
    "status": "Current partner",
    "ptier": "Major partner"
-  },
-  {
-   "listed": "2026-10-30",
-   "deal": "ZKP × Dolphins",
-   "sport": "NRL",
-   "type": "Gold partner",
-   "region": "ANZ",
-   "summary": "Listed as a gold partner on the club's official partners page.",
-   "url": "https://www.dolphinsnrl.com.au/partners/",
-   "tier": "Official partner",
-   "status": "Current partner",
-   "ptier": "Gold partner"
   },
   {
    "listed": "2026-10-30",
@@ -40111,30 +40087,6 @@
   {
    "listed": "2026-10-30",
    "deal": "City of Moreton Bay × Dolphins",
-   "sport": "NRL",
-   "type": "Gold partner",
-   "region": "ANZ",
-   "summary": "Listed as a gold partner on the club's official partners page.",
-   "url": "https://www.dolphinsnrl.com.au/partners/",
-   "tier": "Official partner",
-   "status": "Current partner",
-   "ptier": "Gold partner"
-  },
-  {
-   "listed": "2026-10-30",
-   "deal": "Tamboran Resources × Dolphins",
-   "sport": "NRL",
-   "type": "Gold partner",
-   "region": "ANZ",
-   "summary": "Listed as a gold partner on the club's official partners page.",
-   "url": "https://www.dolphinsnrl.com.au/partners/",
-   "tier": "Official partner",
-   "status": "Current partner",
-   "ptier": "Gold partner"
-  },
-  {
-   "listed": "2026-10-30",
-   "deal": "WeBuild × Dolphins",
    "sport": "NRL",
    "type": "Gold partner",
    "region": "ANZ",
@@ -40243,18 +40195,6 @@
   {
    "listed": "2026-10-30",
    "deal": "Gnech Lawyers × Dolphins",
-   "sport": "NRL",
-   "type": "Official partner",
-   "region": "ANZ",
-   "summary": "Listed as an official partner on the club's official partners page.",
-   "url": "https://www.dolphinsnrl.com.au/partners/",
-   "tier": "Official partner",
-   "status": "Current partner",
-   "ptier": "Official partner"
-  },
-  {
-   "listed": "2026-10-30",
-   "deal": "Hub.Health × Dolphins",
    "sport": "NRL",
    "type": "Official partner",
    "region": "ANZ",
@@ -53400,6 +53340,76 @@
    "summary": "Listed as a official telecommunications partner on Newcastle Knights's official partners page.",
    "url": "https://www.newcastleknights.com.au/about/sponsors/",
    "ptier": "Official telecommunications partner"
+  },
+  {
+   "listed": "2026-11-10",
+   "deal": "Dolphins Group × Dolphins",
+   "sport": "NRL",
+   "type": "Gold partner",
+   "region": "ANZ",
+   "summary": "Listed as a gold partner on Dolphins's official partners page.",
+   "url": "https://www.dolphinsnrl.com.au/partners/",
+   "ptier": "Gold partner"
+  },
+  {
+   "listed": "2026-11-10",
+   "deal": "Telstra × Dolphins",
+   "sport": "NRL",
+   "type": "Official telecommunications partner",
+   "region": "ANZ",
+   "summary": "Listed as a official telecommunications partner on Dolphins's official partners page.",
+   "url": "https://www.dolphinsnrl.com.au/partners/",
+   "ptier": "Official telecommunications partner"
+  },
+  {
+   "listed": "2026-11-10",
+   "deal": "Deadly Choices × Dolphins",
+   "sport": "NRL",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on Dolphins's official partners page.",
+   "url": "https://www.dolphinsnrl.com.au/partners/",
+   "ptier": "Partner"
+  },
+  {
+   "listed": "2026-11-10",
+   "deal": "Gatorade × Dolphins",
+   "sport": "NRL",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on Dolphins's official partners page.",
+   "url": "https://www.dolphinsnrl.com.au/partners/",
+   "ptier": "Partner"
+  },
+  {
+   "listed": "2026-11-10",
+   "deal": "Dolphins Central × Dolphins",
+   "sport": "NRL",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on Dolphins's official partners page.",
+   "url": "https://www.dolphinsnrl.com.au/partners/",
+   "ptier": "Partner"
+  },
+  {
+   "listed": "2026-11-10",
+   "deal": "Elephant in the Room × Dolphins",
+   "sport": "NRL",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on Dolphins's official partners page.",
+   "url": "https://www.dolphinsnrl.com.au/partners/",
+   "ptier": "Partner"
+  },
+  {
+   "listed": "2026-11-10",
+   "deal": "Elastoplast × Dolphins",
+   "sport": "NRL",
+   "type": "Partner",
+   "region": "ANZ",
+   "summary": "Listed as a partner on Dolphins's official partners page.",
+   "url": "https://www.dolphinsnrl.com.au/partners/",
+   "ptier": "Partner"
   }
  ]
 }
