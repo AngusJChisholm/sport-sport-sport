@@ -11249,6 +11249,9 @@
    "bf": [
     "icon",
     "logo"
+   ],
+   "aliases": [
+    "Greenworks Australia"
    ]
   },
   "gresini-racing": {
@@ -30450,6 +30453,28 @@
     "icon",
     "logo"
    ]
+  },
+  "fleet-space-technologies": {
+   "name": "Fleet Space Technologies",
+   "domain": "fleetspace.com",
+   "cat": "Technology",
+   "k": "b"
+  },
+  "solmech": {
+   "name": "Solmech",
+   "cat": "Construction & property",
+   "k": "b"
+  },
+  "adelaide-stella-concrete": {
+   "name": "Adelaide Stella Concrete",
+   "cat": "Construction & property",
+   "k": "b"
+  },
+  "masterfoods": {
+   "name": "MasterFoods",
+   "domain": "masterfoods.com.au",
+   "cat": "Food & nutrition",
+   "k": "b"
   }
  },
  "leagues": [
