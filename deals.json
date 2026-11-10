@@ -126,12 +126,14 @@
    "added": "2026-11-11",
    "deal": "YoPRO × Australian Open",
    "sport": "Tennis",
-   "type": "Renewal",
+   "type": "Official partner",
    "region": "ANZ",
-   "summary": "Multi-year renewal keeps YoPRO as an Official Partner of the AO, with Carlos Alcaraz staying on as its global ambassador and a supporting role at the 1 Point Slam.",
+   "summary": "Multi-year renewal keeps YoPRO as Official Partner of the AO, adding a Western Courts hub at AO27, a supporting role at the 1 Point Slam and state-level grassroots events, with Carlos Alcaraz staying on as global ambassador.",
    "url": "https://ministryofsport.com/yopro-extends-partnership-with-australian-open/",
-   "tier": "Ambassador & endorsement",
-   "status": "Renewal"
+   "tier": "Official partner",
+   "status": "Renewal",
+   "forPost": "2026-11-12",
+   "tierLock": true
   },
   {
    "date": "2026-11-05",
@@ -13775,15 +13777,15 @@
    "url": "https://www.unitedcup.com/en/about/partners"
   },
   {
-   "date": "2025-12-17",
+   "date": "2025-12-11",
    "deal": "YoPRO × Australian Open",
    "sport": "Tennis",
-   "type": "Partnership",
+   "type": "Official partner",
    "region": "ANZ",
-   "summary": "YoPRO partners with AO 2026.",
+   "summary": "YoPRO joins the Australian Open as an Official Partner for AO 2026, its first Grand Slam partnership.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true
+   "url": "https://ausopen.com/node/257712"
   },
   {
    "date": "2025-12-17",
