@@ -30482,6 +30482,15 @@
    "domain": "novatedleaseaustralia.com.au",
    "cat": "Banking & finance",
    "k": "b"
+  },
+  "vibe-hotels": {
+   "name": "Vibe Hotels",
+   "aliases": [
+    "Vibe Hotel Canberra"
+   ],
+   "domain": "tfehotels.com",
+   "cat": "Airlines & travel",
+   "k": "b"
   }
  },
  "leagues": [
