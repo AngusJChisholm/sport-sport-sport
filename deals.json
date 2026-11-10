@@ -53368,6 +53368,36 @@
    "url": "https://www.dragons.com.au/news/2024/11/15/dragons-announce-partnership-with-dynamoney/",
    "status": "New",
    "ptier": "Apparel partner"
+  },
+  {
+   "listed": "2026-11-10",
+   "deal": "THE ICONIC × Newcastle Knights",
+   "sport": "NRL",
+   "type": "NRLW partner",
+   "region": "ANZ",
+   "summary": "Listed as a nRLW partner on Newcastle Knights's official partners page.",
+   "url": "https://www.newcastleknights.com.au/about/sponsors/",
+   "ptier": "NRLW partner"
+  },
+  {
+   "listed": "2026-11-10",
+   "deal": "2HD × Newcastle Knights",
+   "sport": "NRL",
+   "type": "Media partner",
+   "region": "ANZ",
+   "summary": "Listed as a media partner on Newcastle Knights's official partners page.",
+   "url": "https://www.newcastleknights.com.au/about/sponsors/",
+   "ptier": "Media partner"
+  },
+  {
+   "listed": "2026-11-10",
+   "deal": "Telstra × Newcastle Knights",
+   "sport": "NRL",
+   "type": "Official telecommunications partner",
+   "region": "ANZ",
+   "summary": "Listed as a official telecommunications partner on Newcastle Knights's official partners page.",
+   "url": "https://www.newcastleknights.com.au/about/sponsors/",
+   "ptier": "Official telecommunications partner"
   }
  ]
 }
