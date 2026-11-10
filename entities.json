@@ -31040,6 +31040,22 @@
   "ben-moves-brisbane": {
    "name": "Ben Moves Brisbane",
    "k": "b"
+  },
+  "raiders-belconnen": {
+   "name": "Raiders Belconnen",
+   "k": "b"
+  },
+  "raiders-gungahlin": {
+   "name": "Raiders Gungahlin",
+   "k": "b"
+  },
+  "raiders-weston": {
+   "name": "Raiders Weston",
+   "k": "b"
+  },
+  "the-mawson-club": {
+   "name": "The Mawson Club",
+   "k": "b"
   }
  },
  "leagues": [
