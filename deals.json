@@ -236,6 +236,45 @@
    "status": "New"
   },
   {
+   "date": "2026-07-30",
+   "added": "2026-11-10",
+   "deal": "Coopers × Blitz Golf",
+   "sport": "Golf",
+   "type": "Naming rights",
+   "region": "ANZ",
+   "summary": "Coopers becomes the first naming rights partner of Blitz Golf's 2027 Australia Series, across all six events.",
+   "url": "https://coopers.com.au/blogs/partnerships/coopers-partners-with-blitz-golf-as-new-naming-rights-partner",
+   "tier": "Naming rights",
+   "status": "New"
+  },
+  {
+   "date": "2025-07-02",
+   "added": "2026-11-10",
+   "deal": "Coopers × Kooyong Classic",
+   "sport": "Tennis",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Coopers becomes the Kooyong Classic's official beer sponsor and event partner from January 2026.",
+   "url": "https://www.mediaweek.com.au/kooyong-classic-signs-coopers-brewery-as-exclusive-beer-partner-from-2026",
+   "tier": "Official partner",
+   "status": "New"
+  },
+  {
+   "date": "2023-02-14",
+   "added": "2026-11-10",
+   "deal": "Coopers × NSW Waratahs",
+   "sport": "Rugby union",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Coopers signs a two-year deal as a Waratahs and NSW Suburban Rugby major partner and official beer for 2023 and 2024.",
+   "url": "https://nsw.rugby/news/coopers-signs-as-major-partner-of-nsw-waratahs-2023214",
+   "tier": "Principal & major",
+   "status": "New",
+   "term": 2,
+   "ends": 2024,
+   "ended": 2024
+  },
+  {
    "date": "2026-11-04",
    "added": "2026-11-05",
    "deal": "CONNOR × Sydney FC",
@@ -13723,17 +13762,6 @@
   },
   {
    "date": "2025-08-13",
-   "deal": "Coopers × NSW Waratahs",
-   "sport": "Rugby union",
-   "type": "Official partner",
-   "region": "ANZ",
-   "summary": "Coopers becomes NSW Rugby's official beer.",
-   "tier": "Official partner",
-   "status": "New",
-   "needsSource": true
-  },
-  {
-   "date": "2025-08-13",
    "deal": "SEN × Melbourne Racing Club",
    "sport": "Horse racing",
    "type": "Partnership",
@@ -21287,13 +21315,13 @@
    "status": "Renewal"
   },
   {
-   "date": "2025-08-07",
-   "deal": "Coopers Brewery × NSW Waratahs",
+   "date": "2025-08-06",
+   "deal": "Coopers × NSW Rugby Union",
    "sport": "Rugby union",
-   "type": "Partnership",
+   "type": "Official partner",
    "region": "ANZ",
-   "summary": "NSW Rugby Union signs a new partnership with Coopers",
-   "url": "https://ministryofsport.com/nsw-rugby-union-announces-new-partnership-with-coopers-brewery/",
+   "summary": "Coopers signs a multi-year deal as NSW Rugby Union's official beer partner across the Shute Shield, Subbies and NSW Country Rugby.",
+   "url": "https://xplorer.rugby/news/nsw-rugby-union-announces-new-partnership-with-coopers-brewery-202585",
    "tier": "Official partner",
    "status": "New"
   },
@@ -30818,10 +30846,12 @@
    "sport": "Motorsport",
    "type": "Renewal",
    "region": "ANZ",
-   "summary": "Coopers renews with Supercars",
-   "url": "https://www.bandt.com.au/coopers-revs-into-renewed-supercars-partnership/",
+   "summary": "Coopers returns as Supercars' official beer, cider and non-alc beer partner from 2025 to 2027.",
+   "url": "https://www.supercars.com/news/coopers-supercars-partnership-2025-news-extension",
    "tier": "Official partner",
-   "status": "Renewal"
+   "status": "Renewal",
+   "term": 3,
+   "ends": 2027
   },
   {
    "date": "2025-01-30",

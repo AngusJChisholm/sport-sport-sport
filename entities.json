@@ -4062,6 +4062,12 @@
     "icon"
    ]
   },
+  "blitz-golf": {
+   "name": "Blitz Golf",
+   "domain": "blitzgolf.net",
+   "ptype": "League & competition",
+   "k": "p"
+  },
   "bloom-energy": {
    "name": "Bloom Energy",
    "domain": "bloomenergy.com",
@@ -18941,6 +18947,15 @@
    ],
    "k": "p",
    "domain": "nswrl.com.au"
+  },
+  "nsw-rugby-union": {
+   "name": "NSW Rugby Union",
+   "aliases": [
+    "NSWRU"
+   ],
+   "domain": "nsw.rugby",
+   "ptype": "Governing body",
+   "k": "p"
   },
   "nsw-swifts": {
    "name": "NSW Swifts",
