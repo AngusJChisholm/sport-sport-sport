@@ -1,37 +1,17 @@
 {
- "generated": "2026-11-09",
+ "generated": "2026-11-10",
  "summary": {
   "dup_entities": 10,
   "no_category": 432,
   "cat_mismatch": 97,
-  "slot_clash": 19,
+  "slot_clash": 18,
   "dup_deals": 2,
   "no_broadcaster": 11,
   "stale": 0,
-  "no_source": 676,
-  "anz_slot_clash": 17
+  "no_source": 675,
+  "anz_slot_clash": 16
  },
  "dup_entities": [
-  {
-   "names": [
-    "HYROX",
-    "HYROX Australia"
-   ],
-   "slugs": [
-    "hyrox",
-    "hyrox-australia"
-   ]
-  },
-  {
-   "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
-   ],
-   "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
-   ]
-  },
   {
    "names": [
     "Athletics",
@@ -46,12 +26,12 @@
   },
   {
    "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
    ],
    "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
+    "commonwealth-games",
+    "commonwealth-games-australia"
    ]
   },
   {
@@ -76,6 +56,20 @@
   },
   {
    "names": [
+    "Sky",
+    "Sky NZ",
+    "Sky Sport",
+    "Sky Sports"
+   ],
+   "slugs": [
+    "sky",
+    "sky-nz",
+    "sky-sport",
+    "sky-sports"
+   ]
+  },
+  {
+   "names": [
     "Star Sports",
     "The Star"
    ],
@@ -96,26 +90,32 @@
   },
   {
    "names": [
+    "Special Olympics",
+    "Special Olympics Australia"
+   ],
+   "slugs": [
+    "special-olympics",
+    "special-olympics-australia"
+   ]
+  },
+  {
+   "names": [
+    "HYROX",
+    "HYROX Australia"
+   ],
+   "slugs": [
+    "hyrox",
+    "hyrox-australia"
+   ]
+  },
+  {
+   "names": [
     "Hockey Australia",
     "Hockey New Zealand"
    ],
    "slugs": [
     "hockey-australia",
     "hockey-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Sky",
-    "Sky NZ",
-    "Sky Sport",
-    "Sky Sports"
-   ],
-   "slugs": [
-    "sky",
-    "sky-nz",
-    "sky-sport",
-    "sky-sports"
    ]
   }
  ],
@@ -3100,23 +3100,6 @@
    ]
   },
   {
-   "property": "NSW Waratahs",
-   "anz": true,
-   "slot": "Beer & cider",
-   "partners": [
-    {
-     "brand": "Guinness",
-     "since": "Feb 2026",
-     "ends": null
-    },
-    {
-     "brand": "Coopers",
-     "since": "Aug 2025",
-     "ends": null
-    }
-   ]
-  },
-  {
    "property": "Penrith Panthers",
    "anz": true,
    "slot": "Beer & cider",
@@ -5144,10 +5127,6 @@
   },
   {
    "deal": "Chubb × Australian Open",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Coopers × NSW Waratahs",
    "issue": "needsSource"
   },
   {
