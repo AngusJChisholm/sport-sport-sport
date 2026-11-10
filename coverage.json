@@ -208,9 +208,9 @@
    "country": "AU",
    "state": "National",
    "tier": 1,
-   "partnersUrl": null,
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://www.afl.com.au/aflw/about-aflw/partners",
+   "lastChecked": "2026-11-10",
+   "onPage": 27
   },
   {
    "name": "Sydney Roosters",
