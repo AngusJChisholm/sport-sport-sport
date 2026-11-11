@@ -30,7 +30,10 @@
     ],
     "close": "The AO's summer soundtrack is sorted for the next five Januarys."
    },
-   "slug": "2026-11-12-arn-australian-open"
+   "slug": "2026-11-12-arn-australian-open",
+   "tier": "Official partner",
+   "ends": 2031,
+   "endsEst": true
   },
   {
    "date": "2026-11-09",
@@ -55,7 +58,10 @@
    "summary": "Three-year partnership makes City of Parramatta a presenting partner at one key Wanderers event, its third local club partnership after the Parramatta Eels and the GIANTS, and backs an Emerging Female Leaders Program.",
    "url": "https://wswanderersfc.com.au/news/parramatta-and-wanderers-kick-off-new-partnership/",
    "term": 3,
-   "status": "New"
+   "status": "New",
+   "tier": "Official partner",
+   "ends": 2029,
+   "endsEst": true
   },
   {
    "date": "2026-11-10",
@@ -65,7 +71,9 @@
    "type": "Official partner",
    "region": "Global",
    "summary": "Multi-year global partnership makes Hotels.com an Official Partner of Real Madrid, with matchday branding, digital content and hospitality at the Bernabéu.",
-   "url": "https://www.insideworldfootball.com/2026/11/10/real-madrid-ink-multi-year-global-sponsorship-with-hotels-com"
+   "url": "https://www.insideworldfootball.com/2026/11/10/real-madrid-ink-multi-year-global-sponsorship-with-hotels-com",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-11",
@@ -76,7 +84,8 @@
    "region": "Global",
    "summary": "E1's official gin partner steps up to title partner of the Miami race, now the Bombay Sapphire E1 Miami GP 2026, on Biscayne Bay on 13-14 November.",
    "url": "https://sportsmintmedia.com/bombay-sapphire-steps-up-e1-partnership-with-miami-gp-naming-rights/",
-   "status": "Upgrade"
+   "status": "Upgrade",
+   "tier": "Title sponsor"
   },
   {
    "date": "2026-11-11",
@@ -87,7 +96,8 @@
    "region": "Global",
    "summary": "Multi-year partnership makes Elysia by Fortescue Zero Jaguar TCS Racing's official battery intelligence partner ahead of Formula E's GEN4 era.",
    "url": "https://sportsmintmedia.com/jaguar-tcs-racing-turns-to-elysia-by-fortescue-zero-to-boost-battery-intelligence/",
-   "status": "New"
+   "status": "New",
+   "tier": "Official partner"
   },
   {
    "date": "2026-11-11",
@@ -98,7 +108,11 @@
    "region": "Global",
    "summary": "Alipay's parent extends its UEFA partnership by two years to cover Euro 2028 as official payment, wealth management and health assistant partner, with Alipay, Ant Fortune and AQ branding.",
    "url": "https://www.sportcal.com/sponsorship/alipay-parent-ant-group-expands-uefa-partnership-for-euro-2028/",
-   "status": "Extension"
+   "status": "Extension",
+   "tier": "Official partner",
+   "term": 2,
+   "ends": 2028,
+   "endsEst": true
   },
   {
    "date": "2026-11-10",
@@ -110,7 +124,10 @@
    "summary": "French IT firm XEFI becomes primary title sponsor of Jean-René Bernaudeau's team, formerly Team TotalEnergies, on a three-year partnership from 2027, with the team renamed XEFI.",
    "url": "https://www.sportcal.com/news/xefi-saves-team-totalenergies-becoming-primary-title-sponsor/",
    "term": 3,
-   "status": "New"
+   "status": "New",
+   "tier": "Title sponsor",
+   "ends": 2029,
+   "endsEst": true
   },
   {
    "date": "2026-11-11",
@@ -121,7 +138,8 @@
    "region": "ANZ",
    "summary": "Nine Queensland extends as the Reds' media partner, promoting the team across the 9Network and 9Now.",
    "url": "https://ministryofsport.com/queensland-rugby-union-locks-in-multiple-partnership-extensions-through-2027/",
-   "status": "Extension"
+   "status": "Extension",
+   "tier": "Media & broadcast"
   },
   {
    "date": "2026-11-11",
@@ -132,7 +150,9 @@
    "region": "ANZ",
    "summary": "QCOM extends as the Reds' radio communications partner through 2027, supplying two-way radios to the coaching and high-performance staff.",
    "url": "https://ministryofsport.com/queensland-rugby-union-locks-in-multiple-partnership-extensions-through-2027/",
-   "status": "Extension"
+   "status": "Extension",
+   "tier": "Official partner",
+   "ends": 2027
   },
   {
    "date": "2026-11-11",
@@ -143,7 +163,8 @@
    "region": "ANZ",
    "summary": "Worldwide Milton extends as Queensland Rugby's printing partner into a sixth year, covering ground signage at Ballymore and Suncorp Stadium and the QRU Annual Report.",
    "url": "https://ministryofsport.com/queensland-rugby-union-locks-in-multiple-partnership-extensions-through-2027/",
-   "status": "Extension"
+   "status": "Extension",
+   "tier": "Official partner"
   },
   {
    "date": "2026-11-11",
@@ -154,7 +175,8 @@
    "region": "ANZ",
    "summary": "DriTimes extends as supplier of high-performance towels for Reds players, plus co-branded fan merchandise.",
    "url": "https://ministryofsport.com/queensland-rugby-union-locks-in-multiple-partnership-extensions-through-2027/",
-   "status": "Extension"
+   "status": "Extension",
+   "tier": "Official partner"
   },
   {
    "date": "2026-11-04",

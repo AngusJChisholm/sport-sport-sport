@@ -1741,6 +1741,10 @@
     "logo"
    ]
   },
+  "ant-group": {
+   "name": "Ant Group",
+   "k": "b"
+  },
   "ant-international": {
    "name": "Ant International",
    "cat": "Fintech, crypto & trading",
@@ -2061,6 +2065,11 @@
    "name": "Armillary",
    "cat": "Other",
    "k": "b"
+  },
+  "arn": {
+   "name": "ARN",
+   "k": "b",
+   "cat": "Media & broadcast"
   },
   "arnott-s": {
    "name": "Arnott's",
@@ -4303,6 +4312,10 @@
    "bf": [
     "icon"
    ]
+  },
+  "bombay-sapphire": {
+   "name": "Bombay Sapphire",
+   "k": "b"
   },
   "bond-university": {
    "name": "Bond University",
@@ -8706,6 +8719,10 @@
    "k": "b",
    "cat": "Technology"
   },
+  "e1-miami-gp": {
+   "name": "E1 Miami GP",
+   "k": "p"
+  },
   "e1-series": {
    "name": "E1 Series",
    "ptype": "League & competition",
@@ -9053,6 +9070,11 @@
   "elmac-cleaning-services": {
    "name": "Elmac Cleaning Services",
    "k": "b"
+  },
+  "elysia-by-fortescue-zero": {
+   "name": "Elysia by Fortescue Zero",
+   "k": "b",
+   "cat": "Mining & resources"
   },
   "emaar": {
    "name": "Emaar",
@@ -19023,6 +19045,11 @@
    "k": "b",
    "cat": "Media & broadcast"
   },
+  "nine-queensland": {
+   "name": "Nine Queensland",
+   "k": "b",
+   "cat": "Media & broadcast"
+  },
   "nine-s-nrl-coverage": {
    "name": "Nine's NRL coverage",
    "domain": "nine.com.au",
@@ -21883,6 +21910,10 @@
     "icon",
     "logo"
    ]
+  },
+  "qcom": {
+   "name": "QCOM",
+   "k": "b"
   },
   "qebs": {
    "name": "QEBS",
@@ -28898,6 +28929,10 @@
     "icon"
    ]
   },
+  "vendee-cyclisme": {
+   "name": "Vendée Cyclisme",
+   "k": "p"
+  },
   "venues-nsw": {
    "name": "Venues NSW",
    "domain": "venuesnsw.com",
@@ -30467,6 +30502,10 @@
    "cat": "Technology",
    "k": "b"
   },
+  "worldwide-milton": {
+   "name": "Worldwide Milton",
+   "k": "b"
+  },
   "wormald-australia": {
    "name": "Wormald Australia",
    "k": "b"
@@ -30647,6 +30686,10 @@
     "icon",
     "logo"
    ]
+  },
+  "xefi": {
+   "name": "XEFI",
+   "k": "b"
   },
   "xero": {
    "name": "Xero",
@@ -31132,46 +31175,6 @@
     "icon",
     "logo"
    ]
-  },
-  "arn": {
-   "name": "ARN",
-   "k": "b"
-  },
-  "bombay-sapphire": {
-   "name": "Bombay Sapphire",
-   "k": "b"
-  },
-  "e1-miami-gp": {
-   "name": "E1 Miami GP",
-   "k": "p"
-  },
-  "elysia-by-fortescue-zero": {
-   "name": "Elysia by Fortescue Zero",
-   "k": "b"
-  },
-  "xefi": {
-   "name": "XEFI",
-   "k": "b"
-  },
-  "vendee-cyclisme": {
-   "name": "Vendée Cyclisme",
-   "k": "p"
-  },
-  "ant-group": {
-   "name": "Ant Group",
-   "k": "b"
-  },
-  "qcom": {
-   "name": "QCOM",
-   "k": "b"
-  },
-  "worldwide-milton": {
-   "name": "Worldwide Milton",
-   "k": "b"
-  },
-  "nine-queensland": {
-   "name": "Nine Queensland",
-   "k": "b"
   }
  },
  "leagues": [

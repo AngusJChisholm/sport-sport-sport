@@ -1,8 +1,8 @@
 {
  "generated": "2026-11-11",
  "summary": {
-  "dup_entities": 14,
-  "no_category": 515,
+  "dup_entities": 15,
+  "no_category": 520,
   "cat_mismatch": 97,
   "slot_clash": 22,
   "dup_deals": 2,
@@ -14,74 +14,22 @@
  "dup_entities": [
   {
    "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
+    "Kia",
+    "Kia Australia"
    ],
    "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
+    "kia",
+    "kia-australia"
    ]
   },
   {
    "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
    ],
    "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Harness Racing Australia",
-    "Harness Racing NZ"
-   ],
-   "slugs": [
-    "harness-racing-australia",
-    "harness-racing-nz"
-   ]
-  },
-  {
-   "names": [
-    "Star Sports",
-    "The Star"
-   ],
-   "slugs": [
-    "star-sports",
-    "the-star"
-   ]
-  },
-  {
-   "names": [
-    "Courier Mail",
-    "The Courier-Mail"
-   ],
-   "slugs": [
-    "courier-mail",
-    "the-courier-mail"
-   ]
-  },
-  {
-   "names": [
-    "Victor",
-    "Victor Sports"
-   ],
-   "slugs": [
-    "victor",
-    "victor-sports"
-   ]
-  },
-  {
-   "names": [
-    "Dolphins",
-    "Dolphins Group"
-   ],
-   "slugs": [
-    "dolphins",
-    "dolphins-group"
+    "pure-nutrition",
+    "pure-sports-nutrition"
    ]
   },
   {
@@ -100,12 +48,62 @@
   },
   {
    "names": [
+    "Harness Racing Australia",
+    "Harness Racing NZ"
+   ],
+   "slugs": [
+    "harness-racing-australia",
+    "harness-racing-nz"
+   ]
+  },
+  {
+   "names": [
+    "Ant Group",
+    "Ant International"
+   ],
+   "slugs": [
+    "ant-group",
+    "ant-international"
+   ]
+  },
+  {
+   "names": [
     "Hockey Australia",
     "Hockey New Zealand"
    ],
    "slugs": [
     "hockey-australia",
     "hockey-new-zealand"
+   ]
+  },
+  {
+   "names": [
+    "Victor",
+    "Victor Sports"
+   ],
+   "slugs": [
+    "victor",
+    "victor-sports"
+   ]
+  },
+  {
+   "names": [
+    "TAB",
+    "TAB NZ"
+   ],
+   "slugs": [
+    "tab",
+    "tab-nz"
+   ]
+  },
+  {
+   "names": [
+    "Special Olympics",
+    "Special Olympics Australia"
+   ],
+   "slugs": [
+    "special-olympics",
+    "special-olympics-australia"
    ]
   },
   {
@@ -120,16 +118,6 @@
   },
   {
    "names": [
-    "Kia",
-    "Kia Australia"
-   ],
-   "slugs": [
-    "kia",
-    "kia-australia"
-   ]
-  },
-  {
-   "names": [
     "HYROX",
     "HYROX Australia"
    ],
@@ -140,22 +128,44 @@
   },
   {
    "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
    ],
    "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
    ]
   },
   {
    "names": [
-    "TAB",
-    "TAB NZ"
+    "Courier Mail",
+    "The Courier-Mail"
    ],
    "slugs": [
-    "tab",
-    "tab-nz"
+    "courier-mail",
+    "the-courier-mail"
+   ]
+  },
+  {
+   "names": [
+    "Star Sports",
+    "The Star"
+   ],
+   "slugs": [
+    "star-sports",
+    "the-star"
+   ]
+  },
+  {
+   "names": [
+    "Dolphins",
+    "Dolphins Group"
+   ],
+   "slugs": [
+    "dolphins",
+    "dolphins-group"
    ]
   }
  ],
@@ -184,6 +194,11 @@
    "brand": "GSA",
    "slug": "gsa",
    "deals": 3
+  },
+  {
+   "brand": "DriTimes",
+   "slug": "dritimes",
+   "deals": 2
   },
   {
    "brand": "Newmark",
@@ -259,6 +274,31 @@
    "brand": "John R Turk",
    "slug": "john-r-turk",
    "deals": 2
+  },
+  {
+   "brand": "Bombay Sapphire",
+   "slug": "bombay-sapphire",
+   "deals": 1
+  },
+  {
+   "brand": "Ant Group",
+   "slug": "ant-group",
+   "deals": 1
+  },
+  {
+   "brand": "XEFI",
+   "slug": "xefi",
+   "deals": 1
+  },
+  {
+   "brand": "QCOM",
+   "slug": "qcom",
+   "deals": 1
+  },
+  {
+   "brand": "Worldwide Milton",
+   "slug": "worldwide-milton",
+   "deals": 1
   },
   {
    "brand": "Damsel & Sprout",
@@ -1138,11 +1178,6 @@
   {
    "brand": "Wil Valor",
    "slug": "wil-valor",
-   "deals": 1
-  },
-  {
-   "brand": "DriTimes",
-   "slug": "dritimes",
    "deals": 1
   },
   {
