@@ -31,7 +31,9 @@
    "slug": "2026-11-12-arn-australian-open",
    "tier": "Official partner",
    "ends": 2031,
-   "endsEst": true
+   "endsEst": true,
+   "image": "https://images.unsplash.com/photo-1786397178685-d89f46b71ccf",
+   "imageCredit": "Unsplash"
   },
   {
    "date": "2026-11-09",
