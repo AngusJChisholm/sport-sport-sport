@@ -5,6 +5,23 @@
  },
  "deals": [
   {
+   "date": "2026-11-04",
+   "added": "2026-11-11",
+   "deal": "adidas × AC Milan",
+   "sport": "Football",
+   "type": "Kit supplier",
+   "region": "Global",
+   "summary": "Milan have reportedly agreed to return to adidas from 2028/29 on a 10-year kit deal worth around €50m a season (about €500m), up from roughly €25-30m under Puma. Reported by La Gazzetta dello Sport; not yet officially announced.",
+   "url": "https://www.insideworldfootball.com/2026/11/06/adidas-takes-ac-milan-kit-back-from-puma-in-10-year-56m-per-season-deal/",
+   "tier": "Kit & apparel",
+   "status": "New",
+   "term": 10,
+   "ends": 2038,
+   "value": "€50m a season (reported)",
+   "forPost": "2026-11-12",
+   "tierLock": true
+  },
+  {
    "date": "2026-10-22",
    "added": "2026-11-11",
    "deal": "Damsel & Sprout × UC Capitals",
