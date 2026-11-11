@@ -14,42 +14,12 @@
  "dup_entities": [
   {
    "names": [
-    "Dolphins",
-    "Dolphins Group"
+    "Special Olympics",
+    "Special Olympics Australia"
    ],
    "slugs": [
-    "dolphins",
-    "dolphins-group"
-   ]
-  },
-  {
-   "names": [
-    "Victor",
-    "Victor Sports"
-   ],
-   "slugs": [
-    "victor",
-    "victor-sports"
-   ]
-  },
-  {
-   "names": [
-    "Hockey Australia",
-    "Hockey New Zealand"
-   ],
-   "slugs": [
-    "hockey-australia",
-    "hockey-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "HYROX",
-    "HYROX Australia"
-   ],
-   "slugs": [
-    "hyrox",
-    "hyrox-australia"
+    "special-olympics",
+    "special-olympics-australia"
    ]
   },
   {
@@ -66,22 +36,52 @@
   },
   {
    "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
+    "Harness Racing Australia",
+    "Harness Racing NZ"
    ],
    "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
+    "harness-racing-australia",
+    "harness-racing-nz"
    ]
   },
   {
    "names": [
-    "Kia",
-    "Kia Australia"
+    "Star Sports",
+    "The Star"
    ],
    "slugs": [
-    "kia",
-    "kia-australia"
+    "star-sports",
+    "the-star"
+   ]
+  },
+  {
+   "names": [
+    "Courier Mail",
+    "The Courier-Mail"
+   ],
+   "slugs": [
+    "courier-mail",
+    "the-courier-mail"
+   ]
+  },
+  {
+   "names": [
+    "Victor",
+    "Victor Sports"
+   ],
+   "slugs": [
+    "victor",
+    "victor-sports"
+   ]
+  },
+  {
+   "names": [
+    "Dolphins",
+    "Dolphins Group"
+   ],
+   "slugs": [
+    "dolphins",
+    "dolphins-group"
    ]
   },
   {
@@ -100,32 +100,12 @@
   },
   {
    "names": [
-    "Courier Mail",
-    "The Courier-Mail"
+    "Hockey Australia",
+    "Hockey New Zealand"
    ],
    "slugs": [
-    "courier-mail",
-    "the-courier-mail"
-   ]
-  },
-  {
-   "names": [
-    "Star Sports",
-    "The Star"
-   ],
-   "slugs": [
-    "star-sports",
-    "the-star"
-   ]
-  },
-  {
-   "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
-   ],
-   "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
+    "hockey-australia",
+    "hockey-new-zealand"
    ]
   },
   {
@@ -140,22 +120,42 @@
   },
   {
    "names": [
+    "Kia",
+    "Kia Australia"
+   ],
+   "slugs": [
+    "kia",
+    "kia-australia"
+   ]
+  },
+  {
+   "names": [
+    "HYROX",
+    "HYROX Australia"
+   ],
+   "slugs": [
+    "hyrox",
+    "hyrox-australia"
+   ]
+  },
+  {
+   "names": [
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
+   ],
+   "slugs": [
+    "pure-nutrition",
+    "pure-sports-nutrition"
+   ]
+  },
+  {
+   "names": [
     "TAB",
     "TAB NZ"
    ],
    "slugs": [
     "tab",
     "tab-nz"
-   ]
-  },
-  {
-   "names": [
-    "Harness Racing Australia",
-    "Harness Racing NZ"
-   ],
-   "slugs": [
-    "harness-racing-australia",
-    "harness-racing-nz"
    ]
   }
  ],
