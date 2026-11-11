@@ -91,6 +91,10 @@
    "cat": "Telco",
    "k": "b"
   },
+  "2hd": {
+   "name": "2HD",
+   "k": "b"
+  },
   "2k": {
    "name": "2K",
    "cat": "Gaming & esports",
@@ -124,6 +128,10 @@
     "icon",
     "logo"
    ]
+  },
+  "4bc": {
+   "name": "4BC",
+   "k": "b"
   },
   "4ca": {
    "name": "4CA",
@@ -214,6 +222,11 @@
    "name": "A$AP Rocky",
    "ptype": "Athlete & talent",
    "k": "p"
+  },
+  "a-corp-computers": {
+   "name": "A Corp. Computers",
+   "k": "b",
+   "cat": "Technology"
   },
   "a-g-coombs": {
    "name": "A.G. Coombs",
@@ -445,6 +458,11 @@
     "logo"
    ]
   },
+  "accolade-wines": {
+   "name": "Accolade Wines",
+   "k": "b",
+   "cat": "Alcohol"
+  },
   "accor": {
    "name": "Accor",
    "domain": "accor.com",
@@ -647,6 +665,11 @@
    "domain": "adelaidelightning.com.au",
    "logo": "assets/logos/adelaide-lightning.png"
   },
+  "adelaide-stella-concrete": {
+   "name": "Adelaide Stella Concrete",
+   "cat": "Construction & property",
+   "k": "b"
+  },
   "adelaide-strikers": {
    "name": "Adelaide Strikers",
    "domain": "adelaidestrikers.com.au",
@@ -784,6 +807,11 @@
     "icon",
     "logo"
    ]
+  },
+  "advanced-lithium-battery-solutions": {
+   "name": "Advanced Lithium Battery Solutions",
+   "k": "b",
+   "cat": "Mining & resources"
   },
   "advara-heartcare": {
    "name": "Advara HeartCare",
@@ -1302,6 +1330,10 @@
    "name": "Alivio",
    "k": "b"
   },
+  "all-lifting": {
+   "name": "All Lifting",
+   "k": "b"
+  },
   "all-metal-australia": {
    "name": "All Metal Australia",
    "k": "b"
@@ -1393,6 +1425,11 @@
     "icon",
     "logo"
    ]
+  },
+  "alltech-payroll": {
+   "name": "Alltech Payroll",
+   "k": "b",
+   "cat": "Professional services"
   },
   "allwyn": {
    "name": "Allwyn",
@@ -1587,6 +1624,10 @@
    "pnote": "Uses sport and entertainment for Card Member access: presales, premium lounges and hosting (F1 including Melbourne, NFL, tennis, golf, music); building with Gen Z and millennials.",
    "psrc": "https://www.bandt.com.au/american-express-hits-full-throttle-on-fan-experience-at-melbourne-gp/"
   },
+  "american-tire-and-racing-services": {
+   "name": "American Tire and Racing Services",
+   "k": "b"
+  },
   "ames": {
    "name": "AMES",
    "cat": "Professional services",
@@ -1704,6 +1745,11 @@
     "icon",
     "logo"
    ]
+  },
+  "anthony-greenwood-legal": {
+   "name": "Anthony Greenwood Legal",
+   "k": "b",
+   "cat": "Professional services"
   },
   "anthropic": {
    "name": "Anthropic",
@@ -2341,6 +2387,14 @@
     "logo"
    ]
   },
+  "athletes-foot": {
+   "name": "Athletes Foot",
+   "k": "b"
+  },
+  "athletes-nutrition": {
+   "name": "Athletes Nutrition",
+   "k": "b"
+  },
   "athletes-unlimited-softball-league": {
    "name": "Athletes Unlimited Softball League",
    "ptype": "League & competition",
@@ -2737,6 +2791,10 @@
    "ptiers": [
     "Event supporter"
    ]
+  },
+  "australian-hammer-supplies": {
+   "name": "Australian Hammer Supplies",
+   "k": "b"
   },
   "australian-international-traders": {
    "name": "Australian International Traders",
@@ -3437,6 +3495,11 @@
    "ptype": "Governing body",
    "k": "p"
   },
+  "bcf": {
+   "name": "BCF",
+   "k": "b",
+   "cat": "Retail"
+  },
   "bcna": {
    "name": "BCNA",
    "k": "b"
@@ -3552,6 +3615,10 @@
     "icon"
    ]
   },
+  "ben-moves-brisbane": {
+   "name": "Ben Moves Brisbane",
+   "k": "b"
+  },
   "bendigo-bank": {
    "name": "Bendigo Bank",
    "cat": "Banking & finance",
@@ -3604,6 +3671,10 @@
   "best-foods": {
    "name": "Best Foods",
    "cat": "Food & nutrition",
+   "k": "b"
+  },
+  "best-signs": {
+   "name": "Best Signs",
    "k": "b"
   },
   "bet365": {
@@ -4556,6 +4627,11 @@
    "cat": "Airlines & travel",
    "k": "b"
   },
+  "brisbane-airport-corporation": {
+   "name": "Brisbane Airport Corporation",
+   "k": "b",
+   "cat": "Airlines & travel"
+  },
   "brisbane-broncos": {
    "name": "Brisbane Broncos",
    "domain": "broncos.com.au",
@@ -5429,6 +5505,10 @@
    "cat": "Professional services",
    "k": "b"
   },
+  "car-park-king": {
+   "name": "Car Park King",
+   "k": "b"
+  },
   "cara": {
    "name": "Cara",
    "cat": "Other",
@@ -5457,6 +5537,10 @@
    "bf": [
     "icon"
    ]
+  },
+  "career-corporation": {
+   "name": "Career Corporation",
+   "k": "b"
   },
   "caribbean-premier-league": {
    "name": "Caribbean Premier League",
@@ -5836,6 +5920,10 @@
    "name": "Cervelo",
    "k": "b"
   },
+  "cff-project-management": {
+   "name": "CFF Project Management",
+   "k": "b"
+  },
   "cg-fintech": {
    "name": "CG FinTech",
    "cat": "Fintech, crypto & trading",
@@ -5949,6 +6037,10 @@
   },
   "chatterbox-group": {
    "name": "Chatterbox Group",
+   "k": "b"
+  },
+  "cheap-as-chips": {
+   "name": "Cheap as Chips",
    "k": "b"
   },
   "checkpoint": {
@@ -6393,6 +6485,10 @@
    "cat": "Technology",
    "k": "b"
   },
+  "climate-edge": {
+   "name": "Climate Edge",
+   "k": "b"
+  },
   "clivet": {
    "name": "Clivet",
    "cat": "Home & hardware",
@@ -6449,6 +6545,10 @@
     "logo"
    ],
    "cat": "Automotive",
+   "k": "b"
+  },
+  "club-central-menai": {
+   "name": "Club Central Menai",
    "k": "b"
   },
   "club-lime": {
@@ -6898,6 +6998,10 @@
     "icon"
    ]
   },
+  "connection-2-sports": {
+   "name": "Connection 2 Sports",
+   "k": "b"
+  },
   "connolly-suthers-lawyers": {
    "name": "Connolly Suthers Lawyers",
    "cat": "Professional services",
@@ -6992,6 +7096,11 @@
    "cat": "Agriculture",
    "k": "b"
   },
+  "coomera-anglican-college": {
+   "name": "Coomera Anglican College",
+   "k": "b",
+   "cat": "Education"
+  },
   "coopers": {
    "name": "Coopers",
    "cat": "Alcohol",
@@ -7073,6 +7182,11 @@
     "icon",
     "logo"
    ]
+  },
+  "corey-fox-landscaping": {
+   "name": "Corey Fox Landscaping",
+   "k": "b",
+   "cat": "Media & broadcast"
   },
   "corinthians": {
    "name": "Corinthians",
@@ -7169,6 +7283,15 @@
     "logo"
    ]
   },
+  "courier-mail": {
+   "name": "Courier Mail",
+   "k": "b",
+   "cat": "Logistics & transport"
+  },
+  "cowboys-leagues-club": {
+   "name": "Cowboys Leagues Club",
+   "k": "b"
+  },
   "cp-plus": {
    "name": "CP Plus",
    "cat": "Technology",
@@ -7195,6 +7318,11 @@
   "cquniversity": {
    "name": "CQUniversity",
    "k": "b"
+  },
+  "craig-chappelow-plumbing-building": {
+   "name": "Craig Chappelow Plumbing & Building",
+   "k": "b",
+   "cat": "Construction & property"
   },
   "creative-cubes-co": {
    "name": "Creative Cubes.Co",
@@ -7349,6 +7477,11 @@
    "bf": [],
    "cat": "Industrial & manufacturing",
    "k": "b"
+  },
+  "cronulla-carpets": {
+   "name": "Cronulla Carpets",
+   "k": "b",
+   "cat": "Retail"
   },
   "cronulla-sharks": {
    "name": "Cronulla Sharks",
@@ -7577,6 +7710,10 @@
    "cat": "Food & nutrition",
    "k": "b"
   },
+  "d-velop-r": {
+   "name": "D.velop.R",
+   "k": "b"
+  },
   "dabble": {
    "name": "Dabble",
    "cat": "Betting & wagering",
@@ -7585,6 +7722,11 @@
    "bf": [
     "icon"
    ]
+  },
+  "dacca-architecture": {
+   "name": "DACCA Architecture",
+   "k": "b",
+   "cat": "Construction & property"
   },
   "dafabet": {
    "name": "Dafabet",
@@ -7645,6 +7787,10 @@
    ],
    "ptype": "Event",
    "k": "p"
+  },
+  "damsel-and-sprout": {
+   "name": "Damsel & Sprout",
+   "k": "b"
   },
   "dan-murphy-s": {
    "name": "Dan Murphy's",
@@ -7943,6 +8089,11 @@
    "cat": "Health & beauty",
    "k": "b"
   },
+  "dep-consulting": {
+   "name": "Dep Consulting",
+   "k": "b",
+   "cat": "Professional services"
+  },
   "department-of-health": {
    "name": "Department of Health",
    "k": "b",
@@ -8192,6 +8343,14 @@
     "Gold partner",
     "Official partner"
    ]
+  },
+  "dolphins-central": {
+   "name": "Dolphins Central",
+   "k": "b"
+  },
+  "dolphins-group": {
+   "name": "Dolphins Group",
+   "k": "b"
   },
   "dominance-guardian-services": {
    "name": "Dominance Guardian Services",
@@ -8575,6 +8734,10 @@
    "name": "Easts Group",
    "k": "b"
   },
+  "easy-signs": {
+   "name": "Easy Signs",
+   "k": "b"
+  },
   "eather-group": {
    "name": "Eather Group",
    "k": "b"
@@ -8820,6 +8983,10 @@
    "cat": "Non-alcoholic drinks",
    "k": "b"
   },
+  "elephant-in-the-room": {
+   "name": "Elephant in the Room",
+   "k": "b"
+  },
   "elevate": {
    "name": "Elevate",
    "cat": "Professional services",
@@ -8843,6 +9010,11 @@
    ],
    "cat": "Sporting goods & equipment",
    "k": "b"
+  },
+  "elite-legal": {
+   "name": "Elite Legal",
+   "k": "b",
+   "cat": "Professional services"
   },
   "elite-solar": {
    "name": "ELITE Solar",
@@ -8933,6 +9105,10 @@
   },
   "encore": {
    "name": "Encore",
+   "k": "b"
+  },
+  "endeavour-fleet": {
+   "name": "Endeavour Fleet",
    "k": "b"
   },
   "energizer": {
@@ -9563,6 +9739,10 @@
    "cat": "Food & nutrition",
    "k": "b"
   },
+  "fast-proof-press": {
+   "name": "Fast Proof Press",
+   "k": "b"
+  },
   "fasta-pasta": {
    "name": "Fasta Pasta",
    "k": "b"
@@ -9660,6 +9840,10 @@
   "fernando-alonso": {
    "name": "Fernando Alonso",
    "k": "p"
+  },
+  "feros-group": {
+   "name": "Feros Group",
+   "k": "b"
   },
   "fertility-sa": {
    "name": "Fertility SA",
@@ -9867,6 +10051,10 @@
     "icon"
    ]
   },
+  "fire-systems-queensland": {
+   "name": "Fire Systems Queensland",
+   "k": "b"
+  },
   "firefox": {
    "name": "Firefox",
    "domain": "firefox.com",
@@ -9922,6 +10110,10 @@
    "cat": "Banking & finance",
    "k": "b"
   },
+  "firstmac": {
+   "name": "Firstmac",
+   "k": "b"
+  },
   "fis": {
    "name": "FIS",
    "domain": "fis.ski",
@@ -9958,6 +10150,12 @@
   "fleet-plant-hire-solutions": {
    "name": "Fleet Plant Hire Solutions",
    "cat": "Logistics & transport",
+   "k": "b"
+  },
+  "fleet-space-technologies": {
+   "name": "Fleet Space Technologies",
+   "domain": "fleetspace.com",
+   "cat": "Technology",
    "k": "b"
   },
   "fletcher-riley": {
@@ -10634,6 +10832,10 @@
    "name": "Gearbox",
    "k": "b"
   },
+  "gecko": {
+   "name": "Gecko",
+   "k": "b"
+  },
   "geelong-advertiser": {
    "name": "Geelong Advertiser",
    "cat": "Media & broadcast",
@@ -10691,6 +10893,10 @@
    "aliases": [
     "Gello Beans and Snakes"
    ],
+   "k": "b"
+  },
+  "gen-leads": {
+   "name": "Gen Leads",
    "k": "b"
   },
   "general-atlantic": {
@@ -10789,6 +10995,10 @@
     "icon",
     "logo"
    ]
+  },
+  "gibson-partners": {
+   "name": "Gibson Partners",
+   "k": "b"
   },
   "giffgaff": {
    "name": "giffgaff",
@@ -10938,6 +11148,11 @@
    "name": "Going Up Elevators",
    "k": "b"
   },
+  "gold-coast-airport": {
+   "name": "Gold Coast Airport",
+   "k": "b",
+   "cat": "Airlines & travel"
+  },
   "gold-coast-bulletin": {
    "name": "Gold Coast Bulletin",
    "cat": "Mining & resources",
@@ -11032,6 +11247,11 @@
    "bf": [
     "icon"
    ]
+  },
+  "gold-management-building-facilities": {
+   "name": "Gold Management Building & Facilities",
+   "k": "b",
+   "cat": "Mining & resources"
   },
   "golden-state-valkyries": {
    "name": "Golden State Valkyries",
@@ -11211,6 +11431,10 @@
    "name": "Greater West Outdoor Power Equipment",
    "k": "b",
    "cat": "Energy & utilities"
+  },
+  "green-by-nature": {
+   "name": "Green by Nature",
+   "k": "b"
   },
   "green-coffee-company": {
    "name": "Green Coffee Company",
@@ -11395,6 +11619,10 @@
     "icon"
    ]
   },
+  "guardian-venue-management-international": {
+   "name": "Guardian Venue Management International",
+   "k": "b"
+  },
   "guardians-league": {
    "name": "Guardians League",
    "ptype": "League & competition",
@@ -11572,6 +11800,10 @@
   "halo": {
    "name": "Halo",
    "cat": "Other",
+   "k": "b"
+  },
+  "hamilton-elevators-nsw": {
+   "name": "Hamilton Elevators NSW",
    "k": "b"
   },
   "hancock-prospecting": {
@@ -11989,6 +12221,15 @@
     "logo"
    ]
   },
+  "hi-tec-batteries": {
+   "name": "Hi-Tec Batteries",
+   "k": "b"
+  },
+  "hicon-building": {
+   "name": "HICON Building",
+   "k": "b",
+   "cat": "Construction & property"
+  },
   "hif": {
    "name": "HIF",
    "cat": "Insurance",
@@ -12015,6 +12256,11 @@
    "bf": [
     "icon"
    ]
+  },
+  "highland-property": {
+   "name": "Highland Property",
+   "k": "b",
+   "cat": "Construction & property"
   },
   "highpoint": {
    "name": "Highpoint",
@@ -12199,6 +12445,10 @@
   },
   "holman-industries": {
    "name": "Holman Industries",
+   "k": "b"
+  },
+  "home-carer-s-alliance": {
+   "name": "Home Carer's Alliance",
    "k": "b"
   },
   "homedics": {
@@ -13671,6 +13921,10 @@
     "logo"
    ]
   },
+  "jellinbah-group": {
+   "name": "Jellinbah Group",
+   "k": "b"
+  },
   "jellis-craig": {
    "name": "Jellis Craig",
    "cat": "Construction & property",
@@ -13740,6 +13994,10 @@
     "logo"
    ]
   },
+  "jimmy-rods-barbershop": {
+   "name": "Jimmy Rods Barbershop",
+   "k": "b"
+  },
   "jiostar": {
    "name": "JioStar",
    "cat": "Media & broadcast",
@@ -13798,6 +14056,11 @@
   "john-r-turk": {
    "name": "John R Turk",
    "k": "b"
+  },
+  "john-ryan-freight-services": {
+   "name": "John Ryan Freight Services",
+   "k": "b",
+   "cat": "Logistics & transport"
   },
   "johnnie-walker": {
    "name": "Johnnie Walker",
@@ -13872,6 +14135,10 @@
   "jr-group": {
    "name": "JR Group",
    "cat": "Other",
+   "k": "b"
+  },
+  "jrb-diesel": {
+   "name": "JRB Diesel",
    "k": "b"
   },
   "jsw-inspire": {
@@ -14195,6 +14462,11 @@
    "cat": "Automotive",
    "k": "b"
   },
+  "kia-australia": {
+   "name": "Kia Australia",
+   "k": "b",
+   "cat": "Automotive"
+  },
   "kick": {
    "name": "KICK",
    "cat": "Media & broadcast",
@@ -14237,10 +14509,23 @@
     "icon"
    ]
   },
+  "kindarama": {
+   "name": "Kindarama",
+   "k": "b"
+  },
   "kindred-property": {
    "name": "Kindred Property",
    "cat": "Construction & property",
    "k": "b"
+  },
+  "kinetic": {
+   "name": "Kinetic",
+   "k": "b"
+  },
+  "kinetic-electrical-data": {
+   "name": "Kinetic Electrical & Data",
+   "k": "b",
+   "cat": "Energy & utilities"
   },
   "kinetica-sport": {
    "name": "Kinetica Sport",
@@ -14901,6 +15186,10 @@
    "cat": "Airlines & travel",
    "k": "b"
   },
+  "lauxes-grates": {
+   "name": "Lauxes Grates",
+   "k": "b"
+  },
   "laver-cup": {
    "name": "Laver Cup",
    "domain": "lavercup.com",
@@ -15241,6 +15530,10 @@
    "name": "Lidl",
    "domain": "lidl.com",
    "cat": "Retail",
+   "k": "b"
+  },
+  "life-outdoors": {
+   "name": "Life Outdoors",
    "k": "b"
   },
   "lifeblood": {
@@ -15634,6 +15927,10 @@
    "profiled": "2026-11-05",
    "pnote": "Only backs elegant, individual sports (equestrian, flat racing, alpine skiing, tennis, gymnastics) under 'Elegance is an attitude'; avoids contact team sports.",
    "psrc": "https://www.marketing-interactive.com/longines-tie-elegant-sporting-events"
+  },
+  "longwall-chain-australia": {
+   "name": "Longwall Chain Australia",
+   "k": "b"
   },
   "lord-s": {
    "name": "Lord's",
@@ -16180,6 +16477,11 @@
     "logo"
    ]
   },
+  "marvan-hotel-group": {
+   "name": "Marvan Hotel Group",
+   "k": "b",
+   "cat": "Airlines & travel"
+  },
   "marvel-stadium": {
    "name": "Marvel Stadium",
    "ptype": "Venue",
@@ -16209,6 +16511,12 @@
     "logo"
    ],
    "cat": "Banking & finance",
+   "k": "b"
+  },
+  "masterfoods": {
+   "name": "MasterFoods",
+   "domain": "masterfoods.com.au",
+   "cat": "Food & nutrition",
    "k": "b"
   },
   "masters": {
@@ -16720,6 +17028,10 @@
     "icon"
    ],
    "cat": "Collectibles & licensing",
+   "k": "b"
+  },
+  "menai-sand-soil": {
+   "name": "Menai Sand & Soil",
    "k": "b"
   },
   "menulog": {
@@ -17436,6 +17748,11 @@
     "logo"
    ]
   },
+  "more-than-meat": {
+   "name": "More Than Meat",
+   "k": "b",
+   "cat": "Food & nutrition"
+  },
   "moretti-constructions": {
    "name": "Moretti Constructions",
    "k": "b",
@@ -17823,6 +18140,10 @@
     "logo"
    ]
   },
+  "mx3-diagnostics": {
+   "name": "MX3 Diagnostics",
+   "k": "b"
+  },
   "my-cruises": {
    "name": "My Cruises",
    "cat": "Airlines & travel",
@@ -17999,6 +18320,10 @@
    "name": "Natio",
    "k": "b"
   },
+  "national-fire-ant-eradication-program": {
+   "name": "National Fire Ant Eradication Program",
+   "k": "b"
+  },
   "national-pickleball-league": {
    "name": "National Pickleball League",
    "domain": "nplpickleball.com",
@@ -18155,6 +18480,11 @@
    "name": "Nepean Valley Pure Water",
    "k": "b",
    "cat": "Non-alcoholic drinks"
+  },
+  "nerang-rsl": {
+   "name": "Nerang RSL",
+   "k": "b",
+   "cat": "Not-for-profit"
   },
   "nescaf": {
    "name": "Nescafé",
@@ -18445,6 +18775,11 @@
    "ptype": "Governing body",
    "k": "p"
   },
+  "newcastle-airport": {
+   "name": "Newcastle Airport",
+   "k": "b",
+   "cat": "Airlines & travel"
+  },
   "newcastle-eagles": {
    "name": "Newcastle Eagles",
    "domain": "newcastle-eagles.com",
@@ -18501,6 +18836,10 @@
    ],
    "ptype": "Club & team",
    "k": "p"
+  },
+  "newhaven-funerals": {
+   "name": "Newhaven Funerals",
+   "k": "b"
   },
   "newmark": {
    "name": "Newmark",
@@ -18653,6 +18992,11 @@
    ],
    "cat": "Media & broadcast",
    "k": "b"
+  },
+  "nine-news": {
+   "name": "Nine News",
+   "k": "b",
+   "cat": "Media & broadcast"
   },
   "nine-s-nrl-coverage": {
    "name": "Nine's NRL coverage",
@@ -18928,6 +19272,11 @@
    "cat": "Media & broadcast",
    "k": "b"
   },
+  "nova-106-9": {
+   "name": "Nova 106.9",
+   "k": "b",
+   "cat": "Media & broadcast"
+  },
   "nova-96-9": {
    "name": "Nova 96.9",
    "cat": "Media & broadcast",
@@ -18956,6 +19305,12 @@
     "icon",
     "logo"
    ]
+  },
+  "novated-lease-australia": {
+   "name": "Novated Lease Australia",
+   "domain": "novatedleaseaustralia.com.au",
+   "cat": "Banking & finance",
+   "k": "b"
   },
   "novotel-geelong": {
    "name": "Novotel Geelong",
@@ -19105,6 +19460,10 @@
     "icon"
    ]
   },
+  "nulon": {
+   "name": "Nulon",
+   "k": "b"
+  },
   "nusenda-credit-union": {
    "name": "Nusenda Credit Union",
    "cat": "Banking & finance",
@@ -19211,6 +19570,10 @@
     "icon",
     "logo"
    ]
+  },
+  "o-brien-palmer": {
+   "name": "O'Brien Palmer",
+   "k": "b"
   },
   "o-neills": {
    "name": "O'Neills",
@@ -19904,6 +20267,10 @@
    "k": "b",
    "domain": "padeltek.com"
   },
+  "painpod": {
+   "name": "PainPod",
+   "k": "b"
+  },
   "pakistan-super-league": {
    "name": "Pakistan Super League",
    "ptype": "League & competition",
@@ -19949,6 +20316,10 @@
    "bf": [
     "icon"
    ]
+  },
+  "panetta": {
+   "name": "Panetta",
+   "k": "b"
   },
   "panini": {
    "name": "Panini",
@@ -20043,6 +20414,10 @@
     "icon"
    ]
   },
+  "parkwood-village": {
+   "name": "Parkwood Village",
+   "k": "b"
+  },
   "parramatta-eels": {
    "name": "Parramatta Eels",
    "domain": "parraeels.com.au",
@@ -20130,6 +20505,11 @@
    ],
    "cat": "Fintech, crypto & trading",
    "k": "b"
+  },
+  "peak-property-services": {
+   "name": "Peak Property Services",
+   "k": "b",
+   "cat": "Construction & property"
   },
   "peakme": {
    "name": "PeakMe",
@@ -20474,6 +20854,11 @@
    "k": "b",
    "cat": "Food & nutrition"
   },
+  "pfd-foods": {
+   "name": "PFD Foods",
+   "k": "b",
+   "cat": "Food & nutrition"
+  },
   "pga": {
    "name": "PGA",
    "ptype": "League & competition",
@@ -20588,6 +20973,11 @@
    ],
    "ptype": "Club & team",
    "k": "p"
+  },
+  "picker-financial": {
+   "name": "Picker Financial",
+   "k": "b",
+   "cat": "Banking & finance"
   },
   "picklebet": {
    "name": "Picklebet",
@@ -20870,6 +21260,11 @@
     "icon",
     "logo"
    ]
+  },
+  "pointsbet": {
+   "name": "PointsBet",
+   "k": "b",
+   "cat": "Betting & wagering"
   },
   "pok-mon": {
    "name": "Pokémon",
@@ -21501,6 +21896,10 @@
     "logo"
    ]
   },
+  "quantaco": {
+   "name": "Quantaco",
+   "k": "b"
+  },
   "qudos-bank-arena": {
    "name": "Afterpay Arena",
    "domain": "qudosbankarena.com.au",
@@ -21683,6 +22082,10 @@
    "cat": "Media & broadcast",
    "k": "b"
   },
+  "rackley-swimming": {
+   "name": "Rackley Swimming",
+   "k": "b"
+  },
   "racq": {
    "name": "RACQ",
    "cat": "Insurance",
@@ -21750,6 +22153,18 @@
     "icon",
     "logo"
    ]
+  },
+  "raiders-belconnen": {
+   "name": "Raiders Belconnen",
+   "k": "b"
+  },
+  "raiders-gungahlin": {
+   "name": "Raiders Gungahlin",
+   "k": "b"
+  },
+  "raiders-weston": {
+   "name": "Raiders Weston",
+   "k": "b"
   },
   "raine-horne-commercial": {
    "name": "Raine & Horne Commercial",
@@ -21851,6 +22266,11 @@
    ],
    "cat": "Construction & property",
    "k": "b"
+  },
+  "ray-white-sutherland-shire": {
+   "name": "Ray White Sutherland Shire",
+   "k": "b",
+   "cat": "Construction & property"
   },
   "ray-white-united-group": {
    "name": "Ray White United Group",
@@ -22104,6 +22524,11 @@
     "logo"
    ]
   },
+  "relyon-constructions": {
+   "name": "Relyon Constructions",
+   "k": "b",
+   "cat": "Construction & property"
+  },
   "remara": {
    "name": "Remara",
    "k": "b"
@@ -22195,6 +22620,15 @@
     "icon",
     "logo"
    ]
+  },
+  "resolution-strata-services": {
+   "name": "Resolution Strata Services",
+   "k": "b"
+  },
+  "ressler-property": {
+   "name": "Ressler Property",
+   "k": "b",
+   "cat": "Construction & property"
   },
   "retravision": {
    "name": "Retravision",
@@ -22478,6 +22912,11 @@
     "logo"
    ]
   },
+  "roc-boots": {
+   "name": "ROC Boots",
+   "k": "b",
+   "cat": "Apparel & footwear"
+  },
   "roc-nation-sports": {
    "name": "Roc Nation Sports",
    "cat": "Professional services",
@@ -22536,6 +22975,11 @@
    ],
    "ptype": "Venue",
    "k": "p"
+  },
+  "rogers-willex": {
+   "name": "Rogers Willex",
+   "k": "b",
+   "cat": "Telco"
   },
   "rokeby": {
    "name": "Rokeby",
@@ -22603,6 +23047,10 @@
    "bf": [
     "icon"
    ]
+  },
+  "rosel": {
+   "name": "Rosel",
+   "k": "b"
   },
   "roshn": {
    "name": "ROSHN",
@@ -23188,6 +23636,10 @@
     "logo"
    ]
   },
+  "sba-earthmoving-attachments": {
+   "name": "SBA Earthmoving Attachments",
+   "k": "b"
+  },
   "sbi-life": {
    "name": "SBI Life",
    "domain": "sbilife.co.in",
@@ -23253,6 +23705,10 @@
    "bf": [
     "icon"
    ]
+  },
+  "scape-pools": {
+   "name": "Scape Pools",
+   "k": "b"
   },
   "scapia": {
    "name": "Scapia",
@@ -23489,6 +23945,10 @@
    "bf": [
     "icon"
    ]
+  },
+  "select-events": {
+   "name": "Select Events",
+   "k": "b"
   },
   "select-fresh": {
    "name": "Select Fresh",
@@ -23794,6 +24254,11 @@
    "cat": "Non-alcoholic drinks",
    "k": "b"
   },
+  "shire-steel-fabrication": {
+   "name": "Shire Steel & Fabrication",
+   "k": "b",
+   "cat": "Construction & property"
+  },
   "shizuoka-stadium-ecopa": {
    "name": "Shizuoka Stadium Ecopa",
    "ptype": "Venue",
@@ -23807,6 +24272,10 @@
     "logo"
    ],
    "cat": "Retail",
+   "k": "b"
+  },
+  "showcall-crewing": {
+   "name": "Showcall Crewing",
    "k": "b"
   },
   "shree-cement": {
@@ -24337,6 +24806,11 @@
    "cat": "Fintech, crypto & trading",
    "k": "b"
   },
+  "solmech": {
+   "name": "Solmech",
+   "cat": "Construction & property",
+   "k": "b"
+  },
   "solo": {
    "name": "SOLO",
    "cat": "Non-alcoholic drinks",
@@ -24503,6 +24977,10 @@
    "name": "Southern Cross Masonry",
    "k": "b",
    "cat": "Media & broadcast"
+  },
+  "southern-fresh": {
+   "name": "Southern Fresh",
+   "k": "b"
   },
   "southern-global-facilities-management": {
    "name": "Southern Global Facilities Management",
@@ -25205,6 +25683,10 @@
    "name": "Strapit",
    "k": "b"
   },
+  "strata-management-services-nsw": {
+   "name": "Strata Management Services NSW",
+   "k": "b"
+  },
   "strata-republic": {
    "name": "Strata Republic",
    "k": "b"
@@ -25214,6 +25696,11 @@
    "domain": "engelbert-strauss.de",
    "cat": "Apparel & footwear",
    "k": "b"
+  },
+  "streets": {
+   "name": "Streets",
+   "k": "b",
+   "cat": "Food & nutrition"
   },
   "streetsmarts": {
    "name": "StreetSmarts",
@@ -25421,6 +25908,11 @@
     "Media partner",
     "Official supplier"
    ]
+  },
+  "sunshine-ford": {
+   "name": "Sunshine Ford",
+   "k": "b",
+   "cat": "Automotive"
   },
   "sunshine-plaza": {
    "name": "Sunshine Plaza",
@@ -25841,6 +26333,10 @@
     "icon"
    ]
   },
+  "t-1-2-3": {
+   "name": "T 1-2-3",
+   "k": "b"
+  },
   "t-mobile": {
    "name": "T-Mobile",
    "cat": "Telco",
@@ -25968,6 +26464,11 @@
     "icon",
     "logo"
    ]
+  },
+  "tailored-protection-security": {
+   "name": "Tailored Protection & Security",
+   "k": "b",
+   "cat": "Technology"
   },
   "tait-communications": {
    "name": "Tait Communications",
@@ -26446,12 +26947,26 @@
     "logo"
    ]
   },
+  "the-app-group": {
+   "name": "The APP Group",
+   "k": "b",
+   "cat": "Technology"
+  },
+  "the-banyans-healthcare": {
+   "name": "The Banyans Healthcare",
+   "k": "b",
+   "cat": "Health & beauty"
+  },
   "the-beach-bars": {
    "name": "The Beach Bars",
    "k": "b"
   },
   "the-big-outlet": {
    "name": "The Big Outlet",
+   "k": "b"
+  },
+  "the-broncos-club": {
+   "name": "The Broncos Club",
    "k": "b"
   },
   "the-business-times": {
@@ -26470,6 +26985,10 @@
   },
   "the-chambers": {
    "name": "The Chambers",
+   "k": "b"
+  },
+  "the-collective-co": {
+   "name": "The Collective Co.",
    "k": "b"
   },
   "the-courier-mail": {
@@ -26514,6 +27033,11 @@
     "icon",
     "logo"
    ]
+  },
+  "the-healthy-milennial": {
+   "name": "The Healthy Milennial",
+   "k": "b",
+   "cat": "Health & beauty"
   },
   "the-home-depot": {
    "name": "The Home Depot",
@@ -26581,6 +27105,10 @@
     "icon"
    ]
   },
+  "the-mawson-club": {
+   "name": "The Mawson Club",
+   "k": "b"
+  },
   "the-mercury": {
    "name": "The Mercury",
    "k": "b"
@@ -26593,6 +27121,10 @@
    ],
    "ptype": "Venue",
    "k": "p"
+  },
+  "the-outperformer": {
+   "name": "The Outperformer",
+   "k": "b"
   },
   "the-parra-group": {
    "name": "The PARRA Group",
@@ -26628,6 +27160,10 @@
     "icon",
     "logo"
    ]
+  },
+  "the-roaming-cup": {
+   "name": "The Roaming Cup",
+   "k": "b"
   },
   "the-royal-children-s-hospital": {
    "name": "The Royal Children's Hospital",
@@ -26674,6 +27210,10 @@
   "the-ville-resort-casino": {
    "name": "The Ville Resort-Casino",
    "cat": "Betting & wagering",
+   "k": "b"
+  },
+  "the-vinyl-room": {
+   "name": "The Vinyl Room",
    "k": "b"
   },
   "the-watson": {
@@ -26926,6 +27466,11 @@
    "cat": "Watches & luxury",
    "k": "b"
   },
+  "titan-education": {
+   "name": "Titan Education",
+   "k": "b",
+   "cat": "Education"
+  },
   "tla": {
    "name": "TLA",
    "k": "b"
@@ -27147,6 +27692,10 @@
     "logo"
    ]
   },
+  "totally-workwear-kirrawee": {
+   "name": "Totally Workwear Kirrawee",
+   "k": "b"
+  },
   "tottenham-hotspur": {
    "name": "Tottenham Hotspur",
    "domain": "tottenhamhotspur.com",
@@ -27354,6 +27903,10 @@
     "logo"
    ]
   },
+  "treasury-premium-brands": {
+   "name": "Treasury Premium Brands",
+   "k": "b"
+  },
   "treasury-wine-estates": {
    "name": "Treasury Wine Estates",
    "cat": "Alcohol",
@@ -27463,6 +28016,10 @@
    ],
    "ptype": "Club & team",
    "k": "p"
+  },
+  "triple-h": {
+   "name": "Triple H",
+   "k": "b"
   },
   "triple-m": {
    "name": "Triple M",
@@ -27910,6 +28467,10 @@
     "Host partner"
    ]
   },
+  "united-rentals": {
+   "name": "United Rentals",
+   "k": "b"
+  },
   "united-rugby-championship": {
    "name": "United Rugby Championship",
    "ptype": "League & competition",
@@ -28189,6 +28750,10 @@
     "icon"
    ]
   },
+  "valiant": {
+   "name": "Valiant",
+   "k": "b"
+  },
   "valour-sport": {
    "name": "Valour Sport",
    "k": "b",
@@ -28404,6 +28969,15 @@
    "cat": "Hospitality & entertainment",
    "k": "b"
   },
+  "vibe-hotels": {
+   "name": "Vibe Hotels",
+   "aliases": [
+    "Vibe Hotel Canberra"
+   ],
+   "domain": "tfehotels.com",
+   "cat": "Airlines & travel",
+   "k": "b"
+  },
   "vicreturn": {
    "name": "VicReturn",
    "cat": "Tourism & government",
@@ -28416,6 +28990,10 @@
   },
   "victa": {
    "name": "Victa",
+   "k": "b"
+  },
+  "victor": {
+   "name": "Victor",
    "k": "b"
   },
   "victor-school-sports-club-supplies": {
@@ -29021,6 +29599,10 @@
    "k": "b",
    "domain": "wakeup247.com"
   },
+  "walker-corporation": {
+   "name": "Walker Corporation",
+   "k": "b"
+  },
   "wallabies": {
    "name": "Wallabies",
    "ptype": "National team",
@@ -29064,6 +29646,16 @@
    "name": "Ward",
    "k": "b"
   },
+  "warner-bros-movie-world": {
+   "name": "Warner Bros. Movie World",
+   "k": "b",
+   "cat": "Media & broadcast"
+  },
+  "warren-saunders-insurance-brokers": {
+   "name": "Warren Saunders Insurance Brokers",
+   "k": "b",
+   "cat": "Insurance"
+  },
   "warrrl": {
    "name": "WARRRL",
    "cat": "Other",
@@ -29102,6 +29694,10 @@
   },
   "waterview": {
    "name": "Waterview",
+   "k": "b"
+  },
+  "waterwize-services": {
+   "name": "Waterwize Services",
    "k": "b"
   },
   "watford": {
@@ -29148,6 +29744,10 @@
    "name": "WeBuild",
    "k": "b"
   },
+  "wed-group": {
+   "name": "WED Group",
+   "k": "b"
+  },
   "weet-bix": {
    "name": "Weet-Bix",
    "cat": "Food & nutrition",
@@ -29156,6 +29756,10 @@
    "bf": [
     "icon"
    ]
+  },
+  "wellfix": {
+   "name": "Wellfix",
+   "k": "b"
   },
   "wellington-phoenix": {
    "name": "Wellington Phoenix",
@@ -29324,6 +29928,11 @@
    "cat": "Retail",
    "k": "b"
   },
+  "westfield-miranda": {
+   "name": "Westfield Miranda",
+   "k": "b",
+   "cat": "Retail"
+  },
   "westfield-penrith": {
    "name": "Westfield Penrith",
    "k": "b",
@@ -29438,12 +30047,21 @@
     "logo"
    ]
   },
+  "whitcon": {
+   "name": "Whitcon",
+   "k": "b"
+  },
   "white-claw": {
    "name": "White Claw",
    "cat": "Alcohol",
    "sub": "Beer & cider",
    "k": "b",
    "domain": "whiteclaw.com"
+  },
+  "white-wolf-constructions": {
+   "name": "White Wolf Constructions",
+   "k": "b",
+   "cat": "Construction & property"
   },
   "whitebit": {
    "name": "WhiteBIT",
@@ -29478,6 +30096,10 @@
   },
   "wil-valor": {
    "name": "Wil Valor",
+   "k": "b"
+  },
+  "wilken": {
+   "name": "Wilken",
    "k": "b"
   },
   "william-adams-cat": {
@@ -30483,579 +31105,6 @@
     "icon",
     "logo"
    ]
-  },
-  "fleet-space-technologies": {
-   "name": "Fleet Space Technologies",
-   "domain": "fleetspace.com",
-   "cat": "Technology",
-   "k": "b"
-  },
-  "solmech": {
-   "name": "Solmech",
-   "cat": "Construction & property",
-   "k": "b"
-  },
-  "adelaide-stella-concrete": {
-   "name": "Adelaide Stella Concrete",
-   "cat": "Construction & property",
-   "k": "b"
-  },
-  "masterfoods": {
-   "name": "MasterFoods",
-   "domain": "masterfoods.com.au",
-   "cat": "Food & nutrition",
-   "k": "b"
-  },
-  "novated-lease-australia": {
-   "name": "Novated Lease Australia",
-   "domain": "novatedleaseaustralia.com.au",
-   "cat": "Banking & finance",
-   "k": "b"
-  },
-  "vibe-hotels": {
-   "name": "Vibe Hotels",
-   "aliases": [
-    "Vibe Hotel Canberra"
-   ],
-   "domain": "tfehotels.com",
-   "cat": "Airlines & travel",
-   "k": "b"
-  },
-  "damsel-and-sprout": {
-   "name": "Damsel & Sprout",
-   "k": "b"
-  },
-  "a-corp-computers": {
-   "name": "A Corp. Computers",
-   "k": "b"
-  },
-  "accolade-wines": {
-   "name": "Accolade Wines",
-   "k": "b"
-  },
-  "alltech-payroll": {
-   "name": "Alltech Payroll",
-   "k": "b"
-  },
-  "athletes-foot": {
-   "name": "Athletes Foot",
-   "k": "b"
-  },
-  "car-park-king": {
-   "name": "Car Park King",
-   "k": "b"
-  },
-  "climate-edge": {
-   "name": "Climate Edge",
-   "k": "b"
-  },
-  "club-central-menai": {
-   "name": "Club Central Menai",
-   "k": "b"
-  },
-  "corey-fox-landscaping": {
-   "name": "Corey Fox Landscaping",
-   "k": "b"
-  },
-  "cronulla-carpets": {
-   "name": "Cronulla Carpets",
-   "k": "b"
-  },
-  "dacca-architecture": {
-   "name": "DACCA Architecture",
-   "k": "b"
-  },
-  "easy-signs": {
-   "name": "Easy Signs",
-   "k": "b"
-  },
-  "elite-legal": {
-   "name": "Elite Legal",
-   "k": "b"
-  },
-  "gen-leads": {
-   "name": "Gen Leads",
-   "k": "b"
-  },
-  "gold-management-building-facilities": {
-   "name": "Gold Management Building & Facilities",
-   "k": "b"
-  },
-  "green-by-nature": {
-   "name": "Green by Nature",
-   "k": "b"
-  },
-  "guardian-venue-management-international": {
-   "name": "Guardian Venue Management International",
-   "k": "b"
-  },
-  "hicon-building": {
-   "name": "HICON Building",
-   "k": "b"
-  },
-  "john-ryan-freight-services": {
-   "name": "John Ryan Freight Services",
-   "k": "b"
-  },
-  "life-outdoors": {
-   "name": "Life Outdoors",
-   "k": "b"
-  },
-  "longwall-chain-australia": {
-   "name": "Longwall Chain Australia",
-   "k": "b"
-  },
-  "nulon": {
-   "name": "Nulon",
-   "k": "b"
-  },
-  "o-brien-palmer": {
-   "name": "O'Brien Palmer",
-   "k": "b"
-  },
-  "picker-financial": {
-   "name": "Picker Financial",
-   "k": "b"
-  },
-  "pointsbet": {
-   "name": "PointsBet",
-   "k": "b"
-  },
-  "resolution-strata-services": {
-   "name": "Resolution Strata Services",
-   "k": "b"
-  },
-  "select-events": {
-   "name": "Select Events",
-   "k": "b"
-  },
-  "shire-steel-fabrication": {
-   "name": "Shire Steel & Fabrication",
-   "k": "b"
-  },
-  "strata-management-services-nsw": {
-   "name": "Strata Management Services NSW",
-   "k": "b"
-  },
-  "tailored-protection-security": {
-   "name": "Tailored Protection & Security",
-   "k": "b"
-  },
-  "the-healthy-milennial": {
-   "name": "The Healthy Milennial",
-   "k": "b"
-  },
-  "the-outperformer": {
-   "name": "The Outperformer",
-   "k": "b"
-  },
-  "the-roaming-cup": {
-   "name": "The Roaming Cup",
-   "k": "b"
-  },
-  "the-vinyl-room": {
-   "name": "The Vinyl Room",
-   "k": "b"
-  },
-  "totally-workwear-kirrawee": {
-   "name": "Totally Workwear Kirrawee",
-   "k": "b"
-  },
-  "victor": {
-   "name": "Victor",
-   "k": "b"
-  },
-  "wed-group": {
-   "name": "WED Group",
-   "k": "b"
-  },
-  "westfield-miranda": {
-   "name": "Westfield Miranda",
-   "k": "b"
-  },
-  "white-wolf-constructions": {
-   "name": "White Wolf Constructions",
-   "k": "b"
-  },
-  "panetta": {
-   "name": "Panetta",
-   "k": "b"
-  },
-  "united-rentals": {
-   "name": "United Rentals",
-   "k": "b"
-  },
-  "d-velop-r": {
-   "name": "D.velop.R",
-   "k": "b"
-  },
-  "american-tire-and-racing-services": {
-   "name": "American Tire and Racing Services",
-   "k": "b"
-  },
-  "anthony-greenwood-legal": {
-   "name": "Anthony Greenwood Legal",
-   "k": "b"
-  },
-  "australian-hammer-supplies": {
-   "name": "Australian Hammer Supplies",
-   "k": "b"
-  },
-  "the-collective-co": {
-   "name": "The Collective Co.",
-   "k": "b"
-  },
-  "connection-2-sports": {
-   "name": "Connection 2 Sports",
-   "k": "b"
-  },
-  "craig-chappelow-plumbing-building": {
-   "name": "Craig Chappelow Plumbing & Building",
-   "k": "b"
-  },
-  "dep-consulting": {
-   "name": "Dep Consulting",
-   "k": "b"
-  },
-  "endeavour-fleet": {
-   "name": "Endeavour Fleet",
-   "k": "b"
-  },
-  "feros-group": {
-   "name": "Feros Group",
-   "k": "b"
-  },
-  "gecko": {
-   "name": "Gecko",
-   "k": "b"
-  },
-  "gibson-partners": {
-   "name": "Gibson Partners",
-   "k": "b"
-  },
-  "hamilton-elevators-nsw": {
-   "name": "Hamilton Elevators NSW",
-   "k": "b"
-  },
-  "highland-property": {
-   "name": "Highland Property",
-   "k": "b"
-  },
-  "hi-tec-batteries": {
-   "name": "Hi-Tec Batteries",
-   "k": "b"
-  },
-  "jrb-diesel": {
-   "name": "JRB Diesel",
-   "k": "b"
-  },
-  "kindarama": {
-   "name": "Kindarama",
-   "k": "b"
-  },
-  "kinetic-electrical-data": {
-   "name": "Kinetic Electrical & Data",
-   "k": "b"
-  },
-  "menai-sand-soil": {
-   "name": "Menai Sand & Soil",
-   "k": "b"
-  },
-  "more-than-meat": {
-   "name": "More Than Meat",
-   "k": "b"
-  },
-  "career-corporation": {
-   "name": "Career Corporation",
-   "k": "b"
-  },
-  "quantaco": {
-   "name": "Quantaco",
-   "k": "b"
-  },
-  "ray-white-sutherland-shire": {
-   "name": "Ray White Sutherland Shire",
-   "k": "b"
-  },
-  "relyon-constructions": {
-   "name": "Relyon Constructions",
-   "k": "b"
-  },
-  "ressler-property": {
-   "name": "Ressler Property",
-   "k": "b"
-  },
-  "roc-boots": {
-   "name": "ROC Boots",
-   "k": "b"
-  },
-  "sba-earthmoving-attachments": {
-   "name": "SBA Earthmoving Attachments",
-   "k": "b"
-  },
-  "scape-pools": {
-   "name": "Scape Pools",
-   "k": "b"
-  },
-  "showcall-crewing": {
-   "name": "Showcall Crewing",
-   "k": "b"
-  },
-  "southern-fresh": {
-   "name": "Southern Fresh",
-   "k": "b"
-  },
-  "t-1-2-3": {
-   "name": "T 1-2-3",
-   "k": "b"
-  },
-  "the-app-group": {
-   "name": "The APP Group",
-   "k": "b"
-  },
-  "titan-education": {
-   "name": "Titan Education",
-   "k": "b"
-  },
-  "triple-h": {
-   "name": "Triple H",
-   "k": "b"
-  },
-  "advanced-lithium-battery-solutions": {
-   "name": "Advanced Lithium Battery Solutions",
-   "k": "b"
-  },
-  "warren-saunders-insurance-brokers": {
-   "name": "Warren Saunders Insurance Brokers",
-   "k": "b"
-  },
-  "waterwize-services": {
-   "name": "Waterwize Services",
-   "k": "b"
-  },
-  "wellfix": {
-   "name": "Wellfix",
-   "k": "b"
-  },
-  "whitcon": {
-   "name": "Whitcon",
-   "k": "b"
-  },
-  "wilken": {
-   "name": "Wilken",
-   "k": "b"
-  },
-  "warner-bros-movie-world": {
-   "name": "Warner Bros. Movie World",
-   "k": "b"
-  },
-  "home-carer-s-alliance": {
-   "name": "Home Carer's Alliance",
-   "k": "b"
-  },
-  "kinetic": {
-   "name": "Kinetic",
-   "k": "b"
-  },
-  "lauxes-grates": {
-   "name": "Lauxes Grates",
-   "k": "b"
-  },
-  "national-fire-ant-eradication-program": {
-   "name": "National Fire Ant Eradication Program",
-   "k": "b"
-  },
-  "parkwood-village": {
-   "name": "Parkwood Village",
-   "k": "b"
-  },
-  "peak-property-services": {
-   "name": "Peak Property Services",
-   "k": "b"
-  },
-  "rackley-swimming": {
-   "name": "Rackley Swimming",
-   "k": "b"
-  },
-  "rosel": {
-   "name": "Rosel",
-   "k": "b"
-  },
-  "all-lifting": {
-   "name": "All Lifting",
-   "k": "b"
-  },
-  "athletes-nutrition": {
-   "name": "Athletes Nutrition",
-   "k": "b"
-  },
-  "cff-project-management": {
-   "name": "CFF Project Management",
-   "k": "b"
-  },
-  "fire-systems-queensland": {
-   "name": "Fire Systems Queensland",
-   "k": "b"
-  },
-  "gold-coast-airport": {
-   "name": "Gold Coast Airport",
-   "k": "b"
-  },
-  "nerang-rsl": {
-   "name": "Nerang RSL",
-   "k": "b"
-  },
-  "painpod": {
-   "name": "PainPod",
-   "k": "b"
-  },
-  "rogers-willex": {
-   "name": "Rogers Willex",
-   "k": "b"
-  },
-  "sunshine-ford": {
-   "name": "Sunshine Ford",
-   "k": "b"
-  },
-  "coomera-anglican-college": {
-   "name": "Coomera Anglican College",
-   "k": "b"
-  },
-  "newhaven-funerals": {
-   "name": "Newhaven Funerals",
-   "k": "b"
-  },
-  "walker-corporation": {
-   "name": "Walker Corporation",
-   "k": "b"
-  },
-  "best-signs": {
-   "name": "Best Signs",
-   "k": "b"
-  },
-  "cheap-as-chips": {
-   "name": "Cheap as Chips",
-   "k": "b"
-  },
-  "fast-proof-press": {
-   "name": "Fast Proof Press",
-   "k": "b"
-  },
-  "mx3-diagnostics": {
-   "name": "MX3 Diagnostics",
-   "k": "b"
-  },
-  "newcastle-airport": {
-   "name": "Newcastle Airport",
-   "k": "b"
-  },
-  "marvan-hotel-group": {
-   "name": "Marvan Hotel Group",
-   "k": "b"
-  },
-  "cowboys-leagues-club": {
-   "name": "Cowboys Leagues Club",
-   "k": "b"
-  },
-  "2hd": {
-   "name": "2HD",
-   "k": "b"
-  },
-  "dolphins-group": {
-   "name": "Dolphins Group",
-   "k": "b"
-  },
-  "dolphins-central": {
-   "name": "Dolphins Central",
-   "k": "b"
-  },
-  "elephant-in-the-room": {
-   "name": "Elephant in the Room",
-   "k": "b"
-  },
-  "kia-australia": {
-   "name": "Kia Australia",
-   "k": "b"
-  },
-  "firstmac": {
-   "name": "Firstmac",
-   "k": "b"
-  },
-  "bcf": {
-   "name": "BCF",
-   "k": "b"
-  },
-  "nova-106-9": {
-   "name": "Nova 106.9",
-   "k": "b"
-  },
-  "courier-mail": {
-   "name": "Courier Mail",
-   "k": "b"
-  },
-  "the-broncos-club": {
-   "name": "The Broncos Club",
-   "k": "b"
-  },
-  "jellinbah-group": {
-   "name": "Jellinbah Group",
-   "k": "b"
-  },
-  "nine-news": {
-   "name": "Nine News",
-   "k": "b"
-  },
-  "the-banyans-healthcare": {
-   "name": "The Banyans Healthcare",
-   "k": "b"
-  },
-  "4bc": {
-   "name": "4BC",
-   "k": "b"
-  },
-  "pfd-foods": {
-   "name": "PFD Foods",
-   "k": "b"
-  },
-  "streets": {
-   "name": "Streets",
-   "k": "b"
-  },
-  "treasury-premium-brands": {
-   "name": "Treasury Premium Brands",
-   "k": "b"
-  },
-  "jimmy-rods-barbershop": {
-   "name": "Jimmy Rods Barbershop",
-   "k": "b"
-  },
-  "valiant": {
-   "name": "Valiant",
-   "k": "b"
-  },
-  "brisbane-airport-corporation": {
-   "name": "Brisbane Airport Corporation",
-   "k": "b"
-  },
-  "ben-moves-brisbane": {
-   "name": "Ben Moves Brisbane",
-   "k": "b"
-  },
-  "raiders-belconnen": {
-   "name": "Raiders Belconnen",
-   "k": "b"
-  },
-  "raiders-gungahlin": {
-   "name": "Raiders Gungahlin",
-   "k": "b"
-  },
-  "raiders-weston": {
-   "name": "Raiders Weston",
-   "k": "b"
-  },
-  "the-mawson-club": {
-   "name": "The Mawson Club",
-   "k": "b"
   }
  },
  "leagues": [
