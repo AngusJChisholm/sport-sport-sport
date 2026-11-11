@@ -69,7 +69,7 @@ body{{background:#fff;color:#000}}
 .r{{padding:27px 0 30px;border-bottom:1px solid #DEDED8}}.r:last-child{{border-bottom:0}}
 .r b{{display:block;font-weight:800;font-size:47px;font-stretch:96%;line-height:52px;text-transform:uppercase}}
 .r span{{display:block;font-weight:400;font-size:27.5px;color:#5C5C57;margin-top:14px}}</style>
-<div class="lab">{e(s.get("label") or "Recent deals")}</div><div class="rows">{rows}</div>
+<div class="lab">{e(s.get("label") or "Recent partnerships")}</div><div class="rows">{rows}</div>
 <img class="wm" src="data:image/svg+xml;base64,{wordmark('black')}">"""
 
 def render(spec, out):

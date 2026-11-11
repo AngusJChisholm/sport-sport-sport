@@ -112,15 +112,15 @@ def main():
         dated = [d for d, _ in r["deals"] if d.get("date") or d.get("month")] or [d for d, _ in r["deals"]]
         latest, first = dated[0], dated[-1]
         if kind == "b":
-            desc = f"{name} sponsorship deals: {n} filed across {', '.join(sports[:3])}. Partners include {top_p}." if top_p else f"{name} sponsorship deals in sport."
+            desc = f"{name} sponsorships: {n} filed across {', '.join(sports[:3])}. Partners include {top_p}." if top_p else f"{name} sponsorships in sport."
             title = f"{name} sponsorships and sport partners"
         else:
-            desc = f"{name} sponsors and partners: {n} deals filed. Partners include {top_p}." if top_p else f"{name} sponsors and partners."
+            desc = f"{name} sponsors and partners: {n} partnerships filed. Partners include {top_p}." if top_p else f"{name} sponsors and partners."
             title = f"{name} sponsors and partners"
         url = f"{SITE}/{folder}/{slug}"
         stats = "".join(f'<div class="stat"><b>{esc(v)}</b><span>{esc(l)}</span></div>' for v, l in [
-            (n, "deal filed" if n == 1 else "deals filed"), (len(sports), "sport" if len(sports) == 1 else "sports"),
-            (fmt(latest), "latest deal"), (fmt(first), "first filed")])
+            (n, "partnership filed" if n == 1 else "partnerships filed"), (len(sports), "sport" if len(sports) == 1 else "sports"),
+            (fmt(latest), "latest partnership"), (fmt(first), "first filed")])
         # Past partners: every deal with that partner is marked "ended". Greyed, with the years they were signed.
         pinfo = {}
         for d, side in r["deals"]:
@@ -174,7 +174,7 @@ def main():
             m = pinfo.get(k, {})
             past = m.get("past")
             title = pt_of.get(k, ("", ""))[1]
-            k_txt = ("Past partner" + (f" · {yrs(m)}" if yrs(m) else "")) if past else (title or f'{r["partners"][k]} deal{"s" if r["partners"][k] > 1 else ""}')
+            k_txt = ("Past partner" + (f" · {yrs(m)}" if yrs(m) else "")) if past else (title or f'{r["partners"][k]} partnership{"s" if r["partners"][k] > 1 else ""}')
             folder_k = "brands" if recs.get(k, {}).get("nB", 0) >= recs.get(k, {}).get("nP", 0) else "properties"
             return f'<a class="pt{" past" if past else ""}" href="{esc(folder_k)}/{esc(k)}"><b>{esc(pname(k))}</b><span class="k">{esc(k_txt)}</span></a>'
         if order:
@@ -199,7 +199,7 @@ def main():
         page = page.replace('<div class="stats" id="stats"></div>', f'<div class="stats" id="stats">{stats}</div>')
         page = page.replace('<div class="pg" id="pGrid"></div>', f'<div class="pg" id="pGrid">{ptiles}</div>')
         page = page.replace('<section class="sec" id="partners" hidden>', '<section class="sec" id="partners">' if partners else '<section class="sec" id="partners" hidden>')
-        page = page.replace('<span class="lbl mute-l" id="dCount"></span>', f'<span class="lbl mute-l" id="dCount">{n} deal{"s" if n != 1 else ""}</span>')
+        page = page.replace('<span class="lbl mute-l" id="dCount"></span>', f'<span class="lbl mute-l" id="dCount">{n} partnership{"s" if n != 1 else ""}</span>')
         page = page.replace('<div id="list"></div>', f'<div id="list">{"".join(rows)}</div>')
         page = page.replace('<section class="sec" id="deals" hidden style="padding-top:0">', '<section class="sec" id="deals" style="padding-top:0">')
 

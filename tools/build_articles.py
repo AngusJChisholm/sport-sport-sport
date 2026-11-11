@@ -99,7 +99,7 @@ def main():
                     rows.append(f'<div class="row">{inner[:-len("<span>→</span>")]}</div>')
             sameday = (
                 '<section class="same"><div class="wrap"><span class="lbl mute-l" style="display:block;margin-bottom:16px">'
-                f'Also on {esc(short_date(posted))}</span><h2 class="disp">The other deals.</h2>'
+                f'Also on {esc(short_date(posted))}</span><h2 class="disp">The other partnerships.</h2>'
                 + "".join(rows)
                 + "</div></section>"
             )
@@ -131,9 +131,9 @@ def main():
             .replace("{{SAMEDAY}}", sameday)
             .replace("{{FOLLOW}}", follow)
             .replace("{{YEAR}}", e["date"][:4])
-            .replace("{{LABEL}}", "Lead deal")
-            .replace("{{FOLLOWLBL}}", "Deals, data and features")
-            .replace("{{FOLLOWHEAD}}", 'One lead deal a day. <span class="g">Every deal, filed.</span>')
+            .replace("{{LABEL}}", "Lead partnership")
+            .replace("{{FOLLOWLBL}}", "Partnerships, data and features")
+            .replace("{{FOLLOWHEAD}}", 'The partnerships that matter. <span class="g">Every partnership, filed.</span>')
         )
         (out_dir / f'{e["slug"]}.html').write_text(page, encoding="utf-8")
         built.append(e["slug"])
@@ -184,7 +184,7 @@ def build_features(deals, tpl, out_dir, follow):
         related = ""
         if rows:
             related = ('<section class="same"><div class="wrap"><span class="lbl mute-l" style="display:block;margin-bottom:16px">'
-                       'In this story</span><h2 class="disp">The deals.</h2>' + "".join(rows) + "</div></section>")
+                       'In this story</span><h2 class="disp">The partnerships.</h2>' + "".join(rows) + "</div></section>")
         ph_src, og_img = photo_urls(f.get("image"))
         topclass = topstyle = credit_html = ""
         if ph_src:
@@ -213,8 +213,8 @@ def build_features(deals, tpl, out_dir, follow):
             .replace("{{FOLLOW}}", follow)
             .replace("{{YEAR}}", f["date"][:4])
             .replace("{{LABEL}}", esc(f.get("label") or "Feature"))
-            .replace("{{FOLLOWLBL}}", "Deals, data and features")
-            .replace("{{FOLLOWHEAD}}", 'All things sport business. <span class="g">Deals, news and analysis. Global &amp; ANZ.</span>')
+            .replace("{{FOLLOWLBL}}", "Partnerships, data and features")
+            .replace("{{FOLLOWHEAD}}", 'All things sport business. <span class="g">Partnerships, news and analysis. Global &amp; ANZ.</span>')
         )
         (out_dir / f'{f["slug"]}.html').write_text(page, encoding="utf-8")
         built += 1

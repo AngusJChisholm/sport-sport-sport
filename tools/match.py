@@ -353,7 +353,7 @@ class Model:
         cities = {self.city.get(r["p"]) for r in rs if self.city.get(r["p"])}
         anz = any(r["d"].get("region") == "ANZ" for r in rs)
         if entrant and self.region[p] == "ANZ":
-            out.append(f"Builds on your first ANZ deal with a {self.reach[p].lower()} property" if anz
+            out.append(f"Builds on your first ANZ partnership with a {self.reach[p].lower()} property" if anz
                        else f"A {self.reach[p].lower()} way into Australia and NZ")
         elif sp not in sports:
             out.append(f"Opens up {sp.lower() if sp == 'Venues' else sp}, which you're not in yet")
@@ -494,7 +494,7 @@ class Model:
             if why_t:
                 why.append(why_t)
             if n12:
-                why.append(f"{n12} new deal{'s' if n12 > 1 else ''} in the last 12 months")
+                why.append(f"{n12} new partnership{'s' if n12 > 1 else ''} in the last 12 months")
             if sub and peers and adopt:
                 why.append(f"No {sub} partner here. {adopt} of {len(peers)} peers have one")
             conf = "High" if len(rs) >= 5 else "Medium" if len(rs) >= 2 else "Low"
@@ -615,11 +615,11 @@ class Model:
                     props.append(nm(r["p"]))
                 if len(props) == 3:
                     break
-            why = [f"Global sponsor: {len(rs)} deals, incl. {join(props)}" if props else f"Global sponsor: {len(rs)} deals"]
+            why = [f"Global sponsor: {len(rs)} partnerships, incl. {join(props)}" if props else f"Global sponsor: {len(rs)} partnerships"]
             if anz:
-                why.append(f"First ANZ deal: {nm(anz[0]['p'])} in {fmt_ym(anz[0]['ym'])}")
+                why.append(f"First ANZ partnership: {nm(anz[0]['p'])} in {fmt_ym(anz[0]['ym'])}")
             else:
-                why.append("No Australian or NZ deal yet")
+                why.append("No Australian or NZ partnership yet")
             if open_here and peers and adopt:
                 why.append(f"No {key} partner here. {adopt} of {len(peers)} peers have one")
             elif open_here:

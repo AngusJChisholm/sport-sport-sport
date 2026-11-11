@@ -53,7 +53,7 @@ S.load().then(D=>{
     $("pt").innerHTML=`<thead><tr><th>Club</th>${COLS.map(c=>`<th scope="col">${c.t}<small>${filled(c.k)}/${n} clubs</small></th>`).join("")}</tr></thead><tbody>${
       clubs.map(c=>{const r=grid.get(c.e.slug);return `<tr><td class="c"><a href="${esc(L.page(c.e.slug))}">${L.mark(c.e,{px:30})}${esc(c.e.name)}</a></td>${COLS.map(col=>cell(r[col.k])).join("")}</tr>`}).join("")}</tbody>`;
     const top=[...count.entries()].filter(([s])=>(count.get(s)||0)>=3).sort((a,b)=>b[1]-a[1]).slice(0,3).map(([s,k])=>`${esc((L.byId(s)||{name:s}).name)}: ${k} clubs`);
-    $("pkey").innerHTML=`<i></i>Backs 3 or more clubs${top.length?` (${top.join(", ")})`:""}. Beer brands are counted under the brewer that owns them (e.g. Carlton Draught under CUB), but shown as each club names them. Current partners from each club's official partners page, plus deals announced since ${yr-1} or still running. A dash means nothing filed yet. Updated ${new Date().toLocaleDateString("en-AU",{month:"short",year:"numeric"})}.`;
+    $("pkey").innerHTML=`<i></i>Backs 3 or more clubs${top.length?` (${top.join(", ")})`:""}. Beer brands are counted under the brewer that owns them (e.g. Carlton Draught under CUB), but shown as each club names them. Current partners from each club's official partners page, plus partnerships announced since ${yr-1} or still running. A dash means nothing filed yet. Updated ${new Date().toLocaleDateString("en-AU",{month:"short",year:"numeric"})}.`;
     S.setQs({league:st.league});
   }
   $("lgPills").addEventListener("click",e=>{const b=e.target.closest("[data-l]");if(!b)return;st.league=b.dataset.l;draw()});

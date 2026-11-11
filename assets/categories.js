@@ -22,8 +22,8 @@ function index(byCat){
     return {k,g,top,ty};
   }).sort((a,b)=>(a.k==="Other")-(b.k==="Other")||b.g.deals.size-a.g.deals.size);
   $("view").innerHTML=`<section class="wrap hero"><span class="lbl mute-l">Insights</span><h1 class="disp">Categories.</h1>
-  <p>Every brand in the archive sorted into the industry it sells in. Pick one to see who's spending, which sports they back and every deal they've done.</p></section>
-  <section class="wrap sec"><div class="cg">${cards.map(x=>`<a class="cc" href="categories?c=${encodeURIComponent(x.k)}"><h3>${esc(x.k)}</h3><span class="k">${plural(x.g.brands.length,"brand","brands")} · ${plural(x.g.deals.size,"deal","deals")}${x.ty?` · ${x.ty} in ${yr}`:""}</span><span class="lgs">${x.top.map(b=>L.mark(b.e,{px:40})).join("")}</span></a>`).join("")}</div></section>`;
+  <p>Every brand in the database sorted into the industry it sells in. Pick one to see who's spending, which sports they back and every partnership they've done.</p></section>
+  <section class="wrap sec"><div class="cg">${cards.map(x=>`<a class="cc" href="categories?c=${encodeURIComponent(x.k)}"><h3>${esc(x.k)}</h3><span class="k">${plural(x.g.brands.length,"brand","brands")} · ${plural(x.g.deals.size,"partnership","partnerships")}${x.ty?` · ${x.ty} in ${yr}`:""}</span><span class="lgs">${x.top.map(b=>L.mark(b.e,{px:40})).join("")}</span></a>`).join("")}</div></section>`;
 }
 
 function detail(c,g,q){
@@ -36,7 +36,7 @@ function detail(c,g,q){
   <section class="wrap" style="padding-top:28px"><div class="ctl2"><div class="pills" id="spPills" role="group" aria-label="Sport"></div><div class="pills" id="regPills" role="group" aria-label="Region"></div></div></section>
   <section class="wrap sec" style="padding-top:12px"><div class="sh"><div><span class="lbl mute-l">The spenders</span><h2 class="disp">Brands.</h2></div><span class="lbl mute-l" id="bCount"></span></div><div class="dg" id="bGrid"></div></section>
   <section class="wrap sec" style="padding-top:0"><div class="sh"><div><span class="lbl mute-l">Who they back</span><h2 class="disp">Properties.</h2></div><span class="lbl mute-l" id="pCount"></span></div><div class="pg" id="pGrid"></div></section>
-  <section class="wrap sec" style="padding-top:0"><div class="sh"><div><span class="lbl mute-l">The record</span><h2 class="disp">Every deal.</h2></div><span class="lbl mute-l" id="dCount"></span></div><div class="tw"><table class="t"><thead><tr><th>Date</th><th>Deal</th><th>Sport</th><th>Deal type</th><th>Ends</th><th>Region</th></tr></thead><tbody id="dRows"></tbody></table></div></section>`;
+  <section class="wrap sec" style="padding-top:0"><div class="sh"><div><span class="lbl mute-l">The record</span><h2 class="disp">Every partnership.</h2></div><span class="lbl mute-l" id="dCount"></span></div><div class="tw"><table class="t"><thead><tr><th>Date</th><th>Partnership</th><th>Sport</th><th>Partnership type</th><th>Ends</th><th>Region</th></tr></thead><tbody id="dRows"></tbody></table></div></section>`;
   function draw(){
     const r=deals.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(st.region==="All"||d.region===st.region));
     const bm=new Map(),pm=new Map();
@@ -46,10 +46,10 @@ function detail(c,g,q){
     const ps=[...pm.values()].sort((a,b)=>b.n-a.n||a.e.name.localeCompare(b.e.name));
     $("cStats").innerHTML=[[bs.length,"brands"],[r.length,"deals"],[r.filter(d=>S.yearOf(d)===yr).length,`in ${yr}`],[ps.length,"properties backed"]].map(([v,l])=>`<div class="stat"><b>${v.toLocaleString("en-AU")}</b><span>${l}</span></div>`).join("");
     $("bCount").textContent=plural(bs.length,"brand","brands");
-    $("bGrid").innerHTML=bs.map(m=>`<a class="dt" href="${esc(L.page(m.e.slug))}">${L.mark(m.e,{px:72})}<b>${esc(m.e.name)}</b><span class="n">${m.n} deal${m.n===1?"":"s"}</span><span class="k">${esc([...m.sp].slice(0,2).join(" · "))}</span></a>`).join("")||`<p class="note">No deals for that filter.</p>`;
+    $("bGrid").innerHTML=bs.map(m=>`<a class="dt" href="${esc(L.page(m.e.slug))}">${L.mark(m.e,{px:72})}<b>${esc(m.e.name)}</b><span class="n">${m.n} partnership${m.n===1?"":"s"}</span><span class="k">${esc([...m.sp].slice(0,2).join(" · "))}</span></a>`).join("")||`<p class="note">No partnerships for that filter.</p>`;
     $("pCount").textContent=plural(ps.length,"property","properties");
-    $("pGrid").innerHTML=ps.slice(0,48).map(m=>`<a class="pt" href="${esc(L.page(m.e.slug))}">${L.mark(m.e,{px:64})}<b>${esc(m.e.name)}</b><span class="k">${m.n>1?m.n+" deals · ":""}${esc([...m.sp].join(", "))}</span></a>`).join("");
-    $("dCount").textContent=plural(r.length,"deal","deals");
+    $("pGrid").innerHTML=ps.slice(0,48).map(m=>`<a class="pt" href="${esc(L.page(m.e.slug))}">${L.mark(m.e,{px:64})}<b>${esc(m.e.name)}</b><span class="k">${m.n>1?m.n+" partnerships · ":""}${esc([...m.sp].join(", "))}</span></a>`).join("");
+    $("dCount").textContent=plural(r.length,"partnership","partnerships");
     $("dRows").innerHTML=r.map(d=>`<tr><td class="d">${esc(S.fmt(d))}</td><td><span class="dl">${L.pair(d,{px:34})}${S.dealLink(d)}</span></td><td>${esc(d.sport)}</td><td>${esc(d.tier||d.type||"")}</td><td class="d">${esc(S.endsTxt(d))}</td><td><span class="tag r">${esc(d.region)}</span></td></tr>`).join("");
     $("spPills").innerHTML=["All",...sports.slice(0,14)].map(s=>`<button type="button" class="pill${st.sport===s?" on":""}" data-s="${esc(s)}" aria-pressed="${st.sport===s}">${s==="All"?"All sports":esc(s)}</button>`).join("");
     $("regPills").innerHTML=["All","ANZ","Global"].map(x=>`<button type="button" class="pill${st.region===x?" on":""}" data-r="${x}" aria-pressed="${st.region===x}">${x==="All"?"Everywhere":x}</button>`).join("");

@@ -20,12 +20,12 @@ S.load().then(D=>{
   const groups=(IS_B?S.CATS:S.PTYPES).filter(g=>rows.some(r=>groupOf(r)===g));
 
   const totalDeals=new Set(rows.flatMap(r=>r.deals.map(x=>x.d))).size;
-  $("heroStats").innerHTML=[[rows.length.toLocaleString("en-AU"),IS_B?"brands":"properties"],[totalDeals.toLocaleString("en-AU"),"deals filed"],[IS_B?groups.length:sports.length,IS_B?"categories":"sports"]]
+  $("heroStats").innerHTML=[[rows.length.toLocaleString("en-AU"),IS_B?"brands":"properties"],[totalDeals.toLocaleString("en-AU"),"partnerships filed"],[IS_B?groups.length:sports.length,IS_B?"categories":"sports"]]
     .map(([v,l])=>`<div class="stat"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("");
 
   const hot=[...rows].filter(r=>r.thisYr).sort((a,b)=>b.thisYr-a.thisYr||a.e.name.localeCompare(b.e.name)).slice(0,10);
   $("hotYr").textContent=yr;
-  $("hot").innerHTML=hot.map((r,i)=>`<a href="${esc(L.page(r.e.slug))}"><span class="r">${String(i+1).padStart(2,"0")}</span>${L.mark(r.e,{px:48})}<b>${esc(r.e.name)}</b><span class="c">${r.thisYr} deal${r.thisYr===1?"":"s"} in ${yr}</span></a>`).join("");
+  $("hot").innerHTML=hot.map((r,i)=>`<a href="${esc(L.page(r.e.slug))}"><span class="r">${String(i+1).padStart(2,"0")}</span>${L.mark(r.e,{px:48})}<b>${esc(r.e.name)}</b><span class="c">${r.thisYr} partnership${r.thisYr===1?"":"s"} in ${yr}</span></a>`).join("");
   $("band").hidden=!hot.length;
 
   $("sport").innerHTML=["All",...sports].map(s=>`<option value="${esc(s)}"${s===st.sport?" selected":""}>${s==="All"?"All sports":esc(s)}</option>`).join("");
@@ -51,7 +51,7 @@ S.load().then(D=>{
     $("count").textContent=`${r.length.toLocaleString("en-AU")} ${IS_B?(r.length===1?"brand":"brands"):(r.length===1?"property":"properties")}`;
     $("grid").innerHTML=r.slice(0,st.shown).map(x=>{
       const o=(x.latest.other||[]).filter(Boolean).map(e=>e.name).join(" / ");
-      return `<a class="dt" href="${esc(L.page(x.e.slug))}">${L.mark(x.e,{px:72})}<b>${esc(x.e.name)}</b><span class="n">${x.n} deal${x.n===1?"":"s"}</span><span class="k">${esc(groupOf(x))}</span><span class="k">${esc([...x.sports.keys()].slice(0,2).join(" · "))}</span>${o?`<span class="lt">Latest: with ${esc(o)}</span>`:""}</a>`;
+      return `<a class="dt" href="${esc(L.page(x.e.slug))}">${L.mark(x.e,{px:72})}<b>${esc(x.e.name)}</b><span class="n">${x.n} partnership${x.n===1?"":"s"}</span><span class="k">${esc(groupOf(x))}</span><span class="k">${esc([...x.sports.keys()].slice(0,2).join(" · "))}</span>${o?`<span class="lt">Latest: with ${esc(o)}</span>`:""}</a>`;
     }).join("")||`<p class="note">Nothing matches that. Try a different name or clear the filters.</p>`;
     $("moreBtn").hidden=r.length<=st.shown;
     $("moreBtn").textContent=`Show more (${(r.length-st.shown).toLocaleString("en-AU")} left)`;

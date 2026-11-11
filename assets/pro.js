@@ -41,7 +41,7 @@ function renewal(d){
   const t=TYP[d.tier]||TYP_ALL;
   return {end:yearOf(d)+t,basis:"Estimate",t};
 }
-const basisTag=r=>r?`<span class="basis ${r.basis==="Confirmed"?"c":r.basis==="From term"?"t":""}" title="${r.basis==="Estimate"?`Typical ${r.t}-year term for this deal type`:r.basis==="From term"?"Announced term added to the announcement year":"End date stated in the announcement"}">${r.basis}</span>`:"";
+const basisTag=r=>r?`<span class="basis ${r.basis==="Confirmed"?"c":r.basis==="From term"?"t":""}" title="${r.basis==="Estimate"?`Typical ${r.t}-year term for this partnership type`:r.basis==="From term"?"Announced term added to the announcement year":"End date stated in the announcement"}">${r.basis}</span>`:"";
 
 /* ---------- Brand finder ---------- */
 function finder(){
@@ -53,7 +53,7 @@ function finder(){
   <select class="sel" id="fbacks"><option value="">Backs any sport</option>${sports.map(s=>opt(s,f.backs,"Backs "+s)).join("")}</select>
   <select class="sel" id="fnot"><option value="">Not in: no exclusion</option>${sports.map(s=>opt(s,f.notIn,"Not in "+s)).join("")}</select></div>
   <div class="ctl2"><div class="pills">${pills("win",[["12","Active last 12 months"],["24","Last 2 years"],["36","Last 3 years"],["all","Any time"]],f.win)}</div>
-  <div class="pills">${pills("reg",[["ANZ","ANZ deals"],["Global","Global deals"],["All","Everywhere"]],f.region)}${pills("sort",[["recent","Newest first"],["deals","Most deals"]],f.sort)}</div></div>
+  <div class="pills">${pills("reg",[["ANZ","ANZ partnerships"],["Global","Global partnerships"],["All","Everywhere"]],f.region)}${pills("sort",[["recent","Newest first"],["deals","Most partnerships"]],f.sort)}</div></div>
   <div class="res"><span class="lbl mute-l" id="fcount"></span><span class="toolrow"><button class="ghost" id="fcsv">Export CSV</button></span></div><div id="flist"></div>`;
   const draw=()=>{
     const q=f.q.trim().toLowerCase(), win=f.win==="all"?Infinity:+f.win;
@@ -76,7 +76,7 @@ function finder(){
     state.fRows=rows;
     $("fcount").textContent=`${rows.length} brand${rows.length===1?"":"s"}`;
     const shown=rows.slice(0,state.fMore?rows.length:150);
-    $("flist").innerHTML=rows.length?`<div class="tw"><table class="t"><thead><tr><th></th><th>Brand</th><th>Category</th><th>Deals</th><th>Last deal</th><th>Sports</th><th>Partners</th></tr></thead><tbody>${shown.map(r=>`<tr><td>${star(r.b.e.slug)}</td><td><span class="dl">${logo(r.b.e,34)}<a href="${esc(L.page(r.b.e.slug))}"><b>${esc(r.b.e.name)}</b></a></span></td><td>${esc(r.b.cat)}</td><td class="d">${r.n}${r.nRecent!==r.n?` <span class="mute-l">(${r.nRecent} recent)</span>`:""}</td><td class="d">${esc(S.fmt(r.last))}</td><td><div class="chips">${r.sports.slice(0,3).map(s=>`<span class="chip">${esc(s)}</span>`).join("")}</div></td><td><div class="logos">${r.partners.map(p=>logo(p,28)).join("")}</div></td></tr>`).join("")}</tbody></table></div>${rows.length>shown.length?`<p><button class="ghost" id="fmore">Show all ${rows.length}</button></p>`:""}`:`<p class="note">No brands match. Try a wider time window.</p>`;
+    $("flist").innerHTML=rows.length?`<div class="tw"><table class="t"><thead><tr><th></th><th>Brand</th><th>Category</th><th>Partnerships</th><th>Last partnership</th><th>Sports</th><th>Partners</th></tr></thead><tbody>${shown.map(r=>`<tr><td>${star(r.b.e.slug)}</td><td><span class="dl">${logo(r.b.e,34)}<a href="${esc(L.page(r.b.e.slug))}"><b>${esc(r.b.e.name)}</b></a></span></td><td>${esc(r.b.cat)}</td><td class="d">${r.n}${r.nRecent!==r.n?` <span class="mute-l">(${r.nRecent} recent)</span>`:""}</td><td class="d">${esc(S.fmt(r.last))}</td><td><div class="chips">${r.sports.slice(0,3).map(s=>`<span class="chip">${esc(s)}</span>`).join("")}</div></td><td><div class="logos">${r.partners.map(p=>logo(p,28)).join("")}</div></td></tr>`).join("")}</tbody></table></div>${rows.length>shown.length?`<p><button class="ghost" id="fmore">Show all ${rows.length}</button></p>`:""}`:`<p class="note">No brands match. Try a wider time window.</p>`;
   };
   let t;$("fq").oninput=e=>{clearTimeout(t);t=setTimeout(()=>{f.q=e.target.value;draw()},150)};
   $("fcat").onchange=e=>{f.cat=e.target.value;draw()};
@@ -87,7 +87,7 @@ function finder(){
     if(b){if(b.dataset.win)f.win=b.dataset.win;if(b.dataset.reg)f.region=b.dataset.reg;if(b.dataset.sort)f.sort=b.dataset.sort;
       b.parentNode.querySelectorAll(".pill").forEach(p=>{const on=p===b||(p.dataset.win&&p.dataset.win===f.win)||(p.dataset.reg&&p.dataset.reg===f.region)||(p.dataset.sort&&p.dataset.sort===f.sort);p.classList.toggle("on",!!on)});draw();return}
     if(e.target.id==="fmore"){state.fMore=true;draw();return}
-    if(e.target.id==="fcsv")csv([["Brand","Category","Deals","Last deal","Sports","Recent partners"],...state.fRows.map(r=>[r.b.e.name,r.b.cat,r.n,S.fmt(r.last),r.sports.join("; "),r.partners.map(p=>p.name).join("; ")])],"sss-pro-brands.csv");
+    if(e.target.id==="fcsv")csv([["Brand","Category","Partnerships","Last partnership","Sports","Recent partners"],...state.fRows.map(r=>[r.b.e.name,r.b.cat,r.n,S.fmt(r.last),r.sports.join("; "),r.partners.map(p=>p.name).join("; ")])],"sss-pro-brands.csv");
   };
   draw();
 }
@@ -100,11 +100,11 @@ function renewals(){
   const sports=[...new Set(all.map(x=>x.d.sport))].filter(Boolean).sort();
   const years=[["due","Due now"],[String(yr),String(yr)],[String(yr+1),String(yr+1)],[String(yr+2),String(yr+2)],["later",`${yr+3}+`]];
   const inYr=(x,y)=>y==="due"?x.r.end<yr&&x.r.basis==="Estimate":y==="later"?x.r.end>=yr+3:x.r.end===+y;
-  $("view").innerHTML=`<p class="pro-intro">Deals reaching the end of their term. <b>Confirmed</b> means the end date was announced, and <b>From term</b> means the length was. <b>Estimate</b> adds the typical length for that deal type (${Object.entries(TYP).map(([k,v])=>`${k} ${v} yrs`).join(", ")}). <b>Due now</b> is estimates whose term has already run, so they're either renewed quietly or up for grabs.</p>
+  $("view").innerHTML=`<p class="pro-intro">Partnerships reaching the end of their term. <b>Confirmed</b> means the end date was announced, and <b>From term</b> means the length was. <b>Estimate</b> adds the typical length for that partnership type (${Object.entries(TYP).map(([k,v])=>`${k} ${v} yrs`).join(", ")}). <b>Due now</b> is estimates whose term has already run, so they're either renewed quietly or up for grabs.</p>
   <div class="ctl"><input class="srch" id="rq" type="search" placeholder="Search a brand or property" value="${esc(f.q)}" autocomplete="off">
   <select class="sel" id="rsport"><option value="">All sports</option>${sports.map(s=>opt(s,f.sport)).join("")}</select>
   <select class="sel" id="rcat"><option value="">All categories</option>${S.CATS.map(c=>opt(c,f.cat)).join("")}</select>
-  <select class="sel" id="rtier"><option value="">All deal types</option>${S.TIERS.map(c=>opt(c,f.tier)).join("")}</select></div>
+  <select class="sel" id="rtier"><option value="">All partnership types</option>${S.TIERS.map(c=>opt(c,f.tier)).join("")}</select></div>
   <div class="ctl2"><div class="pills" id="ryears"></div><div class="pills">${pills("reg",[["ANZ","ANZ"],["Global","Global"],["All","Everywhere"]],f.region)}${pills("basis",[["all","Any basis"],["firm","Confirmed + From term"],["Confirmed","Confirmed only"]],f.basis)}</div></div>
   <div class="res"><span class="lbl mute-l" id="rcount"></span><button class="ghost" id="rcsv">Export CSV</button></div><div id="rlist"></div>`;
   const draw=()=>{
@@ -116,9 +116,9 @@ function renewals(){
     const rows=base.filter(x=>inYr(x,f.year)).sort((a,b)=>a.r.end-b.r.end||["Confirmed","From term","Estimate"].indexOf(a.r.basis)-["Confirmed","From term","Estimate"].indexOf(b.r.basis)||a.d.deal.localeCompare(b.d.deal));
     state.rRows=rows;
     const firm=rows.filter(x=>x.r.basis!=="Estimate").length;
-    $("rcount").textContent=`${rows.length} deal${rows.length===1?"":"s"} · ${firm} confirmed or from term`;
+    $("rcount").textContent=`${rows.length} partnership${rows.length===1?"":"s"} · ${firm} confirmed or from term`;
     const shown=rows.slice(0,state.rMore?rows.length:200);
-    $("rlist").innerHTML=rows.length?`<div class="tw"><table class="t"><thead><tr><th>Ends</th><th>Basis</th><th>Deal</th><th>Sport</th><th>Category</th><th>Deal type</th><th>Status</th><th>Announced</th></tr></thead><tbody>${shown.map(({d,r})=>`<tr><td><span class="yr">${r.end}</span></td><td>${basisTag(r)}</td><td><span class="dl">${L.pair(d,{px:30})}${S.dealLink(d)}</span></td><td>${esc(d.sport||"")}</td><td>${esc((d._cats||[]).join(", "))}</td><td>${esc(d.tier||"")}</td><td class="d">${esc(d.status||"")}</td><td class="d">${esc(S.fmt(d))}</td></tr>`).join("")}</tbody></table></div>${rows.length>shown.length?`<p><button class="ghost" id="rmore">Show all ${rows.length}</button></p>`:""}`:`<p class="note">Nothing in that window.</p>`;
+    $("rlist").innerHTML=rows.length?`<div class="tw"><table class="t"><thead><tr><th>Ends</th><th>Basis</th><th>Partnership</th><th>Sport</th><th>Category</th><th>Partnership type</th><th>Status</th><th>Announced</th></tr></thead><tbody>${shown.map(({d,r})=>`<tr><td><span class="yr">${r.end}</span></td><td>${basisTag(r)}</td><td><span class="dl">${L.pair(d,{px:30})}${S.dealLink(d)}</span></td><td>${esc(d.sport||"")}</td><td>${esc((d._cats||[]).join(", "))}</td><td>${esc(d.tier||"")}</td><td class="d">${esc(d.status||"")}</td><td class="d">${esc(S.fmt(d))}</td></tr>`).join("")}</tbody></table></div>${rows.length>shown.length?`<p><button class="ghost" id="rmore">Show all ${rows.length}</button></p>`:""}`:`<p class="note">Nothing in that window.</p>`;
   };
   let t;$("rq").oninput=e=>{clearTimeout(t);t=setTimeout(()=>{f.q=e.target.value;draw()},150)};
   $("rsport").onchange=e=>{f.sport=e.target.value;draw()};
@@ -129,7 +129,7 @@ function renewals(){
     if(b){if(b.dataset.yr)f.year=b.dataset.yr;if(b.dataset.reg)f.region=b.dataset.reg;if(b.dataset.basis)f.basis=b.dataset.basis;
       b.parentNode.querySelectorAll(".pill").forEach(p=>p.classList.toggle("on",(p.dataset.reg&&p.dataset.reg===f.region)||(p.dataset.basis&&p.dataset.basis===f.basis)||false));draw();return}
     if(e.target.id==="rmore"){state.rMore=true;draw();return}
-    if(e.target.id==="rcsv")csv([["Ends","Basis","Deal","Brand","Property","Sport","Category","Deal type","Status","Term (yrs)","Announced","Source"],...state.rRows.map(({d,r})=>[r.end,r.basis,d.deal,nameOf(d),propOf(d),d.sport,(d._cats||[]).join("; "),d.tier,d.status,d.term||"",S.fmt(d),d.url||""])],"sss-pro-renewals.csv");
+    if(e.target.id==="rcsv")csv([["Ends","Basis","Partnership","Brand","Property","Sport","Category","Partnership type","Status","Term (yrs)","Announced","Source"],...state.rRows.map(({d,r})=>[r.end,r.basis,d.deal,nameOf(d),propOf(d),d.sport,(d._cats||[]).join("; "),d.tier,d.status,d.term||"",S.fmt(d),d.url||""])],"sss-pro-renewals.csv");
   };
   draw();
 }
@@ -182,39 +182,39 @@ function property(){
   state.pExport={p,partners,gaps,prospects};
   $("view").innerHTML=`<div class="ctl"><input class="srch" id="pq" list="propNames" placeholder="Type a property, e.g. Carlton, Wallabies, NBL" autocomplete="off"><button class="ghost" id="pcsv">Export partner list</button></div>
   <div class="ph">${L.mark(p.e,{px:72})}<div><h2 class="disp">${esc(p.e.name)}</h2><div class="sub">${esc(p.ptype)} · ${esc(sp)} · benchmarked against ${esc(peers.label)} ${star(p.e.slug)}</div></div></div>
-  <div class="kpis"><div><b>${partners.length}</b><span>Live partners</span></div><div><b>${new12}</b><span>Deals, last 12 months</span></div><div><b>${have.size}</b><span>Categories covered</span></div><div><b>${due.length}</b><span>Renewals due ${yr}-${yr+2}</span></div></div>
-  <p class="note-s">"Live" means the deal's end year hasn't passed, it was announced in the last three years, or the brand is on the club's current partners page.</p>
+  <div class="kpis"><div><b>${partners.length}</b><span>Live partners</span></div><div><b>${new12}</b><span>Partnerships, last 12 months</span></div><div><b>${have.size}</b><span>Categories covered</span></div><div><b>${due.length}</b><span>Renewals due ${yr}-${yr+2}</span></div></div>
+  <p class="note-s">"Live" means the partnership's end year hasn't passed, it was announced in the last three years, or the brand is on the club's current partners page.</p>
 
   <div class="h3">Category gaps and prospects</div>
   <p class="note-s">Categories where at least two ${esc(peers.label)} peers have a live partner and ${esc(p.e.name)} doesn't, with the brands most likely to say yes: live in ${esc(sp)} first, then anywhere in ANZ. A dashed name is a former partner.</p>
-  ${gaps.length?`<div class="tw"><table class="t"><thead><tr><th>Category</th><th>Peers with one</th><th>Who they're with</th><th>Prospects</th></tr></thead><tbody>${gaps.map(g=>{const pr=prospects(g.c);return `<tr><td><b>${esc(g.c)}</b></td><td><div class="toolrow"><span class="gapbar"><i style="width:${Math.round(g.peers.size/nPeers*100)}%"></i></span><span class="d">${g.peers.size} of ${nPeers}</span></div></td><td><div class="logos">${[...g.brands.values()].slice(0,6).map(b=>logo(b,28)).join("")}</div></td><td><div class="chips">${pr.map(x=>`<a class="chip${former.has(x.b.e.slug)?" ex":""}" href="${esc(L.page(x.b.e.slug))}">${esc(x.b.e.name)}</a>`).join("")||`<span class="mute-l">None live in the archive yet</span>`}</div></td></tr>`}).join("")}</tbody></table></div>`:`<p class="note">No clear gaps against ${esc(peers.label)}.</p>`}
+  ${gaps.length?`<div class="tw"><table class="t"><thead><tr><th>Category</th><th>Peers with one</th><th>Who they're with</th><th>Prospects</th></tr></thead><tbody>${gaps.map(g=>{const pr=prospects(g.c);return `<tr><td><b>${esc(g.c)}</b></td><td><div class="toolrow"><span class="gapbar"><i style="width:${Math.round(g.peers.size/nPeers*100)}%"></i></span><span class="d">${g.peers.size} of ${nPeers}</span></div></td><td><div class="logos">${[...g.brands.values()].slice(0,6).map(b=>logo(b,28)).join("")}</div></td><td><div class="chips">${pr.map(x=>`<a class="chip${former.has(x.b.e.slug)?" ex":""}" href="${esc(L.page(x.b.e.slug))}">${esc(x.b.e.name)}</a>`).join("")||`<span class="mute-l">None live in the database yet</span>`}</div></td></tr>`}).join("")}</tbody></table></div>`:`<p class="note">No clear gaps against ${esc(peers.label)}.</p>`}
 
   <div class="h3">Benchmark: ${esc(peers.label)}</div>
   <div class="tw"><table class="t"><thead><tr><th>Property</th><th>Live partners</th><th>New, last 12 mo</th><th>Naming, title or major</th><th>Categories</th><th>Due ${yr}-${yr+1}</th></tr></thead><tbody>${bench.map(x=>`<tr class="${x.r===p?"me":""}"><td><span class="dl">${logo(x.r.e,30)}<a href="#" data-pick="${esc(x.r.e.slug)}"><b>${esc(x.r.e.name)}</b></a></span></td><td class="d">${x.live}</td><td class="d">${x.new12}</td><td class="d">${x.major}</td><td class="d">${x.cats}</td><td class="d">${x.due}</td></tr>`).join("")}</tbody></table></div>
 
   <div class="h3">Coming up for renewal</div>
-  ${due.length?`<div class="tw"><table class="t"><thead><tr><th>Ends</th><th>Basis</th><th>Deal</th><th>Deal type</th><th>Announced</th></tr></thead><tbody>${due.map(({d,r})=>`<tr><td><span class="yr">${r.end}</span></td><td>${basisTag(r)}</td><td><span class="dl">${L.pair(d,{px:30})}${S.dealLink(d)}</span></td><td>${esc(d.tier||"")}</td><td class="d">${esc(S.fmt(d))}</td></tr>`).join("")}</tbody></table></div>`:`<p class="note-s">Nothing due in the next two years on what's been announced.</p>`}
+  ${due.length?`<div class="tw"><table class="t"><thead><tr><th>Ends</th><th>Basis</th><th>Partnership</th><th>Partnership type</th><th>Announced</th></tr></thead><tbody>${due.map(({d,r})=>`<tr><td><span class="yr">${r.end}</span></td><td>${basisTag(r)}</td><td><span class="dl">${L.pair(d,{px:30})}${S.dealLink(d)}</span></td><td>${esc(d.tier||"")}</td><td class="d">${esc(S.fmt(d))}</td></tr>`).join("")}</tbody></table></div>`:`<p class="note-s">Nothing due in the next two years on what's been announced.</p>`}
 
   <div class="h3">Live partners (${partners.length})</div>
-  <div class="tw"><table class="t"><thead><tr><th>Brand</th><th>Category</th><th>Their tier</th><th>Deal type</th><th>Since</th><th>Ends</th></tr></thead><tbody>${partners.sort((a,b)=>S.TIERS.indexOf(a.d.tier)-S.TIERS.indexOf(b.d.tier)||a.b.name.localeCompare(b.b.name)).map(x=>{const r=renewal(x.d);return `<tr><td><span class="dl">${logo(x.b,30)}<a href="${esc(L.page(x.b.slug))}"><b>${esc(x.b.name)}</b></a></span></td><td>${esc(catOf(x))}</td><td>${esc(x.d.ptier||"–")}</td><td>${esc(x.d.tier||"")}</td><td class="d">${esc(S.fmt(x.d))}</td><td class="d">${r?`${r.end} ${basisTag(r)}`:"–"}</td></tr>`}).join("")}</tbody></table></div>`;
+  <div class="tw"><table class="t"><thead><tr><th>Brand</th><th>Category</th><th>Their tier</th><th>Partnership type</th><th>Since</th><th>Ends</th></tr></thead><tbody>${partners.sort((a,b)=>S.TIERS.indexOf(a.d.tier)-S.TIERS.indexOf(b.d.tier)||a.b.name.localeCompare(b.b.name)).map(x=>{const r=renewal(x.d);return `<tr><td><span class="dl">${logo(x.b,30)}<a href="${esc(L.page(x.b.slug))}"><b>${esc(x.b.name)}</b></a></span></td><td>${esc(catOf(x))}</td><td>${esc(x.d.ptier||"–")}</td><td>${esc(x.d.tier||"")}</td><td class="d">${esc(S.fmt(x.d))}</td><td class="d">${r?`${r.end} ${basisTag(r)}`:"–"}</td></tr>`}).join("")}</tbody></table></div>`;
   const inp=$("pq");
   inp.onchange=()=>{const v=inp.value.trim().toLowerCase();const r=D.props.find(x=>x.e.name.toLowerCase()===v)||D.props.find(x=>(x.e.aliases||[]).some(a=>a.toLowerCase()===v))||D.props.find(x=>x.e.name.toLowerCase().includes(v));if(r){state.p=r;property();window.scrollTo(0,0)}};
   $("view").onclick=e=>{
     const a=e.target.closest("[data-pick]");if(a){e.preventDefault();state.p=D.orgs.get(a.dataset.pick);property();window.scrollTo(0,0);return}
-    if(e.target.id==="pcsv"){const x=state.pExport;csv([["Property","Brand","Category","Their tier","Deal type","Since","Ends","Basis"],...x.partners.map(b=>{const r=renewal(b.d);return [x.p.e.name,b.b.name,catOf(b),b.d.ptier||"",b.d.tier,S.fmt(b.d),r?r.end:"",r?r.basis:""]}),[],["Gap category","Prospects"],...x.gaps.map(g=>[g.c,x.prospects(g.c).map(y=>y.b.e.name).join("; ")])],`sss-pro-${x.p.e.slug}.csv`)}
+    if(e.target.id==="pcsv"){const x=state.pExport;csv([["Property","Brand","Category","Their tier","Partnership type","Since","Ends","Basis"],...x.partners.map(b=>{const r=renewal(b.d);return [x.p.e.name,b.b.name,catOf(b),b.d.ptier||"",b.d.tier,S.fmt(b.d),r?r.end:"",r?r.basis:""]}),[],["Gap category","Prospects"],...x.gaps.map(g=>[g.c,x.prospects(g.c).map(y=>y.b.e.name).join("; ")])],`sss-pro-${x.p.e.slug}.csv`)}
   };
 }
 
 /* ---------- Watchlist ---------- */
 function watchlist(){
   const list=[...watch.get()].map(s=>D.orgs.get(s)).filter(Boolean);
-  if(!list.length){$("view").innerHTML=`<p class="note">Nothing on your watchlist yet. Tap ☆ next to any brand in the finder, or on a property report, and it'll show up here with its latest deals and upcoming renewals. Your watchlist is saved in this browser.</p>`;return}
+  if(!list.length){$("view").innerHTML=`<p class="note">Nothing on your watchlist yet. Tap ☆ next to any brand in the finder, or on a property report, and it'll show up here with its latest partnerships and upcoming renewals. Your watchlist is saved in this browser.</p>`;return}
   const recentAll=list.flatMap(r=>r.deals.filter(x=>monthsAgo(x.d)<=1).map(x=>x.d));
   const uniq=[...new Map(recentAll.map(d=>[d.deal+(d.date||""),d])).values()];
   $("view").innerHTML=`${uniq.length?`<div class="h3" style="margin-top:0">New in the last month</div><div class="tw"><table class="t"><tbody>${uniq.map(d=>`<tr><td class="d">${esc(S.fmt(d))}</td><td><span class="dl">${L.pair(d,{px:30})}${S.dealLink(d)}</span></td><td>${esc(d.tier||"")}</td><td class="d">${esc(d.status||"")}</td></tr>`).join("")}</tbody></table></div>`:""}
   <div class="h3">Watching ${list.length}</div>
   ${list.map(r=>{const latest=r.deals.slice(0,4);const due=r.deals.map(x=>({d:x.d,q:renewal(x.d)})).filter(x=>x.q&&x.q.end>=yr&&x.q.end<=yr+2).sort((a,b)=>a.q.end-b.q.end).slice(0,4);
-    return `<div class="wl"><div><h4>${L.mark(r.e,{px:44})}<a href="${r.kind==="property"?"#":esc(L.page(r.e.slug))}" ${r.kind==="property"?`data-pick="${esc(r.e.slug)}"`:""}>${esc(r.e.name)}</a>${star(r.e.slug)}</h4><div class="sub lbl mute-l" style="margin-top:10px">${r.kind==="property"?esc(r.ptype):esc(r.cat)} · ${r.n} deals</div></div>
+    return `<div class="wl"><div><h4>${L.mark(r.e,{px:44})}<a href="${r.kind==="property"?"#":esc(L.page(r.e.slug))}" ${r.kind==="property"?`data-pick="${esc(r.e.slug)}"`:""}>${esc(r.e.name)}</a>${star(r.e.slug)}</h4><div class="sub lbl mute-l" style="margin-top:10px">${r.kind==="property"?esc(r.ptype):esc(r.cat)} · ${r.n} partnerships</div></div>
     <div><div class="lbl mute-l">Latest</div><ul>${latest.map(x=>`<li>${S.dealLink(x.d)}<span>${esc(S.fmt(x.d))}</span></li>`).join("")}</ul>
     ${due.length?`<div class="lbl mute-l" style="margin-top:16px">Up for renewal</div><ul>${due.map(x=>`<li>${S.dealLink(x.d)}<span>${x.q.end} · ${x.q.basis}</span></li>`).join("")}</ul>`:""}</div></div>`}).join("")}`;
   $("view").onclick=e=>{const a=e.target.closest("[data-pick]");if(a){e.preventDefault();state.p=D.orgs.get(a.dataset.pick);go("property")}};
@@ -245,7 +245,7 @@ function dashboard(){
   const W=720,H=220,pb=26,pt=18,bw=W/12;
   const bars=months.map((m,i)=>{const x=i*bw+bw*.18,w=bw*.64,ha=(H-pb-pt)*m.a/mx,hg=(H-pb-pt)*m.g/mx,base=H-pb,cur=i===11;
     return `<g><title>${m.lab}: ${m.a} ANZ, ${m.g} global</title><rect x="${x}" y="${base-ha}" width="${w}" height="${ha}" fill="${cur?"var(--volt)":"var(--ink)"}"${cur?' stroke="var(--ink)" stroke-width="1"':""}/><rect x="${x}" y="${base-ha-hg}" width="${w}" height="${hg}" fill="var(--grey-500)"/>${m.a+m.g?`<text x="${x+w/2}" y="${base-ha-hg-6}" text-anchor="middle" class="bv">${m.a+m.g}</text>`:""}<text x="${x+w/2}" y="${H-6}" text-anchor="middle" class="bl">${m.lab}</text></g>`}).join("");
-  const monthChart=`<svg viewBox="0 0 ${W} ${H}" class="mchart" role="img" aria-label="Deals by month, last 12 months"><line x1="0" x2="${W}" y1="${H-pb}" y2="${H-pb}" stroke="var(--ink)" stroke-width="2"/>${bars}</svg>`;
+  const monthChart=`<svg viewBox="0 0 ${W} ${H}" class="mchart" role="img" aria-label="Partnerships by month, last 12 months"><line x1="0" x2="${W}" y1="${H-pb}" y2="${H-pb}" stroke="var(--ink)" stroke-width="2"/>${bars}</svg>`;
 
   // Horizontal bar lists for the last 12 months.
   const last12=D.deals.filter(d=>inLast(d,12));
@@ -261,8 +261,8 @@ function dashboard(){
   $("view").innerHTML=`<div class="dash">
   <div class="dtop">
     <div class="fund">
-      <div class="fh"><span>${yr} deals logged</span><span class="vt">${Math.round(share*100)}% ANZ</span></div>
-      <div class="gw">${gauge}<div class="gn"><b>${ytd.length.toLocaleString("en-AU")}</b><span>${D.deals.length.toLocaleString("en-AU")} in the archive</span></div></div>
+      <div class="fh"><span>${yr} partnerships logged</span><span class="vt">${Math.round(share*100)}% ANZ</span></div>
+      <div class="gw">${gauge}<div class="gn"><b>${ytd.length.toLocaleString("en-AU")}</b><span>${D.deals.length.toLocaleString("en-AU")} in the database</span></div></div>
       <div class="ff">${anzY.toLocaleString("en-AU")} ANZ &nbsp;|&nbsp; ${glY.toLocaleString("en-AU")} global</div>
     </div>
     <div class="tiles">
@@ -273,7 +273,7 @@ function dashboard(){
     </div>
   </div>
   <div class="card">
-    <div class="ch"><span class="h3 m0">Deals by month</span><span class="key"><i class="k1"></i>ANZ <i class="k2"></i>Global</span></div>
+    <div class="ch"><span class="h3 m0">Partnerships by month</span><span class="key"><i class="k1"></i>ANZ <i class="k2"></i>Global</span></div>
     ${monthChart}
   </div>
   <div class="two">
@@ -282,11 +282,11 @@ function dashboard(){
   </div>
   <div class="two">
     <div class="card"><div class="ch"><span class="h3 m0">Coming up</span><a href="#" class="more" data-go="renewals">Radar</a></div>
-      <ul class="cl">${up.map(({d,r})=>`<li><span class="yr">${r.end}</span><span class="dl">${L.pair(d,{px:28})}${S.dealLink(d)}</span>${basisTag(r)}</li>`).join("")||"<li>None in the archive.</li>"}</ul></div>
-    <div class="card"><div class="ch"><span class="h3 m0">Latest deals</span><a href="deals" class="more">Archive</a></div>
+      <ul class="cl">${up.map(({d,r})=>`<li><span class="yr">${r.end}</span><span class="dl">${L.pair(d,{px:28})}${S.dealLink(d)}</span>${basisTag(r)}</li>`).join("")||"<li>None in the database.</li>"}</ul></div>
+    <div class="card"><div class="ch"><span class="h3 m0">Latest partnerships</span><a href="deals" class="more">Database</a></div>
       <ul class="cl">${latest.map(d=>`<li><span class="dd">${esc(S.fmt(d).replace(/ \d{4}$/,""))}</span><span class="dl">${L.pair(d,{px:28})}${S.dealLink(d)}</span><span class="chip">${esc(d.sport||"")}</span></li>`).join("")}</ul></div>
   </div>
-  <div class="card"><div class="ch"><span class="h3 m0">Most active brands</span><span class="key">Deals, last 12 months</span></div>
+  <div class="card"><div class="ch"><span class="h3 m0">Most active brands</span><span class="key">Partnerships, last 12 months</span></div>
     <div class="busy">${busy.map(x=>`<div class="bz">${logo(x.b.e,48)}<a href="${esc(L.page(x.b.e.slug))}">${esc(x.b.e.name)}</a><b>${x.n}</b></div>`).join("")}</div></div>
   </div>`;
   const F=o=>Object.assign({q:"",cat:"",backs:"",notIn:"",region:"All",win:"12",sort:"deals"},o);
@@ -314,7 +314,7 @@ const pct=v=>`${(v*100).toFixed(1).replace(/\.0$/,"")}%`;
 const bandCls=k=>k==="Call now"?"c":k==="Strong"?"t":"";
 function matches(){
   $("view").innerHTML=`<p class="note">Loading matches…</p>`;
-  mxLoad().then(()=>drawMatches()).catch(err=>{console.error(err);$("view").innerHTML=`<p class="note">Couldn't load matches. They're rebuilt each time the archive updates; refresh to try again.</p>`});
+  mxLoad().then(()=>drawMatches()).catch(err=>{console.error(err);$("view").innerHTML=`<p class="note">Couldn't load matches. They're rebuilt each time the database updates; refresh to try again.</p>`});
 }
 function slotMap(rec){
   const sl=rec.sl||[];if(!sl.length)return "";
@@ -327,7 +327,7 @@ function intl(m,rec){
   const list=rec.e||[];
   if(!list.length)return m.side==="p"&&rec.r!=="Local"?`<div class="h3">International brands</div><p class="note-s">No overseas brands stand out for this property yet.</p>`:"";
   const head=m.side==="p"?"International brands that could come in here":"Ways into Australia and New Zealand";
-  const lead=m.side==="p"?"Brands that sponsor mostly overseas, with no more than one ANZ deal, active in the last 18 months. They can't show up in the main list (they have no local deals to look alike), so they're scored on the gap here (30), fit with this sport and kind of property overseas (30), how much they sponsor (20), the level they buy at (10) and whether they're entering ANZ now (10). Not backtested yet.":"This brand sponsors mostly overseas. These are the ANZ properties where it fits best as a way in: a gap in its sub-category, plus the sport and kind of property it already backs overseas.";
+  const lead=m.side==="p"?"Brands that sponsor mostly overseas, with no more than one ANZ partnership, active in the last 18 months. They can't show up in the main list (they have no local partnerships to look alike), so they're scored on the gap here (30), fit with this sport and kind of property overseas (30), how much they sponsor (20), the level they buy at (10) and whether they're entering ANZ now (10). Not backtested yet.":"This brand sponsors mostly overseas. These are the ANZ properties where it fits best as a way in: a gap in its sub-category, plus the sport and kind of property it already backs overseas.";
   return `<div class="h3">${head}</div><p class="note-s">${lead}</p><div class="tw"><table class="t mx"><thead><tr><th>#</th><th>${m.side==="p"?"Brand":"Property"}</th><th>Score</th><th>Why</th></tr></thead><tbody>${list.map((r,i)=>{const slug=m.side==="p"?r.b:r.p,o=D.orgs.get(slug);const sub=m.side==="p"?`${esc(r.c||"")}${r.u?` · ${esc(r.u)}`:""}`:`${esc(r.s)} · ${esc(r.r)}`;
     return `<tr><td class="d">${i+1}</td><td><span class="dl">${o?logo(o.e,34):""}<span><a href="${esc(L.page(slug))}"><b>${esc(r.n)}</b></a><br><span class="mute-l">${sub}</span></span></span></td><td><div class="mx-sc"><b>${r.x}</b></div><span class="gapbar"><i style="width:${r.x}%"></i></span><div class="mute-l mx-f">${esc(r.f)} confidence</div></td><td><ul class="mx-why">${(r.w||[]).map(w=>`<li>${esc(w)}</li>`).join("")}</ul>${(r.g||[]).length?`<div class="chips">${r.g.map(g=>`<span class="chip">${esc(g)}</span>`).join("")}</div>`:""}</td></tr>`}).join("")}</tbody></table></div>`;
 }
@@ -341,9 +341,9 @@ function drawMatches(){
   const rec=pool[m.slug], bt=MX.backtest, org=D.orgs.get(m.slug);
   const rows=rec.m||[];
   state.mExport={rec,rows,side:m.side};
-  $("view").innerHTML=`<p class="pro-intro">${m.side==="p"?"The brands this property should be talking to":"The properties this brand should be talking to"}, ranked by Match Score: how closely the brand's existing deals look like this property (sport, league, region, reach, partners in common), plus whether the property has a gap in that sub-category its peers have filled.</p>
+  $("view").innerHTML=`<p class="pro-intro">${m.side==="p"?"The brands this property should be talking to":"The properties this brand should be talking to"}, ranked by Match Score: how closely the brand's existing partnerships look like this property (sport, league, region, reach, partners in common), plus whether the property has a gap in that sub-category its peers have filled.</p>
   <p class="note-s">${MX.verified} of ${Object.keys(MX.props).length} properties are verified against their official partners page. Matches for unverified properties may suggest a brand that's already a partner.</p>
-  <div class="mx-acc"><b>${pct(bt.top20)}</b><span>of new deals signed ${esc(bt.from)} to ${esc(bt.to)} were in that property's top 20 when we scored the archive as it stood in ${esc(bt.from)}. ${pct(bt.top50)} were in the top 50. The best possible today is ${pct(bt.ceiling)}, because the rest came from brands with no earlier deal in the archive. Treat this as a shortlist with evidence, not a forecast.</span></div>
+  <div class="mx-acc"><b>${pct(bt.top20)}</b><span>of new partnerships signed ${esc(bt.from)} to ${esc(bt.to)} were in that property's top 20 when we scored the database as it stood in ${esc(bt.from)}. ${pct(bt.top50)} were in the top 50. The best possible today is ${pct(bt.ceiling)}, because the rest came from brands with no earlier partnership in the database. Treat this as a shortlist with evidence, not a forecast.</span></div>
   <div class="ctl"><div class="pills">${pills("mside",[["p","Property → brands"],["b","Brand → properties"]],m.side)}</div>
   <input class="srch" id="mq" list="mxNames" placeholder="${m.side==="p"?"Type a property, e.g. Carlton, Australian Open":"Type a brand, e.g. Coca-Cola, TikTok"}" autocomplete="off"><datalist id="mxNames">${Object.entries(pool).sort((a,b)=>a[1].n.localeCompare(b[1].n)).map(([,r])=>`<option value="${esc(r.n)}">`).join("")}</datalist>
   <button class="ghost" id="mcsv">Export CSV</button></div>
@@ -356,14 +356,14 @@ function drawMatches(){
     <td><span class="dl">${o?logo(o.e,34):""}<span><a href="${esc(L.page(slug))}"><b>${esc(r.n)}</b></a><br><span class="mute-l">${sub}</span></span></span></td>
     <td><div class="mx-sc"><b>${r.x}</b><span class="basis ${bandCls(r.k)}">${esc(r.k)}</span></div><span class="gapbar"><i style="width:${r.x}%"></i></span><div class="mute-l mx-f">${esc(r.f)} confidence</div></td>
     <td><ul class="mx-why">${(r.w||[]).map(w=>`<li>${esc(w)}</li>`).join("")}</ul>${(r.g||[]).length?`<div class="chips">${r.g.map(g=>`<span class="chip${g==="Former partner"?" ex":""}">${esc(g)}</span>`).join("")}</div>`:""}${m.side==="b"?`<div class="mute-l mx-f">${r.v?"Verified":"Not verified yet"}</div>`:""}${fbBtns(m.side==="p"?m.slug:r.p,m.side==="p"?r.b:m.slug)}</td>
-    <td class="mx-sig"><span title="Lookalike: out of 74">Fit <b>${pts[1]}</b></span><span title="Sub-category gap: out of 13">Gap <b>${pts[4]}</b></span><span title="How much this kind of brand backs this sport worldwide: out of 9">Sport DNA <b>${pts[5]||0}</b></span><span title="Audience, values and positioning overlap: out of 4">Audience <b>${pts[6]||0}</b></span><span class="mute-l" title="Shown, not scored yet: out of 25">Timing ${pts[0]}</span><span class="mute-l" title="Shown, not scored yet: out of 15">Capacity ${pts[2]}</span><span class="mute-l" title="Shown, not scored yet: out of 15">Appetite ${pts[3]}</span></td></tr>`}).join("")}</tbody></table></div>`:`<p class="note">No matches above 40 yet. ${m.side==="p"?"This property needs more deals in the archive.":"This brand needs more deals in the archive."}</p>`}
+    <td class="mx-sig"><span title="Lookalike: out of 74">Fit <b>${pts[1]}</b></span><span title="Sub-category gap: out of 13">Gap <b>${pts[4]}</b></span><span title="How much this kind of brand backs this sport worldwide: out of 9">Sport DNA <b>${pts[5]||0}</b></span><span title="Audience, values and positioning overlap: out of 4">Audience <b>${pts[6]||0}</b></span><span class="mute-l" title="Shown, not scored yet: out of 25">Timing ${pts[0]}</span><span class="mute-l" title="Shown, not scored yet: out of 15">Capacity ${pts[2]}</span><span class="mute-l" title="Shown, not scored yet: out of 15">Appetite ${pts[3]}</span></td></tr>`}).join("")}</tbody></table></div>`:`<p class="note">No matches above 40 yet. ${m.side==="p"?"This property needs more partnerships in the database.":"This brand needs more partnerships in the database."}</p>`}
   ${m.side==="p"&&rec.pf?`<p class="note-s"><b>Property profile:</b> ${esc({premium:"Premium",mid:"Mainstream",value:"Value"}[rec.pf.pos]||"")}. Audience: ${esc(rec.pf.aud.join(", "))}. Stands for: ${esc(rec.pf.align.join(", "))}.</p>`:""}
-  <p class="note-s">The score is Fit (out of 74: brands already backing properties like this one), Gap (13: an open slot its peers have filled), Sport DNA (9: how much this kind of brand backs this sport worldwide) and Audience (4: who the brand sells to and what it stands for, against this property's profile). Timing, Capacity and Appetite are shown but don't count yet: in testing they made the ranking worse, so they come in once the archive is deep enough to prove them. Hidden: live partners, and brands that clash with a live partner on a firm deal in the same sub-category. ${m.side==="p"?(rec.t==="club"?"Clubs are compared with their league and with clubs in other codes in the same city.":["body","event","national"].includes(rec.t)?"Leagues, governing bodies, events and national teams are compared with the major properties of the same kind across every code.":""):""}</p>
+  <p class="note-s">The score is Fit (out of 74: brands already backing properties like this one), Gap (13: an open slot its peers have filled), Sport DNA (9: how much this kind of brand backs this sport worldwide) and Audience (4: who the brand sells to and what it stands for, against this property's profile). Timing, Capacity and Appetite are shown but don't count yet: in testing they made the ranking worse, so they come in once the database is deep enough to prove them. Hidden: live partners, and brands that clash with a live partner on a firm partnership in the same sub-category. ${m.side==="p"?(rec.t==="club"?"Clubs are compared with their league and with clubs in other codes in the same city.":["body","event","national"].includes(rec.t)?"Leagues, governing bodies, events and national teams are compared with the major properties of the same kind across every code.":""):""}</p>
   ${m.side==="p"?slotMap(rec):""}
   ${intl(m,rec)}
   <div class="h3">Your feedback</div><p class="note-s">Mark matches as Not a fit, Pitched or Won. It's saved in this browser. Export it and add it to the repo as pro/feedback.json (or send it to Claude): "Not a fit" pairs are then hidden for good, and Pitched and Won show on the match and count toward the hit rate. ${MX.feedback?`So far: ${MX.feedback.pitched} pitched, ${MX.feedback.won} won, ${MX.feedback.nofit} not a fit.`:""}</p>
   <div class="toolrow"><button class="ghost" id="fbexp">Export feedback (${Object.keys(fbk.all()).length})</button></div>
-  <p class="note-s">Rebuilt ${esc(MX.generated)} from the full archive.</p>`;
+  <p class="note-s">Rebuilt ${esc(MX.generated)} from the full database.</p>`;
   const inp=$("mq");
   inp.onchange=()=>{const v=inp.value.trim().toLowerCase();const hit=Object.entries(pool).find(([,r])=>r.n.toLowerCase()===v)||Object.entries(pool).find(([,r])=>r.n.toLowerCase().includes(v));if(hit){m.slug=hit[0];drawMatches();window.scrollTo(0,0)}};
   $("view").onclick=e=>{
@@ -396,5 +396,5 @@ S.load().then(data=>{
   by.forEach((v,k)=>{if(v.length>=8)TYP[k]=med(v)});
   $("propNames").innerHTML=D.props.slice().sort((a,b)=>b.n-a.n).slice(0,2000).map(r=>`<option value="${esc(r.e.name)}">`).join("");
   go((location.hash||"#dash").slice(1));
-}).catch(err=>{console.error(err);$("view").innerHTML=`<p class="note">Couldn't load the archive. Refresh to try again.</p>`});
+}).catch(err=>{console.error(err);$("view").innerHTML=`<p class="note">Couldn't load the database. Refresh to try again.</p>`});
 })();

@@ -15,7 +15,7 @@ computer-use tool. Give any subagent this same rule.
 **Voice.** Plain, punchy, Australian spelling and vernacular, confident. No em dashes (use hyphens or restructure),
 no "it's not X, it's Y" constructions, no corporate or AI-sounding phrasing, no closing question. Brand first in every
 pairing ("Turkish Airlines × Liverpool FC"; plain "x" in Instagram and LinkedIn graphic text). Never promise a posting
-cadence ("daily", "every weekday").
+cadence ("daily", "every weekday"). Say "partnership(s)", never "deal(s)", and "database", never "archive", in everything people read (site, posts, captions, graphics, articles, snippets, summaries). A quote copied word for word from a source stays as it is. File names, JSON keys (deals.json, "deal") and commit messages don't change.
 
 **Accuracy beats everything.** Official sources first (league, club and brand newsrooms, annual reports, filings),
 then reputable outlets (SportsPro, SportBusiness, Sportcal, The Athletic, AFR, The Australian, SMH/The Age, B&T,
@@ -58,7 +58,7 @@ say who a brand replaced unless an official release says so. Write in your own w
 6. **LinkedIn (post copy + 2 graphics).**
    - Write instagram/linkedin/<date>.json:
      `{"date":"YYYY-MM-DD","headline_lines":["3-5 short lines","of the headline","in caps-friendly words"],"highlight":"one line from headline_lines to colour volt","deal":"line 1 under the headline (e.g. Brand x Property, or the subject)","descriptor":"line 2 (e.g. Feature, Data drop, Breakdown)","label":"slide 2 heading","others":[{"deal":"2-5 word bold line","sub":"one short line"}, ... 3 to 5 rows],"image":"the features.json image"}`
-     Slide 2 heading by day: Monday "The key points", Wednesday "The numbers", Friday "The deal". The "image" must equal
+     Slide 2 heading by day: Monday "The key points", Wednesday "The numbers", Friday "The partnership". The "image" must equal
      the features.json "image".
    - Post copy, ready to paste: a hook line, 3-4 short paragraphs with the best of the piece, one line on why it
      matters for brands and rights holders, then "Full story in the comments." Under 1,300 characters. No hashtags
@@ -105,7 +105,7 @@ coverage.json, partners.json and the properties pages. Examples: "Every NRL club
 deals in 2026". Compute every number with Python on the JSON (show the query on the fact sheet), and only use data
 sets that are complete enough to be fair: for a "every club" piece, every club in scope must be in coverage.json with a
 recent lastChecked, otherwise pick another angle or narrow it. Spot-check the 3 most important data points against the
-official partners page or release. Say what the data covers ("from the SSS archive, X deals logged since ...").
+official partners page or release. Say what the data covers ("from the SSS database, X partnerships logged since ...").
 350-550 words, 4-6 paragraphs. The Instagram slides and LinkedIn slide 2 carry the numbers.
 
 **Friday - Breakdown** (label "Breakdown", topic "Breakdown"). Pick the best deal logged this week (Tuesday and

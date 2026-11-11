@@ -18,7 +18,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent.parent
 MEL = ZoneInfo("Australia/Melbourne")
 VOLT = "#D2FF3C"
-SITE_LABEL = "Full archive - link in bio"
+SITE_LABEL = "Full database - link in bio"
 
 FEED_W, FEED_H = 1080, 1350
 STORY_W, STORY_H = 1080, 1920
@@ -306,8 +306,8 @@ def others_slide(others, n, total, edge=None):
             sport, rest = "", sub
         rows.append('<div class="d-row">' + (f'<span class="n s">{esc(sport)}</span>' if sport else "")
                     + f'<b>{esc(o["deal"])}</b>' + (f'<span class="x">{esc(rest)}</span>' if rest else "") + "</div>")
-    return f"""<style>{DARK_CSS}</style><div class="frame dk{' lt' if LIGHT else ''}">{dk_top("Today's other deals", n, total)}
-<div class="d-mid"><h2 class="d-h">Recent deals.</h2><div class="d-rule"></div><div class="d-rows" data-fit="760" data-min="8" style="font-size:21px">{"".join(rows)}</div></div>
+    return f"""<style>{DARK_CSS}</style><div class="frame dk{' lt' if LIGHT else ''}">{dk_top("Today's other partnerships", n, total)}
+<div class="d-mid"><h2 class="d-h">Recent partnerships.</h2><div class="d-rule"></div><div class="d-rows" data-fit="760" data-min="8" style="font-size:21px">{"".join(rows)}</div></div>
 {dk_foot(SITE_LABEL, n, total)}</div>"""
 
 
@@ -322,11 +322,11 @@ def feed_rows_slide(label, title, rows, n, total, footer_right=""):
 def feed_close(n, total):
     return f"""<style>{DARK_CSS}</style><div class="frame dk{' lt' if LIGHT else ''}">{dk_top("Follow", n, total)}
 <div class="d-mid"><h2 class="d-big" data-fit="700" data-min="110" style="width:100%">All<br>things<br><span class="v">sport</span><br>business.</h2>
-<div class="d-sup">Deals, news and analysis. Global &amp; ANZ.</div><div class="d-pill">Follow for more</div></div>
+<div class="d-sup">Partnerships, news and analysis. Global &amp; ANZ.</div><div class="d-pill">Follow for more</div></div>
 {dk_foot("")}</div>"""
 
 
-def week_item(item, idx, n, total, label="The week in deals"):
+def week_item(item, idx, n, total, label="The week in partnerships"):
     """Week and evergreen slides: the cover layout, with the deal's photo when it has one."""
     src = photo_src(deal_image(item), FEED_W)
     top = (f'<div class="cv-ph" style="background-image:url(\'{src}\')"></div><div class="cv-fade"></div>') if src else ""
@@ -413,16 +413,16 @@ def build_feed(feed):
         total = len(items) + 2
         if feed.get("image"):
             # Photo-led week cover: today's lead photo, with its pairing named in the meta line.
-            slides.append(feed_cover({"tag": "Week in deals", "region": feed.get("region", "Global & ANZ"),
-                                      "headline": feed.get("headline", "The week in deals."),
+            slides.append(feed_cover({"tag": "Week in partnerships", "region": feed.get("region", "Global & ANZ"),
+                                      "headline": feed.get("headline", "The week in partnerships."),
                                       "highlight": feed.get("highlight", "week"),
                                       "image": feed["image"], "deal": feed.get("deal", ""),
-                                      "descriptor": feed.get("descriptor", "The biggest deals this week")}))
+                                      "descriptor": feed.get("descriptor", "The biggest partnerships this week")}))
         else:
-            slides.append(feed_cover({"tag": "Week in deals", "region": feed.get("region", "Global & ANZ"),
-                                      "headline": feed.get("headline", "The week in deals."),
+            slides.append(feed_cover({"tag": "Week in partnerships", "region": feed.get("region", "Global & ANZ"),
+                                      "headline": feed.get("headline", "The week in partnerships."),
                                       "highlight": feed.get("highlight", "week"),
-                                      "deal": feed.get("descriptor", "The biggest deals this week")}))
+                                      "deal": feed.get("descriptor", "The biggest partnerships this week")}))
         for i, it in enumerate(items, 1):
             slides.append(week_item(it, i, i + 1, total))
         slides.append(feed_close(total, total))
@@ -455,7 +455,7 @@ def build_feed(feed):
             slides.append(feed_cover(feed["cover"]))
         elif p == "deal":
             d = feed["deal"]
-            slides.append(rows_slide("The deal", d.get("title"), d["rows"][:3], n, total, SITE_LABEL, edge))
+            slides.append(rows_slide("The partnership", d.get("title"), d["rows"][:3], n, total, SITE_LABEL, edge))
         elif p == "why":
             w = feed["why"]
             rows = [{"main": x} if isinstance(x, str) else x for x in w.get("points", [])][:3]
@@ -579,7 +579,7 @@ def story(item):
         secondary = primary if luminance(primary) > 0.03 else secondary
     body = f"""<div class="frame{' photo' if ph else ''}" style="padding:220px 88px 260px">{ph}
 <div class="bar" style="position:absolute;top:0;bottom:0;left:0;width:40px;background:{secondary};z-index:2"></div>
-<div class="tag">{esc(item.get('tag') or 'Deal of the day')}</div>
+<div class="tag">{esc(item.get('tag') or 'Partnership of the day')}</div>
 <div style="display:flex;flex-direction:column;gap:56px">
 <h1 class="disp" data-fit="520" style="font-size:190px">{esc(item['deal'])}</h1>
 <div class="rows" data-fit="560" data-min="9">{rows}</div>

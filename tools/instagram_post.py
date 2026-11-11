@@ -219,23 +219,23 @@ def auto_queue(t, p):
         week = [d for d in deals if monday <= str(d.get("added", "")) <= date]
         week.sort(key=lambda d: (not d.get("lead"), str(d.get("added", ""))), reverse=False)
         items = [{"deal": x(d), "sub": _short(d.get("summary"), 80), "sport": d.get("sport", "")} for d in week[:5]]
-        feed = {"kind": "week", "headline": "The week in deals.", "highlight": "week",
-                "descriptor": f"The biggest deals, w/e {t.day} {t.strftime('%B')}", "region": "Global & ANZ",
+        feed = {"kind": "week", "headline": "The week in partnerships.", "highlight": "week",
+                "descriptor": f"The biggest partnerships, w/e {t.day} {t.strftime('%B')}", "region": "Global & ANZ",
                 "items": items, "image": lead.get("image"), "deal": x(lead)}
-        caption = ("The week in deals.\n\n" + "\n".join(f"- {i['deal']}" for i in items)
-                   + "\n\nFull archive: link in bio\n\n" + tags)
+        caption = ("The week in partnerships.\n\n" + "\n".join(f"- {i['deal']}" for i in items)
+                   + "\n\nFull database: link in bio\n\n" + tags)
     else:
-        head = lead.get("headline") or "Deal of the day."
+        head = lead.get("headline") or "Partnership of the day."
         words = [w.strip(".,!?'") for w in head.split()]
         rows = [{"main": lead.get("type", "Partnership"), "sub": _short(lead.get("summary"), 70)}]
         if lead.get("term"):
-            rows.append({"main": f"{lead['term']}-year deal", "sub": f"Runs to {lead['ends']}" if lead.get("ends") and not lead.get("endsEst") else "Length confirmed"})
+            rows.append({"main": f"{lead['term']}-year partnership", "sub": f"Runs to {lead['ends']}" if lead.get("ends") and not lead.get("endsEst") else "Length confirmed"})
         elif lead.get("ends") and not lead.get("endsEst"):
             rows.append({"main": f"Through {lead['ends']}", "sub": "Confirmed end date"})
-        rows.append({"main": lead.get("sport", ""), "sub": "ANZ deal" if lead.get("region") == "ANZ" else "Global deal"})
+        rows.append({"main": lead.get("sport", ""), "sub": "ANZ partnership" if lead.get("region") == "ANZ" else "Global partnership"})
         others = [{"deal": x(d), "sub": f"{d.get('sport', '')} - {str(d.get('type', '')).lower()}"} for d in today if d is not lead][:5]
         feed = {"kind": "daily",
-                "cover": {"tag": "Deal of the day", "region": lead.get("region", ""), "headline": head,
+                "cover": {"tag": "Partnership of the day", "region": lead.get("region", ""), "headline": head,
                           "highlight": max(words, key=len) if words else "", "deal": x(lead), "descriptor": lead.get("type", "")},
                 "deal": {"title": x(lead), "rows": rows[:3]}}
         if others:
@@ -243,7 +243,7 @@ def auto_queue(t, p):
         art = lead.get("article") or {}
         caption = (head + "\n\n" + (art.get("standfirst") or lead.get("summary", "")) + "\n\n"
                    + (("Also on the board: " + ", ".join(o["deal"] for o in others) + ".\n\n") if others else "")
-                   + "Full archive: link in bio\n\n" + tags)
+                   + "Full database: link in bio\n\n" + tags)
     q = {"date": date, "hold": False, "auto": True, "feed": feed, "caption": caption[:2000]}
     save(p["queue"], q)
     try:

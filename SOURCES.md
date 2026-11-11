@@ -165,14 +165,14 @@ Trade press gets predecessors wrong (B&T said Hahn replaced Coopers at the AO; C
 A "replaces X" or "takes over from X" line needs the rights holder's or brand's own release, or it stays out.
 
 ### 3. LinkedIn deliverable format
-Send Angus the post, then a "Today's deals" block with one short snippet for every deal on the graphics
+Send Angus the post, then a "This week's partnerships" block with one short snippet for every partnership on the graphics
 (lead included), in the style of Notice Sport's weekly round-up:
 - One sentence each, starting with the property or brand: "[Property] named [Brand] as ..." or
   "[Brand] signed on as ...", then " - " and one line of the most interesting verified detail.
 - Put @ in front of every brand and property name so Angus can tag them as he pastes
   (e.g. "@Tennis Australia named @Lion's Hahn the Official Beer of ...").
 - Verified facts only, same voice rules as the post. No figures or lengths that failed the accuracy gate.
-- End with: "Every deal, filed: sportsportsport.com.au"
+- End with: "Every partnership, filed: sportsportsport.com.au"
 - Angus tags the pages himself, so don't look up or list LinkedIn page URLs.
 
 ### 4. No Instagram stories or Reels
@@ -220,3 +220,6 @@ With deals down to two runs a week, each run is thorough. The usage-light limits
 - Accuracy gate: the verification subagent checks the lead AND every round-up deal in the post (not just the lead).
   Anything that fails is dropped from the post. Everything else logged to deals.json still needs its source page opened
   in the run, both parties and deal type matching, and the announcement date confirmed.
+
+### 8. Partnerships, not deals (from 11 Nov 2026)
+Say "partnership(s)", never "deal(s)", and "database", never "archive", in everything people read (site, posts, captions, graphics, articles, snippets, summaries). A quote copied word for word from a source stays as it is. File names, JSON keys (deals.json, "deal") and commit messages don't change.
