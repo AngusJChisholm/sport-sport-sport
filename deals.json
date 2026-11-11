@@ -5,6 +5,158 @@
  },
  "deals": [
   {
+   "date": "2026-11-11",
+   "added": "2026-11-12",
+   "deal": "ARN × Australian Open",
+   "sport": "Tennis",
+   "type": "Audio partner",
+   "region": "ANZ",
+   "lead": true,
+   "headline": "ARN books five summers.",
+   "summary": "ARN signs a five-year partnership with Tennis Australia from AO27 as the Australian Open's audio partner and broadcaster, with live shows from Melbourne Park, a dedicated AO DAB+ channel in Sydney and Melbourne, iHeart streaming and an Are Media extension into ELLE and Gourmet Traveller.",
+   "url": "https://www.bandt.com.au/arn-australian-open-serve-up-multi-year-partnership/",
+   "term": 5,
+   "status": "Extension",
+   "image": "https://images.unsplash.com/photo-1730743675269-0aefbcf2cedb",
+   "imageCredit": "Unsplash",
+   "article": {
+    "standfirst": "ARN has locked in the Australian Open for the next five years.",
+    "body": [
+     "ARN and Tennis Australia have signed a five-year partnership that starts with AO27, announced at ARN's Upfront27 event this week. ARN's metro talent will broadcast live from Melbourne Park across the tournament, and the package goes well past the shows themselves: a dedicated Australian Open DAB+ channel in Sydney and Melbourne, live streaming on iHeart, podcasts, YouTube and social content, regional network coverage, and an Are Media extension that brings ELLE and Gourmet Traveller into the mix for advertisers. Neither side has put a number on it.",
+     "This isn't ARN's first summer at Melbourne Park. It was the AO's official audio partner in 2025, and this new term pushes the relationship out a long way further. ARN's chief content officer, Kerri Elstub, didn't undersell it: \"This is a huge commitment and a major step up from where we've been.\"",
+     "The interesting bit is the shape. Audio partners used to mean a few live crosses and some branded promos. This reads more like ARN treating the AO as a three-week content tentpole: on-air, on a channel of its own, on streaming and in magazines, all pointed at one event every January. For a radio network trying to sell advertisers a summer story, owning that much of the biggest event on the calendar is the pitch.",
+     "For Tennis Australia it's another long-term partner, and one that reaches fans in the car, at work and on the train, not just in front of a screen. Five years also gives both sides time to build the AO channel into something listeners actually seek out rather than a one-summer experiment.",
+     "What to watch: what actually runs on the AO DAB+ channel in January, how ARN sells the Are Media add-on to brands, and whether other big Australian events start packaging audio rights the same way."
+    ],
+    "close": "The AO's summer soundtrack is sorted for the next five Januarys."
+   },
+   "slug": "2026-11-12-arn-australian-open"
+  },
+  {
+   "date": "2026-11-09",
+   "added": "2026-11-12",
+   "deal": "YoPRO × Australian Open",
+   "sport": "Tennis",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Multi-year renewal keeps YoPRO as an Official Partner of the Australian Open, adding a YoPRO hub at the Western Courts at AO27, an official supporting partner role at the 1 Point Slam and selected state championship and grassroots events, with Carlos Alcaraz staying on as global ambassador.",
+   "url": "https://www.tennis.com.au/fan-zone/media-releases/2026/11/09/yopro-and-the-australian-open-extend-partnership-to-champion-performance-and-progress",
+   "tier": "Official partner",
+   "status": "Renewal",
+   "tierLock": true
+  },
+  {
+   "date": "2026-11-11",
+   "added": "2026-11-12",
+   "deal": "City of Parramatta × Western Sydney Wanderers",
+   "sport": "Football",
+   "type": "Partnership",
+   "region": "ANZ",
+   "summary": "Three-year partnership makes City of Parramatta a presenting partner at one key Wanderers event, its third local club partnership after the Parramatta Eels and the GIANTS, and backs an Emerging Female Leaders Program.",
+   "url": "https://wswanderersfc.com.au/news/parramatta-and-wanderers-kick-off-new-partnership/",
+   "term": 3,
+   "status": "New"
+  },
+  {
+   "date": "2026-11-10",
+   "added": "2026-11-12",
+   "deal": "Hotels.com × Real Madrid",
+   "sport": "Football",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Multi-year global partnership makes Hotels.com an Official Partner of Real Madrid, with matchday branding, digital content and hospitality at the Bernabéu.",
+   "url": "https://www.insideworldfootball.com/2026/11/10/real-madrid-ink-multi-year-global-sponsorship-with-hotels-com"
+  },
+  {
+   "date": "2026-11-11",
+   "added": "2026-11-12",
+   "deal": "Bombay Sapphire × E1 Miami GP",
+   "sport": "Motorsport",
+   "type": "Title sponsorship",
+   "region": "Global",
+   "summary": "E1's official gin partner steps up to title partner of the Miami race, now the Bombay Sapphire E1 Miami GP 2026, on Biscayne Bay on 13-14 November.",
+   "url": "https://sportsmintmedia.com/bombay-sapphire-steps-up-e1-partnership-with-miami-gp-naming-rights/",
+   "status": "Upgrade"
+  },
+  {
+   "date": "2026-11-11",
+   "added": "2026-11-12",
+   "deal": "Elysia by Fortescue Zero × Jaguar TCS Racing",
+   "sport": "Motorsport",
+   "type": "Official partner",
+   "region": "Global",
+   "summary": "Multi-year partnership makes Elysia by Fortescue Zero Jaguar TCS Racing's official battery intelligence partner ahead of Formula E's GEN4 era.",
+   "url": "https://sportsmintmedia.com/jaguar-tcs-racing-turns-to-elysia-by-fortescue-zero-to-boost-battery-intelligence/",
+   "status": "New"
+  },
+  {
+   "date": "2026-11-11",
+   "added": "2026-11-12",
+   "deal": "Ant Group × UEFA Euro 2028",
+   "sport": "Football",
+   "type": "Extension",
+   "region": "Global",
+   "summary": "Alipay's parent extends its UEFA partnership by two years to cover Euro 2028 as official payment, wealth management and health assistant partner, with Alipay, Ant Fortune and AQ branding.",
+   "url": "https://www.sportcal.com/sponsorship/alipay-parent-ant-group-expands-uefa-partnership-for-euro-2028/",
+   "status": "Extension"
+  },
+  {
+   "date": "2026-11-10",
+   "added": "2026-11-12",
+   "deal": "XEFI × Vendée Cyclisme",
+   "sport": "Cycling",
+   "type": "Title sponsorship",
+   "region": "Global",
+   "summary": "French IT firm XEFI becomes primary title sponsor of Jean-René Bernaudeau's team, formerly Team TotalEnergies, on a three-year partnership from 2027, with the team renamed XEFI.",
+   "url": "https://www.sportcal.com/news/xefi-saves-team-totalenergies-becoming-primary-title-sponsor/",
+   "term": 3,
+   "status": "New"
+  },
+  {
+   "date": "2026-11-11",
+   "added": "2026-11-12",
+   "deal": "Nine Queensland × Queensland Reds",
+   "sport": "Rugby union",
+   "type": "Media partner",
+   "region": "ANZ",
+   "summary": "Nine Queensland extends as the Reds' media partner, promoting the team across the 9Network and 9Now.",
+   "url": "https://ministryofsport.com/queensland-rugby-union-locks-in-multiple-partnership-extensions-through-2027/",
+   "status": "Extension"
+  },
+  {
+   "date": "2026-11-11",
+   "added": "2026-11-12",
+   "deal": "QCOM × Queensland Reds",
+   "sport": "Rugby union",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "QCOM extends as the Reds' radio communications partner through 2027, supplying two-way radios to the coaching and high-performance staff.",
+   "url": "https://ministryofsport.com/queensland-rugby-union-locks-in-multiple-partnership-extensions-through-2027/",
+   "status": "Extension"
+  },
+  {
+   "date": "2026-11-11",
+   "added": "2026-11-12",
+   "deal": "Worldwide Milton × Queensland Reds",
+   "sport": "Rugby union",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "Worldwide Milton extends as Queensland Rugby's printing partner into a sixth year, covering ground signage at Ballymore and Suncorp Stadium and the QRU Annual Report.",
+   "url": "https://ministryofsport.com/queensland-rugby-union-locks-in-multiple-partnership-extensions-through-2027/",
+   "status": "Extension"
+  },
+  {
+   "date": "2026-11-11",
+   "added": "2026-11-12",
+   "deal": "DriTimes × Queensland Reds",
+   "sport": "Rugby union",
+   "type": "Extension",
+   "region": "ANZ",
+   "summary": "DriTimes extends as supplier of high-performance towels for Reds players, plus co-branded fan merchandise.",
+   "url": "https://ministryofsport.com/queensland-rugby-union-locks-in-multiple-partnership-extensions-through-2027/",
+   "status": "Extension"
+  },
+  {
    "date": "2026-11-04",
    "added": "2026-11-11",
    "deal": "adidas × AC Milan",
@@ -137,20 +289,6 @@
    "url": "https://www.essendonfc.com.au/news/2158958/toyota-forklifts-locks-in-three-more-years-with-essendon-aflw",
    "tier": "Principal & major",
    "status": "Extension"
-  },
-  {
-   "date": "2026-11-11",
-   "added": "2026-11-11",
-   "deal": "YoPRO × Australian Open",
-   "sport": "Tennis",
-   "type": "Official partner",
-   "region": "ANZ",
-   "summary": "Multi-year renewal keeps YoPRO as Official Partner of the AO, adding a Western Courts hub at AO27, a supporting role at the 1 Point Slam and state-level grassroots events, with Carlos Alcaraz staying on as global ambassador.",
-   "url": "https://ministryofsport.com/yopro-extends-partnership-with-australian-open/",
-   "tier": "Official partner",
-   "status": "Renewal",
-   "forPost": "2026-11-12",
-   "tierLock": true
   },
   {
    "date": "2026-11-05",

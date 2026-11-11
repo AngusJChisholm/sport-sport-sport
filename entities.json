@@ -31132,6 +31132,46 @@
     "icon",
     "logo"
    ]
+  },
+  "arn": {
+   "name": "ARN",
+   "k": "b"
+  },
+  "bombay-sapphire": {
+   "name": "Bombay Sapphire",
+   "k": "b"
+  },
+  "e1-miami-gp": {
+   "name": "E1 Miami GP",
+   "k": "p"
+  },
+  "elysia-by-fortescue-zero": {
+   "name": "Elysia by Fortescue Zero",
+   "k": "b"
+  },
+  "xefi": {
+   "name": "XEFI",
+   "k": "b"
+  },
+  "vendee-cyclisme": {
+   "name": "Vendée Cyclisme",
+   "k": "p"
+  },
+  "ant-group": {
+   "name": "Ant Group",
+   "k": "b"
+  },
+  "qcom": {
+   "name": "QCOM",
+   "k": "b"
+  },
+  "worldwide-milton": {
+   "name": "Worldwide Milton",
+   "k": "b"
+  },
+  "nine-queensland": {
+   "name": "Nine Queensland",
+   "k": "b"
   }
  },
  "leagues": [
