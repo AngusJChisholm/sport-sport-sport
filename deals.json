@@ -4209,7 +4209,8 @@
    "summary": "Bravus is expanding its partnership with the North Queensland Toyota Cowboys from 2027, and its name will appear on the NRLW jersey sleeve for the first time, matching the men's jersey.",
    "url": "https://industryqld.com.au/cowboys-club-lines-up-expanded-bravus-backing/",
    "tier": "Shirt & kit placement",
-   "status": "New"
+   "status": "New",
+   "ptier": "Platinum partner"
   },
   {
    "date": "2026-10-07",
@@ -6716,7 +6717,8 @@
    "summary": "The retailer's first sports partnership.",
    "url": "https://www.mi-3.com.au/24-03-2026/iconic-partners-newcastle-knights-2026-nrlw-season",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ptier": "NRLW partner"
   },
   {
    "date": "2026-03-19",
@@ -13785,7 +13787,8 @@
    "summary": "YoPRO joins the Australian Open as an Official Partner for AO 2026, its first Grand Slam partnership.",
    "tier": "Official partner",
    "status": "New",
-   "url": "https://ausopen.com/node/257712"
+   "url": "https://ausopen.com/node/257712",
+   "ends": 2026
   },
   {
    "date": "2025-12-17",
@@ -51920,7 +51923,9 @@
    "region": "ANZ",
    "summary": "Listed as a official telecommunications partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Official telecommunications partner"
+   "ptier": "Official telecommunications partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -51930,7 +51935,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -51940,7 +51947,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -51950,7 +51959,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -51960,7 +51971,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -51970,7 +51983,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -51980,7 +51995,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -51990,7 +52007,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52000,7 +52019,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52010,7 +52031,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52020,7 +52043,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52030,7 +52055,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52040,7 +52067,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52050,7 +52079,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52060,7 +52091,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52070,7 +52103,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52080,7 +52115,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52090,7 +52127,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52100,7 +52139,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52110,7 +52151,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52120,7 +52163,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52130,7 +52175,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52140,7 +52187,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52150,7 +52199,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52160,7 +52211,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52170,7 +52223,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52180,7 +52235,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52190,7 +52247,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52200,7 +52259,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52210,7 +52271,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52220,7 +52283,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52230,7 +52295,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52240,7 +52307,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52250,7 +52319,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52260,7 +52331,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52270,7 +52343,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52280,7 +52355,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52290,7 +52367,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52300,7 +52379,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52310,7 +52391,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52320,7 +52403,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52330,7 +52415,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52340,7 +52427,9 @@
    "region": "ANZ",
    "summary": "Listed as a academy partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Academy partner"
+   "ptier": "Academy partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52350,7 +52439,9 @@
    "region": "ANZ",
    "summary": "Listed as a academy partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Academy partner"
+   "ptier": "Academy partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52360,7 +52451,9 @@
    "region": "ANZ",
    "summary": "Listed as a academy partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Academy partner"
+   "ptier": "Academy partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52370,7 +52463,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52380,7 +52475,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52390,7 +52487,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52400,7 +52499,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52410,7 +52511,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52420,7 +52523,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52430,7 +52535,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52440,7 +52547,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52450,7 +52559,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52460,7 +52571,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52470,7 +52583,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52480,7 +52595,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52490,7 +52607,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52500,7 +52619,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52510,7 +52631,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52520,7 +52643,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52530,7 +52655,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52540,7 +52667,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52550,7 +52679,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52560,7 +52691,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52570,7 +52703,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52580,7 +52715,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52590,7 +52727,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52600,7 +52739,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52610,7 +52751,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52620,7 +52763,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52630,7 +52775,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52640,7 +52787,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52650,7 +52799,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52660,7 +52811,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52670,7 +52823,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52680,7 +52835,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52690,7 +52847,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52700,7 +52859,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52710,7 +52871,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52720,7 +52883,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52730,7 +52895,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52740,7 +52907,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52750,7 +52919,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52760,7 +52931,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52770,7 +52943,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52780,7 +52955,9 @@
    "region": "ANZ",
    "summary": "Listed as a hospitality partner on Cronulla Sharks's official partners page.",
    "url": "https://sharks.com.au/about/sponsors",
-   "ptier": "Hospitality partner"
+   "ptier": "Hospitality partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52790,7 +52967,9 @@
    "region": "ANZ",
    "summary": "Listed as a premier partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Premier partner"
+   "ptier": "Premier partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52800,7 +52979,9 @@
    "region": "ANZ",
    "summary": "Listed as a official telecommunications partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Official telecommunications partner"
+   "ptier": "Official telecommunications partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52810,7 +52991,9 @@
    "region": "ANZ",
    "summary": "Listed as a associate partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Associate partner"
+   "ptier": "Associate partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52820,7 +53003,9 @@
    "region": "ANZ",
    "summary": "Listed as a associate partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Associate partner"
+   "ptier": "Associate partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52830,7 +53015,9 @@
    "region": "ANZ",
    "summary": "Listed as a associate partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Associate partner"
+   "ptier": "Associate partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52840,7 +53027,9 @@
    "region": "ANZ",
    "summary": "Listed as a associate partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Associate partner"
+   "ptier": "Associate partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52850,7 +53039,9 @@
    "region": "ANZ",
    "summary": "Listed as a associate partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Associate partner"
+   "ptier": "Associate partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52860,7 +53051,9 @@
    "region": "ANZ",
    "summary": "Listed as a associate partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Associate partner"
+   "ptier": "Associate partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52870,7 +53063,9 @@
    "region": "ANZ",
    "summary": "Listed as a associate partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Associate partner"
+   "ptier": "Associate partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52880,7 +53075,9 @@
    "region": "ANZ",
    "summary": "Listed as a associate partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Associate partner"
+   "ptier": "Associate partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52890,7 +53087,9 @@
    "region": "ANZ",
    "summary": "Listed as a associate partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Associate partner"
+   "ptier": "Associate partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52900,7 +53099,9 @@
    "region": "ANZ",
    "summary": "Listed as a associate partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Associate partner"
+   "ptier": "Associate partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52910,7 +53111,9 @@
    "region": "ANZ",
    "summary": "Listed as a associate partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Associate partner"
+   "ptier": "Associate partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52920,7 +53123,9 @@
    "region": "ANZ",
    "summary": "Listed as a nRLW partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52930,7 +53135,9 @@
    "region": "ANZ",
    "summary": "Listed as a nRLW partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52940,7 +53147,9 @@
    "region": "ANZ",
    "summary": "Listed as a nRLW partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52950,7 +53159,9 @@
    "region": "ANZ",
    "summary": "Listed as a nRLW partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52960,7 +53171,9 @@
    "region": "ANZ",
    "summary": "Listed as a nRLW partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52970,7 +53183,9 @@
    "region": "ANZ",
    "summary": "Listed as a nRLW partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52980,7 +53195,9 @@
    "region": "ANZ",
    "summary": "Listed as a nRLW partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -52990,7 +53207,9 @@
    "region": "ANZ",
    "summary": "Listed as a nRLW partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53000,7 +53219,9 @@
    "region": "ANZ",
    "summary": "Listed as a nRLW partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53010,7 +53231,9 @@
    "region": "ANZ",
    "summary": "Listed as a nRLW partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53020,7 +53243,9 @@
    "region": "ANZ",
    "summary": "Listed as a netball partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Netball partner"
+   "ptier": "Netball partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53030,7 +53255,9 @@
    "region": "ANZ",
    "summary": "Listed as a netball partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Netball partner"
+   "ptier": "Netball partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53040,7 +53267,9 @@
    "region": "ANZ",
    "summary": "Listed as a community partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Community partner"
+   "ptier": "Community partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53050,7 +53279,9 @@
    "region": "ANZ",
    "summary": "Listed as a community partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Community partner"
+   "ptier": "Community partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53060,7 +53291,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53070,7 +53303,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53080,7 +53315,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53090,7 +53327,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53100,7 +53339,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53110,7 +53351,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53120,7 +53363,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Gold Coast Titans's official partners page.",
    "url": "https://www.titans.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "date": "2026-06-12",
@@ -53131,7 +53376,8 @@
    "summary": "James Place joins the Knights NRLW program as an official partner.",
    "url": "https://www.newcastleknights.com.au/news/2026/06/12/james-place-joins-knights-nrlw-as-official-partner/",
    "status": "New",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner"
   },
   {
    "date": "2025-03-21",
@@ -53141,7 +53387,8 @@
    "region": "ANZ",
    "summary": "Newcastle Airport comes on board as a Knights partner.",
    "url": "https://www.newcastleknights.com.au/news/2025/03/21/newcastle-airport-partners-with-knights/",
-   "status": "New"
+   "status": "New",
+   "tier": "Official partner"
   },
   {
    "date": "2025-02-25",
@@ -53152,7 +53399,8 @@
    "summary": "McDonald Jones Homes renews its partnership with the Knights.",
    "url": "https://www.newcastleknights.com.au/news/2025/02/25/mcdonald-jones-homes-renew-partnership-with-knights-mcdonaldjoneshomes/",
    "status": "Renewal",
-   "ptier": "Platinum partner"
+   "ptier": "Platinum partner",
+   "tier": "Principal & major"
   },
   {
    "date": "2024-11-27",
@@ -53163,7 +53411,8 @@
    "summary": "Ausure and the Knights renew their partnership.",
    "url": "https://www.newcastleknights.com.au/news/2024/11/27/knights-and-ausure-renew-key-partnership-ausure/",
    "status": "Renewal",
-   "ptier": "Platinum partner"
+   "ptier": "Platinum partner",
+   "tier": "Official partner"
   },
   {
    "date": "2024-03-25",
@@ -53175,7 +53424,10 @@
    "url": "https://www.newcastleknights.com.au/news/2024/03/26/thiess-announces-one-year-sponsorship-of-newcastle-knights-nrlw-team-thiess/",
    "status": "New",
    "term": 1,
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "ends": 2025,
+   "endsEst": true
   },
   {
    "date": "2024-02-20",
@@ -53187,7 +53439,8 @@
    "url": "https://www.newcastleknights.com.au/news/2024/02/20/better-together-knights-and-classic-partnership-extended-to-2029-classic/",
    "status": "Extension",
    "ends": 2029,
-   "ptier": "Platinum partner"
+   "ptier": "Platinum partner",
+   "tier": "Kit & apparel"
   },
   {
    "date": "2023-09-05",
@@ -53198,7 +53451,8 @@
    "summary": "Newcastle Permanent is unveiled as naming rights partner of the Knights' Centre of Excellence.",
    "url": "https://www.newcastleknights.com.au/news/2023/09/05/newcastle-permanent-centre-of-excellence-knights-unveil-official-naming-rights-partner-for-state-of-the-art-facility/",
    "status": "New",
-   "ptier": "Platinum partner"
+   "ptier": "Platinum partner",
+   "tier": "Naming rights"
   },
   {
    "date": "2023-08-04",
@@ -53207,7 +53461,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "Lite n' Easy partners with the Knights during their premiership defence.",
-   "url": "https://www.newcastleknights.com.au/news/2023/08/04/lite-n-easy-fuelling-the-knights-premiership-defence/"
+   "url": "https://www.newcastleknights.com.au/news/2023/08/04/lite-n-easy-fuelling-the-knights-premiership-defence/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2023-07-20",
@@ -53217,7 +53473,8 @@
    "region": "ANZ",
    "summary": "Marvan Hotel Group joins the Knights NRLW partner family.",
    "url": "https://www.newcastleknights.com.au/news/2023/07/20/knights-welcome-marvan-hotel-group-to-nrlw-partner-family/",
-   "status": "New"
+   "status": "New",
+   "tier": "Official partner"
   },
   {
    "listed": "2026-11-10",
@@ -53227,7 +53484,9 @@
    "region": "ANZ",
    "summary": "Listed as a official telecommunications partner on North Queensland Cowboys's official partners page.",
    "url": "https://www.cowboys.com.au/partners/partners/",
-   "ptier": "Official telecommunications partner"
+   "ptier": "Official telecommunications partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53237,7 +53496,9 @@
    "region": "ANZ",
    "summary": "Listed as a platinum partner on North Queensland Cowboys's official partners page.",
    "url": "https://www.cowboys.com.au/partners/partners/",
-   "ptier": "Platinum partner"
+   "ptier": "Platinum partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53247,7 +53508,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on North Queensland Cowboys's official partners page.",
    "url": "https://www.cowboys.com.au/partners/partners/",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53257,7 +53520,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on North Queensland Cowboys's official partners page.",
    "url": "https://www.cowboys.com.au/partners/partners/",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53267,7 +53532,9 @@
    "region": "ANZ",
    "summary": "Listed as a preferred supplier on North Queensland Cowboys's official partners page.",
    "url": "https://www.cowboys.com.au/partners/partners/",
-   "ptier": "Preferred supplier"
+   "ptier": "Preferred supplier",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53277,7 +53544,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Perth Bears's official partners page.",
    "url": "https://www.perthbears.com.au/about/partnerships/",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53287,7 +53556,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on Perth Bears's official partners page.",
    "url": "https://www.perthbears.com.au/about/partnerships/",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "date": "2024-11-19",
@@ -53298,7 +53569,8 @@
    "summary": "Remara is welcomed as the newest Dragons corporate partner.",
    "url": "https://www.dragons.com.au/news/2024/11/19/dragons-welcome-remara-as-newest-corporate-partner/",
    "status": "New",
-   "ptier": "Apparel partner"
+   "ptier": "Apparel partner",
+   "tier": "Official partner"
   },
   {
    "date": "2024-11-15",
@@ -53309,7 +53581,8 @@
    "summary": "Dragons announce a partnership with Dynamoney.",
    "url": "https://www.dragons.com.au/news/2024/11/15/dragons-announce-partnership-with-dynamoney/",
    "status": "New",
-   "ptier": "Apparel partner"
+   "ptier": "Apparel partner",
+   "tier": "Official partner"
   },
   {
    "listed": "2026-11-10",
@@ -53319,7 +53592,9 @@
    "region": "ANZ",
    "summary": "Listed as a nRLW partner on Newcastle Knights's official partners page.",
    "url": "https://www.newcastleknights.com.au/about/sponsors/",
-   "ptier": "NRLW partner"
+   "ptier": "NRLW partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53329,7 +53604,9 @@
    "region": "ANZ",
    "summary": "Listed as a media partner on Newcastle Knights's official partners page.",
    "url": "https://www.newcastleknights.com.au/about/sponsors/",
-   "ptier": "Media partner"
+   "ptier": "Media partner",
+   "tier": "Media & broadcast",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53339,7 +53616,9 @@
    "region": "ANZ",
    "summary": "Listed as a official telecommunications partner on Newcastle Knights's official partners page.",
    "url": "https://www.newcastleknights.com.au/about/sponsors/",
-   "ptier": "Official telecommunications partner"
+   "ptier": "Official telecommunications partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53349,7 +53628,9 @@
    "region": "ANZ",
    "summary": "Listed as a gold partner on Dolphins's official partners page.",
    "url": "https://www.dolphinsnrl.com.au/partners/",
-   "ptier": "Gold partner"
+   "ptier": "Gold partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53359,7 +53640,9 @@
    "region": "ANZ",
    "summary": "Listed as a official telecommunications partner on Dolphins's official partners page.",
    "url": "https://www.dolphinsnrl.com.au/partners/",
-   "ptier": "Official telecommunications partner"
+   "ptier": "Official telecommunications partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53369,7 +53652,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Dolphins's official partners page.",
    "url": "https://www.dolphinsnrl.com.au/partners/",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53379,7 +53664,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Dolphins's official partners page.",
    "url": "https://www.dolphinsnrl.com.au/partners/",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53389,7 +53676,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Dolphins's official partners page.",
    "url": "https://www.dolphinsnrl.com.au/partners/",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53399,7 +53688,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Dolphins's official partners page.",
    "url": "https://www.dolphinsnrl.com.au/partners/",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53409,7 +53700,9 @@
    "region": "ANZ",
    "summary": "Listed as a partner on Dolphins's official partners page.",
    "url": "https://www.dolphinsnrl.com.au/partners/",
-   "ptier": "Partner"
+   "ptier": "Partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53419,7 +53712,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53429,7 +53724,9 @@
    "region": "ANZ",
    "summary": "Listed as a premier partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Premier partner"
+   "ptier": "Premier partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53439,7 +53736,9 @@
    "region": "ANZ",
    "summary": "Listed as a premier partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Premier partner"
+   "ptier": "Premier partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53449,7 +53748,9 @@
    "region": "ANZ",
    "summary": "Listed as a premier partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Premier partner"
+   "ptier": "Premier partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53459,7 +53760,9 @@
    "region": "ANZ",
    "summary": "Listed as a premier partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Premier partner"
+   "ptier": "Premier partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53469,7 +53772,9 @@
    "region": "ANZ",
    "summary": "Listed as a premier partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Premier partner"
+   "ptier": "Premier partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53479,7 +53784,9 @@
    "region": "ANZ",
    "summary": "Listed as a premier partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Premier partner"
+   "ptier": "Premier partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53489,7 +53796,9 @@
    "region": "ANZ",
    "summary": "Listed as a premier partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Premier partner"
+   "ptier": "Premier partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53499,7 +53808,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53509,7 +53820,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53519,7 +53832,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53529,7 +53844,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53539,7 +53856,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53549,7 +53868,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53559,7 +53880,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53569,7 +53892,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53579,7 +53904,9 @@
    "region": "ANZ",
    "summary": "Listed as a support partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Support partner"
+   "ptier": "Support partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53589,7 +53916,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53599,7 +53928,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53609,7 +53940,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53619,7 +53952,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53629,7 +53964,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53639,7 +53976,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53649,7 +53988,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53659,7 +54000,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53669,7 +54012,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53679,7 +54024,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53689,7 +54036,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53699,7 +54048,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53709,7 +54060,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53719,7 +54072,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53729,7 +54084,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53739,7 +54096,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53749,7 +54108,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53759,7 +54120,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53769,7 +54132,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53779,7 +54144,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53789,7 +54156,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53799,7 +54168,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53809,7 +54180,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53819,7 +54192,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53829,7 +54204,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53839,7 +54216,9 @@
    "region": "ANZ",
    "summary": "Listed as a supply partners & official suppliers on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Supply partners & official suppliers"
+   "ptier": "Supply partners & official suppliers",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53849,7 +54228,9 @@
    "region": "ANZ",
    "summary": "Listed as a official telecommunications partner on Brisbane Broncos's official partners page.",
    "url": "https://www.broncos.com.au/about/partners/",
-   "ptier": "Official telecommunications partner"
+   "ptier": "Official telecommunications partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53859,7 +54240,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on Canberra Raiders's official partners page.",
    "url": "https://www.raiders.com.au/corporate/partners/",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53869,7 +54252,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on Canberra Raiders's official partners page.",
    "url": "https://www.raiders.com.au/corporate/partners/",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53879,7 +54264,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on Canberra Raiders's official partners page.",
    "url": "https://www.raiders.com.au/corporate/partners/",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53889,7 +54276,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on Canberra Raiders's official partners page.",
    "url": "https://www.raiders.com.au/corporate/partners/",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53899,7 +54288,9 @@
    "region": "ANZ",
    "summary": "Listed as a premier partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Premier partner"
+   "ptier": "Premier partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53909,7 +54300,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53919,7 +54312,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53929,7 +54324,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53939,7 +54336,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53949,7 +54348,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53959,7 +54360,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53969,7 +54372,9 @@
    "region": "ANZ",
    "summary": "Listed as a major partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Major partner"
+   "ptier": "Major partner",
+   "tier": "Principal & major",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53979,7 +54384,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53989,7 +54396,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -53999,7 +54408,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54009,7 +54420,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54019,7 +54432,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54029,7 +54444,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54039,7 +54456,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54049,7 +54468,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54059,7 +54480,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54069,7 +54492,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54079,7 +54504,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54089,7 +54516,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54099,7 +54528,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54109,7 +54540,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54119,7 +54552,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54129,7 +54564,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54139,7 +54576,9 @@
    "region": "ANZ",
    "summary": "Listed as a official partner on AFLW's official partners page.",
    "url": "https://www.afl.com.au/aflw/about-aflw/partners",
-   "ptier": "Official partner"
+   "ptier": "Official partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -54149,7 +54588,9 @@
    "region": "ANZ",
    "summary": "Listed as a official telecommunications partner on Canberra Raiders's official partners page.",
    "url": "https://www.raiders.com.au/corporate/partners/",
-   "ptier": "Official telecommunications partner"
+   "ptier": "Official telecommunications partner",
+   "tier": "Official partner",
+   "status": "Current partner"
   }
  ]
 }

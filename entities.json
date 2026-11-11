@@ -977,6 +977,11 @@
    "domain": "afl.com.au",
    "bf": [
     "icon"
+   ],
+   "ptiers": [
+    "Major partner",
+    "Premier partner",
+    "Official partner"
    ]
   },
   "aflw-umpires": {
@@ -4640,7 +4645,14 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Premier partner",
+    "Supply partners & official suppliers",
+    "Support partner",
+    "Official telecommunications partner"
+   ]
   },
   "brisbane-bullets": {
    "name": "Brisbane Bullets",
@@ -5352,7 +5364,8 @@
    "k": "p",
    "ptiers": [
     "NRLW major partner",
-    "Major partner"
+    "Major partner",
+    "Official telecommunications partner"
    ]
   },
   "cancer-council": {
@@ -7500,7 +7513,11 @@
    "ptiers": [
     "Major partner",
     "Premier partner",
-    "NRLW partner"
+    "Partner",
+    "NRLW partner",
+    "Official telecommunications partner",
+    "Academy partner",
+    "Hospitality partner"
    ]
   },
   "cross-excavations": {
@@ -8341,7 +8358,9 @@
     "Major partner",
     "Premier partner",
     "Gold partner",
-    "Official partner"
+    "Official partner",
+    "Partner",
+    "Official telecommunications partner"
    ]
   },
   "dolphins-central": {
@@ -11222,7 +11241,12 @@
     "Executive partner",
     "Associate partner",
     "Media partner",
-    "Official supplier"
+    "Official supplier",
+    "Community partner",
+    "Official telecommunications partner",
+    "NRLW partner",
+    "Netball partner",
+    "Support partner"
    ]
   },
   "gold-coast-turf-club": {
@@ -18820,7 +18844,8 @@
     "Official partner",
     "Media partner",
     "Membership partner",
-    "NRLW partner"
+    "NRLW partner",
+    "Official telecommunications partner"
    ]
   },
   "newcastle-permanent": {
@@ -19162,7 +19187,9 @@
     "Platinum partner",
     "Gold partner",
     "Silver partner",
-    "Official supplier"
+    "Official supplier",
+    "Preferred supplier",
+    "Official telecommunications partner"
    ]
   },
   "northamptonshire-ccc": {
