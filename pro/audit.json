@@ -26,32 +26,32 @@
   },
   {
    "names": [
-    "Courier Mail",
-    "The Courier-Mail"
+    "Victor",
+    "Victor Sports"
    ],
    "slugs": [
-    "courier-mail",
-    "the-courier-mail"
+    "victor",
+    "victor-sports"
    ]
   },
   {
    "names": [
-    "Harness Racing Australia",
-    "Harness Racing NZ"
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
    ],
    "slugs": [
-    "harness-racing-australia",
-    "harness-racing-nz"
+    "commonwealth-games",
+    "commonwealth-games-australia"
    ]
   },
   {
    "names": [
-    "Hockey Australia",
-    "Hockey New Zealand"
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
    ],
    "slugs": [
-    "hockey-australia",
-    "hockey-new-zealand"
+    "pure-nutrition",
+    "pure-sports-nutrition"
    ]
   },
   {
@@ -66,12 +66,22 @@
   },
   {
    "names": [
-    "HYROX",
-    "HYROX Australia"
+    "Dolphins",
+    "Dolphins Group"
    ],
    "slugs": [
-    "hyrox",
-    "hyrox-australia"
+    "dolphins",
+    "dolphins-group"
+   ]
+  },
+  {
+   "names": [
+    "Harness Racing Australia",
+    "Harness Racing NZ"
+   ],
+   "slugs": [
+    "harness-racing-australia",
+    "harness-racing-nz"
    ]
   },
   {
@@ -90,42 +100,22 @@
   },
   {
    "names": [
-    "Victor",
-    "Victor Sports"
+    "HYROX",
+    "HYROX Australia"
    ],
    "slugs": [
-    "victor",
-    "victor-sports"
+    "hyrox",
+    "hyrox-australia"
    ]
   },
   {
    "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
+    "Hockey Australia",
+    "Hockey New Zealand"
    ],
    "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
-   ]
-  },
-  {
-   "names": [
-    "TAB",
-    "TAB NZ"
-   ],
-   "slugs": [
-    "tab",
-    "tab-nz"
-   ]
-  },
-  {
-   "names": [
-    "Ant Group",
-    "Ant International"
-   ],
-   "slugs": [
-    "ant-group",
-    "ant-international"
+    "hockey-australia",
+    "hockey-new-zealand"
    ]
   },
   {
@@ -140,32 +130,42 @@
   },
   {
    "names": [
+    "Ant Group",
+    "Ant International"
+   ],
+   "slugs": [
+    "ant-group",
+    "ant-international"
+   ]
+  },
+  {
+   "names": [
+    "Courier Mail",
+    "The Courier-Mail"
+   ],
+   "slugs": [
+    "courier-mail",
+    "the-courier-mail"
+   ]
+  },
+  {
+   "names": [
+    "TAB",
+    "TAB NZ"
+   ],
+   "slugs": [
+    "tab",
+    "tab-nz"
+   ]
+  },
+  {
+   "names": [
     "Special Olympics",
     "Special Olympics Australia"
    ],
    "slugs": [
     "special-olympics",
     "special-olympics-australia"
-   ]
-  },
-  {
-   "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
-   ],
-   "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
-   ]
-  },
-  {
-   "names": [
-    "Dolphins",
-    "Dolphins Group"
-   ],
-   "slugs": [
-    "dolphins",
-    "dolphins-group"
    ]
   }
  ],
