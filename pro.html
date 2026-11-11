@@ -120,6 +120,65 @@
 @media (max-width:900px){.dtop,.two{grid-template-columns:minmax(0,1fr)}.busy{grid-template-columns:repeat(3,minmax(0,1fr))}.fund{min-height:0}}
 @media (max-width:520px){.nudge{flex-direction:column;align-items:flex-start}.cl .chip,.cl .basis{display:none}.hbr{grid-template-columns:minmax(0,7.5em) minmax(0,1fr) 2.6em}}
 @media (max-width:760px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.wl{grid-template-columns:minmax(0,1fr)}}
+
+/* Reports tab */
+.rp-quick{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:14px 0 4px}
+.rp-pick{font:inherit;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--white);cursor:pointer}
+.rp-pick:hover{border-color:var(--ink)}.rp-pick.on{background:var(--volt);border-color:var(--volt)}
+.rp{margin-top:28px;display:grid;gap:28px}
+.rp-pg{background:var(--white);border:1px solid var(--line);border-top:6px solid var(--volt);padding:clamp(22px,4vw,48px);position:relative}
+.rp-cover{min-height:560px;display:flex;flex-direction:column;justify-content:space-between;gap:32px}
+.rp-cw{display:flex;justify-content:space-between;align-items:center}
+.rp-k{font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.rp-ct .lg{--s:96px}
+.rp-ct h1{font-size:clamp(56px,9vw,128px);line-height:.88;margin:20px 0 14px}
+.rp-cs{font-weight:800;font-size:15px;letter-spacing:.12em;text-transform:uppercase;margin:0}
+.rp-volt{background:var(--volt);padding:4px 8px 2px}
+.rp-toc{margin:0;padding:0;list-style:none;counter-reset:t;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;border-top:2px solid var(--ink)}
+.rp-toc li{counter-increment:t;padding:10px 0;border-bottom:1px solid var(--line);font-weight:800;text-transform:uppercase;letter-spacing:-.01em}
+.rp-toc li::before{content:counter(t,decimal-leading-zero);color:var(--ink-3);margin-right:12px;font-variant-numeric:tabular-nums}
+.rp-cb{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--ink-3)}
+.rp-h{display:flex;gap:16px;align-items:flex-start;margin-bottom:8px}
+.rp-n{background:var(--volt);font-weight:800;font-size:20px;padding:6px 9px 4px;line-height:1;font-variant-numeric:tabular-nums}
+.rp-h h2{font-size:clamp(30px,4vw,48px);text-transform:uppercase;letter-spacing:-.03em;line-height:.95;margin:0}
+.rp-h p{margin:6px 0 0;font-size:13px;color:var(--ink-3)}
+.rp-lead{font-size:17px;line-height:1.55;max-width:780px;margin:18px 0}
+.rp-dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px;margin:16px 0 0}
+.rp-dl>div{border-top:1px solid var(--line);padding:12px 0}
+.rp-dl dt{font-weight:800;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+.rp-dl dd{margin:0;font-size:15px}
+.rp-t{margin-top:14px}.rp-t td,.rp-t th{font-size:13px}
+.rp-past td{color:var(--ink-3)}
+.rp-m{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;border-top:1px solid var(--line);padding:14px 0}
+.rp-m:first-of-type{border-top:2px solid var(--ink);margin-top:16px}
+.rp-mi{font-weight:800;font-size:28px;letter-spacing:-.03em;line-height:1}
+.rp-mh{display:flex;align-items:center;gap:12px;margin-bottom:8px}.rp-mh .lg{--s:40px}
+.rp-mh>div{flex:1;min-width:0}.rp-mh b{display:block;text-transform:uppercase;letter-spacing:-.01em;font-size:17px}
+.rp-sc{font-weight:800;font-size:28px;letter-spacing:-.03em}
+.rp-m .mx-why{max-width:none}
+.rp-riv{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin:16px 0 4px}
+.rp-riv>div{background:var(--canvas);padding:12px;display:flex;flex-direction:column;gap:4px}.rp-riv .lg{--s:36px}
+.rp-riv b{font-size:14px}.rp-riv span{font-size:12px;color:var(--ink-3)}
+.rp-open{background:var(--volt);font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:3px 6px 2px}
+.rp-src{font-size:12px;line-height:1.5;padding-left:20px;margin:16px 0;word-break:break-all}.rp-src a{text-decoration:underline}
+.rp-f{display:flex;align-items:center;gap:12px;margin-top:28px;padding-top:12px;border-top:1px solid var(--line);font-size:11px;color:var(--ink-3);letter-spacing:.04em}
+.rp-f span:last-child{margin-left:auto}
+@media (max-width:760px){.rp-toc,.rp-dl{grid-template-columns:minmax(0,1fr)}.rp-cover{min-height:0}.rp-mh{flex-wrap:wrap}}
+@page{size:A4;margin:12mm}
+@media print{
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  header,footer,.hero,.tabs,.rp-ctl,#follow,.sf,.star{display:none!important}
+  .wrap,.pro-sec{padding:0!important;margin:0!important;max-width:none!important}
+  .rp{display:block;margin:0}
+  .rp-pg{border:0;border-top:6px solid var(--volt);padding:10mm 2mm 0;break-after:page;page-break-after:always;min-height:0}
+  .rp-pg:last-child{break-after:auto;page-break-after:auto}
+  .rp-cover{height:265mm}
+  .rp-t tr,.rp-m{break-inside:avoid}
+  .tw{overflow:visible}
+  .rp-t td,.rp-t th{padding-top:5px;padding-bottom:5px}
+  .rp-m{padding:9px 0}.rp-lead{font-size:15px}
+  a{color:inherit}
+}
 </style>
 <link rel="stylesheet" href="assets/follow.css">
 </head>
@@ -142,6 +201,7 @@
 <button class="tab" data-tab="renewals" role="tab">Renewal radar</button>
 <button class="tab" data-tab="property" role="tab">Property report</button>
 <button class="tab" data-tab="watch" role="tab">Watchlist</button>
+<button class="tab" data-tab="reports" role="tab">Reports</button>
 </div></div>
 <section class="wrap pro-sec" id="view"><p class="note">Loading the database…</p></section>
 <!-- follow:start -->
@@ -163,6 +223,6 @@
 <datalist id="brandNames"></datalist>
 <script src="assets/logos.js?v=8"></script>
 <script src="assets/data.js?v=2"></script>
-<script src="assets/pro.js?v=8"></script>
+<script src="assets/pro.js?v=9"></script>
 </body>
 </html>
