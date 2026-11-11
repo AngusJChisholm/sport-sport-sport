@@ -11,11 +11,25 @@
  "deal": "ARN x Australian Open",
  "descriptor": "Five-year audio partner",
  "others": [
-  {"deal": "YoPRO x Australian Open", "sub": "Tennis - Official partner renewal"},
-  {"deal": "City of Parramatta x Wanderers", "sub": "Football - Three-year partnership"},
-  {"deal": "Hotels.com x Real Madrid", "sub": "Football - Official partner"},
-  {"deal": "Bombay Sapphire x E1 Miami GP", "sub": "Motorsport - Title partner"},
-  {"deal": "Elysia x Jaguar TCS Racing", "sub": "Formula E - Battery intelligence partner"}
- ],
- "image": "https://images.unsplash.com/photo-1730743675269-0aefbcf2cedb"
+  {
+   "deal": "YoPRO x Australian Open",
+   "sub": "Tennis - Official partner renewal"
+  },
+  {
+   "deal": "City of Parramatta x Wanderers",
+   "sub": "Football - Three-year partnership"
+  },
+  {
+   "deal": "Hotels.com x Real Madrid",
+   "sub": "Football - Official partner"
+  },
+  {
+   "deal": "Bombay Sapphire x E1 Miami GP",
+   "sub": "Motorsport - Title partner"
+  },
+  {
+   "deal": "Elysia x Jaguar TCS Racing",
+   "sub": "Formula E - Battery intelligence partner"
+  }
+ ]
 }
