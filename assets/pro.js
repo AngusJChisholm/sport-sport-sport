@@ -428,7 +428,7 @@ function brandReport(org,mx){
       ${(pr.aud||[]).length?`<div><dt>Audience</dt><dd><div class="chips">${pr.aud.map(a=>`<span class="chip">${esc(a)}</span>`).join("")}</div></dd></div>`:""}
       ${(pr.align||[]).length?`<div><dt>Stands for</dt><dd><div class="chips">${pr.align.map(a=>`<span class="chip">${esc(a)}</span>`).join("")}</div></dd></div>`:""}
       ${(pr.markets||[]).length?`<div><dt>Markets</dt><dd>${esc(pr.markets.join(", "))}</dd></div>`:""}
-      ${(pr.avoid_class||[]).length?`<div><dt>Doesn't buy</dt><dd>${esc(pr.avoid_class.map(c=>PT[c]||c).join(", "))} deals</dd></div>`:""}
+      ${(pr.avoid_class||[]).length?`<div><dt>Doesn't buy</dt><dd>${esc(pr.avoid_class.map(c=>PT[c]||c).join(", "))} partnerships</dd></div>`:""}
       ${sports.length?`<div><dt>Sports now</dt><dd>${esc(sports.join(", "))}</dd></div>`:""}
     </dl>${rpFoot(e.name)}</section>
 
@@ -438,7 +438,7 @@ function brandReport(org,mx){
     ${rpFoot(e.name)}</section>
 
   <section class="rp-pg">${rpHead(3,"Who to pitch","The five best SSS Pro scouting suggestions, with why each fits")}
-    ${top.length?top.map((r,i)=>{const o=D.orgs.get(r.p);return `<div class="rp-m"><span class="rp-mi">${i+1}</span><div class="rp-mb"><div class="rp-mh">${o?logo(o.e,40):""}<div><b>${esc(r.n)}</b><span class="mute-l">${esc(r.s)} · ${esc(r.r)} reach${r.v?" · Verified":""}</span></div><span class="rp-sc">${r.x}</span><span class="basis ${bandCls(r.k)}">${esc(verdict(r))}</span></div>${why(r)}</div></div>`}).join(""):`<p class="note-s">No suggestions above 40 yet. This brand needs more deals in the database.</p>`}
+    ${top.length?top.map((r,i)=>{const o=D.orgs.get(r.p);return `<div class="rp-m"><span class="rp-mi">${i+1}</span><div class="rp-mb"><div class="rp-mh">${o?logo(o.e,40):""}<div><b>${esc(r.n)}</b><span class="mute-l">${esc(r.s)} · ${esc(r.r)} reach${r.v?" · Verified":""}</span></div><span class="rp-sc">${r.x}</span><span class="basis ${bandCls(r.k)}">${esc(verdict(r))}</span></div>${why(r)}</div></div>`}).join(""):`<p class="note-s">No suggestions above 40 yet. This brand needs more partnerships in the database.</p>`}
     ${ent.length?`<div class="h3">Ways into Australia and New Zealand</div><table class="t rp-t"><tbody>${ent.slice(0,5).map(r=>`<tr><td><b>${esc(r.n)}</b><br><span class="mute-l">${esc(r.s)} · ${esc(r.r)}</span></td><td class="d">${r.x}</td><td>${why(r)}</td></tr>`).join("")}</tbody></table>`:""}
     ${rpFoot(e.name)}</section>
 
@@ -455,7 +455,7 @@ function brandReport(org,mx){
 
   <section class="rp-pg">${rpHead(6,"Sources","Official announcements behind the partnerships in this report")}
     <ol class="rp-src">${pr.psrc?`<li>Profile: <a href="${esc(pr.psrc)}">${esc(pr.psrc)}</a></li>`:""}${src.map(d=>`<li>${esc(d.deal)}: <a href="${esc(d.url)}">${esc(d.url)}</a></li>`).join("")}</ol>
-    <p class="note-s">How it's built: every partnership is checked against an official source (the club, league or brand's own site or post) before it goes in the SSS database. Renewal years are Confirmed (end date announced), From term (length announced) or Estimate (typical term for that deal type). Suggestions use SSS Pro Scout Scores, rebuilt ${esc(MX.generated)}.</p>
+    <p class="note-s">How it's built: every partnership is checked against an official source (the club, league or brand's own site or post) before it goes in the SSS database. Renewal years are Confirmed (end date announced), From term (length announced) or Estimate (typical term for that partnership type). Suggestions use SSS Pro Scout Scores, rebuilt ${esc(MX.generated)}.</p>
     ${rpFoot(e.name)}</section>`;
 }
 
@@ -505,7 +505,7 @@ function propReport(org,mx){
 
   <section class="rp-pg">${rpHead(6,"Sources","Official announcements behind the partnerships in this report")}
     <ol class="rp-src">${src.map(d=>`<li>${esc(d.deal)}: <a href="${esc(d.url)}">${esc(d.url)}</a></li>`).join("")}</ol>
-    <p class="note-s">How it's built: every partnership is checked against an official source before it goes in the SSS database. "Live" means the deal's end year hasn't passed, it was announced in the last three years, or the brand is on the current partners page. Suggestions use SSS Pro Scout Scores, rebuilt ${esc(MX.generated)}.</p>
+    <p class="note-s">How it's built: every partnership is checked against an official source before it goes in the SSS database. "Live" means the partnership's end year hasn't passed, it was announced in the last three years, or the brand is on the current partners page. Suggestions use SSS Pro Scout Scores, rebuilt ${esc(MX.generated)}.</p>
     ${rpFoot(e.name)}</section>`;
 }
 
