@@ -1,0 +1,72 @@
+{
+ "date": "2026-11-13",
+ "hold": false,
+ "feed": {
+  "kind": "feature",
+  "cover": {
+   "tag": "Breakdown",
+   "region": "ANZ",
+   "headline": "Why ARN doubled down on tennis.",
+   "highlight": "doubled",
+   "deal": "ARN x Australian Open",
+   "descriptor": "Breakdown"
+  },
+  "slides": [
+   {
+    "label": "The partnership",
+    "title": "Five years from AO27",
+    "rows": [
+     {
+      "main": "ARN x Australian Open",
+      "sub": "Audio partner and broadcaster"
+     },
+     {
+      "main": "Five years",
+      "sub": "From January 2027"
+     },
+     {
+      "main": "Value undisclosed",
+      "sub": "A renewal, ARN joined in 2023"
+     }
+    ]
+   },
+   {
+    "label": "What ARN gets",
+    "title": "The big shows go to Melbourne Park",
+    "rows": [
+     {
+      "main": "KIIS and GOLD Breakfast",
+      "sub": "Then Drive with Jonesy and Amanda"
+     },
+     {
+      "main": "AO DAB+ channel",
+      "sub": "Sydney and Melbourne"
+     },
+     {
+      "main": "iHeart and podcasts",
+      "sub": "Pod Laver Arena included"
+     }
+    ]
+   },
+   {
+    "label": "Why now",
+    "title": "Radio audience, ad revenue gap",
+    "rows": [
+     {
+      "main": "25% of metro audience",
+      "sub": "Per Variety"
+     },
+     {
+      "main": "18.5% of metro ad revenue",
+      "sub": "About $38m gap, ARN CEO"
+     },
+     {
+      "main": "AO26 record crowd",
+      "sub": "1,368,043 fans"
+     }
+    ]
+   }
+  ]
+ },
+ "caption": "Why ARN doubled down on tennis.\n\nARN has locked in five years as the Australian Open's audio partner and broadcaster, from January 2027. It joined in 2023, so this is a renewal, and the value is undisclosed.\n\nThe big shows broadcast from Melbourne Park, there's a dedicated AO DAB+ channel in Sydney and Melbourne, and iHeart carries the streams and podcasts.\n\nARN holds about 25% of the metro radio audience but about 18.5% of metro ad revenue. A flagship property helps.\n\nRead the full story: link in bio\n\n#sportsbusiness #sponsorship #sportsmarketing #partnerships"
+}

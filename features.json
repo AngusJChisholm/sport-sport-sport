@@ -1,6 +1,43 @@
 {
  "features": [
   {
+   "date": "2026-11-13",
+   "label": "Breakdown",
+   "headline": "Why ARN doubled down on tennis.",
+   "descriptor": "ARN x Australian Open, unpacked",
+   "topic": "Breakdown",
+   "sport": "Tennis",
+   "region": "ANZ",
+   "image": "https://images.unsplash.com/photo-1777761267146-ba0515a124cd",
+   "imageCredit": "Unsplash",
+   "related": [
+    "ARN × Australian Open"
+   ],
+   "article": {
+    "standfirst": "ARN has locked in five years as the Australian Open's audio partner, and the value is still under wraps.",
+    "body": [
+     "ARN and Tennis Australia have signed a five-year partnership that makes ARN the Australian Open's audio partner and broadcaster from the January 2027 tournament. It was announced on 11 November at ARN's Upfronts. Neither side has put a value on it. The scope runs across radio, iHeart, video, social and live experiences.",
+     "It is a renewal with a bigger commitment attached. ARN first partnered with the AO for the January 2023 tournament, then extended in November 2023 for three more years, through to after the 2026 event. By 2025 the activation included AO Radio on iHeart and entertainment partner roles at Riverside Social and Courtside Bar. Moving from three-year terms to five is the change. ARN Chief Content Officer Kerri Elstub called it \"a huge commitment and a major step up from where we've been.\"",
+     "What ARN is buying is presence on site. Its biggest shows will broadcast from Melbourne Park, starting with KIIS and GOLD Breakfast and running through the workday into Drive with Carrie Bickmore, Jonesy and Amanda, and Smallzy. Eddie McGuire and Abbey Gelmi deliver updates on GOLD Sport. Around that sit a dedicated AO DAB+ channel in Sydney and Melbourne, live streaming on iHeart, and podcasts including Two Good Sports and the AO's official podcast, Pod Laver Arena. Coverage also goes out through ARN's regional network, and the ARE Media relationship stretches the package into food, fashion and lifestyle titles including ELLE and Gourmet Traveller.",
+     "The commercial logic sits in ARN's own numbers. Variety reports that ARN holds about 25 per cent of the metro radio audience but about 18.5 per cent of metro ad revenue, with CEO Michael Stephenson putting each share point at roughly $6 million and the full gap at around $38 million. A tournament that fills Melbourne Park every January gives the sales team a headline property to build packages around, and Elstub's comment that it means more advertiser opportunities points the same way. Mumbrella's read is that it is a major win for ARN, given the focus Seven and Nine have on sporting rights.",
+     "For Tennis Australia, the property is in good shape. The AO26 tournament, from 12 January to 1 February 2026, drew a record 1,368,043 fans over three weeks, up from 1,218,831 in 2025. Chief Commercial Officer Cedric Cornelis said the organisation was \"delighted to welcome ARN as a long-term partner\", and he framed ARN's daily reach as a way to bring tournament moments to fans in new ways. A partner committing for five years also gives the AO a stable audio line-up.",
+     "For ARN this is a summer plan with the AO at the centre. B&T reports content and commercial opportunities across the summer, before and after the tournament, so the partnership is built to run for weeks rather than a fortnight. That is a different shape from a one-off naming or signage partnership, and it suits a radio group that sells time and talent.",
+     "What to watch next: how ARN packages the AO for advertisers once the value is out in the market, how the DAB+ channel and iHeart streams perform in their first January under the new term, and whether the regional rollout and ARE Media tie-ins turn into products that agencies actually buy. The first real test is January 2027."
+    ],
+    "close": "Five years, one tournament, and a radio group betting that January belongs to it."
+   },
+   "sources": [
+    "https://www.bandt.com.au/arn-australian-open-serve-up-multi-year-partnership/",
+    "https://content-technology.com/asia-pacific-news/arn-and-australian-open-landmark-five-year-partnership/",
+    "https://au.variety.com/2026/biz/news/tennis-travel-and-ai-traffic-arn-upfronts-reveals-plans-to-close-38-million-gap-42487/",
+    "https://mumbrella.com.au/arn-ushers-in-a-new-era-at-a-pared-down-upfront-944372",
+    "https://www.mediaweek.com.au/arn-extends-partnership-with-australian-open-for-three-more-years",
+    "https://www.mediaweek.com.au/arn-named-official-audio-partner-2025-australian-open",
+    "https://www.tennis.com.au/content/dam/tennisaustralia/documents/reports/ao-by-the-numbers/AO26-By-the-Numbers.pdf"
+   ],
+   "slug": "2026-11-13-why-arn-doubled-down-on-tennis"
+  },
+  {
    "date": "2026-11-11",
    "label": "Data drop",
    "headline": "AFL clubs barely share sponsors.",
