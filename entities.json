@@ -4304,6 +4304,11 @@
    "name": "BOC Gases",
    "k": "b"
   },
+  "bodo-glimt": {
+   "name": "Bodø/Glimt",
+   "k": "p",
+   "domain": "glimt.no"
+  },
   "bodega-argento": {
    "name": "Bodega Argento",
    "cat": "Alcohol",
@@ -4505,6 +4510,10 @@
   },
   "bradesco": {
    "name": "Bradesco",
+   "k": "b"
+  },
+  "brava-roof-tile": {
+   "name": "Brava Roof Tile",
    "k": "b"
   },
   "bravus": {
@@ -5791,6 +5800,10 @@
     "logo"
    ],
    "cat": "Apparel & footwear",
+   "k": "b"
+  },
+  "castrol": {
+   "name": "Castrol",
    "k": "b"
   },
   "cavendish-farms": {
@@ -8618,6 +8631,10 @@
     "icon"
    ]
   },
+  "dubai-t100": {
+   "name": "Dubai T100",
+   "k": "p"
+  },
   "dubai-world-cup": {
    "name": "Dubai World Cup",
    "ptype": "Event",
@@ -8829,6 +8846,10 @@
    "bf": [
     "icon"
    ]
+  },
+  "ecc-timber-products": {
+   "name": "ECC Timber Products",
+   "k": "b"
   },
   "eckersley-print-group": {
    "name": "Eckersley Print Group",
@@ -9722,6 +9743,10 @@
    "cat": "Collectibles & licensing",
    "k": "b"
   },
+  "fanatics-studios": {
+   "name": "Fanatics Studios",
+   "k": "b"
+  },
   "fancode": {
    "name": "FanCode",
    "cat": "Media & broadcast",
@@ -10264,6 +10289,11 @@
    "ptype": "Athlete & talent",
    "k": "p"
   },
+  "florida-gators": {
+   "name": "Florida Gators",
+   "k": "p",
+   "domain": "floridagators.com"
+  },
   "flow": {
    "name": "Flow",
    "cat": "Technology",
@@ -10791,6 +10821,10 @@
    ],
    "cat": "Insurance",
    "k": "b"
+  },
+  "galway-gaa": {
+   "name": "Galway GAA",
+   "k": "p"
   },
   "gameready-performance": {
    "name": "Gameready Performance",
@@ -12636,6 +12670,11 @@
    "name": "Houseproud Cleaning",
    "k": "b"
   },
+  "houston-texans": {
+   "name": "Houston Texans",
+   "k": "p",
+   "domain": "houstontexans.com"
+  },
   "howden": {
    "name": "Howden",
    "cat": "Insurance",
@@ -13510,6 +13549,11 @@
     "logo"
    ]
   },
+  "iowa-hawkeyes": {
+   "name": "Iowa Hawkeyes",
+   "k": "p",
+   "domain": "hawkeyesports.com"
+  },
   "ipar": {
    "name": "IPAR",
    "cat": "Health & beauty",
@@ -14215,6 +14259,10 @@
   "judo-bank": {
    "name": "Judo Bank",
    "cat": "Banking & finance",
+   "k": "b"
+  },
+  "julius-baer": {
+   "name": "Julius Baer",
    "k": "b"
   },
   "juventus": {
@@ -16502,6 +16550,11 @@
    "cat": "Airlines & travel",
    "k": "b"
   },
+  "mars": {
+   "name": "Mars",
+   "k": "b",
+   "domain": "mars.com"
+  },
   "mars-wrigley": {
    "name": "Mars Wrigley",
    "cat": "Food & nutrition",
@@ -18186,6 +18239,10 @@
     "logo"
    ]
   },
+  "mws": {
+   "name": "MWS",
+   "k": "b"
+  },
   "mx3-diagnostics": {
    "name": "MX3 Diagnostics",
    "k": "b"
@@ -18447,6 +18504,10 @@
    "cat": "Gaming & esports",
    "k": "b"
   },
+  "nba-all-star": {
+   "name": "NBA All-Star",
+   "k": "p"
+  },
   "nba-wnba": {
    "name": "NBA / WNBA"
   },
@@ -18627,6 +18688,11 @@
    "bf": [
     "icon"
    ]
+  },
+  "netball-world-cup-sydney-2027": {
+   "name": "Netball World Cup Sydney 2027",
+   "k": "p",
+   "domain": "nwc2027.com"
   },
   "netflix": {
    "name": "Netflix",
@@ -20559,6 +20625,11 @@
    ],
    "cat": "Fintech, crypto & trading",
    "k": "b"
+  },
+  "pbr": {
+   "name": "PBR",
+   "k": "p",
+   "domain": "pbr.com"
   },
   "peak-property-services": {
    "name": "Peak Property Services",
@@ -23226,6 +23297,10 @@
    "cat": "Professional services",
    "k": "b"
   },
+  "rtl-deutschland": {
+   "name": "RTL Deutschland",
+   "k": "b"
+  },
   "rugby-australia": {
    "name": "Rugby Australia",
    "ptype": "Governing body",
@@ -23693,6 +23768,10 @@
     "icon",
     "logo"
    ]
+  },
+  "saxo-bank": {
+   "name": "Saxo Bank",
+   "k": "b"
   },
   "sba-earthmoving-attachments": {
    "name": "SBA Earthmoving Attachments",
@@ -25697,6 +25776,10 @@
    "cat": "Automotive",
    "k": "b"
   },
+  "stockton-kings": {
+   "name": "Stockton Kings",
+   "k": "p"
+  },
   "stoic360": {
    "name": "Stoic360",
    "cat": "Other",
@@ -26165,6 +26248,10 @@
    "bf": [
     "icon"
    ]
+  },
+  "sutter-health": {
+   "name": "Sutter Health",
+   "k": "b"
   },
   "suzuki": {
    "name": "Suzuki",
@@ -27054,6 +27141,10 @@
    "cat": "Logistics & transport",
    "k": "b"
   },
+  "the-cw": {
+   "name": "The CW",
+   "k": "b"
+  },
   "the-daily-telegraph": {
    "name": "The Daily Telegraph",
    "k": "b"
@@ -27687,6 +27778,10 @@
    "cat": "Education",
    "k": "b"
   },
+  "total-chess": {
+   "name": "Total Chess",
+   "k": "p"
+  },
   "total-fusion": {
    "name": "Total Fusion",
    "k": "b"
@@ -27829,6 +27924,10 @@
     "logo"
    ]
   },
+  "tower-hill-insurance": {
+   "name": "Tower Hill Insurance",
+   "k": "b"
+  },
   "town-and-country": {
    "name": "Town and Country",
    "cat": "Other",
@@ -27930,6 +28029,10 @@
   },
   "trade-up": {
    "name": "Trade Up",
+   "k": "b"
+  },
+  "tradeify": {
+   "name": "Tradeify",
    "k": "b"
   },
   "tradie": {
@@ -30496,6 +30599,10 @@
    "aliases": [
     "World Surf League Australia"
    ]
+  },
+  "world-team-tennis": {
+   "name": "World Team Tennis",
+   "k": "p"
   },
   "world-wide-technology": {
    "name": "World Wide Technology",
