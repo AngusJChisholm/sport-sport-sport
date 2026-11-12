@@ -10233,18 +10233,6 @@
    "needsSource": true
   },
   {
-   "date": "2026-09-29",
-   "deal": "Club Racing Australia × Penrith Panthers",
-   "sport": "NRL",
-   "type": "Foundation partner",
-   "region": "ANZ",
-   "summary": "Club Racing Australia becomes a foundation partner of the Panthers, Roosters and Sea Eagles.",
-   "tier": "Principal & major",
-   "status": "New",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
    "date": "2026-09-28",
    "deal": "Coca-Cola Europacific Partners × PNG Chiefs",
    "sport": "NRL",
@@ -10254,19 +10242,6 @@
    "tier": "Principal & major",
    "status": "New",
    "url": "https://www.zerotackle.com/png-chiefs-secure-major-partnership-with-globally-recognised-brand-238516/"
-  },
-  {
-   "date": "2026-09-29",
-   "deal": "Samoa Beverages × Melbourne Storm",
-   "sport": "NRL",
-   "type": "Official partner",
-   "region": "ANZ",
-   "summary": "Samoa Beverages becomes the Storm's water and soft drink partner through 2027.",
-   "tier": "Official partner",
-   "status": "New",
-   "ends": 2027,
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
   },
   {
    "date": "2026-09-22",
@@ -10280,85 +10255,16 @@
    "url": "https://www.world.rugby/news/1047348/ihg-hotels-resorts-joins-as-official-partner-of-mens-rugby-world-cup-2027"
   },
   {
-   "date": "2026-09-29",
-   "deal": "Bayleys × Crusaders",
-   "sport": "Rugby union",
-   "type": "Renewal",
-   "region": "ANZ",
-   "summary": "Bayleys Canterbury renews with the Crusaders for three years.",
-   "tier": "Official partner",
-   "status": "Renewal",
-   "term": 3,
-   "ends": 2029,
-   "endsEst": true,
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-09-29",
-   "deal": "HART Sport × Queensland Cricket",
-   "sport": "Cricket",
-   "type": "Official supplier",
-   "region": "ANZ",
-   "summary": "HART Sport becomes Queensland Cricket's equipment supplier for two years.",
-   "tier": "Official partner",
-   "status": "New",
-   "term": 2,
-   "ends": 2028,
-   "endsEst": true,
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-09-29",
-   "deal": "Yonex × Badminton Australia",
-   "sport": "Badminton",
-   "type": "Renewal",
-   "region": "ANZ",
-   "summary": "Yonex renews with Badminton Australia for two years.",
-   "tier": "Official partner",
-   "status": "Renewal",
-   "term": 2,
-   "ends": 2028,
-   "endsEst": true,
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-09-29",
-   "deal": "Omoda Jaecoo × NZ Breakers",
-   "sport": "Basketball",
-   "type": "Official supplier",
-   "region": "ANZ",
-   "summary": "Omoda Jaecoo becomes the Breakers' official vehicle supplier for NBL27.",
-   "tier": "Official partner",
-   "status": "New",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-09-29",
-   "deal": "Snap Fitness × Perth Wildcats",
-   "sport": "Basketball",
-   "type": "Official partner",
-   "region": "ANZ",
-   "summary": "Snap Fitness becomes the Wildcats' official gym partner.",
-   "tier": "Official partner",
-   "status": "New",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
-  },
-  {
-   "date": "2026-09-29",
+   "date": "2026-10-08",
    "deal": "7-Eleven × NBL",
    "sport": "Basketball",
    "type": "Presenting partner",
    "region": "ANZ",
-   "summary": "7-Eleven presents the NBL Ignite Cup for NBL27.",
+   "summary": "New presenting partner of the NBL's in-season Ignite Cup tournament.",
    "tier": "Official partner",
    "status": "New",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
+   "sourceTried": "2026-11-03",
+   "url": "https://www.sportcal.com/news/nbl-boosts-sponsorship-slate-with-12-new-agreements-and-10-renewals/"
   },
   {
    "date": "2026-09-29",
@@ -10369,20 +10275,21 @@
    "summary": "Chicken Treat becomes Perth Glory's principal partner.",
    "tier": "Principal & major",
    "status": "New",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
+   "sourceTried": "2026-11-03",
+   "url": "https://www.businessnews.com.au/article/Perth-Glory-rekindles-Chicken-Treat-partnership"
   },
   {
-   "date": "2026-09-29",
+   "date": "2025-08-11",
    "deal": "Focus Construct × Brisbane Roar",
    "sport": "Football",
-   "type": "Major partner",
+   "type": "Sleeve sponsor",
    "region": "ANZ",
-   "summary": "Focus Construct becomes a Brisbane Roar major partner.",
+   "summary": "Named A-League Men sleeve sponsor on the home, away and third jerseys for two seasons.",
    "tier": "Principal & major",
    "status": "New",
-   "needsSource": true,
-   "sourceTried": "2026-11-03"
+   "sourceTried": "2026-11-03",
+   "url": "https://brisbaneroar.com.au/news/brisbane-roar-connects-with-focus-construct-as-the-a-league-men-playing-jersey-sleeve-partner/",
+   "term": "2 seasons"
   },
   {
    "date": "2026-09-29",
@@ -46328,18 +46235,6 @@
   },
   {
    "listed": "2026-10-30",
-   "deal": "BHP Mitsubishi Alliance × Queensland Firebirds",
-   "sport": "Netball",
-   "type": "Official partner",
-   "region": "ANZ",
-   "summary": "Listed as an official partner on the club's official partners page.",
-   "url": "https://firebirds.net.au/partners",
-   "tier": "Official partner",
-   "status": "Current partner",
-   "ptier": "Official partner"
-  },
-  {
-   "listed": "2026-10-30",
    "deal": "Coca-Cola × Queensland Firebirds",
    "sport": "Netball",
    "type": "Official partner",
@@ -53942,18 +53837,6 @@
   },
   {
    "listed": "2026-11-10",
-   "deal": "Bravus × North Queensland Cowboys",
-   "sport": "NRL",
-   "type": "Platinum partner",
-   "region": "ANZ",
-   "summary": "Listed as a platinum partner on North Queensland Cowboys's official partners page.",
-   "url": "https://www.cowboys.com.au/partners/partners/",
-   "ptier": "Platinum partner",
-   "tier": "Principal & major",
-   "status": "Current partner"
-  },
-  {
-   "listed": "2026-11-10",
    "deal": "Deadly Choices × North Queensland Cowboys",
    "sport": "NRL",
    "type": "Major partner",
@@ -54035,18 +53918,6 @@
    "status": "New",
    "ptier": "Apparel partner",
    "tier": "Official partner"
-  },
-  {
-   "listed": "2026-11-10",
-   "deal": "THE ICONIC × Newcastle Knights",
-   "sport": "NRL",
-   "type": "NRLW partner",
-   "region": "ANZ",
-   "summary": "Listed as a nRLW partner on Newcastle Knights's official partners page.",
-   "url": "https://www.newcastleknights.com.au/about/sponsors/",
-   "ptier": "NRLW partner",
-   "tier": "Official partner",
-   "status": "Current partner"
   },
   {
    "listed": "2026-11-10",
@@ -55043,6 +54914,534 @@
    "ptier": "Official telecommunications partner",
    "tier": "Official partner",
    "status": "Current partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Telstra × NRL",
+   "sport": "NRL",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Premier partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Ampol × NRL",
+   "sport": "NRL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Major partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Harvey Norman × NRL",
+   "sport": "NRL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Major partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Hostplus × NRL",
+   "sport": "NRL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Major partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Kia × NRL",
+   "sport": "NRL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Major partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "KFC × NRL",
+   "sport": "NRL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Major partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Sportsbet × NRL",
+   "sport": "NRL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Major partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Swyftx × NRL",
+   "sport": "NRL",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Major partner"
+  },
+  {
+   "date": "2022-10-28",
+   "deal": "Westpac × NRL",
+   "sport": "NRL",
+   "type": "Official bank and payment platform",
+   "summary": "New partnership starting 1 November 2022, covering the men's and women's game plus the match ball and Community Awards.",
+   "url": "https://nrl.com/news/2022/10/28/westpac--nrl-partnership-a-whole-new-ball-game-for-mens-and-womens-rugby-league",
+   "status": "New"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Anaconda × NRL",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Ancestry × NRL",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Steeden × NRL",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Accor × NRL",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "DrinkWise × NRL",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Hard Rated × NRL",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "date": "2024-10-05",
+   "deal": "Red Bull × NRL",
+   "sport": "NRL",
+   "type": "Official energy drink partner",
+   "summary": "Named official energy drink partner of the NRL and NRLW from 2025.",
+   "url": "https://nrl.com/news/2024/10/05/nrl-announces-red-bull-as-official-energy-drink-partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Cover-More × NRL",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Deadly Choices × NRL",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Dare × NRL",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "MJ Bale × NRL",
+   "sport": "NRL",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Listed as a official partner on NRL's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "Official partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Telstra × NRLW",
+   "sport": "NRL",
+   "type": "NRLW partner",
+   "region": "ANZ",
+   "summary": "Listed as a nRLW partner on NRLW's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "NRLW partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Chemist Warehouse × NRLW",
+   "sport": "NRL",
+   "type": "NRLW partner",
+   "region": "ANZ",
+   "summary": "Listed as a nRLW partner on NRLW's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "NRLW partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Swyftx × NRLW",
+   "sport": "NRL",
+   "type": "NRLW partner",
+   "region": "ANZ",
+   "summary": "Listed as a nRLW partner on NRLW's official partners page.",
+   "url": "https://nrl.com/about-us/partners",
+   "ptier": "NRLW partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Aussie Broadband × Western Sydney Wanderers",
+   "sport": "Football",
+   "type": "Senior partner",
+   "region": "ANZ",
+   "summary": "Listed as a senior partner on Western Sydney Wanderers's official partners page.",
+   "url": "https://wswanderersfc.com.au/partnerships/",
+   "ptier": "Senior partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Blacktown Council × Western Sydney Wanderers",
+   "sport": "Football",
+   "type": "Senior partner",
+   "region": "ANZ",
+   "summary": "Listed as a senior partner on Western Sydney Wanderers's official partners page.",
+   "url": "https://wswanderersfc.com.au/partnerships/",
+   "ptier": "Senior partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "JD Sports × Western Sydney Wanderers",
+   "sport": "Football",
+   "type": "Senior partner",
+   "region": "ANZ",
+   "summary": "Listed as a senior partner on Western Sydney Wanderers's official partners page.",
+   "url": "https://wswanderersfc.com.au/partnerships/",
+   "ptier": "Senior partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Reclaim the Game × Western Sydney Wanderers",
+   "sport": "Football",
+   "type": "Senior partner",
+   "region": "ANZ",
+   "summary": "Listed as a senior partner on Western Sydney Wanderers's official partners page.",
+   "url": "https://wswanderersfc.com.au/partnerships/",
+   "ptier": "Senior partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Transport for NSW × Western Sydney Wanderers",
+   "sport": "Football",
+   "type": "Senior partner",
+   "region": "ANZ",
+   "summary": "Listed as a senior partner on Western Sydney Wanderers's official partners page.",
+   "url": "https://wswanderersfc.com.au/partnerships/",
+   "ptier": "Senior partner"
+  },
+  {
+   "date": "2025-10-02",
+   "deal": "Turner Freeman Lawyers × Western Sydney Wanderers",
+   "sport": "Football",
+   "type": "Co-major partner",
+   "summary": "Law firm extends as co-major partner, with front-of-shirt branding on the away and third jerseys.",
+   "url": "https://wswanderersfc.com.au/news/turner-freeman-lawyers-extend-co-major-partnership-with-wanderers/",
+   "status": "Extension",
+   "term": "3 years",
+   "ends": 2028,
+   "region": "ANZ"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Better Life Mobile × Macarthur FC",
+   "sport": "Football",
+   "type": "Major sponsor",
+   "region": "ANZ",
+   "summary": "Listed as a major sponsor on Macarthur FC's official partners page.",
+   "url": "https://macarthurfc.com.au/our-partners/",
+   "ptier": "Major sponsor"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Cabravale Club Resort × Macarthur FC",
+   "sport": "Football",
+   "type": "Major sponsor",
+   "region": "ANZ",
+   "summary": "Listed as a major sponsor on Macarthur FC's official partners page.",
+   "url": "https://macarthurfc.com.au/our-partners/",
+   "ptier": "Major sponsor"
+  },
+  {
+   "date": "2025-10-01",
+   "deal": "STM × Macarthur FC",
+   "sport": "Football",
+   "type": "Official back-of-shirt sponsor",
+   "summary": "Inaugural club partner extends its back-of-shirt deal by two years.",
+   "url": "https://macarthurfc.com.au/news/stm-extends-partnership-with-macarthur-bulls-for-two-more-years/",
+   "status": "Extension",
+   "term": "2 years",
+   "region": "ANZ"
+  },
+  {
+   "date": "2024-08-23",
+   "deal": "Polytec × Central Coast Mariners",
+   "sport": "Football",
+   "type": "Front of shirt sponsor",
+   "summary": "Five-year front-of-shirt deal for the A-League Men's team, the club's biggest commercial deal to date.",
+   "url": "https://ccmariners.com.au/?p=322462",
+   "term": "5 years"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "McDonald's × Central Coast Mariners",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Central Coast Mariners's official partners page.",
+   "url": "https://ccmariners.com.au/corporate/corporate-partners/",
+   "ptier": "Premier partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "University of Newcastle × Central Coast Mariners",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Central Coast Mariners's official partners page.",
+   "url": "https://ccmariners.com.au/corporate/corporate-partners/",
+   "ptier": "Premier partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Star 104.5 × Central Coast Mariners",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Central Coast Mariners's official partners page.",
+   "url": "https://ccmariners.com.au/corporate/corporate-partners/",
+   "ptier": "Premier partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "nib × Newcastle Jets",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on Newcastle Jets's official partners page.",
+   "url": "https://newcastlejetsfc.com.au/our-partners/",
+   "ptier": "Major partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Greater Bank × Newcastle Jets",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on Newcastle Jets's official partners page.",
+   "url": "https://newcastlejetsfc.com.au/our-partners/",
+   "ptier": "Major partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Spartan Race × Newcastle Jets",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on Newcastle Jets's official partners page.",
+   "url": "https://newcastlejetsfc.com.au/our-partners/",
+   "ptier": "Major partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Cardiff Motor Group × Newcastle Jets",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on Newcastle Jets's official partners page.",
+   "url": "https://newcastlejetsfc.com.au/our-partners/",
+   "ptier": "Major partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Senix × Newcastle Jets",
+   "sport": "Football",
+   "type": "Major partner",
+   "region": "ANZ",
+   "summary": "Listed as a major partner on Newcastle Jets's official partners page.",
+   "url": "https://newcastlejetsfc.com.au/our-partners/",
+   "ptier": "Major partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "AIA × Melbourne Victory",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Melbourne Victory's official partners page.",
+   "url": "https://melbournevictory.com.au/club/partners/",
+   "ptier": "Premier partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Comwireit × Melbourne Victory",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Melbourne Victory's official partners page.",
+   "url": "https://melbournevictory.com.au/club/partners/",
+   "ptier": "Premier partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Apparel2U × Melbourne Victory",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Melbourne Victory's official partners page.",
+   "url": "https://melbournevictory.com.au/club/partners/",
+   "ptier": "Premier partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Love The Game × Melbourne Victory",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Melbourne Victory's official partners page.",
+   "url": "https://melbournevictory.com.au/club/partners/",
+   "ptier": "Premier partner"
+  },
+  {
+   "date": "2022-10-31",
+   "deal": "Sharp EIT Solutions × Western United",
+   "sport": "Football",
+   "type": "Platinum partner and technology partner",
+   "summary": "New platinum partner and the club's first-ever front-of-shirt sponsor in the A-League Women, for the 2022/23 season.",
+   "url": "https://wufc.com.au/?p=166093",
+   "status": "New"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Wyndham City × Western United",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Western United's official partners page.",
+   "url": "https://wufc.com.au/corporate/partners/",
+   "ptier": "Premier partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Victoria University × Western United",
+   "sport": "Football",
+   "type": "Premier partner",
+   "region": "ANZ",
+   "summary": "Listed as a premier partner on Western United's official partners page.",
+   "url": "https://wufc.com.au/corporate/partners/",
+   "ptier": "Premier partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Werribee Automotive Group × Western United",
+   "sport": "Football",
+   "type": "Platinum partner",
+   "region": "ANZ",
+   "summary": "Listed as a platinum partner on Western United's official partners page.",
+   "url": "https://wufc.com.au/corporate/partners/",
+   "ptier": "Platinum partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Kappa × Western United",
+   "sport": "Football",
+   "type": "Platinum partner",
+   "region": "ANZ",
+   "summary": "Listed as a platinum partner on Western United's official partners page.",
+   "url": "https://wufc.com.au/corporate/partners/",
+   "ptier": "Platinum partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Silvan's × Western United",
+   "sport": "Football",
+   "type": "Platinum partner",
+   "region": "ANZ",
+   "summary": "Listed as a platinum partner on Western United's official partners page.",
+   "url": "https://wufc.com.au/corporate/partners/",
+   "ptier": "Platinum partner"
+  },
+  {
+   "listed": "2026-11-12",
+   "deal": "Red Bull × Western United",
+   "sport": "Football",
+   "type": "Platinum partner",
+   "region": "ANZ",
+   "summary": "Listed as a platinum partner on Western United's official partners page.",
+   "url": "https://wufc.com.au/corporate/partners/",
+   "ptier": "Platinum partner"
+  },
+  {
+   "date": "2026-03-10",
+   "deal": "Constantinou Group × PNG Chiefs",
+   "sport": "NRL",
+   "type": "Accommodation partner",
+   "summary": "Accommodation partner for the Chiefs, with player housing at the Airways resort in Port Moresby ready from November 2027.",
+   "url": "https://www.nrl.com/news/2026/03/10/accommodation-partner-confirmed-for-png-chiefs",
+   "status": "New",
+   "region": "ANZ"
   }
  ]
 }

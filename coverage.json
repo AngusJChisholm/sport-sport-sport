@@ -388,9 +388,9 @@
    "country": "AU",
    "state": "National",
    "tier": 1,
-   "partnersUrl": null,
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://nrl.com/about-us/partners",
+   "lastChecked": "2026-11-12",
+   "onPage": 38
   },
   {
    "name": "NRLW",
@@ -398,9 +398,9 @@
    "country": "AU",
    "state": "National",
    "tier": 1,
-   "partnersUrl": null,
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://nrl.com/about-us/partners",
+   "lastChecked": "2026-11-12",
+   "onPage": 6
   },
   {
    "name": "NZ Warriors",
@@ -438,9 +438,9 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://wswanderersfc.com.au/partnerships/",
+   "lastChecked": "2026-11-12",
+   "onPage": 17
   },
   {
    "name": "Macarthur FC",
@@ -448,9 +448,9 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://macarthurfc.com.au/our-partners/",
+   "lastChecked": "2026-11-12",
+   "onPage": 6
   },
   {
    "name": "Central Coast Mariners",
@@ -458,9 +458,9 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://ccmariners.com.au/corporate/corporate-partners/",
+   "lastChecked": "2026-11-12",
+   "onPage": 17
   },
   {
    "name": "Newcastle Jets",
@@ -468,9 +468,9 @@
    "country": "AU",
    "state": "NSW",
    "tier": 1,
-   "partnersUrl": null,
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://newcastlejetsfc.com.au/our-partners/",
+   "lastChecked": "2026-11-12",
+   "onPage": 45
   },
   {
    "name": "Melbourne Victory",
@@ -478,9 +478,9 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://melbournevictory.com.au/club/partners/",
+   "lastChecked": "2026-11-12",
+   "onPage": 36
   },
   {
    "name": "Melbourne City FC",
@@ -489,8 +489,8 @@
    "state": "VIC",
    "tier": 1,
    "partnersUrl": "https://www.melbournecityfc.com.au/partners",
-   "lastChecked": null,
-   "onPage": null
+   "lastChecked": "2026-11-12",
+   "onPage": 21
   },
   {
    "name": "Western United",
@@ -498,9 +498,9 @@
    "country": "AU",
    "state": "VIC",
    "tier": 1,
-   "partnersUrl": null,
-   "lastChecked": null,
-   "onPage": null
+   "partnersUrl": "https://wufc.com.au/corporate/partners/",
+   "lastChecked": "2026-11-12",
+   "onPage": 70
   },
   {
    "name": "Brisbane Roar",

@@ -5921,7 +5921,14 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Premier partner",
+    "Associate partner",
+    "Corporate supporter"
+   ],
+   "ptiersChecked": "2026-11-12"
   },
   "central-coast-stadium": {
    "name": "Central Coast Stadium",
@@ -16320,7 +16327,11 @@
     "icon"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major sponsor"
+   ],
+   "ptiersChecked": "2026-11-12"
   },
   "macbrook-gas": {
    "name": "Macbrook Gas",
@@ -16970,7 +16981,8 @@
     "Premier partner",
     "Associate partner",
     "Official supplier"
-   ]
+   ],
+   "ptiersChecked": "2026-11-12"
   },
   "melbourne-cup": {
    "name": "Melbourne Cup",
@@ -17090,11 +17102,13 @@
    "ptiers": [
     "Principal partner",
     "Major partner",
+    "Premier partner",
     "Associate partner",
     "Official partner",
     "Media partner",
     "Ticketing partner"
-   ]
+   ],
+   "ptiersChecked": "2026-11-12"
   },
   "melbourne-vixens": {
    "name": "Melbourne Vixens",
@@ -18915,7 +18929,14 @@
    "domain": "newcastlejets.com.au",
    "bf": [],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Major partner",
+    "Club partner",
+    "Official partner",
+    "Media partner"
+   ],
+   "ptiersChecked": "2026-11-12"
   },
   "newcastle-knights": {
    "name": "Newcastle Knights",
@@ -19461,7 +19482,16 @@
     "logo"
    ],
    "ptype": "League & competition",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Premier partner",
+    "Major partner",
+    "Official partner",
+    "NRLW partner",
+    "Government partner",
+    "Media partner"
+   ],
+   "ptiersChecked": "2026-11-12"
   },
   "nrlw": {
    "name": "NRLW",
@@ -19471,7 +19501,11 @@
     "logo"
    ],
    "ptype": "League & competition",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "NRLW partner"
+   ],
+   "ptiersChecked": "2026-11-12"
   },
   "nrma-insurance": {
    "name": "NRMA Insurance",
@@ -28323,7 +28357,21 @@
     "icon"
    ],
    "cat": "Automotive",
-   "k": "b"
+   "k": "b",
+   "mkt": "b2c",
+   "aud": [
+    "drivers",
+    "families",
+    "local"
+   ],
+   "align": [
+    "community",
+    "automotive",
+    "equality"
+   ],
+   "pnote": "Backs motorsport, NBL, AFL, NRL and netball clubs to connect its independent local stores with fans and communities, with a push into women's sport and grassroots.",
+   "psrc": "https://www.tyrepower.com.au/sponsors",
+   "profiled": "2026-11-12"
   },
   "tyres-more": {
    "name": "Tyres & More",
@@ -30070,7 +30118,12 @@
     "logo"
    ],
    "ptype": "Club & team",
-   "k": "p"
+   "k": "p",
+   "ptiers": [
+    "Co-major sponsor",
+    "Senior partner"
+   ],
+   "ptiersChecked": "2026-11-12"
   },
   "western-united": {
    "name": "Western United",
@@ -30078,7 +30131,15 @@
    "bf": [
     "icon"
    ],
-   "ptype": "Club & team"
+   "ptype": "Club & team",
+   "ptiers": [
+    "Principal partner",
+    "Premier partner",
+    "Platinum partner",
+    "Gold partner",
+    "Associate partner"
+   ],
+   "ptiersChecked": "2026-11-12"
   },
   "westfield": {
    "name": "Westfield",
@@ -31289,6 +31350,80 @@
     "icon",
     "logo"
    ]
+  },
+  "cover-more": {
+   "name": "Cover-More",
+   "k": "b"
+  },
+  "dare": {
+   "name": "Dare",
+   "k": "b"
+  },
+  "mj-bale": {
+   "name": "MJ Bale",
+   "k": "b"
+  },
+  "blacktown-council": {
+   "name": "Blacktown Council",
+   "k": "b"
+  },
+  "better-life-mobile": {
+   "name": "Better Life Mobile",
+   "k": "b",
+   "domain": "betterlifemobile.com.au"
+  },
+  "cabravale-club-resort": {
+   "name": "Cabravale Club Resort",
+   "k": "b",
+   "domain": "cabravale.com.au"
+  },
+  "stm": {
+   "name": "STM",
+   "k": "b",
+   "domain": "stm.com.au"
+  },
+  "star-104-5": {
+   "name": "Star 104.5",
+   "k": "b",
+   "domain": "star1045.com.au"
+  },
+  "spartan-race": {
+   "name": "Spartan Race",
+   "k": "b"
+  },
+  "cardiff-motor-group": {
+   "name": "Cardiff Motor Group",
+   "k": "b",
+   "domain": "cardiffmotorgroup.com.au"
+  },
+  "senix": {
+   "name": "Senix",
+   "k": "b",
+   "domain": "senix.com.au"
+  },
+  "comwireit": {
+   "name": "Comwireit",
+   "k": "b"
+  },
+  "apparel2u": {
+   "name": "Apparel2U",
+   "k": "b"
+  },
+  "wyndham-city": {
+   "name": "Wyndham City",
+   "k": "b"
+  },
+  "werribee-automotive-group": {
+   "name": "Werribee Automotive Group",
+   "k": "b"
+  },
+  "silvan-s": {
+   "name": "Silvan's",
+   "k": "b"
+  },
+  "constantinou-group": {
+   "name": "Constantinou Group",
+   "k": "b"
   }
  },
  "leagues": [
