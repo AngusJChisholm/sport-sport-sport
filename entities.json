@@ -4304,11 +4304,6 @@
    "name": "BOC Gases",
    "k": "b"
   },
-  "bodo-glimt": {
-   "name": "Bodø/Glimt",
-   "k": "p",
-   "domain": "glimt.no"
-  },
   "bodega-argento": {
    "name": "Bodega Argento",
    "cat": "Alcohol",
@@ -4317,6 +4312,11 @@
    "bf": [
     "icon"
    ]
+  },
+  "bodo-glimt": {
+   "name": "Bodø/Glimt",
+   "k": "p",
+   "domain": "glimt.no"
   },
   "bombay-sapphire": {
    "name": "Bombay Sapphire",
@@ -5804,7 +5804,8 @@
   },
   "castrol": {
    "name": "Castrol",
-   "k": "b"
+   "k": "b",
+   "cat": "Automotive"
   },
   "cavendish-farms": {
    "name": "Cavendish Farms",
@@ -8849,7 +8850,8 @@
   },
   "ecc-timber-products": {
    "name": "ECC Timber Products",
-   "k": "b"
+   "k": "b",
+   "cat": "Construction & property"
   },
   "eckersley-print-group": {
    "name": "Eckersley Print Group",
@@ -9745,7 +9747,8 @@
   },
   "fanatics-studios": {
    "name": "Fanatics Studios",
-   "k": "b"
+   "k": "b",
+   "cat": "Collectibles & licensing"
   },
   "fancode": {
    "name": "FanCode",
@@ -16553,7 +16556,8 @@
   "mars": {
    "name": "Mars",
    "k": "b",
-   "domain": "mars.com"
+   "domain": "mars.com",
+   "cat": "Food & nutrition"
   },
   "mars-wrigley": {
    "name": "Mars Wrigley",
@@ -23771,7 +23775,8 @@
   },
   "saxo-bank": {
    "name": "Saxo Bank",
-   "k": "b"
+   "k": "b",
+   "cat": "Banking & finance"
   },
   "sba-earthmoving-attachments": {
    "name": "SBA Earthmoving Attachments",
@@ -26251,7 +26256,8 @@
   },
   "sutter-health": {
    "name": "Sutter Health",
-   "k": "b"
+   "k": "b",
+   "cat": "Health & beauty"
   },
   "suzuki": {
    "name": "Suzuki",
@@ -27926,7 +27932,8 @@
   },
   "tower-hill-insurance": {
    "name": "Tower Hill Insurance",
-   "k": "b"
+   "k": "b",
+   "cat": "Insurance"
   },
   "town-and-country": {
    "name": "Town and Country",

@@ -12,7 +12,9 @@
    "type": "Official partner",
    "region": "ANZ",
    "summary": "HCF becomes the tournament's inaugural Official Partner, taking its netball backing from grassroots to the World Cup, with priority ticket access for members.",
-   "url": "https://newshub.medianet.com.au/2026/11/hcf-joins-netball-world-cup-sydney-2027-as-inaugural-official-partner/180381/"
+   "url": "https://newshub.medianet.com.au/2026/11/hcf-joins-netball-world-cup-sydney-2027-as-inaugural-official-partner/180381/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-12",
@@ -22,7 +24,12 @@
    "type": "Extension",
    "region": "ANZ",
    "summary": "Two-year extension through 2028 keeps BMA as an Official Partner of Netball Queensland and the Firebirds and Foundation Partner of the Firebirds Academy, with branding on the playing dress.",
-   "url": "https://ministryofsport.com/bhp-mitsubishi-alliance-extends-queensland-firebirds-partnership-through-2028/"
+   "url": "https://ministryofsport.com/bhp-mitsubishi-alliance-extends-queensland-firebirds-partnership-through-2028/",
+   "tier": "Official partner",
+   "status": "Extension",
+   "term": 2,
+   "ends": 2028,
+   "ptier": "Official partner"
   },
   {
    "date": "2026-11-12",
@@ -32,7 +39,10 @@
    "type": "Extension",
    "region": "ANZ",
    "summary": "Tyrepower stays on as a premium partner of the Supercars team into 2027, appearing on both the #4 and #10 Camaros.",
-   "url": "https://www.v8sleuth.com.au/matt-stone-racing-locks-in-key-sponsor/"
+   "url": "https://www.v8sleuth.com.au/matt-stone-racing-locks-in-key-sponsor/",
+   "tier": "Official partner",
+   "status": "Renewal",
+   "ends": 2027
   },
   {
    "date": "2026-11-12",
@@ -42,7 +52,9 @@
    "type": "Partnership",
    "region": "Global",
    "summary": "Multi-year partnership lets Texans fans bid on game-worn jerseys, game-used footballs and other gear through MWS auctions.",
-   "url": "https://www.houstontexans.com/news/houston-texans-announce-partnership-with-mws"
+   "url": "https://www.houstontexans.com/news/houston-texans-announce-partnership-with-mws",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-12",
@@ -52,7 +64,9 @@
    "type": "Official partner",
    "region": "Global",
    "summary": "US futures prop-trading firm Tradeify signs a multi-year deal as Inter Miami's Official Trading Partner.",
-   "url": "https://www.financemagnates.com/forex/prop-firm-tradeify-expands-beyond-futures-with-inter-miami-cf-deal/"
+   "url": "https://www.financemagnates.com/forex/prop-firm-tradeify-expands-beyond-futures-with-inter-miami-cf-deal/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-12",
@@ -62,7 +76,9 @@
    "type": "Presenting partner",
    "region": "Global",
    "summary": "Coinbase becomes presenting partner of WTT's relaunched 47th season, funding the whole sponsorship in USDC stablecoin.",
-   "url": "https://sportsmintmedia.com/coinbase-becomes-presenting-partner-of-world-team-tennis-2026-relaunch/"
+   "url": "https://sportsmintmedia.com/coinbase-becomes-presenting-partner-of-world-team-tennis-2026-relaunch/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-12",
@@ -72,7 +88,9 @@
    "type": "Production partner",
    "region": "Global",
    "summary": "Multiyear deal names the Fanatics and OBB venture as creative and event production partner for NBA All-Star.",
-   "url": "https://pr.nba.com/nba-fanatics-studios-all-star"
+   "url": "https://pr.nba.com/nba-fanatics-studios-all-star",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-11",
@@ -82,7 +100,9 @@
    "type": "Naming rights",
    "region": "Global",
    "summary": "Tower Hill takes naming rights to the arena inside the O'Connell Center, now Tower Hill Arena, plus broadcast, hospitality and NIL assets.",
-   "url": "https://floridagators.com/news/2026/11/11/tower-hill-insurance-makes-significant-investment-in-gator-athletics-with-naming-rights-to-tower-hill-arena"
+   "url": "https://floridagators.com/news/2026/11/11/tower-hill-insurance-makes-significant-investment-in-gator-athletics-with-naming-rights-to-tower-hill-arena",
+   "tier": "Naming rights",
+   "status": "New"
   },
   {
    "date": "2026-11-10",
@@ -92,7 +112,10 @@
    "type": "Official partner",
    "region": "Global",
    "summary": "Castrol returns to Euroleague Basketball as official automotive oil and fuel partner in Türkiye across the EuroLeague and EuroCup for 2026-27 and 2027-28.",
-   "url": "https://ministryofsport.com/castrol-rejoins-euroleague-basketball-commercial-portfolio-as-official-partner-in-turkiye/"
+   "url": "https://ministryofsport.com/castrol-rejoins-euroleague-basketball-commercial-portfolio-as-official-partner-in-turkiye/",
+   "tier": "Official partner",
+   "status": "New",
+   "ends": 2028
   },
   {
    "date": "2026-11-10",
@@ -102,7 +125,10 @@
    "type": "Media rights",
    "region": "Global",
    "summary": "Multi-year extension keeps The CW as the exclusive live Sunday broadcast home of PBR Teams series events through 2029.",
-   "url": "https://www.pbr.com/news/2026/11/the-cw-network-and-pbr-announce-multi-year-extension-to-broadcast-pbr-teams-series-events/"
+   "url": "https://www.pbr.com/news/2026/11/the-cw-network-and-pbr-announce-multi-year-extension-to-broadcast-pbr-teams-series-events/",
+   "tier": "Media & broadcast",
+   "status": "Extension",
+   "ends": 2029
   },
   {
    "date": "2026-11-10",
@@ -112,7 +138,9 @@
    "type": "Media rights",
    "region": "Global",
    "summary": "Expanded deal brings NHL games to free-to-air TV in Germany, including Monday Night Hockey and the NHL Global Series games in Germany.",
-   "url": "https://www.nhl.com/news/nhl-expands-media-rights-agreement-with-rtl-deutschland-for-free-to-air-coverage"
+   "url": "https://www.nhl.com/news/nhl-expands-media-rights-agreement-with-rtl-deutschland-for-free-to-air-coverage",
+   "tier": "Media & broadcast",
+   "status": "Expansion"
   },
   {
    "date": "2026-11-10",
@@ -122,7 +150,9 @@
    "type": "Production partner renewal",
    "region": "Global",
    "summary": "Mediapro renews to produce Prime Video's Spanish-language NBA coverage for a second straight season, run from studios in Spain and Mexico.",
-   "url": "https://www.advanced-television.com/2026/11/10/mediapro-renews-nba-on-prime-video-production-deal/"
+   "url": "https://www.advanced-television.com/2026/11/10/mediapro-renews-nba-on-prime-video-production-deal/",
+   "tier": "Official partner",
+   "status": "Renewal"
   },
   {
    "date": "2026-11-10",
@@ -132,7 +162,9 @@
    "type": "Jersey patch",
    "region": "Global",
    "summary": "Iowa roofing maker Brava becomes the first jersey patch partner of Hawkeye men's basketball, with player influencer content included.",
-   "url": "https://hawkeyesports.com/news/2026/11/10/brava-named-first-official-jersey-patch-partner-of-iowa-mens-basketball"
+   "url": "https://hawkeyesports.com/news/2026/11/10/brava-named-first-official-jersey-patch-partner-of-iowa-mens-basketball",
+   "tier": "Shirt & kit placement",
+   "status": "New"
   },
   {
    "date": "2026-11-09",
@@ -142,7 +174,9 @@
    "type": "Official partner",
    "region": "Global",
    "summary": "Multi-year deal makes the Swiss wealth manager the ATP's first Official Wealth Management Partner and first partner of the ATP Coaches Programme, with tournament activations from 2027.",
-   "url": "https://www.atptour.com/en/news/atp-julius-baer-partnership-2026-press-release"
+   "url": "https://www.atptour.com/en/news/atp-julius-baer-partnership-2026-press-release",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-09",
@@ -152,7 +186,9 @@
    "type": "Official supplier",
    "region": "Global",
    "summary": "Mars Snacking's Cheez-It, Club and Pringles named Official Salty Snacks Providers of LA28 and Team USA.",
-   "url": "https://www.mars.com/news-and-stories/press-releases-statements/mars-announces-cheez-itr-clubr-and-pringlesr-the"
+   "url": "https://www.mars.com/news-and-stories/press-releases-statements/mars-announces-cheez-itr-clubr-and-pringlesr-the",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-09",
@@ -162,7 +198,9 @@
    "type": "Official partner",
    "region": "Global",
    "summary": "Saxo Bank signs on as official event partner of the Dubai T100 Triathlon, with event and digital branding plus client hospitality.",
-   "url": "https://triathloninsight.com/news/saxo-bank-dubai-t100-official-partner/"
+   "url": "https://triathloninsight.com/news/saxo-bank-dubai-t100-official-partner/",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-09",
@@ -172,7 +210,9 @@
    "type": "Media rights",
    "region": "Global",
    "summary": "DAZN named official streaming partner of the Total Chess Budapest Pilot, broadcasting the new FIDE-approved format globally ahead of a first season in 2027.",
-   "url": "https://dazngroup.com/press-room/total-chess-partners-with-dazn/"
+   "url": "https://dazngroup.com/press-room/total-chess-partners-with-dazn/",
+   "tier": "Media & broadcast",
+   "status": "New"
   },
   {
    "date": "2026-11-09",
@@ -182,7 +222,9 @@
    "type": "Media rights",
    "region": "Global",
    "summary": "beIN Sports France wins multi-year ATP rights from January 2028, covering the Masters 1000s, ATP 500s, the ATP Finals and the Next Gen ATP Finals.",
-   "url": "https://www.broadbandtvnews.com/2026/11/09/bein-sports-secures-atp-tour-return-in-france-from-2028/"
+   "url": "https://www.broadbandtvnews.com/2026/11/09/bein-sports-secures-atp-tour-return-in-france-from-2028/",
+   "tier": "Media & broadcast",
+   "status": "New"
   },
   {
    "date": "2026-11-09",
@@ -192,7 +234,11 @@
    "type": "Naming rights",
    "region": "Global",
    "summary": "Seven-year naming rights deal renames Pearse Stadium in Salthill as ECC Pearse Stadium from 2027 to 2033.",
-   "url": "https://www.the42.ie/galway-naming-rights-pearse-stadium-7220564-Nov2026/"
+   "url": "https://www.the42.ie/galway-naming-rights-pearse-stadium-7220564-Nov2026/",
+   "tier": "Naming rights",
+   "status": "New",
+   "term": 7,
+   "ends": 2033
   },
   {
    "date": "2026-11-06",
@@ -202,7 +248,10 @@
    "type": "Jersey patch",
    "region": "Global",
    "summary": "Sutter Health becomes healthcare and jersey patch partner of the Sacramento Kings' G League affiliate for 2026-27.",
-   "url": "https://stockton.gleague.nba.com/news/stockton-kings-announce-2026-27-opening-night-roster-unveil-sutter-health-jersey-patch"
+   "url": "https://stockton.gleague.nba.com/news/stockton-kings-announce-2026-27-opening-night-roster-unveil-sutter-health-jersey-patch",
+   "tier": "Shirt & kit placement",
+   "status": "New",
+   "ends": 2027
   },
   {
    "date": "2026-11-05",
@@ -212,7 +261,11 @@
    "type": "Media rights",
    "region": "Global",
    "summary": "DAZN wins the Israeli rights to the Champions League, Europa League and Conference League for four seasons from 2027-28.",
-   "url": "https://www.wireisrael.com/news/dazn-champions-league-broadcasting-05"
+   "url": "https://www.wireisrael.com/news/dazn-champions-league-broadcasting-05",
+   "tier": "Media & broadcast",
+   "status": "New",
+   "term": 4,
+   "ends": 2028
   },
   {
    "date": "2026-11-05",
@@ -222,7 +275,9 @@
    "type": "Technology partner",
    "region": "Global",
    "summary": "Strategic collaboration makes AWS the Norwegian club's cloud provider, underpinning its data and AI work.",
-   "url": "https://www.glimt.no/nyheter/bodo-glimt-inngar-strategisk-samarbeid-med-amazon-web-services"
+   "url": "https://www.glimt.no/nyheter/bodo-glimt-inngar-strategisk-samarbeid-med-amazon-web-services",
+   "tier": "Official partner",
+   "status": "New"
   },
   {
    "date": "2026-11-11",

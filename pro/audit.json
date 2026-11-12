@@ -1,11 +1,11 @@
 {
- "generated": "2026-11-11",
+ "generated": "2026-11-12",
  "summary": {
   "dup_entities": 15,
-  "no_category": 520,
+  "no_category": 526,
   "cat_mismatch": 97,
   "slot_clash": 22,
-  "dup_deals": 2,
+  "dup_deals": 3,
   "no_broadcaster": 11,
   "stale": 0,
   "no_source": 674,
@@ -14,24 +14,12 @@
  "dup_entities": [
   {
    "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
+    "Courier Mail",
+    "The Courier-Mail"
    ],
    "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Victor",
-    "Victor Sports"
-   ],
-   "slugs": [
-    "victor",
-    "victor-sports"
+    "courier-mail",
+    "the-courier-mail"
    ]
   },
   {
@@ -46,22 +34,12 @@
   },
   {
    "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
+    "Special Olympics",
+    "Special Olympics Australia"
    ],
    "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
-   ]
-  },
-  {
-   "names": [
-    "Star Sports",
-    "The Star"
-   ],
-   "slugs": [
-    "star-sports",
-    "the-star"
+    "special-olympics",
+    "special-olympics-australia"
    ]
   },
   {
@@ -72,16 +50,6 @@
    "slugs": [
     "dolphins",
     "dolphins-group"
-   ]
-  },
-  {
-   "names": [
-    "Harness Racing Australia",
-    "Harness Racing NZ"
-   ],
-   "slugs": [
-    "harness-racing-australia",
-    "harness-racing-nz"
    ]
   },
   {
@@ -100,22 +68,44 @@
   },
   {
    "names": [
-    "HYROX",
-    "HYROX Australia"
+    "TAB",
+    "TAB NZ"
    ],
    "slugs": [
-    "hyrox",
-    "hyrox-australia"
+    "tab",
+    "tab-nz"
    ]
   },
   {
    "names": [
-    "Hockey Australia",
-    "Hockey New Zealand"
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
    ],
    "slugs": [
-    "hockey-australia",
-    "hockey-new-zealand"
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
+   ]
+  },
+  {
+   "names": [
+    "Harness Racing Australia",
+    "Harness Racing NZ"
+   ],
+   "slugs": [
+    "harness-racing-australia",
+    "harness-racing-nz"
+   ]
+  },
+  {
+   "names": [
+    "Star Sports",
+    "The Star"
+   ],
+   "slugs": [
+    "star-sports",
+    "the-star"
    ]
   },
   {
@@ -140,32 +130,42 @@
   },
   {
    "names": [
-    "Courier Mail",
-    "The Courier-Mail"
+    "HYROX",
+    "HYROX Australia"
    ],
    "slugs": [
-    "courier-mail",
-    "the-courier-mail"
+    "hyrox",
+    "hyrox-australia"
    ]
   },
   {
    "names": [
-    "TAB",
-    "TAB NZ"
+    "Hockey Australia",
+    "Hockey New Zealand"
    ],
    "slugs": [
-    "tab",
-    "tab-nz"
+    "hockey-australia",
+    "hockey-new-zealand"
    ]
   },
   {
    "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
+    "Victor",
+    "Victor Sports"
    ],
    "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
+    "victor",
+    "victor-sports"
+   ]
+  },
+  {
+   "names": [
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
+   ],
+   "slugs": [
+    "pure-nutrition",
+    "pure-sports-nutrition"
    ]
   }
  ],
@@ -274,6 +274,36 @@
    "brand": "John R Turk",
    "slug": "john-r-turk",
    "deals": 2
+  },
+  {
+   "brand": "MWS",
+   "slug": "mws",
+   "deals": 1
+  },
+  {
+   "brand": "Tradeify",
+   "slug": "tradeify",
+   "deals": 1
+  },
+  {
+   "brand": "The CW",
+   "slug": "the-cw",
+   "deals": 1
+  },
+  {
+   "brand": "RTL Deutschland",
+   "slug": "rtl-deutschland",
+   "deals": 1
+  },
+  {
+   "brand": "Brava Roof Tile",
+   "slug": "brava-roof-tile",
+   "deals": 1
+  },
+  {
+   "brand": "Julius Baer",
+   "slug": "julius-baer",
+   "deals": 1
   },
   {
    "brand": "Bombay Sapphire",
@@ -3834,6 +3864,10 @@
   }
  ],
  "dup_deals": [
+  {
+   "deal": "BHP Mitsubishi Alliance × Queensland Firebirds",
+   "issue": "listed entry next to a dated one (drop the listed one)"
+  },
   {
    "deal": "Bravus × North Queensland Cowboys",
    "issue": "listed entry next to a dated one (drop the listed one)"
