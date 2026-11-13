@@ -1,19 +1,19 @@
 {
- "date": "2026-11-13",
+ "date": "2026-11-14",
  "username": "sportsportsport.hq",
  "followers": 10,
- "followers_change_7d": 1,
- "since": "2026-11-06",
+ "followers_change_7d": 0,
+ "since": "2026-11-07",
  "posts_last_7d": 5,
  "best_post_7d": {
-  "when": "Fri 06 Nov 19:16",
-  "hour": 19,
+  "when": "Fri 13 Nov 21:04",
+  "hour": 21,
   "weekday": "Fri",
   "type": "FEED",
   "likes": 1,
   "comments": 0,
-  "caption": "Naming a stadium that doesn't exist.",
-  "link": "https://www.instagram.com/p/DfZJ9sdIfHh/",
+  "caption": "Why ARN doubled down on tennis.",
+  "link": "https://www.instagram.com/p/DfrX4hwjToZ/",
   "recent": true,
   "score": 1
  },
@@ -43,6 +43,18 @@
  ],
  "insights_available": false,
  "recent_posts": [
+  {
+   "when": "Fri 13 Nov 21:04",
+   "hour": 21,
+   "weekday": "Fri",
+   "type": "FEED",
+   "likes": 1,
+   "comments": 0,
+   "caption": "Why ARN doubled down on tennis.",
+   "link": "https://www.instagram.com/p/DfrX4hwjToZ/",
+   "recent": true,
+   "score": 1
+  },
   {
    "when": "Thu 12 Nov 22:58",
    "hour": 22,
@@ -90,18 +102,6 @@
    "link": "https://www.instagram.com/p/Dfg3FOgk3ls/",
    "recent": true,
    "score": 0
-  },
-  {
-   "when": "Fri 06 Nov 19:16",
-   "hour": 19,
-   "weekday": "Fri",
-   "type": "FEED",
-   "likes": 1,
-   "comments": 0,
-   "caption": "Naming a stadium that doesn't exist.",
-   "link": "https://www.instagram.com/p/DfZJ9sdIfHh/",
-   "recent": true,
-   "score": 1
   }
  ]
 }
