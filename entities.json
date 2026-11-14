@@ -30139,7 +30139,8 @@
     "Gold partner",
     "Associate partner"
    ],
-   "ptiersChecked": "2026-11-12"
+   "ptiersChecked": "2026-11-12",
+   "k": "p"
   },
   "westfield": {
    "name": "Westfield",
@@ -31423,6 +31424,23 @@
   },
   "constantinou-group": {
    "name": "Constantinou Group",
+   "k": "b"
+  },
+  "storelocal": {
+   "name": "StoreLocal",
+   "domain": "storelocal.com.au",
+   "cat": "Construction & property",
+   "k": "b"
+  },
+  "gameface": {
+   "name": "GameFace",
+   "domain": "gamefaceon.com.au",
+   "cat": "Media & broadcast",
+   "k": "b"
+  },
+  "slocoach": {
+   "name": "SLOCOACH",
+   "cat": "Technology",
    "k": "b"
   }
  },
