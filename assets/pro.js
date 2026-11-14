@@ -579,7 +579,8 @@ function go(tab){
   if(tab==="matches")tab="scouting"; /* old links */
   state.tab=TABS[tab]?tab:"dash";
   document.querySelectorAll(".tab").forEach(b=>{b.classList.toggle("on",b.dataset.tab===state.tab);b.setAttribute("aria-selected",b.dataset.tab===state.tab)});
-  if(state.tab!=="reports")history.replaceState(null,"","#"+state.tab);
+  // Keep the address clean: no #dash / #scouting in the URL. Report deep links still set their own.
+  if(state.tab!=="reports"&&location.hash)history.replaceState(null,"",location.pathname+location.search);
   $("view").onclick=null;
   TABS[state.tab]();
 }
@@ -595,6 +596,6 @@ S.load().then(data=>{
   const allT=D.deals.filter(d=>d.term).map(d=>d.term);TYP_ALL=allT.length?med(allT):3;
   by.forEach((v,k)=>{if(v.length>=8)TYP[k]=med(v)});
   $("propNames").innerHTML=D.props.slice().sort((a,b)=>b.n-a.n).slice(0,2000).map(r=>`<option value="${esc(r.e.name)}">`).join("");
-  go((location.hash||"#dash").slice(1));
+  go(location.hash.slice(1)||"dash"); /* old #tab links still open the right tab, then the hash is cleared */
 }).catch(err=>{console.error(err);$("view").innerHTML=`<p class="note">Couldn't load the database. Refresh to try again.</p>`});
 })();
