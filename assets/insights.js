@@ -33,7 +33,7 @@ S.load().then(D=>{
   const cats=count(thisYr,d=>d._cats).filter(([c])=>c!=="Other").slice(0,12).map(([c,v])=>[c,v,`categories?c=${encodeURIComponent(c)}`]);
   const tiers=count(thisYr,d=>d.tier).map(([t,v])=>[t,v]);
   const st=count(thisYr,d=>d.status);
-  const reg=count(thisYr,d=>d.region);
+  const reg=count(thisYr,d=>S.mkt(d)).map(([m,v])=>[S.mktLab(m),v,`deals?market=${encodeURIComponent(m)}`]);
   const ending=deals.filter(d=>d.ends===yr+1).length;
 
   $("charts").innerHTML=`
@@ -42,7 +42,7 @@ S.load().then(D=>{
   <div class="chart"><span class="lbl mute-l">${yr}</span><h3>Top sports</h3>${hbars(sp)}</div>
   <div class="chart"><span class="lbl mute-l">${yr}</span><h3>What brands are buying</h3>${hbars(tiers)}</div>
   <div class="chart"><span class="lbl mute-l">${yr}</span><h3>New money vs renewals</h3>${hbars(st)}
-    <h3 style="margin-top:40px">ANZ vs global</h3>${hbars(reg)}
+    <h3 style="margin-top:40px">By region</h3>${hbars(reg)}
     <p class="note-s" style="margin-top:24px"><b>${ending}</b> partnerships filed are due to end in ${yr+1}. <a class="more" href="renewals?year=${yr+1}">Renewal watch →</a></p></div>`;
 }).catch(()=>{$("charts").innerHTML=`<p class="note">Couldn't load the numbers. Refresh to try again.</p>`});
 })();

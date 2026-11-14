@@ -33,7 +33,7 @@ S.load().then(D=>{
   $("sort").value=st.sort;$("q").value=st.q;
 
   function pills(){
-    $("regPills").innerHTML=["All","ANZ","Global"].map(r=>`<button type="button" class="pill${st.region===r?" on":""}" data-r="${r}" aria-pressed="${st.region===r}">${r==="All"?"Everywhere":r}</button>`).join("");
+    $("regPills").innerHTML=S.MKTS.map(r=>`<button type="button" class="pill${st.region===r?" on":""}" data-r="${esc(r)}" aria-pressed="${st.region===r}">${esc(S.mktLab(r))}</button>`).join("");
     if(!IS_B){
       $("typePills").innerHTML=["",...groups].map(g=>`<button type="button" class="pill${st.group===g?" on":""}" data-g="${esc(g)}" aria-pressed="${st.group===g}">${g?esc(g):"All types"}</button>`).join("");
       $("lgPills").innerHTML=[`<button type="button" class="pill${!st.league?" on":""}" data-l="" aria-pressed="${!st.league}">All leagues</button>`,...leagues.map(l=>`<button type="button" class="pill${st.league===l.name?" on":""}" data-l="${esc(l.name)}" aria-pressed="${st.league===l.name}">${esc(l.name)} clubs</button>`)].join("");
@@ -43,7 +43,7 @@ S.load().then(D=>{
     const q=st.q.trim().toLowerCase();
     const lg=leagues.find(l=>l.name===st.league);
     const inLg=lg?new Set(lg.clubs):null;
-    const r=rows.filter(x=>(!q||x.hay.includes(q))&&(st.sport==="All"||x.sports.has(st.sport))&&(st.region==="All"||x.regions.has(st.region))&&(!inLg||inLg.has(x.e.slug))&&(!st.group||groupOf(x)===st.group));
+    const r=rows.filter(x=>(!q||x.hay.includes(q))&&(st.sport==="All"||x.sports.has(st.sport))&&(st.region==="All"||x.markets.has(st.region))&&(!inLg||inLg.has(x.e.slug))&&(!st.group||groupOf(x)===st.group));
     const by={deals:(a,b)=>b.n-a.n||a.e.name.localeCompare(b.e.name),
       latest:(a,b)=>S.sortKey(b.latest.d).localeCompare(S.sortKey(a.latest.d))||b.n-a.n,
       az:(a,b)=>a.e.name.localeCompare(b.e.name,"en",{sensitivity:"base"})};

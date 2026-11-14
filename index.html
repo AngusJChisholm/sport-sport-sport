@@ -439,8 +439,8 @@ function features(){
 }
 function columns(){
   const row=d=>`<${href(d)?"a":"div"} class="row"${attrs(d)}><span class="d">${esc(fmtShort(d))}</span><span><b>${esc(d.deal)}</b><span class="x">${esc(d.sport)}${d.summary||d.type?" · "+esc(d.summary||d.type):""}</span></span></${href(d)?"a":"div"}>`;
-  $("gList").innerHTML=DEALS.filter(d=>d.region==="Global").slice(0,4).map(row).join("");
-  $("aList").innerHTML=DEALS.filter(d=>d.region==="ANZ").slice(0,4).map(row).join("");
+  $("gList").innerHTML=DEALS.filter(d=>(d.market||d.region)!=="ANZ").slice(0,4).map(row).join("");
+  $("aList").innerHTML=DEALS.filter(d=>(d.market||d.region)==="ANZ").slice(0,4).map(row).join("");
 }
 function newsletter(){
   // Set "newsletter": {"embed": "https://embeds.beehiiv.com/<id>"} in deals.json "site" to switch this on.
@@ -496,9 +496,9 @@ function active(){
 function strip(){
   const count={};
   DEALS.forEach(d=>[...d._bs,...d._ps].forEach(e=>{if(e)count[e.slug]=(count[e.slug]||0)+1}));
-  const top=(side,reg)=>{const c={};DEALS.forEach(d=>{if(reg&&d.region!==reg)return;(d[side+"s"]||[]).forEach(e=>{if(e)c[e.slug]=(c[e.slug]||0)+1})});
+  const top=(side,reg)=>{const c={};DEALS.forEach(d=>{if(reg&&(reg==="Global"?(d.market||d.region)==="ANZ":d.region!==reg))return;(d[side+"s"]||[]).forEach(e=>{if(e)c[e.slug]=(c[e.slug]||0)+1})});
     return Object.entries(c).filter(([s,n])=>n>1).sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,16).map(([s])=>s)};
-  const tabs=[...L.leagues().map(l=>({name:l.name,ids:l.clubs})),{name:"Global clubs",ids:top("_p","Global")},{name:"Top brands",ids:top("_b")}].filter(t=>t.ids.length);
+  const tabs=[...L.leagues().map(l=>({name:l.name,ids:l.clubs})),{name:"International clubs",ids:top("_p","Global")},{name:"Top brands",ids:top("_b")}].filter(t=>t.ids.length);
   if(!tabs.length)return;
   csTab=tabs[0].name;
   const draw=()=>{
