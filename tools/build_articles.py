@@ -82,8 +82,6 @@ def main():
             tags += f'<span class="tag">{esc(e["type"])}</span>'
         tags += f'<span class="tag r">{esc(e.get("region"))}</span>'
         paras = [f'<p class="b">{esc(p)}</p>' for p in a.get("body", [])]
-        # Partner feature slot after the first paragraph (filled by assets/partner.js from partners.json).
-        paras.insert(1 if paras else 0, '<div data-partner-slot="feature" hidden></div>')
         body = "\n".join(paras)
         source = ""
         posted = e.get("added") or e["date"]  # edition date; "date" is when the deal was announced
@@ -169,7 +167,6 @@ def build_features(deals, tpl, out_dir, follow):
         if f.get("region"):
             tags += f'<span class="tag r">{esc(f["region"])}</span>'
         paras = [f'<p class="b">{esc(x)}</p>' for x in a.get("body", [])]
-        paras.insert(1 if paras else 0, '<div data-partner-slot="feature" hidden></div>')
         # Deals the feature mentions, linked to their articles where they have one.
         rows = []
         for name in f.get("related", [])[:6]:

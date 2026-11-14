@@ -23,18 +23,14 @@ BLOCK = f"""<!-- follow:start -->
 
 OLD_FO = re.compile(r'\n?<section class="dk fo"[^>]*>.*?</div></section>\n?', re.S)
 MARKED = re.compile(r'\n?<!-- follow:start -->.*?<!-- follow:end -->\n?', re.S)
-PRESENTED = '<div data-partner-slot="presented" hidden></div>'
 
 
 def apply(text, css_href):
-    # Keep the article "presented by" ad slot, but outside the follow block.
-    had_presented = PRESENTED in (OLD_FO.search(text).group(0) if OLD_FO.search(text) else "")
     text = OLD_FO.sub("\n", text)
     text = MARKED.sub("\n", text)
-    extra = f'<section class="read"><div class="wrap"><div class="col">{PRESENTED}</div></div></section>\n' if had_presented else ""
     if "</main>" not in text:
         return None
-    text = text.replace("</main>", extra + BLOCK + "</main>", 1)
+    text = text.replace("</main>", BLOCK + "</main>", 1)
     text = re.sub(r"\n{3,}(<!-- follow:start -->)", r"\n\n\1", text)
     link = f'<link rel="stylesheet" href="{css_href}">'
     if "follow.css" not in text:

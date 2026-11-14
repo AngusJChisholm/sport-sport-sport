@@ -17,7 +17,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&display=swap">
-<link rel="stylesheet" href="assets/partner.css">
 <style>
 /* Layout: black masthead + hero, white round-up, canvas Global/ANZ split, black follow block, white archive, black footer. Single committed look, no radii, no shadows. */
 :root{
@@ -239,7 +238,6 @@ a.card:hover{box-shadow:inset 0 5px 0 var(--volt)}
 .card.all{background:var(--volt)!important;color:#000!important}
 .card.all .more{border-bottom-color:#000}.card.all .lbl{color:#000}
 .split{background:#fff;border-top:1px solid var(--line)}
-.pt-sec .wrap>[data-partner-slot]{border:1px solid var(--line);padding:0 clamp(16px,2vw,28px)}
 /* Follow block: volt */
 .fo.dk{background:var(--volt);color:#000}
 .fo .mute,.fo-a p,.nl p,.nl-f small{color:rgba(0,0,0,.65)!important}
@@ -321,7 +319,6 @@ a.st:hover b{box-shadow:inset 0 -.12em 0 var(--volt)}
 <div class="ks" id="ks"><div class="kt k1"><h1 id="heroHead">Loading partnerships</h1><p class="dek" id="heroDek"></p></div></div>
 </div></section>
 
-<section class="pt-sec" data-partner-wrap hidden><div class="wrap"><div data-partner-slot="home" hidden></div></div></section>
 
 <section class="sec"><div class="wrap">
 <div class="sh"><div><span class="lbl mute-l">Latest round-up</span><h2 class="disp">The other partnerships.</h2></div><span class="lbl mute-l" id="rCount"></span></div>
@@ -564,6 +561,5 @@ fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.statu
 }).catch(()=>{const h=$("heroHead"),k=$("heroDek");if(h)h.textContent="Partnerships unavailable";if(k)k.textContent="The partnerships file didn't load. Refresh to try again.";wire();});
 })();
 </script>
-<script src="assets/partner.js" defer></script>
 </body>
 </html>
