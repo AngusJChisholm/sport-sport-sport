@@ -191,6 +191,11 @@ def enrich_deal(d):
         if e and ly and ly - 1 <= e <= ly + 20:
             d["ends"] = e
         elif d.get("term") and y:
+            if isinstance(d["term"], str):  # hand-typed "3 years"
+                m = re.match(r"\s*(\d+)", d["term"])
+                if not m:
+                    return d
+                d["term"] = int(m.group(1))
             d["ends"] = y + d["term"]
             d["endsEst"] = True
     if "value" not in d:
