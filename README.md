@@ -15,7 +15,7 @@ Add new entries to the top of the `deals` list in `deals.json`:
 
 - `date` - YYYY-MM-DD
 - `region` - `Global` or `ANZ`
-- `market` - filled in automatically by `tools/markets.py` (runs with the 6am update): where the property is based. One of Australia, New Zealand, North America, UK & Ireland, Europe, Asia, Middle East, Rest of World, or Global (worldwide properties like FIFA, the IOC, F1, ICC, ATP/WTA). Tagged by the property, never the brand. To fix one, set `"market"` on the property in `entities.json`, or set `"market"` plus `"marketLock": true` on the deal. Link straight to a region with `deals.html?market=Asia` (`?reg=ANZ` still works)
+- `market` - filled in automatically by `tools/markets.py` (runs with the 6am update): where the property is based. One of ANZ, North America, UK & Ireland, Europe, Asia, Middle East, Rest of World, or Global (worldwide properties like FIFA, the IOC, F1, ICC, ATP/WTA). Tagged by the property, never the brand. To fix one, set `"market"` on the property in `entities.json`, or set `"market"` plus `"marketLock": true` on the deal. Link straight to a region with `deals.html?market=Asia` (`?reg=ANZ` still works)
 - `lead` - set `true` on the day's lead story only. It becomes the big hero
 - `headline` - lead story only, the big display line
 - `summary`, `url` - optional. With a `url`, the deal links to its source
