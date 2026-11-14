@@ -191,8 +191,8 @@
 }
 </style>
 <link rel="stylesheet" href="assets/follow.css?v=2">
-<script>/* Pro password gate: hides the page until the password is entered once on this device */
-try{if(localStorage.getItem("sssProKey")!=="4d533574c6b65069bd3124a0cfce762b3431575350c337a1f2749fa25d4e4f34")document.documentElement.classList.add("locked")}catch(e){document.documentElement.classList.add("locked")}
+<script>/* Pro password gate: password required every time the page is opened */
+document.documentElement.classList.add("locked");try{localStorage.removeItem("sssProKey")}catch(e){}
 </script>
 <style>
 #gate{display:none}
@@ -227,7 +227,7 @@ html.locked main>*:not(#gate):not(#follow):not(script){display:none!important}
 (function(){var K="4d533574c6b65069bd3124a0cfce762b3431575350c337a1f2749fa25d4e4f34";
 function hex(b){return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,"0")}).join("")}
 document.getElementById("gateF").onsubmit=function(e){e.preventDefault();var v=document.getElementById("gateP").value.trim();
-crypto.subtle.digest("SHA-256",new TextEncoder().encode(v)).then(function(b){if(hex(b)===K){try{localStorage.setItem("sssProKey",K)}catch(_){}document.documentElement.classList.remove("locked");window.scrollTo(0,0)}else{document.getElementById("gateE").textContent="Wrong password. Try again.";document.getElementById("gateP").select()}})};})();
+crypto.subtle.digest("SHA-256",new TextEncoder().encode(v)).then(function(b){if(hex(b)===K){document.documentElement.classList.remove("locked");window.scrollTo(0,0)}else{document.getElementById("gateE").textContent="Wrong password. Try again.";document.getElementById("gateP").select()}})};})();
 </script>
 <section class="wrap hero">
 <span class="lbl mute-l">SSS Pro</span>
