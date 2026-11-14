@@ -11415,7 +11415,7 @@
    "status": "New",
    "sourceTried": "2026-11-03",
    "url": "https://brisbaneroar.com.au/news/brisbane-roar-connects-with-focus-construct-as-the-a-league-men-playing-jersey-sleeve-partner/",
-   "term": "2 seasons",
+   "term": 2,
    "market": "Australia"
   },
   {
@@ -60153,7 +60153,7 @@
    "summary": "Law firm extends as co-major partner, with front-of-shirt branding on the away and third jerseys.",
    "url": "https://wswanderersfc.com.au/news/turner-freeman-lawyers-extend-co-major-partnership-with-wanderers/",
    "status": "Extension",
-   "term": "3 years",
+   "term": 3,
    "ends": 2028,
    "region": "ANZ",
    "market": "Australia"
@@ -60188,7 +60188,7 @@
    "summary": "Inaugural club partner extends its back-of-shirt deal by two years.",
    "url": "https://macarthurfc.com.au/news/stm-extends-partnership-with-macarthur-bulls-for-two-more-years/",
    "status": "Extension",
-   "term": "2 years",
+   "term": 2,
    "region": "ANZ",
    "market": "Australia"
   },
@@ -60199,7 +60199,7 @@
    "type": "Front of shirt sponsor",
    "summary": "Five-year front-of-shirt deal for the A-League Men's team, the club's biggest commercial deal to date.",
    "url": "https://ccmariners.com.au/?p=322462",
-   "term": "5 years",
+   "term": 5,
    "market": "Australia"
   },
   {
