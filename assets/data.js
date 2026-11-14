@@ -15,7 +15,7 @@ window.SSSData=(function(){
   let P=null;
   function load(){
     if(P)return P;
-    P=Promise.all([fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),L.load()]).then(([data])=>{
+    P=Promise.all([fetch("deals.json",{cache:"no-cache"}).then(r=>r.json()),L.load()]).then(([data])=>{
       const deals=(data.deals||[]).map(d=>L.tag(Object.assign({},d))).sort((a,b)=>sortKey(b).localeCompare(sortKey(a)));
       const M=new Map();
       deals.forEach(d=>{

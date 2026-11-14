@@ -97,7 +97,7 @@ def main():
                     rows.append(f'<div class="row">{inner[:-len("<span>→</span>")]}</div>')
             sameday = (
                 '<section class="same"><div class="wrap"><span class="lbl mute-l" style="display:block;margin-bottom:16px">'
-                f'Also on {esc(short_date(posted))}</span><h2 class="disp">The other partnerships.</h2>'
+                f'Also on {esc(short_date(posted))}</span><h2 class="disp">Also signed.</h2>'
                 + "".join(rows)
                 + "</div></section>"
             )
@@ -130,8 +130,8 @@ def main():
             .replace("{{FOLLOW}}", follow)
             .replace("{{YEAR}}", e["date"][:4])
             .replace("{{LABEL}}", "Lead partnership")
-            .replace("{{FOLLOWLBL}}", "Partnerships, data and features")
-            .replace("{{FOLLOWHEAD}}", 'The partnerships that matter. <span class="g">Every partnership, filed.</span>')
+            .replace("{{FOLLOWLBL}}", "Follow along")
+            .replace("{{FOLLOWHEAD}}", 'The partnerships that matter. <span class="g">Filed in Melbourne.</span>')
         )
         (out_dir / f'{e["slug"]}.html').write_text(page, encoding="utf-8")
         built.append(e["slug"])
@@ -210,7 +210,7 @@ def build_features(deals, tpl, out_dir, follow):
             .replace("{{FOLLOW}}", follow)
             .replace("{{YEAR}}", f["date"][:4])
             .replace("{{LABEL}}", esc(f.get("label") or "Feature"))
-            .replace("{{FOLLOWLBL}}", "Partnerships, data and features")
+            .replace("{{FOLLOWLBL}}", "Follow along")
             .replace("{{FOLLOWHEAD}}", 'All things sport business. <span class="g">Partnerships, news and analysis. Global &amp; ANZ.</span>')
         )
         (out_dir / f'{f["slug"]}.html').write_text(page, encoding="utf-8")

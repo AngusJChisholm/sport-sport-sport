@@ -313,7 +313,7 @@ const fbk={all(){try{return JSON.parse(localStorage.getItem(FKEY)||"{}")}catch(e
 const FB=[["nofit","Not a fit"],["pitched","Pitched"],["won","Won"]];
 const fbBtns=(p,b)=>{const cur=fbk.get(p,b);return `<div class="fb" data-fbp="${esc(p)}" data-fbb="${esc(b)}">${FB.map(([k,l])=>`<button type="button" class="fbb${cur===k?" on":""}" data-fb="${k}">${l}</button>`).join("")}</div>`};
 const verTag=v=>v?`<span class="basis c" title="Official partners page checked on this date">Verified ${esc(new Date(v+"T00:00:00").toLocaleDateString("en-AU",{day:"numeric",month:"short"}))}</span>`:`<span class="basis" title="This property's official partners page hasn't been checked yet, so its partner list may be incomplete">Not verified yet</span>`;
-const mxLoad=()=>MX?Promise.resolve(MX):fetch("pro/matches.json",{cache:"no-store"}).then(r=>r.json()).then(j=>MX=j);
+const mxLoad=()=>MX?Promise.resolve(MX):fetch("pro/matches.json",{cache:"no-cache"}).then(r=>r.json()).then(j=>MX=j);
 const pct=v=>`${(v*100).toFixed(1).replace(/\.0$/,"")}%`;
 const bandCls=k=>k==="Call now"?"c":k==="Strong"?"t":"";
 function scouting(){

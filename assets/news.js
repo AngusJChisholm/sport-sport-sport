@@ -13,8 +13,8 @@ let all=[],f="All",shown=PAGE;
 const F=[["All","All stories"],["deal","Partnership stories"],["feature","Features"],["ANZ","ANZ"],["Global","Global"]];
 
 Promise.all([
-  fetch("deals.json",{cache:"no-store"}).then(r=>r.json()),
-  fetch("features.json",{cache:"no-store"}).then(r=>r.ok?r.json():{features:[]}).catch(()=>({features:[]}))
+  fetch("deals.json",{cache:"no-cache"}).then(r=>r.json()),
+  fetch("features.json",{cache:"no-cache"}).then(r=>r.ok?r.json():{features:[]}).catch(()=>({features:[]}))
 ]).then(([d,fj])=>{
   const leads=(d.deals||[]).filter(x=>x.slug&&x.article&&x.date).map(x=>({kind:"deal",date:x.date,head:x.headline||x.deal,sub:x.deal,
     stand:(x.article&&x.article.standfirst)||x.summary||"",label:x.sport,region:x.region,image:x.image,slug:x.slug}));
