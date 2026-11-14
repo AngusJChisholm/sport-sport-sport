@@ -251,3 +251,11 @@ footer.dk .logo:hover{box-shadow:none}
 .stmt .chip:hover{background:var(--volt);color:#000}
 /* Compact layout: tighter sections and smaller headings */
 .sec{padding-block:clamp(28px,3.5vw,52px)}.sh{margin-bottom:clamp(14px,1.8vw,22px)}.sh h2{font-size:clamp(28px,3.2vw,46px)!important}.ptop{padding-block:clamp(20px,3vw,40px) clamp(18px,2.4vw,32px)}.ptop h1{font-size:clamp(44px,6vw,88px)!important}.ptop p{font-size:clamp(15px,1.2vw,17px);margin-top:12px}.hero{padding-block:clamp(20px,3vw,40px) clamp(18px,2.4vw,32px)}.hero h1{font-size:clamp(44px,6vw,88px)!important}.hero p{font-size:clamp(15px,1.2vw,17px);margin-top:12px}
+/* Compact components */
+.ar-h,.ar-r{padding:11px 0}.ar-r b{font-size:16px}.ar-r .s,.ar-r .t{font-size:14px}.ar-r .lg{--s:28px}.ar-r .dl{gap:12px}
+.t th{padding:10px 12px 10px 0}.t td{padding:9px 12px 9px 0;font-size:14px}.t td b{font-size:15px}.yr{font-size:18px}
+.dt{padding:16px 12px 14px;gap:8px}.dt .lg{--s:48px}.dt b{font-size:14px}.dt .lt{padding-top:8px;font-size:12px}
+.top10 a{padding:14px 12px;gap:6px}.top10 .lg{--s:36px}.top10 b{font-size:14px}.bandd{padding-block:clamp(24px,3vw,40px) 0}.top10{margin-bottom:clamp(24px,3vw,40px)}
+.pt{padding:14px 10px 12px;gap:8px}.pt .lg{--s:44px}.pt b{font-size:14px}.pgh{margin:24px 0 10px}
+.hub{min-height:0;padding:18px 16px}.gap>div{min-height:80px;padding:12px}
+@media (min-width:641px){.dg{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}.pg{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}}

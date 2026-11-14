@@ -11,6 +11,7 @@ const imgSrc=s=>/^https:\/\/images\.unsplash\.com\//.test(s)&&!/[?&]w=/.test(s)?
 
 let all=[],f="All",shown=PAGE;
 const F=[["All","All stories"],["deal","Partnership stories"],["feature","Features"],["ANZ","ANZ"],["Global","Global"]];
+{const q=new URLSearchParams(location.search).get("f");if(F.some(([k])=>k===q))f=q;}
 
 Promise.all([
   fetch("deals.json",{cache:"no-cache"}).then(r=>r.json()),
