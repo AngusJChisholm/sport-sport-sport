@@ -3,37 +3,15 @@
  "summary": {
   "dup_entities": 15,
   "no_category": 564,
-  "cat_mismatch": 99,
+  "cat_mismatch": 100,
   "slot_clash": 23,
   "dup_deals": 1,
   "no_broadcaster": 13,
-  "stale": 1,
-  "no_source": 663,
+  "stale": 2,
+  "no_source": 662,
   "anz_slot_clash": 21
  },
  "dup_entities": [
-  {
-   "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
-   ],
-   "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
-   ],
-   "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
-   ]
-  },
   {
    "names": [
     "Star Sports",
@@ -46,12 +24,14 @@
   },
   {
    "names": [
-    "HYROX",
-    "HYROX Australia"
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
    ],
    "slugs": [
-    "hyrox",
-    "hyrox-australia"
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
    ]
   },
   {
@@ -76,36 +56,6 @@
   },
   {
    "names": [
-    "Courier Mail",
-    "The Courier-Mail"
-   ],
-   "slugs": [
-    "courier-mail",
-    "the-courier-mail"
-   ]
-  },
-  {
-   "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
-   ],
-   "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
-   ]
-  },
-  {
-   "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
-   ],
-   "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
-   ]
-  },
-  {
-   "names": [
     "Sky",
     "Sky NZ",
     "Sky Sport",
@@ -120,12 +70,42 @@
   },
   {
    "names": [
-    "Dolphins",
-    "Dolphins Group"
+    "HYROX",
+    "HYROX Australia"
    ],
    "slugs": [
-    "dolphins",
-    "dolphins-group"
+    "hyrox",
+    "hyrox-australia"
+   ]
+  },
+  {
+   "names": [
+    "Special Olympics",
+    "Special Olympics Australia"
+   ],
+   "slugs": [
+    "special-olympics",
+    "special-olympics-australia"
+   ]
+  },
+  {
+   "names": [
+    "Kia",
+    "Kia Australia"
+   ],
+   "slugs": [
+    "kia",
+    "kia-australia"
+   ]
+  },
+  {
+   "names": [
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
+   ],
+   "slugs": [
+    "pure-nutrition",
+    "pure-sports-nutrition"
    ]
   },
   {
@@ -140,6 +120,26 @@
   },
   {
    "names": [
+    "Dolphins",
+    "Dolphins Group"
+   ],
+   "slugs": [
+    "dolphins",
+    "dolphins-group"
+   ]
+  },
+  {
+   "names": [
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
+   ],
+   "slugs": [
+    "commonwealth-games",
+    "commonwealth-games-australia"
+   ]
+  },
+  {
+   "names": [
     "Ant Group",
     "Ant International"
    ],
@@ -150,12 +150,12 @@
   },
   {
    "names": [
-    "Kia",
-    "Kia Australia"
+    "Courier Mail",
+    "The Courier-Mail"
    ],
    "slugs": [
-    "kia",
-    "kia-australia"
+    "courier-mail",
+    "the-courier-mail"
    ]
   },
   {
@@ -3035,6 +3035,13 @@
    "deals": 3
   },
   {
+   "brand": "Powerade",
+   "slug": "powerade",
+   "cat": "Non-alcoholic drinks",
+   "rules_say": "Energy & utilities",
+   "deals": 3
+  },
+  {
    "brand": "Victorian Responsible Gambling Foundation",
    "slug": "victorian-responsible-gambling-foundation",
    "cat": "Tourism & government",
@@ -3074,13 +3081,6 @@
    "slug": "seven-consulting",
    "cat": "Professional services",
    "rules_say": "Media & broadcast",
-   "deals": 2
-  },
-  {
-   "brand": "Powerade",
-   "slug": "powerade",
-   "cat": "Non-alcoholic drinks",
-   "rules_say": "Energy & utilities",
    "deals": 2
   },
   {
@@ -3684,6 +3684,13 @@
    "cat": "Construction & property",
    "rules_say": "Food & nutrition",
    "deals": 1
+  },
+  {
+   "brand": "Healthspan Elite",
+   "slug": "healthspan-elite",
+   "cat": "Food & nutrition",
+   "rules_say": "Health & beauty",
+   "deals": 1
   }
  ],
  "slot_clash": [
@@ -4148,6 +4155,10 @@
   {
    "deal": "Westpac × NRL",
    "date": "2022-10-28"
+  },
+  {
+   "deal": "Tudor × New Zealand Rugby",
+   "date": "2017-05-30"
   }
  ],
  "no_source": [
@@ -6785,10 +6796,6 @@
   },
   {
    "deal": "Beaumont Tiles × Melbourne United",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "AWS × New Zealand Rugby",
    "issue": "needsSource"
   },
   {

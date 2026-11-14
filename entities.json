@@ -19079,7 +19079,21 @@
     "logo"
    ],
    "ptype": "Governing body",
-   "k": "p"
+   "k": "p",
+   "aliases": [
+    "All Blacks",
+    "Black Ferns",
+    "NZ Rugby",
+    "NZR"
+   ],
+   "ptiers": [
+    "Our partners",
+    "Global partners",
+    "Regional partners",
+    "Supporters & suppliers",
+    "Competition partners"
+   ],
+   "ptiersChecked": "2026-11-14"
   },
   "newcastle-airport": {
    "name": "Newcastle Airport",
@@ -31654,6 +31668,69 @@
     "icon",
     "logo"
    ]
+  },
+  "altrad": {
+   "name": "Altrad",
+   "domain": "altrad.com",
+   "cat": "Industrial & manufacturing",
+   "k": "b"
+  },
+  "taisho-pharmaceutical": {
+   "name": "Taisho Pharmaceutical",
+   "domain": "taisho.co.jp",
+   "cat": "Health & beauty",
+   "k": "b",
+   "aliases": [
+    "Taisho"
+   ]
+  },
+  "tudor": {
+   "name": "Tudor",
+   "domain": "tudorwatch.com",
+   "cat": "Watches & luxury",
+   "k": "b",
+   "aliases": [
+    "TUDOR"
+   ]
+  },
+  "mitsui-fudosan": {
+   "name": "Mitsui Fudosan",
+   "domain": "mitsuifudosan.co.jp",
+   "cat": "Construction & property",
+   "k": "b"
+  },
+  "steinlager": {
+   "name": "Steinlager",
+   "domain": "steinlager.com",
+   "cat": "Alcohol",
+   "k": "b"
+  },
+  "atlantis-headwear": {
+   "name": "Atlantis",
+   "domain": "atlantisheadwear.com",
+   "cat": "Apparel & footwear",
+   "k": "b",
+   "aliases": [
+    "Atlantis Headwear"
+   ]
+  },
+  "healthspan-elite": {
+   "name": "Healthspan Elite",
+   "domain": "healthspanelite.co.uk",
+   "cat": "Food & nutrition",
+   "k": "b"
+  },
+  "nissui": {
+   "name": "Nissui",
+   "domain": "nissui.co.jp",
+   "cat": "Food & nutrition",
+   "k": "b"
+  },
+  "nzcis": {
+   "name": "NZCIS",
+   "domain": "nzcis.co.nz",
+   "cat": "Professional services",
+   "k": "b"
   }
  },
  "leagues": [
