@@ -5,6 +5,160 @@
  },
  "deals": [
   {
+   "listed": "2026-11-14",
+   "added": "2026-11-14",
+   "deal": "Bendigo Bank × Rugby Victoria",
+   "sport": "Rugby union",
+   "type": "Naming rights",
+   "region": "ANZ",
+   "summary": "Bendigo Bank is naming rights partner of Rugby Victoria's Conference Cup.",
+   "url": "https://vic.rugby/partners",
+   "status": "Current partner",
+   "tier": "Naming rights",
+   "ptitle": "Naming Rights Partner of the Conference Cup",
+   "ptier": "Partners"
+  },
+  {
+   "listed": "2026-11-14",
+   "added": "2026-11-14",
+   "deal": "Canterbury × Rugby Victoria",
+   "sport": "Rugby union",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "Canterbury is the exclusive supplier of on-field apparel for Rugby Victoria clubs.",
+   "url": "https://vic.rugby/partners",
+   "status": "Current partner",
+   "tier": "Kit & apparel",
+   "ptitle": "Exclusive Suppliers of Club On Field Apparel",
+   "ptier": "Partners"
+  },
+  {
+   "listed": "2026-11-14",
+   "added": "2026-11-14",
+   "deal": "The Pass × Rugby Victoria",
+   "sport": "Rugby union",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "The Pass, the pub and venue loyalty app, is Rugby Victoria's Official Venue Partner.",
+   "url": "https://vic.rugby/partners",
+   "status": "Current partner",
+   "tier": "Official partner",
+   "ptitle": "Official Venue Partner",
+   "ptier": "Partners"
+  },
+  {
+   "listed": "2026-11-14",
+   "added": "2026-11-14",
+   "deal": "Finweb Broker Group × Rugby Victoria",
+   "sport": "Rugby union",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Victorian mortgage broker group finweb is an Official Referee Sponsor of Rugby Victoria.",
+   "url": "https://vic.rugby/partners",
+   "status": "Current partner",
+   "tier": "Official partner",
+   "ptitle": "Official Referee Sponsor",
+   "ptier": "Partners"
+  },
+  {
+   "listed": "2026-11-14",
+   "added": "2026-11-14",
+   "deal": "Leyland Private Asset Management × Rugby Victoria",
+   "sport": "Rugby union",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Boutique wealth manager Leyland Private Asset Management is an Official Referee Sponsor of Rugby Victoria.",
+   "url": "https://vic.rugby/partners",
+   "status": "Current partner",
+   "tier": "Official partner",
+   "ptitle": "Official Referee Sponsor",
+   "ptier": "Partners"
+  },
+  {
+   "listed": "2026-11-14",
+   "added": "2026-11-14",
+   "deal": "Ralph D'Silva Motor Group × Rugby Victoria",
+   "sport": "Rugby union",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Preston car dealership Ralph D'Silva Motor Group is a Rugby Victoria partner.",
+   "url": "https://vic.rugby/partners",
+   "status": "Current partner",
+   "tier": "Official partner",
+   "ptitle": "Rugby Victoria Partner",
+   "ptier": "Partners"
+  },
+  {
+   "listed": "2026-11-14",
+   "added": "2026-11-14",
+   "deal": "ExpandaSign × Rugby Victoria",
+   "sport": "Rugby union",
+   "type": "Official supplier",
+   "region": "ANZ",
+   "summary": "ExpandaSign is Rugby Victoria's Official Signage Supplier, giving clubs discounted portable and event signage.",
+   "url": "https://vic.rugby/partners",
+   "status": "Current partner",
+   "tier": "Official partner",
+   "ptitle": "Official Signage Supplier",
+   "ptier": "Partners"
+  },
+  {
+   "listed": "2026-11-14",
+   "added": "2026-11-14",
+   "deal": "Club Connect × Rugby Victoria",
+   "sport": "Rugby union",
+   "type": "Official partner",
+   "region": "ANZ",
+   "summary": "Club Connect, part of the Asahi group, is a Rugby Victoria partner supplying drinks to clubs with free delivery.",
+   "url": "https://vic.rugby/partners",
+   "status": "Current partner",
+   "tier": "Official partner",
+   "ptitle": "Rugby Victoria Partner",
+   "ptier": "Partners"
+  },
+  {
+   "listed": "2026-11-14",
+   "added": "2026-11-14",
+   "deal": "Victorian Government × Rugby Victoria",
+   "sport": "Rugby union",
+   "type": "Government partner",
+   "region": "ANZ",
+   "summary": "The Victorian State Government is a Rugby Victoria partner.",
+   "url": "https://vic.rugby/partners",
+   "status": "Current partner",
+   "tier": "Official partner",
+   "ptitle": "Rugby Victoria Partner",
+   "ptier": "Partners"
+  },
+  {
+   "listed": "2026-11-14",
+   "added": "2026-11-14",
+   "deal": "Sport and Recreation Victoria × Rugby Victoria",
+   "sport": "Rugby union",
+   "type": "Government partner",
+   "region": "ANZ",
+   "summary": "Sport and Recreation Victoria is a Rugby Victoria partner.",
+   "url": "https://vic.rugby/partners",
+   "status": "Current partner",
+   "tier": "Official partner",
+   "ptitle": "Rugby Victoria Partner",
+   "ptier": "Partners"
+  },
+  {
+   "listed": "2026-11-14",
+   "added": "2026-11-14",
+   "deal": "City of Greater Bendigo × Rugby Victoria",
+   "sport": "Rugby union",
+   "type": "Event partner",
+   "region": "ANZ",
+   "summary": "The City of Greater Bendigo is the official partner of Rugby Victoria's Bendigo Goldfields 7s.",
+   "url": "https://vic.rugby/partners",
+   "status": "Current partner",
+   "tier": "Official partner",
+   "ptitle": "Official Bendigo Goldfields 7s Partner",
+   "ptier": "Partners"
+  },
+  {
    "date": "2026-02-06",
    "added": "2026-11-14",
    "deal": "GameFace × Rugby Victoria",
@@ -14,7 +168,9 @@
    "summary": "GameFace partners Rugby Victoria for 2026, supplying remote cameras so every affiliated club's senior matches are filmed, and running Rugby Victoria's social media.",
    "url": "https://vic.rugby/news/rugby-victoria-partners-with-gameface",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ptitle": "Official Filming and Media Partner",
+   "ptier": "Partners"
   },
   {
    "date": "2025-07-25",
@@ -26,7 +182,8 @@
    "summary": "Bendigo Community Bank branches fund SALT wellbeing education sessions on leadership, mental health and club culture for all 27 Rugby Victoria community clubs.",
    "url": "https://vic.rugby/news/rugby-victoria-partners-with-bendigo-bank-to-deliver-groundbreaking-club-wellbeing-initiative-2025725",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ptier": "Partners"
   },
   {
    "date": "2025-07-23",
@@ -39,7 +196,8 @@
    "url": "https://vic.rugby/news/rugby-victoria-partners-with-musco-lighting-to-illuminate-the-future-of-the-game-2025723",
    "tier": "Official partner",
    "status": "New",
-   "ptitle": "Official Sports Lighting Supplier"
+   "ptitle": "Official Sports Lighting Supplier of Rugby Victoria",
+   "ptier": "Partners"
   },
   {
    "date": "2025-06-25",
@@ -52,7 +210,8 @@
    "url": "https://vic.rugby/news/rugby-victoria-welcomes-victor-sports-2025625",
    "tier": "Official partner",
    "status": "New",
-   "ptitle": "Official Sports Medical & Equipment Supplier"
+   "ptitle": "Official Sports Medical & Equipment Supplier",
+   "ptier": "Partners"
   },
   {
    "date": "2025-06-04",
@@ -67,7 +226,8 @@
    "status": "New",
    "term": 3,
    "ends": 2027,
-   "ptitle": "Official Partner"
+   "ptitle": "Rugby Victoria Partner",
+   "ptier": "Partners"
   },
   {
    "date": "2025-01-30",
@@ -80,7 +240,8 @@
    "url": "https://vic.rugby/news/rugby-victoria-kicks-off-2025-with-a-new-partnership-with-storelocal-2025130",
    "tier": "Naming rights",
    "status": "New",
-   "ptitle": "Official Self Storage Partner"
+   "ptitle": "Official Storage Partner + Naming Rights Partner of the Lindroth Cup",
+   "ptier": "Partners"
   },
   {
    "date": "2024-11-07",
@@ -89,12 +250,14 @@
    "sport": "Rugby union",
    "type": "Renewal",
    "region": "ANZ",
-   "summary": "Gilbert signs a three-year apparel partnership, staying the official rugby ball across Victoria and supplying apparel for Rugby Victoria's representative teams and staff.",
+   "summary": "Gilbert signs a three-year deal as Rugby Victoria Major Partner: Official Off-field + State Teams Apparel Partner, Official Ball Supplier, and an exclusive on-field apparel and referee supplier for clubs.",
    "url": "https://vic.rugby/news/gilbert-and-rugby-victoria-announce-threeyear-apparel-partnership-2024117",
-   "tier": "Kit & apparel",
+   "tier": "Principal & major",
    "status": "Renewal",
    "term": 3,
-   "ends": 2027
+   "ends": 2027,
+   "ptitle": "Rugby Victoria Major Partner",
+   "ptier": "Partners"
   },
   {
    "date": "2024-04-11",
@@ -106,7 +269,8 @@
    "summary": "Rugby Australia, Rugby Victoria and SLOCOACH partner to support junior community coaches across Victoria.",
    "url": "https://vic.rugby/news/rugby-australia-rugby-vic-and-slocoach-partner-to-benefit-junior-community-coaches-across-victoria",
    "tier": "Official partner",
-   "status": "New"
+   "status": "New",
+   "ended": true
   },
   {
    "date": "2023-06-27",
@@ -149,7 +313,8 @@
    "url": "https://vic.rugby/news/gilbert-rugby-reaffirms-partnership-with-rugby-victoria-202357",
    "tier": "Kit & apparel",
    "status": "Renewal",
-   "ends": 2024
+   "ends": 2024,
+   "ptier": "Partners"
   },
   {
    "date": "2026-11-05",
@@ -23943,7 +24108,8 @@
    "url": "https://vic.rugby/news/rugby-victoria-welcomes-reckon-as-grassroots-accounting-partner-2025619",
    "tier": "Official partner",
    "status": "New",
-   "ptitle": "Official Grassroots Accounting Partner"
+   "ptitle": "Grassroots Accounting Partner",
+   "ptier": "Partners"
   },
   {
    "date": "2025-06-18",

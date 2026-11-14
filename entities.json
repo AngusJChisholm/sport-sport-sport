@@ -23382,6 +23382,10 @@
    "domain": "vic.rugby",
    "bf": [
     "icon"
+   ],
+   "ptiersChecked": "2026-11-14",
+   "ptiers": [
+    "Partners"
    ]
   },
   "rugby-wa": {
@@ -29285,6 +29289,9 @@
    "bf": [
     "icon",
     "logo"
+   ],
+   "aliases": [
+    "Victorian State Government"
    ]
   },
   "victorian-institute-of-sport": {
@@ -31441,6 +31448,46 @@
   "slocoach": {
    "name": "SLOCOACH",
    "cat": "Technology",
+   "k": "b"
+  },
+  "finweb-broker-group": {
+   "name": "Finweb Broker Group",
+   "aliases": [
+    "finweb"
+   ],
+   "cat": "Banking & finance",
+   "k": "b"
+  },
+  "leyland-private-asset-management": {
+   "name": "Leyland Private Asset Management",
+   "cat": "Banking & finance",
+   "k": "b"
+  },
+  "ralph-d-silva-motor-group": {
+   "name": "Ralph D'Silva Motor Group",
+   "cat": "Automotive",
+   "k": "b"
+  },
+  "expandasign": {
+   "name": "ExpandaSign",
+   "cat": "Industrial & manufacturing",
+   "k": "b"
+  },
+  "club-connect": {
+   "name": "Club Connect",
+   "cat": "Alcohol",
+   "k": "b"
+  },
+  "sport-and-recreation-victoria": {
+   "name": "Sport and Recreation Victoria",
+   "domain": "sport.vic.gov.au",
+   "cat": "Tourism & government",
+   "k": "b"
+  },
+  "city-of-greater-bendigo": {
+   "name": "City of Greater Bendigo",
+   "domain": "bendigo.vic.gov.au",
+   "cat": "Tourism & government",
    "k": "b"
   }
  },
