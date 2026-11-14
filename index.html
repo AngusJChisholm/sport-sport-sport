@@ -42,7 +42,7 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(
 .btn-o{background:transparent;color:var(--white);border:1px solid var(--white);padding:13px 21px}.btn-o:hover{background:var(--white);color:var(--black)}
 .btn-ink{background:var(--black);color:var(--white)}.btn-ink:hover{background:#333;color:var(--white)}
 .tags{display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:6px 9px 5px;border:1px solid currentColor;line-height:1}
+.tag{font-weight:800;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:6px 9px 5px;border:1px solid currentColor;line-height:1;white-space:nowrap}
 .tag.r{background:var(--volt);color:var(--black);border-color:var(--volt)}
 .dk .tag{color:var(--white)}.dk .tag.r{color:var(--black)}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;border-bottom:1px solid var(--grey-800)}
@@ -143,7 +143,7 @@ a.row:hover b,a.ar-r:hover b{text-decoration:underline;text-underline-offset:4px
 .sel:after{content:"";position:absolute;right:14px;top:50%;width:6px;height:6px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:translateY(-70%) rotate(45deg);pointer-events:none}
 .count{margin-left:auto;font-size:14px;color:var(--ink-3)}
 .al{border-top:2px solid var(--ink)}
-.ar-h,.ar-r{display:grid;grid-template-columns:120px minmax(0,2.4fr) minmax(0,1fr) minmax(0,1.3fr) 96px;gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.ar-h,.ar-r{display:grid;grid-template-columns:120px minmax(0,2.4fr) minmax(0,1fr) minmax(0,1.3fr) 150px;gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
 .ar-h{padding:14px 0}.ar-h span{font-weight:800;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
 .ar-r .d{font-size:14px;color:var(--ink-3);font-variant-numeric:tabular-nums}
 .ar-r b{font-weight:800;text-transform:uppercase;letter-spacing:-.03em;font-size:19px;line-height:1.1;overflow-wrap:anywhere}
@@ -183,7 +183,7 @@ footer{padding-block:clamp(56px,7vw,96px) 32px}
 .ft-l a{font-weight:800;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
 .ft-l a:hover{color:var(--volt)}
 .ft-b{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:72px;padding-top:20px;border-top:1px solid var(--grey-800);font-size:13px;color:var(--grey-500)}
-@media (max-width:1100px){.nav{gap:20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ar-h,.ar-r{grid-template-columns:100px minmax(0,2fr) minmax(0,1fr) 80px}.ar-h .c-t,.ar-r .t{display:none}}
+@media (max-width:1100px){.nav{gap:20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ar-h,.ar-r{grid-template-columns:100px minmax(0,2fr) minmax(0,1fr) 140px}.ar-h .c-t,.ar-r .t{display:none}}
 @media (max-width:900px){.nav{display:none}.menu{display:block}.hd>.btn{display:none}
 .nav.open{display:flex;position:absolute;left:0;right:0;top:84px;flex-direction:column;gap:0;background:var(--black);border-bottom:1px solid var(--grey-800);padding:8px var(--pad) 20px}
 .nav.open a{padding:16px 0;border-bottom:1px solid var(--grey-800);font-size:15px;color:var(--white)}
@@ -374,7 +374,7 @@ const fmtShort=d=>!d.date&&!d.month?"Current":d.date?dObj(d).toLocaleDateString(
 const fmtArch=d=>!d.date&&!d.month?"Current partner":d.date?dObj(d).toLocaleDateString("en-AU",{day:"2-digit",month:"short",year:"numeric"}):new Date(d.month+"-01T00:00:00").toLocaleDateString("en-AU",{month:"short",year:"numeric"});
 const fmtLong=d=>dObj(d).toLocaleDateString("en-AU",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
 const fmtDots=d=>{const x=dObj(d);return String(x.getDate()).padStart(2,"0")+"."+String(x.getMonth()+1).padStart(2,"0")+"."+String(x.getFullYear()).slice(2)};
-const tags=d=>`<span class="tag">${esc(d.sport)}</span>${d.type?`<span class="tag">${esc(d.type)}</span>`:""}<span class="tag r">${esc(d.region)}</span>`;
+const tags=d=>`<span class="tag">${esc(d.sport)}</span>${d.type?`<span class="tag">${esc(d.type)}</span>`:""}<span class="tag r">${esc(d.market||d.region)}</span>`;
 const href=d=>d.slug&&d.article?{h:`articles/${encodeURIComponent(d.slug)}`,ext:false}:null;
 const attrs=d=>{const x=href(d);return x?` href="${esc(x.h)}"${x.ext?' target="_blank" rel="noopener"':""}`:""};
 const link=(d,label)=>href(d)?`<a${attrs(d)} class="more">${label}</a>`:"";
@@ -431,14 +431,14 @@ function roundup(lead){
   const same=ORIG.filter(d=>d.date&&pKey(d)===pKey(lead)&&d!==lead).slice(0,5);
   $("rCount").textContent=`${same.length} partnership${same.length===1?"":"s"} · ${fmtDots(asPosted(lead))}`;
   const card=d=>{const tag=href(d)?"a":"div";
-    return `<${tag} class="card"${attrs(d)}>${d._b?`<div class="cl">${L.pair(d,{px:44})}</div>`:""}<div class="tags"><span class="tag">${esc(d.sport)}</span><span class="tag r">${esc(d.region)}</span></div><h3>${esc(d.deal)}</h3><p>${esc(d.summary||d.type||"")}</p>${href(d)?`<span class="more">${d.article?"Read the story →":"Read →"}</span>`:""}</${tag}>`};
+    return `<${tag} class="card"${attrs(d)}>${d._b?`<div class="cl">${L.pair(d,{px:44})}</div>`:""}<div class="tags"><span class="tag">${esc(d.sport)}</span><span class="tag r">${esc(d.market||d.region)}</span></div><h3>${esc(d.deal)}</h3><p>${esc(d.summary||d.type||"")}</p>${href(d)?`<span class="more">${d.article?"Read the story →":"Read →"}</span>`:""}</${tag}>`};
   $("roundup").innerHTML=same.map(card).join("")+`<a href="deals" class="card all" style="--span:${3-(same.length%3)}"><span class="lbl">The database</span><h3>Every partnership. Since day one.</h3><span class="more">Browse the database →</span></a>`;
 }
 function features(){
   if(!FEATS.length)return;
   const list=FEATS.slice().sort((a,b)=>b.date.localeCompare(a.date)).slice(0,6);
   $("fCount").textContent=`${FEATS.length} feature${FEATS.length===1?"":"s"}`;
-  $("fList").innerHTML=list.map((d,i)=>`<a class="card${i===list.length-1&&list.length%3?' fill':''}"${i===list.length-1&&list.length%3?` style="--span:${4-(list.length%3)}"`:""}${attrs(d)}><div class="tags"><span class="tag">${esc(d.sport)}</span>${d.region?`<span class="tag r">${esc(d.region)}</span>`:""}</div><h3>${esc(d.headline)}</h3><p>${esc(d.summary||d.deal||"")}</p><span class="more">Read the feature →</span></a>`).join("");
+  $("fList").innerHTML=list.map((d,i)=>`<a class="card${i===list.length-1&&list.length%3?' fill':''}"${i===list.length-1&&list.length%3?` style="--span:${4-(list.length%3)}"`:""}${attrs(d)}><div class="tags"><span class="tag">${esc(d.sport)}</span>${d.region?`<span class="tag r">${esc(d.market||d.region)}</span>`:""}</div><h3>${esc(d.headline)}</h3><p>${esc(d.summary||d.deal||"")}</p><span class="more">Read the feature →</span></a>`).join("");
   $("features").hidden=false;
 }
 function columns(){
@@ -466,11 +466,11 @@ function filters(){
 }
 function render(){
   const latest=DEALS.find(d=>d.date);const now=latest?dObj(latest):new Date();
-  const r=DEALS.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(!st.type||d.type===st.type)&&(!st.reg||d.region===st.reg)&&(!st.days||(d.date&&(now-dObj(d))/864e5<=+st.days))&&(!st.ent||L.has(d,st.ent))&&(!st.q||(d.deal+" "+(d.summary||"")+" "+(d.sport||"")).toLowerCase().includes(st.q)));
+  const r=DEALS.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(!st.type||d.type===st.type)&&(!st.reg||(st.reg==="ANZ"?d.region==="ANZ":st.reg==="Intl"?d.region!=="ANZ":(d.market||d.region)===st.reg))&&(!st.days||(d.date&&(now-dObj(d))/864e5<=+st.days))&&(!st.ent||L.has(d,st.ent))&&(!st.q||(d.deal+" "+(d.summary||"")+" "+(d.sport||"")).toLowerCase().includes(st.q)));
   $("list").innerHTML=r.slice(0,shown).map(d=>{
     const name=href(d)?`<a${attrs(d)}><b>${esc(d.deal)}</b></a>`:`<b>${esc(d.deal)}</b>`;
     const pair=d._b?L.pair(d,{px:40}):"";
-    return `<div class="ar-r"><span class="d">${esc(fmtArch(d))}</span><span class="dl">${pair}${name}</span><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.type||"")}</span><span><span class="tag r">${esc(d.region)}</span></span></div>`}).join("");
+    return `<div class="ar-r"><span class="d">${esc(fmtArch(d))}</span><span class="dl">${pair}${name}</span><span class="s">${esc(d.sport)}</span><span class="t">${esc(d.type||"")}</span><span><span class="tag r">${esc(d.market||d.region)}</span></span></div>`}).join("");
   $("empty").hidden=r.length>0;
   $("count").textContent=`${r.length} of ${DEALS.length} partnerships`;
   $("moreBtn").parentElement.hidden=r.length<=shown;
@@ -547,7 +547,7 @@ fetch("deals.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(r.statu
   const q=new URLSearchParams(location.search).get("club");if(q&&L&&L.byId(q))st.ent=q;
   if($("ks")){const lead=hero();if(lead)roundup(lead)}
   if($("fList"))features();if($("gList"))columns();follow();if($("nlF"))newsletter();if($("stats"))stats();
-  if(ARCH){const p=new URLSearchParams(location.search);const rg=p.get("reg");if(rg==="Global"||rg==="ANZ"){st.reg=rg;$("fReg").value=rg}const sp=p.get("sport");if(sp)st.sport=sp;filters();if(L)strip()}
+  if(ARCH){const p=new URLSearchParams(location.search);let rg=p.get("reg");if(rg==="Global"&&!p.get("market"))rg="Intl";if(p.get("market"))rg=p.get("market");if(rg&&[...$("fReg").options].some(o=>o.value===rg)){st.reg=rg;$("fReg").value=rg}const sp=p.get("sport");if(sp)st.sport=sp;filters();if(L)strip()}
   if(L&&$("active"))active();wire();if(ARCH)render();
 }).catch(()=>{const h=$("heroHead"),k=$("heroDek");if(h){h.classList.remove("skel");h.removeAttribute("aria-busy")}if(h)h.textContent="Partnerships unavailable";if(k)k.textContent="The partnerships file didn't load. Refresh to try again.";wire();});
 })();
