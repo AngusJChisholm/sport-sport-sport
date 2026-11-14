@@ -21,13 +21,13 @@ S.load().then(D=>{
   $("q").value=st.q;
   function draw(){
     const q=st.q.trim().toLowerCase();
-    const base=all.filter(d=>(!q||d.deal.toLowerCase().includes(q))&&(!st.sport||d.sport===st.sport)&&(!st.tier||d.tier===st.tier)&&(st.region==="All"||d.region===st.region));
+    const base=all.filter(d=>(!q||d.deal.toLowerCase().includes(q))&&(!st.sport||d.sport===st.sport)&&(!st.tier||d.tier===st.tier)&&(st.region==="All"||S.mkt(d)===st.region));
     const r=base.filter(d=>inYr(d,st.year)).sort((a,b)=>a.ends-b.ends||(a.endsEst?1:0)-(b.endsEst?1:0)||a.deal.localeCompare(b.deal));
     $("yrPills").innerHTML=yrs.map(y=>{const n=base.filter(d=>inYr(d,y)).length;const lab=y==="later"?`${later}+`:y===String(yr)?`Ending ${y}`:y;return `<button type="button" class="pill${st.year===y?" on":""}" data-y="${y}" aria-pressed="${st.year===y}">${lab} · ${n}</button>`}).join("");
-    $("regPills").innerHTML=["All","ANZ","Global"].map(x=>`<button type="button" class="pill${st.region===x?" on":""}" data-r="${x}" aria-pressed="${st.region===x}">${x==="All"?"Everywhere":x}</button>`).join("");
+    $("regPills").innerHTML=S.MKTS.map(x=>`<button type="button" class="pill${st.region===x?" on":""}" data-r="${esc(x)}" aria-pressed="${st.region===x}">${esc(S.mktLab(x))}</button>`).join("");
     const stated=r.filter(d=>!d.endsEst).length;
     $("count").textContent=`${r.length} partnership${r.length===1?"":"s"} · ${stated} with a stated end date`;
-    $("list").innerHTML=r.length?`<div class="tw"><table class="t"><thead><tr><th>Ends</th><th>Partnership</th><th>Sport</th><th>Partnership type</th><th>Term</th><th>Announced</th><th>Region</th></tr></thead><tbody>${r.slice(0,shown).map(d=>`<tr><td><span class="yr">${d.ends}</span>${d.endsEst?` <span class="est" title="Worked out from the term and announcement date">c.</span>`:""}</td><td><span class="dl">${L.pair(d,{px:34})}${S.dealLink(d)}</span></td><td>${esc(d.sport)}</td><td>${esc(d.tier||"")}</td><td class="d">${d.term?d.term+(d.term===1?" yr":" yrs"):"–"}</td><td class="d">${esc(S.fmt(d))}</td><td><span class="tag r">${esc(d.region)}</span></td></tr>`).join("")}</tbody></table></div>`:`<p class="note">No partnerships match that filter.</p>`;
+    $("list").innerHTML=r.length?`<div class="tw"><table class="t"><thead><tr><th>Ends</th><th>Partnership</th><th>Sport</th><th>Partnership type</th><th>Term</th><th>Announced</th><th>Region</th></tr></thead><tbody>${r.slice(0,shown).map(d=>`<tr><td><span class="yr">${d.ends}</span>${d.endsEst?` <span class="est" title="Worked out from the term and announcement date">c.</span>`:""}</td><td><span class="dl">${L.pair(d,{px:34})}${S.dealLink(d)}</span></td><td>${esc(d.sport)}</td><td>${esc(d.tier||"")}</td><td class="d">${d.term?d.term+(d.term===1?" yr":" yrs"):"–"}</td><td class="d">${esc(S.fmt(d))}</td><td><span class="tag r">${esc(S.mkt(d))}</span></td></tr>`).join("")}</tbody></table></div>`:`<p class="note">No partnerships match that filter.</p>`;
     if(r.length>shown)$("list").insertAdjacentHTML("beforeend",`<div style="margin-top:24px"><button type="button" class="btn btn-ink" id="rMore">Show ${Math.min(PAGE,r.length-shown)} more</button></div>`);
     S.setQs({year:st.year!==String(yr)&&st.year,q:st.q,sport:st.sport,tier:st.tier,region:st.region!=="All"&&st.region});
   }

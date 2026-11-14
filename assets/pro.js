@@ -53,7 +53,7 @@ function finder(){
   <select class="sel" id="fbacks"><option value="">Backs any sport</option>${sports.map(s=>opt(s,f.backs,"Backs "+s)).join("")}</select>
   <select class="sel" id="fnot"><option value="">Not in: no exclusion</option>${sports.map(s=>opt(s,f.notIn,"Not in "+s)).join("")}</select></div>
   <div class="ctl2"><div class="pills">${pills("win",[["12","Active last 12 months"],["24","Last 2 years"],["36","Last 3 years"],["all","Any time"]],f.win)}</div>
-  <div class="pills">${pills("reg",[["ANZ","ANZ partnerships"],["Global","Global partnerships"],["All","Everywhere"]],f.region)}${pills("sort",[["recent","Newest first"],["deals","Most partnerships"]],f.sort)}</div></div>
+  <div class="pills">${pills("reg",S.MKTS.map(m=>[m,S.mktLab(m)]),f.region)}${pills("sort",[["recent","Newest first"],["deals","Most partnerships"]],f.sort)}</div></div>
   <div class="res"><span class="lbl mute-l" id="fcount"></span><span class="toolrow"><button class="ghost" id="fcsv">Export CSV</button></span></div><div id="flist"></div>`;
   const draw=()=>{
     const q=f.q.trim().toLowerCase(), win=f.win==="all"?Infinity:+f.win;
@@ -61,7 +61,7 @@ function finder(){
     D.brands.forEach(b=>{
       if(q&&!b.hay.includes(q))return;
       if(f.cat&&b.cat!==f.cat)return;
-      const ds=b.deals.filter(x=>f.region==="All"||x.d.region===f.region);
+      const ds=b.deals.filter(x=>f.region==="All"||S.mkt(x.d)===f.region);
       if(!ds.length)return;
       if(f.backs&&!ds.some(x=>x.d.sport===f.backs))return;
       if(f.notIn&&b.deals.some(x=>x.d.sport===f.notIn))return;
@@ -105,11 +105,11 @@ function renewals(){
   <select class="sel" id="rsport"><option value="">All sports</option>${sports.map(s=>opt(s,f.sport)).join("")}</select>
   <select class="sel" id="rcat"><option value="">All categories</option>${S.CATS.map(c=>opt(c,f.cat)).join("")}</select>
   <select class="sel" id="rtier"><option value="">All partnership types</option>${S.TIERS.map(c=>opt(c,f.tier)).join("")}</select></div>
-  <div class="ctl2"><div class="pills" id="ryears"></div><div class="pills">${pills("reg",[["ANZ","ANZ"],["Global","Global"],["All","Everywhere"]],f.region)}${pills("basis",[["all","Any basis"],["firm","Confirmed + From term"],["Confirmed","Confirmed only"]],f.basis)}</div></div>
+  <div class="ctl2"><div class="pills" id="ryears"></div><div class="pills">${pills("reg",S.MKTS.map(m=>[m,S.mktLab(m)]),f.region)}${pills("basis",[["all","Any basis"],["firm","Confirmed + From term"],["Confirmed","Confirmed only"]],f.basis)}</div></div>
   <div class="res"><span class="lbl mute-l" id="rcount"></span><button class="ghost" id="rcsv">Export CSV</button></div><div id="rlist"></div>`;
   const draw=()=>{
     const q=f.q.trim().toLowerCase();
-    const base=all.filter(x=>(!q||x.d.deal.toLowerCase().includes(q))&&(!f.sport||x.d.sport===f.sport)&&(!f.cat||(x.d._cats||[]).includes(f.cat))&&(!f.tier||x.d.tier===f.tier)&&(f.region==="All"||x.d.region===f.region)
+    const base=all.filter(x=>(!q||x.d.deal.toLowerCase().includes(q))&&(!f.sport||x.d.sport===f.sport)&&(!f.cat||(x.d._cats||[]).includes(f.cat))&&(!f.tier||x.d.tier===f.tier)&&(f.region==="All"||S.mkt(x.d)===f.region)
       &&(f.basis==="all"||(f.basis==="firm"?x.r.basis!=="Estimate":x.r.basis==="Confirmed"))
       );
     $("ryears").innerHTML=years.map(([v,lab])=>{const n=base.filter(x=>inYr(x,v)).length;return `<button type="button" class="pill${f.year===v?" on":""}" data-yr="${v}">${lab} · ${n}</button>`}).join("");
@@ -168,7 +168,7 @@ function propData(p){
     const score=new Map();
     D.brands.forEach(b=>{if(b.cat!==c||mine.has(b.e.slug))return;
       const ds=b.deals.filter(x=>x.side==="b"&&live(x.d));if(!ds.length)return;
-      const inSport=ds.filter(x=>x.d.sport===sp).length, anz=ds.filter(x=>x.d.region==="ANZ").length;
+      const inSport=ds.filter(x=>x.d.sport===sp).length, anz=ds.filter(x=>S.mkt(x.d)==="ANZ").length;
       if(!inSport&&!anz)return;score.set(b.e.slug,{b,s:inSport*10+anz})});
     return [...score.values()].sort((a,b)=>b.s-a.s).slice(0,8);
   };
@@ -228,27 +228,27 @@ function watchlist(){
 function dashboard(){
   const inLast=(d,m)=>dated(d)&&monthsAgo(d)<=m&&monthsAgo(d)>=0;
   const ytd=D.deals.filter(d=>dated(d)&&yearOf(d)===yr);
-  const anzY=ytd.filter(d=>d.region==="ANZ").length, glY=ytd.length-anzY;
+  const anzY=ytd.filter(d=>S.mkt(d)==="ANZ").length, glY=ytd.length-anzY;
   const share=ytd.length?anzY/ytd.length:0;
   const ry=NOW.getMonth()>=8?yr+1:yr;
   const rAll=D.deals.map(d=>({d,r:renewal(d)})).filter(x=>x.r);
   const due=rAll.filter(x=>x.r.end===ry);
   const dueFirm=due.filter(x=>x.r.basis!=="Estimate");
   const newBrands=D.brands.filter(b=>{const f=b.deals.filter(x=>dated(x.d));return f.length&&f.every(x=>yearOf(x.d)===yr)}).length;
-  const anzProps=D.props.filter(p=>p.regions.has("ANZ")).length;
+  const anzProps=D.props.filter(p=>p.markets.has("ANZ")).length;
 
   // Half-circle gauge, same idea as a fund meter: ANZ share of this year's deals.
   const R=88,C=Math.PI*R,arc=`M ${110-R} 104 A ${R} ${R} 0 0 1 ${110+R} 104`;
   const gauge=`<svg viewBox="0 0 220 116" class="gauge" aria-hidden="true"><path d="${arc}" fill="none" stroke="var(--line)" stroke-width="16"/><path d="${arc}" fill="none" stroke="var(--volt)" stroke-width="16" stroke-dasharray="${(C*share).toFixed(1)} ${C.toFixed(1)}"/></svg>`;
 
-  // Last 12 months by announcement month, ANZ and global stacked.
+  // Last 12 months by announcement month, ANZ and international stacked.
   const months=[];for(let i=11;i>=0;i--){const dt=new Date(yr,NOW.getMonth()-i,1);months.push({k:`${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,"0")}`,lab:dt.toLocaleDateString("en-AU",{month:"short"}),a:0,g:0})}
   const mi=new Map(months.map(m=>[m.k,m]));
-  D.deals.forEach(d=>{if(!dated(d))return;const m=mi.get(S.sortKey(d).slice(0,7));if(m)d.region==="ANZ"?m.a++:m.g++});
+  D.deals.forEach(d=>{if(!dated(d))return;const m=mi.get(S.sortKey(d).slice(0,7));if(m)S.mkt(d)==="ANZ"?m.a++:m.g++});
   const mx=Math.max(1,...months.map(m=>m.a+m.g));
   const W=720,H=220,pb=26,pt=18,bw=W/12;
   const bars=months.map((m,i)=>{const x=i*bw+bw*.18,w=bw*.64,ha=(H-pb-pt)*m.a/mx,hg=(H-pb-pt)*m.g/mx,base=H-pb,cur=i===11;
-    return `<g><title>${m.lab}: ${m.a} ANZ, ${m.g} global</title><rect x="${x}" y="${base-ha}" width="${w}" height="${ha}" fill="${cur?"var(--volt)":"var(--ink)"}"${cur?' stroke="var(--ink)" stroke-width="1"':""}/><rect x="${x}" y="${base-ha-hg}" width="${w}" height="${hg}" fill="var(--grey-500)"/>${m.a+m.g?`<text x="${x+w/2}" y="${base-ha-hg-6}" text-anchor="middle" class="bv">${m.a+m.g}</text>`:""}<text x="${x+w/2}" y="${H-6}" text-anchor="middle" class="bl">${m.lab}</text></g>`}).join("");
+    return `<g><title>${m.lab}: ${m.a} ANZ, ${m.g} international</title><rect x="${x}" y="${base-ha}" width="${w}" height="${ha}" fill="${cur?"var(--volt)":"var(--ink)"}"${cur?' stroke="var(--ink)" stroke-width="1"':""}/><rect x="${x}" y="${base-ha-hg}" width="${w}" height="${hg}" fill="var(--grey-500)"/>${m.a+m.g?`<text x="${x+w/2}" y="${base-ha-hg-6}" text-anchor="middle" class="bv">${m.a+m.g}</text>`:""}<text x="${x+w/2}" y="${H-6}" text-anchor="middle" class="bl">${m.lab}</text></g>`}).join("");
   const monthChart=`<svg viewBox="0 0 ${W} ${H}" class="mchart" role="img" aria-label="Partnerships by month, last 12 months"><line x1="0" x2="${W}" y1="${H-pb}" y2="${H-pb}" stroke="var(--ink)" stroke-width="2"/>${bars}</svg>`;
 
   // Horizontal bar lists for the last 12 months.
@@ -258,7 +258,7 @@ function dashboard(){
   const cats=tally(d=>d._cats), sports=tally(d=>d.sport);
 
   // Coming up: firm renewal dates first, then estimates, ANZ only.
-  const up=rAll.filter(x=>x.d.region==="ANZ"&&x.r.end>=ry&&x.r.end<=ry+1).sort((a,b)=>a.r.end-b.r.end||(a.r.basis==="Estimate")-(b.r.basis==="Estimate")||S.sortKey(b.d).localeCompare(S.sortKey(a.d))).slice(0,7);
+  const up=rAll.filter(x=>S.mkt(x.d)==="ANZ"&&x.r.end>=ry&&x.r.end<=ry+1).sort((a,b)=>a.r.end-b.r.end||(a.r.basis==="Estimate")-(b.r.basis==="Estimate")||S.sortKey(b.d).localeCompare(S.sortKey(a.d))).slice(0,7);
   const latest=D.deals.filter(dated).slice(0,7);
   const busy=D.brands.map(b=>({b,n:b.deals.filter(x=>inLast(x.d,12)).length})).filter(x=>x.n>=2).sort((a,b)=>b.n-a.n).slice(0,12);
 
@@ -267,7 +267,7 @@ function dashboard(){
     <div class="fund">
       <div class="fh"><span>${yr} partnerships logged</span><span class="vt">${Math.round(share*100)}% ANZ</span></div>
       <div class="gw">${gauge}<div class="gn"><b>${ytd.length.toLocaleString("en-AU")}</b><span>${D.deals.length.toLocaleString("en-AU")} in the database</span></div></div>
-      <div class="ff">${anzY.toLocaleString("en-AU")} ANZ &nbsp;|&nbsp; ${glY.toLocaleString("en-AU")} global</div>
+      <div class="ff">${anzY.toLocaleString("en-AU")} ANZ &nbsp;|&nbsp; ${glY.toLocaleString("en-AU")} international</div>
     </div>
     <div class="tiles">
       <a href="#" class="tile" data-go="finder"><span>Brands tracked</span><b>${D.brands.length.toLocaleString("en-AU")}</b><em>${newBrands} new in ${yr}</em></a>
@@ -277,7 +277,7 @@ function dashboard(){
     </div>
   </div>
   <div class="card">
-    <div class="ch"><span class="h3 m0">Partnerships by month</span><span class="key"><i class="k1"></i>ANZ <i class="k2"></i>Global</span></div>
+    <div class="ch"><span class="h3 m0">Partnerships by month</span><span class="key"><i class="k1"></i>ANZ <i class="k2"></i>International</span></div>
     ${monthChart}
   </div>
   <div class="two">

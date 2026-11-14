@@ -92,7 +92,8 @@ Promise.all([fetch("deals.json",{cache:"no-cache"}).then(r=>r.json()),L.load()])
 
   const asBrand=mine.filter(onB).length, asProp=mine.length-asBrand;
   const kind=!mine.length?"Partner":asBrand>=asProp?"Brand":"Rights holder";
-  const regions=[...new Set(mine.map(d=>d.region).filter(Boolean))].sort();
+  const MK=["ANZ","North America","UK & Ireland","Europe","Asia","Middle East","Rest of World","Global"];
+  const regions=[...new Set(mine.map(d=>d.market||d.region).filter(Boolean))].sort((a,b)=>MK.indexOf(a)-MK.indexOf(b));
   const sports=[...new Set(mine.map(d=>d.sport).filter(Boolean))].sort();
 
   if(!document.body.dataset.id)document.title=`${e.name} partnerships | Sport Sport Sport`;

@@ -38,7 +38,7 @@ function detail(c,g,q){
   <section class="wrap sec" style="padding-top:0"><div class="sh"><div><span class="lbl mute-l">Who they back</span><h2 class="disp">Properties.</h2></div><span class="lbl mute-l" id="pCount"></span></div><div class="pg" id="pGrid"></div></section>
   <section class="wrap sec" style="padding-top:0"><div class="sh"><div><span class="lbl mute-l">The record</span><h2 class="disp">Every partnership.</h2></div><span class="lbl mute-l" id="dCount"></span></div><div class="tw"><table class="t"><thead><tr><th>Date</th><th>Partnership</th><th>Sport</th><th>Partnership type</th><th>Ends</th><th>Region</th></tr></thead><tbody id="dRows"></tbody></table></div></section>`;
   function draw(){
-    const r=deals.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(st.region==="All"||d.region===st.region));
+    const r=deals.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(st.region==="All"||S.mkt(d)===st.region));
     const bm=new Map(),pm=new Map();
     r.forEach(d=>{d._bs.forEach(e=>{if(e&&g.brands.some(b=>b.e.slug===e.slug)){const m=bm.get(e.slug)||{e,n:0,sp:new Set()};m.n++;m.sp.add(d.sport);bm.set(e.slug,m)}});
       d._ps.forEach(e=>{if(!e)return;const m=pm.get(e.slug)||{e,n:0,sp:new Set()};m.n++;m.sp.add(d.sport);pm.set(e.slug,m)})});
@@ -52,7 +52,7 @@ function detail(c,g,q){
     $("dCount").textContent=plural(r.length,"partnership","partnerships");
     $("dRows").innerHTML=r.map(d=>`<tr><td class="d">${esc(S.fmt(d))}</td><td><span class="dl">${L.pair(d,{px:34})}${S.dealLink(d)}</span></td><td>${esc(d.sport)}</td><td>${esc(d.tier||d.type||"")}</td><td class="d">${esc(S.endsTxt(d))}</td><td><span class="tag r">${esc(d.region)}</span></td></tr>`).join("");
     $("spPills").innerHTML=["All",...sports.slice(0,14)].map(s=>`<button type="button" class="pill${st.sport===s?" on":""}" data-s="${esc(s)}" aria-pressed="${st.sport===s}">${s==="All"?"All sports":esc(s)}</button>`).join("");
-    $("regPills").innerHTML=["All","ANZ","Global"].map(x=>`<button type="button" class="pill${st.region===x?" on":""}" data-r="${x}" aria-pressed="${st.region===x}">${x==="All"?"Everywhere":x}</button>`).join("");
+    $("regPills").innerHTML=S.MKTS.map(x=>`<button type="button" class="pill${st.region===x?" on":""}" data-r="${esc(x)}" aria-pressed="${st.region===x}">${esc(S.mktLab(x))}</button>`).join("");
     S.setQs({c,sport:st.sport!=="All"&&st.sport,region:st.region!=="All"&&st.region});
   }
   $("view").addEventListener("click",e=>{const b=e.target.closest("[data-s],[data-r]");if(!b)return;if(b.dataset.s)st.sport=b.dataset.s;if(b.dataset.r)st.region=b.dataset.r;draw()});

@@ -10,7 +10,7 @@ const loc=s=>{const m=String(s||"").match(/^https:\/\/images\.unsplash\.com\/(ph
 const imgSrc=s=>/^https:\/\/images\.unsplash\.com\//.test(s)&&!/[?&]w=/.test(s)?s+(s.includes("?")?"&":"?")+"w=1200&q=70&auto=format&fit=crop":s;
 
 let all=[],f="All",shown=PAGE;
-const F=[["All","All stories"],["deal","Partnership stories"],["feature","Features"],["ANZ","ANZ"],["Global","Global"]];
+const F=[["All","All stories"],["deal","Partnership stories"],["feature","Features"],["ANZ","ANZ"],["Intl","International"]];
 {const q=new URLSearchParams(location.search).get("f");if(F.some(([k])=>k===q))f=q;}
 
 Promise.all([
@@ -18,7 +18,7 @@ Promise.all([
   fetch("features.json",{cache:"no-cache"}).then(r=>r.ok?r.json():{features:[]}).catch(()=>({features:[]}))
 ]).then(([d,fj])=>{
   const leads=(d.deals||[]).filter(x=>x.slug&&x.article&&x.date).map(x=>({kind:"deal",date:x.date,head:x.headline||x.deal,sub:x.deal,
-    stand:(x.article&&x.article.standfirst)||x.summary||"",label:x.sport,region:x.region,image:x.image,slug:x.slug}));
+    stand:(x.article&&x.article.standfirst)||x.summary||"",label:x.sport,region:x.market||x.region,image:x.image,slug:x.slug}));
   const feats=(fj.features||[]).filter(x=>x.slug&&x.article&&x.date&&x.headline).map(x=>({kind:"feature",date:x.date,head:x.headline,sub:x.descriptor||"",
     stand:(x.article&&x.article.standfirst)||"",label:x.topic||"Feature",region:x.region,image:x.image,slug:x.slug}));
   all=[...leads,...feats].sort((a,b)=>b.date.localeCompare(a.date)||(a.kind==="feature"?-1:1));
@@ -30,7 +30,7 @@ const meta=x=>`<div class="meta"><span class="tag${x.kind==="feature"?" r":""}">
 const href=x=>`articles/${encodeURIComponent(x.slug)}`;
 
 function draw(){
-  const r=all.filter(x=>f==="All"||x.kind===f||x.region===f);
+  const r=all.filter(x=>f==="All"||x.kind===f||(f==="ANZ"?x.region==="ANZ":f==="Intl"&&x.region&&x.region!=="ANZ"));
   const [first,...rest]=r;
   $("lead").innerHTML=first?`<a class="nlead" href="${href(first)}">${img(first,true)}<div>${meta(first)}<h2 class="disp">${esc(first.head)}</h2>${first.stand?`<p>${esc(first.stand)}</p>`:""}<span class="more">Read the story →</span></div></a>`:`<p class="note">No stories here yet.</p>`;
   $("grid").innerHTML=rest.slice(0,shown).map(x=>`<a class="nc" href="${href(x)}">${img(x)}${meta(x)}<h3>${esc(x.head)}</h3>${x.sub&&x.sub!==x.head?`<span class="lbl mute-l" style="font-size:11px">${esc(x.sub)}</span>`:""}${x.stand?`<p>${esc(x.stand)}</p>`:""}</a>`).join("");

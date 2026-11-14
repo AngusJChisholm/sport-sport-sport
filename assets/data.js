@@ -12,6 +12,10 @@ window.SSSData=(function(){
   const CATS=["Banking & finance","Insurance","Betting & wagering","Fintech, crypto & trading","Automotive","Telco","Technology","Energy & utilities","Mining & resources","Airlines & travel","Tourism & government","Alcohol","Non-alcoholic drinks","Food & nutrition","Retail","Apparel & footwear","Sporting goods & equipment","Health & beauty","Media & broadcast","Gaming & esports","Construction & property","Home & hardware","Industrial & manufacturing","Logistics & transport","Professional services","Hospitality & entertainment","Education","Watches & luxury","Collectibles & licensing","Agriculture","Not-for-profit","Sport & events","Other"];
   const PTYPES=["Club & team","National team","League & competition","Event","Governing body","Athlete & talent","Venue","Other"];
   const TIERS=["Naming rights","Title sponsor","Principal & major","Kit & apparel","Shirt & kit placement","Official partner","Media & broadcast","Licensing & merchandise","Ambassador & endorsement","Investment & ownership"];
+  // Markets: where the property is based (tools/markets.py). Older rows fall back to region.
+  const mkt=d=>d.market||(d.region==="ANZ"?"ANZ":"Global");
+  const MKTS=["All","ANZ","North America","UK & Ireland","Europe","Asia","Middle East","Rest of World","Global"];
+  const mktLab=m=>m==="All"?"Everywhere":m==="Global"?"Global properties":m;
   let P=null;
   function load(){
     if(P)return P;
@@ -21,10 +25,11 @@ window.SSSData=(function(){
       deals.forEach(d=>{
         const add=(e,side,other)=>{if(!e||!e.slug)return;
           let m=M.get(e.slug);
-          if(!m){m={e,nB:0,nP:0,sports:new Map(),regions:new Set(),deals:[],partners:new Map()};M.set(e.slug,m)}
+          if(!m){m={e,nB:0,nP:0,sports:new Map(),regions:new Set(),markets:new Set(),deals:[],partners:new Map()};M.set(e.slug,m)}
           side==="b"?m.nB++:m.nP++;
           if(d.sport)m.sports.set(d.sport,(m.sports.get(d.sport)||0)+1);
           if(d.region)m.regions.add(d.region);
+          m.markets.add(mkt(d));
           m.deals.push({d,side,other});
           (other||[]).forEach(o=>{if(o)m.partners.set(o.slug,o)});
         };
@@ -53,5 +58,5 @@ window.SSSData=(function(){
   const endsTxt=d=>d.ends?`${d.endsEst?"c. ":""}${d.ends}`:"";
   const qs=()=>new URLSearchParams(location.search);
   function setQs(obj){const p=new URLSearchParams();Object.entries(obj).forEach(([k,v])=>{if(v)p.set(k,v)});history.replaceState(null,"",location.pathname+(p.toString()?"?"+p:""))}
-  return {load,sortKey,yearOf,fmt,CATS,PTYPES,TIERS,esc,dealLink,endsTxt,qs,setQs};
+  return {load,mkt,MKTS,mktLab,sortKey,yearOf,fmt,CATS,PTYPES,TIERS,esc,dealLink,endsTxt,qs,setQs};
 })();
