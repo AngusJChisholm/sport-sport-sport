@@ -143,13 +143,18 @@ def main():
             return m if m and m["past"] else None
         partners.sort(key=lambda k: pinfo.get(k, {}).get("past", False))
         # Property pages: the property's own grouping for each partner (its "ptier", from the official partners page),
-        # taken from the newest current deal with that partner. SSS's own "tier" stays on the deal for filters.
+        # taken from the newest current deal with that partner. If a partner sits in more than one grouping (e.g. Toyota
+        # as a platinum partner and Hilux as a competition partner), its highest grouping on the page wins.
+        # SSS's own "tier" stays on the deal for filters.
         pt_of = {}
         if kind == "p":
+            prank = {t: i for i, t in enumerate(e.get("ptiers") or [])}
             for d, side in r["deals"]:
                 if side == "p" and d.get("ptier") and not d.get("ended"):
                     for o in [resolve(x) for x in many(split(d.get("deal"))[0])]:
-                        pt_of.setdefault(o, (d["ptier"], d.get("ptitle") or ""))
+                        cur = pt_of.get(o)
+                        if cur is None or prank.get(d["ptier"], 99) < prank.get(cur[0], 99):
+                            pt_of[o] = (d["ptier"], d.get("ptitle") or "")
         order = list(e.get("ptiers") or []) if kind == "p" else []
         for k in partners:
             t = pt_of.get(k, ("", ""))[0]

@@ -3,23 +3,55 @@
  "summary": {
   "dup_entities": 15,
   "no_category": 564,
-  "cat_mismatch": 99,
+  "cat_mismatch": 100,
   "slot_clash": 23,
   "dup_deals": 1,
   "no_broadcaster": 13,
-  "stale": 1,
-  "no_source": 663,
+  "stale": 2,
+  "no_source": 662,
   "anz_slot_clash": 21
  },
  "dup_entities": [
   {
    "names": [
-    "Star Sports",
-    "The Star"
+    "TAB",
+    "TAB NZ"
    ],
    "slugs": [
-    "star-sports",
-    "the-star"
+    "tab",
+    "tab-nz"
+   ]
+  },
+  {
+   "names": [
+    "HYROX",
+    "HYROX Australia"
+   ],
+   "slugs": [
+    "hyrox",
+    "hyrox-australia"
+   ]
+  },
+  {
+   "names": [
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
+   ],
+   "slugs": [
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
+   ]
+  },
+  {
+   "names": [
+    "Kia",
+    "Kia Australia"
+   ],
+   "slugs": [
+    "kia",
+    "kia-australia"
    ]
   },
   {
@@ -48,26 +80,6 @@
   },
   {
    "names": [
-    "TAB",
-    "TAB NZ"
-   ],
-   "slugs": [
-    "tab",
-    "tab-nz"
-   ]
-  },
-  {
-   "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
-   ],
-   "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
-   ]
-  },
-  {
-   "names": [
     "Ant Group",
     "Ant International"
    ],
@@ -78,44 +90,12 @@
   },
   {
    "names": [
-    "Kia",
-    "Kia Australia"
+    "Courier Mail",
+    "The Courier-Mail"
    ],
    "slugs": [
-    "kia",
-    "kia-australia"
-   ]
-  },
-  {
-   "names": [
-    "Victor",
-    "Victor Sports"
-   ],
-   "slugs": [
-    "victor",
-    "victor-sports"
-   ]
-  },
-  {
-   "names": [
-    "Harness Racing Australia",
-    "Harness Racing NZ"
-   ],
-   "slugs": [
-    "harness-racing-australia",
-    "harness-racing-nz"
-   ]
-  },
-  {
-   "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
-   ],
-   "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
+    "courier-mail",
+    "the-courier-mail"
    ]
   },
   {
@@ -130,16 +110,6 @@
   },
   {
    "names": [
-    "Special Olympics",
-    "Special Olympics Australia"
-   ],
-   "slugs": [
-    "special-olympics",
-    "special-olympics-australia"
-   ]
-  },
-  {
-   "names": [
     "Hockey Australia",
     "Hockey New Zealand"
    ],
@@ -150,22 +120,52 @@
   },
   {
    "names": [
-    "HYROX",
-    "HYROX Australia"
+    "Victor",
+    "Victor Sports"
    ],
    "slugs": [
-    "hyrox",
-    "hyrox-australia"
+    "victor",
+    "victor-sports"
    ]
   },
   {
    "names": [
-    "Courier Mail",
-    "The Courier-Mail"
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
    ],
    "slugs": [
-    "courier-mail",
-    "the-courier-mail"
+    "commonwealth-games",
+    "commonwealth-games-australia"
+   ]
+  },
+  {
+   "names": [
+    "Special Olympics",
+    "Special Olympics Australia"
+   ],
+   "slugs": [
+    "special-olympics",
+    "special-olympics-australia"
+   ]
+  },
+  {
+   "names": [
+    "Harness Racing Australia",
+    "Harness Racing NZ"
+   ],
+   "slugs": [
+    "harness-racing-australia",
+    "harness-racing-nz"
+   ]
+  },
+  {
+   "names": [
+    "Star Sports",
+    "The Star"
+   ],
+   "slugs": [
+    "star-sports",
+    "the-star"
    ]
   }
  ],
@@ -3035,6 +3035,13 @@
    "deals": 3
   },
   {
+   "brand": "Powerade",
+   "slug": "powerade",
+   "cat": "Non-alcoholic drinks",
+   "rules_say": "Energy & utilities",
+   "deals": 3
+  },
+  {
    "brand": "Victorian Responsible Gambling Foundation",
    "slug": "victorian-responsible-gambling-foundation",
    "cat": "Tourism & government",
@@ -3074,13 +3081,6 @@
    "slug": "seven-consulting",
    "cat": "Professional services",
    "rules_say": "Media & broadcast",
-   "deals": 2
-  },
-  {
-   "brand": "Powerade",
-   "slug": "powerade",
-   "cat": "Non-alcoholic drinks",
-   "rules_say": "Energy & utilities",
    "deals": 2
   },
   {
@@ -3684,6 +3684,13 @@
    "cat": "Construction & property",
    "rules_say": "Food & nutrition",
    "deals": 1
+  },
+  {
+   "brand": "Healthspan Elite",
+   "slug": "healthspan-elite",
+   "cat": "Food & nutrition",
+   "rules_say": "Health & beauty",
+   "deals": 1
   }
  ],
  "slot_clash": [
@@ -4148,6 +4155,10 @@
   {
    "deal": "Westpac × NRL",
    "date": "2022-10-28"
+  },
+  {
+   "deal": "Tudor × New Zealand Rugby",
+   "date": "2017-05-30"
   }
  ],
  "no_source": [
@@ -6785,10 +6796,6 @@
   },
   {
    "deal": "Beaumont Tiles × Melbourne United",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "AWS × New Zealand Rugby",
    "issue": "needsSource"
   },
   {
