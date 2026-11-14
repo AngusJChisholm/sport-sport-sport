@@ -462,7 +462,7 @@ function filters(){
 }
 function render(){
   const latest=DEALS.find(d=>d.date);const now=latest?dObj(latest):new Date();
-  const r=DEALS.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(!st.type||d.type===st.type)&&(!st.reg||(st.reg==="ANZ"?d.region==="ANZ":st.reg==="Intl"?d.region!=="ANZ":(d.market||d.region)===st.reg))&&(!st.days||(d.date&&(now-dObj(d))/864e5<=+st.days))&&(!st.ent||L.has(d,st.ent))&&(!st.q||(d.deal+" "+(d.summary||"")+" "+(d.sport||"")).toLowerCase().includes(st.q)));
+  const r=DEALS.filter(d=>(st.sport==="All"||d.sport===st.sport)&&(!st.type||d.type===st.type)&&(!st.reg||(st.reg==="Intl"?(d.market||d.region)!=="ANZ":(d.market||d.region)===st.reg))&&(!st.days||(d.date&&(now-dObj(d))/864e5<=+st.days))&&(!st.ent||L.has(d,st.ent))&&(!st.q||(d.deal+" "+(d.summary||"")+" "+(d.sport||"")).toLowerCase().includes(st.q)));
   $("list").innerHTML=r.slice(0,shown).map(d=>{
     const name=href(d)?`<a${attrs(d)}><b>${esc(d.deal)}</b></a>`:`<b>${esc(d.deal)}</b>`;
     const pair=d._b?L.pair(d,{px:40}):"";

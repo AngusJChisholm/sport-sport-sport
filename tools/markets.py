@@ -1,9 +1,9 @@
 """Tags every deal in deals.json with a "market": where the property (the rights holder) is based.
 
-  Australia, New Zealand              home markets (region "ANZ")
-  North America, UK & Ireland         core markets
+  ANZ                                 Australia and New Zealand, as one market
+  North America, UK & Ireland,
   Europe, Asia, Middle East,
-  Rest of World                       watch markets (Rest of World = Latin America, Africa, the Caribbean)
+  Rest of World                       Rest of World = Latin America, Africa, the Caribbean
   Global                              properties that are worldwide by nature: FIFA, the IOC, F1, UEFA Champions
                                       League, ICC, World Rugby, ATP/WTA tours and the like
 
@@ -28,7 +28,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from locations import state_of  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-MARKETS = ["Australia", "New Zealand", "North America", "UK & Ireland", "Europe", "Asia", "Middle East",
+MARKETS = ["ANZ", "North America", "UK & Ireland", "Europe", "Asia", "Middle East",
            "Rest of World", "Global"]
 
 
@@ -219,6 +219,11 @@ ORDER = [("Global", GLOBAL), ("Middle East", ME), ("Asia", ASIA), ("Rest of Worl
 
 
 def market_of(d, overrides):
+    m, why = _market_of(d, overrides)
+    return ("ANZ" if m in ("Australia", "New Zealand") else m), why
+
+
+def _market_of(d, overrides):
     brand, prop = split(d.get("deal"))
     for part in re.split(r"\s+/\s+", prop):
         m = overrides.get(slug(part))
@@ -271,7 +276,8 @@ def main():
     path = ROOT / "deals.json"
     data = json.loads(path.read_text())
     ents = json.loads((ROOT / "entities.json").read_text()).get("entities", {})
-    overrides = {k: v["market"] for k, v in ents.items() if isinstance(v, dict) and v.get("market") in MARKETS}
+    overrides = {k: v["market"] for k, v in ents.items()
+                 if isinstance(v, dict) and v.get("market") in MARKETS + ["Australia", "New Zealand"]}
     changed, how, miss = 0, Counter(), []
     for d in data["deals"]:
         if d.get("marketLock") or (d.get("market") and not redo):
