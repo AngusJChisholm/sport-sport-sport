@@ -2,24 +2,56 @@
  "generated": "2026-11-14",
  "summary": {
   "dup_entities": 15,
-  "no_category": 538,
+  "no_category": 564,
   "cat_mismatch": 99,
-  "slot_clash": 22,
+  "slot_clash": 23,
   "dup_deals": 1,
   "no_broadcaster": 13,
   "stale": 1,
-  "no_source": 664,
-  "anz_slot_clash": 20
+  "no_source": 663,
+  "anz_slot_clash": 21
  },
  "dup_entities": [
   {
    "names": [
-    "Dolphins",
-    "Dolphins Group"
+    "Athletics",
+    "Athletics Australia",
+    "Athletics New Zealand"
    ],
    "slugs": [
-    "dolphins",
-    "dolphins-group"
+    "athletics",
+    "athletics-australia",
+    "athletics-new-zealand"
+   ]
+  },
+  {
+   "names": [
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
+   ],
+   "slugs": [
+    "commonwealth-games",
+    "commonwealth-games-australia"
+   ]
+  },
+  {
+   "names": [
+    "Star Sports",
+    "The Star"
+   ],
+   "slugs": [
+    "star-sports",
+    "the-star"
+   ]
+  },
+  {
+   "names": [
+    "HYROX",
+    "HYROX Australia"
+   ],
+   "slugs": [
+    "hyrox",
+    "hyrox-australia"
    ]
   },
   {
@@ -34,12 +66,22 @@
   },
   {
    "names": [
-    "Ant Group",
-    "Ant International"
+    "Hockey Australia",
+    "Hockey New Zealand"
    ],
    "slugs": [
-    "ant-group",
-    "ant-international"
+    "hockey-australia",
+    "hockey-new-zealand"
+   ]
+  },
+  {
+   "names": [
+    "Courier Mail",
+    "The Courier-Mail"
+   ],
+   "slugs": [
+    "courier-mail",
+    "the-courier-mail"
    ]
   },
   {
@@ -54,12 +96,12 @@
   },
   {
    "names": [
-    "HYROX",
-    "HYROX Australia"
+    "PURE Sports Nutrition",
+    "Pure Nutrition"
    ],
    "slugs": [
-    "hyrox",
-    "hyrox-australia"
+    "pure-nutrition",
+    "pure-sports-nutrition"
    ]
   },
   {
@@ -78,54 +120,12 @@
   },
   {
    "names": [
-    "Athletics",
-    "Athletics Australia",
-    "Athletics New Zealand"
+    "Dolphins",
+    "Dolphins Group"
    ],
    "slugs": [
-    "athletics",
-    "athletics-australia",
-    "athletics-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Hockey Australia",
-    "Hockey New Zealand"
-   ],
-   "slugs": [
-    "hockey-australia",
-    "hockey-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Victor",
-    "Victor Sports"
-   ],
-   "slugs": [
-    "victor",
-    "victor-sports"
-   ]
-  },
-  {
-   "names": [
-    "Kia",
-    "Kia Australia"
-   ],
-   "slugs": [
-    "kia",
-    "kia-australia"
-   ]
-  },
-  {
-   "names": [
-    "Star Sports",
-    "The Star"
-   ],
-   "slugs": [
-    "star-sports",
-    "the-star"
+    "dolphins",
+    "dolphins-group"
    ]
   },
   {
@@ -140,32 +140,32 @@
   },
   {
    "names": [
-    "Courier Mail",
-    "The Courier-Mail"
+    "Ant Group",
+    "Ant International"
    ],
    "slugs": [
-    "courier-mail",
-    "the-courier-mail"
+    "ant-group",
+    "ant-international"
    ]
   },
   {
    "names": [
-    "PURE Sports Nutrition",
-    "Pure Nutrition"
+    "Kia",
+    "Kia Australia"
    ],
    "slugs": [
-    "pure-nutrition",
-    "pure-sports-nutrition"
+    "kia",
+    "kia-australia"
    ]
   },
   {
    "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
+    "Victor",
+    "Victor Sports"
    ],
    "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
+    "victor",
+    "victor-sports"
    ]
   }
  ],
@@ -2859,6 +2859,136 @@
    "brand": "Constantinou Group",
    "slug": "constantinou-group",
    "deals": 1
+  },
+  {
+   "brand": "Labour Connect",
+   "slug": "labour-connect",
+   "deals": 1
+  },
+  {
+   "brand": "MultiQuip",
+   "slug": "multiquip",
+   "deals": 1
+  },
+  {
+   "brand": "Stonemasons",
+   "slug": "stonemasons",
+   "deals": 1
+  },
+  {
+   "brand": "AccessFire",
+   "slug": "accessfire",
+   "deals": 1
+  },
+  {
+   "brand": "Adina",
+   "slug": "adina",
+   "deals": 1
+  },
+  {
+   "brand": "Air-touch",
+   "slug": "air-touch",
+   "deals": 1
+  },
+  {
+   "brand": "Beyond Care",
+   "slug": "beyond-care",
+   "deals": 1
+  },
+  {
+   "brand": "CDC Charter",
+   "slug": "cdc-charter",
+   "deals": 1
+  },
+  {
+   "brand": "Club Marconi",
+   "slug": "club-marconi",
+   "deals": 1
+  },
+  {
+   "brand": "Doltone House",
+   "slug": "doltone-house",
+   "deals": 1
+  },
+  {
+   "brand": "Everclear Window Tinting",
+   "slug": "everclear-window-tinting",
+   "deals": 1
+  },
+  {
+   "brand": "Gelatissimo",
+   "slug": "gelatissimo",
+   "deals": 1
+  },
+  {
+   "brand": "Irvine",
+   "slug": "irvine",
+   "deals": 1
+  },
+  {
+   "brand": "Miara Group",
+   "slug": "miara-group",
+   "deals": 1
+  },
+  {
+   "brand": "Naked Syrups",
+   "slug": "naked-syrups",
+   "deals": 1
+  },
+  {
+   "brand": "Park Fly",
+   "slug": "park-fly",
+   "deals": 1
+  },
+  {
+   "brand": "ProjectX Fit Outs",
+   "slug": "projectx-fit-outs",
+   "deals": 1
+  },
+  {
+   "brand": "RRRTAG",
+   "slug": "rrrtag",
+   "deals": 1
+  },
+  {
+   "brand": "SFD",
+   "slug": "sfd",
+   "deals": 1
+  },
+  {
+   "brand": "Starr Partners",
+   "slug": "starr-partners",
+   "deals": 1
+  },
+  {
+   "brand": "Stulz",
+   "slug": "stulz",
+   "deals": 1
+  },
+  {
+   "brand": "Trinitas Group",
+   "slug": "trinitas-group",
+   "deals": 1
+  },
+  {
+   "brand": "Vaccaro Group",
+   "slug": "vaccaro-group",
+   "deals": 1
+  },
+  {
+   "brand": "Astute",
+   "slug": "astute",
+   "deals": 1
+  },
+  {
+   "brand": "Hydraulic Distributors",
+   "slug": "hydraulic-distributors",
+   "deals": 1
+  },
+  {
+   "brand": "Pozitive",
+   "slug": "pozitive",
+   "deals": 1
   }
  ],
  "cat_mismatch": [
@@ -3903,6 +4033,23 @@
    ]
   },
   {
+   "property": "Western Sydney Wanderers",
+   "anz": true,
+   "slot": "Telco",
+   "partners": [
+    {
+     "brand": "Aussie Broadband",
+     "since": "listed",
+     "ends": null
+    },
+    {
+     "brand": "Optus Business Centre",
+     "since": "listed",
+     "ends": null
+    }
+   ]
+  },
+  {
    "property": "Arsenal",
    "anz": false,
    "slot": "Beer & cider",
@@ -4830,10 +4977,6 @@
   },
   {
    "deal": "Seven Consulting × Basketball Australia",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Omoda Jaecoo × Western Sydney Wanderers",
    "issue": "needsSource"
   },
   {
