@@ -220,13 +220,13 @@ html.locked main>*:not(#gate):not(#follow):not(script){display:none!important}
 <span class="lbl mute-l">SSS Pro</span>
 <h1 class="disp">Members only.</h1>
 <p>Enter the password to open the partnerships desk.</p>
-<form class="gate-f" id="gateF" autocomplete="off"><input type="password" id="gateP" placeholder="Password" aria-label="Password" autofocus><button class="btn" type="submit">Enter</button></form>
+<form class="gate-f" id="gateF" autocomplete="off"><input type="password" id="gateP" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="Password" aria-label="Password" autofocus><button class="btn" type="submit">Enter</button></form>
 <div class="gate-err" id="gateE" role="alert"></div>
 </div></section>
 <script>
 (function(){var K="4d533574c6b65069bd3124a0cfce762b3431575350c337a1f2749fa25d4e4f34";
 function hex(b){return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,"0")}).join("")}
-document.getElementById("gateF").onsubmit=function(e){e.preventDefault();var v=document.getElementById("gateP").value.trim();
+document.getElementById("gateF").onsubmit=function(e){e.preventDefault();var v=document.getElementById("gateP").value.trim().toLowerCase();
 crypto.subtle.digest("SHA-256",new TextEncoder().encode(v)).then(function(b){if(hex(b)===K){document.documentElement.classList.remove("locked");window.scrollTo(0,0)}else{document.getElementById("gateE").textContent="Wrong password. Try again.";document.getElementById("gateP").select()}})};})();
 </script>
 <section class="wrap hero">
