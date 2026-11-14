@@ -197,7 +197,7 @@ try{if(localStorage.getItem("sssProKey")!=="4d533574c6b65069bd3124a0cfce762b3431
 <style>
 #gate{display:none}
 html.locked #gate{display:flex}
-html.locked main>*:not(#gate),html.locked footer{display:none!important}
+html.locked main>*:not(#gate):not(#follow):not(script){display:none!important}
 #gate{min-height:calc(100vh - 220px);align-items:center;justify-content:center;padding:48px var(--pad)}
 .gate-box{width:100%;max-width:420px}
 .gate-box h1{font-size:clamp(40px,5vw,64px);margin:10px 0 8px}
@@ -213,6 +213,7 @@ html.locked main>*:not(#gate),html.locked footer{display:none!important}
 <header class="dk"><div class="wrap hd">
 <a href="./" class="logo" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="56" height="42"></a>
 <nav class="nav" aria-label="Main"><a href="news">News</a><a href="deals">Partnerships</a><a href="brands">Brands</a><a href="properties">Properties</a><a href="insights">Insights</a><a href="pro" class="on" aria-current="page">Pro</a></nav>
+<a href="#follow" class="btn">Follow</a>
 </div></header>
 <main id="main">
 <section id="gate"><div class="gate-box">
