@@ -301,6 +301,8 @@ a.st:hover b{box-shadow:inset 0 -.12em 0 var(--volt)}
 .hero{padding-block:clamp(18px,2.2vw,28px) clamp(32px,4vw,56px)}
 .hero-top{padding-bottom:12px}
 .ks{margin-top:14px}
+/* Compact layout */
+.sec{padding-block:clamp(28px,3.5vw,52px)}.sh{margin-bottom:clamp(14px,1.8vw,22px)}.sh h2{font-size:clamp(28px,3.2vw,46px)!important}.ptop{padding-block:clamp(20px,3vw,40px) clamp(18px,2.4vw,32px)}.ptop h1{font-size:clamp(44px,6vw,88px)!important}.ptop p{font-size:clamp(15px,1.2vw,17px);margin-top:12px}.stmt{padding:clamp(18px,2.4vw,32px) 0 clamp(14px,1.8vw,24px)}.stmt h2{font-size:clamp(22px,4.4vw,56px)}.card.all h3{font-size:clamp(26px,2.4vw,38px)!important;overflow-wrap:normal;word-break:normal;hyphens:none}.card.all{min-height:0}
 </style>
 <link rel="stylesheet" href="assets/follow.css">
 </head>
@@ -308,7 +310,7 @@ a.st:hover b{box-shadow:inset 0 -.12em 0 var(--volt)}
 <header class="dk"><div class="wrap hd">
 <a href="./" class="logo" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="56" height="42"></a>
 <nav class="nav" id="nav"><a href="news">News</a><a href="deals" class="on" aria-current="page">Partnerships</a><a href="brands">Brands</a><a href="properties">Properties</a><a href="insights">Insights</a></nav>
-<a href="./#follow" class="btn">Follow</a>
+<a href="#follow" class="btn">Follow</a>
 <button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
 </div></header>
 
@@ -325,8 +327,8 @@ a.st:hover b{box-shadow:inset 0 -.12em 0 var(--volt)}
 <div class="cs-r" id="csRow" role="group" aria-label="Clubs"></div>
 <div class="cs-on" id="csOn" hidden></div>
 </div>
-<div class="pills" id="pills" role="group" aria-label="Filter by sport"></div>
 <div class="sels">
+<label class="sel"><select id="fSport" aria-label="Sport"><option value="All">All sports</option></select></label>
 <label class="sel"><select id="fType" aria-label="Partnership type"><option value="">All partnership types</option></select></label>
 <label class="sel"><select id="fReg" aria-label="Region"><option value="">All regions</option><option>Global</option><option>ANZ</option></select></label>
 <label class="sel"><select id="fDate" aria-label="Date"><option value="">Any date</option><option value="7">Last 7 days</option><option value="30">Last 30 days</option><option value="90">Last 90 days</option></select></label>
@@ -338,19 +340,18 @@ a.st:hover b{box-shadow:inset 0 -.12em 0 var(--volt)}
 </div></section>
 <!-- follow:start -->
 <section class="sf" id="follow"><div class="sf-w">
-<span class="sf-l">Partnerships, data and features</span>
-<h2>All things sport business. <span class="sf-g">Follow along on LinkedIn and Instagram.</span></h2>
-<div class="sf-a"><a class="sf-b" href="https://www.linkedin.com/company/sportsportsport/" target="_blank" rel="noopener">Follow on LinkedIn</a><a class="sf-b sf-o" href="https://www.instagram.com/sportsportsport.hq/" target="_blank" rel="noopener">Follow on Instagram</a><p>The latest partnerships, news and analysis from global and ANZ sport business.</p></div>
-<div class="sf-n" id="nl"><div><h3>The weekly <span>wrap.</span></h3><p>Every partnership from the week, the ones that matter and why, in your inbox each Friday. Free.</p></div><div class="nl-f" id="nlF"><span class="sf-b sf-soon" aria-disabled="true">Coming soon</span><small>The weekly wrap launches shortly. Follow on LinkedIn or Instagram in the meantime.</small></div></div>
+<div class="sf-r"><div><h2>All things sport business.</h2><p>Partnerships, news and analysis on LinkedIn and Instagram.</p></div>
+<div class="sf-a"><a class="sf-b" href="https://www.linkedin.com/company/sportsportsport/" target="_blank" rel="noopener">LinkedIn</a><a class="sf-b sf-o" href="https://www.instagram.com/sportsportsport.hq/" target="_blank" rel="noopener">Instagram</a></div></div>
+<div class="sf-n" id="nl"><p><b>The Weekly Edition.</b> Every partnership from the week, in your inbox Monday mornings.</p><div class="nl-f" id="nlF"><span class="sf-b sf-soon" aria-disabled="true">Coming soon</span></div></div>
 </div></section>
 <!-- follow:end -->
 </main>
 
 <footer class="dk" id="about"><div class="wrap">
 <div class="ft"><div><a href="./" class="logo logo-ft" aria-label="Sport Sport Sport home"><img src="assets/wordmark-black.svg" alt="Sport Sport Sport" width="120" height="90"></a>
-<p class="mute" style="margin:28px 0 0;font-size:16px;max-width:420px;line-height:1.5">All things sport business. Global &amp; ANZ. The sponsorships and partnerships moving sport, filed.</p></div>
-<nav class="ft-l" aria-label="Footer"><span id="ftLi" style="display:contents"></span><a href="news">News</a><a href="deals">Partnerships</a><a href="brands">Brands</a><a href="properties">Properties</a><a href="insights">Insights</a><a href="renewals">Renewal watch</a></nav></div>
-<div class="ft-b"><span>That's the day. Same time tomorrow.</span><span>© <span id="yr">2026</span> Sport Sport Sport</span></div>
+<p class="mute" style="margin:28px 0 0;font-size:16px;max-width:420px;line-height:1.5">The sponsorships and partnerships moving sport. Global &amp; ANZ.</p></div>
+<nav class="ft-l" aria-label="Footer"><span id="ftLi" style="display:contents"></span><a href="news">News</a><a href="deals">Partnerships</a><a href="brands">Brands</a><a href="properties">Properties</a><a href="insights">Insights</a><a href="renewals">Renewal watch</a><a href="categories">Categories</a><a href="leagues">League maps</a></nav></div>
+<div class="ft-b"><span>Filed in Melbourne.</span><span>© <span id="yr">2026</span> Sport Sport Sport</span></div>
 </div></footer>
 
 <script src="assets/logos.js?v=8"></script>
@@ -449,7 +450,7 @@ function newsletter(){
   const n=SITE.newsletter||{}, u=String(n.embed||"");
   if(!/^https:\/\/embeds\.beehiiv\.com\/[A-Za-z0-9-]+/.test(u))return; // keeps the "Coming soon" button
   const src=u+(u.includes("?")?"&":"?")+"slim=true";
-  $("nlF").innerHTML=`<iframe src="${esc(src)}" title="Subscribe to the Sport Sport Sport weekly wrap" loading="lazy" scrolling="no"></iframe><small>No spam. Unsubscribe any time.</small>`;
+  $("nlF").innerHTML=`<iframe src="${esc(src)}" title="Subscribe to the Sport Sport Sport Weekly Edition" loading="lazy" scrolling="no"></iframe><small>No spam. Unsubscribe any time.</small>`;
 }
 function follow(){
   const li=SITE.linkedin, ig=SITE.instagram;
@@ -459,7 +460,7 @@ function follow(){
 }
 function filters(){
   const sports=["All",...[...new Set(DEALS.map(d=>d.sport))].sort()];
-  $("pills").innerHTML=sports.map(s=>`<button type="button" class="pill${s===st.sport?" on":""}" data-s="${esc(s)}" aria-pressed="${s===st.sport}">${esc(s)}</button>`).join("");
+  sports.slice(1).forEach(s=>$("fSport").insertAdjacentHTML("beforeend",`<option>${esc(s)}</option>`));$("fSport").value=sports.includes(st.sport)?st.sport:"All";
   [...new Set(DEALS.map(d=>d.type).filter(Boolean))].sort().forEach(t=>$("fType").insertAdjacentHTML("beforeend",`<option>${esc(t)}</option>`));
 }
 function render(){
@@ -519,7 +520,7 @@ function strip(){
 }
 function wire(){
   if(ARCH){
-  $("pills").onclick=e=>{const b=e.target.closest(".pill");if(!b)return;st.sport=b.dataset.s;shown=PAGE;$("pills").querySelectorAll(".pill").forEach(p=>{p.classList.toggle("on",p===b);p.setAttribute("aria-pressed",p===b)});render()};
+  $("fSport").onchange=e=>{st.sport=e.target.value;shown=PAGE;render()};
   $("fType").onchange=e=>{st.type=e.target.value;shown=PAGE;render()};
   $("fReg").onchange=e=>{st.reg=e.target.value;shown=PAGE;render()};
   $("fDate").onchange=e=>{st.days=e.target.value;shown=PAGE;render()};
@@ -531,13 +532,13 @@ function wire(){
   $("yr").textContent=new Date().getFullYear();
 }
 // Features are optional: if features.json is missing the page carries on with deals only.
-const featsP=fetch("features.json",{cache:"no-store"}).then(r=>r.ok?r.json():{}).then(j=>{
+const featsP=fetch("features.json",{cache:"no-cache"}).then(r=>r.ok?r.json():{}).then(j=>{
   FEATS=(j.features||[]).filter(f=>f.slug&&f.article&&f.date&&f.headline).map(f=>({date:f.date,added:f.date,headline:f.headline,
     deal:f.descriptor||"",sport:f.topic||f.sport||"Feature",region:f.region||"",slug:f.slug,article:true,image:f.image,
     summary:f.article.standfirst,feature:true,label:f.label||"Feature"}))}).catch(()=>{});
 const clubsP=fetch("instagram/colours.json").then(r=>r.ok?r.json():{}).then(j=>{CLUBS=j.teams||[]}).catch(()=>{});
 const logosP=L?L.load().catch(()=>{}):Promise.resolve();
-fetch("deals.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>Promise.all([clubsP,featsP,logosP]).then(()=>data)).then(data=>{
+fetch("deals.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(data=>Promise.all([clubsP,featsP,logosP]).then(()=>data)).then(data=>{
   SITE=data.site||{};
   ORIG=data.deals||[];
   DEALS=ORIG.slice().sort((a,b)=>sortKey(b).localeCompare(sortKey(a))||(b.lead?1:0)-(a.lead?1:0));

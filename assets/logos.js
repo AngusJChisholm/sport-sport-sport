@@ -12,7 +12,7 @@ window.SSSLogos=(function(){
   const okFile=s=>/^assets\/logos\/[\w.-]+\.(png|svg|webp|jpg)$/i.test(s);
 
   function load(){
-    const e=fetch("entities.json",{cache:"no-store"}).then(r=>r.ok?r.json():{}).catch(()=>({}));
+    const e=fetch("entities.json",{cache:"no-cache"}).then(r=>r.ok?r.json():{}).catch(()=>({}));
     const c=fetch("instagram/colours.json").then(r=>r.ok?r.json():{}).catch(()=>({}));
     return Promise.all([e,c]).then(([ej,cj])=>{
       ENT=ej.entities||{};LEAGUES=ej.leagues||[];BF=okId(String(ej.brandfetch||""))?ej.brandfetch:"";CLUBS=cj.teams||[];

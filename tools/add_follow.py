@@ -1,4 +1,4 @@
-"""Put the follow + weekly wrap block at the bottom of every page, directly above the footer.
+"""Put the follow + Weekly Edition block at the bottom of every page, directly above the footer.
 
 Safe to re-run: it removes any old copy (including the old mid-page one) and writes one fresh copy
 as the last thing inside <main>. Edit the block here, then run:  python3 tools/add_follow.py
@@ -13,10 +13,9 @@ IG = "https://www.instagram.com/sportsportsport.hq/"
 
 BLOCK = f"""<!-- follow:start -->
 <section class="sf" id="follow"><div class="sf-w">
-<span class="sf-l">Deals, data and features</span>
-<h2>All things sport business. <span class="sf-g">Follow along on LinkedIn and Instagram.</span></h2>
-<div class="sf-a"><a class="sf-b" href="{LI}" target="_blank" rel="noopener">Follow on LinkedIn</a><a class="sf-b sf-o" href="{IG}" target="_blank" rel="noopener">Follow on Instagram</a><p>The latest deals, news and analysis from global and ANZ sport business.</p></div>
-<div class="sf-n" id="nl"><div><h3>The weekly <span>wrap.</span></h3><p>Every deal from the week, the ones that matter and why, in your inbox each Friday. Free.</p></div><div class="nl-f" id="nlF"><span class="sf-b sf-soon" aria-disabled="true">Coming soon</span><small>The weekly wrap launches shortly. Follow on LinkedIn or Instagram in the meantime.</small></div></div>
+<div class="sf-r"><div><h2>All things sport business.</h2><p>Partnerships, news and analysis on LinkedIn and Instagram.</p></div>
+<div class="sf-a"><a class="sf-b" href="{LI}" target="_blank" rel="noopener">LinkedIn</a><a class="sf-b sf-o" href="{IG}" target="_blank" rel="noopener">Instagram</a></div></div>
+<div class="sf-n" id="nl"><p><b>The Weekly Edition.</b> Every partnership from the week, in your inbox Monday mornings.</p><div class="nl-f" id="nlF"><span class="sf-b sf-soon" aria-disabled="true">Coming soon</span></div></div>
 </div></section>
 <!-- follow:end -->
 """

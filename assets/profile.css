@@ -133,3 +133,5 @@ footer.dk .logo:hover{box-shadow:none}
 .pgh:first-child{margin-top:4px}
 .pgh span{font-size:12px;letter-spacing:.18em;color:var(--ink-3)}
 .pgh::after{content:"";flex:1;height:3px;background:var(--volt,#D4FF00);align-self:center;max-width:48px}
+/* Compact layout: tighter sections and smaller headings */
+.sec{padding-block:clamp(28px,3.5vw,52px)}.sh{margin-bottom:clamp(14px,1.8vw,22px)}.sh h2{font-size:clamp(28px,3.2vw,46px)!important}.ptop{padding-block:clamp(20px,3vw,40px) clamp(18px,2.4vw,32px)}.ptop h1{font-size:clamp(44px,6vw,88px)!important}.ptop p{font-size:clamp(15px,1.2vw,17px);margin-top:12px}.hero{padding-block:clamp(20px,3vw,40px) clamp(18px,2.4vw,32px)}.hero h1{font-size:clamp(44px,6vw,88px)!important}.hero p{font-size:clamp(15px,1.2vw,17px);margin-top:12px}
