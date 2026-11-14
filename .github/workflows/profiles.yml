@@ -7,7 +7,7 @@ name: Enrich deals and build brand/property pages
 on:
   push:
     branches: [main]
-    paths: ["deals.json", "entities.json", "profile.html", "tools/enrich.py", "tools/build_profiles.py", "tools/ptiers.py", "tools/match.py", "tools/subcat_rules.py", "tools/locations.py", "tools/audit.py", "coverage.json"]
+    paths: ["deals.json", "entities.json", "tools/markets.py", "profile.html", "tools/enrich.py", "tools/build_profiles.py", "tools/ptiers.py", "tools/match.py", "tools/subcat_rules.py", "tools/locations.py", "tools/audit.py", "coverage.json"]
   workflow_dispatch:
 
 concurrency:
@@ -27,6 +27,9 @@ jobs:
 
       - name: Enrich new deals
         run: python3 tools/enrich.py
+
+      - name: Tag each deal's market (Australia, New Zealand, North America, UK & Ireland, Europe, Asia, Middle East, Rest of World, Global)
+        run: python3 tools/markets.py
 
       - name: Property tiers (each property's own partner groupings)
         run: cd tools && python3 ptiers.py
