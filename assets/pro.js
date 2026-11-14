@@ -317,6 +317,7 @@ const mxLoad=()=>MX?Promise.resolve(MX):fetch("pro/matches.json",{cache:"no-stor
 const pct=v=>`${(v*100).toFixed(1).replace(/\.0$/,"")}%`;
 const bandCls=k=>k==="Call now"?"c":k==="Strong"?"t":"";
 function scouting(){
+  if(state.m)state.m.slug=null; /* the tab always opens on the landing page */
   $("view").innerHTML=`<p class="note">Loading the scouting report…</p>`;
   mxLoad().then(()=>drawMatches()).catch(err=>{console.error(err);$("view").innerHTML=`<p class="note">Couldn't load the scouting report. It's rebuilt each time the database updates; refresh to try again.</p>`});
 }
@@ -335,17 +336,46 @@ function intl(m,rec){
   return `<div class="h3">${head}</div><p class="note-s">${lead}</p><div class="tw"><table class="t mx"><thead><tr><th>#</th><th>${m.side==="p"?"Brand":"Property"}</th><th>Score</th><th>Why</th></tr></thead><tbody>${list.map((r,i)=>{const slug=m.side==="p"?r.b:r.p,o=D.orgs.get(slug);const sub=m.side==="p"?`${esc(r.c||"")}${r.u?` · ${esc(r.u)}`:""}`:`${esc(r.s)} · ${esc(r.r)}`;
     return `<tr><td class="d">${i+1}</td><td><span class="dl">${o?logo(o.e,34):""}<span><a href="${esc(L.page(slug))}"><b>${esc(r.n)}</b></a><br><span class="mute-l">${sub}</span></span></span></td><td><div class="mx-sc"><b>${r.x}</b></div><span class="gapbar"><i style="width:${r.x}%"></i></span><div class="mute-l mx-f">${esc(r.f)} confidence</div></td><td><ul class="mx-why">${(r.w||[]).map(w=>`<li>${esc(w)}</li>`).join("")}</ul>${(r.g||[]).length?`<div class="chips">${r.g.map(g=>`<span class="chip">${esc(g)}</span>`).join("")}</div>`:""}</td></tr>`}).join("")}</tbody></table></div>`;
 }
+/* Scouting landing page: the most popular properties or brands (most partnerships in the database), each opening its report. */
+const PTYPE={club:"Club",body:"League or body",event:"Event",national:"National team",athlete:"Athlete",venue:"Venue"};
+function scoutHome(){
+  const m=state.m, pool=m.side==="p"?MX.props:MX.brands;
+  const all=Object.entries(pool).map(([slug,r])=>{const o=D.orgs.get(slug);return {slug,r,o,n:o?o.n:0,top:(r.m||[])[0]}}).sort((a,b)=>b.n-a.n||a.r.n.localeCompare(b.r.n));
+  const subs=m.side==="p"?[...new Set(all.map(x=>x.r.s).filter(Boolean))]:[...new Set(all.map(x=>x.r.c).filter(Boolean))];
+  const cnt=k=>all.filter(x=>(m.side==="p"?x.r.s:x.r.c)===k).length;
+  const opts=subs.filter(k=>cnt(k)>=3).sort((a,b)=>cnt(b)-cnt(a)).slice(0,8);
+  const f=m.f&&opts.includes(m.f)?m.f:"";
+  const list=f?all.filter(x=>(m.side==="p"?x.r.s:x.r.c)===f):all;
+  const lim=m.lim||24, shown=list.slice(0,lim);
+  const watched=all.filter(x=>watch.get().has(x.slug));
+  const card=x=>{const sub=m.side==="p"?`${esc(PTYPE[x.r.t]||"Property")} · ${esc(x.r.s||"")}`:`${esc(x.r.c||"Uncategorised")}${x.r.u?` · ${esc(x.r.u)}`:""}`;
+    return `<button type="button" class="sc-c" data-mpick="${esc(x.slug)}">${x.o?L.mark(x.o.e,{px:56}):""}<b>${esc(x.r.n)}</b><span class="sc-s">${sub}</span><span class="sc-n"><em>${x.n}</em> partnerships</span>${x.top?`<span class="sc-t">Top pick: <b>${esc(x.top.n)}</b> ${x.top.x}</span>`:""}</button>`};
+  $("view").innerHTML=`<p class="pro-intro">${m.side==="p"?"Pick a property to see the brands it should be talking to":"Pick a brand to see the properties it should be talking to"}, ranked by Scout Score. Sorted by the most partnerships in the SSS database.</p>
+  <div class="ctl"><div class="pills">${pills("mside",[["p","Property → brands"],["b","Brand → properties"]],m.side)}</div>
+  <input class="srch" id="mq" list="mxNames" placeholder="${m.side==="p"?"Search all properties, e.g. Carlton, Australian Open":"Search all brands, e.g. Coca-Cola, TikTok"}" autocomplete="off"><datalist id="mxNames">${all.slice().sort((a,b)=>a.r.n.localeCompare(b.r.n)).map(x=>`<option value="${esc(x.r.n)}">`).join("")}</datalist></div>
+  ${watched.length?`<div class="h3">Your watchlist</div><div class="sc-g">${watched.map(card).join("")}</div>`:""}
+  <div class="h3">${m.side==="p"?"Most popular properties":"Most popular brands"}${f?` · ${esc(f)}`:""}</div>
+  <div class="ctl" style="margin-top:10px"><div class="pills">${pills("mf",[["","All"],...opts.map(k=>[k,k])],f)}</div></div>
+  <div class="sc-g">${shown.map(card).join("")}</div>
+  ${list.length>shown.length?`<p><button class="ghost" id="mmore">Show more (${list.length-shown.length} left)</button></p>`:""}
+  <p class="note-s">${all.length} ${m.side==="p"?"properties":"brands"} scored. Rebuilt ${esc(MX.generated)} from the full database.</p>`;
+  const inp=$("mq");
+  inp.onchange=()=>{const v=inp.value.trim().toLowerCase();if(!v)return;const hit=all.find(x=>x.r.n.toLowerCase()===v)||all.find(x=>x.r.n.toLowerCase().includes(v));if(hit){m.slug=hit.slug;drawMatches();window.scrollTo(0,0)}};
+  $("view").onclick=e=>{
+    const sd=e.target.closest("[data-mside]");if(sd){m.side=sd.dataset.mside;m.slug=null;m.f="";m.lim=24;drawMatches();return}
+    const fl=e.target.closest("[data-mf]");if(fl){m.f=fl.dataset.mf;m.lim=24;drawMatches();return}
+    if(e.target.id==="mmore"){m.lim=lim+24;drawMatches();return}
+    const pk=e.target.closest("[data-mpick]");if(pk){m.slug=pk.dataset.mpick;drawMatches();window.scrollTo(0,0)}
+  };
+}
 function drawMatches(){
   const m=state.m||(state.m={side:"p",slug:null});
   const pool=m.side==="p"?MX.props:MX.brands;
-  if(!m.slug||!pool[m.slug]){
-    const w=[...watch.get()].find(s=>pool[s]);
-    m.slug=w||(m.side==="p"?(pool.collingwood?"collingwood":Object.keys(pool)[0]):(pool["coca-cola"]?"coca-cola":Object.keys(pool)[0]));
-  }
+  if(!m.slug||!pool[m.slug]){m.slug=null;return scoutHome()}
   const rec=pool[m.slug], bt=MX.backtest, org=D.orgs.get(m.slug);
   const rows=rec.m||[];
   state.mExport={rec,rows,side:m.side};
-  $("view").innerHTML=`<p class="pro-intro">${m.side==="p"?"The brands this property should be talking to":"The properties this brand should be talking to"}, ranked by Scout Score: how closely the brand's existing partnerships look like this property (sport, league, region, reach, partners in common), plus whether the property has a gap in that sub-category its peers have filled.</p>
+  $("view").innerHTML=`<p><button type="button" class="ghost" id="mback">← All ${m.side==="p"?"properties":"brands"}</button></p><p class="pro-intro">${m.side==="p"?"The brands this property should be talking to":"The properties this brand should be talking to"}, ranked by Scout Score: how closely the brand's existing partnerships look like this property (sport, league, region, reach, partners in common), plus whether the property has a gap in that sub-category its peers have filled.</p>
   <p class="note-s">${MX.verified} of ${Object.keys(MX.props).length} properties are verified against their official partners page. Suggestions for unverified properties may suggest a brand that's already a partner.</p>
   <div class="mx-acc"><b>${pct(bt.top20)}</b><span>of new partnerships signed ${esc(bt.from)} to ${esc(bt.to)} were in that property's top 20 when we scored the database as it stood in ${esc(bt.from)}. ${pct(bt.top50)} were in the top 50. The best possible today is ${pct(bt.ceiling)}, because the rest came from brands with no earlier partnership in the database. Treat this as a shortlist with evidence, not a forecast.</span></div>
   <div class="ctl"><div class="pills">${pills("mside",[["p","Property → brands"],["b","Brand → properties"]],m.side)}</div>
@@ -371,6 +401,7 @@ function drawMatches(){
   const inp=$("mq");
   inp.onchange=()=>{const v=inp.value.trim().toLowerCase();const hit=Object.entries(pool).find(([,r])=>r.n.toLowerCase()===v)||Object.entries(pool).find(([,r])=>r.n.toLowerCase().includes(v));if(hit){m.slug=hit[0];drawMatches();window.scrollTo(0,0)}};
   $("view").onclick=e=>{
+    if(e.target.id==="mback"){m.slug=null;drawMatches();window.scrollTo(0,0);return}
     const sd=e.target.closest("[data-mside]");if(sd){m.side=sd.dataset.mside;m.slug=null;drawMatches();return}
     const fb=e.target.closest("[data-fb]");if(fb){const w=fb.closest(".fb");const now=fbk.set(w.dataset.fbp,w.dataset.fbb,fb.dataset.fb);w.querySelectorAll(".fbb").forEach(x=>x.classList.toggle("on",x.dataset.fb===now));const ex=$("fbexp");if(ex)ex.textContent=`Export feedback (${Object.keys(fbk.all()).length})`;return}
     if(e.target.id==="fbexp"){const a=fbk.all();const items=Object.entries(a).map(([k,s])=>{const [p,b]=k.split("|");return {p,b,s,d:new Date().toISOString().slice(0,10)}});const blob=new Blob([JSON.stringify({items},null,1)],{type:"application/json"});const l=document.createElement("a");l.href=URL.createObjectURL(blob);l.download="feedback.json";document.body.appendChild(l);l.click();l.remove();return}
