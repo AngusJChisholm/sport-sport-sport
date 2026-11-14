@@ -1919,6 +1919,11 @@
     "logo"
    ]
   },
+  "apparel2u": {
+   "name": "Apparel2U",
+   "k": "b",
+   "cat": "Apparel & footwear"
+  },
   "apple": {
    "name": "Apple",
    "cat": "Technology",
@@ -3733,6 +3738,12 @@
     "icon"
    ]
   },
+  "better-life-mobile": {
+   "name": "Better Life Mobile",
+   "k": "b",
+   "domain": "betterlifemobile.com.au",
+   "cat": "Betting & wagering"
+  },
   "betvibe": {
    "name": "BETVIBE",
    "cat": "Betting & wagering",
@@ -4112,6 +4123,11 @@
    "name": "Blackroll",
    "cat": "Apparel & footwear",
    "k": "b"
+  },
+  "blacktown-council": {
+   "name": "Blacktown Council",
+   "k": "b",
+   "cat": "Tourism & government"
   },
   "blacktown-workers-club-group": {
    "name": "Blacktown Workers Club Group",
@@ -5202,6 +5218,12 @@
    "name": "CableHub",
    "k": "b"
   },
+  "cabravale-club-resort": {
+   "name": "Cabravale Club Resort",
+   "k": "b",
+   "domain": "cabravale.com.au",
+   "cat": "Airlines & travel"
+  },
   "cadbury": {
    "name": "Cadbury",
    "domain": "cadbury.co.uk",
@@ -5572,6 +5594,11 @@
    "bf": [
     "icon"
    ]
+  },
+  "cardiff-motor-group": {
+   "name": "Cardiff Motor Group",
+   "k": "b",
+   "domain": "cardiffmotorgroup.com.au"
   },
   "career-corporation": {
    "name": "Career Corporation",
@@ -6418,6 +6445,12 @@
     "icon"
    ]
   },
+  "city-of-greater-bendigo": {
+   "name": "City of Greater Bendigo",
+   "domain": "bendigo.vic.gov.au",
+   "cat": "Tourism & government",
+   "k": "b"
+  },
   "city-of-greater-geelong": {
    "name": "City of Greater Geelong",
    "cat": "Tourism & government",
@@ -6596,6 +6629,11 @@
   },
   "club-central-menai": {
    "name": "Club Central Menai",
+   "k": "b"
+  },
+  "club-connect": {
+   "name": "Club Connect",
+   "cat": "Alcohol",
    "k": "b"
   },
   "club-lime": {
@@ -6999,6 +7037,10 @@
     "logo"
    ]
   },
+  "comwireit": {
+   "name": "Comwireit",
+   "k": "b"
+  },
   "concacaf": {
    "name": "Concacaf",
    "domain": "concacaf.com",
@@ -7083,6 +7125,10 @@
     "icon",
     "logo"
    ]
+  },
+  "constantinou-group": {
+   "name": "Constantinou Group",
+   "k": "b"
   },
   "containers-for-change": {
    "name": "Containers for Change",
@@ -7334,6 +7380,10 @@
    "name": "Courier Mail",
    "k": "b",
    "cat": "Logistics & transport"
+  },
+  "cover-more": {
+   "name": "Cover-More",
+   "k": "b"
   },
   "cowboys-leagues-club": {
    "name": "Cowboys Leagues Club",
@@ -7870,6 +7920,10 @@
   },
   "dardi-munwurro": {
    "name": "Dardi Munwurro",
+   "k": "b"
+  },
+  "dare": {
+   "name": "Dare",
    "k": "b"
   },
   "dare-iced-coffee": {
@@ -9645,6 +9699,11 @@
     "logo"
    ]
   },
+  "expandasign": {
+   "name": "ExpandaSign",
+   "cat": "Industrial & manufacturing",
+   "k": "b"
+  },
   "expedia": {
    "name": "Expedia",
    "domain": "expedia.com",
@@ -10126,6 +10185,14 @@
    "bf": [
     "icon"
    ]
+  },
+  "finweb-broker-group": {
+   "name": "Finweb Broker Group",
+   "aliases": [
+    "finweb"
+   ],
+   "cat": "Banking & finance",
+   "k": "b"
   },
   "fire-systems-queensland": {
    "name": "Fire Systems Queensland",
@@ -10835,6 +10902,12 @@
   "galway-gaa": {
    "name": "Galway GAA",
    "k": "p"
+  },
+  "gameface": {
+   "name": "GameFace",
+   "domain": "gamefaceon.com.au",
+   "cat": "Media & broadcast",
+   "k": "b"
   },
   "gameready-performance": {
    "name": "Gameready Performance",
@@ -15597,6 +15670,11 @@
     "logo"
    ]
   },
+  "leyland-private-asset-management": {
+   "name": "Leyland Private Asset Management",
+   "cat": "Banking & finance",
+   "k": "b"
+  },
   "lg": {
    "name": "LG",
    "cat": "Technology",
@@ -17598,6 +17676,10 @@
     "icon",
     "logo"
    ]
+  },
+  "mj-bale": {
+   "name": "MJ Bale",
+   "k": "b"
   },
   "mjp-projects": {
    "name": "MJP Projects",
@@ -22360,6 +22442,11 @@
    "name": "Rally US",
    "k": "p"
   },
+  "ralph-d-silva-motor-group": {
+   "name": "Ralph D'Silva Motor Group",
+   "cat": "Automotive",
+   "k": "b"
+  },
   "ralph-lauren": {
    "name": "Ralph Lauren",
    "cat": "Apparel & footwear",
@@ -24179,6 +24266,11 @@
     "logo"
    ]
   },
+  "senix": {
+   "name": "Senix",
+   "k": "b",
+   "domain": "senix.com.au"
+  },
   "sennheiser": {
    "name": "Sennheiser",
    "cat": "Technology",
@@ -24563,6 +24655,10 @@
    "name": "Signosaur",
    "k": "b"
   },
+  "silvan-s": {
+   "name": "Silvan's",
+   "k": "b"
+  },
   "silver-fern-sport": {
    "name": "Silver Fern Sport",
    "cat": "Sporting goods & equipment",
@@ -24814,6 +24910,11 @@
   "sleigh": {
    "name": "Sleigh",
    "cat": "Other",
+   "k": "b"
+  },
+  "slocoach": {
+   "name": "SLOCOACH",
+   "cat": "Technology",
    "k": "b"
   },
   "smart-energy-gb": {
@@ -25196,6 +25297,10 @@
    "k": "p",
    "domain": "rfef.es"
   },
+  "spartan-race": {
+   "name": "Spartan Race",
+   "k": "b"
+  },
   "special-event-merchandising": {
    "name": "Special Event Merchandising",
    "cat": "Collectibles & licensing",
@@ -25298,6 +25403,12 @@
    "bf": [
     "icon"
    ]
+  },
+  "sport-and-recreation-victoria": {
+   "name": "Sport and Recreation Victoria",
+   "domain": "sport.vic.gov.au",
+   "cat": "Tourism & government",
+   "k": "b"
   },
   "sport-australia-hall-of-fame": {
    "name": "Sport Australia Hall of Fame",
@@ -25659,6 +25770,11 @@
    "name": "Star 102.7",
    "k": "b"
   },
+  "star-104-5": {
+   "name": "Star 104.5",
+   "k": "b",
+   "domain": "star1045.com.au"
+  },
   "star-cement": {
    "name": "Star Cement",
    "cat": "Construction & property",
@@ -25819,6 +25935,11 @@
    "cat": "Automotive",
    "k": "b"
   },
+  "stm": {
+   "name": "STM",
+   "k": "b",
+   "domain": "stm.com.au"
+  },
   "stockton-kings": {
    "name": "Stockton Kings",
    "k": "p"
@@ -25857,6 +25978,12 @@
    "parent": "lion",
    "k": "b",
    "sub": "Beer & cider"
+  },
+  "storelocal": {
+   "name": "StoreLocal",
+   "domain": "storelocal.com.au",
+   "cat": "Construction & property",
+   "k": "b"
   },
   "stow-storage": {
    "name": "Stow Storage",
@@ -30013,6 +30140,11 @@
    "name": "Wendy's",
    "k": "b"
   },
+  "werribee-automotive-group": {
+   "name": "Werribee Automotive Group",
+   "k": "b",
+   "cat": "Automotive"
+  },
   "west-bromwich-albion": {
    "name": "West Bromwich Albion",
    "ptype": "Club & team",
@@ -30839,6 +30971,10 @@
     "logo"
    ]
   },
+  "wyndham-city": {
+   "name": "Wyndham City",
+   "k": "b"
+  },
   "x": {
    "name": "X",
    "cat": "Technology",
@@ -31358,137 +31494,6 @@
     "icon",
     "logo"
    ]
-  },
-  "cover-more": {
-   "name": "Cover-More",
-   "k": "b"
-  },
-  "dare": {
-   "name": "Dare",
-   "k": "b"
-  },
-  "mj-bale": {
-   "name": "MJ Bale",
-   "k": "b"
-  },
-  "blacktown-council": {
-   "name": "Blacktown Council",
-   "k": "b"
-  },
-  "better-life-mobile": {
-   "name": "Better Life Mobile",
-   "k": "b",
-   "domain": "betterlifemobile.com.au"
-  },
-  "cabravale-club-resort": {
-   "name": "Cabravale Club Resort",
-   "k": "b",
-   "domain": "cabravale.com.au"
-  },
-  "stm": {
-   "name": "STM",
-   "k": "b",
-   "domain": "stm.com.au"
-  },
-  "star-104-5": {
-   "name": "Star 104.5",
-   "k": "b",
-   "domain": "star1045.com.au"
-  },
-  "spartan-race": {
-   "name": "Spartan Race",
-   "k": "b"
-  },
-  "cardiff-motor-group": {
-   "name": "Cardiff Motor Group",
-   "k": "b",
-   "domain": "cardiffmotorgroup.com.au"
-  },
-  "senix": {
-   "name": "Senix",
-   "k": "b",
-   "domain": "senix.com.au"
-  },
-  "comwireit": {
-   "name": "Comwireit",
-   "k": "b"
-  },
-  "apparel2u": {
-   "name": "Apparel2U",
-   "k": "b"
-  },
-  "wyndham-city": {
-   "name": "Wyndham City",
-   "k": "b"
-  },
-  "werribee-automotive-group": {
-   "name": "Werribee Automotive Group",
-   "k": "b"
-  },
-  "silvan-s": {
-   "name": "Silvan's",
-   "k": "b"
-  },
-  "constantinou-group": {
-   "name": "Constantinou Group",
-   "k": "b"
-  },
-  "storelocal": {
-   "name": "StoreLocal",
-   "domain": "storelocal.com.au",
-   "cat": "Construction & property",
-   "k": "b"
-  },
-  "gameface": {
-   "name": "GameFace",
-   "domain": "gamefaceon.com.au",
-   "cat": "Media & broadcast",
-   "k": "b"
-  },
-  "slocoach": {
-   "name": "SLOCOACH",
-   "cat": "Technology",
-   "k": "b"
-  },
-  "finweb-broker-group": {
-   "name": "Finweb Broker Group",
-   "aliases": [
-    "finweb"
-   ],
-   "cat": "Banking & finance",
-   "k": "b"
-  },
-  "leyland-private-asset-management": {
-   "name": "Leyland Private Asset Management",
-   "cat": "Banking & finance",
-   "k": "b"
-  },
-  "ralph-d-silva-motor-group": {
-   "name": "Ralph D'Silva Motor Group",
-   "cat": "Automotive",
-   "k": "b"
-  },
-  "expandasign": {
-   "name": "ExpandaSign",
-   "cat": "Industrial & manufacturing",
-   "k": "b"
-  },
-  "club-connect": {
-   "name": "Club Connect",
-   "cat": "Alcohol",
-   "k": "b"
-  },
-  "sport-and-recreation-victoria": {
-   "name": "Sport and Recreation Victoria",
-   "domain": "sport.vic.gov.au",
-   "cat": "Tourism & government",
-   "k": "b"
-  },
-  "city-of-greater-bendigo": {
-   "name": "City of Greater Bendigo",
-   "domain": "bendigo.vic.gov.au",
-   "cat": "Tourism & government",
-   "k": "b"
   }
  },
  "leagues": [

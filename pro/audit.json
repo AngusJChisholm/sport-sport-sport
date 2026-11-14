@@ -1,35 +1,45 @@
 {
- "generated": "2026-11-12",
+ "generated": "2026-11-14",
  "summary": {
   "dup_entities": 15,
-  "no_category": 526,
-  "cat_mismatch": 97,
+  "no_category": 538,
+  "cat_mismatch": 99,
   "slot_clash": 22,
-  "dup_deals": 3,
-  "no_broadcaster": 11,
-  "stale": 0,
-  "no_source": 674,
+  "dup_deals": 1,
+  "no_broadcaster": 13,
+  "stale": 1,
+  "no_source": 664,
   "anz_slot_clash": 20
  },
  "dup_entities": [
   {
    "names": [
-    "Courier Mail",
-    "The Courier-Mail"
+    "Dolphins",
+    "Dolphins Group"
    ],
    "slugs": [
-    "courier-mail",
-    "the-courier-mail"
+    "dolphins",
+    "dolphins-group"
    ]
   },
   {
    "names": [
-    "Commonwealth Games",
-    "Commonwealth Games Australia"
+    "TAB",
+    "TAB NZ"
    ],
    "slugs": [
-    "commonwealth-games",
-    "commonwealth-games-australia"
+    "tab",
+    "tab-nz"
+   ]
+  },
+  {
+   "names": [
+    "Ant Group",
+    "Ant International"
+   ],
+   "slugs": [
+    "ant-group",
+    "ant-international"
    ]
   },
   {
@@ -44,12 +54,12 @@
   },
   {
    "names": [
-    "Dolphins",
-    "Dolphins Group"
+    "HYROX",
+    "HYROX Australia"
    ],
    "slugs": [
-    "dolphins",
-    "dolphins-group"
+    "hyrox",
+    "hyrox-australia"
    ]
   },
   {
@@ -68,16 +78,6 @@
   },
   {
    "names": [
-    "TAB",
-    "TAB NZ"
-   ],
-   "slugs": [
-    "tab",
-    "tab-nz"
-   ]
-  },
-  {
-   "names": [
     "Athletics",
     "Athletics Australia",
     "Athletics New Zealand"
@@ -86,56 +86,6 @@
     "athletics",
     "athletics-australia",
     "athletics-new-zealand"
-   ]
-  },
-  {
-   "names": [
-    "Harness Racing Australia",
-    "Harness Racing NZ"
-   ],
-   "slugs": [
-    "harness-racing-australia",
-    "harness-racing-nz"
-   ]
-  },
-  {
-   "names": [
-    "Star Sports",
-    "The Star"
-   ],
-   "slugs": [
-    "star-sports",
-    "the-star"
-   ]
-  },
-  {
-   "names": [
-    "Kia",
-    "Kia Australia"
-   ],
-   "slugs": [
-    "kia",
-    "kia-australia"
-   ]
-  },
-  {
-   "names": [
-    "Ant Group",
-    "Ant International"
-   ],
-   "slugs": [
-    "ant-group",
-    "ant-international"
-   ]
-  },
-  {
-   "names": [
-    "HYROX",
-    "HYROX Australia"
-   ],
-   "slugs": [
-    "hyrox",
-    "hyrox-australia"
    ]
   },
   {
@@ -160,6 +110,46 @@
   },
   {
    "names": [
+    "Kia",
+    "Kia Australia"
+   ],
+   "slugs": [
+    "kia",
+    "kia-australia"
+   ]
+  },
+  {
+   "names": [
+    "Star Sports",
+    "The Star"
+   ],
+   "slugs": [
+    "star-sports",
+    "the-star"
+   ]
+  },
+  {
+   "names": [
+    "Harness Racing Australia",
+    "Harness Racing NZ"
+   ],
+   "slugs": [
+    "harness-racing-australia",
+    "harness-racing-nz"
+   ]
+  },
+  {
+   "names": [
+    "Courier Mail",
+    "The Courier-Mail"
+   ],
+   "slugs": [
+    "courier-mail",
+    "the-courier-mail"
+   ]
+  },
+  {
+   "names": [
     "PURE Sports Nutrition",
     "Pure Nutrition"
    ],
@@ -167,12 +157,32 @@
     "pure-nutrition",
     "pure-sports-nutrition"
    ]
+  },
+  {
+   "names": [
+    "Commonwealth Games",
+    "Commonwealth Games Australia"
+   ],
+   "slugs": [
+    "commonwealth-games",
+    "commonwealth-games-australia"
+   ]
   }
  ],
  "no_category": [
   {
    "brand": "Reclaim the Game",
    "slug": "reclaim-the-game",
+   "deals": 5
+  },
+  {
+   "brand": "Love The Game",
+   "slug": "love-the-game",
+   "deals": 4
+  },
+  {
+   "brand": "Dynasty",
+   "slug": "dynasty",
    "deals": 4
   },
   {
@@ -183,11 +193,6 @@
   {
    "brand": "Belbaker",
    "slug": "belbaker",
-   "deals": 3
-  },
-  {
-   "brand": "Dynasty",
-   "slug": "dynasty",
    "deals": 3
   },
   {
@@ -253,11 +258,6 @@
   {
    "brand": "Signage World",
    "slug": "signage-world",
-   "deals": 2
-  },
-  {
-   "brand": "Love The Game",
-   "slug": "love-the-game",
    "deals": 2
   },
   {
@@ -2799,6 +2799,66 @@
    "brand": "The Mawson Club",
    "slug": "the-mawson-club",
    "deals": 1
+  },
+  {
+   "brand": "Cover-More",
+   "slug": "cover-more",
+   "deals": 1
+  },
+  {
+   "brand": "Dare",
+   "slug": "dare",
+   "deals": 1
+  },
+  {
+   "brand": "MJ Bale",
+   "slug": "mj-bale",
+   "deals": 1
+  },
+  {
+   "brand": "STM",
+   "slug": "stm",
+   "deals": 1
+  },
+  {
+   "brand": "Star 104.5",
+   "slug": "star-104-5",
+   "deals": 1
+  },
+  {
+   "brand": "Spartan Race",
+   "slug": "spartan-race",
+   "deals": 1
+  },
+  {
+   "brand": "Cardiff Motor Group",
+   "slug": "cardiff-motor-group",
+   "deals": 1
+  },
+  {
+   "brand": "Senix",
+   "slug": "senix",
+   "deals": 1
+  },
+  {
+   "brand": "Comwireit",
+   "slug": "comwireit",
+   "deals": 1
+  },
+  {
+   "brand": "Wyndham City",
+   "slug": "wyndham-city",
+   "deals": 1
+  },
+  {
+   "brand": "Silvan's",
+   "slug": "silvan-s",
+   "deals": 1
+  },
+  {
+   "brand": "Constantinou Group",
+   "slug": "constantinou-group",
+   "deals": 1
   }
  ],
  "cat_mismatch": [
@@ -2843,6 +2903,13 @@
    "cat": "Non-alcoholic drinks",
    "rules_say": "Energy & utilities",
    "deals": 3
+  },
+  {
+   "brand": "Victorian Responsible Gambling Foundation",
+   "slug": "victorian-responsible-gambling-foundation",
+   "cat": "Tourism & government",
+   "rules_say": "Betting & wagering",
+   "deals": 2
   },
   {
    "brand": "ABC Bullion",
@@ -2983,6 +3050,20 @@
    "cat": "Hospitality & entertainment",
    "rules_say": "Apparel & footwear",
    "deals": 2
+  },
+  {
+   "brand": "City of Greater Bendigo",
+   "slug": "city-of-greater-bendigo",
+   "cat": "Tourism & government",
+   "rules_say": "Banking & finance",
+   "deals": 1
+  },
+  {
+   "brand": "StoreLocal",
+   "slug": "storelocal",
+   "cat": "Construction & property",
+   "rules_say": "Retail",
+   "deals": 1
   },
   {
    "brand": "8 Networks",
@@ -3402,13 +3483,6 @@
    "slug": "vision-insights",
    "cat": "Technology",
    "rules_say": "Health & beauty",
-   "deals": 1
-  },
-  {
-   "brand": "Victorian Responsible Gambling Foundation",
-   "slug": "victorian-responsible-gambling-foundation",
-   "cat": "Tourism & government",
-   "rules_say": "Betting & wagering",
    "deals": 1
   },
   {
@@ -3865,19 +3939,15 @@
  ],
  "dup_deals": [
   {
-   "deal": "BHP Mitsubishi Alliance × Queensland Firebirds",
-   "issue": "listed entry next to a dated one (drop the listed one)"
-  },
-  {
-   "deal": "Bravus × North Queensland Cowboys",
-   "issue": "listed entry next to a dated one (drop the listed one)"
-  },
-  {
-   "deal": "THE ICONIC × Newcastle Knights",
+   "deal": "Bendigo Bank × Rugby Victoria",
    "issue": "listed entry next to a dated one (drop the listed one)"
   }
  ],
  "no_broadcaster": [
+  {
+   "property": "Rugby Victoria",
+   "deals": 23
+  },
   {
    "property": "Golf Australia",
    "deals": 11
@@ -3907,6 +3977,10 @@
    "deals": 6
   },
   {
+   "property": "NRLW",
+   "deals": 6
+  },
+  {
    "property": "Cricket Victoria",
    "deals": 6
   },
@@ -3923,7 +3997,12 @@
    "deals": 5
   }
  ],
- "stale": [],
+ "stale": [
+  {
+   "deal": "Westpac × NRL",
+   "date": "2022-10-28"
+  }
+ ],
  "no_source": [
   {
    "deal": "L'Oréal × Paris Saint-Germain",
@@ -5079,46 +5158,6 @@
   },
   {
    "deal": "Beverly × Melbourne Racing Club",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Club Racing Australia × Penrith Panthers",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Samoa Beverages × Melbourne Storm",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Bayleys × Crusaders",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "HART Sport × Queensland Cricket",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Yonex × Badminton Australia",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Omoda Jaecoo × NZ Breakers",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Snap Fitness × Perth Wildcats",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "7-Eleven × NBL",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Chicken Treat × Perth Glory",
-   "issue": "needsSource"
-  },
-  {
-   "deal": "Focus Construct × Brisbane Roar",
    "issue": "needsSource"
   },
   {
